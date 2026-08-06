@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 960" role="img" aria-labelledby="title desc">
+<title id="title">Ilustração abstrata sobre diversidade do espectro autista</title>
+<desc id="desc">Quatro áreas conectadas representam comunicação, processamento sensorial, previsibilidade e apoio, sem função diagnóstica.</desc>
+<defs>
+  <radialGradient id="bg" cx="45%" cy="35%" r="78%">
+    <stop offset="0%" stop-color="#27313d"/>
+    <stop offset="100%" stop-color="#0b0c10"/>
+  </radialGradient>
+  <linearGradient id="line" x1="0" x2="1">
+    <stop offset="0%" stop-color="#c8914f"/>
+    <stop offset="100%" stop-color="#6f86a5"/>
+  </linearGradient>
+</defs>
+<rect width="760" height="960" rx="44" fill="url(#bg)"/>
+<circle cx="380" cy="470" r="112" fill="#15171d" stroke="#c8914f" stroke-width="5"/>
+<circle cx="380" cy="470" r="72" fill="#1d232c" stroke="#f1e7d5" stroke-width="2" opacity=".95"/>
+<text x="380" y="455" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700">PERFIL</text>
+<text x="380" y="492" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="22">INDIVIDUAL</text>
+
+<path d="M310 390 C250 330 220 285 184 210" fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round"/>
+<path d="M450 390 C512 330 548 286 580 208" fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round"/>
+<path d="M306 550 C250 612 220 682 182 754" fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round"/>
+<path d="M454 550 C515 613 548 680 583 754" fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round"/>
+
+<g>
+  <rect x="82" y="92" width="235" height="160" rx="26" fill="#17212b" stroke="#6f86a5" stroke-width="4"/>
+  <circle cx="132" cy="142" r="18" fill="#6f86a5"/>
+  <path d="M174 134 h92 M174 164 h70 M116 207 h150" stroke="#d9e0e8" stroke-width="8" stroke-linecap="round" opacity=".76"/>
+  <text x="199" y="232" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="21">COMUNICAÇÃO</text>
+</g>
+
+<g>
+  <rect x="443" y="92" width="235" height="160" rx="26" fill="#211b27" stroke="#866aa0" stroke-width="4"/>
+  <path d="M492 152 q27 -35 54 0 q27 35 54 0" fill="none" stroke="#c4a7d5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M492 184 q27 -35 54 0 q27 35 54 0" fill="none" stroke="#866aa0" stroke-width="8" stroke-linecap="round"/>
+  <text x="560" y="232" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="21">SENSORIALIDADE</text>
+</g>
+
+<g>
+  <rect x="82" y="712" width="235" height="160" rx="26" fill="#1b2521" stroke="#5f8b6a" stroke-width="4"/>
+  <rect x="120" y="748" width="42" height="42" rx="8" fill="#5f8b6a"/>
+  <rect x="178" y="748" width="42" height="42" rx="8" fill="#d1a26a"/>
+  <rect x="236" y="748" width="42" height="42" rx="8" fill="#6f86a5"/>
+  <path d="M120 816 h158" stroke="#d9e0e8" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <text x="199" y="852" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="21">PREVISIBILIDADE</text>
+</g>
+
+<g>
+  <rect x="443" y="712" width="235" height="160" rx="26" fill="#282019" stroke="#c8914f" stroke-width="4"/>
+  <circle cx="505" cy="779" r="27" fill="#c8914f"/>
+  <circle cx="560" cy="763" r="22" fill="#6f86a5"/>
+  <circle cx="615" cy="783" r="27" fill="#5f8b6a"/>
+  <path d="M488 826 q72 -52 145 0" fill="none" stroke="#f1e7d5" stroke-width="8" stroke-linecap="round" opacity=".78"/>
+  <text x="560" y="852" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="21">APOIO E ACESSO</text>
+</g>
+
+<text x="380" y="920" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="18">
+Ilustração educativa — não é instrumento de avaliação
+</text>
+</svg>

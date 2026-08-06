@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-labelledby="title desc">
+<title id="title">Livro antigo, estrelas e diagrama circular abstrato</title>
+<desc id="desc">Composição editorial inspirada em livros do século dezenove e diagramas esotéricos, sem representar alegações sobrenaturais como fatos.</desc>
+<defs>
+  <radialGradient id="bg" cx="68%" cy="32%" r="85%">
+    <stop offset="0" stop-color="#314657"/>
+    <stop offset=".45" stop-color="#1c252e"/>
+    <stop offset="1" stop-color="#090b0f"/>
+  </radialGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d4bd91"/>
+    <stop offset="1" stop-color="#82684c"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1500" height="1000" fill="url(#bg)"/>
+<g fill="#f1e7d5" opacity=".68">
+ <circle cx="95" cy="96" r="3"/><circle cx="232" cy="175" r="2"/><circle cx="375" cy="85" r="4"/>
+ <circle cx="560" cy="155" r="2"/><circle cx="765" cy="92" r="3"/><circle cx="910" cy="160" r="2"/>
+ <circle cx="1110" cy="80" r="4"/><circle cx="1365" cy="160" r="3"/><circle cx="1420" cy="90" r="2"/>
+ <circle cx="1290" cy="835" r="3"/><circle cx="1080" cy="905" r="2"/><circle cx="780" cy="865" r="4"/>
+ <circle cx="520" cy="920" r="2"/><circle cx="280" cy="845" r="3"/><circle cx="120" cy="780" r="2"/>
+</g>
+<g transform="translate(1015 470)" fill="none">
+ <circle r="305" stroke="#c8914f" stroke-width="4" opacity=".72"/>
+ <circle r="232" stroke="#6f91a8" stroke-width="3" opacity=".72"/>
+ <circle r="156" stroke="#9c7fae" stroke-width="3" opacity=".68"/>
+ <circle r="80" stroke="#f1e7d5" stroke-width="2" opacity=".62"/>
+ <path d="M-305 0H305M0-305V305" stroke="#c8914f" stroke-width="2" opacity=".42"/>
+ <path d="M-216-216L216 216M216-216L-216 216" stroke="#6f91a8" stroke-width="2" opacity=".42"/>
+ <path d="M0-305L176 247L-285-94L285-94L-176 247Z" stroke="#d9b26e" stroke-width="3" opacity=".52"/>
+</g>
+<g transform="translate(1015 470)" filter="url(#glow)">
+ <circle r="48" fill="#c8914f" opacity=".88"/>
+ <circle r="21" fill="#f1e7d5" opacity=".9"/>
+</g>
+<g transform="translate(150 280)">
+ <path d="M20 42C145 5 260 12 355 55V420C255 382 145 380 20 423Z" fill="url(#paper)" stroke="#c8914f" stroke-width="5"/>
+ <path d="M355 55C455 12 570 5 695 42V423C570 380 460 382 355 420Z" fill="url(#paper)" stroke="#c8914f" stroke-width="5"/>
+ <path d="M355 60V415" stroke="#4a3626" stroke-width="7" opacity=".8"/>
+ <g fill="#4a3626" opacity=".72">
+  <rect x="70" y="105" width="230" height="8" rx="4"/><rect x="70" y="135" width="205" height="7" rx="4"/>
+  <rect x="70" y="165" width="245" height="7" rx="4"/><rect x="70" y="195" width="180" height="7" rx="4"/>
+  <rect x="405" y="105" width="230" height="8" rx="4"/><rect x="405" y="135" width="205" height="7" rx="4"/>
+  <rect x="405" y="165" width="245" height="7" rx="4"/><rect x="405" y="195" width="180" height="7" rx="4"/>
+ </g>
+ <g transform="translate(170 292)" fill="none">
+  <circle r="72" stroke="#5d402b" stroke-width="4"/><circle r="43" stroke="#5d402b" stroke-width="3"/>
+  <path d="M0-72L42 58L-68-22L68-22L-42 58Z" stroke="#5d402b" stroke-width="3"/>
+ </g>
+ <g transform="translate(530 292)" fill="none">
+  <circle r="72" stroke="#5d402b" stroke-width="4"/><path d="M-72 0H72M0-72V72" stroke="#5d402b" stroke-width="3"/>
+  <circle r="22" fill="#5d402b"/>
+ </g>
+</g>
+<text x="750" y="952" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="21">História documentada • doutrina identificada • evidência examinada</text>
+</svg>

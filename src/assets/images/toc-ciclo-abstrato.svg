@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 960" role="img" aria-labelledby="title desc">
+<title id="title">Ciclo obsessivo-compulsivo em representação abstrata</title>
+<desc id="desc">Seis etapas conectadas em círculo: intrusão, ameaça, ansiedade, ritual, alívio temporário e reforço.</desc>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="45%" r="72%">
+    <stop offset="0%" stop-color="#242a36"/>
+    <stop offset="100%" stop-color="#0b0c10"/>
+  </radialGradient>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0 L12 6 L0 12 z" fill="#c8914f"/>
+  </marker>
+</defs>
+<rect width="760" height="960" rx="44" fill="url(#bg)"/>
+<circle cx="380" cy="448" r="145" fill="#12151b" stroke="#c8914f" stroke-width="5"/>
+<circle cx="380" cy="448" r="105" fill="#1c212a" stroke="#f1e7d5" stroke-width="2" opacity=".95"/>
+<text x="380" y="430" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">CICLO</text>
+<text x="380" y="470" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="24">TOC</text>
+
+<path d="M380 205 C520 205 610 300 610 430" fill="none" stroke="#c8914f" stroke-width="6" marker-end="url(#arrow)"/>
+<path d="M610 470 C610 610 520 700 390 700" fill="none" stroke="#c8914f" stroke-width="6" marker-end="url(#arrow)"/>
+<path d="M350 700 C215 700 150 605 150 480" fill="none" stroke="#c8914f" stroke-width="6" marker-end="url(#arrow)"/>
+<path d="M150 430 C150 300 245 205 350 205" fill="none" stroke="#c8914f" stroke-width="6" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="270" y="72" width="220" height="104" rx="22" fill="#17222b" stroke="#6f91a8" stroke-width="4"/>
+  <text x="380" y="118" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">1. INTRUSÃO</text>
+  <text x="380" y="148" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="17">pensamento, imagem ou dúvida</text>
+</g>
+<g>
+  <rect x="515" y="235" width="210" height="104" rx="22" fill="#251b22" stroke="#b66e7d" stroke-width="4"/>
+  <text x="620" y="281" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">2. AMEAÇA</text>
+  <text x="620" y="311" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="17">culpa, perigo ou incerteza</text>
+</g>
+<g>
+  <rect x="515" y="548" width="210" height="104" rx="22" fill="#271f18" stroke="#c8914f" stroke-width="4"/>
+  <text x="620" y="594" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">3. ANSIEDADE</text>
+  <text x="620" y="624" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="17">desconforto aumenta</text>
+</g>
+<g>
+  <rect x="270" y="745" width="220" height="104" rx="22" fill="#1d2520" stroke="#68937a" stroke-width="4"/>
+  <text x="380" y="791" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">4. COMPULSÃO</text>
+  <text x="380" y="821" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="17">ritual, neutralização ou evitação</text>
+</g>
+<g>
+  <rect x="35" y="548" width="210" height="104" rx="22" fill="#182128" stroke="#6f91a8" stroke-width="4"/>
+  <text x="140" y="594" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">5. ALÍVIO</text>
+  <text x="140" y="624" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="17">temporário</text>
+</g>
+<g>
+  <rect x="35" y="235" width="210" height="104" rx="22" fill="#211b27" stroke="#866aa0" stroke-width="4"/>
+  <text x="140" y="281" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">6. REFORÇO</text>
+  <text x="140" y="311" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="17">ritual parece necessário</text>
+</g>
+
+<text x="380" y="916" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="18">
+Representação educativa — não é instrumento diagnóstico
+</text>
+</svg>

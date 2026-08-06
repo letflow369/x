@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Encruzilhadas, caminhos, memória e comunidade em composição abstrata</title>
+<desc id="desc">Caminhos em cruz, casa comunitária, folhas, livro e círculos de ancestralidade, sem representar rito específico.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#100c0c"/>
+    <stop offset="50%" stop-color="#251817"/>
+    <stop offset="100%" stop-color="#15181d"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="73%" cy="42%" r="48%">
+    <stop offset="0%" stop-color="#a75243" stop-opacity=".34"/>
+    <stop offset="55%" stop-color="#c8914f" stop-opacity=".12"/>
+    <stop offset="100%" stop-color="#c8914f" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#halo)"/>
+
+<!-- Caminhos e encruzilhada -->
+<g transform="translate(790 500)" fill="none">
+  <path d="M-760 0 C-430 -40 -240 -30 0 0 C260 35 480 35 760 0" stroke="#b15f4e" stroke-width="58" opacity=".33"/>
+  <path d="M0 -490 C-30 -260 -25 -130 0 0 C25 145 25 280 0 490" stroke="#c8914f" stroke-width="58" opacity=".28"/>
+  <path d="M-760 0 C-430 -40 -240 -30 0 0 C260 35 480 35 760 0" stroke="#d6a06d" stroke-width="4" opacity=".85"/>
+  <path d="M0 -490 C-30 -260 -25 -130 0 0 C25 145 25 280 0 490" stroke="#d6a06d" stroke-width="4" opacity=".85"/>
+  <circle r="120" fill="#171416" stroke="#d8a258" stroke-width="6"/>
+  <circle r="76" fill="#2b1b1a" stroke="#a75243" stroke-width="4"/>
+  <circle r="25" fill="#e2b76c"/>
+</g>
+
+<!-- Casa comunitária -->
+<g transform="translate(1090 145)">
+  <path d="M20 210 L230 45 L440 210" fill="#171b20" stroke="#c8914f" stroke-width="7"/>
+  <rect x="55" y="205" width="350" height="270" rx="15" fill="#181a1e" stroke="#d8a258" stroke-width="5"/>
+  <rect x="180" y="280" width="95" height="195" rx="8" fill="#3c2824" stroke="#f1e7d5" stroke-width="3"/>
+  <rect x="95" y="260" width="65" height="75" rx="7" fill="#252b31" stroke="#8e9fac" stroke-width="3"/>
+  <rect x="300" y="260" width="65" height="75" rx="7" fill="#252b31" stroke="#8e9fac" stroke-width="3"/>
+</g>
+
+<!-- Livro/memória -->
+<g transform="translate(120 155)">
+  <path d="M0 55 Q155 0 310 50 L310 325 Q155 275 0 330Z" fill="#d6c7aa" stroke="#c8914f" stroke-width="5"/>
+  <path d="M310 50 Q465 0 620 55 L620 330 Q465 275 310 325Z" fill="#cbb99d" stroke="#c8914f" stroke-width="5"/>
+  <path d="M310 50 V325" stroke="#735b48" stroke-width="5"/>
+  <path d="M45 110 H255 M45 155 H270 M45 200 H230 M360 110 H565 M350 155 H580 M380 200 H545" stroke="#715a48" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+</g>
+
+<!-- Folhas e memória ancestral -->
+<g transform="translate(160 620)" fill="#526e5b" stroke="#96b29a" stroke-width="3">
+  <path d="M0 225 C65 55 175 15 245 0 C225 100 170 190 0 225Z"/>
+  <path d="M125 245 C195 105 315 75 385 80 C345 175 265 255 125 245Z"/>
+  <path d="M20 230 C120 190 255 115 360 88" fill="none" stroke="#d1c3a9" stroke-width="4"/>
+</g>
+
+<g transform="translate(1035 670)" fill="none">
+  <circle cx="180" cy="130" r="115" stroke="#d8a258" stroke-width="5"/>
+  <circle cx="180" cy="130" r="78" stroke="#a75243" stroke-width="4"/>
+  <circle cx="180" cy="130" r="38" fill="#d8a258"/>
+  <path d="M180 15 V245 M65 130 H295" stroke="#8e9fac" stroke-width="3" opacity=".7"/>
+  <path d="M99 49 L261 211 M261 49 L99 211" stroke="#96b29a" stroke-width="3" opacity=".65"/>
+</g>
+
+<!-- Palavras editoriais -->
+<g transform="translate(620 770)" font-family="Inter,Arial,sans-serif" text-anchor="middle">
+  <rect x="-210" y="-45" width="420" height="90" rx="45" fill="#171416" stroke="#c8914f" stroke-width="3"/>
+  <text x="0" y="-4" fill="#e2b76c" font-size="24" font-weight="700">ANCESTRALIDADE</text>
+  <text x="0" y="26" fill="#f1e7d5" font-size="20">RECIPROCIDADE • COMUNIDADE</text>
+</g>
+
+<text x="800" y="955" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="20">
+Ilustração editorial — não representa um terreiro, entidade ou rito específico
+</text>
+</svg>

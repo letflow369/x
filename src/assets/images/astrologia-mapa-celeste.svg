@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Mapa celeste abstrato com círculos, órbitas e símbolos históricos</title>
+<desc id="desc">Composição editorial inspirada em diagramas celestes históricos, sem função preditiva.</desc>
+<defs>
+  <radialGradient id="bg" cx="70%" cy="42%" r="78%">
+    <stop offset="0%" stop-color="#263746"/>
+    <stop offset="42%" stop-color="#171d25"/>
+    <stop offset="100%" stop-color="#080a0e"/>
+  </radialGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="7" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+
+<g opacity=".75" fill="#f1e7d5">
+  <circle cx="110" cy="120" r="3"/><circle cx="250" cy="210" r="2"/>
+  <circle cx="420" cy="95" r="4"/><circle cx="570" cy="180" r="2"/>
+  <circle cx="760" cy="80" r="3"/><circle cx="900" cy="140" r="2"/>
+  <circle cx="1130" cy="105" r="4"/><circle cx="1360" cy="190" r="3"/>
+  <circle cx="1480" cy="90" r="2"/><circle cx="1280" cy="780" r="3"/>
+  <circle cx="1030" cy="860" r="2"/><circle cx="820" cy="910" r="4"/>
+  <circle cx="610" cy="850" r="2"/><circle cx="330" cy="910" r="3"/>
+  <circle cx="130" cy="760" r="2"/>
+</g>
+
+<g transform="translate(1035 505)" fill="none">
+  <circle r="330" stroke="#c8914f" stroke-width="4" opacity=".7"/>
+  <circle r="260" stroke="#6f91a8" stroke-width="3" opacity=".76"/>
+  <circle r="185" stroke="#866aa0" stroke-width="3" opacity=".72"/>
+  <circle r="105" stroke="#f1e7d5" stroke-width="2" opacity=".68"/>
+  <path d="M-330 0 H330 M0 -330 V330" stroke="#c8914f" stroke-width="2" opacity=".48"/>
+  <path d="M-233 -233 L233 233 M233 -233 L-233 233" stroke="#6f91a8" stroke-width="2" opacity=".46"/>
+  <path d="M0 -330 L165 286 L-286 -165 L286 -165 L-165 286 Z" stroke="#d5ab72" stroke-width="3" opacity=".5"/>
+</g>
+
+<g transform="translate(1035 505)" font-family="Georgia,serif" font-size="42" text-anchor="middle">
+  <text x="0" y="-285" fill="#e2b76c">♈</text>
+  <text x="150" y="-245" fill="#f1e7d5">♉</text>
+  <text x="265" y="-145" fill="#c3d2df">♊</text>
+  <text x="305" y="15" fill="#e2b76c">♋</text>
+  <text x="265" y="175" fill="#f1e7d5">♌</text>
+  <text x="150" y="280" fill="#c3d2df">♍</text>
+  <text x="0" y="315" fill="#e2b76c">♎</text>
+  <text x="-150" y="280" fill="#f1e7d5">♏</text>
+  <text x="-265" y="175" fill="#c3d2df">♐</text>
+  <text x="-305" y="15" fill="#e2b76c">♑</text>
+  <text x="-265" y="-145" fill="#f1e7d5">♒</text>
+  <text x="-150" y="-245" fill="#c3d2df">♓</text>
+</g>
+
+<g transform="translate(1035 505)" filter="url(#glow)">
+  <circle r="60" fill="#c8914f" opacity=".86"/>
+  <circle r="30" fill="#f1e7d5" opacity=".88"/>
+</g>
+
+<g transform="translate(180 210)">
+  <circle cx="130" cy="130" r="105" fill="#10151c" stroke="#c8914f" stroke-width="4"/>
+  <path d="M130 34 V226 M34 130 H226" stroke="#6f91a8" stroke-width="3" opacity=".7"/>
+  <path d="M66 66 L194 194 M194 66 L66 194" stroke="#866aa0" stroke-width="3" opacity=".6"/>
+  <circle cx="130" cy="130" r="38" fill="#202a36" stroke="#f1e7d5" stroke-width="2"/>
+  <text x="130" y="140" text-anchor="middle" fill="#f1e7d5" font-family="Georgia,serif" font-size="34">☉</text>
+</g>
+
+<g transform="translate(170 610)">
+  <path d="M0 180 C120 20 300 20 420 180" fill="none" stroke="#c8914f" stroke-width="5"/>
+  <path d="M20 185 C140 70 280 70 400 185" fill="none" stroke="#6f91a8" stroke-width="3"/>
+  <circle cx="70" cy="120" r="12" fill="#e2b76c"/>
+  <circle cx="210" cy="78" r="16" fill="#f1e7d5"/>
+  <circle cx="350" cy="120" r="12" fill="#866aa0"/>
+  <text x="210" y="238" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="22">
+    História • símbolo • teste científico
+  </text>
+</g>
+
+<text x="800" y="955" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="20">
+Composição editorial inspirada em mapas celestes históricos — sem função preditiva
+</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Composição abstrata com números e formas geométricas</title>
+<desc id="desc">Números, círculos e linhas representam simbolismo e busca de padrões; a imagem não representa um mecanismo científico.</desc>
+<defs>
+  <radialGradient id="bg" cx="66%" cy="38%" r="78%">
+    <stop offset="0%" stop-color="#2b2522"/>
+    <stop offset="45%" stop-color="#161517"/>
+    <stop offset="100%" stop-color="#08090c"/>
+  </radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#e2b76c"/>
+    <stop offset="100%" stop-color="#8d5f35"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="10" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<g opacity=".34" stroke="#9c724d" fill="none">
+  <circle cx="1130" cy="480" r="330" stroke-width="4"/>
+  <circle cx="1130" cy="480" r="250" stroke-width="2"/>
+  <circle cx="1130" cy="480" r="160" stroke-width="2"/>
+  <path d="M805 480h650M1130 155v650M900 250l460 460M1360 250L900 710" stroke-width="2"/>
+</g>
+<g font-family="Georgia, serif" text-anchor="middle" fill="url(#gold)" filter="url(#glow)">
+  <text x="1130" y="520" font-size="220">9</text>
+  <text x="1130" y="230" font-size="72">1</text>
+  <text x="1370" y="390" font-size="72">2</text>
+  <text x="1370" y="680" font-size="72">3</text>
+  <text x="1130" y="790" font-size="72">4</text>
+  <text x="890" y="680" font-size="72">7</text>
+  <text x="890" y="390" font-size="72">10</text>
+</g>
+<g fill="#c8914f" opacity=".8">
+  <circle cx="1130" cy="155" r="9"/><circle cx="1455" cy="480" r="9"/><circle cx="1130" cy="805" r="9"/><circle cx="805" cy="480" r="9"/>
+</g>
+<path d="M825 810 C965 735 1270 770 1455 640" fill="none" stroke="#496775" stroke-width="5" opacity=".75"/>
+<text x="1140" y="930" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="24">Representação editorial de simbolismo numérico — não preditiva</text>
+</svg>

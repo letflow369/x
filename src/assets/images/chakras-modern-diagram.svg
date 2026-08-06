@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980" role="img" aria-labelledby="chakra-svg-title chakra-svg-desc">
+<title id="chakra-svg-title">Representação moderna dos sete chakras</title>
+<desc id="chakra-svg-desc">Silhueta humana abstrata com sete círculos coloridos dispostos verticalmente. A imagem é simbólica e não anatômica.</desc>
+<defs>
+<radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#20212a"/><stop offset="100%" stop-color="#0b0c10"/></radialGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="720" height="980" rx="42" fill="url(#bg)"/>
+<circle cx="360" cy="135" r="74" fill="none" stroke="#c7bba9" stroke-width="6" opacity=".72"/>
+<path d="M360 210 C270 214 234 292 246 410 L262 608 C268 695 300 792 314 910 M360 210 C450 214 486 292 474 410 L458 608 C452 695 420 792 406 910" fill="none" stroke="#c7bba9" stroke-width="7" stroke-linecap="round" opacity=".62"/>
+<path d="M360 215 L360 910" stroke="#c8914f" stroke-width="3" stroke-dasharray="10 14" opacity=".58"/>
+<path d="M247 392 C175 438 160 558 184 686 M473 392 C545 438 560 558 536 686" fill="none" stroke="#c7bba9" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+<circle cx="360" cy="792" r="44" fill="#a75555" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="792" r="28" fill="#a75555" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="792" r="7" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="792" x2="492" y2="792" stroke="#a75555" stroke-width="3" opacity=".8"/>
+<text x="510" y="799" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Mūlādhāra</text>
+<circle cx="360" cy="680" r="44" fill="#b8734f" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="680" r="28" fill="#b8734f" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="680" r="7" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="680" x2="492" y2="680" stroke="#b8734f" stroke-width="3" opacity=".8"/>
+<text x="510" y="687" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Svādhiṣṭhāna</text>
+<circle cx="360" cy="570" r="44" fill="#b79b52" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="570" r="28" fill="#b79b52" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="570" r="7" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="570" x2="492" y2="570" stroke="#b79b52" stroke-width="3" opacity=".8"/>
+<text x="510" y="577" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Maṇipūra</text>
+<circle cx="360" cy="460" r="44" fill="#5f8b6a" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="460" r="28" fill="#5f8b6a" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="460" r="7" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="460" x2="492" y2="460" stroke="#5f8b6a" stroke-width="3" opacity=".8"/>
+<text x="510" y="467" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Anāhata</text>
+<circle cx="360" cy="350" r="44" fill="#56859a" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="350" r="28" fill="#56859a" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="350" r="7" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="350" x2="492" y2="350" stroke="#56859a" stroke-width="3" opacity=".8"/>
+<text x="510" y="357" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Viśuddha</text>
+<circle cx="360" cy="245" r="44" fill="#6c6f9f" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="245" r="28" fill="#6c6f9f" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="245" r="7" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="245" x2="492" y2="245" stroke="#6c6f9f" stroke-width="3" opacity=".8"/>
+<text x="510" y="252" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Ājñā</text>
+<circle cx="360" cy="130" r="50" fill="#866aa0" opacity=".16" filter="url(#glow)"/>
+<circle cx="360" cy="130" r="34" fill="#866aa0" stroke="#f1e7d5" stroke-width="3"/>
+<circle cx="360" cy="130" r="8" fill="#f1e7d5" opacity=".88"/>
+<line x1="400" y1="130" x2="492" y2="130" stroke="#866aa0" stroke-width="3" opacity=".8"/>
+<text x="510" y="137" fill="#f1e7d5" font-family="Inter, Arial, sans-serif" font-size="20">Sahasrāra</text>
+<text x="360" y="948" text-anchor="middle" fill="#b9a994" font-family="Inter, Arial, sans-serif" font-size="17">Representação editorial contemporânea — não anatômica</text>
+</svg>

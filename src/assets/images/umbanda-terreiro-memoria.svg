@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Composição abstrata sobre terreiro, memória, natureza e cultura brasileira</title>
+<desc id="desc">Fachada simbólica de uma casa comunitária, folhas, tambor, documentos e linhas que representam matrizes culturais diversas.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0b1217"/>
+    <stop offset="52%" stop-color="#18242a"/>
+    <stop offset="100%" stop-color="#2a1d19"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="72%" cy="42%" r="42%">
+    <stop offset="0%" stop-color="#c8914f" stop-opacity=".34"/>
+    <stop offset="100%" stop-color="#c8914f" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="soft">
+    <feGaussianBlur stdDeviation="9"/>
+  </filter>
+</defs>
+
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect width="1600" height="1000" fill="url(#halo)"/>
+
+<g opacity=".23" stroke="#d8a258" fill="none">
+  <path d="M70 850 C250 620 360 650 530 420 S850 220 1010 360 S1280 650 1530 330" stroke-width="5"/>
+  <path d="M50 740 C250 530 420 540 600 360 S920 250 1100 420 S1370 580 1560 250" stroke-width="2"/>
+  <circle cx="260" cy="240" r="120"/>
+  <circle cx="1320" cy="210" r="150"/>
+</g>
+
+<!-- Casa/terreiro abstrato -->
+<g transform="translate(830 245)">
+  <path d="M40 230 L300 25 L560 230" fill="#142028" stroke="#c8914f" stroke-width="8"/>
+  <rect x="75" y="220" width="450" height="330" rx="18" fill="#151d22" stroke="#d8a258" stroke-width="5"/>
+  <rect x="250" y="315" width="105" height="235" rx="10" fill="#26363d" stroke="#f1e7d5" stroke-width="3"/>
+  <rect x="120" y="295" width="90" height="105" rx="9" fill="#1d2d32" stroke="#7fa18c" stroke-width="3"/>
+  <rect x="390" y="295" width="90" height="105" rx="9" fill="#1d2d32" stroke="#7fa18c" stroke-width="3"/>
+  <path d="M105 485 H495" stroke="#b9a994" stroke-width="3" opacity=".55"/>
+  <circle cx="302" cy="280" r="22" fill="#c8914f"/>
+  <path d="M180 550 C260 505 340 505 420 550" fill="none" stroke="#7fa18c" stroke-width="7"/>
+</g>
+
+<!-- Folhas -->
+<g transform="translate(1160 610)" fill="#617f69" stroke="#9fbd9e" stroke-width="3">
+  <path d="M0 200 C70 50 160 15 220 0 C205 85 160 175 0 200Z"/>
+  <path d="M120 225 C180 90 300 65 360 70 C325 150 250 230 120 225Z"/>
+  <path d="M25 215 C110 180 230 115 335 82" fill="none" stroke="#d3c7ad" stroke-width="4"/>
+</g>
+
+<!-- Tambor abstrato -->
+<g transform="translate(220 520)">
+  <ellipse cx="170" cy="40" rx="125" ry="38" fill="#d8a258" stroke="#f1e7d5" stroke-width="4"/>
+  <path d="M45 40 L70 305 Q170 355 270 305 L295 40" fill="#50392b" stroke="#c8914f" stroke-width="5"/>
+  <ellipse cx="170" cy="305" rx="100" ry="31" fill="#2d211b" stroke="#c8914f" stroke-width="4"/>
+  <path d="M82 70 L120 295 M258 70 L220 295 M150 75 L150 320 M190 75 L190 320" stroke="#d4b37f" stroke-width="5"/>
+</g>
+
+<!-- Documentos históricos -->
+<g transform="translate(150 115) rotate(-5)">
+  <rect x="0" y="0" width="390" height="250" rx="14" fill="#d8cfb7" stroke="#c8914f" stroke-width="5"/>
+  <path d="M45 55 H330 M45 92 H315 M45 129 H340 M45 166 H280" stroke="#6a5746" stroke-width="8" stroke-linecap="round" opacity=".62"/>
+  <circle cx="320" cy="205" r="25" fill="#8b4f43" opacity=".76"/>
+</g>
+
+<!-- Matrizes em convergência -->
+<g transform="translate(570 690)" font-family="Inter,Arial,sans-serif" text-anchor="middle">
+  <line x1="0" y1="0" x2="210" y2="105" stroke="#c8914f" stroke-width="4"/>
+  <line x1="0" y1="210" x2="210" y2="105" stroke="#7fa18c" stroke-width="4"/>
+  <line x1="420" y1="0" x2="210" y2="105" stroke="#6f91a8" stroke-width="4"/>
+  <line x1="420" y1="210" x2="210" y2="105" stroke="#866aa0" stroke-width="4"/>
+  <circle cx="0" cy="0" r="55" fill="#4e3328" stroke="#c8914f" stroke-width="4"/>
+  <circle cx="0" cy="210" r="55" fill="#233f35" stroke="#7fa18c" stroke-width="4"/>
+  <circle cx="420" cy="0" r="55" fill="#243d4b" stroke="#6f91a8" stroke-width="4"/>
+  <circle cx="420" cy="210" r="55" fill="#3c2d49" stroke="#866aa0" stroke-width="4"/>
+  <circle cx="210" cy="105" r="82" fill="#171b20" stroke="#d8a258" stroke-width="6"/>
+  <text x="0" y="6" fill="#f1e7d5" font-size="19">ÁFRICA</text>
+  <text x="0" y="216" fill="#f1e7d5" font-size="19">AMERÍNDIA</text>
+  <text x="420" y="6" fill="#f1e7d5" font-size="19">ESPIRITISMO</text>
+  <text x="420" y="216" fill="#f1e7d5" font-size="19">CATOLICISMO</text>
+  <text x="210" y="96" fill="#e2b76c" font-size="24" font-weight="700">FORMAÇÃO</text>
+  <text x="210" y="126" fill="#f1e7d5" font-size="22">PLURAL</text>
+</g>
+
+<text x="800" y="955" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="20">
+Ilustração editorial — não representa um terreiro específico nem uma cerimônia real
+</text>
+</svg>

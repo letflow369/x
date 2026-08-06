@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 960" role="img" aria-labelledby="title desc">
+<title id="title">Representação abstrata da resposta de ansiedade</title>
+<desc id="desc">Ondas partem de uma área de alerta e se tornam mais organizadas em direção a um centro estável.</desc>
+<defs>
+  <radialGradient id="bg" cx="48%" cy="38%" r="80%">
+    <stop offset="0%" stop-color="#263b46"/>
+    <stop offset="100%" stop-color="#0b0c10"/>
+  </radialGradient>
+  <linearGradient id="wave" x1="0" x2="1">
+    <stop offset="0%" stop-color="#b97759"/>
+    <stop offset="45%" stop-color="#c8914f"/>
+    <stop offset="100%" stop-color="#6f9da2"/>
+  </linearGradient>
+</defs>
+<rect width="760" height="960" rx="44" fill="url(#bg)"/>
+<g fill="none" stroke-linecap="round">
+  <path d="M75 232 C180 125 270 340 380 232 S575 130 685 232" stroke="#b97759" stroke-width="9" opacity=".88"/>
+  <path d="M75 312 C180 205 270 420 380 312 S575 210 685 312" stroke="#c8914f" stroke-width="8" opacity=".82"/>
+  <path d="M75 392 C180 285 270 500 380 392 S575 290 685 392" stroke="#d5aa6a" stroke-width="7" opacity=".74"/>
+  <path d="M75 492 C175 425 280 560 380 492 S580 425 685 492" stroke="#789da8" stroke-width="7" opacity=".8"/>
+  <path d="M75 575 C175 520 280 630 380 575 S580 520 685 575" stroke="#6f9da2" stroke-width="6" opacity=".74"/>
+</g>
+<circle cx="380" cy="705" r="118" fill="#151a20" stroke="#6f9da2" stroke-width="5"/>
+<circle cx="380" cy="705" r="72" fill="#1d2b31" stroke="#f1e7d5" stroke-width="2" opacity=".95"/>
+<path d="M335 705 C350 675 365 675 380 705 C395 735 410 735 425 705" fill="none" stroke="url(#wave)" stroke-width="8" stroke-linecap="round"/>
+<text x="380" y="815" text-anchor="middle" fill="#f1e7d5" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">ALERTA → REGULAÇÃO</text>
+<text x="380" y="852" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="18">Ilustração educativa — não é instrumento diagnóstico</text>
+</svg>
