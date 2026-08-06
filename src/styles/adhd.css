@@ -1,0 +1,106 @@
+:root {
+  --adhd-blue: #56859a;
+  --adhd-blue-dark: #315d6c;
+  --adhd-violet: #866aa0;
+  --adhd-green: #5f8b6a;
+  --adhd-orange: #b8734f;
+  --adhd-risk: #b8665c;
+  --adhd-gold: #c8914f;
+}
+
+.adhd-hero {
+  background:
+    radial-gradient(circle at 14% 24%, rgb(86 133 154 / 23%), transparent 27rem),
+    radial-gradient(circle at 84% 20%, rgb(134 106 160 / 24%), transparent 29rem),
+    linear-gradient(135deg, #080b10 0%, #111721 52%, #21171c 100%);
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+
+.adhd-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 24rem);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(4.5rem, 10vw, 8rem);
+}
+
+.adhd-hero__content { position: relative; z-index: 2; min-width: 0; }
+.adhd-hero h1 { margin-block: var(--space-3); font-size: clamp(3.2rem, 9vw, 6.8rem); }
+.adhd-hero__subtitle { max-width: 42rem; margin-bottom: var(--space-4); font-family: var(--font-subtitle); font-size: clamp(1.45rem, 3vw, 2.25rem); color: var(--color-primary); }
+.adhd-hero__meta { font-family: var(--font-interface); font-size: 0.82rem; color: var(--color-text-muted); }
+.adhd-hero__intro { max-width: 45rem; font-size: clamp(1.1rem, 2vw, 1.32rem); }
+.adhd-hero__critical { max-width: 45rem; padding: var(--space-4); background: rgb(184 102 92 / 11%); border-left: 0.22rem solid var(--adhd-risk); border-radius: 0 var(--radius-medium) var(--radius-medium) 0; }
+.adhd-hero__visual { width: min(100%, 24rem); margin: 0; justify-self: end; }
+.adhd-hero__visual img { width: 100%; height: auto; max-height: 34rem; object-fit: contain; }
+.adhd-hero__visual figcaption { margin-top: var(--space-3); font-family: var(--font-interface); font-size: 0.74rem; line-height: 1.5; color: var(--color-text-muted); }
+
+.adhd-summary { background: linear-gradient(180deg, rgb(15 22 28 / 98%), rgb(11 12 16 / 100%)); border-bottom: 0.0625rem solid rgb(93 64 43 / 55%); }
+.adhd-summary__inner { width: min(100% - 2rem, var(--content-width)); margin-inline: auto; padding-block: clamp(3rem, 7vw, 5rem); }
+.adhd-domain-grid, .causation-grid, .associated-grid, .diagnosis-grid, .strategy-grid, .study-grid, .recent-evidence-grid { display: grid; gap: var(--space-4); }
+.adhd-domain-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.adhd-domain-grid article { padding: var(--space-5); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-top: 0.2rem solid var(--adhd-blue); border-radius: var(--radius-medium); }
+.adhd-domain-grid article:nth-child(2) { border-top-color: var(--adhd-violet); }
+.adhd-domain-grid article:nth-child(3) { border-top-color: var(--adhd-orange); }
+.adhd-domain-grid span, .recent-evidence-grid__label { display: block; margin-bottom: var(--space-2); font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-primary); }
+.adhd-domain-grid p, .causation-grid p, .study-grid p, .recent-evidence-grid p:last-child { margin-bottom: 0; color: var(--color-text-muted); }
+
+.evidence-label--warning { color: #d58a82; }
+.article-notice--warning { background: rgb(184 102 92 / 10%); border-left-color: var(--adhd-risk); }
+
+.adhd-timeline details { border-left-color: var(--adhd-blue); }
+
+.causation-grid, .associated-grid, .diagnosis-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-6); }
+.causation-grid article, .associated-grid article, .diagnosis-grid article, .strategy-grid article, .study-grid article, .recent-evidence-grid article { padding: var(--space-5); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-left: 0.18rem solid var(--adhd-blue); border-radius: var(--radius-medium); }
+.causation-grid article:nth-child(2), .associated-grid article:nth-child(2), .diagnosis-grid article:nth-child(2) { border-left-color: var(--adhd-violet); }
+.causation-grid article:nth-child(3), .associated-grid article:nth-child(3), .diagnosis-grid article:nth-child(3) { border-left-color: var(--adhd-green); }
+.associated-grid ul, .diagnosis-grid ul, .strategy-grid ul { padding-left: 1.2rem; color: var(--color-text-muted); }
+
+.life-stage-tabs { margin-top: var(--space-6); }
+.life-stage-tabs__list { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4); }
+.life-stage-tabs__list button { min-height: 2.75rem; padding: 0.55rem 0.85rem; font-family: var(--font-interface); font-weight: 700; color: var(--color-text-muted); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 62%); border-radius: 999px; cursor: pointer; }
+.life-stage-tabs__list button[aria-selected="true"] { color: var(--color-on-primary); background: var(--color-primary); border-color: var(--color-primary); }
+.life-stage-tabs__list button:focus-visible { outline: 0.18rem solid var(--color-primary-hover); outline-offset: 0.18rem; }
+.life-stage-tabs__panel { min-height: 13rem; padding: var(--space-6); background: linear-gradient(145deg, rgb(86 133 154 / 15%), rgb(22 21 23 / 98%)); border: 0.0625rem solid rgb(86 133 154 / 60%); border-radius: var(--radius-medium); }
+.life-stage-tabs__panel p { margin-bottom: 0; font-size: 1.08rem; color: var(--color-text-muted); }
+
+.treatment-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+.treatment-grid article { display: grid; grid-template-columns: 3rem minmax(0, 1fr); column-gap: var(--space-4); padding: var(--space-5); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-radius: var(--radius-medium); }
+.treatment-grid span { grid-row: 1 / span 2; display: inline-grid; width: 3rem; height: 3rem; place-items: center; font-family: var(--font-title); color: var(--color-on-primary); background: var(--adhd-gold); border-radius: 50%; }
+.treatment-grid h3 { margin-top: 0; }
+.treatment-grid p { margin-bottom: 0; color: var(--color-text-muted); }
+
+.strategy-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.strategy-grid article { border-left-color: var(--adhd-green); }
+
+.recent-evidence-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.recent-evidence-grid article { border-left-color: var(--adhd-gold); }
+.recent-evidence-grid article:nth-child(2n) { border-left-color: var(--adhd-blue); }
+
+.adhd-accordion { display: grid; gap: var(--space-3); margin-top: var(--space-6); }
+.adhd-accordion details { background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: var(--radius-medium); }
+.adhd-accordion summary { padding: var(--space-4) var(--space-5); font-family: var(--font-subtitle); font-size: 1.08rem; cursor: pointer; }
+.adhd-accordion details > p { padding: 0 var(--space-5) var(--space-5); color: var(--color-text-muted); }
+.adhd-accordion details[open] { border-left: 0.22rem solid var(--adhd-gold); }
+
+.study-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-6); }
+.study-grid article:nth-child(2n) { border-left-color: var(--adhd-violet); }
+
+@media (max-width: 68rem) {
+  .adhd-hero__inner { grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem); }
+  .adhd-domain-grid, .causation-grid, .associated-grid, .diagnosis-grid, .study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 48rem) {
+  .adhd-hero__inner, .adhd-domain-grid, .causation-grid, .associated-grid, .diagnosis-grid, .treatment-grid, .strategy-grid, .study-grid, .recent-evidence-grid { grid-template-columns: 1fr; }
+  .adhd-hero__visual { justify-self: center; width: min(100%, 19rem); }
+  .life-stage-tabs__list { display: grid; grid-template-columns: 1fr; }
+  .life-stage-tabs__list button { width: 100%; min-width: 0; overflow-wrap: anywhere; }
+  .treatment-grid article { grid-template-columns: 2.8rem minmax(0, 1fr); }
+  .treatment-grid span { width: 2.8rem; height: 2.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .life-stage-tabs__panel { scroll-behavior: auto; }
+}

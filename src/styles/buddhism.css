@@ -1,0 +1,491 @@
+:root {
+  --buddhist-gold: #c8914f;
+  --buddhist-gold-light: #e2b76c;
+  --buddhist-earth: #735444;
+  --buddhist-saffron: #a86e3e;
+  --buddhist-olive: #59634f;
+  --buddhist-indigo: #535a73;
+}
+
+.buddhism-hero {
+  background:
+    radial-gradient(circle at 13% 20%, rgb(200 145 79 / 18%), transparent 24rem),
+    radial-gradient(circle at 84% 18%, rgb(115 84 68 / 30%), transparent 28rem),
+    linear-gradient(135deg, #090a0d 0%, #111419 52%, #221814 100%);
+}
+
+.buddhism-hero__portrait img {
+  object-position: center 47%;
+  filter: saturate(0.72) contrast(1.05) brightness(0.76);
+}
+
+.buddhism-summary {
+  background:
+    linear-gradient(180deg, rgb(24 21 19 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+
+.buddhism-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.buddhism-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.buddhism-summary-grid article {
+  min-height: 100%;
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(115 84 68 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.18rem solid var(--buddhist-gold);
+  border-radius: var(--radius-medium);
+}
+
+.buddhism-summary-grid span,
+.eightfold-grid__label,
+.tradition-comparison__label,
+.canon-grid__label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--buddhist-gold);
+}
+
+.buddhism-summary-grid strong {
+  display: block;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-subtitle);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.buddhism-summary-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.evidence-label--concept { color: #b6a1ca; }
+.evidence-label--reconstruction { color: #d5ab72; }
+.evidence-label--primary { color: #82b099; }
+.evidence-label--analysis { color: #d1a26a; }
+.evidence-label--controversy { color: #d18e84; }
+.evidence-label--debated { color: #c89c87; }
+
+.origin-grid,
+.eightfold-grid,
+.value-practice-grid,
+.study-grid,
+.critical-topic-grid,
+.glossary-grid,
+.canon-grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.origin-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.origin-grid article,
+.value-practice-grid article,
+.study-grid article,
+.critical-topic-grid article,
+.canon-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-left: 0.18rem solid var(--buddhist-earth);
+  border-radius: var(--radius-medium);
+}
+
+.origin-grid__middle {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(145deg, rgb(200 145 79 / 13%), rgb(22 21 23 / 98%)) !important;
+  border-left-color: var(--buddhist-gold) !important;
+}
+
+.origin-grid p,
+.value-practice-grid p,
+.study-grid p,
+.critical-topic-grid p:last-child,
+.canon-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.life-path,
+.expansion-route {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-6) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.life-path li,
+.expansion-route li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+  padding: var(--space-4);
+  background:
+    linear-gradient(90deg, rgb(115 84 68 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-radius: var(--radius-medium);
+}
+
+.life-path li:not(:last-child)::after,
+.expansion-route li:not(:last-child)::after {
+  position: absolute;
+  bottom: -1rem;
+  left: 2.45rem;
+  z-index: 1;
+  width: 0.1rem;
+  height: 1rem;
+  content: "";
+  background: var(--buddhist-gold);
+}
+
+.life-path li > span,
+.expansion-route li > span {
+  display: inline-grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  font-family: var(--font-title);
+  color: var(--color-on-primary);
+  background: var(--buddhist-gold-light);
+  border-radius: 50%;
+}
+
+.life-path h3,
+.expansion-route h3 {
+  margin-bottom: var(--space-2);
+}
+
+.life-path p,
+.expansion-route p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.truth-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.truth-grid article {
+  min-height: 100%;
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(168 110 62 / 16%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.truth-grid span {
+  display: inline-grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-bottom: var(--space-3);
+  place-items: center;
+  font-family: var(--font-title);
+  color: var(--color-on-primary);
+  background: var(--buddhist-gold-light);
+  border-radius: 50%;
+}
+
+.truth-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.eightfold-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.eightfold-grid section,
+.tradition-comparison article {
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(83 90 115 / 17%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(83 90 115 / 66%);
+  border-radius: var(--radius-medium);
+}
+
+.eightfold-grid ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.buddhism-concept-grid .concept-card {
+  border-top: 0.18rem solid var(--buddhist-earth);
+}
+
+.buddhism-timeline {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(15rem, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+  padding: 0 0 var(--space-3);
+  overflow-x: auto;
+  list-style: none;
+  scroll-snap-type: x proximity;
+}
+
+.buddhism-timeline li {
+  min-height: 19rem;
+  padding: var(--space-5);
+  background:
+    linear-gradient(155deg, rgb(115 84 68 / 20%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.2rem solid var(--buddhist-gold);
+  border-radius: var(--radius-medium);
+  scroll-snap-align: start;
+}
+
+.buddhism-timeline time {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-title);
+  font-size: 1.12rem;
+  color: var(--buddhist-gold-light);
+}
+
+.buddhism-timeline p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.buddhism-balance {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background: rgb(115 84 68 / 18%);
+  border-left: 0.22rem solid var(--buddhist-earth);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.tradition-comparison {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.tradition-comparison p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.value-practice-grid,
+.study-grid,
+.critical-topic-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.precepts-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(89 99 79 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(89 99 79 / 65%);
+  border-radius: var(--radius-medium);
+}
+
+.precepts-panel ol {
+  margin: 0;
+  padding-left: 1.3rem;
+  color: var(--color-text-muted);
+}
+
+.buddhism-literature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 23rem);
+  gap: var(--space-6);
+  align-items: start;
+  margin-top: var(--space-6);
+}
+
+.canon-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0;
+  margin-bottom: var(--space-5);
+}
+
+.canon-grid article {
+  border-left-color: var(--buddhist-indigo);
+}
+
+.buddhism-text-accordion {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.buddhism-text-accordion details,
+.glossary-grid details {
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.buddhism-text-accordion summary,
+.glossary-grid summary {
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-subtitle);
+  font-size: 1.08rem;
+  cursor: pointer;
+}
+
+.buddhism-text-accordion details > p,
+.glossary-grid details > p {
+  padding: 0 var(--space-5) var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.buddhism-text-accordion details > p:last-child,
+.glossary-grid details > p:last-child {
+  margin-bottom: 0;
+}
+
+.buddhism-manuscript {
+  justify-self: end;
+  width: min(100%, 23rem);
+  margin: 0;
+}
+
+.buddhism-manuscript picture {
+  display: block;
+  overflow: hidden;
+  background: #e9dfce;
+  border: 0.0625rem solid rgb(200 145 79 / 55%);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.buddhism-manuscript img {
+  width: 100%;
+  height: auto;
+  max-height: 24rem;
+  object-fit: contain;
+}
+
+.buddhism-manuscript figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.critical-topic-grid article {
+  background:
+    linear-gradient(145deg, rgb(125 67 59 / 16%), rgb(22 21 23 / 98%));
+  border-left-color: #7d433b;
+}
+
+.buddhism-myth-grid article {
+  border-left-color: #7d433b;
+}
+
+.glossary-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.buddhism-reference-columns {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: var(--space-6);
+}
+
+.buddhism-reference-columns > section:first-child {
+  align-self: start;
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 45%);
+  border-radius: var(--radius-medium);
+}
+
+.buddhism-reference-columns ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 62rem) {
+  .buddhism-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .truth-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .canon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buddhism-reference-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .buddhism-summary-grid,
+  .origin-grid,
+  .truth-grid,
+  .eightfold-grid,
+  .tradition-comparison,
+  .value-practice-grid,
+  .study-grid,
+  .critical-topic-grid,
+  .precepts-panel,
+  .buddhism-literature-grid,
+  .glossary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .origin-grid__middle {
+    grid-column: auto;
+  }
+
+  .buddhism-timeline {
+    grid-template-columns: 1fr;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .buddhism-timeline li {
+    min-height: 0;
+  }
+
+  .buddhism-manuscript {
+    justify-self: center;
+    width: min(100%, 22rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buddhism-timeline {
+    scroll-behavior: auto;
+  }
+}

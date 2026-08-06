@@ -1,0 +1,380 @@
+:root {
+  --feng-jade: #5f8574;
+  --feng-jade-dark: #315447;
+  --feng-gold: #c8914f;
+  --feng-gold-light: #e2b76c;
+  --feng-water: #557b8b;
+  --feng-earth: #8a6449;
+  --feng-risk: #b8665c;
+  --feng-established: #82b099;
+}
+
+.feng-shui-hero {
+  background:
+    radial-gradient(circle at 12% 22%, rgb(95 133 116 / 20%), transparent 26rem),
+    radial-gradient(circle at 83% 18%, rgb(85 123 139 / 25%), transparent 29rem),
+    linear-gradient(135deg, #080b0d 0%, #11171a 52%, #1a1712 100%);
+}
+
+.feng-shui-hero__portrait img {
+  object-position: center 52%;
+  filter: saturate(0.80) contrast(1.07) brightness(0.78);
+}
+
+.feng-shui-summary {
+  background: linear-gradient(180deg, rgb(16 24 21 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+
+.feng-shui-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.feng-shui-summary-grid,
+.origin-grid,
+.value-grid,
+.study-grid,
+.evidence-panel-grid,
+.final-summary {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.feng-shui-summary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feng-shui-summary-grid article {
+  padding: var(--space-5);
+  background: linear-gradient(145deg, rgb(95 133 116 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.18rem solid var(--feng-jade);
+  border-radius: var(--radius-medium);
+}
+
+.feng-shui-summary-grid article:nth-child(2) {
+  border-top-color: var(--feng-water);
+}
+
+.feng-shui-summary-grid article:nth-child(3) {
+  border-top-color: var(--feng-gold);
+}
+
+.feng-shui-summary-grid span,
+.school-comparison__label,
+.evidence-panel__label,
+.final-summary span {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.feng-shui-summary-grid strong {
+  display: block;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.feng-shui-summary-grid p,
+.origin-grid p,
+.value-grid p,
+.study-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.evidence-label--concept { color: #b6a1ca; }
+.evidence-label--reconstruction { color: #d5ab72; }
+.evidence-label--analysis { color: #d1a26a; }
+.evidence-label--primary { color: #82b099; }
+
+.origin-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: var(--space-6);
+}
+
+.origin-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-left: 0.18rem solid var(--feng-jade);
+  border-radius: var(--radius-medium);
+}
+
+.origin-grid ul,
+.school-comparison ul,
+.evidence-panel ul,
+.feng-shui-reference-columns ul {
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.guo-pu-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 0.65fr);
+  gap: var(--space-5);
+  align-items: stretch;
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(138 100 73 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(138 100 73 / 60%);
+  border-radius: var(--radius-medium);
+}
+
+.guo-pu-panel blockquote {
+  display: grid;
+  margin: 0;
+  padding: var(--space-5);
+  place-items: center;
+  font-style: italic;
+  background: rgb(11 12 16 / 55%);
+  border-left: 0.2rem solid var(--feng-gold);
+  border-radius: var(--radius-medium);
+}
+
+.guo-pu-panel blockquote p {
+  margin: 0;
+}
+
+.feng-shui-timeline {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(15rem, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+  padding: 0 0 var(--space-3);
+  overflow-x: auto;
+  list-style: none;
+  scroll-snap-type: x proximity;
+}
+
+.feng-shui-timeline li {
+  min-height: 19rem;
+  padding: var(--space-5);
+  background:
+    linear-gradient(155deg, rgb(95 133 116 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.2rem solid var(--feng-gold);
+  border-radius: var(--radius-medium);
+  scroll-snap-align: start;
+}
+
+.feng-shui-timeline time {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-title);
+  font-size: 1.08rem;
+  color: var(--feng-gold-light);
+}
+
+.feng-shui-timeline p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.feng-shui-concept-grid .concept-card {
+  border-top: 0.18rem solid var(--feng-jade);
+}
+
+.school-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.school-comparison article {
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(85 123 139 / 16%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(85 123 139 / 65%);
+  border-radius: var(--radius-medium);
+}
+
+.school-comparison__note {
+  padding-top: var(--space-3);
+  color: var(--color-text-muted);
+  border-top: 0.0625rem solid rgb(93 64 43 / 45%);
+}
+
+.luopan-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(16rem, 22rem);
+  gap: var(--space-6);
+  align-items: center;
+  margin-top: var(--space-6);
+}
+
+.luopan-figure {
+  justify-self: end;
+  width: min(100%, 22rem);
+  margin: 0;
+}
+
+.luopan-figure picture {
+  display: block;
+  overflow: hidden;
+  background: #28231f;
+  border: 0.0625rem solid rgb(200 145 79 / 55%);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.luopan-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 27rem;
+  object-fit: contain;
+}
+
+.luopan-figure figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.value-grid,
+.study-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: var(--space-6);
+}
+
+.value-grid article,
+.study-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-left: 0.18rem solid var(--feng-jade);
+  border-radius: var(--radius-medium);
+}
+
+.evidence-panel-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: var(--space-6);
+}
+
+.evidence-panel {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-top: 0.22rem solid var(--feng-established);
+  border-radius: var(--radius-medium);
+}
+
+.evidence-panel--partial {
+  border-top-color: var(--feng-gold);
+}
+
+.evidence-panel--unsupported {
+  border-top-color: var(--feng-risk);
+}
+
+.evidence-panel p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.feng-shui-myth-grid article {
+  border-left-color: var(--feng-risk);
+}
+
+.final-summary {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-block: var(--space-6);
+}
+
+.final-summary article {
+  padding: var(--space-5);
+  background: rgb(22 21 23 / 78%);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-radius: var(--radius-medium);
+}
+
+.final-summary article:nth-child(1) {
+  border-top: 0.18rem solid var(--feng-established);
+}
+
+.final-summary article:nth-child(2) {
+  border-top: 0.18rem solid var(--feng-gold);
+}
+
+.final-summary article:nth-child(3) {
+  border-top: 0.18rem solid var(--feng-risk);
+}
+
+.final-summary p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.feng-shui-reference-columns {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: var(--space-6);
+}
+
+.feng-shui-reference-columns > section:first-child {
+  align-self: start;
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 45%);
+  border-radius: var(--radius-medium);
+}
+
+@media (max-width: 62rem) {
+  .value-grid,
+  .study-grid,
+  .evidence-panel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feng-shui-reference-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .feng-shui-summary-grid,
+  .origin-grid,
+  .guo-pu-panel,
+  .school-comparison,
+  .luopan-grid,
+  .value-grid,
+  .study-grid,
+  .evidence-panel-grid,
+  .final-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .feng-shui-timeline {
+    grid-template-columns: 1fr;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .feng-shui-timeline li {
+    min-height: 0;
+  }
+
+  .luopan-figure {
+    justify-self: center;
+    width: min(100%, 20rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feng-shui-timeline {
+    scroll-behavior: auto;
+  }
+}

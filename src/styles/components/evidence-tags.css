@@ -1,0 +1,47 @@
+.evidence-tag {
+  --evidence-tag-color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  min-height: 1.85rem;
+  padding: 0.25rem 0.62rem;
+  font-family: var(--font-interface);
+  font-size: 0.69rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--evidence-tag-color);
+  background: color-mix(in srgb, var(--evidence-tag-color) 10%, var(--color-surface));
+  border: 0.0625rem solid currentColor;
+  border-radius: 999px;
+}
+
+.evidence-tag::before {
+  flex: 0 0 auto;
+  width: 0.48rem;
+  aspect-ratio: 1;
+  content: "";
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.evidence-tag--documented { --evidence-tag-color: #80b8c2; }
+.evidence-tag--institutional { --evidence-tag-color: #8fc8a0; }
+.evidence-tag--academic { --evidence-tag-color: #d5ab72; }
+.evidence-tag--doctrine { --evidence-tag-color: #bba0cf; }
+.evidence-tag--unverified { --evidence-tag-color: #d58a82; }
+.evidence-tag--controversy { --evidence-tag-color: #d39a6d; }
+.evidence-tag--official { --evidence-tag-color: #90b9a0; }
+.evidence-tag--tradition { --evidence-tag-color: #caa46f; }
+.evidence-tag--belief { --evidence-tag-color: #b9a0ca; }
+.evidence-tag--plurality { --evidence-tag-color: #83aab9; }
+.evidence-tag--rights { --evidence-tag-color: #c98578; }
+.evidence-tag--terminology { --evidence-tag-color: #c99b6f; }
+.evidence-tag--ethnography { --evidence-tag-color: #86ac97; }
+.evidence-tag--oral { --evidence-tag-color: #8fa9bd; }
+.evidence-tag--myth { --evidence-tag-color: #c8786e; }
+
+@supports not (background: color-mix(in srgb, white 10%, black)) {
+  .evidence-tag { background: var(--color-surface); }
+}

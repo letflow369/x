@@ -1,0 +1,41 @@
+:root {
+  color-scheme: dark;
+
+  --color-background: #0b0c10;
+  --color-surface: #161517;
+  --color-surface-elevated: #241c19;
+  --color-border: #5d402b;
+
+  --color-primary: #c8914f;
+  --color-primary-hover: #d8a258;
+  --color-on-primary: #17120e;
+
+  --color-secondary: #23404a;
+  --color-secondary-light: #315766;
+
+  --color-text: #f1e7d5;
+  --color-text-muted: #b9a994;
+
+  --font-title: "Cinzel Decorative", Georgia, serif;
+  --font-subtitle: "Marcellus", Georgia, serif;
+  --font-body: "Spectral", Georgia, serif;
+  --font-interface: "Inter", Arial, sans-serif;
+
+  --content-width: 72rem;
+  --reading-width: 46rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --radius-small: 0.5rem;
+  --radius-medium: 0.875rem;
+  --radius-large: 1.25rem;
+  --shadow-soft: 0 0.75rem 2rem rgb(0 0 0 / 35%);
+  --focus-ring: 0 0 0 0.2rem rgb(216 162 88 / 45%);
+}

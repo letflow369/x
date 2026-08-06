@@ -1,0 +1,386 @@
+:root {
+  --wicca-gold: #c8914f;
+  --wicca-gold-light: #e2b76c;
+  --wicca-violet: #65506f;
+  --wicca-green: #4f6556;
+  --wicca-wine: #75444f;
+  --wicca-blue: #3f5666;
+}
+
+.wicca-hero {
+  background:
+    radial-gradient(circle at 13% 20%, rgb(200 145 79 / 18%), transparent 24rem),
+    radial-gradient(circle at 84% 18%, rgb(101 80 111 / 32%), transparent 28rem),
+    linear-gradient(135deg, #090a0d 0%, #111419 52%, #1d141c 100%);
+}
+
+.wicca-hero::after {
+  border-color: rgb(200 145 79 / 20%);
+}
+
+.wicca-hero__portrait img {
+  object-position: center 48%;
+  filter: saturate(0.82) contrast(1.08) brightness(0.78);
+}
+
+.wicca-summary {
+  background:
+    linear-gradient(180deg, rgb(24 20 27 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+
+.wicca-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.wicca-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.wicca-summary-grid article {
+  min-height: 100%;
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(101 80 111 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.18rem solid var(--wicca-gold);
+  border-radius: var(--radius-medium);
+}
+
+.wicca-summary-grid span,
+.wicca-tradition-grid__label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wicca-gold);
+}
+
+.wicca-summary-grid strong {
+  display: block;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.wicca-summary-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.evidence-label--tradition { color: #b6a1ca; }
+.evidence-label--reconstruction { color: #d5ab72; }
+.evidence-label--belief { color: #a3b8d0; }
+.evidence-label--analysis { color: #d1a26a; }
+.evidence-label--controversy { color: #d18e84; }
+.evidence-label--debated { color: #c89c87; }
+
+.definition-comparison,
+.influence-grid,
+.belief-grid,
+.principle-grid,
+.sabbat-grid,
+.wicca-tradition-grid,
+.study-grid,
+.critical-topic-grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.definition-comparison {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.influence-grid,
+.belief-grid,
+.study-grid,
+.critical-topic-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.principle-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sabbat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.definition-comparison article,
+.influence-grid article,
+.belief-grid article,
+.principle-grid article,
+.study-grid article,
+.critical-topic-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-left: 0.18rem solid var(--wicca-violet);
+  border-radius: var(--radius-medium);
+}
+
+.definition-comparison p,
+.influence-grid p,
+.belief-grid p,
+.principle-grid p,
+.study-grid p,
+.critical-topic-grid p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.wicca-history-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 23rem);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.wicca-book {
+  justify-self: end;
+  width: min(100%, 23rem);
+  margin: 0;
+}
+
+.wicca-book picture {
+  display: block;
+  overflow: hidden;
+  background: #261c18;
+  border: 0.0625rem solid rgb(200 145 79 / 55%);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.wicca-book img {
+  width: 100%;
+  height: auto;
+  max-height: 25rem;
+  object-fit: contain;
+}
+
+.wicca-book figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.wicca-timeline {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(15rem, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+  padding: 0 0 var(--space-3);
+  overflow-x: auto;
+  list-style: none;
+  scroll-snap-type: x proximity;
+}
+
+.wicca-timeline li {
+  min-height: 19rem;
+  padding: var(--space-5);
+  background:
+    linear-gradient(155deg, rgb(101 80 111 / 20%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.2rem solid var(--wicca-gold);
+  border-radius: var(--radius-medium);
+  scroll-snap-align: start;
+}
+
+.wicca-timeline time {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-title);
+  font-size: 1.12rem;
+  color: var(--wicca-gold-light);
+}
+
+.wicca-timeline p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.belief-grid article {
+  border-left-color: var(--wicca-green);
+}
+
+.principle-grid article {
+  border-left-color: var(--wicca-blue);
+}
+
+.sabbat-grid article {
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(79 101 86 / 16%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(79 101 86 / 65%);
+  border-radius: var(--radius-medium);
+}
+
+.sabbat-grid span {
+  display: inline-grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-bottom: var(--space-3);
+  place-items: center;
+  font-family: var(--font-title);
+  color: var(--color-on-primary);
+  background: var(--wicca-gold-light);
+  border-radius: 50%;
+}
+
+.sabbat-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.wicca-practice-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ritual-object-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.ritual-object-list span {
+  padding: 0.55rem 0.75rem;
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: rgb(101 80 111 / 18%);
+  border: 0.0625rem solid rgb(101 80 111 / 65%);
+  border-radius: 999px;
+}
+
+.wicca-balance {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background: rgb(101 80 111 / 18%);
+  border-left: 0.22rem solid var(--wicca-violet);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.wicca-tradition-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wicca-tradition-grid article {
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(63 86 102 / 16%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(63 86 102 / 62%);
+  border-radius: var(--radius-medium);
+}
+
+.wicca-tradition-grid p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.critical-topic-grid article {
+  background:
+    linear-gradient(145deg, rgb(117 68 79 / 16%), rgb(22 21 23 / 98%));
+  border-left-color: var(--wicca-wine);
+}
+
+.wicca-myth-grid article {
+  border-left-color: var(--wicca-wine);
+}
+
+.wicca-faq details {
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.wicca-faq summary {
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-subtitle);
+  font-size: 1.08rem;
+  cursor: pointer;
+}
+
+.wicca-faq details > p {
+  padding: 0 var(--space-5) var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.wicca-reference-columns {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: var(--space-6);
+}
+
+.wicca-reference-columns > section:first-child {
+  align-self: start;
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 45%);
+  border-radius: var(--radius-medium);
+}
+
+.wicca-reference-columns ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 68rem) {
+  .wicca-summary-grid,
+  .sabbat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wicca-reference-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .wicca-summary-grid,
+  .definition-comparison,
+  .influence-grid,
+  .wicca-history-grid,
+  .belief-grid,
+  .principle-grid,
+  .sabbat-grid,
+  .wicca-practice-grid,
+  .wicca-tradition-grid,
+  .study-grid,
+  .critical-topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wicca-timeline {
+    grid-template-columns: 1fr;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .wicca-timeline li {
+    min-height: 0;
+  }
+
+  .wicca-book {
+    justify-self: center;
+    width: min(100%, 22rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wicca-timeline {
+    scroll-behavior: auto;
+  }
+}

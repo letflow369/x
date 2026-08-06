@@ -1,0 +1,291 @@
+.theosophy-article {
+  --theo-gold: #c8914f;
+  --theo-gold-light: #e0b36e;
+  --theo-blue: #6f91a8;
+  --theo-violet: #9c7fae;
+  --theo-green: #6f9c83;
+  --theo-red: #bd756f;
+}
+
+.theosophy-hero {
+  position: relative;
+  display: grid;
+  min-height: min(52rem, calc(100svh - 4.75rem));
+  overflow: hidden;
+  isolation: isolate;
+  border-bottom: 0.0625rem solid rgb(200 145 79 / 55%);
+}
+
+.theosophy-hero__image,
+.theosophy-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.theosophy-hero__image { object-fit: cover; object-position: center; }
+.theosophy-hero__overlay {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgb(7 9 12 / 98%) 0%, rgb(11 12 16 / 92%) 42%, rgb(11 12 16 / 45%) 75%, rgb(11 12 16 / 68%) 100%),
+    linear-gradient(0deg, var(--color-background), transparent 44%);
+}
+
+.theosophy-hero__inner {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.theosophy-hero h1 {
+  max-width: 12ch;
+  margin-bottom: var(--space-3);
+  font-size: clamp(2.9rem, 8vw, 6.8rem);
+  color: var(--theo-gold-light);
+  text-shadow: 0 0 2.4rem rgb(200 145 79 / 28%);
+}
+
+.theosophy-hero__subtitle {
+  max-width: 34ch;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.35rem, 3vw, 2.3rem);
+  line-height: 1.25;
+}
+
+.theosophy-hero__meta {
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.theosophy-hero__intro,
+.theosophy-hero__critical { max-width: 47rem; color: #ddd2c2; text-shadow: 0 0.12rem 0.8rem rgb(0 0 0 / 88%); }
+.theosophy-hero__intro { font-size: 1.16rem; }
+.theosophy-hero__critical {
+  margin-block: var(--space-5);
+  padding: var(--space-4);
+  background: rgb(111 145 168 / 16%);
+  border-left: 0.22rem solid var(--theo-blue);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.theosophy-summary {
+  background: linear-gradient(180deg, rgb(24 31 39 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+.theosophy-summary__inner { width: min(100% - 2rem, var(--content-width)); margin-inline: auto; padding-block: clamp(3rem, 7vw, 5rem); }
+.theosophy-summary-grid,
+.evidence-guide__grid,
+.context-grid,
+.representative-grid,
+.values-grid,
+.teaching-grid,
+.two-sided-grid,
+.importance-grid,
+.controversy-grid,
+.benefit-grid,
+.related-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+.theosophy-summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.theosophy-summary-grid article,
+.evidence-guide__grid article,
+.context-grid article,
+.representative-grid article,
+.values-grid article,
+.teaching-grid article,
+.two-sided-grid article,
+.importance-grid article,
+.controversy-grid article,
+.benefit-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-radius: var(--radius-medium);
+}
+.theosophy-summary-grid article { border-top: 0.18rem solid var(--theo-gold); }
+.theosophy-summary-grid article:nth-child(2n) { border-top-color: var(--theo-blue); }
+.theosophy-summary-grid article:nth-child(3n) { border-top-color: var(--theo-violet); }
+.theosophy-summary-grid p,
+.evidence-guide__grid p,
+.context-grid p,
+.representative-grid p,
+.values-grid p,
+.teaching-grid p,
+.two-sided-grid p,
+.importance-grid p,
+.controversy-grid p,
+.benefit-grid p { margin-bottom: 0; color: var(--color-text-muted); }
+
+.evidence-guide__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.evidence-guide__grid article { display: grid; gap: var(--space-3); align-content: start; }
+
+.context-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-6); }
+.context-grid article { border-left: 0.18rem solid var(--theo-blue); }
+.context-grid article:nth-child(2n) { border-left-color: var(--theo-violet); }
+
+.timeline-controls { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-3); align-items: center; margin-top: var(--space-6); }
+.timeline-controls > button {
+  width: 2.8rem; height: 2.8rem; font-family: var(--font-interface); font-weight: 700;
+  color: var(--color-text); background: var(--color-surface); border: 0.0625rem solid rgb(111 145 168 / 65%); border-radius: 50%; cursor: pointer;
+}
+.timeline-periods { display: flex; gap: var(--space-2); overflow-x: auto; padding: var(--space-2); scrollbar-width: thin; }
+.timeline-periods button {
+  flex: 0 0 auto; min-height: 2.4rem; padding: 0.45rem 0.75rem; font-family: var(--font-interface); font-size: 0.75rem; font-weight: 700;
+  color: var(--color-text-muted); background: rgb(22 21 23 / 88%); border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: 999px; cursor: pointer;
+}
+.timeline-periods button[aria-selected="true"] { color: var(--color-on-primary); background: var(--color-primary); border-color: var(--color-primary); }
+.timeline-controls button:focus-visible,
+.copy-reference:focus-visible { outline: 0.18rem solid var(--color-primary-hover); outline-offset: 0.18rem; }
+.theosophy-timeline {
+  display: grid; grid-template-columns: repeat(9, minmax(15rem, 1fr)); gap: var(--space-4); margin: var(--space-4) 0 0;
+  padding: 0 0 var(--space-3); overflow-x: auto; list-style: none; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+}
+.theosophy-timeline li {
+  min-height: 18rem; padding: var(--space-5); background: linear-gradient(155deg, rgb(111 145 168 / 16%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%); border-top: 0.2rem solid var(--theo-gold); border-radius: var(--radius-medium); scroll-snap-align: start;
+}
+.theosophy-timeline li.is-current { border-color: var(--theo-gold); box-shadow: 0 0 0 0.12rem rgb(200 145 79 / 24%); }
+.theosophy-timeline time { display: block; margin-bottom: var(--space-4); font-family: var(--font-title); font-size: 1.04rem; color: var(--color-primary); }
+.theosophy-timeline p { margin-bottom: 0; color: var(--color-text-muted); }
+
+.representative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.representative-grid article { border-top: 0.18rem solid var(--theo-gold); }
+.representative-grid article:nth-child(2) { border-top-color: var(--theo-blue); }
+.representative-grid article:nth-child(3) { border-top-color: var(--theo-violet); }
+.representative-grid article:nth-child(4) { border-top-color: var(--theo-green); }
+.representative-date { margin-bottom: var(--space-2) !important; font-family: var(--font-interface); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; color: var(--color-primary) !important; }
+.archive-callout { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--space-4); align-items: start; margin-top: var(--space-5); padding: var(--space-5); background: rgb(111 145 168 / 10%); border: 0.0625rem solid rgb(111 145 168 / 58%); border-radius: var(--radius-medium); }
+.archive-callout p { margin: 0; color: var(--color-text-muted); }
+
+.objects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); margin: var(--space-6) 0; padding: 0; list-style: none; }
+.objects-grid li { display: grid; grid-template-columns: 2.8rem minmax(0, 1fr); gap: var(--space-3); padding: var(--space-5); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-radius: var(--radius-medium); }
+.objects-grid li > span,
+.phase-list li > span { display: inline-grid; width: 2.8rem; height: 2.8rem; place-items: center; font-family: var(--font-title); color: var(--color-on-primary); background: var(--theo-gold); border-radius: 50%; }
+.objects-grid h3,
+.phase-list h3 { margin-bottom: var(--space-2); }
+.objects-grid p,
+.phase-list p { margin: 0; color: var(--color-text-muted); }
+.values-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-6); }
+.values-grid article { border-left: 0.18rem solid var(--theo-green); }
+.values-grid article:nth-child(2n) { border-left-color: var(--theo-blue); }
+.values-grid article:nth-child(3n) { border-left-color: var(--theo-violet); }
+
+.teaching-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.teaching-grid article { border-left: 0.18rem solid var(--theo-violet); }
+.teaching-grid article:nth-child(2n) { border-left-color: var(--theo-red); }
+.article-notice--warning { background: rgb(189 117 111 / 10%); border-left-color: var(--theo-red); }
+
+.comparison-table-wrap,
+.classification-table-wrap { margin-top: var(--space-6); overflow-x: auto; border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: var(--radius-medium); }
+.comparison-table-wrap:focus-visible,
+.classification-table-wrap:focus-visible { outline: 0.18rem solid var(--color-primary); outline-offset: 0.2rem; }
+.comparison-table,
+.classification-table { width: 100%; min-width: 44rem; border-collapse: collapse; background: var(--color-surface); }
+.comparison-table th,
+.comparison-table td,
+.classification-table th,
+.classification-table td { padding: 1rem; text-align: left; vertical-align: top; border-bottom: 0.0625rem solid rgb(93 64 43 / 42%); }
+.comparison-table th,
+.classification-table th { font-family: var(--font-subtitle); font-size: 1.08rem; color: var(--color-primary); background: rgb(11 12 16 / 78%); }
+.comparison-table tr:last-child td,
+.classification-table tr:last-child td { border-bottom: 0; }
+
+.influence-map { display: grid; gap: var(--space-5); margin-top: var(--space-6); padding: var(--space-5); background: linear-gradient(145deg, rgb(35 64 74 / 28%), rgb(22 21 23 / 96%)); border: 0.0625rem solid rgb(93 64 43 / 62%); border-radius: var(--radius-large); }
+.influence-map__sources,
+.influence-map__results { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); }
+.influence-map__sources span,
+.influence-map__results span { padding: 0.5rem 0.75rem; font-family: var(--font-interface); font-size: 0.76rem; font-weight: 700; color: var(--color-text); background: var(--color-surface); border: 0.0625rem solid rgb(111 145 168 / 55%); border-radius: 999px; }
+.influence-map__results span { border-color: rgb(200 145 79 / 60%); }
+.influence-map__center { position: relative; justify-self: center; padding: 1rem 1.4rem; font-family: var(--font-title); text-align: center; color: var(--color-on-primary); background: var(--theo-gold); border-radius: 50%; aspect-ratio: 1; display: grid; place-items: center; width: 9rem; }
+.influence-map__center::before,
+.influence-map__center::after { position: absolute; left: 50%; transform: translateX(-50%); color: var(--color-primary); font-family: var(--font-interface); }
+.influence-map__center::before { top: -2rem; content: "↓"; }
+.influence-map__center::after { bottom: -2rem; content: "↓"; }
+
+.two-sided-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.two-sided-grid article:first-child { border-left: 0.18rem solid var(--theo-blue); }
+.two-sided-grid article:last-child { border-left: 0.18rem solid var(--theo-gold); }
+
+.phase-list { display: grid; gap: var(--space-3); margin: var(--space-6) 0 0; padding: 0; list-style: none; }
+.phase-list li { display: grid; grid-template-columns: 2.8rem minmax(0, 1fr); gap: var(--space-4); align-items: start; padding: var(--space-4); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-radius: var(--radius-medium); }
+
+.importance-grid,
+.controversy-grid,
+.benefit-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-6); }
+.importance-grid article,
+.benefit-grid article { border-left: 0.18rem solid var(--theo-blue); }
+.importance-grid article:nth-child(2n),
+.benefit-grid article:nth-child(2n) { border-left-color: var(--theo-violet); }
+.importance-grid article:nth-child(3n),
+.benefit-grid article:nth-child(3n) { border-left-color: var(--theo-green); }
+.controversy-grid article { border-left: 0.18rem solid var(--theo-red); }
+
+.preserve-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+.preserve-grid article { padding: var(--space-5); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-radius: var(--radius-medium); }
+.preserve-grid__positive { border-top: 0.2rem solid var(--theo-green) !important; }
+.preserve-grid__critical { border-top: 0.2rem solid var(--theo-red) !important; }
+.preserve-grid ul { padding-left: 1.2rem; color: var(--color-text-muted); }
+
+.theosophy-accordion { display: grid; gap: var(--space-3); margin-top: var(--space-6); }
+.theosophy-accordion details { background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: var(--radius-medium); }
+.theosophy-accordion summary { padding: var(--space-4) var(--space-5); font-family: var(--font-subtitle); font-size: 1.08rem; cursor: pointer; }
+.theosophy-accordion details > p { padding: 0 var(--space-5) var(--space-5); color: var(--color-text-muted); }
+.theosophy-accordion details[open] { border-left: 0.22rem solid var(--theo-gold); }
+
+.related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.related-grid a { display: grid; gap: var(--space-2); padding: var(--space-5); text-decoration: none; background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-radius: var(--radius-medium); }
+.related-grid a:hover { border-color: var(--color-primary); }
+.related-grid span { font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
+.related-grid strong { font-family: var(--font-subtitle); font-size: 1.25rem; color: var(--color-primary); }
+
+.source-group + .source-group { margin-top: var(--space-7); }
+.source-group h3 { padding-bottom: var(--space-3); border-bottom: 0.0625rem solid rgb(93 64 43 / 55%); }
+.copy-reference { display: inline-flex; min-height: 2.3rem; margin-top: var(--space-3); padding: 0.45rem 0.65rem; font-family: var(--font-interface); font-size: 0.76rem; font-weight: 700; color: var(--color-text); background: rgb(111 145 168 / 12%); border: 0.0625rem solid rgb(111 145 168 / 70%); border-radius: 0.4rem; cursor: pointer; }
+.copy-reference:hover { border-color: var(--color-primary); }
+.copy-status { min-height: 1.5rem; font-family: var(--font-interface); font-size: 0.82rem; color: var(--color-primary); }
+
+@media (max-width: 72rem) {
+  .theosophy-summary-grid,
+  .values-grid,
+  .importance-grid,
+  .controversy-grid,
+  .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .objects-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 48rem) {
+  .theosophy-hero { min-height: auto; }
+  .theosophy-hero__overlay { background: linear-gradient(90deg, rgb(7 9 12 / 97%), rgb(11 12 16 / 82%)), linear-gradient(0deg, var(--color-background), transparent 42%); }
+  .theosophy-summary-grid,
+  .evidence-guide__grid,
+  .context-grid,
+  .representative-grid,
+  .values-grid,
+  .teaching-grid,
+  .two-sided-grid,
+  .importance-grid,
+  .controversy-grid,
+  .benefit-grid,
+  .preserve-grid,
+  .related-grid { grid-template-columns: 1fr; }
+  .timeline-controls { grid-template-columns: 1fr; }
+  .timeline-controls > button { display: none; }
+  .timeline-periods { padding-inline: 0; }
+  .theosophy-timeline { grid-template-columns: 1fr; overflow: visible; scroll-snap-type: none; scroll-behavior: auto; }
+  .theosophy-timeline li { min-height: 0; }
+  .archive-callout { grid-template-columns: 1fr; }
+  .influence-map__center { width: 8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theosophy-timeline { scroll-behavior: auto; }
+}

@@ -1,0 +1,272 @@
+.stoicism-article {
+  --stoic-gold: #b8874b;
+  --stoic-gold-light: #e0b368;
+  --stoic-bronze: #9a623b;
+  --stoic-blue: #3c6575;
+
+  --stoic-violet: #756b88;
+}
+
+.stoicism-hero {
+  position: relative;
+  display: grid;
+  min-height: min(49rem, calc(100svh - 4.75rem));
+  overflow: hidden;
+  isolation: isolate;
+  border-bottom: 0.0625rem solid rgb(184 135 75 / 58%);
+}
+
+.stoicism-hero__image,
+.stoicism-hero__image img,
+.stoicism-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stoicism-hero__image img {
+  object-fit: cover;
+  object-position: center 57%;
+  filter: contrast(1.08) brightness(0.76) saturate(0.72);
+}
+
+.stoicism-hero__overlay {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgb(7 9 12 / 96%) 0%, rgb(11 12 16 / 84%) 42%, rgb(11 12 16 / 35%) 76%, rgb(11 12 16 / 68%) 100%),
+    linear-gradient(0deg, var(--color-background), transparent 42%);
+}
+
+.stoicism-hero__inner {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.stoicism-hero h1 {
+  max-width: 11ch;
+  margin-bottom: var(--space-3);
+  font-size: clamp(2.8rem, 9vw, 7.4rem);
+  color: var(--stoic-gold-light);
+  text-shadow: 0 0 2.4rem rgb(184 135 75 / 26%);
+}
+
+.stoicism-hero__subtitle {
+  max-width: 32ch;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.45rem, 3vw, 2.5rem);
+  line-height: 1.24;
+}
+
+.stoicism-hero__meta {
+  margin-bottom: var(--space-5);
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--stoic-gold);
+}
+
+.stoicism-hero__intro,
+.stoicism-hero__critical {
+  max-width: 43rem;
+  color: #ddd2c2;
+  text-shadow: 0 0.15rem 0.8rem rgb(0 0 0 / 85%);
+}
+
+.stoicism-hero__critical {
+  padding-left: var(--space-4);
+  border-left: 0.22rem solid var(--stoic-bronze);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.stoicism-hero__credit {
+  position: absolute;
+  z-index: 3;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  max-width: 32rem;
+  margin: 0;
+  font-family: var(--font-interface);
+  font-size: 0.7rem;
+  line-height: 1.45;
+  text-align: right;
+  color: #ddd2c2;
+}
+
+.zeno-portrait {
+  justify-self: end;
+  width: min(100%, 18rem);
+  margin: 0;
+}
+
+.zeno-portrait picture {
+  display: block;
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(184 135 75 / 58%);
+  border-radius: 10rem 10rem var(--radius-large) var(--radius-large);
+  box-shadow: var(--shadow-soft);
+}
+
+.zeno-portrait img {
+  width: 100%;
+  height: auto;
+  max-height: 27rem;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  filter: sepia(0.16) contrast(1.06) brightness(0.86);
+}
+
+.zeno-portrait figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.reading-levels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-bottom: clamp(4rem, 9vw, 7rem);
+}
+.reading-levels a {
+  display: grid;
+  gap: var(--space-1);
+  min-height: 100%;
+  padding: var(--space-4);
+  color: var(--color-text);
+  text-decoration: none;
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 50%);
+  border-top: 0.18rem solid var(--stoic-gold);
+  border-radius: var(--radius-small);
+}
+.reading-levels a:nth-child(2) { border-top-color: var(--stoic-blue); }
+.reading-levels a:nth-child(3) { border-top-color: var(--stoic-violet); }
+.reading-levels span { font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stoic-gold); }
+.reading-levels strong { font-family: var(--font-subtitle); font-size: 1.08rem; font-weight: 400; }
+
+.stoic-concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+.stoic-concept-card {
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.18rem solid var(--stoic-blue);
+  border-radius: var(--radius-medium);
+}
+.stoic-concept-card summary {
+  display: grid;
+  gap: var(--space-2);
+  min-height: 10.5rem;
+  padding: var(--space-5);
+  cursor: pointer;
+  list-style: none;
+}
+.stoic-concept-card summary::-webkit-details-marker { display: none; }
+.stoic-concept-card summary strong { font-family: var(--font-subtitle); font-size: 1.45rem; color: var(--color-text); }
+.stoic-concept-card summary span { color: var(--color-text-muted); }
+.stoic-concept-card summary::after { align-self: end; content: "Abrir explicação +"; font-family: var(--font-interface); font-size: 0.76rem; font-weight: 700; color: var(--stoic-gold-light); }
+.stoic-concept-card[open] summary::after { content: "Fechar explicação −"; }
+.stoic-concept-card > div { padding: 0 var(--space-5) var(--space-5); color: var(--color-text-muted); }
+.stoic-concept-card > div p:last-child { margin-bottom: 0; padding-top: var(--space-3); border-top: 0.0625rem solid rgb(93 64 43 / 35%); }
+
+.virtue-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); }
+.virtue-grid article { padding: var(--space-5); background: linear-gradient(150deg, rgb(35 64 74 / 22%), var(--color-surface)); border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: var(--radius-medium); }
+.virtue-grid article > span { display: block; margin-bottom: var(--space-4); font-family: var(--font-title); font-size: 1.7rem; color: var(--stoic-gold); }
+.virtue-grid h3 { font-size: 1.55rem; }
+.virtue-grid p { color: var(--color-text-muted); }
+.virtue-grid blockquote { margin-top: var(--space-4); padding: var(--space-3); font-size: 0.98rem; }
+
+.emotion-process { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-3); margin: var(--space-6) 0; padding: 0; list-style: none; counter-reset: emotion-step; }
+.emotion-process li { position: relative; padding: var(--space-4); background: var(--color-surface); border: 0.0625rem solid rgb(60 101 117 / 68%); border-radius: var(--radius-small); counter-increment: emotion-step; }
+.emotion-process li::before { display: block; margin-bottom: var(--space-2); content: counter(emotion-step, decimal-leading-zero); font-family: var(--font-title); color: var(--stoic-blue); }
+.emotion-process strong, .emotion-process span { display: block; }
+.emotion-process span { margin-top: var(--space-2); color: var(--color-text-muted); }
+
+.example-panel { padding: var(--space-5); background: linear-gradient(145deg, rgb(35 64 74 / 22%), var(--color-surface)); border: 0.0625rem solid var(--stoic-blue); border-radius: var(--radius-medium); }
+.example-panel dl { display: grid; gap: 0; margin: 0; }
+.example-panel dl div { display: grid; grid-template-columns: minmax(10rem, 0.7fr) minmax(0, 1.3fr); gap: var(--space-4); padding-block: var(--space-3); border-top: 0.0625rem solid rgb(60 101 117 / 32%); }
+.example-panel dl div:first-child { border-top: 0; }
+.example-panel dt { font-family: var(--font-interface); font-size: 0.78rem; font-weight: 700; color: var(--stoic-gold); }
+.example-panel dd { margin: 0; color: var(--color-text-muted); }
+
+.evidence-label--text { color: #c99d67; }
+.evidence-label--cosmology { color: #a98d5f; }
+.evidence-label--modern { color: #a69ab8; }
+.evidence-label--limited { color: #819b85; }
+
+.stoic-evidence-legend > div { grid-template-columns: minmax(13rem, 0.75fr) minmax(0, 1.25fr); }
+
+.table-wrapper { overflow-x: auto; border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: var(--radius-medium); }
+.comparison-table { width: 100%; min-width: 40rem; border-collapse: collapse; }
+.comparison-table th, .comparison-table td { width: 50%; padding: var(--space-4); text-align: left; vertical-align: top; border-bottom: 0.0625rem solid rgb(93 64 43 / 38%); }
+.comparison-table thead { font-family: var(--font-interface); font-size: 0.78rem; text-transform: uppercase; color: var(--stoic-gold); background: rgb(36 28 25 / 88%); }
+.comparison-table tbody td:first-child { color: var(--color-text); background: rgb(35 64 74 / 11%); }
+.comparison-table tbody td:last-child { color: var(--color-text-muted); background: rgb(117 107 136 / 9%); }
+.comparison-table tbody tr:last-child td { border-bottom: 0; }
+
+.reflection-form { padding: clamp(1.25rem, 4vw, 2.2rem); background: linear-gradient(145deg, rgb(36 28 25 / 86%), var(--color-surface)); border: 0.0625rem solid rgb(184 135 75 / 58%); border-radius: var(--radius-large); }
+.reflection-form__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.reflection-form__field { display: grid; align-content: start; gap: var(--space-2); font-size: 0.86rem; font-weight: 600; color: var(--color-text); }
+.reflection-form textarea, .reflection-form select { width: 100%; min-height: 3rem; padding: 0.8rem; color: var(--color-text); background: var(--color-background); border: 0.0625rem solid rgb(93 64 43 / 72%); border-radius: var(--radius-small); resize: vertical; }
+.reflection-form textarea:focus, .reflection-form select:focus { border-color: var(--stoic-gold-light); }
+.reflection-form__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
+.reflection-form__status { min-height: 1.5rem; margin: var(--space-3) 0 0; font-family: var(--font-interface); font-size: 0.82rem; color: var(--color-text-muted); }
+
+.source-details { margin-bottom: var(--space-6); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 55%); border-radius: var(--radius-medium); }
+.source-details summary { padding: var(--space-4) var(--space-5); font-family: var(--font-interface); font-weight: 700; cursor: pointer; }
+.source-details > div { padding: 0 var(--space-5) var(--space-5); color: var(--color-text-muted); }
+.image-license-note { margin-top: var(--space-6); padding: var(--space-5); background: var(--color-surface); border-left: 0.25rem solid var(--stoic-gold); border-radius: 0 var(--radius-medium) var(--radius-medium) 0; }
+.image-license-note p:last-child { margin-bottom: 0; color: var(--color-text-muted); }
+
+.back-to-top { position: fixed; z-index: 15; right: 1rem; bottom: 1rem; display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.65rem 0.9rem; font-family: var(--font-interface); font-size: 0.78rem; font-weight: 700; color: var(--color-on-primary); text-decoration: none; background: var(--stoic-gold-light); border: 0.0625rem solid #f2c879; border-radius: 999px; box-shadow: var(--shadow-soft); }
+.back-to-top:hover { color: var(--color-on-primary); background: #efc57a; }
+
+@media (max-width: 70rem) {
+  .stoic-concept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .virtue-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .emotion-process { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 48rem) {
+  .stoicism-hero { min-height: 45rem; }
+  .stoicism-hero__overlay { background: linear-gradient(0deg, rgb(7 9 12 / 98%) 0%, rgb(11 12 16 / 86%) 62%, rgb(11 12 16 / 55%) 100%); }
+  .stoicism-hero__inner { align-self: end; padding-bottom: 6rem; }
+  .stoicism-hero__credit { right: 1rem; bottom: 1rem; left: 1rem; text-align: left; }
+  .reading-levels, .stoic-concept-grid, .virtue-grid, .reflection-form__grid { grid-template-columns: 1fr; }
+  .emotion-process { grid-template-columns: 1fr; }
+  .example-panel dl div { grid-template-columns: 1fr; gap: var(--space-1); }
+  .stoic-evidence-legend > div { grid-template-columns: 1fr; }
+  .back-to-top { position: static; margin: var(--space-6) 1rem 0 auto; width: max-content; }
+}
+
+@media (max-width: 34rem) {
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .button { width: 100%; }
+  .reflection-form__actions { flex-direction: column; }
+  .reflection-form__actions .button { width: 100%; }
+}
+
+@media (max-width: 48rem) {
+  .zeno-portrait {
+    justify-self: center;
+    width: min(100%, 17rem);
+  }
+}

@@ -1,0 +1,286 @@
+:root {
+  --thelema-gold: #c8914f;
+  --thelema-gold-light: #e2b76c;
+  --thelema-burgundy: #6d3d38;
+  --thelema-blue: #315766;
+
+}
+
+.thelema-hero {
+  background:
+    radial-gradient(circle at 14% 22%, rgb(200 145 79 / 17%), transparent 24rem),
+    radial-gradient(circle at 84% 18%, rgb(109 61 56 / 30%), transparent 28rem),
+    linear-gradient(135deg, #090a0d 0%, #111319 52%, #241713 100%);
+}
+
+.thelema-hero__portrait img {
+  object-position: center 48%;
+  filter: sepia(0.12) contrast(1.06) brightness(0.76);
+}
+
+.thelema-summary {
+  background:
+    linear-gradient(180deg, rgb(24 20 21 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+
+.thelema-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.thelema-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.thelema-summary-grid article {
+  min-height: 100%;
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(109 61 56 / 20%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.18rem solid var(--thelema-gold);
+  border-radius: var(--radius-medium);
+}
+
+.thelema-summary-grid span,
+.aeon-grid__label,
+.organization-grid::before {
+  font-family: var(--font-interface);
+}
+
+.thelema-summary-grid span {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--thelema-gold);
+}
+
+.thelema-summary-grid strong {
+  display: block;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-subtitle);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.thelema-summary-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.evidence-label--belief { color: #b8a3d0; }
+.evidence-label--experience { color: #89aeb4; }
+.evidence-label--analysis { color: #d4a96c; }
+
+.thelema-origin-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 20rem);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.thelema-manuscript {
+  justify-self: end;
+  width: min(100%, 20rem);
+  margin: 0;
+}
+
+.thelema-manuscript picture {
+  display: block;
+  overflow: hidden;
+  background: #f3eee5;
+  border: 0.0625rem solid rgb(200 145 79 / 55%);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.thelema-manuscript img {
+  width: 100%;
+  height: auto;
+  max-height: 30rem;
+  object-fit: contain;
+}
+
+.thelema-manuscript figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.thelema-timeline {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(15rem, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+  padding: 0 0 var(--space-3);
+  overflow-x: auto;
+  list-style: none;
+  scroll-snap-type: x proximity;
+}
+
+.thelema-timeline li {
+  min-height: 19rem;
+  padding: var(--space-5);
+  background:
+    linear-gradient(155deg, rgb(109 61 56 / 20%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.2rem solid var(--thelema-gold);
+  border-radius: var(--radius-medium);
+  scroll-snap-align: start;
+}
+
+.thelema-timeline time {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-title);
+  font-size: 1.32rem;
+  color: var(--thelema-gold-light);
+}
+
+.thelema-timeline p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.organization-grid,
+.practice-grid,
+.aeon-grid,
+.symbol-grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.organization-grid,
+.practice-grid,
+.symbol-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.organization-grid article,
+.practice-grid article,
+.symbol-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-left: 0.18rem solid var(--thelema-blue);
+  border-radius: var(--radius-medium);
+}
+
+.organization-grid p,
+.practice-grid p,
+.symbol-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.thelema-balance {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background: rgb(109 61 56 / 18%);
+  border-left: 0.22rem solid var(--thelema-burgundy);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.thelema-concept-grid .concept-card {
+  border-top: 0.18rem solid var(--thelema-burgundy);
+}
+
+.aeon-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.aeon-grid article {
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(49 87 102 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-radius: var(--radius-medium);
+}
+
+.aeon-grid__label {
+  margin-bottom: var(--space-2);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--thelema-gold);
+}
+
+.aeon-grid p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.thelema-reference-columns {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: var(--space-6);
+}
+
+.thelema-reference-columns > section:first-child {
+  align-self: start;
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 45%);
+  border-radius: var(--radius-medium);
+}
+
+.thelema-reference-columns ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 62rem) {
+  .thelema-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .thelema-reference-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .thelema-summary-grid,
+  .thelema-origin-grid,
+  .organization-grid,
+  .practice-grid,
+  .aeon-grid,
+  .symbol-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thelema-timeline {
+    grid-template-columns: 1fr;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .thelema-timeline li {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thelema-timeline {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 48rem) {
+  .thelema-manuscript {
+    justify-self: center;
+    width: min(100%, 17rem);
+  }
+}

@@ -1,0 +1,406 @@
+:root {
+  --hindu-gold: #c8914f;
+  --hindu-gold-light: #e2b76c;
+  --hindu-green: #52664e;
+  --hindu-rust: #824f3d;
+  --hindu-indigo: #535a73;
+}
+
+.hinduism-hero {
+  background:
+    radial-gradient(circle at 12% 20%, rgb(200 145 79 / 18%), transparent 24rem),
+    radial-gradient(circle at 83% 18%, rgb(82 102 78 / 28%), transparent 28rem),
+    linear-gradient(135deg, #090a0d 0%, #11151a 52%, #211914 100%);
+}
+
+.hinduism-hero__portrait img {
+  object-position: center 43%;
+  filter: saturate(0.72) contrast(1.04) brightness(0.76);
+}
+
+.hinduism-summary {
+  background:
+    linear-gradient(180deg, rgb(20 24 21 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 55%);
+}
+
+.hinduism-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.hinduism-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.hinduism-summary-grid article {
+  min-height: 100%;
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(82 102 78 / 18%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.18rem solid var(--hindu-gold);
+  border-radius: var(--radius-medium);
+}
+
+.hinduism-summary-grid span,
+.scripture-category-grid__label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--hindu-gold);
+}
+
+.hinduism-summary-grid strong {
+  display: block;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-subtitle);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.hinduism-summary-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.evidence-label--concept { color: #b6a1ca; }
+.evidence-label--reconstruction { color: #d5ab72; }
+.evidence-label--primary { color: #82b099; }
+.evidence-label--analysis { color: #d1a26a; }
+.evidence-label--controversy { color: #d18e84; }
+.evidence-label--debated { color: #c89c87; }
+
+.formation-grid,
+.veda-grid,
+.goal-grid,
+.path-grid,
+.study-grid,
+.critical-topic-grid,
+.glossary-grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.formation-grid,
+.path-grid,
+.study-grid,
+.critical-topic-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.veda-grid,
+.goal-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.formation-grid article,
+.veda-grid article,
+.path-grid article,
+.study-grid article,
+.critical-topic-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-left: 0.18rem solid var(--hindu-green);
+  border-radius: var(--radius-medium);
+}
+
+.formation-grid p:last-child,
+.veda-grid p,
+.path-grid p,
+.study-grid p,
+.critical-topic-grid p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.formation-grid__caution {
+  padding-top: var(--space-3);
+  border-top: 0.0625rem solid rgb(93 64 43 / 42%);
+}
+
+.hinduism-timeline {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(15rem, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+  padding: 0 0 var(--space-3);
+  overflow-x: auto;
+  list-style: none;
+  scroll-snap-type: x proximity;
+}
+
+.hinduism-timeline li {
+  min-height: 19rem;
+  padding: var(--space-5);
+  background:
+    linear-gradient(155deg, rgb(82 102 78 / 20%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-top: 0.2rem solid var(--hindu-gold);
+  border-radius: var(--radius-medium);
+  scroll-snap-align: start;
+}
+
+.hinduism-timeline time {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  color: var(--hindu-gold-light);
+}
+
+.hinduism-timeline p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.hinduism-concept-grid .concept-card {
+  border-top: 0.18rem solid var(--hindu-green);
+}
+
+.goal-grid article {
+  position: relative;
+  padding: var(--space-5);
+  background:
+    linear-gradient(145deg, rgb(200 145 79 / 12%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.goal-grid span {
+  display: inline-grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: var(--space-3);
+  place-items: center;
+  font-family: var(--font-title);
+  color: var(--color-on-primary);
+  background: var(--hindu-gold-light);
+  border-radius: 50%;
+}
+
+.goal-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.hinduism-balance {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background: rgb(82 102 78 / 18%);
+  border-left: 0.22rem solid var(--hindu-green);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.hinduism-tradition-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hinduism-tradition-grid > section {
+  border-color: rgb(82 102 78 / 72%);
+}
+
+.hinduism-literature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 20rem);
+  gap: var(--space-6);
+  align-items: start;
+  margin-top: var(--space-6);
+}
+
+.scripture-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.scripture-category-grid article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 52%);
+  border-radius: var(--radius-medium);
+}
+
+.scripture-category-grid p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.hinduism-text-accordion {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.hinduism-text-accordion details,
+.hinduism-faq details,
+.glossary-grid details {
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.hinduism-text-accordion summary,
+.hinduism-faq summary,
+.glossary-grid summary {
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-subtitle);
+  font-size: 1.08rem;
+  cursor: pointer;
+}
+
+.hinduism-text-accordion details > p,
+.hinduism-faq details > p,
+.glossary-grid details > p {
+  padding: 0 var(--space-5) var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.hinduism-text-accordion details > p:last-child,
+.hinduism-faq details > p:last-child,
+.glossary-grid details > p:last-child {
+  margin-bottom: 0;
+}
+
+.hinduism-manuscript {
+  justify-self: end;
+  width: min(100%, 20rem);
+  margin: 0;
+}
+
+.hinduism-manuscript picture {
+  display: block;
+  overflow: hidden;
+  background: #ece4d6;
+  border: 0.0625rem solid rgb(200 145 79 / 55%);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.hinduism-manuscript img {
+  width: 100%;
+  height: auto;
+  max-height: 30rem;
+  object-fit: contain;
+}
+
+.hinduism-manuscript figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.value-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.value-cloud span {
+  padding: 0.55rem 0.75rem;
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background: rgb(82 102 78 / 18%);
+  border: 0.0625rem solid rgb(82 102 78 / 65%);
+  border-radius: 999px;
+}
+
+.critical-topic-grid article {
+  background:
+    linear-gradient(145deg, rgb(130 79 61 / 17%), rgb(22 21 23 / 98%));
+  border-left-color: var(--hindu-rust);
+}
+
+.hinduism-myth-grid article {
+  border-left-color: var(--hindu-rust);
+}
+
+.glossary-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hinduism-reference-columns {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: var(--space-6);
+}
+
+.hinduism-reference-columns > section:first-child {
+  align-self: start;
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 45%);
+  border-radius: var(--radius-medium);
+}
+
+.hinduism-reference-columns ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 62rem) {
+  .hinduism-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .veda-grid,
+  .goal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hinduism-reference-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hinduism-summary-grid,
+  .formation-grid,
+  .veda-grid,
+  .goal-grid,
+  .path-grid,
+  .study-grid,
+  .critical-topic-grid,
+  .hinduism-tradition-grid,
+  .hinduism-literature-grid,
+  .scripture-category-grid,
+  .glossary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hinduism-timeline {
+    grid-template-columns: 1fr;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .hinduism-timeline li {
+    min-height: 0;
+  }
+
+  .hinduism-manuscript {
+    justify-self: center;
+    width: min(100%, 17rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hinduism-timeline {
+    scroll-behavior: auto;
+  }
+}
