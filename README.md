@@ -404,3 +404,32 @@ A página distingue o uso histórico de `kimbanda` em contextos centro-africanos
 das formações plurais chamadas Quimbanda no Brasil. Também separa fatos
 documentados, interpretações acadêmicas, perspectivas religiosas e limites de
 generalização, sem estética de terror e sem revelar fundamentos reservados.
+
+
+## Página de Candomblé
+
+Arquivos adicionados:
+
+```text
+artigos/candomble.html
+src/styles/candomble.css
+src/scripts/candomble.js
+src/assets/images/candomble-casa-branca.jpg
+src/assets/images/candomble-casa-branca.webp
+src/assets/images/og-candomble.jpg
+```
+
+Arquivos integrados ou atualizados:
+
+```text
+index.html
+assuntos/religioes-espiritualidade.html
+sitemap.xml
+IMAGE-CREDITS.md
+```
+
+A página apresenta o Candomblé como tradição afro-brasileira plural, formada
+na diáspora, e diferencia fatos históricos, conceitos religiosos, interpretações
+acadêmicas, direitos, variações entre nações e limites dos conhecimentos
+reservados. Mantém as etiquetas compartilhadas de evidência e não adiciona
+leitura em voz alta, controles de fonte, alto contraste ou progresso de leitura.

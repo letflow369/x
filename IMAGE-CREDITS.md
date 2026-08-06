@@ -277,3 +277,18 @@
 - Finalidade: ilustração editorial da página de Kimbanda e Quimbanda.
 - Observação: não representa terreiro, entidade, iniciação ou rito específico.
 - Arquivos: `quimbanda-encruzilhadas-memoria.svg` e `og-quimbanda.jpg`.
+
+
+## Candomblé
+
+### Terreiro da Casa Branca do Engenho Velho
+
+- Conteúdo: vista documental da área externa do Ilê Axé Iyá Nassô Oká — Terreiro da Casa Branca, em Salvador, Bahia.
+- Fotógrafo: Paul R. Burley.
+- Data: 4 de março de 2017.
+- Fonte: Wikimedia Commons.
+- Licença: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+- Alterações: redimensionamento, conversão para WebP e recorte com ajustes discretos de luminosidade para a imagem social.
+- Observação: a fotografia registra o espaço reconhecido publicamente e não expõe cerimônia privada, iniciação ou fundamento reservado.
+- Arquivos: `candomble-casa-branca.jpg`, `candomble-casa-branca.webp` e `og-candomble.jpg`.
+- Página: https://commons.wikimedia.org/wiki/File:Il%C3%AA_Ax%C3%A9_Iy%C3%A1_Nass%C3%B4_Ok%C3%A1_Casa_Branca_Salvador_2017-13377.jpg
