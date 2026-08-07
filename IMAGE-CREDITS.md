@@ -331,14 +331,3 @@
 - Arquivos: `cristianismo-evangeliario-etiope.jpg`, `cristianismo-evangeliario-etiope.webp` e `og-cristianismo.jpg`.
 - Página: https://www.metmuseum.org/art/collection/search/317618
 
-
-
-## Depressão
-
-### Modelo multifatorial e caminhos de cuidado
-
-- Conteúdo: composição abstrata com camadas e conexões representando fatores biológicos, psicológicos, sociais, ambientais e possibilidades de cuidado.
-- Autoria: Let Flow 369.
-- Finalidade: ilustração educativa da página de Depressão.
-- Observação: não representa anatomia cerebral, biomarcador, teste diagnóstico ou mecanismo causal único.
-- Arquivos: `depressao-multifatorial.svg` e `og-depressao.jpg`.
