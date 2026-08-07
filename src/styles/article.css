@@ -294,7 +294,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 2.36rem;
+  left: 1.86rem;
   width: 0.0625rem;
   content: "";
   background: linear-gradient(var(--color-primary), var(--color-secondary-light));
@@ -327,7 +327,7 @@
 
 .timeline summary::before {
   position: absolute;
-  left: 2rem;
+  left: 1.5rem;
   width: 0.75rem;
   aspect-ratio: 1;
   content: "";
@@ -659,7 +659,7 @@ blockquote p:last-child { margin-bottom: 0; }
   }
 
   .timeline::before {
-    left: 1.45rem;
+    left: 1.25rem;
   }
 
   .timeline summary {
@@ -668,7 +668,7 @@ blockquote p:last-child { margin-bottom: 0; }
   }
 
   .timeline summary::before {
-    left: 1.08rem;
+    left: 0.88rem;
   }
 
   .timeline time {
