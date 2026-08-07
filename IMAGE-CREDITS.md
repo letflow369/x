@@ -391,3 +391,15 @@
 
 - `src/assets/images/dispraxia-trajetorias-coordenacao.svg` — ilustração conceitual original do projeto Let Flow 369, com trajetórias e pontos representando intenção, planejamento, movimento, feedback e adaptação; não representa exame cerebral, anatomia, biomarcador ou mecanismo único.
 - `src/assets/images/og-dispraxia.jpg` — composição social original do projeto Let Flow 369, derivada da mesma identidade temática.
+
+
+## Síndrome de Tourette
+
+- `src/assets/images/tourette-circuitos-desenvolvimento.svg` — ilustração vetorial original do projeto Let Flow 369, criada para representar de forma abstrata redes, desenvolvimento, feedback e variabilidade dos tiques. Não representa anatomia, exame diagnóstico ou biomarcador.
+- `src/assets/images/og-tourette.jpg` — imagem social original derivada da identidade visual da página.
+
+
+## Síndrome de Down
+
+- `src/assets/images/sindrome-down-trissomia-desenvolvimento.svg` — ilustração conceitual original do Let Flow 369; não representa cariótipo diagnóstico nem prognóstico individual.
+- `src/assets/images/og-sindrome-down.jpg` — composição social original derivada da identidade visual da página.

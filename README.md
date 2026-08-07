@@ -658,3 +658,23 @@ src/assets/images/og-dispraxia.jpg
 ```
 
 A página segue a arquitetura progressiva de Dislexia e Discalculia: resumo imediato, distinção terminológica entre dispraxia/TDC/apraxia, execução motora, manifestações funcionais, curso ao longo da vida, neurociência, modelo multifatorial, condições coexistentes, avaliação, intervenções orientadas a tarefas, adaptações, evidências de 2024–2026, história do conceito e referências. Não possui síntese de voz/leitura automática.
+
+
+## Página de Síndrome de Tourette
+
+Arquivos adicionados:
+
+```text
+artigos/tourette.html
+src/styles/tourette.css
+src/scripts/tourette.js
+src/assets/images/tourette-circuitos-desenvolvimento.svg
+src/assets/images/og-tourette.jpg
+```
+
+A página apresenta Tourette como condição do neurodesenvolvimento em leitura progressiva: resumo imediato, tipos de tiques, sensação premonitória e supressão, curso ao longo da vida, redes cerebrais e genética, condições coexistentes, diagnóstico, CBIT/HRT/ERP, medicamentos, escola, mitos, pesquisas de 2025–2026, história e limites atuais da ciência. O status regulatório do ecopipam é apresentado separadamente da evidência clínica. Não possui síntese de voz/leitura automática.
+
+
+## Síndrome de Down
+
+Página `artigos/sindrome-de-down.html` adicionada em agosto de 2026, com leitura progressiva, genética, diagnóstico, desenvolvimento, condições associadas, acompanhamento ao longo da vida, Alzheimer, intervenções, pesquisa 2024–2026, bioética e referências verificáveis.
