@@ -303,3 +303,31 @@
 - Finalidade: abertura visual da página sobre Batuque ou Nação do Rio Grande do Sul.
 - Observação: não representa terreiro, rito, orixá, iniciação ou comunidade específicos e não expõe fundamento reservado.
 - Arquivos: `batuque-casa-comunidade.svg` e `og-batuque-nacao.jpg`.
+
+
+## Islã
+
+### Fólio de manuscrito do Alcorão
+
+- Conteúdo: fólio de manuscrito do Alcorão, provavelmente produzido no Egito ou no Iraque entre os séculos VIII e IX.
+- Fonte: The Metropolitan Museum of Art, programa Open Access.
+- Licença: domínio público.
+- Alterações: recorte, redimensionamento, conversão para WebP e composição da imagem social.
+- Arquivos: `isla-alcorao-folio.jpg`, `isla-alcorao-folio.webp` e `og-isla.jpg`.
+- Página: https://www.metmuseum.org/art/collection/search/453246
+
+
+## Cristianismo
+
+### Evangeliário etíope
+
+- Conteúdo: página iluminada de um Livro dos Evangelhos com a Ascensão e uma comunidade reunida.
+- Autoria: artista das Terras Altas do norte da Etiópia.
+- Data: final do século XIV–início do século XV.
+- Fonte: The Metropolitan Museum of Art, objeto 1998.66, programa Open Access.
+- Licença: domínio público.
+- Alterações: recorte editorial, redimensionamento, ajustes discretos de luminosidade e contraste, conversão para WebP e composição da imagem social.
+- Observação: a escolha evidencia a longa diversidade geográfica do cristianismo e evita representar toda a tradição por uma única região europeia.
+- Arquivos: `cristianismo-evangeliario-etiope.jpg`, `cristianismo-evangeliario-etiope.webp` e `og-cristianismo.jpg`.
+- Página: https://www.metmuseum.org/art/collection/search/317618
+

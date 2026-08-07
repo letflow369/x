@@ -10,6 +10,8 @@ Psicologia
 └── Sigmund Freud
 
 Religião e espiritualidade
+├── Cristianismo
+├── Islã
 ├── Espiritismo
 ├── Hinduísmo
 ├── Budismo
@@ -53,14 +55,17 @@ As páginas usam HTML semântico, navegação por teclado, foco visível, textos
 alternativos, hierarquia de títulos, movimento reduzido e rótulos associados
 aos controles de formulário.
 
-Não existem controles opcionais de narração, alteração visual temporária ou
-medidores de avanço do artigo.
+Controles opcionais aparecem apenas quando fazem parte do escopo editorial da
+página. Eles dependem de ação explícita do usuário, não iniciam automaticamente
+e não enviam dados para servidores. O projeto não utiliza medidores de avanço
+de leitura.
 
 ## JavaScript
 
-Somente `src/scripts/stoicism.js` permanece. Ele registra, mediante ação
-explícita, as respostas do exercício estoico no armazenamento local do próprio
-navegador. Nenhum dado é enviado para servidor.
+Os scripts são modulares e específicos de cada página. Eles controlam recursos
+como linhas do tempo, acordeões, cópia de referências e, quando previsto no
+artigo, leitura em voz alta ou preferência local de tamanho de texto. Nenhum
+dado é enviado para servidor.
 
 ## Publicação
 
@@ -466,3 +471,56 @@ Rio Grande do Sul e diferencia seus usos de “nação” daqueles encontrados e
 outras religiões. O conteúdo separa fatos históricos, conceitos religiosos,
 interpretações acadêmicas, relatos internos, pluralidade entre casas e limites
 dos conhecimentos reservados.
+
+
+## Página de Islã
+
+Arquivos adicionados:
+
+```text
+artigos/isla.html
+src/styles/isla.css
+src/scripts/isla.js
+src/assets/images/isla-alcorao-folio.jpg
+src/assets/images/isla-alcorao-folio.webp
+src/assets/images/og-isla.jpg
+```
+
+A página apresenta uma leitura progressiva sobre origem histórica, Maomé,
+Alcorão, Sunnah, hadith, crenças, Cinco Pilares, diversidade interna, valores,
+produção intelectual, presença no Brasil e equívocos comuns. Diferencia texto
+religioso, interpretação e aplicação histórica e inclui leitura em voz alta
+acionada somente pelo usuário.
+
+
+## Página de Cristianismo
+
+Arquivos adicionados:
+
+```text
+artigos/cristianismo.html
+src/styles/cristianismo.css
+src/scripts/cristianismo.js
+src/assets/images/cristianismo-evangeliario-etiope.jpg
+src/assets/images/cristianismo-evangeliario-etiope.webp
+src/assets/images/og-cristianismo.jpg
+```
+
+Arquivos integrados ou atualizados:
+
+```text
+index.html
+assuntos/religioes-espiritualidade.html
+sitemap.xml
+README.md
+IMAGE-CREDITS.md
+```
+
+A página organiza o tema em leitura rápida, intermediária e aprofundada. O
+conteúdo distingue fatos históricos, crenças religiosas e interpretações
+acadêmicas; apresenta origem judaica, linha do tempo, Bíblia, diversidade
+católica, ortodoxa, protestante e pentecostal, cristianismo no Brasil,
+contribuições, contradições, glossário e referências verificáveis. Inclui
+leitura em voz alta e ajuste de tamanho do texto, ambos dependentes de ação
+explícita do usuário, sem modo de alto contraste ou progresso de leitura.
+

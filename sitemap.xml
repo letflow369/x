@@ -1,33 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://letflow369.github.io/x/</loc></url>
-<url><loc>https://letflow369.github.io/x/metodologia.html</loc></url>
-<url><loc>https://letflow369.github.io/x/assuntos/neurodiversidade.html</loc></url>
-<url><loc>https://letflow369.github.io/x/assuntos/religioes-espiritualidade.html</loc></url>
-<url><loc>https://letflow369.github.io/x/assuntos/filosofias-esoterismo.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/carl-gustav-jung.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/sigmund-freud.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/estoicismo.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/hermetismo.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/gnosticismo.html</loc></url>
-
-<url><loc>https://letflow369.github.io/x/artigos/thelema.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/espiritismo.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/hinduismo.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/budismo.html</loc></url>
-<url><loc>https://letflow369.github.io/x/artigos/wicca.html</loc></url>
-<url><loc>https://letflow369.github.io/x/assuntos/psicologia.html</loc></url>  <url><loc>https://letflow369.github.io/x/artigos/vibracoes-estados-vibracionais.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/feng-shui.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/chakras.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/tdah.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/autismo.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/numerologia.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/toc.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/astrologia.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/ansiedade.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/teosofia.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/umbanda.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/candomble.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/batuque-nacao.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/quimbanda.html</loc></url>
+  <url>
+    <loc>https://letflow369.github.io/x/</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/metodologia.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/assuntos/neurodiversidade.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/assuntos/religioes-espiritualidade.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/assuntos/filosofias-esoterismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/carl-gustav-jung.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/sigmund-freud.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/estoicismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/hermetismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/gnosticismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/thelema.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/espiritismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/hinduismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/budismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/wicca.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/assuntos/psicologia.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/vibracoes-estados-vibracionais.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/feng-shui.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/chakras.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/tdah.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/autismo.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/numerologia.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/toc.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/astrologia.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/ansiedade.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/teosofia.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/umbanda.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/candomble.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/batuque-nacao.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/quimbanda.html</loc>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/isla.html</loc>
+  </url>
+  <url><loc>https://letflow369.github.io/x/artigos/cristianismo.html</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>
