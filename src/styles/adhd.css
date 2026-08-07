@@ -46,12 +46,65 @@
 .adhd-domain-grid span, .recent-evidence-grid__label { display: block; margin-bottom: var(--space-2); font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-primary); }
 .adhd-domain-grid p, .causation-grid p, .study-grid p, .recent-evidence-grid p:last-child { margin-bottom: 0; color: var(--color-text-muted); }
 
+/* Níveis de leitura: links com aparência de botões editoriais. */
+.reading-levels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin: 0 0 var(--space-7);
+}
+
+.reading-levels a {
+  display: flex;
+  min-height: 5.5rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  background: linear-gradient(145deg, rgb(86 133 154 / 10%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(200 145 79 / 58%);
+  border-radius: var(--radius-medium);
+  box-shadow: inset 0 0.0625rem rgb(255 255 255 / 3%);
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.reading-levels a:hover {
+  border-color: var(--adhd-gold);
+  background: linear-gradient(145deg, rgb(200 145 79 / 13%), rgb(22 21 23 / 98%));
+  transform: translateY(-0.1rem);
+}
+
+.reading-levels a:focus-visible {
+  outline: 0.18rem solid var(--color-primary-hover);
+  outline-offset: 0.18rem;
+}
+
+.reading-levels span {
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--adhd-gold);
+}
+
+.reading-levels strong {
+  font-family: var(--font-interface);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--color-text);
+}
+
 .evidence-label--warning { color: #d58a82; }
 .article-notice--warning { background: rgb(184 102 92 / 10%); border-left-color: var(--adhd-risk); }
 
 .adhd-timeline details { border-left-color: var(--adhd-blue); }
 
-.causation-grid, .associated-grid, .diagnosis-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-6); }
+.causation-grid, .diagnosis-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-6); }
+.associated-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-6); }
+.associated-grid article:last-child { grid-column: 1 / -1; }
 .causation-grid article, .associated-grid article, .diagnosis-grid article, .strategy-grid article, .study-grid article, .recent-evidence-grid article { padding: var(--space-5); background: var(--color-surface); border: 0.0625rem solid rgb(93 64 43 / 52%); border-left: 0.18rem solid var(--adhd-blue); border-radius: var(--radius-medium); }
 .causation-grid article:nth-child(2), .associated-grid article:nth-child(2), .diagnosis-grid article:nth-child(2) { border-left-color: var(--adhd-violet); }
 .causation-grid article:nth-child(3), .associated-grid article:nth-child(3), .diagnosis-grid article:nth-child(3) { border-left-color: var(--adhd-green); }
@@ -89,11 +142,13 @@
 
 @media (max-width: 68rem) {
   .adhd-hero__inner { grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem); }
-  .adhd-domain-grid, .causation-grid, .associated-grid, .diagnosis-grid, .study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .adhd-domain-grid, .causation-grid, .diagnosis-grid, .study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reading-levels { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 48rem) {
   .adhd-hero__inner, .adhd-domain-grid, .causation-grid, .associated-grid, .diagnosis-grid, .treatment-grid, .strategy-grid, .study-grid, .recent-evidence-grid { grid-template-columns: 1fr; }
+  .associated-grid article:last-child { grid-column: auto; }
   .adhd-hero__visual { justify-self: center; width: min(100%, 19rem); }
   .life-stage-tabs__list { display: grid; grid-template-columns: 1fr; }
   .life-stage-tabs__list button { width: 100%; min-width: 0; overflow-wrap: anywhere; }
@@ -103,4 +158,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .life-stage-tabs__panel { scroll-behavior: auto; }
+  .reading-levels a { transition: none; }
+  .reading-levels a:hover { transform: none; }
 }

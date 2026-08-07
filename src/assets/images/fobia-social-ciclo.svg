@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 560" role="img" aria-labelledby="title desc">
+<title id="title">Ciclo conceitual da ansiedade social</title><desc id="desc">Formas abstratas mostram uma pessoa central, círculos ao redor representando avaliação social e dois caminhos: evitação e exposição gradual.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111a20"/><stop offset="1" stop-color="#1c1719"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="440" height="560" rx="40" fill="url(#bg)" stroke="#5d402b" stroke-opacity=".55"/>
+<circle cx="220" cy="235" r="74" fill="#18262d" stroke="#80a9b9" stroke-width="3"/>
+<circle cx="220" cy="195" r="20" fill="#d7c6af"/><path d="M182 270c12-42 64-42 76 0" fill="none" stroke="#d7c6af" stroke-width="12" stroke-linecap="round"/>
+<g fill="#171416" stroke="#c99958" stroke-width="2"><circle cx="90" cy="120" r="27"/><circle cx="220" cy="88" r="27"/><circle cx="350" cy="120" r="27"/><circle cx="82" cy="285" r="27"/><circle cx="358" cy="285" r="27"/></g>
+<g stroke="#80a9b9" stroke-width="2" stroke-dasharray="7 8" opacity=".75"><path d="M110 136L169 188"/><path d="M220 115v45"/><path d="M330 136l-59 52"/><path d="M109 276l40-18"/><path d="M331 276l-40-18"/></g>
+<path d="M147 355c-45 34-56 84-34 122" fill="none" stroke="#aa725f" stroke-width="8" stroke-linecap="round"/><path d="M293 355c45 34 56 84 34 122" fill="none" stroke="#7fa18e" stroke-width="8" stroke-linecap="round"/>
+<path d="M112 470l-16 2 8 14" fill="none" stroke="#aa725f" stroke-width="5"/><path d="M328 470l16 2-8 14" fill="none" stroke="#7fa18e" stroke-width="5"/>
+<circle cx="112" cy="430" r="22" fill="#2c1d1b" stroke="#aa725f"/><circle cx="328" cy="430" r="22" fill="#17251f" stroke="#7fa18e"/>
+<g fill="#c99958" filter="url(#glow)"><circle cx="220" cy="345" r="5"/><circle cx="220" cy="374" r="4"/><circle cx="220" cy="400" r="3"/></g>
+</svg>

@@ -1,0 +1,714 @@
+
+.burnout-article {
+  --burnout-blue: #7fa6b3;
+  --burnout-blue-deep: #233a44;
+  --burnout-gold: #c89a5b;
+  --burnout-green: #7f9f8b;
+  --burnout-rust: #a86e5d;
+  --burnout-lilac: #988ea8;
+  --burnout-font-scale: 1;
+  --burnout-body-size: 1rem;
+}
+
+.burnout-article .sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.burnout-content p,
+.burnout-content li,
+.burnout-content td,
+.burnout-content th,
+.burnout-content details > div,
+.burnout-content details > p {
+  font-size: calc(1rem * var(--burnout-font-scale));
+}
+
+.chapter-summary {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  color: #d7d4cb;
+  background: rgb(127 166 179 / 7%);
+  border: 0.0625rem solid rgb(127 166 179 / 25%);
+  border-left: 0.22rem solid var(--burnout-blue);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.comparison-table-wrap {
+  max-width: 100%;
+  margin-block: var(--space-5);
+  overflow-x: auto;
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.comparison-table-wrap:focus-visible {
+  outline: 0.15rem solid var(--burnout-blue);
+  outline-offset: 0.15rem;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  background: rgb(22 21 23 / 78%);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 35%);
+}
+
+.comparison-table thead th {
+  font-family: var(--font-interface);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--burnout-gold);
+  background: rgb(31 34 36 / 92%);
+}
+
+.comparison-table tbody th {
+  font-family: var(--font-interface);
+  color: var(--color-text);
+}
+
+.copy-status {
+  min-height: 1.4rem;
+  font-family: var(--font-interface);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+
+.burnout-article .article-content,
+.burnout-hero__intro,
+.burnout-summary,
+.burnout-mobile-nav {
+  font-size: calc(var(--burnout-body-size) * 1);
+}
+
+.burnout-hero {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 13% 22%, rgb(127 166 179 / 18%), transparent 30rem),
+    radial-gradient(circle at 84% 18%, rgb(200 154 91 / 12%), transparent 27rem),
+    linear-gradient(135deg, #090c0e 0%, #111a1e 52%, #171412 100%);
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 52%);
+}
+
+.burnout-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 24rem);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(4.25rem, 9vw, 7.5rem);
+}
+
+.burnout-hero__content { min-width: 0; }
+
+.burnout-hero h1 {
+  margin-block: var(--space-3);
+  font-size: clamp(3.2rem, 9vw, 6.9rem);
+  color: var(--color-primary-hover);
+}
+
+.burnout-hero__subtitle {
+  max-width: 46rem;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: #d8c8af;
+}
+
+.burnout-hero__intro {
+  max-width: 50rem;
+  font-size: calc(clamp(1.05rem, 2vw, 1.26rem) * var(--burnout-font-scale));
+}
+
+.burnout-hero__meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  margin-block: var(--space-5);
+  font-family: var(--font-interface);
+}
+
+.burnout-hero__meta div {
+  padding-top: var(--space-3);
+  border-top: 0.0625rem solid rgb(127 166 179 / 28%);
+}
+
+.burnout-hero__meta dt {
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--burnout-blue);
+}
+
+.burnout-hero__meta dd {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+}
+
+.burnout-hero__notice {
+  max-width: 49rem;
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: rgb(127 166 179 / 9%);
+  border-left: 0.2rem solid var(--burnout-blue);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.burnout-hero__notice p {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-muted);
+}
+
+.burnout-hero__visual {
+  width: min(100%, 24rem);
+  margin: 0;
+  justify-self: end;
+}
+
+.burnout-hero__visual img {
+  width: 100%;
+  height: auto;
+  max-height: 34rem;
+  object-fit: contain;
+  filter: drop-shadow(0 1.2rem 2.2rem rgb(0 0 0 / 28%));
+}
+
+.burnout-hero__visual figcaption {
+  max-width: 23rem;
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.73rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.burnout-reading-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  margin-top: var(--space-5);
+}
+
+.burnout-reading-tools__group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.42rem;
+  background: rgb(11 12 16 / 56%);
+  border: 0.0625rem solid rgb(127 166 179 / 30%);
+  border-radius: 0.7rem;
+}
+
+.burnout-reading-tools__label {
+  padding-inline: 0.45rem;
+  font-family: var(--font-interface);
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.burnout-reading-tools button {
+  min-height: 2.25rem;
+  padding: 0.4rem 0.68rem;
+  font-family: var(--font-interface);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text);
+  background: rgb(34 38 41 / 92%);
+  border: 0.0625rem solid rgb(127 166 179 / 35%);
+  border-radius: 0.48rem;
+  cursor: pointer;
+}
+
+.burnout-reading-tools button:hover,
+.burnout-reading-tools button:focus-visible {
+  color: #eef6f8;
+  border-color: var(--burnout-blue);
+}
+
+.burnout-reading-tools button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.burnout-summary {
+  background: linear-gradient(180deg, rgb(15 23 26 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 52%);
+}
+
+.burnout-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.burnout-summary-grid,
+.burnout-risk-grid,
+.burnout-impact-grid,
+.burnout-evaluation-grid,
+.burnout-tools-grid,
+.burnout-evidence-grid,
+.burnout-prevention-grid,
+.burnout-importance-grid,
+.burnout-help-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.burnout-summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.burnout-risk-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
+.burnout-impact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
+.burnout-evaluation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.burnout-tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-4); }
+.burnout-evidence-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.burnout-prevention-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.burnout-importance-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
+.burnout-help-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); margin-top: var(--space-5); }
+
+.burnout-summary-grid article,
+.burnout-risk-grid article,
+.burnout-impact-grid article,
+.burnout-evaluation-grid article,
+.burnout-tools-grid article,
+.burnout-evidence-grid article,
+.burnout-prevention-grid article,
+.burnout-importance-grid article,
+.burnout-help-grid article {
+  padding: var(--space-5);
+  background: linear-gradient(145deg, rgb(31 34 36 / 92%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-summary-grid article {
+  border-top: 0.18rem solid var(--burnout-blue);
+}
+
+.burnout-summary-grid article:nth-child(2) { border-top-color: var(--burnout-gold); }
+.burnout-summary-grid article:nth-child(3) { border-top-color: var(--burnout-green); }
+.burnout-summary-grid article:nth-child(4) { border-top-color: var(--burnout-lilac); }
+
+.burnout-summary-grid article > span,
+.burnout-evidence-grid article > span {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--burnout-blue);
+}
+
+.burnout-summary-grid h3,
+.burnout-risk-grid h3,
+.burnout-impact-grid h3,
+.burnout-evaluation-grid h3,
+.burnout-tools-grid h4,
+.burnout-evidence-grid h3,
+.burnout-prevention-grid h3,
+.burnout-importance-grid h3,
+.burnout-help-grid h3 {
+  margin-bottom: var(--space-2);
+}
+
+.burnout-summary-grid p,
+.burnout-impact-grid p,
+.burnout-tools-grid p,
+.burnout-evidence-grid p,
+.burnout-prevention-grid p,
+.burnout-importance-grid p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.burnout-mobile-nav {
+  display: none;
+  width: min(100% - 2rem, var(--content-width));
+  margin: var(--space-5) auto 0;
+  background: rgb(22 21 23 / 92%);
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-mobile-nav summary {
+  padding: var(--space-4);
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.burnout-mobile-nav nav {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0 var(--space-4) var(--space-4);
+}
+
+.burnout-mobile-nav a,
+.burnout-desktop-nav a {
+  border-radius: 0.35rem;
+}
+
+.burnout-mobile-nav a {
+  padding: 0.55rem 0.65rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.burnout-mobile-nav a[aria-current="location"],
+.burnout-desktop-nav a[aria-current="location"] {
+  color: #e7f1f3;
+  background: rgb(127 166 179 / 13%);
+}
+
+.burnout-content {
+  max-width: 72ch;
+  font-size: calc(1rem * var(--burnout-font-scale));
+}
+
+.burnout-content .article-section {
+  scroll-margin-top: 5rem;
+}
+
+.burnout-notice--core,
+.burnout-notice--balance,
+.burnout-notice--method,
+.burnout-notice--evidence,
+.burnout-notice--controversy {
+  margin-top: var(--space-5);
+  background: rgb(127 166 179 / 8%);
+  border-left-color: var(--burnout-blue);
+}
+
+.burnout-notice--balance {
+  background: rgb(127 159 139 / 9%);
+  border-left-color: var(--burnout-green);
+}
+
+.burnout-notice--method {
+  background: rgb(200 154 91 / 8%);
+  border-left-color: var(--burnout-gold);
+}
+
+.burnout-notice--evidence {
+  background: rgb(152 142 168 / 8%);
+  border-left-color: var(--burnout-lilac);
+}
+
+.burnout-notice--controversy {
+  background: rgb(168 110 93 / 8%);
+  border-left-color: var(--burnout-rust);
+}
+
+.burnout-demand-resource {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.burnout-demand-resource article {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-demand-resource__demand { border-top: 0.2rem solid var(--burnout-rust) !important; }
+.burnout-demand-resource__resource { border-top: 0.2rem solid var(--burnout-green) !important; }
+
+.burnout-comparison th:first-child {
+  min-width: 10rem;
+}
+
+.burnout-accordion,
+.burnout-myths,
+.burnout-glossary {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.burnout-accordion details,
+.burnout-myths details,
+.burnout-glossary details {
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-accordion summary,
+.burnout-myths summary,
+.burnout-glossary summary {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--color-text);
+  cursor: pointer;
+  list-style: none;
+}
+
+.burnout-accordion summary::-webkit-details-marker,
+.burnout-myths summary::-webkit-details-marker,
+.burnout-glossary summary::-webkit-details-marker {
+  display: none;
+}
+
+.burnout-accordion details > div,
+.burnout-myths details > p,
+.burnout-glossary details > p {
+  margin: 0;
+  padding: 0 var(--space-5) var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.burnout-accordion details[open] summary,
+.burnout-myths details[open] summary,
+.burnout-glossary details[open] summary {
+  color: #eaf2f4;
+}
+
+.burnout-accordion details[open] summary span:last-child {
+  transform: rotate(45deg);
+}
+
+.burnout-course {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding: 0;
+  list-style: none;
+}
+
+.burnout-course li {
+  display: grid;
+  grid-template-columns: 2.7rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+  padding: var(--space-4);
+  background: rgb(22 21 23 / 70%);
+  border: 0.0625rem solid rgb(93 64 43 / 42%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-course li > span {
+  display: grid;
+  width: 2.25rem;
+  aspect-ratio: 1;
+  place-items: center;
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: #0c1012;
+  background: var(--burnout-gold);
+  border-radius: 50%;
+}
+
+.burnout-course h3 { margin: 0 0 var(--space-1); }
+.burnout-course p { margin: 0; color: var(--color-text-muted); }
+
+.burnout-risk-grid article:nth-child(1) { border-top: 0.2rem solid var(--burnout-rust); }
+.burnout-risk-grid article:nth-child(2) { border-top: 0.2rem solid var(--burnout-lilac); }
+.burnout-risk-grid article:nth-child(3) { border-top: 0.2rem solid var(--burnout-blue); }
+
+.burnout-tools-grid article { border-left: 0.2rem solid var(--burnout-blue); }
+.burnout-tools-grid article:nth-child(2) { border-left-color: var(--burnout-gold); }
+.burnout-tools-grid article:nth-child(3) { border-left-color: var(--burnout-lilac); }
+.burnout-tools-grid article:nth-child(4) { border-left-color: var(--burnout-green); }
+
+.burnout-evidence-grid article { border-top: 0.18rem solid var(--burnout-lilac); }
+.burnout-evidence-grid article:nth-child(odd) { border-top-color: var(--burnout-blue); }
+
+.burnout-prevention-grid article { border-left: 0.18rem solid var(--burnout-green); }
+
+.burnout-help-grid__urgent {
+  background: linear-gradient(145deg, rgb(74 36 31 / 36%), rgb(22 21 23 / 98%)) !important;
+  border-color: rgb(168 110 93 / 62%) !important;
+}
+
+.burnout-help-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.burnout-help-links a {
+  text-decoration: none;
+}
+
+.burnout-references {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.burnout-references article {
+  scroll-margin-top: 6rem;
+  padding: var(--space-4);
+  background: rgb(22 21 23 / 76%);
+  border: 0.0625rem solid rgb(93 64 43 / 45%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-references article > span {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--burnout-gold);
+}
+
+.burnout-references h3 {
+  margin-bottom: var(--space-2);
+  font-size: 1.08rem;
+}
+
+.burnout-references p {
+  margin-bottom: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.burnout-references a {
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.burnout-editorial-note {
+  max-width: 72ch;
+  margin: var(--space-8) auto;
+  padding: var(--space-5);
+  background: linear-gradient(145deg, rgb(31 34 36 / 88%), rgb(22 21 23 / 98%));
+  border: 0.0625rem solid rgb(127 166 179 / 30%);
+  border-radius: var(--radius-medium);
+}
+
+.burnout-editorial-note p {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-muted);
+}
+
+.burnout-back-top {
+  position: fixed;
+  right: max(1rem, calc((100vw - var(--content-width)) / 2));
+  bottom: 1.2rem;
+  z-index: 10;
+  display: inline-flex;
+  padding: 0.62rem 0.8rem;
+  font-family: var(--font-interface);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  background: rgb(22 21 23 / 92%);
+  border: 0.0625rem solid rgb(127 166 179 / 42%);
+  border-radius: 999px;
+  box-shadow: 0 0.7rem 1.8rem rgb(0 0 0 / 25%);
+  backdrop-filter: blur(0.4rem);
+}
+
+.burnout-back-top:hover,
+.burnout-back-top:focus-visible {
+  color: #fff;
+  border-color: var(--burnout-blue);
+}
+
+/* The shared timeline component contains the project-wide marker adjustment:
+   marker and vertical line sit slightly farther left of the date. */
+.burnout-timeline {
+  margin-bottom: var(--space-5);
+}
+
+@media (max-width: 68rem) {
+  .burnout-hero__inner { grid-template-columns: minmax(0, 1fr) minmax(14rem, 19rem); }
+  .burnout-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .burnout-risk-grid,
+  .burnout-impact-grid,
+  .burnout-importance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 62rem) {
+  .burnout-desktop-nav { display: none; }
+  .burnout-mobile-nav { display: block; }
+  .burnout-layout { padding-top: var(--space-6); }
+  .burnout-content { max-width: var(--reading-width); margin-inline: auto; }
+}
+
+@media (max-width: 48rem) {
+  .burnout-hero__inner,
+  .burnout-summary-grid,
+  .burnout-risk-grid,
+  .burnout-impact-grid,
+  .burnout-evaluation-grid,
+  .burnout-tools-grid,
+  .burnout-evidence-grid,
+  .burnout-prevention-grid,
+  .burnout-importance-grid,
+  .burnout-help-grid,
+  .burnout-demand-resource,
+  .burnout-references {
+    grid-template-columns: 1fr;
+  }
+
+  .burnout-hero__visual {
+    justify-self: center;
+    width: min(100%, 18rem);
+  }
+
+  .burnout-hero__meta { grid-template-columns: 1fr; }
+  .burnout-reading-tools { align-items: stretch; }
+  .burnout-reading-tools__group { width: 100%; }
+  .burnout-help-links { display: grid; }
+  .burnout-help-links a { justify-content: center; }
+  .burnout-back-top { right: 0.8rem; bottom: 0.8rem; }
+}
+
+@media (max-width: 34rem) {
+  .burnout-accordion summary,
+  .burnout-myths summary,
+  .burnout-glossary summary { padding-inline: var(--space-4); }
+
+  .burnout-accordion details > div,
+  .burnout-myths details > p,
+  .burnout-glossary details > p { padding-inline: var(--space-4); }
+
+  .burnout-course li { grid-template-columns: 2.25rem minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .burnout-accordion details[open] summary span:last-child { transform: none; }
+}
