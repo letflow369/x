@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 960" role="img" aria-labelledby="title desc">
+  <title id="title">Representação abstrata da depressão como condição multifatorial</title>
+  <desc id="desc">Camadas orgânicas e pontos conectados convergem para um centro iluminado, representando fatores biológicos, psicológicos e sociais e diferentes caminhos de cuidado.</desc>
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="46%" r="68%">
+      <stop offset="0" stop-color="#263f4a"/>
+      <stop offset="0.52" stop-color="#151a20"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d6b16f"/>
+      <stop offset="1" stop-color="#9d7645"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="760" height="960" rx="36" fill="url(#bg)"/>
+  <g fill="none" stroke="#7ea4b5" stroke-width="2" opacity=".24">
+    <path d="M-40 150 C190 60 300 200 410 140 S620 100 810 10"/>
+    <path d="M-70 300 C150 210 270 360 420 270 S640 260 810 170"/>
+    <path d="M-40 500 C160 390 290 540 430 440 S650 450 810 330"/>
+    <path d="M-60 710 C160 610 310 760 450 640 S650 620 820 520"/>
+    <path d="M-80 890 C160 800 280 920 480 820 S680 770 830 700"/>
+  </g>
+  <g opacity=".75">
+    <circle cx="214" cy="230" r="18" fill="#8fb7c5"/>
+    <circle cx="510" cy="245" r="14" fill="#caa06b"/>
+    <circle cx="168" cy="512" r="15" fill="#9aad91"/>
+    <circle cx="585" cy="518" r="17" fill="#b49ac1"/>
+    <circle cx="292" cy="724" r="13" fill="#cb8b80"/>
+    <circle cx="500" cy="735" r="14" fill="#8fb7c5"/>
+  </g>
+  <g stroke="#d8c39d" stroke-width="2" opacity=".55">
+    <line x1="214" y1="230" x2="380" y2="472"/>
+    <line x1="510" y1="245" x2="380" y2="472"/>
+    <line x1="168" y1="512" x2="380" y2="472"/>
+    <line x1="585" y1="518" x2="380" y2="472"/>
+    <line x1="292" y1="724" x2="380" y2="472"/>
+    <line x1="500" y1="735" x2="380" y2="472"/>
+  </g>
+  <circle cx="380" cy="472" r="54" fill="#c8914f" opacity=".18" filter="url(#glow)"/>
+  <circle cx="380" cy="472" r="31" fill="url(#gold)" filter="url(#glow)"/>
+  <g fill="#e7dac2" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" opacity=".8">
+    <text x="214" y="190">biológico</text>
+    <text x="510" y="205">psicológico</text>
+    <text x="168" y="562">social</text>
+    <text x="585" y="568">ambiente</text>
+    <text x="292" y="774">história</text>
+    <text x="500" y="785">proteção</text>
+  </g>
+  <g transform="translate(92 838)">
+    <rect width="576" height="74" rx="18" fill="#111820" stroke="#7ea4b5" stroke-opacity=".36"/>
+    <text x="288" y="31" fill="#f1e7d5" font-family="Arial, sans-serif" font-size="19" text-anchor="middle">Diferentes fatores. Diferentes trajetórias.</text>
+    <text x="288" y="55" fill="#b9a994" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">O cuidado precisa ser individualizado.</text>
+  </g>
+</svg>
