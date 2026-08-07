@@ -359,3 +359,35 @@
 - Finalidade: ilustração educativa da página sobre TCC e imagem social.
 - Observação: não representa exame, biomarcador, diagnóstico, fluxo obrigatório ou formulação clínica universal.
 - Arquivos: `tcc-ciclo-aprendizagem.svg` e `og-tcc.jpg`.
+
+
+## Judaísmo
+
+### Bíblia Hebraica medieval de Castela
+
+- Conteúdo: abertura de uma Bíblia Hebraica completa, com vocalização, acentuação, masorá e decoração geométrica.
+- Data: 1300–1350 (antes de 1366).
+- Local: Castela, Espanha.
+- Fonte: The Metropolitan Museum of Art, objeto 2018.59, programa Open Access.
+- Licença: domínio público.
+- Alterações: redimensionamento, conversão para WebP e composição da imagem social.
+- Arquivos: `judaismo-biblia-hebraica.jpg`, `judaismo-biblia-hebraica.webp` e `og-judaismo.jpg`.
+- Página: https://www.metmuseum.org/art/collection/search/773026
+
+
+## Dislexia
+
+- `src/assets/images/dislexia-linguagem-leitura.svg` — ilustração conceitual original do projeto Let Flow 369 sobre linguagem, leitura e aprendizagem; não representa exame cerebral ou biomarcador.
+- `src/assets/images/og-dislexia.jpg` — composição social original do projeto Let Flow 369.
+
+
+## Discalculia
+
+- `src/assets/images/discalculia-quantidade-relacoes.svg` — ilustração conceitual original do projeto Let Flow 369 sobre quantidade, símbolos, reta numérica e estratégias matemáticas; não representa exame cerebral, anatomia ou biomarcador.
+- `src/assets/images/og-discalculia.jpg` — composição social original do projeto Let Flow 369, derivada da mesma identidade visual.
+
+
+## Dispraxia / Transtorno do Desenvolvimento da Coordenação
+
+- `src/assets/images/dispraxia-trajetorias-coordenacao.svg` — ilustração conceitual original do projeto Let Flow 369, com trajetórias e pontos representando intenção, planejamento, movimento, feedback e adaptação; não representa exame cerebral, anatomia, biomarcador ou mecanismo único.
+- `src/assets/images/og-dispraxia.jpg` — composição social original do projeto Let Flow 369, derivada da mesma identidade temática.

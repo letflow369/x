@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
@@ -31,11 +32,11 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&amp;family=Cinzel+Decorative:wght@700&amp;family=Inter:wght@500;600;700&amp;family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="../src/styles/tokens.css?v=20260806-21" rel="stylesheet"/>
-<link href="../src/styles/base.css?v=20260806-21" rel="stylesheet"/>
+<link href="../src/styles/base.css?v=20260807-30" rel="stylesheet"/>
 <link href="../src/styles/components/header.css?v=20260806-21" rel="stylesheet"/>
-<link href="../src/styles/home.css?v=20260806-21" rel="stylesheet"/>
-<link href="../src/styles/article.css?v=20260807-01" rel="stylesheet"/>
-<link href="../src/styles/components/evidence-tags.css?v=20260806-21" rel="stylesheet"/>
+<link href="../src/styles/home.css?v=20260807-30" rel="stylesheet"/>
+<link href="../src/styles/article.css?v=20260807-30" rel="stylesheet"/>
+<link href="../src/styles/components/evidence-tags.css?v=20260807-30" rel="stylesheet"/>
 <link href="../src/styles/isla.css?v=20260806-24" rel="stylesheet"/>
 <script defer="" src="../src/scripts/isla.js?v=20260806-24"></script>
 <script type="application/ld+json">
@@ -61,16 +62,17 @@
 <div class="site-header__inner">
 <a aria-label="Página inicial do Let Flow 369" class="brand" href="../index.html">
 <picture class="brand__picture"><source srcset="../src/assets/images/logo-let-flow-369.avif?v=20260806-21" type="image/avif"/><img alt="" class="brand__logo" height="48" src="../src/assets/images/logo-let-flow-369.webp?v=20260806-21" width="48"/></picture>
-<span class="brand__name">Let Flow 369</span><span class="brand__tagline">Por dentro da mente de um adulto com TDAH.</span>
+<span class="brand__name">Let Flow 369</span><span class="brand__tagline">Conhecimento com contexto e limites explícitos.</span>
 </a>
 <nav aria-label="Navegação principal" class="site-nav"><ul class="site-nav__list"><li><a href="../index.html">Início</a></li><li><a aria-current="location" href="../index.html#assuntos">Assuntos</a></li><li><a href="../metodologia.html">Metodologia</a></li><li><a href="../index.html#sobre">Sobre</a></li></ul></nav>
 </div>
 </header>
 <main id="conteudo-principal">
+<nav aria-label="Navegação estrutural" class="breadcrumbs"><ol><li><a href="../index.html">Início</a></li><li><a href="../assuntos/religioes-espiritualidade.html">Religião e espiritualidade</a></li><li aria-current="page"><span>Islã</span></li></ol></nav>
 <article class="isla-article" data-isla-readable="">
 <header class="isla-hero">
 <picture><source srcset="../src/assets/images/isla-alcorao-folio.webp?v=20260806-24" type="image/webp"/><img alt="Fólio histórico de um manuscrito do Alcorão, produzido no Egito ou no Iraque entre os séculos VIII e IX" class="isla-hero__image" fetchpriority="high" height="826" src="../src/assets/images/isla-alcorao-folio.jpg?v=20260806-24" width="1200"/></picture>
-<div class="isla-hero__pattern" aria-hidden="true"></div>
+<div aria-hidden="true" class="isla-hero__pattern"></div>
 <div class="isla-hero__overlay"></div>
 <div class="isla-hero__inner">
 <p class="section-kicker">História das religiões</p>
@@ -86,17 +88,13 @@
 <div class="hero-actions">
 <a class="button button--primary" href="#resumo">Entenda em um minuto</a>
 <a class="button button--secondary" href="#historia">Explorar a história</a>
-<button class="button button--secondary" data-reader-toggle="" type="button">Ouvir página</button>
+
 <a class="button button--secondary" href="#fontes">Consultar fontes</a>
 </div>
-<div class="reader-controls" hidden data-reader-controls="">
-<button class="button button--secondary button--small" data-reader-stop="" type="button">Parar leitura</button>
-<p aria-live="polite" class="reader-status" data-reader-status="" role="status"></p>
-</div>
+
 <p class="isla-hero__credit">Imagem: fólio de manuscrito do Alcorão, séculos VIII–IX, The Metropolitan Museum of Art, domínio público.</p>
 </div>
 </header>
-
 <section aria-labelledby="terminologia-titulo" class="isla-terminology" id="terminologia">
 <div class="isla-terminology__inner">
 <span class="evidence-tag evidence-tag--terminology">Nota de terminologia</span>
@@ -109,7 +107,6 @@
 <p class="terminology-note">Nesta página, “Islã” é usado para a religião e “sociedades de maioria muçulmana” para contextos históricos e culturais. Isso evita tratar religião, civilização, governo e política como se fossem a mesma coisa.</p>
 </div>
 </section>
-
 <section aria-labelledby="resumo-titulo" class="isla-summary" id="resumo">
 <div class="isla-summary__inner">
 <div class="section-heading"><span class="evidence-tag evidence-tag--plurality">Em menos de um minuto</span><h2 id="resumo-titulo">Uma visão geral antes do aprofundamento</h2></div>
@@ -119,14 +116,13 @@
 <article><strong>Texto central</strong><h3>Alcorão</h3><p>Considerado pelos muçulmanos a revelação divina transmitida a Maomé.</p></article>
 <article><strong>Ideia fundamental</strong><h3>Unicidade de Deus</h3><p>O princípio do <em>tawhid</em> ocupa posição central na teologia islâmica.</p></article>
 </div>
-<div class="reading-levels" aria-label="Níveis de leitura disponíveis">
+<div aria-label="Níveis de leitura disponíveis" class="reading-levels">
 <article><span>1</span><h3>Leitura rápida</h3><p>Resumo, linha do tempo, Cinco Pilares e cartões conceituais.</p></article>
 <article><span>2</span><h3>Leitura intermediária</h3><p>História, textos, diversidade, ética e importância cultural.</p></article>
 <article><span>3</span><h3>Leitura aprofundada</h3><p>Glossário, notas, metodologia e referências verificáveis.</p></article>
 </div>
 </div>
 </section>
-
 <div class="article-layout">
 <aside class="article-toc isla-toc">
 <details>
@@ -152,15 +148,13 @@
 </nav>
 </details>
 </aside>
-
 <div class="article-content">
 <section class="article-section" id="visao-geral">
 <div class="section-heading"><span class="evidence-tag evidence-tag--doctrine">Conceito religioso</span><h2>O que é o Islã?</h2></div>
 <p>O Islã é uma religião monoteísta fundamentada na crença em um único Deus. Segundo a tradição muçulmana, Maomé recebeu revelações transmitidas pelo anjo Gabriel; essas revelações formam o conteúdo do Alcorão, considerado pelos fiéis a palavra de Deus.<sup class="reference"><a aria-label="Referência 1" href="#ref-1">1</a></sup></p>
 <p>Para os muçulmanos, a mensagem de Maomé está ligada a uma linhagem de profetas que inclui Abraão, Moisés e Jesus. Do ponto de vista histórico, a religião surgiu no ambiente social, comercial e religioso da Arábia do século VII.</p>
-<aside class="article-notice article-notice--method" aria-labelledby="camadas-titulo"><h3 id="camadas-titulo">Duas camadas de leitura</h3><p><strong>Perspectiva religiosa:</strong> as revelações são entendidas como comunicação divina. <strong>Perspectiva histórica:</strong> pesquisadores analisam textos, manuscritos, instituições, conflitos e transformações sociais sem decidir a verdade teológica da crença.</p></aside>
+<aside aria-labelledby="camadas-titulo" class="article-notice article-notice--method"><h3 id="camadas-titulo">Duas camadas de leitura</h3><p><strong>Perspectiva religiosa:</strong> as revelações são entendidas como comunicação divina. <strong>Perspectiva histórica:</strong> pesquisadores analisam textos, manuscritos, instituições, conflitos e transformações sociais sem decidir a verdade teológica da crença.</p></aside>
 </section>
-
 <section class="article-section" id="contexto">
 <div class="section-heading"><span class="evidence-tag evidence-tag--documented">Contexto histórico</span><h2>A Península Arábica antes do Islã</h2></div>
 <p>A região reunia povos, tribos e comunidades conectados por rotas comerciais entre África, Mediterrâneo, Pérsia, Índia e outras partes da Ásia. Meca era um centro comercial e religioso relevante.<sup class="reference"><a aria-label="Referência 1" href="#ref-1">1</a></sup></p>
@@ -172,7 +166,6 @@
 </div>
 <p>Esse cenário mostra que o Islã não surgiu em isolamento, mas em uma região marcada por contatos religiosos, econômicos e políticos.</p>
 </section>
-
 <section class="article-section" id="maome">
 <div class="section-heading"><span class="evidence-tag evidence-tag--documented">História e tradição</span><h2>Maomé e a formação da comunidade</h2></div>
 <div class="biography-grid">
@@ -185,7 +178,6 @@
 <p>A pregação atribuída a Maomé enfatizava a unicidade de Deus, responsabilidade moral, justiça, cuidado com pessoas vulneráveis, Juízo Final e abandono da idolatria.<sup class="reference"><a aria-label="Referência 1" href="#ref-1">1</a></sup></p>
 <aside class="isla-callout"><span class="evidence-tag evidence-tag--terminology">Conceito interno</span><h3>Ummah</h3><p>A palavra <em>ummah</em> designa a comunidade dos muçulmanos. Em Medina, vínculos religiosos e deveres coletivos passaram a coexistir com relações familiares, tribais e políticas.</p></aside>
 </section>
-
 <section class="article-section" id="historia">
 <div class="section-heading"><span class="evidence-tag evidence-tag--documented">Linha do tempo</span><h2>Formação e desenvolvimento histórico</h2></div>
 <div aria-label="Controles da linha do tempo" class="timeline-controls" data-isla-timeline-controls="">
@@ -213,20 +205,18 @@
 <li id="tempo-plural"><time>Períodos posteriores</time><h3>Múltiplos reinos, impérios e comunidades</h3><p>Califados, sultanatos, reinos e redes comerciais se desenvolvem na África, Ásia e Europa sem formar uma história única e linear.</p></li>
 </ol>
 </section>
-
 <section class="article-section" id="expansao">
 <div class="section-heading"><span class="evidence-tag evidence-tag--academic">Distinção analítica</span><h2>Expansão política, conversão e transformação cultural</h2></div>
 <p>Após 632, governos muçulmanos incorporaram grandes territórios. Entretanto, domínio político não significou conversão imediata de todas as populações. Em muitas regiões, a adoção do Islã ocorreu gradualmente, por várias gerações, mediante comércio, migração, ensino, alianças e redes sufis.<sup class="reference"><a aria-label="Referência 12" href="#ref-12">12</a></sup></p>
-<div class="comparison-table-wrap" tabindex="0" role="region" aria-label="Comparação entre expansão política, conversão e transformação cultural">
+<div aria-label="Comparação entre expansão política, conversão e transformação cultural" class="comparison-table-wrap" role="region" tabindex="0">
 <table class="isla-table"><thead><tr><th>Processo</th><th>O que significa</th><th>Ritmo histórico</th></tr></thead><tbody>
 <tr><th>Expansão política</th><td>Conquista, aliança ou incorporação de territórios por governos muçulmanos.</td><td>Pode ser rápida e ligada a guerras ou negociações.</td></tr>
 <tr><th>Conversão religiosa</th><td>Adoção do Islã por pessoas ou comunidades.</td><td>Frequentemente gradual e desigual.</td></tr>
 <tr><th>Transformação cultural</th><td>Circulação de idiomas, instituições, saberes, estilos e práticas.</td><td>Longa duração, com trocas regionais.</td></tr>
 </tbody></table>
 </div>
-<div class="region-cloud" aria-label="Regiões de desenvolvimento histórico"><span>Oriente Médio</span><span>Norte da África</span><span>África Ocidental</span><span>África Oriental</span><span>Península Ibérica</span><span>Ásia Central</span><span>Subcontinente indiano</span><span>Sudeste Asiático</span><span>Bálcãs</span><span>Diásporas contemporâneas</span></div>
+<div aria-label="Regiões de desenvolvimento histórico" class="region-cloud"><span>Oriente Médio</span><span>Norte da África</span><span>África Ocidental</span><span>África Oriental</span><span>Península Ibérica</span><span>Ásia Central</span><span>Subcontinente indiano</span><span>Sudeste Asiático</span><span>Bálcãs</span><span>Diásporas contemporâneas</span></div>
 </section>
-
 <section class="article-section" id="textos">
 <div class="section-heading"><span class="evidence-tag evidence-tag--doctrine">Textos e interpretação</span><h2>Fontes fundamentais</h2></div>
 <div class="source-grid">
@@ -238,7 +228,6 @@
 </div>
 <aside class="article-notice article-notice--warning"><h3>Distinção importante</h3><p>Texto religioso, comentário, jurisprudência, legislação estatal e prática cotidiana não são a mesma coisa. A palavra <em>sharia</em> também não designa um código penal único e universal; seu significado e suas aplicações foram interpretados de formas diversas.<sup class="reference"><a aria-label="Referência 18" href="#ref-18">18</a></sup></p></aside>
 </section>
-
 <section class="article-section" id="crencas">
 <div class="section-heading"><span class="evidence-tag evidence-tag--belief">Crenças recorrentes</span><h2>Teologia e responsabilidade moral</h2></div>
 <div class="belief-grid">
@@ -259,7 +248,6 @@
 <article><span>5</span><h4>Hajj</h4><p>Peregrinação a Meca para quem possui condições físicas e financeiras.</p></article>
 </div>
 </section>
-
 <section class="article-section" id="diversidade">
 <div class="section-heading"><span class="evidence-tag evidence-tag--plurality">Diversidade interna</span><h2>Não existe uma única experiência muçulmana</h2></div>
 <p>As comunidades compartilham referências fundamentais, mas diferem em interpretações históricas, autoridade religiosa, escolas jurídicas, teologias e costumes regionais.</p>
@@ -271,13 +259,12 @@
 <button aria-controls="painel-outras" aria-selected="false" id="aba-outras" role="tab" type="button">Outras diversidades</button>
 </div>
 <div aria-labelledby="aba-sunita" class="isla-tabs__panel" id="painel-sunita" role="tabpanel"><span class="evidence-tag evidence-tag--academic">Panorama histórico</span><h3>Tradições sunitas</h3><p>O nome está relacionado à tradição profética e à comunidade. Ao longo da história, desenvolveram-se diferentes escolas jurídicas, teológicas e movimentos internos.<sup class="reference"><a aria-label="Referência 6" href="#ref-6">6</a></sup></p></div>
-<div aria-labelledby="aba-xiita" class="isla-tabs__panel" hidden id="painel-xiita" role="tabpanel"><span class="evidence-tag evidence-tag--academic">Panorama histórico</span><h3>Tradições xiitas</h3><p>Defendem formas de liderança ligadas a Ali, primo e genro de Maomé, e à família do profeta. O xiismo também reúne vertentes distintas.<sup class="reference"><a aria-label="Referência 7" href="#ref-7">7</a></sup></p></div>
-<div aria-labelledby="aba-sufismo" class="isla-tabs__panel" hidden id="painel-sufismo" role="tabpanel"><span class="evidence-tag evidence-tag--tradition">Tradições espirituais</span><h3>Sufismo</h3><p>Reúne caminhos de disciplina, ética, lembrança de Deus e desenvolvimento interior. Ordens e mestres sufis assumiram formas muito diferentes entre regiões e períodos.</p></div>
-<div aria-labelledby="aba-outras" class="isla-tabs__panel" hidden id="painel-outras" role="tabpanel"><span class="evidence-tag evidence-tag--plurality">Pluralidade</span><h3>Escolas, movimentos e contextos</h3><p>Há diferenças entre escolas jurídicas, teologias, filosofias, movimentos reformistas, tradições locais e organizações comunitárias. Identidades nacionais, étnicas, linguísticas, de gênero e de classe também moldam experiências religiosas.</p></div>
+<div aria-labelledby="aba-xiita" class="isla-tabs__panel" hidden="" id="painel-xiita" role="tabpanel"><span class="evidence-tag evidence-tag--academic">Panorama histórico</span><h3>Tradições xiitas</h3><p>Defendem formas de liderança ligadas a Ali, primo e genro de Maomé, e à família do profeta. O xiismo também reúne vertentes distintas.<sup class="reference"><a aria-label="Referência 7" href="#ref-7">7</a></sup></p></div>
+<div aria-labelledby="aba-sufismo" class="isla-tabs__panel" hidden="" id="painel-sufismo" role="tabpanel"><span class="evidence-tag evidence-tag--tradition">Tradições espirituais</span><h3>Sufismo</h3><p>Reúne caminhos de disciplina, ética, lembrança de Deus e desenvolvimento interior. Ordens e mestres sufis assumiram formas muito diferentes entre regiões e períodos.</p></div>
+<div aria-labelledby="aba-outras" class="isla-tabs__panel" hidden="" id="painel-outras" role="tabpanel"><span class="evidence-tag evidence-tag--plurality">Pluralidade</span><h3>Escolas, movimentos e contextos</h3><p>Há diferenças entre escolas jurídicas, teologias, filosofias, movimentos reformistas, tradições locais e organizações comunitárias. Identidades nacionais, étnicas, linguísticas, de gênero e de classe também moldam experiências religiosas.</p></div>
 </div>
 <aside class="isla-callout"><span class="evidence-tag evidence-tag--terminology">Correção essencial</span><h3>Muçulmano não é sinônimo de árabe</h3><p>“Árabe” é uma identificação principalmente linguística e cultural; “muçulmano” é uma identificação religiosa. Comunidades muçulmanas existem em inúmeros povos e países.</p></aside>
 </section>
-
 <section class="article-section" id="valores">
 <div class="section-heading"><span class="evidence-tag evidence-tag--doctrine">Ética religiosa</span><h2>Valores e princípios</h2></div>
 <div class="values-grid">
@@ -290,7 +277,6 @@
 </div>
 <aside class="article-notice article-notice--method"><h3>Ideal religioso e realidade histórica</h3><p>Não se deve usar todos os atos de governos ou indivíduos como tradução automática de uma religião. Analise separadamente: <strong>o que os textos ensinam</strong>, <strong>como foram interpretados</strong> e <strong>como pessoas e instituições agiram</strong>.</p></aside>
 </section>
-
 <section class="article-section" id="importancia">
 <div class="section-heading"><span class="evidence-tag evidence-tag--academic">História cultural</span><h2>Por que o Islã é importante para compreender o mundo?</h2></div>
 <div class="importance-grid-isla">
@@ -305,7 +291,6 @@
 <figcaption><span class="evidence-tag evidence-tag--documented">Objeto histórico</span><strong>Caligrafia, memória e transmissão</strong><p>O fólio mostra transformações da escrita cúfica e a incorporação de marcas para auxiliar a leitura. A imagem está em domínio público.<sup class="reference"><a aria-label="Referência 2" href="#ref-2">2</a></sup></p></figcaption>
 </figure>
 </section>
-
 <section class="article-section" id="brasil">
 <div class="section-heading"><span class="evidence-tag evidence-tag--documented">História brasileira</span><h2>O Islã no Brasil</h2></div>
 <p>A presença muçulmana no Brasil envolve diferentes processos: africanos muçulmanos escravizados, a Revolta dos Malês de 1835, imigrações do Oriente Médio, criação de mesquitas e centros islâmicos, conversões e comunidades contemporâneas.<sup class="reference"><a aria-label="Referência 13" href="#ref-13">13</a></sup></p>
@@ -316,7 +301,6 @@
 <article><h3>Diversidade atual</h3><p>As comunidades incluem descendentes de imigrantes, convertidos brasileiros e diferentes orientações religiosas.</p></article>
 </div>
 </section>
-
 <section class="article-section" id="literatura">
 <div class="section-heading"><span class="evidence-tag evidence-tag--academic">Literatura e conhecimento</span><h2>O que estudar além do Alcorão?</h2></div>
 <div class="literature-columns">
@@ -334,7 +318,6 @@
 <li><span>5</span><div><h4>Fortalecer o diálogo</h4><p>Compreender conceitos e diferenças facilita convivência e respeito.</p></div></li>
 </ol>
 </section>
-
 <section class="article-section" id="equivocos">
 <div class="section-heading"><span class="evidence-tag evidence-tag--myth">Equívocos comuns</span><h2>Mitos e correções</h2></div>
 <div class="isla-accordion" data-isla-myths="">
@@ -346,7 +329,6 @@
 <details><summary>“Grupos extremistas representam todos os muçulmanos.”</summary><p><strong>Incorreto.</strong> Extremistas são movimentos políticos e ideológicos específicos e não definem uma comunidade religiosa global.</p></details>
 </div>
 </section>
-
 <section class="article-section" id="estudo-responsavel">
 <div class="section-heading"><span class="evidence-tag evidence-tag--academic">Método de estudo</span><h2>Como pesquisar o tema com responsabilidade</h2></div>
 <ul class="responsible-checklist">
@@ -360,7 +342,6 @@
 <li>Para dados atuais, informe ano, instituição e link direto.</li>
 </ul>
 </section>
-
 <section class="article-section" id="glossario">
 <div class="section-heading"><span class="evidence-tag evidence-tag--terminology">Glossário</span><h2>Termos essenciais</h2></div>
 <dl class="isla-glossary">
@@ -382,17 +363,15 @@
 <div><dt>Ummah</dt><dd>Comunidade dos muçulmanos.</dd></div>
 </dl>
 </section>
-
 <section class="article-section conclusion-section">
 <div class="section-heading"><span class="evidence-tag evidence-tag--academic">Síntese</span><h2>Uma tradição religiosa e cultural diversa</h2></div>
 <p>O Islã participou do desenvolvimento de sociedades em diferentes partes da África, Ásia e Europa. Sua história envolve religião, comércio, filosofia, ciência, literatura, arte, política e intercâmbios culturais.</p>
 <p>Estudar o tema de modo responsável exige distinguir doutrina, interpretação, prática e história. Essa separação ajuda a reconhecer a diversidade entre muçulmanos e a analisar criticamente estereótipos presentes no mundo contemporâneo.</p>
 </section>
-
 <section class="article-section references-section" id="fontes">
 <div class="section-heading"><span class="evidence-tag evidence-tag--documented">Referências verificáveis</span><h2>Fontes primárias, acadêmicas e institucionais</h2></div>
 <div class="reference-groups" data-isla-references="">
-<details open><summary>Formação histórica e textos</summary><ol class="reference-list reference-list--copy">
+<details open=""><summary>Formação histórica e textos</summary><ol class="reference-list reference-list--copy">
 <li id="ref-1"><strong>Yalman, Suzan; Komaroff, Linda.</strong> “The Birth of Islam”. The Metropolitan Museum of Art, 2001. <a href="https://www.metmuseum.org/essays/the-birth-of-islam" rel="noopener noreferrer" target="_blank">Consultar fonte</a><button class="copy-reference" data-copy-reference="YALMAN, Suzan; KOMAROFF, Linda. The Birth of Islam. The Metropolitan Museum of Art, 2001." type="button">Copiar referência</button></li>
 <li id="ref-2"><strong>The Metropolitan Museum of Art.</strong> “Folio from a Qur'an Manuscript”, séculos VIII–IX, objeto 1984.504.1. <a href="https://www.metmuseum.org/art/collection/search/453246" rel="noopener noreferrer" target="_blank">Consultar objeto</a><button class="copy-reference" data-copy-reference="THE METROPOLITAN MUSEUM OF ART. Folio from a Qur'an Manuscript. 8th–9th century. Object 1984.504.1." type="button">Copiar referência</button></li>
 <li id="ref-3"><strong>Library of Congress.</strong> “The Hajj to Mecca”, 2022; “The Holy Month of Ramadan and Muslim Practice”, 2017. <a href="https://blogs.loc.gov/international-collections/2022/07/the-hajj-to-mecca/" rel="noopener noreferrer" target="_blank">Consultar Hajj</a><button class="copy-reference" data-copy-reference="LIBRARY OF CONGRESS. The Hajj to Mecca. 2022." type="button">Copiar referência</button></li>
@@ -421,7 +400,6 @@
 <aside aria-labelledby="nota-editorial" class="article-notice article-notice--warning"><h3 id="nota-editorial">Política editorial</h3><p>Esta página é introdutória e não confessional. Crenças são identificadas como conceitos religiosos; interpretações acadêmicas e fatos históricos são apresentados separadamente. Dados contemporâneos devem indicar ano e instituição responsável. A página não substitui o estudo de fontes primárias, comunidades ou especialistas.</p></aside>
 <div class="article-review"><p><strong>Publicado:</strong> 6 de agosto de 2026.</p><p><strong>Última revisão:</strong> 6 de agosto de 2026.</p><p><strong>Critério:</strong> museus, bibliotecas, organismos internacionais, artigos acadêmicos e fontes históricas.</p><p><strong>Limitação:</strong> a diversidade regional, teológica e jurídica impede uma descrição universal.</p></div>
 </section>
-
 <div class="related-actions">
 <a class="button button--secondary" href="./hinduismo.html">Ler também: Hinduísmo</a>
 <a class="button button--secondary" href="./budismo.html">Ler também: Budismo</a>

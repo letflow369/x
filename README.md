@@ -552,8 +552,7 @@ A página apresenta burnout como fenômeno ocupacional segundo a CID-11, com
 leitura progressiva, linha do tempo, comparador com estresse, depressão e
 ansiedade, modelo demandas–recursos, sinais, avaliação, instrumentos,
 intervenções individuais e organizacionais, evidências recentes, prevenção,
-glossário e aviso de saúde. Inclui controle de tamanho de texto, leitura em
-voz alta acionada pelo usuário e botão “Voltar ao topo”.
+glossário e aviso de saúde. Inclui controle de tamanho de texto e botão “Voltar ao topo”.
 
 
 ## Página de Transtorno de Personalidade Borderline
@@ -568,7 +567,7 @@ src/assets/images/borderline-regulacao-identidade.svg
 src/assets/images/og-borderline.jpg
 ```
 
-A página apresenta o TPB em leitura progressiva, com resumo essencial, história do diagnóstico, modelo biopsicossocial, sintomas, fases da vida, prognóstico, comorbidades, diagnóstico diferencial, segurança, psicoterapias, medicamentos, evidências recentes, mitos, apoio, fronteiras da evidência e referências verificáveis. Inclui ajuste de fonte, alto contraste, leitura em voz alta acionada pelo usuário e botão “Voltar ao topo”.
+A página apresenta o TPB em leitura progressiva, com resumo essencial, história do diagnóstico, modelo biopsicossocial, sintomas, fases da vida, prognóstico, comorbidades, diagnóstico diferencial, segurança, psicoterapias, medicamentos, evidências recentes, mitos, apoio, fronteiras da evidência e referências verificáveis. Inclui ajuste de fonte, alto contraste e botão “Voltar ao topo”.
 
 
 ## Página de Terapia Cognitivo-Comportamental
@@ -583,4 +582,79 @@ src/assets/images/tcc-ciclo-aprendizagem.svg
 src/assets/images/og-tcc.jpg
 ```
 
-A página apresenta a TCC como família de psicoterapias, corrige a confusão entre terapia e diagnóstico, organiza sua história em linha do tempo, inclui diagrama cognitivo-comportamental interativo, conceitos e técnicas expansíveis, etapas de tratamento, tabela filtrável de aplicações clínicas, comorbidades, painel da meta-análise de 2025, TCC digital, limitações e referências verificáveis. Inclui ajuste de fonte, leitura em voz alta acionada pelo usuário e botão “Voltar ao topo”.
+A página apresenta a TCC como família de psicoterapias, corrige a confusão entre terapia e diagnóstico, organiza sua história em linha do tempo, inclui diagrama cognitivo-comportamental interativo, conceitos e técnicas expansíveis, etapas de tratamento, tabela filtrável de aplicações clínicas, comorbidades, painel da meta-análise de 2025, TCC digital, limitações e referências verificáveis. Inclui ajuste de fonte e botão “Voltar ao topo”.
+
+
+## Página de Judaísmo
+
+Arquivos adicionados:
+
+```text
+artigos/judaismo.html
+src/styles/judaismo.css
+src/scripts/judaismo.js
+src/assets/images/judaismo-biblia-hebraica.jpg
+src/assets/images/judaismo-biblia-hebraica.webp
+src/assets/images/og-judaismo.jpg
+```
+
+A página apresenta o Judaísmo em leitura progressiva, distinguindo tradição religiosa e reconstrução histórica. Inclui formação israelita e judaíta, exílio, Segundo Templo, Judaísmo rabínico, correntes contemporâneas, valores, Torá, Tanakh, Mishná, Talmude, Midrash, filosofia, diversidade cultural, antissemitismo, mitos, FAQ e referências próximas às afirmações. Inclui ajuste de fonte.
+
+
+## Revisão editorial global — agosto de 2026
+
+- cabeçalho global atualizado para refletir o escopo atual do projeto;
+- breadcrumbs adicionados aos artigos e coleções;
+- página inicial passou a mostrar páginas em destaque, mantendo os catálogos completos nas coleções;
+- coleções reorganizadas em grupos editoriais;
+- títulos longos usam tipografia mais legível;
+- referências inline e etiquetas editoriais receberam tamanho maior;
+- recurso de leitura em voz alta removido integralmente das páginas e scripts;
+- permanecem recursos estruturais de acessibilidade como navegação por teclado, foco visível, texto alternativo e redução de movimento.
+
+**Regra do projeto:** não incluir síntese de voz/leitura automática das páginas, salvo nova solicitação explícita.
+
+
+## Página de Dislexia
+
+Arquivos adicionados:
+
+```text
+artigos/dislexia.html
+src/styles/dyslexia.css
+src/scripts/dyslexia.js
+src/assets/images/dislexia-linguagem-leitura.svg
+src/assets/images/og-dislexia.jpg
+```
+
+A página apresenta dislexia em leitura progressiva, com definição atualizada, resumo em quatro cartões, fluxo da linguagem à leitura, características, mitos, história, modelo multifatorial, fases da vida, condições associadas, avaliação integrada, intervenções educacionais, mapa de evidências, estudos recentes, limites do conhecimento, Lei nº 14.254/2021, FAQ e referências. A página não possui síntese de voz/leitura automática.
+
+
+## Página de Discalculia
+
+Arquivos adicionados:
+
+```text
+artigos/discalculia.html
+src/styles/dyscalculia.css
+src/scripts/dyscalculia.js
+src/assets/images/discalculia-quantidade-relacoes.svg
+src/assets/images/og-discalculia.jpg
+```
+
+A página segue estruturalmente a referência de Dislexia e apresenta discalculia em leitura progressiva: resumo inicial, diferença entre dificuldade matemática e transtorno do desenvolvimento da aprendizagem, manifestações, curso ao longo da vida, neurociência, modelo multifatorial, inteligência, condições associadas, avaliação integrada, intervenções educacionais, adaptações, mapa de evidências, estudos de 2023–2026, incertezas, história e contexto brasileiro. Não possui síntese de voz/leitura automática.
+
+
+## Página de Dispraxia / Transtorno do Desenvolvimento da Coordenação
+
+Arquivos adicionados:
+
+```text
+artigos/dispraxia.html
+src/styles/dyspraxia.css
+src/scripts/dyspraxia.js
+src/assets/images/dispraxia-trajetorias-coordenacao.svg
+src/assets/images/og-dispraxia.jpg
+```
+
+A página segue a arquitetura progressiva de Dislexia e Discalculia: resumo imediato, distinção terminológica entre dispraxia/TDC/apraxia, execução motora, manifestações funcionais, curso ao longo da vida, neurociência, modelo multifatorial, condições coexistentes, avaliação, intervenções orientadas a tarefas, adaptações, evidências de 2024–2026, história do conceito e referências. Não possui síntese de voz/leitura automática.
