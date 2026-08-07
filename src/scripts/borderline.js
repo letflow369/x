@@ -73,21 +73,7 @@
     toggle.addEventListener("click",()=>{active=!active;apply();}); apply(false);
   };
 
-  const readableChunks = () => Array.from(document.querySelectorAll(".borderline-hero__subtitle,.borderline-hero__intro,.borderline-summary h2,.borderline-summary h3,.borderline-summary p,.borderline-content h2,.borderline-content h3,.borderline-content p,.borderline-content li,.borderline-content th,.borderline-content td"))
-    .filter((el)=>!el.closest("#fontes")&&!el.closest("button")&&!el.hidden).map((el)=>el.textContent.replace(/\s+/g," ").trim()).filter((t)=>t.length>1);
-
-  const initReader = () => {
-    const toggle=document.querySelector("[data-reader-toggle]"),stop=document.querySelector("[data-reader-stop]"),controls=document.querySelector("[data-reader-controls]"),status=document.querySelector("[data-reader-status]"); if(!toggle)return;
-    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)){toggle.disabled=true;toggle.textContent="Leitura indisponível";return;}
-    let chunks=[],index=0,state="idle";
-    const update=(m)=>{if(status)status.textContent=m;};
-    const finish=(m="Leitura encerrada.")=>{state="idle";index=0;toggle.textContent="Ouvir página";toggle.setAttribute("aria-pressed","false");if(controls)controls.hidden=true;update(m);};
-    const speakNext=()=>{if(state!=="playing")return;if(index>=chunks.length){finish("Leitura concluída.");return;}const u=new SpeechSynthesisUtterance(chunks[index]);u.lang="pt-BR";u.rate=.98;u.onend=()=>{index+=1;speakNext();};u.onerror=(e)=>{if(e.error!=="canceled"&&e.error!=="interrupted")finish("A leitura foi interrompida pelo navegador.");};speechSynthesis.speak(u);update(`Lendo trecho ${index+1} de ${chunks.length}.`);};
-    toggle.addEventListener("click",()=>{if(state==="idle"){chunks=readableChunks();if(!chunks.length)return;speechSynthesis.cancel();index=0;state="playing";toggle.textContent="Pausar leitura";toggle.setAttribute("aria-pressed","true");if(controls)controls.hidden=false;speakNext();}else if(state==="playing"){speechSynthesis.pause();state="paused";toggle.textContent="Continuar leitura";toggle.setAttribute("aria-pressed","false");update("Leitura pausada.");}else{speechSynthesis.resume();state="playing";toggle.textContent="Pausar leitura";toggle.setAttribute("aria-pressed","true");update(`Continuando do trecho ${index+1}.`);}});
-    stop?.addEventListener("click",()=>{speechSynthesis.cancel();finish();}); window.addEventListener("beforeunload",()=>speechSynthesis.cancel());
-  };
-
   const initBackTop = () => { const link=document.querySelector(".borderline-back-top"); if(!link)return; link.addEventListener("click",(e)=>{if(reduced())return;e.preventDefault();document.getElementById("topo")?.scrollIntoView({behavior:"smooth"});}); };
-  const init=()=>{initMobileToc();initActiveToc();initTimeline();initTabs();initFont();initContrast();initReader();initBackTop();};
+  const init=()=>{initMobileToc();initActiveToc();initTimeline();initTabs();initFont();initContrast();initBackTop();};
   document.readyState==="loading" ? document.addEventListener("DOMContentLoaded",init,{once:true}) : init();
 })();

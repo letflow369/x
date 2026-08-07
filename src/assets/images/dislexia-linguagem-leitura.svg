@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 920" role="img" aria-labelledby="title desc">
+<title id="title">Linguagem, leitura e aprendizagem</title><desc id="desc">Composição abstrata com uma página, unidades de som e uma rede de conexões, sem representar exame cerebral.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#161517"/><stop offset="1" stop-color="#111820"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8790c8"/><stop offset="1" stop-color="#78a8a8"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-opacity=".28"/></filter></defs>
+<rect x="28" y="24" width="704" height="872" rx="44" fill="url(#bg)" stroke="#3a302c"/>
+<g opacity=".45"><circle cx="595" cy="150" r="104" fill="#8790c8" opacity=".08"/><circle cx="168" cy="700" r="132" fill="#78a8a8" opacity=".07"/></g>
+<g filter="url(#shadow)">
+<rect x="94" y="226" width="230" height="316" rx="22" fill="#201d1f" stroke="#6f675f"/>
+<rect x="124" y="262" width="152" height="11" rx="5.5" fill="#f1e7d5" opacity=".86"/>
+<rect x="124" y="294" width="168" height="8" rx="4" fill="#b9a994" opacity=".62"/>
+<rect x="124" y="318" width="139" height="8" rx="4" fill="#b9a994" opacity=".62"/>
+<rect x="124" y="355" width="162" height="8" rx="4" fill="#8790c8" opacity=".75"/>
+<rect x="124" y="379" width="122" height="8" rx="4" fill="#b9a994" opacity=".55"/>
+<rect x="124" y="403" width="151" height="8" rx="4" fill="#b9a994" opacity=".55"/>
+<rect x="124" y="440" width="144" height="8" rx="4" fill="#78a8a8" opacity=".78"/>
+<rect x="124" y="464" width="107" height="8" rx="4" fill="#b9a994" opacity=".55"/>
+</g>
+<g fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" opacity=".86"><path d="M324 354 C390 324 418 322 474 350"/><path d="M324 414 C390 440 419 444 478 423"/><path d="M322 475 C397 520 438 529 505 508"/></g>
+<g font-family="sans-serif" font-size="34" font-weight="700" text-anchor="middle"><circle cx="423" cy="286" r="47" fill="#1e2028" stroke="#8790c8"/><text x="423" y="298" fill="#d8daf0">/a/</text><circle cx="509" cy="374" r="47" fill="#1a2223" stroke="#78a8a8"/><text x="509" y="386" fill="#cfe0df">/m/</text><circle cx="421" cy="488" r="47" fill="#1e2028" stroke="#8790c8"/><text x="421" y="500" fill="#d8daf0">/s/</text></g>
+<g fill="none" stroke="#8790c8" stroke-width="3" opacity=".72"><path d="M522 246 C634 230 672 312 636 394 C605 464 556 468 560 548 C565 652 672 659 650 745"/><path d="M548 296 C610 306 621 352 597 391"/><path d="M558 518 C614 538 629 584 603 626"/></g>
+<g fill="#78a8a8"><circle cx="522" cy="246" r="8"/><circle cx="636" cy="394" r="8"/><circle cx="560" cy="548" r="8"/><circle cx="650" cy="745" r="8"/><circle cx="548" cy="296" r="6"/><circle cx="597" cy="391" r="6"/><circle cx="603" cy="626" r="6"/></g>
+<g fill="#8790c8" opacity=".72"><circle cx="585" cy="260" r="5"/><circle cx="654" cy="333" r="5"/><circle cx="582" cy="472" r="5"/><circle cx="610" cy="590" r="5"/><circle cx="631" cy="696" r="5"/></g>
+<g font-family="sans-serif" font-size="15" letter-spacing="2" fill="#b9a994"><text x="102" y="625">LEITURA</text><text x="344" y="625">LINGUAGEM</text><text x="532" y="625">APRENDIZAGEM</text></g>
+<path d="M108 660 H653" stroke="#3b3432"/>
+<path d="M108 700 H270" stroke="#8790c8" stroke-width="6" stroke-linecap="round"/><path d="M108 732 H338" stroke="#78a8a8" stroke-width="6" stroke-linecap="round"/><path d="M108 764 H232" stroke="#c59b66" stroke-width="6" stroke-linecap="round"/>
+</svg>

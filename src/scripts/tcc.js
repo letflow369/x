@@ -63,20 +63,5 @@
     decrease.addEventListener("click",()=>{index=Math.max(0,index-1);apply();}); increase.addEventListener("click",()=>{index=Math.min(levels.length-1,index+1);apply();}); reset.addEventListener("click",()=>{index=1;apply();}); apply(false);
   }
 
-  const toggle = document.querySelector("[data-reader-toggle]");
-  const stop = document.querySelector("[data-reader-stop]");
-  const controls = document.querySelector("[data-reader-controls]");
-  const readerStatus = document.querySelector("[data-reader-status]");
-  if (toggle) {
-    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) { toggle.disabled=true; toggle.textContent="Leitura indisponível"; }
-    else {
-      let chunks=[],idx=0,state="idle";
-      const collect=()=>[...document.querySelectorAll('.tcc-hero__subtitle,.tcc-hero__intro,.tcc-summary h2,.tcc-summary h3,.tcc-summary p,.article-content h2,.article-content h3,.article-content h4,.article-content p,.article-content li,.article-content th,.article-content td')].filter(el=>!el.closest("#fontes")&&!el.closest("button")&&!el.hidden).map(el=>el.textContent.replace(/\s+/g," ").trim()).filter(t=>t.length>1);
-      const finish=(msg="Leitura encerrada.")=>{state="idle";idx=0;toggle.textContent="Ouvir página";toggle.setAttribute("aria-pressed","false");if(controls)controls.hidden=true;if(readerStatus)readerStatus.textContent=msg;};
-      const speak=()=>{ if(state!=="playing") return; if(idx>=chunks.length){finish("Leitura concluída.");return;} const u=new SpeechSynthesisUtterance(chunks[idx]);u.lang="pt-BR";u.rate=.98;u.onend=()=>{idx++;speak();};u.onerror=e=>{if(!["canceled","interrupted"].includes(e.error))finish("A leitura foi interrompida pelo navegador.");};speechSynthesis.speak(u);if(readerStatus)readerStatus.textContent=`Lendo trecho ${idx+1} de ${chunks.length}.`; };
-      toggle.addEventListener("click",()=>{ if(state==="idle"){chunks=collect();if(!chunks.length)return;speechSynthesis.cancel();idx=0;state="playing";toggle.textContent="Pausar leitura";toggle.setAttribute("aria-pressed","true");if(controls)controls.hidden=false;speak();} else if(state==="playing"){speechSynthesis.pause();state="paused";toggle.textContent="Continuar leitura";toggle.setAttribute("aria-pressed","false");} else {speechSynthesis.resume();state="playing";toggle.textContent="Pausar leitura";toggle.setAttribute("aria-pressed","true");} });
-      stop?.addEventListener("click",()=>{speechSynthesis.cancel();finish();}); window.addEventListener("beforeunload",()=>speechSynthesis.cancel());
-    }
-  }
   document.querySelector(".tcc-back-top")?.addEventListener("click", event => { if (reduced()) return; event.preventDefault(); document.getElementById("topo")?.scrollIntoView({behavior:"smooth"}); });
 })();

@@ -4,8 +4,8 @@
   const prefersReducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const initializeTimeline = () => {
-    const timeline = document.querySelector("[data-isla-timeline]");
-    const controls = document.querySelector("[data-isla-timeline-controls]");
+    const timeline = document.querySelector("[data-judaismo-timeline]");
+    const controls = document.querySelector("[data-judaismo-timeline-controls]");
     if (!timeline || !controls || controls.dataset.ready === "true") return;
 
     controls.dataset.ready = "true";
@@ -23,7 +23,7 @@
         button.setAttribute("aria-selected", String(selected));
         button.tabIndex = selected ? 0 : -1;
       });
-      items[currentIndex].scrollIntoView({
+      items[currentIndex]?.scrollIntoView({
         behavior: prefersReducedMotion() ? "auto" : "smooth",
         block: "nearest",
         inline: "start",
@@ -48,42 +48,8 @@
     select(0);
   };
 
-  const initializeTabs = () => {
-    document.querySelectorAll("[data-isla-tabs]").forEach((tabs) => {
-      const buttons = Array.from(tabs.querySelectorAll('[role="tab"]'));
-      const panels = Array.from(tabs.querySelectorAll('[role="tabpanel"]'));
-      if (!buttons.length || tabs.dataset.ready === "true") return;
-      tabs.dataset.ready = "true";
-
-      const activate = (index, focus = false) => {
-        buttons.forEach((button, buttonIndex) => {
-          const selected = buttonIndex === index;
-          button.setAttribute("aria-selected", String(selected));
-          button.tabIndex = selected ? 0 : -1;
-        });
-        panels.forEach((panel, panelIndex) => {
-          panel.hidden = panelIndex !== index;
-        });
-        if (focus) buttons[index]?.focus();
-      };
-
-      buttons.forEach((button, index) => {
-        button.addEventListener("click", () => activate(index));
-        button.addEventListener("keydown", (event) => {
-          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
-          event.preventDefault();
-          if (event.key === "ArrowRight") activate((index + 1) % buttons.length, true);
-          if (event.key === "ArrowLeft") activate((index - 1 + buttons.length) % buttons.length, true);
-          if (event.key === "Home") activate(0, true);
-          if (event.key === "End") activate(buttons.length - 1, true);
-        });
-      });
-      activate(0);
-    });
-  };
-
   const initializeAccordions = () => {
-    document.querySelectorAll("[data-isla-myths]").forEach((group) => {
+    document.querySelectorAll("[data-judaismo-myths]").forEach((group) => {
       group.querySelectorAll("details").forEach((item) => {
         item.addEventListener("toggle", () => {
           if (!item.open) return;
@@ -96,7 +62,7 @@
   };
 
   const initializeMobileToc = () => {
-    const toc = document.querySelector(".isla-toc details");
+    const toc = document.querySelector(".judaismo-toc details");
     if (!toc) return;
     toc.querySelectorAll("a[href^='#']").forEach((link) => {
       link.addEventListener("click", () => {
@@ -136,12 +102,62 @@
     });
   };
 
+  const initializeFontControls = () => {
+    const article = document.querySelector("[data-judaismo-readable]");
+    const decrease = document.querySelector("[data-font-decrease]");
+    const reset = document.querySelector("[data-font-reset]");
+    const increase = document.querySelector("[data-font-increase]");
+    const status = document.querySelector("[data-font-status]");
+    if (!article || !decrease || !reset || !increase) return;
+
+    const levels = [0.9, 1, 1.1, 1.2, 1.3];
+    const storageKey = "lf369-judaismo-font-scale";
+    let currentIndex = 1;
+
+    try {
+      const stored = Number.parseFloat(window.localStorage.getItem(storageKey) || "");
+      const storedIndex = levels.findIndex((value) => Math.abs(value - stored) < 0.001);
+      if (storedIndex >= 0) currentIndex = storedIndex;
+    } catch {
+      currentIndex = 1;
+    }
+
+    const apply = (announce = true) => {
+      const scale = levels[currentIndex];
+      article.style.setProperty("--jewish-font-scale", String(scale));
+      article.style.setProperty("--jewish-body-size", `${scale}rem`);
+      decrease.disabled = currentIndex === 0;
+      increase.disabled = currentIndex === levels.length - 1;
+      const percentage = Math.round(scale * 100);
+      if (announce && status) status.textContent = `Tamanho do texto: ${percentage}%.`;
+      try {
+        window.localStorage.setItem(storageKey, String(scale));
+      } catch {
+        // A preferência continua válida durante a sessão atual.
+      }
+    };
+
+    decrease.addEventListener("click", () => {
+      currentIndex = Math.max(0, currentIndex - 1);
+      apply();
+    });
+    increase.addEventListener("click", () => {
+      currentIndex = Math.min(levels.length - 1, currentIndex + 1);
+      apply();
+    });
+    reset.addEventListener("click", () => {
+      currentIndex = 1;
+      apply();
+    });
+    apply(false);
+  };
+
   const initialize = () => {
     initializeTimeline();
-    initializeTabs();
     initializeAccordions();
     initializeMobileToc();
     initializeCopyButtons();
+    initializeFontControls();
   };
 
   if (document.readyState === "loading") {

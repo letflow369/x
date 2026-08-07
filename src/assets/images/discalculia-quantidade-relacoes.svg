@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 920" role="img" aria-labelledby="title desc">
+<title id="title">Quantidade, símbolos e relações matemáticas</title>
+<desc id="desc">Composição abstrata adulta com agrupamentos de pontos, uma reta numérica, proporções e conexões entre quantidade, símbolos e estratégias. Não representa exame cerebral ou biomarcador.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#161517"/><stop offset="1" stop-color="#101820"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#858bc7"/><stop offset="1" stop-color="#6f9fac"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-opacity=".26"/></filter>
+</defs>
+<rect x="28" y="24" width="704" height="872" rx="44" fill="url(#bg)" stroke="#3a302c"/>
+<circle cx="609" cy="163" r="112" fill="#858bc7" opacity=".06"/><circle cx="163" cy="704" r="144" fill="#6f9fac" opacity=".055"/>
+
+<g filter="url(#shadow)">
+  <rect x="86" y="110" width="274" height="260" rx="26" fill="#201d20" stroke="#514747"/>
+  <text x="116" y="153" fill="#b9a994" font-family="sans-serif" font-size="15" letter-spacing="2">QUANTIDADE</text>
+  <g fill="#858bc7">
+    <circle cx="135" cy="207" r="10"/><circle cx="182" cy="207" r="10"/><circle cx="229" cy="207" r="10"/>
+    <circle cx="135" cy="254" r="10"/><circle cx="182" cy="254" r="10"/><circle cx="229" cy="254" r="10"/>
+    <circle cx="135" cy="301" r="10"/><circle cx="182" cy="301" r="10"/>
+  </g>
+  <g fill="#6f9fac" opacity=".86">
+    <circle cx="291" cy="218" r="7"/><circle cx="323" cy="218" r="7"/><circle cx="291" cy="250" r="7"/><circle cx="323" cy="250" r="7"/><circle cx="307" cy="282" r="7"/>
+  </g>
+</g>
+
+<g filter="url(#shadow)">
+  <rect x="402" y="154" width="264" height="216" rx="26" fill="#1c2025" stroke="#4e4b5d"/>
+  <text x="432" y="197" fill="#b9a994" font-family="sans-serif" font-size="15" letter-spacing="2">SÍMBOLOS</text>
+  <text x="453" y="285" fill="#f1e7d5" font-family="sans-serif" font-size="62" font-weight="600">8</text>
+  <path d="M520 262 H574" stroke="#858bc7" stroke-width="5" stroke-linecap="round"/>
+  <text x="601" y="284" fill="#cfe0df" font-family="sans-serif" font-size="52" font-weight="600">6</text>
+  <path d="M514 309 C548 328 581 328 616 309" fill="none" stroke="#6f9fac" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<g>
+  <text x="93" y="443" fill="#b9a994" font-family="sans-serif" font-size="15" letter-spacing="2">RETA NUMÉRICA</text>
+  <path d="M105 505 H653" stroke="#655d59" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#b9a994" stroke-width="2" opacity=".7">
+    <path d="M132 491 V519"/><path d="M204 491 V519"/><path d="M276 491 V519"/><path d="M348 491 V519"/><path d="M420 491 V519"/><path d="M492 491 V519"/><path d="M564 491 V519"/><path d="M636 491 V519"/>
+  </g>
+  <g fill="#b9a994" font-family="sans-serif" font-size="14" text-anchor="middle"><text x="132" y="546">0</text><text x="276" y="546">20</text><text x="420" y="546">40</text><text x="564" y="546">60</text><text x="636" y="546">70</text></g>
+  <circle cx="492" cy="505" r="12" fill="#858bc7"/><circle cx="348" cy="505" r="9" fill="#6f9fac"/>
+  <path d="M348 473 C392 430 449 430 492 473" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+</g>
+
+<g filter="url(#shadow)">
+  <rect x="91" y="612" width="574" height="198" rx="28" fill="#1a1c20" stroke="#454048"/>
+  <text x="121" y="655" fill="#b9a994" font-family="sans-serif" font-size="15" letter-spacing="2">RELAÇÕES E ESTRATÉGIAS</text>
+  <g fill="none" stroke="url(#accent)" stroke-width="3" opacity=".85">
+    <path d="M174 724 C245 671 305 680 365 719"/><path d="M365 719 C425 760 498 759 576 704"/><path d="M174 724 C300 792 447 643 576 704"/>
+  </g>
+  <g fill="#16191e" stroke-width="3">
+    <circle cx="174" cy="724" r="34" stroke="#858bc7"/><circle cx="365" cy="719" r="34" stroke="#6f9fac"/><circle cx="576" cy="704" r="34" stroke="#858bc7"/>
+  </g>
+  <g fill="#f1e7d5" font-family="sans-serif" font-size="20" text-anchor="middle"><text x="174" y="731">12</text><text x="365" y="726">3×4</text><text x="576" y="711">¼</text></g>
+</g>
+
+<g font-family="sans-serif" font-size="14" letter-spacing="2" fill="#b9a994"><text x="98" y="864">QUANTIDADE</text><text x="301" y="864">SÍMBOLOS</text><text x="482" y="864">ESTRATÉGIAS</text></g>
+</svg>
