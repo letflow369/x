@@ -63,9 +63,9 @@ de leitura.
 ## JavaScript
 
 Os scripts são modulares e específicos de cada página. Eles controlam recursos
-como linhas do tempo, acordeões, cópia de referências e, quando previsto no
-artigo, leitura em voz alta ou preferência local de tamanho de texto. Nenhum
-dado é enviado para servidor.
+como linhas do tempo, acordeões, cópia de referências e navegação contextual.
+Nenhum dado é enviado para servidor. O projeto não implementa controles
+específicos de acessibilidade de leitura.
 
 ## Publicação
 
@@ -489,8 +489,8 @@ src/assets/images/og-isla.jpg
 A página apresenta uma leitura progressiva sobre origem histórica, Maomé,
 Alcorão, Sunnah, hadith, crenças, Cinco Pilares, diversidade interna, valores,
 produção intelectual, presença no Brasil e equívocos comuns. Diferencia texto
-religioso, interpretação e aplicação histórica e inclui leitura em voz alta
-acionada somente pelo usuário.
+religioso, interpretação e aplicação histórica. Não inclui recursos específicos
+de acessibilidade de leitura.
 
 
 ## Página de Cristianismo
@@ -520,9 +520,8 @@ A página organiza o tema em leitura rápida, intermediária e aprofundada. O
 conteúdo distingue fatos históricos, crenças religiosas e interpretações
 acadêmicas; apresenta origem judaica, linha do tempo, Bíblia, diversidade
 católica, ortodoxa, protestante e pentecostal, cristianismo no Brasil,
-contribuições, contradições, glossário e referências verificáveis. Inclui
-leitura em voz alta e ajuste de tamanho do texto, ambos dependentes de ação
-explícita do usuário, sem modo de alto contraste ou progresso de leitura.
+contribuições, contradições, glossário e referências verificáveis. Não inclui
+recursos específicos de acessibilidade de leitura.
 
 
 
@@ -552,7 +551,7 @@ A página apresenta burnout como fenômeno ocupacional segundo a CID-11, com
 leitura progressiva, linha do tempo, comparador com estresse, depressão e
 ansiedade, modelo demandas–recursos, sinais, avaliação, instrumentos,
 intervenções individuais e organizacionais, evidências recentes, prevenção,
-glossário e aviso de saúde. Inclui controle de tamanho de texto e botão “Voltar ao topo”.
+glossário e aviso de saúde. Mantém botão “Voltar ao topo” e não inclui recursos específicos de acessibilidade de leitura.
 
 
 ## Página de Transtorno de Personalidade Borderline
@@ -567,7 +566,7 @@ src/assets/images/borderline-regulacao-identidade.svg
 src/assets/images/og-borderline.jpg
 ```
 
-A página apresenta o TPB em leitura progressiva, com resumo essencial, história do diagnóstico, modelo biopsicossocial, sintomas, fases da vida, prognóstico, comorbidades, diagnóstico diferencial, segurança, psicoterapias, medicamentos, evidências recentes, mitos, apoio, fronteiras da evidência e referências verificáveis. Inclui ajuste de fonte, alto contraste e botão “Voltar ao topo”.
+A página apresenta o TPB em leitura progressiva, com resumo essencial, história do diagnóstico, modelo biopsicossocial, sintomas, fases da vida, prognóstico, comorbidades, diagnóstico diferencial, segurança, psicoterapias, medicamentos, evidências recentes, mitos, apoio, fronteiras da evidência e referências verificáveis. Mantém botão “Voltar ao topo” e não inclui recursos específicos de acessibilidade de leitura.
 
 
 ## Página de Terapia Cognitivo-Comportamental
@@ -582,7 +581,7 @@ src/assets/images/tcc-ciclo-aprendizagem.svg
 src/assets/images/og-tcc.jpg
 ```
 
-A página apresenta a TCC como família de psicoterapias, corrige a confusão entre terapia e diagnóstico, organiza sua história em linha do tempo, inclui diagrama cognitivo-comportamental interativo, conceitos e técnicas expansíveis, etapas de tratamento, tabela filtrável de aplicações clínicas, comorbidades, painel da meta-análise de 2025, TCC digital, limitações e referências verificáveis. Inclui ajuste de fonte e botão “Voltar ao topo”.
+A página apresenta a TCC como família de psicoterapias, corrige a confusão entre terapia e diagnóstico, organiza sua história em linha do tempo, inclui diagrama cognitivo-comportamental interativo, conceitos e técnicas expansíveis, etapas de tratamento, tabela filtrável de aplicações clínicas, comorbidades, painel da meta-análise de 2025, TCC digital, limitações e referências verificáveis. Mantém botão “Voltar ao topo” e não inclui recursos específicos de acessibilidade de leitura.
 
 
 ## Página de Judaísmo
@@ -598,7 +597,7 @@ src/assets/images/judaismo-biblia-hebraica.webp
 src/assets/images/og-judaismo.jpg
 ```
 
-A página apresenta o Judaísmo em leitura progressiva, distinguindo tradição religiosa e reconstrução histórica. Inclui formação israelita e judaíta, exílio, Segundo Templo, Judaísmo rabínico, correntes contemporâneas, valores, Torá, Tanakh, Mishná, Talmude, Midrash, filosofia, diversidade cultural, antissemitismo, mitos, FAQ e referências próximas às afirmações. Inclui ajuste de fonte.
+A página apresenta o Judaísmo em leitura progressiva, distinguindo tradição religiosa e reconstrução histórica. Inclui formação israelita e judaíta, exílio, Segundo Templo, Judaísmo rabínico, correntes contemporâneas, valores, Torá, Tanakh, Mishná, Talmude, Midrash, filosofia, diversidade cultural, antissemitismo, mitos, FAQ e referências próximas às afirmações. Não inclui recursos específicos de acessibilidade de leitura.
 
 
 ## Revisão editorial global — agosto de 2026
@@ -612,7 +611,7 @@ A página apresenta o Judaísmo em leitura progressiva, distinguindo tradição 
 - recurso de leitura em voz alta removido integralmente das páginas e scripts;
 - permanecem recursos estruturais de acessibilidade como navegação por teclado, foco visível, texto alternativo e redução de movimento.
 
-**Regra do projeto:** não incluir síntese de voz/leitura automática das páginas, salvo nova solicitação explícita.
+**Regra do projeto:** nunca implementar recursos específicos de acessibilidade de leitura em nenhuma página. A acessibilidade estrutural do site permanece obrigatória.
 
 
 ## Página de Dislexia

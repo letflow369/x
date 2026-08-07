@@ -9,8 +9,6 @@
   --jewish-ink: #071219;
   --jewish-surface: #141c20;
   --jewish-surface-warm: #1d1b18;
-  --jewish-font-scale: 1;
-  --jewish-body-size: 1rem;
   font-family: "Atkinson Hyperlegible", Arial, sans-serif;
 }
 
@@ -24,7 +22,7 @@
 .judaismo-method,
 .judaismo-summary,
 .judaismo-article .article-content {
-  font-size: var(--jewish-body-size, 1rem);
+  font-size: 1rem;
 }
 
 .judaismo-article .article-content p,
@@ -151,55 +149,6 @@
   color: #c9c3b9;
 }
 
-.accessibility-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-  align-items: center;
-  margin-top: var(--space-4);
-}
-
-.font-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  align-items: center;
-  padding: 0.45rem 0.55rem;
-  background: rgb(5 13 23 / 76%);
-  border: 0.0625rem solid rgb(145 180 207 / 38%);
-  border-radius: 999px;
-}
-
-.font-controls > span {
-  padding-inline: 0.4rem;
-  font-size: 0.8rem;
-  color: #ded9d0;
-}
-
-.font-control {
-  display: grid;
-  min-width: 2.35rem;
-  min-height: 2.35rem;
-  padding: 0.3rem;
-  place-items: center;
-  font: inherit;
-  font-weight: 700;
-  color: #f1e8d8;
-  background: #152231;
-  border: 0.0625rem solid rgb(145 180 207 / 50%);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.font-control:hover,
-.font-control:focus-visible {
-  color: #111821;
-  background: var(--jewish-gold-light);
-  border-color: var(--jewish-gold-light);
-}
-
-.font-control:disabled { opacity: 0.45; cursor: not-allowed; }
-.font-status { min-height: 1.3em; margin: 0; color: var(--jewish-blue-light); }
 
 .button--small { min-height: 2.5rem; padding: 0.55rem 0.9rem; }
 
@@ -623,8 +572,6 @@
   .study-grid,
   .glossary-grid,
   .reading-list-grid { grid-template-columns: 1fr; }
-  .accessibility-tools { align-items: flex-start; flex-direction: column; }
-  .font-controls { border-radius: var(--radius-medium); }
   .reading-levels article { grid-template-columns: 2.5rem minmax(0, 1fr); }
   .judaismo-timeline { grid-auto-columns: minmax(82vw, 19rem); }
   .brazil-data-card { grid-template-columns: 1fr; }

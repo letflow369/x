@@ -5,32 +5,21 @@
   --bpd-green: #7e9c88;
   --bpd-rust: #a46d62;
   --bpd-lilac: #988eaa;
-  --bpd-font-scale: 1;
-  --bpd-body-size: 1rem;
 }
 .borderline-article .sr-only { position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
-.borderline-content p,.borderline-content li,.borderline-content td,.borderline-content th,.borderline-content details>div,.borderline-content details>p { font-size: calc(1rem * var(--bpd-font-scale)); }
-.borderline-article.is-high-contrast { --color-text:#fff; --color-text-muted:#f1efe8; --color-surface:#050505; --bpd-blue:#9bd9ff; --bpd-gold:#ffd27a; --bpd-green:#a7f3bd; --bpd-lilac:#d6b9ff; background:#000; }
-.borderline-article.is-high-contrast .borderline-hero,.borderline-article.is-high-contrast .borderline-summary,.borderline-article.is-high-contrast .borderline-editorial-note { background:#000; }
-.borderline-article.is-high-contrast article,.borderline-article.is-high-contrast details,.borderline-article.is-high-contrast .comparison-table { border-color:#fff!important; }
+.borderline-content p,.borderline-content li,.borderline-content td,.borderline-content th,.borderline-content details>div,.borderline-content details>p { font-size: 1rem; }
 .borderline-hero { overflow:hidden; background:radial-gradient(circle at 12% 24%,rgb(127 159 176 / 18%),transparent 30rem),radial-gradient(circle at 86% 15%,rgb(152 142 170 / 15%),transparent 28rem),linear-gradient(135deg,#090b0d 0%,#111820 52%,#171312 100%); border-bottom:.0625rem solid rgb(93 64 43 / 52%); }
 .borderline-hero__inner { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(18rem,24rem); gap:clamp(2rem,6vw,5rem); align-items:center; width:min(100% - 2rem,var(--content-width)); margin-inline:auto; padding-block:clamp(4.25rem,9vw,7.5rem); }
 .borderline-hero__content { min-width:0; }
 .borderline-hero h1 { margin-block:var(--space-3); font-size:clamp(2.85rem,7.2vw,6rem); color:var(--color-primary-hover); }
 .borderline-hero__subtitle { max-width:46rem; margin-bottom:var(--space-4); font-family:var(--font-subtitle); font-size:clamp(1.5rem,3vw,2.3rem); color:#d8c8af; }
-.borderline-hero__intro { max-width:52rem; font-size:calc(clamp(1.05rem,2vw,1.26rem)*var(--bpd-font-scale)); }
+.borderline-hero__intro { max-width:52rem; font-size:clamp(1.05rem,2vw,1.26rem); }
 .borderline-hero__meta { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem 1rem; margin:var(--space-5) 0; }
 .borderline-hero__meta div { padding:.75rem .9rem; background:rgb(10 12 15 / 55%); border:.0625rem solid rgb(127 159 176 / 22%); border-radius:.65rem; }
 .borderline-hero__meta dt { font-family:var(--font-interface); font-size:.7rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--bpd-gold); }
 .borderline-hero__meta dd { margin:.18rem 0 0; color:var(--color-text-muted); }
 .borderline-safety-shortcut { margin-top:var(--space-4); }
 .borderline-safety-shortcut a { font-family:var(--font-interface); font-weight:700; color:#d8b078; }
-.borderline-reading-tools { display:flex; flex-wrap:wrap; gap:.75rem 1rem; align-items:center; margin-top:var(--space-5); }
-.borderline-reading-tools__group { display:flex; flex-wrap:wrap; gap:.4rem; align-items:center; }
-.borderline-reading-tools__label { margin-right:.3rem; font-family:var(--font-interface); font-size:.73rem; font-weight:700; color:var(--color-text-muted); }
-.borderline-reading-tools button { min-height:2.35rem; padding:.48rem .72rem; font-family:var(--font-interface); font-size:.78rem; font-weight:700; color:var(--color-text); background:rgb(22 21 23 / 88%); border:.0625rem solid rgb(127 159 176 / 38%); border-radius:.55rem; cursor:pointer; }
-.borderline-reading-tools button:hover,.borderline-reading-tools button:focus-visible,.borderline-reading-tools button[aria-pressed="true"] { border-color:var(--bpd-gold); color:#fff; }
-.borderline-reading-tools button:disabled { opacity:.5; cursor:not-allowed; }
 .borderline-hero__notice { margin-top:var(--space-5); padding:var(--space-4); background:rgb(126 156 136 / 8%); border:.0625rem solid rgb(126 156 136 / 28%); border-left:.22rem solid var(--bpd-green); border-radius:0 var(--radius-medium) var(--radius-medium) 0; }
 .borderline-hero__notice p { margin:.65rem 0 0; }
 .borderline-hero__visual { margin:0; }
@@ -104,5 +93,5 @@
 @media (max-width:68rem){ .borderline-hero__inner{grid-template-columns:minmax(0,1fr) minmax(14rem,19rem)} .borderline-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
 @media (max-width:62rem){ .borderline-desktop-nav{display:none} .borderline-mobile-nav{display:block} .borderline-layout{grid-template-columns:1fr; padding-top:var(--space-6)} .borderline-content{max-width:var(--reading-width); margin-inline:auto} }
 @media (max-width:48rem){ .borderline-hero__inner,.borderline-core-grid,.borderline-bio-grid,.borderline-prognosis-grid,.borderline-strategy-grid,.borderline-importance-grid,.borderline-uncertainty-grid,.borderline-safety-grid,.borderline-support-grid,.borderline-evidence-grid,.borderline-references{grid-template-columns:1fr} .borderline-hero__visual{justify-self:center;width:min(100%,19rem)} .borderline-hero__meta{grid-template-columns:1fr} .borderline-summary-grid{grid-template-columns:1fr} .borderline-diagram{grid-template-columns:repeat(2,minmax(0,1fr))} .borderline-diagram strong{grid-column:1/-1} .borderline-back-top{right:.8rem;bottom:.8rem} .comparison-table{min-width:38rem} }
-@media (max-width:34rem){ .borderline-reading-tools{align-items:stretch} .borderline-reading-tools__group{width:100%} .borderline-reading-tools button{flex:1} .borderline-symptom-grid summary,.borderline-treatment-grid summary,.borderline-myths summary,.borderline-faq summary{padding-inline:var(--space-4)} .borderline-symptom-grid details>div,.borderline-treatment-grid details>div,.borderline-myths details>div,.borderline-faq details>div{padding-inline:var(--space-4)} }
+@media (max-width:34rem){ .borderline-symptom-grid summary,.borderline-treatment-grid summary,.borderline-myths summary,.borderline-faq summary{padding-inline:var(--space-4)} .borderline-symptom-grid details>div,.borderline-treatment-grid details>div,.borderline-myths details>div,.borderline-faq details>div{padding-inline:var(--space-4)} }
 @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }

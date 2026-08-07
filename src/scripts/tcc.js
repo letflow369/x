@@ -51,17 +51,5 @@
     if (filterStatus) filterStatus.textContent = `${shown} ${shown === 1 ? "condição exibida" : "condições exibidas"}.`;
   });
 
-  const article = document.querySelector("[data-tcc-readable]");
-  const decrease = document.querySelector("[data-font-decrease]");
-  const reset = document.querySelector("[data-font-reset]");
-  const increase = document.querySelector("[data-font-increase]");
-  const fontStatus = document.querySelector("[data-font-status]");
-  if (article && decrease && reset && increase) {
-    const levels=[.9,1,1.1,1.2,1.3]; let index=1; const key="lf369-tcc-font-scale";
-    try { const n=Number.parseFloat(localStorage.getItem(key)||""); const idx=levels.findIndex(v=>Math.abs(v-n)<.001); if(idx>=0) index=idx; } catch {}
-    const apply=(announce=true)=>{ const scale=levels[index]; article.style.setProperty("--tcc-font-scale",String(scale)); decrease.disabled=index===0; increase.disabled=index===levels.length-1; reset.textContent=`${Math.round(scale*100)}%`; if(announce&&fontStatus) fontStatus.textContent=`Tamanho do texto: ${Math.round(scale*100)}%.`; try{localStorage.setItem(key,String(scale));}catch{} };
-    decrease.addEventListener("click",()=>{index=Math.max(0,index-1);apply();}); increase.addEventListener("click",()=>{index=Math.min(levels.length-1,index+1);apply();}); reset.addEventListener("click",()=>{index=1;apply();}); apply(false);
-  }
-
   document.querySelector(".tcc-back-top")?.addEventListener("click", event => { if (reduced()) return; event.preventDefault(); document.getElementById("topo")?.scrollIntoView({behavior:"smooth"}); });
 })();

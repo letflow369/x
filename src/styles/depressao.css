@@ -419,9 +419,11 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-4);
   margin-top: var(--space-5);
+  padding: 0;
+  list-style: none;
 }
 
-.two-column-list > div {
+.two-column-list > li {
   padding: var(--space-5);
   background: rgb(22 21 23 / 72%);
   border: 0.0625rem solid rgb(93 64 43 / 46%);

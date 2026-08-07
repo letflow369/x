@@ -6,8 +6,6 @@
   --burnout-green: #7f9f8b;
   --burnout-rust: #a86e5d;
   --burnout-lilac: #988ea8;
-  --burnout-font-scale: 1;
-  --burnout-body-size: 1rem;
 }
 
 .burnout-article .sr-only {
@@ -28,7 +26,7 @@
 .burnout-content th,
 .burnout-content details > div,
 .burnout-content details > p {
-  font-size: calc(1rem * var(--burnout-font-scale));
+  font-size: 1rem;
 }
 
 .chapter-summary {
@@ -95,7 +93,7 @@
 .burnout-hero__intro,
 .burnout-summary,
 .burnout-mobile-nav {
-  font-size: calc(var(--burnout-body-size) * 1);
+  font-size: 1rem;
 }
 
 .burnout-hero {
@@ -135,7 +133,7 @@
 
 .burnout-hero__intro {
   max-width: 50rem;
-  font-size: calc(clamp(1.05rem, 2vw, 1.26rem) * var(--burnout-font-scale));
+  font-size: clamp(1.05rem, 2vw, 1.26rem);
 }
 
 .burnout-hero__meta {
@@ -203,56 +201,6 @@
   color: var(--color-text-muted);
 }
 
-.burnout-reading-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-  align-items: center;
-  margin-top: var(--space-5);
-}
-
-.burnout-reading-tools__group {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  align-items: center;
-  padding: 0.42rem;
-  background: rgb(11 12 16 / 56%);
-  border: 0.0625rem solid rgb(127 166 179 / 30%);
-  border-radius: 0.7rem;
-}
-
-.burnout-reading-tools__label {
-  padding-inline: 0.45rem;
-  font-family: var(--font-interface);
-  font-size: 0.73rem;
-  font-weight: 700;
-  color: var(--color-text-muted);
-}
-
-.burnout-reading-tools button {
-  min-height: 2.25rem;
-  padding: 0.4rem 0.68rem;
-  font-family: var(--font-interface);
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--color-text);
-  background: rgb(34 38 41 / 92%);
-  border: 0.0625rem solid rgb(127 166 179 / 35%);
-  border-radius: 0.48rem;
-  cursor: pointer;
-}
-
-.burnout-reading-tools button:hover,
-.burnout-reading-tools button:focus-visible {
-  color: #eef6f8;
-  border-color: var(--burnout-blue);
-}
-
-.burnout-reading-tools button:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
 
 .burnout-summary {
   background: linear-gradient(180deg, rgb(15 23 26 / 98%), rgb(11 12 16 / 100%));
@@ -387,7 +335,7 @@
 
 .burnout-content {
   max-width: 72ch;
-  font-size: calc(1rem * var(--burnout-font-scale));
+  font-size: 1rem;
 }
 
 .burnout-content .article-section {
@@ -689,8 +637,6 @@
   }
 
   .burnout-hero__meta { grid-template-columns: 1fr; }
-  .burnout-reading-tools { align-items: stretch; }
-  .burnout-reading-tools__group { width: 100%; }
   .burnout-help-links { display: grid; }
   .burnout-help-links a { justify-content: center; }
   .burnout-back-top { right: 0.8rem; bottom: 0.8rem; }

@@ -282,12 +282,26 @@
   text-align: center;
   font-family: var(--font-interface);
 }
+.sz-development-flow .sz-development-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.sz-development-pair span {
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(135, 148, 201, 0.18);
+  border-radius: 999px;
+  background: rgba(135, 148, 201, 0.06);
+}
 .sz-development-flow b,
 .sz-cu-path b,
 .sz-purpose b { color: var(--sz-teal); font-weight: 500; }
 
 .sz-callout,
-.sz-evidence-card,
 .sz-insufficient {
   margin-top: 1.3rem;
   padding: 1.1rem 1.25rem;
@@ -299,6 +313,7 @@
 .sz-callout h3 { margin-top: 0; }
 .sz-callout p:last-child { margin-bottom: 0; }
 .sz-callout--green { border-color: rgba(135, 167, 140, 0.28); border-left-color: var(--sz-green); background: rgba(135, 167, 140, 0.06); }
+.sz-callout--amber { border-color: rgba(195, 154, 99, 0.28); border-left-color: var(--sz-amber); background: rgba(195, 154, 99, 0.06); }
 
 .sz-youth {
   padding: clamp(1.5rem, 4vw, 2.2rem);
@@ -310,7 +325,6 @@
 .sz-cu-grid article { padding: 1.1rem; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-medium); background: rgba(255,255,255,.02); }
 .sz-cu-grid h3 { margin-top: 0; }
 .sz-cu-path span { width: 100%; padding: 0.6rem 0.8rem; border-radius: 999px; background: rgba(195, 154, 99, 0.08); text-align: center; font-family: var(--font-interface); font-size: 0.82rem; }
-.sz-evidence-card { border-left-color: var(--sz-amber); background: rgba(195, 154, 99, 0.06); }
 
 .sz-balance,
 .sz-neuro {
@@ -377,9 +391,11 @@
 .sz-research-timeline article::before { content: ""; position: absolute; left: 2.35rem; top: 2.1rem; bottom: 0; width: 1px; background: rgba(111,164,164,.22); }
 .sz-research-timeline article:last-child::before { display: none; }
 .sz-research-timeline time { z-index: 1; align-self: start; padding: 0.45rem 0.65rem; border: 1px solid rgba(111,164,164,.25); border-radius: 999px; background: #0e1116; color: var(--sz-teal); text-align: center; font-family: var(--font-interface); font-weight: 700; }
-.sz-research-timeline article > div { padding: 1rem 1.1rem; border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius-medium); background: rgba(255,255,255,.02); }
+.sz-research-timeline article > .sz-research-card { min-width: 0; padding: 1rem 1.1rem; border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius-medium); background: rgba(255,255,255,.02); }
 .sz-research-timeline h3 { margin: 0.55rem 0 0.45rem; font-family: var(--font-subtitle); }
 .sz-research-timeline p { margin-bottom: 0; }
+.sz-research-card details { margin-top: 0.8rem; }
+.sz-research-card summary { cursor: pointer; }
 
 .sz-neuro > div:first-child { border-left: 3px solid var(--sz-teal); }
 .sz-neuro > div:last-child { border-left: 3px solid var(--sz-gray); }
@@ -399,9 +415,9 @@
 .sz-myths > div { display: grid; grid-template-columns: minmax(12rem, .9fr) 1.3fr; }
 .sz-myths > div + div { border-top: 1px solid rgba(255,255,255,.08); }
 .sz-myths strong,
-.sz-myths span { padding: 0.85rem 1rem; }
+.sz-myths p { padding: 0.85rem 1rem; }
 .sz-myths strong { background: rgba(195,154,99,.055); color: #e0c6a3; }
-.sz-myths span { background: rgba(135,167,140,.035); }
+.sz-myths p { margin: 0; background: rgba(135,167,140,.035); }
 
 .sz-gaps { padding: clamp(1.5rem, 4vw, 2.3rem); border: 1px solid rgba(161,160,162,.16); border-radius: var(--radius-large); background: rgba(161,160,162,.025); }
 .sz-gap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -467,6 +483,7 @@
   .sz-history li::before { left: .35rem; top: 1.5rem; }
   .sz-history time { justify-self: start; }
   .sz-history li > div::before { left: -1.62rem; top: 1rem; }
+  .sz-development-flow .sz-development-pair { grid-template-columns: 1fr; }
   .sz-myths { border: 0; display: grid; gap: .8rem; }
   .sz-myths > div { grid-template-columns: 1fr; border: 1px solid rgba(255,255,255,.09); border-radius: var(--radius-medium); overflow: hidden; }
   .sz-myths > div + div { border-top: 1px solid rgba(255,255,255,.09); }

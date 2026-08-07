@@ -61,7 +61,8 @@
 .dyspraxia-causal-map__connector { color: var(--dyspraxia-teal); font: 700 1.25rem var(--font-interface); text-align: center; }
 
 .intelligence-panel { padding: clamp(1.2rem, 3vw, 1.8rem); border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 50%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--dyspraxia-indigo) 10%, var(--dyspraxia-panel)), var(--dyspraxia-panel)); }
-.intelligence-panel > strong { display: block; margin: 1rem 0; font-family: var(--font-subtitle); font-size: 1.35rem; color: var(--dyspraxia-indigo); }
+.intelligence-panel > p:first-child { margin-top: 0; }
+.intelligence-panel > p:first-child strong { display: block; margin: 0 0 1rem; font-family: var(--font-subtitle); font-size: 1.35rem; color: var(--dyspraxia-indigo); }
 
 .dyspraxia-associated-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
 .dyspraxia-associated-map__center { grid-column: 1 / -1; justify-self: center; width: min(18rem, 100%); padding: .9rem 1rem; border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 60%, var(--color-border)); border-radius: 999px; background: color-mix(in srgb, var(--dyspraxia-indigo) 12%, var(--dyspraxia-panel)); text-align: center; font: 700 .82rem var(--font-interface); letter-spacing: .14em; color: var(--dyspraxia-indigo); }

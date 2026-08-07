@@ -56,24 +56,9 @@
     });
   };
 
-  const initFont = () => {
-    const dec = document.querySelector("[data-font-decrease]"), reset = document.querySelector("[data-font-reset]"), inc = document.querySelector("[data-font-increase]"), status = document.querySelector("[data-font-status]");
-    if (!article || !dec || !reset || !inc) return;
-    const levels = [.9,1,1.1,1.2,1.3], key = "lf369-borderline-font-scale";
-    let i = 1;
-    try { const stored = Number.parseFloat(localStorage.getItem(key)||""); const idx = levels.findIndex((v)=>Math.abs(v-stored)<.001); if (idx >= 0) i = idx; } catch {}
-    const apply = (announce=true) => { const scale=levels[i]; article.style.setProperty("--bpd-font-scale", String(scale)); article.style.setProperty("--bpd-body-size", `${scale}rem`); dec.disabled=i===0; inc.disabled=i===levels.length-1; reset.textContent=`${Math.round(scale*100)}%`; if (announce&&status) status.textContent=`Tamanho do texto: ${Math.round(scale*100)}%.`; try{localStorage.setItem(key,String(scale));}catch{} };
-    dec.addEventListener("click",()=>{i=Math.max(0,i-1);apply();}); inc.addEventListener("click",()=>{i=Math.min(levels.length-1,i+1);apply();}); reset.addEventListener("click",()=>{i=1;apply();}); apply(false);
-  };
 
-  const initContrast = () => {
-    const toggle = document.querySelector("[data-contrast-toggle]"), status = document.querySelector("[data-contrast-status]"); if (!article || !toggle) return;
-    const key="lf369-borderline-high-contrast"; let active=false; try{active=localStorage.getItem(key)==="1";}catch{}
-    const apply=(announce=true)=>{article.classList.toggle("is-high-contrast",active);toggle.setAttribute("aria-pressed",String(active));toggle.textContent=active?"Contraste padrão":"Alto contraste";if(announce&&status)status.textContent=active?"Alto contraste ativado.":"Alto contraste desativado.";try{localStorage.setItem(key,active?"1":"0");}catch{}};
-    toggle.addEventListener("click",()=>{active=!active;apply();}); apply(false);
-  };
 
   const initBackTop = () => { const link=document.querySelector(".borderline-back-top"); if(!link)return; link.addEventListener("click",(e)=>{if(reduced())return;e.preventDefault();document.getElementById("topo")?.scrollIntoView({behavior:"smooth"});}); };
-  const init=()=>{initMobileToc();initActiveToc();initTimeline();initTabs();initFont();initContrast();initBackTop();};
+  const init=()=>{initMobileToc();initActiveToc();initTimeline();initTabs();initBackTop();};
   document.readyState==="loading" ? document.addEventListener("DOMContentLoaded",init,{once:true}) : init();
 })();

@@ -120,42 +120,6 @@
     });
   };
 
-  const initializeFontControls = () => {
-    const article = document.querySelector("[data-reiki-readable]");
-    const decrease = document.querySelector("[data-font-decrease]");
-    const reset = document.querySelector("[data-font-reset]");
-    const increase = document.querySelector("[data-font-increase]");
-    const status = document.querySelector("[data-font-status]");
-    if (!article || !decrease || !reset || !increase) return;
-
-    const levels = [0.9, 1, 1.1, 1.2, 1.3];
-    const storageKey = "lf369-reiki-font-scale";
-    let currentIndex = 1;
-
-    try {
-      const stored = Number.parseFloat(window.localStorage.getItem(storageKey) || "");
-      const storedIndex = levels.findIndex((value) => Math.abs(value - stored) < 0.001);
-      if (storedIndex >= 0) currentIndex = storedIndex;
-    } catch {
-      currentIndex = 1;
-    }
-
-    const apply = (announce = true) => {
-      const scale = levels[currentIndex];
-      article.style.setProperty("--reiki-font-scale", String(scale));
-      article.style.setProperty("--reiki-body-size", `${scale}rem`);
-      decrease.disabled = currentIndex === 0;
-      increase.disabled = currentIndex === levels.length - 1;
-      const percentage = Math.round(scale * 100);
-      if (announce && status) status.textContent = `Tamanho do texto: ${percentage}%.`;
-      try { window.localStorage.setItem(storageKey, String(scale)); } catch { /* sessão atual */ }
-    };
-
-    decrease.addEventListener("click", () => { currentIndex = Math.max(0, currentIndex - 1); apply(); });
-    increase.addEventListener("click", () => { currentIndex = Math.min(levels.length - 1, currentIndex + 1); apply(); });
-    reset.addEventListener("click", () => { currentIndex = 1; apply(); });
-    apply(false);
-  };
 
   const initializeBackToTop = () => {
     const button = document.querySelector("[data-back-to-top]");
@@ -169,7 +133,6 @@
     initializeTimeline();
     initializeToc();
     initializeCopyButtons();
-    initializeFontControls();
     initializeBackToTop();
   };
 

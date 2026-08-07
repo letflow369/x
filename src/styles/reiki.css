@@ -11,8 +11,6 @@
   --reiki-surface: #101e21;
   --reiki-surface-2: #15262a;
   --reiki-surface-warm: #211d18;
-  --reiki-font-scale: 1;
-  --reiki-body-size: 1rem;
   font-family: "Atkinson Hyperlegible", Arial, sans-serif;
 }
 
@@ -26,7 +24,7 @@
 .reiki-layers,
 .reiki-summary,
 .reiki-article .article-content {
-  font-size: var(--reiki-body-size, 1rem);
+  font-size: 1rem;
 }
 
 .reiki-article .article-content p,
@@ -176,44 +174,6 @@
   color: #b9c6c2;
 }
 
-.accessibility-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-  align-items: center;
-  margin-top: var(--space-4);
-}
-
-.font-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  align-items: center;
-  padding: 0.45rem 0.55rem;
-  background: rgb(4 15 17 / 72%);
-  border: 0.0625rem solid rgb(117 185 174 / 36%);
-  border-radius: 999px;
-}
-
-.font-controls > span { padding-inline: 0.4rem; font-size: 0.8rem; color: #dce5e1; }
-.font-control {
-  display: grid;
-  min-width: 2.35rem;
-  min-height: 2.35rem;
-  padding: 0.3rem;
-  place-items: center;
-  font: inherit;
-  font-weight: 700;
-  color: #f1eee7;
-  background: #142629;
-  border: 0.0625rem solid rgb(117 185 174 / 48%);
-  border-radius: 50%;
-  cursor: pointer;
-}
-.font-control:hover,
-.font-control:focus-visible { color: #071417; background: var(--reiki-teal-soft); border-color: var(--reiki-teal-soft); }
-.font-control:disabled { opacity: 0.45; cursor: not-allowed; }
-.font-status { min-height: 1.3em; margin: 0; color: var(--reiki-teal-soft); }
 .button--small { min-height: 2.5rem; padding: 0.55rem 0.9rem; }
 
 .reiki-layers {
@@ -571,7 +531,6 @@
   .reiki-questions,
   .reiki-warning-list { grid-template-columns: 1fr; }
   .hero-actions .button { width: 100%; justify-content: center; }
-  .font-controls { width: 100%; justify-content: center; border-radius: var(--radius-small); }
   .reiki-evidence-card dl div { grid-template-columns: 1fr; gap: 0.2rem; }
   .back-to-top span { display: none; }
 }
