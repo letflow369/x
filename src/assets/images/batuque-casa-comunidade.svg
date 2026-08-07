@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Casa comunitária e memória afro-gaúcha</title>
+  <desc id="desc">Ilustração editorial de uma casa de religião ao entardecer, cercada por vegetação e por pessoas reunidas em um pátio, sem representar cerimônia ou terreiro específico.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07131b"/>
+      <stop offset="0.58" stop-color="#14252a"/>
+      <stop offset="1" stop-color="#2b2c25"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22271f"/>
+      <stop offset="1" stop-color="#101510"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e0b76d" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#e0b76d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="8" r="1" fill="#f0e4ca" opacity=".04"/>
+      <circle cx="19" cy="4" r=".8" fill="#f0e4ca" opacity=".035"/>
+      <circle cx="12" cy="22" r="1" fill="#f0e4ca" opacity=".03"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1240" cy="165" r="170" fill="url(#glow)" filter="url(#soft)"/>
+  <circle cx="1240" cy="165" r="64" fill="#e6c77d" opacity=".88"/>
+  <circle cx="1216" cy="145" r="64" fill="#0f2025"/>
+
+  <path d="M0 620 C190 560 330 590 500 630 C720 680 850 570 1050 585 C1270 602 1410 670 1600 610 V900 H0Z" fill="url(#ground)"/>
+  <path d="M0 715 C220 665 360 720 560 724 C780 728 935 648 1120 665 C1320 684 1440 740 1600 700" fill="none" stroke="#9c7745" stroke-width="5" opacity=".28"/>
+  <path d="M0 748 C210 700 380 758 590 758 C810 758 980 690 1170 706 C1350 722 1470 770 1600 740" fill="none" stroke="#6e8a72" stroke-width="3" opacity=".22"/>
+
+  <g opacity=".9">
+    <path d="M180 590 C130 500 145 400 208 320 C165 450 196 530 245 600Z" fill="#253a30"/>
+    <path d="M155 490 C95 450 70 395 82 340 C125 404 175 425 224 434Z" fill="#355041"/>
+    <path d="M210 455 C253 390 306 355 358 365 C299 412 272 467 261 526Z" fill="#314a3d"/>
+    <path d="M1380 608 C1320 500 1348 394 1428 310 C1382 438 1412 535 1475 615Z" fill="#253a30"/>
+    <path d="M1360 500 C1296 453 1278 388 1300 332 C1340 406 1396 430 1442 438Z" fill="#355041"/>
+    <path d="M1423 450 C1478 380 1537 350 1589 372 C1520 414 1491 482 1481 538Z" fill="#314a3d"/>
+  </g>
+
+  <g transform="translate(430 292)">
+    <ellipse cx="360" cy="372" rx="390" ry="80" fill="#030706" opacity=".5"/>
+    <path d="M58 206 L360 22 L662 206Z" fill="#7d4d36"/>
+    <path d="M90 200 L360 46 L630 200" fill="none" stroke="#bc8a5a" stroke-width="12" opacity=".75"/>
+    <rect x="96" y="198" width="528" height="292" rx="10" fill="#e7dfcf"/>
+    <rect x="116" y="218" width="488" height="252" rx="6" fill="#d9d2c5"/>
+    <path d="M116 360 H604" stroke="#8e9e91" stroke-width="8" opacity=".75"/>
+    <rect x="290" y="282" width="140" height="188" rx="5" fill="#20343a"/>
+    <rect x="312" y="305" width="96" height="165" rx="3" fill="#132329"/>
+    <path d="M360 305 V470" stroke="#c6a15b" stroke-width="4" opacity=".45"/>
+    <circle cx="390" cy="388" r="5" fill="#ddbd74"/>
+    <rect x="150" y="258" width="92" height="82" rx="5" fill="#233a40"/>
+    <rect x="478" y="258" width="92" height="82" rx="5" fill="#233a40"/>
+    <path d="M162 270 H230 M162 288 H230 M162 306 H230" stroke="#d5b66d" stroke-width="5" opacity=".45"/>
+    <path d="M490 270 H558 M490 288 H558 M490 306 H558" stroke="#d5b66d" stroke-width="5" opacity=".45"/>
+    <rect x="76" y="188" width="568" height="25" rx="8" fill="#b88954"/>
+    <circle cx="360" cy="152" r="35" fill="#dfb868" opacity=".9"/>
+    <circle cx="360" cy="152" r="16" fill="none" stroke="#23353b" stroke-width="5" opacity=".42"/>
+    <circle cx="360" cy="152" r="4" fill="#23353b" opacity=".52"/>
+  </g>
+
+  <g fill="#101c20" stroke="#d4ae67" stroke-width="4" opacity=".96">
+    <circle cx="585" cy="710" r="31"/><path d="M554 810 Q585 724 616 810Z"/>
+    <circle cx="684" cy="687" r="34"/><path d="M648 807 Q684 704 720 807Z"/>
+    <circle cx="798" cy="711" r="30"/><path d="M767 810 Q798 727 829 810Z"/>
+    <circle cx="908" cy="689" r="33"/><path d="M872 808 Q908 706 944 808Z"/>
+    <circle cx="1009" cy="713" r="29"/><path d="M979 810 Q1009 730 1039 810Z"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M520 832 C700 770 890 770 1075 832" stroke="#d4ae67" stroke-width="5" opacity=".32"/>
+    <circle cx="798" cy="728" r="160" stroke="#d4ae67" stroke-width="3" opacity=".12"/>
+    <circle cx="798" cy="728" r="206" stroke="#6f9278" stroke-width="2" opacity=".1"/>
+  </g>
+
+  <g fill="#d6b36e" opacity=".58">
+    <circle cx="522" cy="832" r="4"/><circle cx="588" cy="816" r="3"/><circle cx="662" cy="801" r="4"/>
+    <circle cx="738" cy="794" r="3"/><circle cx="814" cy="792" r="4"/><circle cx="892" cy="798" r="3"/>
+    <circle cx="966" cy="811" r="4"/><circle cx="1048" cy="831" r="3"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#grain)"/>
+</svg>
