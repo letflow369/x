@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="920" viewBox="0 0 760 920" role="img" aria-labelledby="title desc">
+  <title id="title">Circuitos e desenvolvimento na Síndrome de Tourette</title>
+  <desc id="desc">Composição abstrata de trajetórias, nós conectados e ondas discretas representando redes cerebrais distribuídas, tiques, feedback e desenvolvimento ao longo do tempo. Não representa uma imagem anatômica nem um biomarcador.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7f91c9"/><stop offset="1" stop-color="#6f9fa8"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#7f91c9" stop-opacity=".32"/><stop offset="1" stop-color="#7f91c9" stop-opacity="0"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+    <style>
+      .route{fill:none;stroke:url(#g1);stroke-width:3;stroke-linecap:round;stroke-dasharray:8 14;opacity:.66;animation:flow 9s linear infinite}
+      .route2{fill:none;stroke:#6f9fa8;stroke-width:2;stroke-linecap:round;stroke-dasharray:4 12;opacity:.5;animation:flow 12s linear infinite reverse}
+      .node{fill:#0b0c10;stroke:#7f91c9;stroke-width:3}
+      .node2{fill:#0b0c10;stroke:#6f9fa8;stroke-width:3}
+      .pulse{fill:url(#glow);animation:pulse 4.8s ease-in-out infinite}
+      .wave{fill:none;stroke:#c49a62;stroke-width:2;opacity:.45}
+      .label{fill:#b9a994;font:600 16px Inter,Arial,sans-serif;letter-spacing:.08em}
+      @keyframes flow{to{stroke-dashoffset:-88}}
+      @keyframes pulse{0%,100%{opacity:.35;transform:scale(.94)}50%{opacity:.68;transform:scale(1.04)}}
+      @media (prefers-reduced-motion: reduce){.route,.route2,.pulse{animation:none}}
+    </style>
+  </defs>
+  <rect width="760" height="920" rx="46" fill="#111419"/>
+  <circle class="pulse" cx="380" cy="430" r="250" transform-origin="380px 430px"/>
+  <circle cx="380" cy="430" r="225" fill="none" stroke="#2d353d" stroke-width="1"/>
+  <circle cx="380" cy="430" r="150" fill="none" stroke="#29353d" stroke-width="1"/>
+
+  <path class="route" d="M154 280 C238 210 318 262 374 342 C432 426 505 432 616 350"/>
+  <path class="route2" d="M130 528 C220 470 280 514 346 590 C412 666 514 690 628 606"/>
+  <path class="route" d="M226 702 C245 604 286 516 365 452 C443 388 525 290 560 202"/>
+  <path class="route2" d="M192 390 C300 402 330 352 391 290 C449 232 520 246 601 277"/>
+
+  <circle class="node" cx="154" cy="280" r="15"/><circle class="node2" cx="374" cy="342" r="15"/><circle class="node" cx="616" cy="350" r="15"/>
+  <circle class="node2" cx="130" cy="528" r="14"/><circle class="node" cx="346" cy="590" r="14"/><circle class="node2" cx="628" cy="606" r="14"/>
+  <circle class="node" cx="226" cy="702" r="14"/><circle class="node2" cx="365" cy="452" r="17"/><circle class="node" cx="560" cy="202" r="14"/>
+
+  <path class="wave" d="M105 780 C128 750 151 810 174 780 S220 750 243 780 S289 810 312 780"/>
+  <path class="wave" d="M448 130 C469 102 490 158 511 130 S553 102 574 130 S616 158 637 130"/>
+
+  <g transform="translate(80 86)"><text class="label" x="0" y="0">DESENVOLVIMENTO</text><rect x="0" y="20" width="166" height="2" fill="#7f91c9" opacity=".7"/></g>
+  <g transform="translate(455 805)"><text class="label" x="0" y="0">REDES • FEEDBACK</text><rect x="0" y="20" width="178" height="2" fill="#6f9fa8" opacity=".7"/></g>
+  <g transform="translate(286 420)"><circle cx="80" cy="34" r="54" fill="#0b0c10" stroke="url(#g1)" stroke-width="2"/><text x="80" y="29" text-anchor="middle" fill="#f1e7d5" font-family="Marcellus,Georgia,serif" font-size="22">tiques</text><text x="80" y="52" text-anchor="middle" fill="#b9a994" font-family="Inter,Arial,sans-serif" font-size="12">variáveis no tempo</text></g>
+</svg>
