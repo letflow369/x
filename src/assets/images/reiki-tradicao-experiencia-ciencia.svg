@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tradição, experiência e ciência</title>
+  <desc id="desc">Ilustração editorial abstrata com duas mãos abertas e três arcos identificados como tradição, experiência subjetiva e ciência. Os arcos são simbólicos e não representam energia mensurável.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#17383a"/>
+      <stop offset="0.58" stop-color="#0d2427"/>
+      <stop offset="1" stop-color="#071417"/>
+    </radialGradient>
+    <linearGradient id="hand" x1="0" x2="1">
+      <stop stop-color="#e3d1aa"/>
+      <stop offset="1" stop-color="#bfa172"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="900" height="900" rx="54" fill="url(#bg)"/>
+  <circle cx="450" cy="402" r="244" fill="none" stroke="#c7a868" stroke-width="5" opacity=".62"/>
+  <circle cx="450" cy="402" r="184" fill="none" stroke="#9e97bf" stroke-width="5" opacity=".68"/>
+  <circle cx="450" cy="402" r="124" fill="none" stroke="#75b9ae" stroke-width="5" opacity=".78"/>
+  <circle cx="450" cy="402" r="60" fill="#75b9ae" opacity=".12" filter="url(#soft)"/>
+  <g fill="none" stroke="url(#hand)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M166 561c77-17 133-42 175-77 26-22 49-39 69-48 15-7 30 7 25 22-8 23-22 42-43 59l-41 34" stroke-width="29"/>
+    <path d="M178 611c65-3 124-19 176-47l46-26" stroke-width="29"/>
+    <path d="M734 561c-77-17-133-42-175-77-26-22-49-39-69-48-15-7-30 7-25 22 8 23 22 42 43 59l41 34" stroke-width="29"/>
+    <path d="M722 611c-65-3-124-19-176-47l-46-26" stroke-width="29"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="450" y="122" fill="#ead9ae" font-size="28" font-weight="700">TRADIÇÃO</text>
+    <text x="450" y="172" fill="#c9c4dc" font-size="25" font-weight="700">EXPERIÊNCIA SUBJETIVA</text>
+    <text x="450" y="222" fill="#a8d8cf" font-size="28" font-weight="700">CIÊNCIA</text>
+    <text x="450" y="751" fill="#d9e4df" font-size="27">Três camadas podem coexistir</text>
+    <text x="450" y="789" fill="#9eb2ad" font-size="22">sem serem confundidas</text>
+    <text x="450" y="846" fill="#758a85" font-size="17">representação conceitual — não anatômica</text>
+  </g>
+</svg>
