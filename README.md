@@ -13,7 +13,11 @@ Religião e espiritualidade
 ├── Espiritismo
 ├── Hinduísmo
 ├── Budismo
-└── Wicca
+├── Wicca
+├── Umbanda
+├── Candomblé
+├── Nação e Batuque
+└── Kimbanda e Quimbanda
 
 Filosofias e esoterismo
 ├── Estoicismo
@@ -433,3 +437,32 @@ na diáspora, e diferencia fatos históricos, conceitos religiosos, interpretaç
 acadêmicas, direitos, variações entre nações e limites dos conhecimentos
 reservados. Mantém as etiquetas compartilhadas de evidência e não adiciona
 leitura em voz alta, controles de fonte, alto contraste ou progresso de leitura.
+
+
+## Página de Nação e Batuque
+
+Arquivos adicionados:
+
+```text
+artigos/batuque-nacao.html
+src/styles/batuque-nacao.css
+src/scripts/batuque-nacao.js
+src/assets/images/batuque-casa-comunidade.svg
+src/assets/images/og-batuque-nacao.jpg
+```
+
+Arquivos integrados ou atualizados:
+
+```text
+index.html
+assuntos/religioes-espiritualidade.html
+sitemap.xml
+README.md
+IMAGE-CREDITS.md
+```
+
+A página apresenta o Batuque ou Nação como tradição afro-brasileira formada no
+Rio Grande do Sul e diferencia seus usos de “nação” daqueles encontrados em
+outras religiões. O conteúdo separa fatos históricos, conceitos religiosos,
+interpretações acadêmicas, relatos internos, pluralidade entre casas e limites
+dos conhecimentos reservados.

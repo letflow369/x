@@ -292,3 +292,14 @@
 - Observação: a fotografia registra o espaço reconhecido publicamente e não expõe cerimônia privada, iniciação ou fundamento reservado.
 - Arquivos: `candomble-casa-branca.jpg`, `candomble-casa-branca.webp` e `og-candomble.jpg`.
 - Página: https://commons.wikimedia.org/wiki/File:Il%C3%AA_Ax%C3%A9_Iy%C3%A1_Nass%C3%B4_Ok%C3%A1_Casa_Branca_Salvador_2017-13377.jpg
+
+
+## Nação e Batuque do Rio Grande do Sul
+
+### Casa comunitária, território e memória afro-gaúcha
+
+- Conteúdo: ilustração editorial de uma casa de religião ao entardecer, vegetação, caminhos e pessoas reunidas em um pátio.
+- Autoria: Let Flow 369.
+- Finalidade: abertura visual da página sobre Batuque ou Nação do Rio Grande do Sul.
+- Observação: não representa terreiro, rito, orixá, iniciação ou comunidade específicos e não expõe fundamento reservado.
+- Arquivos: `batuque-casa-comunidade.svg` e `og-batuque-nacao.jpg`.
