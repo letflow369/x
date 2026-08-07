@@ -331,3 +331,31 @@
 - Arquivos: `cristianismo-evangeliario-etiope.jpg`, `cristianismo-evangeliario-etiope.webp` e `og-cristianismo.jpg`.
 - Página: https://www.metmuseum.org/art/collection/search/317618
 
+
+
+## Burnout
+
+### Demandas, recursos e recuperação
+
+- Conteúdo: composição abstrata com blocos de demandas ocupacionais, recursos e uma trajetória visual de recuperação.
+- Autoria: Let Flow 369.
+- Finalidade: ilustração educativa da página de Burnout e imagem social.
+- Observação: não representa anatomia, biomarcador, teste ou instrumento diagnóstico.
+- Arquivos: `burnout-demandas-recursos.svg` e `og-burnout.jpg`.
+
+
+## Borderline
+
+- `src/assets/images/borderline-regulacao-identidade.svg` — ilustração vetorial original produzida para o Let Flow 369; composição abstrata de regulação emocional, identidade, vínculos e impulsos.
+- `src/assets/images/og-borderline.jpg` — imagem social original derivada da mesma linguagem visual, produzida para o projeto.
+
+
+## Terapia Cognitivo-Comportamental
+
+### Ciclo de aprendizagem e formulação
+
+- Conteúdo: composição abstrata com situação, interpretação, emoções e sensações físicas, comportamento e consequência em ciclo.
+- Autoria: Let Flow 369.
+- Finalidade: ilustração educativa da página sobre TCC e imagem social.
+- Observação: não representa exame, biomarcador, diagnóstico, fluxo obrigatório ou formulação clínica universal.
+- Arquivos: `tcc-ciclo-aprendizagem.svg` e `og-tcc.jpg`.

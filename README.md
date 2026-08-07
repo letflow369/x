@@ -524,3 +524,63 @@ contribuições, contradições, glossário e referências verificáveis. Inclui
 leitura em voz alta e ajuste de tamanho do texto, ambos dependentes de ação
 explícita do usuário, sem modo de alto contraste ou progresso de leitura.
 
+
+
+## Página de Burnout
+
+Arquivos adicionados:
+
+```text
+artigos/burnout.html
+src/styles/burnout.css
+src/scripts/burnout.js
+src/assets/images/burnout-demandas-recursos.svg
+src/assets/images/og-burnout.jpg
+```
+
+Arquivos integrados ou atualizados:
+
+```text
+index.html
+assuntos/psicologia.html
+sitemap.xml
+README.md
+IMAGE-CREDITS.md
+```
+
+A página apresenta burnout como fenômeno ocupacional segundo a CID-11, com
+leitura progressiva, linha do tempo, comparador com estresse, depressão e
+ansiedade, modelo demandas–recursos, sinais, avaliação, instrumentos,
+intervenções individuais e organizacionais, evidências recentes, prevenção,
+glossário e aviso de saúde. Inclui controle de tamanho de texto, leitura em
+voz alta acionada pelo usuário e botão “Voltar ao topo”.
+
+
+## Página de Transtorno de Personalidade Borderline
+
+Arquivos adicionados:
+
+```text
+artigos/borderline.html
+src/styles/borderline.css
+src/scripts/borderline.js
+src/assets/images/borderline-regulacao-identidade.svg
+src/assets/images/og-borderline.jpg
+```
+
+A página apresenta o TPB em leitura progressiva, com resumo essencial, história do diagnóstico, modelo biopsicossocial, sintomas, fases da vida, prognóstico, comorbidades, diagnóstico diferencial, segurança, psicoterapias, medicamentos, evidências recentes, mitos, apoio, fronteiras da evidência e referências verificáveis. Inclui ajuste de fonte, alto contraste, leitura em voz alta acionada pelo usuário e botão “Voltar ao topo”.
+
+
+## Página de Terapia Cognitivo-Comportamental
+
+Arquivos adicionados:
+
+```text
+artigos/terapia-cognitivo-comportamental.html
+src/styles/tcc.css
+src/scripts/tcc.js
+src/assets/images/tcc-ciclo-aprendizagem.svg
+src/assets/images/og-tcc.jpg
+```
+
+A página apresenta a TCC como família de psicoterapias, corrige a confusão entre terapia e diagnóstico, organiza sua história em linha do tempo, inclui diagrama cognitivo-comportamental interativo, conceitos e técnicas expansíveis, etapas de tratamento, tabela filtrável de aplicações clínicas, comorbidades, painel da meta-análise de 2025, TCC digital, limitações e referências verificáveis. Inclui ajuste de fonte, leitura em voz alta acionada pelo usuário e botão “Voltar ao topo”.
