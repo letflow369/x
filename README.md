@@ -7,7 +7,10 @@ Site estático publicado com GitHub Pages.
 ```text
 Psicologia
 ├── Carl Gustav Jung
-└── Sigmund Freud
+├── Sigmund Freud
+├── Transtorno Obsessivo-Compulsivo
+├── Ansiedade
+└── Depressão
 
 Religião e espiritualidade
 ├── Cristianismo
@@ -524,3 +527,22 @@ contribuições, contradições, glossário e referências verificáveis. Inclui
 leitura em voz alta e ajuste de tamanho do texto, ambos dependentes de ação
 explícita do usuário, sem modo de alto contraste ou progresso de leitura.
 
+
+
+## Página de Depressão
+
+Arquivos adicionados:
+
+```text
+artigos/depressao.html
+src/styles/depressao.css
+src/scripts/depressao.js
+src/assets/images/depressao-multifatorial.svg
+src/assets/images/og-depressao.jpg
+```
+
+A página foi integrada à página inicial, à coleção Psicologia e ao sitemap.
+Organiza definição, história do diagnóstico, manifestações, fatores de risco,
+curso, comorbidades, diagnóstico, tratamentos e evidências recentes em leitura
+progressiva. Não adiciona leitura em voz alta, controles de fonte, alto
+contraste ou progresso de leitura.

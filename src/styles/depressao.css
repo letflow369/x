@@ -1,0 +1,653 @@
+.depression-article {
+  --depression-blue: #7298ad;
+  --depression-blue-deep: #263c4a;
+  --depression-teal: #6f9f95;
+  --depression-gold: #c99a5c;
+  --depression-wine: #9a665e;
+  --depression-lilac: #978ba9;
+  --depression-green: #7fa082;
+}
+
+
+.depression-hero {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 20%, rgb(114 152 173 / 20%), transparent 29rem),
+    radial-gradient(circle at 85% 18%, rgb(154 102 94 / 14%), transparent 28rem),
+    linear-gradient(135deg, #090c10 0%, #101820 54%, #171417 100%);
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 52%);
+}
+
+.depression-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 24rem);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(4.25rem, 9vw, 7.5rem);
+}
+
+.depression-hero__content { min-width: 0; }
+
+.depression-hero h1 {
+  margin-block: var(--space-3);
+  font-size: clamp(3.1rem, 9vw, 6.8rem);
+  color: var(--color-primary-hover);
+}
+
+.depression-hero__subtitle {
+  max-width: 44rem;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: #d7c6ae;
+}
+
+.depression-hero__intro {
+  max-width: 49rem;
+  font-size: clamp(1.05rem, 2vw, 1.26rem);
+}
+
+.depression-hero__meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  margin-block: var(--space-5);
+  font-family: var(--font-interface);
+}
+
+.depression-hero__meta div {
+  padding-top: var(--space-3);
+  border-top: 0.0625rem solid rgb(114 152 173 / 30%);
+}
+
+.depression-hero__meta dt {
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--depression-blue);
+}
+
+.depression-hero__meta dd {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+}
+
+.depression-hero__notice {
+  max-width: 47rem;
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: rgb(114 152 173 / 9%);
+  border-left: 0.2rem solid var(--depression-blue);
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.depression-hero__notice p {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-muted);
+}
+
+.depression-hero__visual {
+  width: min(100%, 24rem);
+  margin: 0;
+  justify-self: end;
+}
+
+.depression-hero__visual img {
+  width: 100%;
+  height: auto;
+  max-height: 34rem;
+  object-fit: contain;
+  filter: drop-shadow(0 1.1rem 2.1rem rgb(0 0 0 / 28%));
+}
+
+.depression-hero__visual figcaption {
+  max-width: 24rem;
+  margin-top: var(--space-3);
+  font-family: var(--font-interface);
+  font-size: 0.73rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.depression-summary {
+  background: linear-gradient(180deg, rgb(15 23 29 / 98%), rgb(11 12 16 / 100%));
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 52%);
+}
+
+.depression-summary__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3rem, 7vw, 5rem);
+}
+
+.depression-summary-grid,
+.depression-compare-grid,
+.symptom-grid,
+.cause-grid,
+.course-grid,
+.comorbidity-grid,
+.diagnosis-grid,
+.treatment-grid,
+.evidence-dashboard,
+.importance-grid,
+.literature-grid,
+.reference-groups,
+.help-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.depression-summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.depression-compare-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block: var(--space-5); }
+.symptom-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.symptom-grid > article:last-child { grid-column: 1 / -1; }
+.cause-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
+.course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.comorbidity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-5); }
+.diagnosis-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-5); }
+.treatment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.evidence-dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-5); }
+.importance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
+.literature-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
+.reference-groups { grid-template-columns: 1fr; margin-top: var(--space-5); }
+.help-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); margin-block: var(--space-5); }
+
+.depression-summary-grid article,
+.depression-compare-grid article,
+.symptom-grid article,
+.cause-grid article,
+.course-grid article,
+.comorbidity-grid article,
+.diagnosis-grid article,
+.treatment-grid article,
+.evidence-dashboard article,
+.importance-grid article,
+.literature-grid article,
+.help-grid article {
+  padding: var(--space-5);
+  background: linear-gradient(145deg, rgb(31 34 38 / 92%), rgb(22 21 23 / 96%));
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.depression-summary-grid article { border-top: 0.2rem solid var(--depression-blue); }
+.depression-summary-grid article:nth-child(2) { border-top-color: var(--depression-gold); }
+.depression-summary-grid article:nth-child(3) { border-top-color: var(--depression-teal); }
+.depression-summary-grid article:nth-child(4) { border-top-color: var(--depression-green); }
+
+.depression-summary-grid > article > span,
+.treatment-strength {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.65rem;
+  margin-bottom: var(--space-3);
+  padding: 0.25rem 0.55rem;
+  font-family: var(--font-interface);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  border: 0.0625rem solid currentColor;
+  border-radius: 999px;
+}
+
+.depression-summary-grid > article > span { color: var(--depression-blue); }
+.depression-summary-grid p,
+.depression-compare-grid p,
+.course-grid p,
+.treatment-grid p,
+.evidence-dashboard p,
+.importance-grid p,
+.literature-grid p { margin-bottom: 0; color: var(--color-text-muted); }
+
+.depression-mobile-nav {
+  display: none;
+  width: min(100% - 2rem, var(--content-width));
+  margin: var(--space-5) auto 0;
+  background: rgb(22 21 23 / 92%);
+  border: 0.0625rem solid rgb(93 64 43 / 55%);
+  border-radius: var(--radius-medium);
+}
+
+.depression-mobile-nav summary {
+  padding: var(--space-4);
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.depression-mobile-nav nav {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0 var(--space-4) var(--space-4);
+}
+
+.depression-mobile-nav a,
+.depression-desktop-nav a {
+  border-radius: 0.35rem;
+}
+
+.depression-mobile-nav a {
+  padding: 0.55rem 0.65rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.depression-mobile-nav a[aria-current="location"],
+.depression-desktop-nav a[aria-current="location"] {
+  color: #d7e5ec;
+  background: rgb(114 152 173 / 13%);
+}
+
+.depression-content { max-width: 72ch; }
+
+.depression-notice--core,
+.depression-notice--protect,
+.depression-notice--method,
+.depression-notice--small {
+  margin-top: var(--space-5);
+  background: rgb(114 152 173 / 8%);
+  border-left-color: var(--depression-blue);
+}
+
+.depression-notice--protect {
+  background: rgb(127 160 130 / 9%);
+  border-left-color: var(--depression-green);
+}
+
+.depression-notice--method {
+  background: rgb(201 154 92 / 8%);
+  border-left-color: var(--depression-gold);
+}
+
+.depression-notice--small {
+  font-size: 0.96rem;
+  background: rgb(151 139 169 / 8%);
+  border-left-color: var(--depression-lilac);
+}
+
+.depression-timeline {
+  position: relative;
+  display: grid;
+  gap: 0;
+  margin: var(--space-6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.depression-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  bottom: 0.7rem;
+  left: 6.4rem;
+  width: 0.08rem;
+  background: linear-gradient(var(--depression-blue), var(--depression-gold));
+}
+
+.depression-timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5.2rem minmax(0, 1fr);
+  gap: var(--space-5);
+  padding: 0 0 var(--space-6);
+}
+
+.depression-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 6.05rem;
+  width: 0.78rem;
+  height: 0.78rem;
+  background: var(--color-background);
+  border: 0.15rem solid var(--depression-blue);
+  border-radius: 50%;
+}
+
+.depression-timeline time {
+  padding-top: 0.15rem;
+  font-family: var(--font-interface);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--depression-gold);
+}
+
+.depression-timeline h3,
+.depression-timeline p {
+  grid-column: 2;
+  margin-top: 0;
+}
+
+.depression-timeline h3 { margin-bottom: var(--space-2); }
+.depression-timeline p { margin-bottom: 0; color: var(--color-text-muted); }
+
+.symptom-grid article { border-left: 0.2rem solid var(--depression-blue); }
+.symptom-grid article:nth-child(2) { border-left-color: var(--depression-lilac); }
+.symptom-grid article:nth-child(3) { border-left-color: var(--depression-gold); }
+.symptom-grid article:nth-child(4) { border-left-color: var(--depression-wine); }
+.symptom-grid article:nth-child(5) { border-left-color: var(--depression-green); }
+
+.cause-grid article:nth-child(1) { border-top: 0.2rem solid var(--depression-blue); }
+.cause-grid article:nth-child(2) { border-top: 0.2rem solid var(--depression-lilac); }
+.cause-grid article:nth-child(3) { border-top: 0.2rem solid var(--depression-green); }
+
+.myth-fact-inline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.myth-fact-inline > div {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.myth-fact-inline > div:first-child { border-left: 0.2rem solid var(--depression-wine); }
+.myth-fact-inline > div:last-child { border-left: 0.2rem solid var(--depression-teal); }
+
+.myth-fact-inline span {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.myth-fact-inline p { margin: 0; }
+
+.life-tabs {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: rgb(22 21 23 / 66%);
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-large);
+}
+
+.life-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding-bottom: var(--space-4);
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 40%);
+}
+
+.life-tabs__list [role="tab"] {
+  min-height: 2.6rem;
+  padding: 0.55rem 0.85rem;
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 0.0625rem solid rgb(114 152 173 / 34%);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.life-tabs__list [role="tab"][aria-selected="true"] {
+  color: #eef6f8;
+  background: rgb(114 152 173 / 18%);
+  border-color: var(--depression-blue);
+}
+
+.life-tabs__panels [role="tabpanel"] {
+  padding: var(--space-5) var(--space-2) var(--space-2);
+}
+
+.life-tabs__panels h3 { margin-top: 0; }
+.life-tabs__panels p:last-child { margin-bottom: 0; }
+.depressao-js .life-tabs__panels [role="tabpanel"][hidden] { display: none; }
+
+.course-grid article { border-left: 0.2rem solid var(--depression-teal); }
+.course-grid article:nth-child(4) { border-left-color: var(--depression-gold); }
+.course-grid article:nth-child(5) { border-left-color: var(--depression-wine); }
+
+.two-column-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.two-column-list > div {
+  padding: var(--space-5);
+  background: rgb(22 21 23 / 72%);
+  border: 0.0625rem solid rgb(93 64 43 / 46%);
+  border-radius: var(--radius-medium);
+}
+
+.comorbidity-grid article:first-child { border-top: 0.2rem solid var(--depression-lilac); }
+.comorbidity-grid article:last-child { border-top: 0.2rem solid var(--depression-blue); }
+
+.diagnosis-grid article:first-child { border-left: 0.2rem solid var(--depression-blue); }
+.diagnosis-grid article:last-child { border-left: 0.2rem solid var(--depression-gold); }
+
+.treatment-grid article { position: relative; border-top: 0.2rem solid var(--depression-blue); }
+.treatment-grid article:nth-child(3n + 2) { border-top-color: var(--depression-teal); }
+.treatment-grid article:nth-child(3n) { border-top-color: var(--depression-gold); }
+
+.treatment-strength--strong {
+  color: #a5d1b0;
+  background: rgb(111 159 149 / 10%);
+}
+
+.treatment-strength--moderate {
+  color: #d7b47d;
+  background: rgb(201 154 92 / 10%);
+}
+
+.treatment-strength--specialized {
+  color: #c6b6d5;
+  background: rgb(151 139 169 / 10%);
+}
+
+.evidence-dashboard article {
+  border-left: 0.2rem solid var(--depression-blue);
+}
+
+.evidence-dashboard article:nth-child(2n) { border-left-color: var(--depression-teal); }
+.evidence-dashboard article:nth-child(4) { border-left-color: var(--depression-wine); }
+
+.care-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  margin-block: var(--space-5);
+  padding: var(--space-5);
+  background: rgb(127 160 130 / 7%);
+  border: 0.0625rem solid rgb(127 160 130 / 34%);
+  border-radius: var(--radius-medium);
+}
+
+.care-checklist li::marker { color: var(--depression-green); }
+
+.depression-accordion {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.depression-accordion details,
+.reference-groups details {
+  background: rgb(22 21 23 / 74%);
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: var(--radius-medium);
+}
+
+.depression-accordion summary,
+.reference-groups summary {
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.depression-accordion details > :not(summary),
+.reference-groups details > :not(summary) {
+  margin-inline: var(--space-5);
+}
+
+.depression-accordion details > :last-child,
+.reference-groups details > :last-child {
+  margin-bottom: var(--space-5);
+}
+
+.help-grid article { border-top: 0.2rem solid var(--depression-blue); }
+.help-grid .help-card--urgent {
+  border-top-color: var(--depression-wine);
+  background: linear-gradient(145deg, rgb(90 53 51 / 22%), rgb(22 21 23 / 96%));
+}
+
+.help-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.help-links a {
+  display: inline-flex;
+  min-height: 2.65rem;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  font-family: var(--font-interface);
+  font-weight: 700;
+  text-decoration: none;
+  border: 0.0625rem solid var(--depression-blue);
+  border-radius: var(--radius-small);
+}
+
+.importance-grid article { border-left: 0.2rem solid var(--depression-gold); }
+.importance-grid article:nth-child(even) { border-left-color: var(--depression-blue); }
+
+.literature-grid article { border-top: 0.2rem solid var(--depression-lilac); }
+
+.depression-conclusion {
+  margin-top: clamp(4.5rem, 10vw, 7.5rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background:
+    linear-gradient(130deg, rgb(114 152 173 / 11%), rgb(127 160 130 / 5%)),
+    var(--color-surface);
+  border: 0.0625rem solid rgb(114 152 173 / 38%);
+  border-radius: var(--radius-large);
+}
+
+.depression-conclusion h2 { margin-top: 0; }
+
+.depression-references { margin-top: clamp(4.5rem, 10vw, 7.5rem); }
+.reference-list { margin: 0; padding-left: 1.35rem; }
+.reference-list li + li { margin-top: var(--space-4); }
+.reference-list p { margin: 0; }
+.reference-list a { overflow-wrap: anywhere; }
+.source-quality {
+  display: block;
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  color: var(--color-text);
+  background: rgb(111 159 149 / 8%);
+  border: 0.0625rem solid rgb(111 159 149 / 34%);
+  border-radius: var(--radius-medium);
+}
+.source-quality h3 { margin-top: 0; color: var(--color-primary-hover); }
+.source-quality ol { margin-bottom: 0; }
+.source-note { font-size: 0.92rem; }
+
+.depression-editorial-note {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  background: rgb(201 154 92 / 7%);
+  border: 0.0625rem solid rgb(201 154 92 / 32%);
+  border-radius: var(--radius-medium);
+}
+
+.depression-editorial-note h3 { margin-top: 0; }
+.depression-editorial-note p:last-child { margin-bottom: 0; }
+
+@media (max-width: 68rem) {
+  .depression-hero__inner { grid-template-columns: minmax(0, 1fr) minmax(14rem, 19rem); }
+  .depression-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cause-grid { grid-template-columns: 1fr; }
+  .literature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 62rem) {
+  .depression-desktop-nav { display: none; }
+  .depression-mobile-nav { display: block; }
+  .depression-layout { padding-top: var(--space-6); }
+  .depression-content { max-width: var(--reading-width); margin-inline: auto; }
+}
+
+@media (max-width: 48rem) {
+  .depression-hero__inner,
+  .depression-summary-grid,
+  .depression-compare-grid,
+  .symptom-grid,
+  .course-grid,
+  .comorbidity-grid,
+  .diagnosis-grid,
+  .treatment-grid,
+  .evidence-dashboard,
+  .importance-grid,
+  .literature-grid,
+  .two-column-list,
+  .myth-fact-inline,
+  .care-checklist,
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .symptom-grid > article:last-child { grid-column: auto; }
+
+  .depression-hero__visual {
+    justify-self: center;
+    width: min(100%, 18rem);
+  }
+
+  .depression-hero__meta { grid-template-columns: 1fr; }
+
+  .depression-timeline::before { left: 1rem; }
+  .depression-timeline li {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    padding-left: 2.6rem;
+  }
+  .depression-timeline li::before { left: 0.64rem; }
+  .depression-timeline time,
+  .depression-timeline h3,
+  .depression-timeline p { grid-column: 1; }
+
+  .life-tabs { padding: var(--space-3); }
+  .life-tabs__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .life-tabs__list [role="tab"] { width: 100%; }
+
+  .help-links { display: grid; }
+  .help-links a { justify-content: center; }
+}
+
+@media (max-width: 34rem) {
+  .life-tabs__list { grid-template-columns: 1fr; }
+  .depression-accordion summary,
+  .reference-groups summary { padding-inline: var(--space-4); }
+  .depression-accordion details > :not(summary),
+  .reference-groups details > :not(summary) { margin-inline: var(--space-4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
