@@ -199,12 +199,17 @@
 .reference {
   margin-inline: 0.12em;
   font-family: var(--font-interface);
-  font-size: 0.62em;
+  font-size: 0.78em;
   vertical-align: super;
 }
 
 .reference a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.08rem 0.14rem;
   text-decoration: none;
+  border-radius: 0.3rem;
 }
 
 .evidence-label {
@@ -214,7 +219,7 @@
   min-height: 1.85rem;
   padding: 0.25rem 0.62rem;
   font-family: var(--font-interface);
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.055em;
   text-transform: uppercase;

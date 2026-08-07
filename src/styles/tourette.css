@@ -1,0 +1,499 @@
+:root {
+  --tourette-indigo: #7f91c9;
+  --tourette-teal: #6f9fa8;
+  --tourette-green: #80a587;
+  --tourette-amber: #c49a62;
+  --tourette-muted: #9c9a9b;
+  --tourette-panel: color-mix(in srgb, var(--color-surface) 82%, #151f25 18%);
+}
+
+.tourette-article { overflow: clip; }
+.tourette-hero { padding: clamp(2.7rem, 6vw, 5.6rem) 1rem clamp(3.2rem, 7vw, 6rem); border-bottom: 1px solid var(--color-border); background: radial-gradient(circle at 86% 16%, color-mix(in srgb, var(--tourette-indigo) 15%, transparent), transparent 34%), radial-gradient(circle at 12% 62%, color-mix(in srgb, var(--tourette-teal) 11%, transparent), transparent 31%); }
+.tourette-hero__inner { width: min(100%, var(--content-width)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.tourette-hero h1 { margin: .2rem 0 .7rem; font-family: var(--font-subtitle); font-size: clamp(3.2rem, 9vw, 6.5rem); letter-spacing: -.035em; color: var(--color-text); }
+.tourette-hero__subtitle { max-width: 43rem; margin: 0 0 1rem; font-family: var(--font-subtitle); font-size: clamp(1.35rem, 2.5vw, 2rem); line-height: 1.28; color: var(--tourette-indigo); }
+.tourette-hero__intro { max-width: 47rem; font-size: 1.12rem; }
+.tourette-hero__indicators { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; margin: 1.6rem 0; }
+.tourette-hero__indicators div { min-height: 6.3rem; padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: color-mix(in srgb, var(--color-surface) 86%, transparent); }
+.tourette-hero__indicators span { display: block; margin-bottom: .35rem; font: 600 .7rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .11em; color: var(--color-text-muted); }
+.tourette-hero__indicators strong { display: block; font: 600 .92rem/1.35 var(--font-interface); color: var(--color-text); }
+.tourette-hero__visual { margin: 0; }
+.tourette-hero__visual img { width: 100%; height: auto; filter: drop-shadow(0 1.2rem 2.6rem rgba(0,0,0,.25)); }
+.tourette-hero__visual figcaption { margin-top: .8rem; font-size: .82rem; line-height: 1.45; color: var(--color-text-muted); }
+
+.tourette-summary { padding: clamp(2.5rem, 5vw, 4.2rem) 1rem; background: color-mix(in srgb, var(--color-surface) 74%, transparent); border-bottom: 1px solid var(--color-border); }
+.tourette-summary__inner { width: min(100%, var(--content-width)); margin: 0 auto; }
+.tourette-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .9rem; }
+.tourette-summary-grid article, .tourette-domain-grid article, .brain-network-grid article, .tourette-associated-map article, .tourette-unknown-grid article, .tourette-why-grid article, .learning-summary-grid article { padding: 1.15rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.tourette-summary-grid > article > span:first-child { font: 600 .72rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .09em; color: var(--tourette-teal); }
+.tourette-summary-grid h3 { margin: .45rem 0 .55rem; font-size: 1.08rem; }
+.tourette-summary-grid p { margin: 0 0 .7rem; font-size: .96rem; }
+
+.evidence-badge { display: inline-flex; align-items: center; width: fit-content; padding: .32rem .55rem; border-radius: 999px; border: 1px solid currentColor; font: 700 .72rem/1 var(--font-interface); white-space: nowrap; }
+.evidence-badge--strong { color: var(--tourette-green); }
+.evidence-badge--moderate, .evidence-badge--support { color: var(--tourette-teal); }
+.evidence-badge--limited { color: #aaa0bc; }
+.evidence-badge--experimental { color: var(--tourette-amber); }
+.evidence-badge--unsupported { color: #aaa5aa; }
+
+.tourette-key-notice { border-left-color: var(--tourette-indigo); }
+.tourette-domain-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.domain-symbol { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--tourette-indigo) 55%, var(--color-border)); color: var(--tourette-indigo); font: 700 1.15rem var(--font-interface); }
+.tourette-domain-grid h3, .brain-network-grid h3, .tourette-associated-map h3, .tourette-unknown-grid h3, .tourette-why-grid h3, .learning-summary-grid h3 { margin-top: .7rem; }
+
+.tourette-life-timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; position: relative; margin: 1.7rem 0; }
+.tourette-life-timeline::before { content: ""; position: absolute; left: 8%; right: 8%; top: 1.15rem; height: 1px; background: color-mix(in srgb, var(--tourette-indigo) 48%, var(--color-border)); }
+.tourette-life-timeline article { position: relative; padding: 2.8rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.tourette-life-timeline article::before { content: ""; position: absolute; top: .86rem; left: 1rem; width: .65rem; height: .65rem; border-radius: 50%; background: var(--tourette-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.tourette-life-timeline span { position: absolute; top: .84rem; right: 1rem; font: 700 .72rem var(--font-interface); color: var(--color-text-muted); }
+.tourette-life-timeline h3 { margin: 0 0 .5rem; }
+.tourette-pullquote, .tourette-perspective { margin: 1.5rem 0; padding: 1.2rem 1.4rem; border-left: 3px solid var(--tourette-indigo); background: color-mix(in srgb, var(--tourette-indigo) 8%, var(--tourette-panel)); }
+.tourette-pullquote p, .tourette-perspective p { margin: 0; }
+
+.brain-network-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
+.brain-network-grid article { position: relative; padding-top: 1.4rem; }
+.brain-network-grid article::before { content: ""; position: absolute; left: 1.15rem; top: .8rem; width: 2.2rem; height: 2px; background: linear-gradient(90deg, var(--tourette-indigo), var(--tourette-teal)); }
+
+.tourette-causal-map { margin: 1.7rem 0; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); gap: .7rem; align-items: center; }
+.tourette-causal-map__column { min-height: 7.4rem; padding: 1rem; display: grid; align-content: center; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.tourette-causal-map__column span { font: 700 .72rem var(--font-interface); text-transform: uppercase; letter-spacing: .08em; color: var(--tourette-indigo); }
+.tourette-causal-map__column strong { margin-top: .45rem; font: 600 .93rem/1.35 var(--font-interface); }
+.tourette-causal-map__connector { color: var(--tourette-teal); font: 700 1.25rem var(--font-interface); text-align: center; }
+
+.intelligence-panel { padding: clamp(1.2rem, 3vw, 1.8rem); border: 1px solid color-mix(in srgb, var(--tourette-indigo) 50%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--tourette-indigo) 10%, var(--tourette-panel)), var(--tourette-panel)); }
+.intelligence-panel > strong { display: block; margin: 1rem 0; font-family: var(--font-subtitle); font-size: 1.35rem; color: var(--tourette-indigo); }
+
+.tourette-associated-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
+.tourette-associated-map__center { grid-column: 1 / -1; justify-self: center; width: min(18rem, 100%); padding: .9rem 1rem; border: 1px solid color-mix(in srgb, var(--tourette-indigo) 60%, var(--color-border)); border-radius: 999px; background: color-mix(in srgb, var(--tourette-indigo) 12%, var(--tourette-panel)); text-align: center; font: 700 .82rem var(--font-interface); letter-spacing: .14em; color: var(--tourette-indigo); }
+
+.tourette-assessment-flow { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.tourette-assessment-flow li::before { color: var(--tourette-indigo); }
+
+.tourette-featured-intervention { border-color: color-mix(in srgb, var(--tourette-green) 58%, var(--color-border)); background: linear-gradient(145deg, color-mix(in srgb, var(--tourette-green) 10%, var(--tourette-panel)), var(--tourette-panel)); }
+.tourette-intervention-principles { grid-template-columns: repeat(5, minmax(0,1fr)); }
+.tourette-intervention-principles strong { color: var(--tourette-teal); }
+.intervention-vs-support { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.intervention-vs-support article { padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-large); background: var(--tourette-panel); }
+.intervention-vs-support article:first-child { border-top: 3px solid var(--tourette-green); }
+.intervention-vs-support article:last-child { border-top: 3px solid var(--tourette-teal); }
+.intervention-vs-support span { font: 700 .72rem var(--font-interface); text-transform: uppercase; letter-spacing: .1em; color: var(--color-text-muted); }
+
+.table-scroll { overflow-x: auto; border-radius: var(--radius-medium); outline: none; }
+.table-scroll:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--tourette-indigo) 60%, transparent); }
+.tourette-table { min-width: 47rem; width: 100%; border-collapse: collapse; background: var(--tourette-panel); }
+.tourette-table th, .tourette-table td { padding: .9rem 1rem; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.tourette-table th { font-family: var(--font-interface); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--color-text-muted); }
+
+.tourette-study-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.tourette-study-grid article { background: var(--tourette-panel); }
+.tourette-study-grid .study-year { color: var(--tourette-indigo); }
+.tourette-study-grid summary { color: var(--tourette-teal); }
+
+.tourette-unknown-grid, .tourette-why-grid, .learning-summary-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+
+.tourette-timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 1rem; width: min(54rem, calc(100vw - 2rem)); margin-left: 50%; transform: translateX(-50%); position: relative; }
+.tourette-timeline::before { content: ""; position: absolute; left: 1.2rem; right: 1.2rem; top: 1.25rem; height: 1px; background: color-mix(in srgb, var(--tourette-indigo) 42%, var(--color-border)); }
+.tourette-timeline article { position: relative; padding: 2.4rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.tourette-timeline article::before { content: ""; position: absolute; top: .95rem; left: 1rem; width: .62rem; height: .62rem; border-radius: 50%; background: var(--tourette-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.tourette-timeline time { display: block; font: 700 .78rem/1 var(--font-interface); color: var(--tourette-indigo); }
+.tourette-timeline h3 { margin: .55rem 0 .5rem; font-size: 1rem; }
+.tourette-timeline p { margin: 0; font-size: .9rem; line-height: 1.5; }
+
+.tourette-perspective { border-left-color: var(--tourette-teal); }
+.tourette-reference-list .reference-type { color: var(--color-text-muted); font-style: italic; }
+.tourette-brazil-note { margin-top: 1.5rem; }
+.tourette-editorial-warning { margin-top: 2rem; }
+
+.back-to-top { position: fixed; right: 1rem; bottom: 1rem; z-index: 20; display: inline-flex; align-items: center; gap: .35rem; padding: .65rem .8rem; border: 1px solid var(--color-border); border-radius: 999px; background: color-mix(in srgb, var(--color-background) 92%, transparent); color: var(--color-text); text-decoration: none; font: 600 .76rem var(--font-interface); backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transform: translateY(.5rem); transition: opacity .18s ease, transform .18s ease; }
+.back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+@media (max-width: 72rem) {
+  .tourette-timeline { width: 100%; margin-left: 0; transform: none; grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .tourette-timeline::before { display: none; }
+  .tourette-intervention-principles { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 62rem) {
+  .tourette-hero__inner { grid-template-columns: 1fr; }
+  .tourette-hero__visual { width: min(24rem, 80%); margin-inline: auto; }
+  .tourette-summary-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 48rem) {
+  .tourette-hero__indicators, .tourette-domain-grid, .brain-network-grid, .tourette-associated-map, .tourette-assessment-flow, .intervention-vs-support, .tourette-study-grid, .tourette-unknown-grid, .tourette-why-grid, .learning-summary-grid { grid-template-columns: 1fr; }
+  .tourette-associated-map__center { grid-column: auto; }
+  .tourette-life-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .tourette-life-timeline::before { left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .tourette-life-timeline article { padding: 1rem; }
+  .tourette-life-timeline article::before { top: 1.15rem; left: -1.62rem; }
+  .tourette-life-timeline span { position: static; display: block; margin-bottom: .3rem; }
+  .tourette-causal-map { grid-template-columns: 1fr; }
+  .tourette-causal-map__connector { transform: rotate(90deg); }
+  .tourette-intervention-principles { grid-template-columns: 1fr; }
+  .tourette-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .tourette-timeline::before { display: block; left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .tourette-timeline article { padding: 1rem; }
+  .tourette-timeline article::before { top: 1.15rem; left: -1.62rem; }
+}
+@media (max-width: 34rem) {
+  .tourette-summary-grid { grid-template-columns: 1fr; }
+  .tourette-hero h1 { font-size: clamp(3rem, 18vw, 4.4rem); }
+  .back-to-top span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
+}
+
+/* Componentes específicos — Dispraxia / TDC */
+.term-grid,
+.motor-situations-grid,
+.brain-network-grid,
+.support-grid,
+.takeaway-grid,
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.term-grid article,
+.motor-situations-grid article,
+.brain-network-grid article,
+.support-grid article,
+.takeaway-grid article,
+.related-grid a {
+  padding: 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--tourette-panel);
+}
+.term-grid h3,
+.motor-situations-grid h3,
+.brain-network-grid h3,
+.support-grid h3,
+.takeaway-grid h3 { margin-top: 0; }
+.term-grid article:first-child { border-top: 3px solid var(--tourette-indigo); }
+.term-grid article:nth-child(2) { border-top: 3px solid var(--tourette-teal); }
+.term-grid article:nth-child(3), .term-grid article:nth-child(4) { border-top: 3px solid var(--tourette-amber); }
+
+.motor-cycle {
+  list-style: none;
+  margin: 1.7rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: .7rem;
+  width: min(54rem, calc(100vw - 2rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.motor-cycle li {
+  position: relative;
+  min-height: 9rem;
+  padding: 1rem .8rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--tourette-panel);
+}
+.motor-cycle li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -.62rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: var(--tourette-teal);
+  font: 700 1.1rem var(--font-interface);
+}
+.motor-cycle span { display: block; font: 700 .7rem var(--font-interface); color: var(--tourette-indigo); }
+.motor-cycle strong { display: block; margin: .5rem 0 .4rem; font: 600 .92rem/1.25 var(--font-interface); }
+.motor-cycle small { color: var(--color-text-muted); line-height: 1.38; }
+
+.intelligence-panel {
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--tourette-indigo) 56%, var(--color-border));
+  border-radius: var(--radius-large);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--tourette-indigo) 13%, var(--tourette-panel)), var(--tourette-panel));
+}
+.intelligence-panel__contrast { display: grid; grid-template-columns: 1fr auto 1fr; gap: .8rem; align-items: center; margin-top: 1rem; }
+.intelligence-panel__contrast div { padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: color-mix(in srgb, var(--color-surface) 88%, transparent); }
+.intelligence-panel__contrast span { color: var(--tourette-teal); font: 700 1.2rem var(--font-interface); }
+
+.cause-map { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .8rem; margin: 1.4rem 0; }
+.cause-map article { padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.cause-map article h3 { margin-top: 0; }
+
+.coexist-network { display: grid; grid-template-columns: 12rem 1fr; gap: 1rem; align-items: stretch; margin: 1.6rem 0; }
+.coexist-network__center { display: grid; place-items: center; text-align: center; padding: 1.2rem; border: 1px solid color-mix(in srgb, var(--tourette-indigo) 56%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--tourette-indigo) 16%, var(--color-surface)), var(--tourette-panel)); font: 700 1rem var(--font-interface); color: var(--tourette-indigo); }
+.coexist-network__items { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; }
+.coexist-network__items article { padding: .9rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.coexist-network__items h3 { margin: 0 0 .35rem; font-size: 1rem; }
+.coexist-network__items p { margin: 0; font-size: .9rem; }
+
+.goal-callout { padding: 1.25rem; border-left: .25rem solid var(--tourette-green); border-radius: 0 var(--radius-medium) var(--radius-medium) 0; background: color-mix(in srgb, var(--tourette-green) 9%, var(--tourette-panel)); }
+.goal-callout p:last-child { margin-bottom: 0; }
+
+.intervention-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 1rem; }
+.intervention-card-grid article { padding: 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.intervention-card-grid h3 { margin: .65rem 0 .45rem; }
+
+.adaptation-columns { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+.adaptation-columns article { padding: 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.adaptation-columns h3 { margin-top: 0; color: var(--tourette-teal); }
+
+.research-timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+.research-timeline article { padding: 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); }
+.research-timeline .study-year { display: inline-flex; margin-bottom: .5rem; }
+.research-timeline h3 { margin: .4rem 0 .5rem; }
+
+.perspective-chain { list-style: none; padding: 0; margin: 1.4rem 0; display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: .7rem; }
+.perspective-chain li { position: relative; padding: .9rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--tourette-panel); text-align: center; font: 600 .84rem/1.3 var(--font-interface); }
+.perspective-chain li:not(:last-child)::after { content: "→"; position: absolute; right: -.62rem; top: 50%; transform: translateY(-50%); color: var(--tourette-teal); }
+
+.related-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.related-grid a { display: block; text-decoration: none; font: 600 .9rem/1.3 var(--font-interface); }
+.related-grid a:hover { border-color: var(--tourette-indigo); color: var(--tourette-indigo); }
+
+@media (max-width: 72rem) {
+  .motor-cycle { width: 100%; margin-left: 0; transform: none; grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .motor-cycle li:nth-child(3)::after { display: none; }
+  .perspective-chain { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .perspective-chain li:nth-child(3)::after { display: none; }
+}
+@media (max-width: 48rem) {
+  .term-grid, .motor-situations-grid, .brain-network-grid, .support-grid, .takeaway-grid, .intervention-card-grid, .research-timeline, .cause-map, .adaptation-columns { grid-template-columns: 1fr; }
+  .coexist-network { grid-template-columns: 1fr; }
+  .coexist-network__items { grid-template-columns: 1fr; }
+  .intelligence-panel__contrast { grid-template-columns: 1fr; }
+  .intelligence-panel__contrast > span { justify-self: center; transform: rotate(90deg); }
+  .motor-cycle, .perspective-chain { grid-template-columns: 1fr; }
+  .motor-cycle li, .perspective-chain li { min-height: auto; }
+  .motor-cycle li:not(:last-child)::after, .perspective-chain li:not(:last-child)::after { display: block; content: "↓"; right: auto; left: 50%; top: auto; bottom: -.95rem; transform: translateX(-50%); }
+  .related-grid { grid-template-columns: 1fr; }
+}
+
+/* Correções de anatomia dos componentes compartilhados usados nesta página */
+.tourette-life-timeline { grid-template-columns: repeat(4, minmax(0,1fr)); }
+.tourette-assessment-flow {
+  list-style: none;
+  margin: 1.6rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .7rem;
+  counter-reset: assess;
+}
+.tourette-assessment-flow li {
+  counter-increment: assess;
+  position: relative;
+  min-height: 5.7rem;
+  padding: .9rem .9rem .9rem 3.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--tourette-panel);
+}
+.tourette-assessment-flow li::before {
+  content: counter(assess, decimal-leading-zero);
+  position: absolute;
+  left: .9rem;
+  top: .95rem;
+  font: 700 .75rem var(--font-interface);
+  color: var(--tourette-indigo);
+}
+.tourette-assessment-flow strong,
+.tourette-assessment-flow span { display: block; }
+.tourette-assessment-flow span { margin-top: .3rem; color: var(--color-text-muted); font-size: .88rem; }
+
+.tourette-featured-intervention {
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 1px solid color-mix(in srgb, var(--tourette-green) 58%, var(--color-border));
+  border-radius: var(--radius-large);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--tourette-green) 10%, var(--tourette-panel)), var(--tourette-panel));
+}
+.tourette-featured-intervention h3 { margin: .8rem 0 .55rem; font-size: 1.45rem; }
+.featured-intervention__skills { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.featured-intervention__skills span { padding: .38rem .6rem; border: 1px solid var(--color-border); border-radius: 999px; font: 600 .76rem var(--font-interface); color: var(--color-text-muted); }
+
+.evidence-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.evidence-map__card { padding: 1.15rem; border-radius: var(--radius-medium); border: 1px solid var(--color-border); background: var(--tourette-panel); }
+.evidence-map__card--strong { border-top: 3px solid var(--tourette-green); }
+.evidence-map__card--support { border-top: 3px solid var(--tourette-teal); }
+.evidence-map__card--experimental { border-top: 3px solid var(--tourette-amber); }
+.evidence-map__card--unsupported { border-top: 3px solid #8c888c; }
+.evidence-map__card h3 { margin: .75rem 0 .55rem; }
+
+@media (max-width: 48rem) {
+  .tourette-assessment-flow, .evidence-map { grid-template-columns: 1fr; }
+}
+
+/* Componentes específicos — Síndrome de Tourette */
+.tourette-editorial-notice { margin-top: 1.25rem; border-left-color: var(--tourette-teal); }
+.tic-type-grid,
+.comorbidity-grid,
+.functional-grid,
+.treatment-grid,
+.medication-grid,
+.school-grid,
+.myth-grid,
+.research-grid,
+.unknown-grid,
+.takeaway-grid,
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.tic-type-grid article,
+.comorbidity-grid article,
+.functional-grid article,
+.treatment-grid article,
+.medication-grid article,
+.school-grid article,
+.myth-grid article,
+.research-grid article,
+.unknown-grid article,
+.takeaway-grid article,
+.related-grid a {
+  padding: 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--tourette-panel);
+}
+.tic-type-grid h3,
+.comorbidity-grid h3,
+.functional-grid h3,
+.treatment-grid h3,
+.medication-grid h3,
+.school-grid h3,
+.myth-grid h3,
+.research-grid h3,
+.unknown-grid h3,
+.takeaway-grid h3 { margin: .35rem 0 .55rem; }
+.tic-type-grid .tic-kind { display:inline-flex; margin-bottom:.35rem; font:700 .7rem var(--font-interface); text-transform:uppercase; letter-spacing:.08em; color:var(--tourette-teal); }
+
+.coprolalia-panel,
+.suppression-panel,
+.treatment-goal,
+.research-status {
+  margin: 1.4rem 0;
+  padding: clamp(1.15rem, 3vw, 1.65rem);
+  border: 1px solid color-mix(in srgb, var(--tourette-indigo) 48%, var(--color-border));
+  border-radius: var(--radius-large);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--tourette-indigo) 10%, var(--tourette-panel)), var(--tourette-panel));
+}
+.coprolalia-panel strong,
+.suppression-panel strong,
+.treatment-goal strong { color: var(--tourette-indigo); }
+
+.tic-urge-flow,
+.brain-loop,
+.genetic-flow,
+.impact-chain {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0,1fr));
+  gap: .7rem;
+}
+.tic-urge-flow li,
+.brain-loop li,
+.genetic-flow li,
+.impact-chain li {
+  position: relative;
+  min-height: 7.2rem;
+  display: grid;
+  align-content: center;
+  padding: .9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--tourette-panel);
+  text-align: center;
+  font: 600 .85rem/1.35 var(--font-interface);
+}
+.tic-urge-flow li:not(:last-child)::after,
+.brain-loop li:not(:last-child)::after,
+.genetic-flow li:not(:last-child)::after,
+.impact-chain li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -.62rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: var(--tourette-teal);
+  font: 700 1.1rem var(--font-interface);
+}
+.brain-loop { grid-template-columns: repeat(4, minmax(0,1fr)); }
+.genetic-flow { grid-template-columns: repeat(4, minmax(0,1fr)); }
+.impact-chain { grid-template-columns: repeat(6, minmax(0,1fr)); }
+
+.tourette-life-timeline { grid-template-columns: repeat(5, minmax(0,1fr)); }
+.tourette-life-timeline article { min-height: 12.5rem; }
+
+.circuit-note { padding: 1rem 1.1rem; border-left: 3px solid var(--tourette-teal); background: color-mix(in srgb, var(--tourette-teal) 8%, var(--tourette-panel)); }
+.circuit-note p:last-child { margin-bottom: 0; }
+
+.comorbidity-grid article:first-child,
+.comorbidity-grid article:nth-child(2) { border-top: 3px solid var(--tourette-indigo); }
+.comorbidity-grid article:nth-child(n+3) { border-top: 3px solid var(--tourette-teal); }
+.functional-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.functional-grid article { min-height: 9rem; }
+.functional-grid .functional-label { display:block; font:700 .7rem var(--font-interface); text-transform:uppercase; letter-spacing:.08em; color:var(--tourette-teal); }
+
+.diagnosis-flow { counter-reset: diagnosis; list-style:none; padding:0; margin:1.5rem 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; }
+.diagnosis-flow li { counter-increment:diagnosis; position:relative; padding:1rem 1rem 1rem 3.4rem; border:1px solid var(--color-border); border-radius:var(--radius-medium); background:var(--tourette-panel); }
+.diagnosis-flow li::before { content:counter(diagnosis, decimal-leading-zero); position:absolute; left:1rem; top:1rem; font:700 .75rem var(--font-interface); color:var(--tourette-indigo); }
+
+.treatment-grid article:first-child { border-top:3px solid var(--tourette-green); }
+.treatment-grid article:nth-child(2) { border-top:3px solid var(--tourette-teal); }
+.treatment-grid article:nth-child(3) { border-top:3px solid var(--tourette-indigo); }
+.treatment-grid article:nth-child(4) { border-top:3px solid var(--tourette-amber); }
+.treatment-grid .evidence-badge { margin-bottom:.55rem; }
+
+.cbit-steps { list-style:none; padding:0; margin:1.3rem 0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.75rem; }
+.cbit-steps li { padding:1rem; border:1px solid var(--color-border); border-radius:var(--radius-medium); background:var(--tourette-panel); }
+.cbit-steps span { display:block; color:var(--tourette-indigo); font:700 .7rem var(--font-interface); text-transform:uppercase; letter-spacing:.08em; }
+.cbit-steps strong { display:block; margin:.45rem 0; font:600 .94rem var(--font-interface); }
+
+.medication-grid article { position:relative; }
+.medication-grid .med-role { display:inline-flex; margin-bottom:.55rem; color:var(--tourette-teal); font:700 .7rem var(--font-interface); text-transform:uppercase; letter-spacing:.08em; }
+.medication-caution { padding:1rem 1.15rem; border-left:3px solid var(--tourette-amber); background:color-mix(in srgb, var(--tourette-amber) 9%, var(--tourette-panel)); }
+
+.school-grid article:first-child { border-top:3px solid var(--tourette-amber); }
+.school-grid article:last-child { border-top:3px solid var(--tourette-green); }
+
+.myth-grid article { display:grid; grid-template-columns:auto 1fr; gap:.8rem; align-items:start; }
+.myth-grid .myth-status { display:inline-flex; padding:.3rem .5rem; border:1px solid currentColor; border-radius:999px; color:var(--tourette-amber); font:700 .68rem var(--font-interface); text-transform:uppercase; }
+.myth-grid p { margin:.2rem 0 0; }
+
+.research-grid article { display:flex; flex-direction:column; }
+.research-grid .study-year { display:inline-flex; width:fit-content; color:var(--tourette-indigo); font:700 .74rem var(--font-interface); }
+.research-grid .research-type { margin-top:auto; padding-top:.7rem; font:700 .68rem var(--font-interface); text-transform:uppercase; letter-spacing:.08em; color:var(--color-text-muted); }
+.research-grid .evidence-badge { margin-top:.65rem; }
+
+.tourette-history { grid-template-columns:repeat(5,minmax(0,1fr)); }
+
+.related-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+.related-grid a { text-decoration:none; font:600 .9rem/1.35 var(--font-interface); }
+.related-grid a:hover { border-color:var(--tourette-indigo); color:var(--tourette-indigo); }
+
+.tourette-reference-list .reference-type { color:var(--color-text-muted); font-style:italic; }
+.tourette-editorial-warning { margin-top:2rem; }
+
+@media (max-width: 72rem) {
+  .impact-chain { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .impact-chain li:nth-child(3)::after { display:none; }
+  .tourette-life-timeline { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .tourette-life-timeline::before { display:none; }
+  .tourette-history { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .tourette-history::before { display:none; }
+}
+@media (max-width: 48rem) {
+  .tic-type-grid,.comorbidity-grid,.functional-grid,.treatment-grid,.medication-grid,.school-grid,.myth-grid,.research-grid,.unknown-grid,.takeaway-grid,.related-grid,.diagnosis-flow { grid-template-columns:1fr; }
+  .tic-urge-flow,.brain-loop,.genetic-flow,.impact-chain,.cbit-steps { grid-template-columns:1fr; }
+  .tic-urge-flow li,.brain-loop li,.genetic-flow li,.impact-chain li { min-height:auto; text-align:left; }
+  .tic-urge-flow li:not(:last-child)::after,.brain-loop li:not(:last-child)::after,.genetic-flow li:not(:last-child)::after,.impact-chain li:not(:last-child)::after { content:"↓"; right:auto; left:50%; top:auto; bottom:-.72rem; transform:translateX(-50%); }
+  .tourette-life-timeline,.tourette-history { grid-template-columns:1fr; padding-left:1.7rem; }
+  .tourette-life-timeline::before,.tourette-history::before { display:block; left:.38rem; right:auto; top:.8rem; bottom:.8rem; width:1px; height:auto; }
+  .tourette-life-timeline article,.tourette-history article { padding:1rem; min-height:auto; }
+  .tourette-life-timeline article::before,.tourette-history article::before { top:1.15rem; left:-1.62rem; }
+  .tourette-life-timeline span { position:static; display:block; margin-bottom:.3rem; }
+}

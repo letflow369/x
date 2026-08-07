@@ -1,66 +1,66 @@
-.cristianismo-article {
-  --christian-gold: #c5a867;
-  --christian-gold-light: #ead8aa;
-  --christian-blue: #294b6d;
-  --christian-blue-light: #91b4cf;
-  --christian-wine: #7b4a52;
-  --christian-wine-light: #c28a91;
-  --christian-olive: #73816c;
-  --christian-ink: #08111d;
-  --christian-surface: #151b23;
-  --christian-surface-warm: #201b1b;
-  --christian-font-scale: 1;
-  --christian-body-size: 1rem;
+.judaismo-article {
+  --jewish-gold: #c8a957;
+  --jewish-gold-light: #f0deb0;
+  --jewish-blue: #295b65;
+  --jewish-blue-light: #8fc4c5;
+  --jewish-wine: #76545c;
+  --jewish-wine-light: #c4959b;
+  --jewish-olive: #708572;
+  --jewish-ink: #071219;
+  --jewish-surface: #141c20;
+  --jewish-surface-warm: #1d1b18;
+  --jewish-font-scale: 1;
+  --jewish-body-size: 1rem;
   font-family: "Atkinson Hyperlegible", Arial, sans-serif;
 }
 
-.cristianismo-article h1,
-.cristianismo-article h2,
-.cristianismo-article h3,
-.cristianismo-article h4 {
+.judaismo-article h1,
+.judaismo-article h2,
+.judaismo-article h3,
+.judaismo-article h4 {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
-.cristianismo-method,
-.cristianismo-summary,
-.cristianismo-article .article-content {
-  font-size: var(--christian-body-size, 1rem);
+.judaismo-method,
+.judaismo-summary,
+.judaismo-article .article-content {
+  font-size: var(--jewish-body-size, 1rem);
 }
 
-.cristianismo-article .article-content p,
-.cristianismo-article .article-content li,
-.cristianismo-article .article-content td,
-.cristianismo-article .article-content dd {
+.judaismo-article .article-content p,
+.judaismo-article .article-content li,
+.judaismo-article .article-content td,
+.judaismo-article .article-content dd {
   line-height: 1.72;
 }
 
-.cristianismo-hero {
+.judaismo-hero {
   position: relative;
   display: grid;
   min-height: min(52rem, calc(100svh - 4.75rem));
   overflow: hidden;
   isolation: isolate;
-  background: var(--christian-ink);
+  background: var(--jewish-ink);
   border-bottom: 0.0625rem solid rgb(197 168 103 / 45%);
 }
 
-.cristianismo-hero picture,
-.cristianismo-hero__image,
-.cristianismo-hero__overlay,
-.cristianismo-hero__pattern {
+.judaismo-hero picture,
+.judaismo-hero__image,
+.judaismo-hero__overlay,
+.judaismo-hero__pattern {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
-.cristianismo-hero__image {
+.judaismo-hero__image {
   object-fit: cover;
   object-position: 70% center;
   filter: saturate(0.74) contrast(1.06) brightness(0.74);
 }
 
-.cristianismo-hero__pattern {
+.judaismo-hero__pattern {
   z-index: 1;
   opacity: 0.32;
   background:
@@ -69,14 +69,14 @@
     repeating-linear-gradient(135deg, transparent 0 3rem, rgb(255 255 255 / 3%) 3.05rem 3.1rem);
 }
 
-.cristianismo-hero__overlay {
+.judaismo-hero__overlay {
   z-index: 2;
   background:
     linear-gradient(90deg, rgb(4 10 18 / 99%) 0%, rgb(8 17 29 / 97%) 46%, rgb(10 22 35 / 76%) 72%, rgb(6 13 22 / 70%) 100%),
-    linear-gradient(0deg, var(--christian-ink), transparent 50%);
+    linear-gradient(0deg, var(--jewish-ink), transparent 50%);
 }
 
-.cristianismo-hero__inner {
+.judaismo-hero__inner {
   position: relative;
   z-index: 3;
   align-self: center;
@@ -85,16 +85,16 @@
   padding-block: clamp(4rem, 9vw, 7rem);
 }
 
-.cristianismo-hero h1 {
+.judaismo-hero h1 {
   max-width: 11ch;
   margin-bottom: var(--space-2);
   font-size: clamp(3.9rem, 10vw, 7.8rem);
   line-height: 0.9;
-  color: var(--christian-gold-light);
+  color: var(--jewish-gold-light);
   text-shadow: 0 0 2.5rem rgb(197 168 103 / 20%);
 }
 
-.cristianismo-hero__subtitle {
+.judaismo-hero__subtitle {
   max-width: 34ch;
   margin-bottom: var(--space-4);
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -104,7 +104,7 @@
   color: #f4ecdf;
 }
 
-.cristianismo-hero__intro {
+.judaismo-hero__intro {
   max-width: 50rem;
   font-size: clamp(1.02rem, 2vw, 1.18rem);
   line-height: 1.72;
@@ -112,7 +112,7 @@
   text-shadow: 0 0.15rem 0.8rem rgb(0 0 0 / 90%);
 }
 
-.cristianismo-hero__meta {
+.judaismo-hero__meta {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-3);
@@ -120,7 +120,7 @@
   margin: var(--space-5) 0;
 }
 
-.cristianismo-hero__meta div {
+.judaismo-hero__meta div {
   padding: var(--space-3);
   background: rgb(5 13 23 / 78%);
   border: 0.0625rem solid rgb(197 168 103 / 38%);
@@ -128,23 +128,23 @@
   backdrop-filter: blur(0.25rem);
 }
 
-.cristianismo-hero__meta dt {
+.judaismo-hero__meta dt {
   margin-bottom: 0.2rem;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--christian-gold-light);
+  color: var(--jewish-gold-light);
 }
 
-.cristianismo-hero__meta dd {
+.judaismo-hero__meta dd {
   margin: 0;
   font-size: 0.86rem;
   line-height: 1.35;
   color: #ddd8cf;
 }
 
-.cristianismo-hero__credit {
+.judaismo-hero__credit {
   max-width: 52rem;
   margin-top: var(--space-4);
   font-size: 0.76rem;
@@ -194,35 +194,35 @@
 .font-control:hover,
 .font-control:focus-visible {
   color: #111821;
-  background: var(--christian-gold-light);
-  border-color: var(--christian-gold-light);
+  background: var(--jewish-gold-light);
+  border-color: var(--jewish-gold-light);
 }
 
 .font-control:disabled { opacity: 0.45; cursor: not-allowed; }
-.font-status { min-height: 1.3em; margin: 0; color: var(--christian-blue-light); }
+.font-status { min-height: 1.3em; margin: 0; color: var(--jewish-blue-light); }
 
 .button--small { min-height: 2.5rem; padding: 0.55rem 0.9rem; }
 
-.cristianismo-method {
+.judaismo-method {
   background: linear-gradient(145deg, rgb(41 75 109 / 34%), rgb(8 17 29 / 100%));
   border-bottom: 0.0625rem solid rgb(145 180 207 / 36%);
 }
 
-.cristianismo-method__inner,
-.cristianismo-summary__inner {
+.judaismo-method__inner,
+.judaismo-summary__inner {
   width: min(100% - 2rem, var(--content-width));
   margin-inline: auto;
   padding-block: clamp(3rem, 7vw, 5rem);
 }
 
-.cristianismo-method h2,
-.cristianismo-summary h2 {
+.judaismo-method h2,
+.judaismo-summary h2 {
   margin: var(--space-3) 0 var(--space-4);
   font-size: clamp(2.1rem, 5vw, 3.5rem);
 }
 
 .method-grid,
-.cristianismo-summary-grid,
+.judaismo-summary-grid,
 .reading-levels,
 .overview-beliefs,
 .origin-grid,
@@ -242,7 +242,7 @@
 
 .method-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
 .method-grid article,
-.cristianismo-summary-grid article,
+.judaismo-summary-grid article,
 .reading-levels article,
 .overview-beliefs article,
 .origin-grid article,
@@ -263,7 +263,7 @@
 }
 
 .method-grid p,
-.cristianismo-summary-grid p,
+.judaismo-summary-grid p,
 .reading-levels p,
 .overview-beliefs p,
 .origin-grid p,
@@ -277,25 +277,25 @@
 .study-grid p,
 .reading-list-grid p { margin-bottom: 0; color: var(--color-text-muted); }
 
-.cristianismo-summary {
+.judaismo-summary {
   background: linear-gradient(180deg, rgb(24 26 31 / 99%), rgb(8 17 29 / 100%));
   border-bottom: 0.0625rem solid rgb(197 168 103 / 35%);
 }
 
-.cristianismo-summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.cristianismo-summary-grid article { border-top: 0.2rem solid var(--christian-gold); }
-.cristianismo-summary-grid article:nth-child(2) { border-top-color: var(--christian-blue-light); }
-.cristianismo-summary-grid article:nth-child(3) { border-top-color: var(--christian-wine-light); }
-.cristianismo-summary-grid article:nth-child(4) { border-top-color: var(--christian-olive); }
-.cristianismo-summary-grid strong {
+.judaismo-summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.judaismo-summary-grid article { border-top: 0.2rem solid var(--jewish-gold); }
+.judaismo-summary-grid article:nth-child(2) { border-top-color: var(--jewish-blue-light); }
+.judaismo-summary-grid article:nth-child(3) { border-top-color: var(--jewish-wine-light); }
+.judaismo-summary-grid article:nth-child(4) { border-top-color: var(--jewish-olive); }
+.judaismo-summary-grid strong {
   display: block;
   margin-bottom: var(--space-2);
   font-size: 0.74rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--christian-gold-light);
+  color: var(--jewish-gold-light);
 }
-.cristianismo-summary-grid h3 { font-size: 1.65rem; }
+.judaismo-summary-grid h3 { font-size: 1.65rem; }
 
 .reading-levels { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
 .reading-levels article {
@@ -315,44 +315,44 @@
   font-size: 1.35rem;
   font-weight: 700;
   color: #101720;
-  background: var(--christian-gold-light);
+  background: var(--jewish-gold-light);
   border-radius: 50%;
 }
 .reading-levels span { grid-row: 1 / span 2; }
-.reading-levels article:nth-child(2) span { background: var(--christian-blue-light); }
+.reading-levels article:nth-child(2) span { background: var(--jewish-blue-light); }
 .reading-levels article:nth-child(3) span { background: #afbd9f; }
 .reading-levels h3 { margin: 0 0 0.25rem; }
 
-.cristianismo-toc { padding: 0; overflow: hidden; }
-.cristianismo-toc details { margin: 0; }
-.cristianismo-toc summary {
+.judaismo-toc { padding: 0; overflow: hidden; }
+.judaismo-toc details { margin: 0; }
+.judaismo-toc summary {
   padding: var(--space-4);
   font-weight: 700;
-  color: var(--christian-gold-light);
+  color: var(--jewish-gold-light);
   cursor: pointer;
 }
-.cristianismo-toc nav { padding: 0 var(--space-4) var(--space-4); }
-.cristianismo-toc ol { margin: 0; }
+.judaismo-toc nav { padding: 0 var(--space-4) var(--space-4); }
+.judaismo-toc ol { margin: 0; }
 
 .overview-beliefs,
 .origin-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: var(--space-5); }
-.overview-beliefs article { border-top: 0.18rem solid var(--christian-gold); }
-.overview-beliefs article:nth-child(2n) { border-top-color: var(--christian-blue-light); }
-.origin-grid article { border-left: 0.2rem solid var(--christian-blue-light); }
-.origin-grid article:nth-child(2n) { border-left-color: var(--christian-gold); }
+.overview-beliefs article { border-top: 0.18rem solid var(--jewish-gold); }
+.overview-beliefs article:nth-child(2n) { border-top-color: var(--jewish-blue-light); }
+.origin-grid article { border-left: 0.2rem solid var(--jewish-blue-light); }
+.origin-grid article:nth-child(2n) { border-left-color: var(--jewish-gold); }
 
-.christian-callout,
+.jewish-callout,
 .reflection-box {
   margin-top: var(--space-6);
   padding: var(--space-5);
   background: linear-gradient(145deg, rgb(41 75 109 / 27%), rgb(21 27 35 / 98%));
   border: 0.0625rem solid rgb(145 180 207 / 44%);
-  border-left: 0.3rem solid var(--christian-blue-light);
+  border-left: 0.3rem solid var(--jewish-blue-light);
   border-radius: var(--radius-medium);
 }
-.christian-callout h3,
+.jewish-callout h3,
 .reflection-box h3 { margin-top: var(--space-3); }
-.christian-callout p:last-child,
+.jewish-callout p:last-child,
 .reflection-box p:last-child { margin-bottom: 0; }
 
 .claim-comparison,
@@ -362,20 +362,20 @@
   overflow-x: auto;
   border-radius: var(--radius-medium);
 }
-.cristianismo-table { width: 100%; min-width: 44rem; border-collapse: collapse; }
-.cristianismo-table th,
-.cristianismo-table td {
+.judaismo-table { width: 100%; min-width: 44rem; border-collapse: collapse; }
+.judaismo-table th,
+.judaismo-table td {
   padding: var(--space-4);
   text-align: left;
   vertical-align: top;
   border: 0.0625rem solid rgb(145 180 207 / 24%);
 }
-.cristianismo-table thead th { color: var(--christian-gold-light); background: #111d2a; }
-.cristianismo-table tbody th { color: var(--christian-blue-light); background: #101a25; }
-.cristianismo-table td { color: var(--color-text-muted); background: #171c23; }
+.judaismo-table thead th { color: var(--jewish-gold-light); background: #111d2a; }
+.judaismo-table tbody th { color: var(--jewish-blue-light); background: #101a25; }
+.judaismo-table td { color: var(--color-text-muted); background: #171c23; }
 
 .timeline-controls { margin-top: var(--space-6); }
-.cristianismo-timeline {
+.judaismo-timeline {
   display: grid;
   grid-auto-columns: minmax(17rem, 23rem);
   grid-auto-flow: column;
@@ -386,33 +386,33 @@
   list-style: none;
   scroll-snap-type: x mandatory;
 }
-.cristianismo-timeline li {
+.judaismo-timeline li {
   min-height: 19rem;
   padding: var(--space-5);
   background: linear-gradient(155deg, rgb(21 27 35 / 98%), rgb(33 27 26 / 98%));
   border: 0.0625rem solid rgb(197 168 103 / 35%);
-  border-top: 0.22rem solid var(--christian-gold);
+  border-top: 0.22rem solid var(--jewish-gold);
   border-radius: var(--radius-medium);
   opacity: 0.66;
   scroll-snap-align: start;
   transition: opacity 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
-.cristianismo-timeline li.is-current {
+.judaismo-timeline li.is-current {
   opacity: 1;
   border-color: rgb(197 168 103 / 72%);
   transform: translateY(-0.15rem);
 }
-.cristianismo-timeline time {
+.judaismo-timeline time {
   display: inline-block;
   margin-bottom: var(--space-3);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--christian-blue-light);
+  color: var(--jewish-blue-light);
 }
-.cristianismo-timeline h3 { font-size: 1.65rem; }
-.cristianismo-timeline p { margin-bottom: 0; color: var(--color-text-muted); }
+.judaismo-timeline h3 { font-size: 1.65rem; }
+.judaismo-timeline p { margin-bottom: 0; color: var(--color-text-muted); }
 .timeline-arrow { min-width: 2.75rem; }
 
 .belief-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
@@ -421,20 +421,20 @@
   grid-template-columns: 3rem minmax(0, 1fr);
   column-gap: var(--space-3);
   align-items: start;
-  border-top: 0.17rem solid var(--christian-gold);
+  border-top: 0.17rem solid var(--jewish-gold);
 }
 .belief-symbol { grid-row: 1 / span 2; width: 3rem; }
-.belief-cards article:nth-child(2n) { border-top-color: var(--christian-blue-light); }
-.belief-cards article:nth-child(3n) { border-top-color: var(--christian-wine-light); }
+.belief-cards article:nth-child(2n) { border-top-color: var(--jewish-blue-light); }
+.belief-cards article:nth-child(3n) { border-top-color: var(--jewish-wine-light); }
 
 .values-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
-.values-grid article { border-left: 0.18rem solid var(--christian-blue-light); }
-.values-grid article:nth-child(2n) { border-left-color: var(--christian-gold); }
-.values-grid article:nth-child(3n) { border-left-color: var(--christian-olive); }
+.values-grid article { border-left: 0.18rem solid var(--jewish-blue-light); }
+.values-grid article:nth-child(2n) { border-left-color: var(--jewish-gold); }
+.values-grid article:nth-child(3n) { border-left-color: var(--jewish-olive); }
 .values-grid h4 { font-size: 1.4rem; }
 
 .difference-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: var(--space-5); }
-.difference-grid article { border-bottom: 0.17rem solid var(--christian-wine-light); }
+.difference-grid article { border-bottom: 0.17rem solid var(--jewish-wine-light); }
 
 .scripture-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
 .scripture-grid article { position: relative; padding-top: 5rem; }
@@ -451,10 +451,10 @@
   font-size: 1.15rem;
   font-weight: 700;
   color: #101720;
-  background: var(--christian-gold-light);
+  background: var(--jewish-gold-light);
   border-radius: 50%;
 }
-.scripture-grid article:nth-child(2) .source-mark { background: var(--christian-blue-light); }
+.scripture-grid article:nth-child(2) .source-mark { background: var(--jewish-blue-light); }
 .scripture-grid article:nth-child(3) .source-mark { background: #b6a2a5; }
 .source-note { margin-top: var(--space-5); }
 
@@ -476,13 +476,13 @@
 .benefit-grid,
 .importance-grid,
 .study-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: var(--space-5); }
-.benefit-grid article { border-top: 0.16rem solid var(--christian-gold); }
-.benefit-grid article:nth-child(2n) { border-top-color: var(--christian-blue-light); }
-.importance-grid article { border-bottom: 0.16rem solid var(--christian-blue-light); }
-.importance-grid article:nth-child(2n) { border-bottom-color: var(--christian-gold); }
+.benefit-grid article { border-top: 0.16rem solid var(--jewish-gold); }
+.benefit-grid article:nth-child(2n) { border-top-color: var(--jewish-blue-light); }
+.importance-grid article { border-bottom: 0.16rem solid var(--jewish-blue-light); }
+.importance-grid article:nth-child(2n) { border-bottom-color: var(--jewish-gold); }
 
 .brazil-timeline { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: var(--space-5); }
-.brazil-timeline article { border-top: 0.18rem solid var(--christian-wine-light); }
+.brazil-timeline article { border-top: 0.18rem solid var(--jewish-wine-light); }
 .brazil-timeline span {
   display: inline-block;
   margin-bottom: var(--space-2);
@@ -490,7 +490,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--christian-gold-light);
+  color: var(--jewish-gold-light);
 }
 .brazil-data-card {
   display: grid;
@@ -507,14 +507,14 @@
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(3.3rem, 8vw, 6rem);
   line-height: 0.9;
-  color: var(--christian-gold-light);
+  color: var(--jewish-gold-light);
 }
 .brazil-data-card p { margin: 0; color: var(--color-text-muted); }
 
 .balance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: var(--space-5); }
 .balance-card { border-top: 0.22rem solid; }
 .balance-card--positive { border-top-color: #8fae91; }
-.balance-card--critical { border-top-color: var(--christian-wine-light); }
+.balance-card--critical { border-top-color: var(--jewish-wine-light); }
 .balance-card h3 { font-size: 1.85rem; }
 .balance-card li + li { margin-top: var(--space-2); }
 
@@ -525,7 +525,7 @@
   align-items: start;
 }
 .study-grid > article > span { grid-row: 1 / span 2; width: 3rem; }
-.study-grid article:nth-child(2n) > span { background: var(--christian-blue-light); }
+.study-grid article:nth-child(2n) > span { background: var(--jewish-blue-light); }
 .study-grid article:nth-child(3n) > span { background: #afbd9f; }
 .study-grid h3 { margin-top: 0; }
 
@@ -565,18 +565,18 @@
 .reading-list-grid article { padding: var(--space-4); }
 .reading-list-grid ul { margin-bottom: 0; }
 
-.cristianismo-article a:not(.button):focus-visible,
-.cristianismo-article button:focus-visible,
-.cristianismo-article summary:focus-visible,
-.cristianismo-article [tabindex="0"]:focus-visible {
-  outline: 0.18rem solid var(--christian-gold-light);
+.judaismo-article a:not(.button):focus-visible,
+.judaismo-article button:focus-visible,
+.judaismo-article summary:focus-visible,
+.judaismo-article [tabindex="0"]:focus-visible {
+  outline: 0.18rem solid var(--jewish-gold-light);
   outline-offset: 0.2rem;
 }
 
 @media (min-width: 62.01rem) {
-  .cristianismo-toc details { display: contents; }
-  .cristianismo-toc summary { display: none; }
-  .cristianismo-toc nav { padding: var(--space-4); }
+  .judaismo-toc details { display: contents; }
+  .judaismo-toc summary { display: none; }
+  .judaismo-toc nav { padding: var(--space-4); }
 }
 
 @media (max-width: 76rem) {
@@ -587,10 +587,10 @@
 }
 
 @media (max-width: 62rem) {
-  .cristianismo-hero { min-height: auto; }
-  .cristianismo-hero__image { object-position: 72% center; }
-  .cristianismo-hero__meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .cristianismo-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .judaismo-hero { min-height: auto; }
+  .judaismo-hero__image { object-position: 72% center; }
+  .judaismo-hero__meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .judaismo-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .method-grid,
   .reading-levels { grid-template-columns: 1fr; }
   .belief-cards,
@@ -602,15 +602,15 @@
 }
 
 @media (max-width: 44rem) {
-  .cristianismo-hero__inner { padding-block: 3.5rem; }
-  .cristianismo-hero__image { object-position: 66% center; }
-  .cristianismo-hero__overlay {
+  .judaismo-hero__inner { padding-block: 3.5rem; }
+  .judaismo-hero__image { object-position: 66% center; }
+  .judaismo-hero__overlay {
     background:
       linear-gradient(90deg, rgb(4 10 18 / 98%), rgb(8 17 29 / 88%)),
-      linear-gradient(0deg, var(--christian-ink), transparent 52%);
+      linear-gradient(0deg, var(--jewish-ink), transparent 52%);
   }
-  .cristianismo-hero__meta,
-  .cristianismo-summary-grid,
+  .judaismo-hero__meta,
+  .judaismo-summary-grid,
   .overview-beliefs,
   .origin-grid,
   .belief-cards,
@@ -626,11 +626,47 @@
   .accessibility-tools { align-items: flex-start; flex-direction: column; }
   .font-controls { border-radius: var(--radius-medium); }
   .reading-levels article { grid-template-columns: 2.5rem minmax(0, 1fr); }
-  .cristianismo-timeline { grid-auto-columns: minmax(82vw, 19rem); }
+  .judaismo-timeline { grid-auto-columns: minmax(82vw, 19rem); }
   .brazil-data-card { grid-template-columns: 1fr; }
-  .cristianismo-table { min-width: 39rem; }
+  .judaismo-table { min-width: 39rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cristianismo-timeline li { transition: none; }
+  .judaismo-timeline li { transition: none; }
+}
+
+
+/* Ajustes editoriais específicos do Judaísmo */
+.judaismo-hero__image { object-position: 60% center; filter: saturate(.76) contrast(1.05) brightness(.7); }
+.judaismo-hero__pattern { background:
+  radial-gradient(circle at 82% 22%, transparent 0 6rem, rgb(240 222 176 / 18%) 6.08rem 6.2rem, transparent 6.3rem),
+  linear-gradient(135deg, transparent 0 49.5%, rgb(143 196 197 / 8%) 49.7% 50.3%, transparent 50.5%),
+  repeating-linear-gradient(90deg, transparent 0 3.4rem, rgb(255 255 255 / 2.5%) 3.45rem 3.5rem);
+}
+.term-grid, .stream-grid, .literature-grid, .study-benefits, .care-grid { display:grid; gap:var(--space-4); }
+.term-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.stream-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.literature-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.study-benefits { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.care-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.term-grid article, .stream-grid article, .literature-grid article, .study-benefits article, .care-grid article {
+  padding:var(--space-4); background:linear-gradient(145deg,rgb(20 28 32 / 94%),rgb(7 18 25 / 96%));
+  border:1px solid rgb(200 169 87 / 24%); border-radius:var(--radius-medium);
+}
+.term-grid h3, .stream-grid h3, .literature-grid h3, .study-benefits h3, .care-grid h3 { margin-top:0; color:var(--jewish-gold-light); }
+.jewish-word { font-family:"Cormorant Garamond",Georgia,serif; font-size:1.12em; color:var(--jewish-gold-light); }
+.judaismo-values-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--space-4); }
+.judaismo-values-list article { padding:var(--space-4); border-left:.18rem solid var(--jewish-gold); background:rgb(20 28 32 / 82%); border-radius:0 var(--radius-small) var(--radius-small) 0; }
+.judaismo-values-list h3 { margin-top:0; }
+.perspective-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-4); margin-block:var(--space-5); }
+.perspective-pair article { padding:var(--space-4); border-radius:var(--radius-medium); border:1px solid rgb(143 196 197 / 25%); background:rgb(7 18 25 / 75%); }
+.perspective-pair h3 { margin-top:0; }
+.identity-note { border-color:rgb(143 196 197 / 45%) !important; }
+@media (max-width:62rem) {
+  .term-grid,.stream-grid,.literature-grid,.study-benefits,.care-grid,.perspective-pair,.judaismo-values-list { grid-template-columns:1fr 1fr; }
+  .judaismo-timeline { display:grid; grid-auto-flow:row; grid-auto-columns:auto; grid-template-columns:1fr; overflow-x:visible; scroll-snap-type:none; }
+  .judaismo-timeline li { min-height:auto; }
+}
+@media (max-width:44rem) {
+  .term-grid,.stream-grid,.literature-grid,.study-benefits,.care-grid,.perspective-pair,.judaismo-values-list { grid-template-columns:1fr; }
 }

@@ -1,0 +1,143 @@
+:root {
+  --dyscalculia-indigo: #858fc7;
+  --dyscalculia-teal: #6f9fa5;
+  --dyscalculia-green: #86a486;
+  --dyscalculia-amber: #c39a63;
+  --dyscalculia-muted: #9c9a9b;
+  --dyscalculia-panel: color-mix(in srgb, var(--color-surface) 82%, #151f25 18%);
+}
+
+.dyscalculia-article { overflow: clip; }
+.dyscalculia-hero { padding: clamp(2.7rem, 6vw, 5.6rem) 1rem clamp(3.2rem, 7vw, 6rem); border-bottom: 1px solid var(--color-border); background: radial-gradient(circle at 86% 16%, color-mix(in srgb, var(--dyscalculia-indigo) 15%, transparent), transparent 34%), radial-gradient(circle at 12% 62%, color-mix(in srgb, var(--dyscalculia-teal) 11%, transparent), transparent 31%); }
+.dyscalculia-hero__inner { width: min(100%, var(--content-width)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.dyscalculia-hero h1 { margin: .2rem 0 .7rem; font-family: var(--font-title); font-size: clamp(3.2rem, 9vw, 6.5rem); letter-spacing: -.035em; color: var(--color-text); }
+.dyscalculia-hero__subtitle { max-width: 43rem; margin: 0 0 1rem; font-family: var(--font-subtitle); font-size: clamp(1.35rem, 2.5vw, 2rem); line-height: 1.28; color: var(--dyscalculia-indigo); }
+.dyscalculia-hero__intro { max-width: 47rem; font-size: 1.12rem; }
+.dyscalculia-hero__indicators { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; margin: 1.6rem 0; }
+.dyscalculia-hero__indicators div { min-height: 6.3rem; padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: color-mix(in srgb, var(--color-surface) 86%, transparent); }
+.dyscalculia-hero__indicators span { display: block; margin-bottom: .35rem; font: 600 .7rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .11em; color: var(--color-text-muted); }
+.dyscalculia-hero__indicators strong { display: block; font: 600 .92rem/1.35 var(--font-interface); color: var(--color-text); }
+.dyscalculia-hero__visual { margin: 0; }
+.dyscalculia-hero__visual img { width: 100%; height: auto; filter: drop-shadow(0 1.2rem 2.6rem rgba(0,0,0,.25)); }
+.dyscalculia-hero__visual figcaption { margin-top: .8rem; font-size: .82rem; line-height: 1.45; color: var(--color-text-muted); }
+
+.dyscalculia-summary { padding: clamp(2.5rem, 5vw, 4.2rem) 1rem; background: color-mix(in srgb, var(--color-surface) 74%, transparent); border-bottom: 1px solid var(--color-border); }
+.dyscalculia-summary__inner { width: min(100%, var(--content-width)); margin: 0 auto; }
+.dyscalculia-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .9rem; }
+.dyscalculia-summary-grid article, .dyscalculia-domain-grid article, .brain-network-grid article, .dyscalculia-associated-map article, .dyscalculia-unknown-grid article, .dyscalculia-why-grid article, .learning-summary-grid article { padding: 1.15rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyscalculia-panel); }
+.dyscalculia-summary-grid > article > span:first-child { font: 600 .72rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .09em; color: var(--dyscalculia-teal); }
+.dyscalculia-summary-grid h3 { margin: .45rem 0 .55rem; font-size: 1.08rem; }
+.dyscalculia-summary-grid p { margin: 0 0 .7rem; font-size: .96rem; }
+
+.evidence-badge { display: inline-flex; align-items: center; width: fit-content; padding: .32rem .55rem; border-radius: 999px; border: 1px solid currentColor; font: 700 .72rem/1 var(--font-interface); white-space: nowrap; }
+.evidence-badge--strong { color: var(--dyscalculia-green); }
+.evidence-badge--moderate, .evidence-badge--support { color: var(--dyscalculia-teal); }
+.evidence-badge--limited { color: #aaa0bc; }
+.evidence-badge--experimental { color: var(--dyscalculia-amber); }
+.evidence-badge--unsupported { color: #aaa5aa; }
+
+.dyscalculia-key-notice { border-left-color: var(--dyscalculia-indigo); }
+.dyscalculia-domain-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.domain-symbol { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--dyscalculia-indigo) 55%, var(--color-border)); color: var(--dyscalculia-indigo); font: 700 1.15rem var(--font-interface); }
+.dyscalculia-domain-grid h3, .brain-network-grid h3, .dyscalculia-associated-map h3, .dyscalculia-unknown-grid h3, .dyscalculia-why-grid h3, .learning-summary-grid h3 { margin-top: .7rem; }
+
+.dyscalculia-life-timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; position: relative; margin: 1.7rem 0; }
+.dyscalculia-life-timeline::before { content: ""; position: absolute; left: 8%; right: 8%; top: 1.15rem; height: 1px; background: color-mix(in srgb, var(--dyscalculia-indigo) 48%, var(--color-border)); }
+.dyscalculia-life-timeline article { position: relative; padding: 2.8rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyscalculia-panel); }
+.dyscalculia-life-timeline article::before { content: ""; position: absolute; top: .86rem; left: 1rem; width: .65rem; height: .65rem; border-radius: 50%; background: var(--dyscalculia-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.dyscalculia-life-timeline span { position: absolute; top: .84rem; right: 1rem; font: 700 .72rem var(--font-interface); color: var(--color-text-muted); }
+.dyscalculia-life-timeline h3 { margin: 0 0 .5rem; }
+.dyscalculia-pullquote, .dyscalculia-perspective { margin: 1.5rem 0; padding: 1.2rem 1.4rem; border-left: 3px solid var(--dyscalculia-indigo); background: color-mix(in srgb, var(--dyscalculia-indigo) 8%, var(--dyscalculia-panel)); }
+.dyscalculia-pullquote p, .dyscalculia-perspective p { margin: 0; }
+
+.brain-network-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
+.brain-network-grid article { position: relative; padding-top: 1.4rem; }
+.brain-network-grid article::before { content: ""; position: absolute; left: 1.15rem; top: .8rem; width: 2.2rem; height: 2px; background: linear-gradient(90deg, var(--dyscalculia-indigo), var(--dyscalculia-teal)); }
+
+.dyscalculia-causal-map { margin: 1.7rem 0; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); gap: .7rem; align-items: center; }
+.dyscalculia-causal-map__column { min-height: 7.4rem; padding: 1rem; display: grid; align-content: center; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyscalculia-panel); }
+.dyscalculia-causal-map__column span { font: 700 .72rem var(--font-interface); text-transform: uppercase; letter-spacing: .08em; color: var(--dyscalculia-indigo); }
+.dyscalculia-causal-map__column strong { margin-top: .45rem; font: 600 .93rem/1.35 var(--font-interface); }
+.dyscalculia-causal-map__connector { color: var(--dyscalculia-teal); font: 700 1.25rem var(--font-interface); text-align: center; }
+
+.intelligence-panel { padding: clamp(1.2rem, 3vw, 1.8rem); border: 1px solid color-mix(in srgb, var(--dyscalculia-indigo) 50%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--dyscalculia-indigo) 10%, var(--dyscalculia-panel)), var(--dyscalculia-panel)); }
+.intelligence-panel > strong { display: block; margin: 1rem 0; font-family: var(--font-subtitle); font-size: 1.35rem; color: var(--dyscalculia-indigo); }
+
+.dyscalculia-associated-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
+.dyscalculia-associated-map__center { grid-column: 1 / -1; justify-self: center; width: min(18rem, 100%); padding: .9rem 1rem; border: 1px solid color-mix(in srgb, var(--dyscalculia-indigo) 60%, var(--color-border)); border-radius: 999px; background: color-mix(in srgb, var(--dyscalculia-indigo) 12%, var(--dyscalculia-panel)); text-align: center; font: 700 .82rem var(--font-interface); letter-spacing: .14em; color: var(--dyscalculia-indigo); }
+
+.dyscalculia-assessment-flow { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.dyscalculia-assessment-flow li::before { color: var(--dyscalculia-indigo); }
+
+.dyscalculia-featured-intervention { border-color: color-mix(in srgb, var(--dyscalculia-green) 58%, var(--color-border)); background: linear-gradient(145deg, color-mix(in srgb, var(--dyscalculia-green) 10%, var(--dyscalculia-panel)), var(--dyscalculia-panel)); }
+.dyscalculia-intervention-principles { grid-template-columns: repeat(5, minmax(0,1fr)); }
+.dyscalculia-intervention-principles strong { color: var(--dyscalculia-teal); }
+.intervention-vs-support { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.intervention-vs-support article { padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-large); background: var(--dyscalculia-panel); }
+.intervention-vs-support article:first-child { border-top: 3px solid var(--dyscalculia-green); }
+.intervention-vs-support article:last-child { border-top: 3px solid var(--dyscalculia-teal); }
+.intervention-vs-support span { font: 700 .72rem var(--font-interface); text-transform: uppercase; letter-spacing: .1em; color: var(--color-text-muted); }
+
+.table-scroll { overflow-x: auto; border-radius: var(--radius-medium); outline: none; }
+.table-scroll:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--dyscalculia-indigo) 60%, transparent); }
+.dyscalculia-table { min-width: 47rem; width: 100%; border-collapse: collapse; background: var(--dyscalculia-panel); }
+.dyscalculia-table th, .dyscalculia-table td { padding: .9rem 1rem; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.dyscalculia-table th { font-family: var(--font-interface); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--color-text-muted); }
+
+.dyscalculia-study-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.dyscalculia-study-grid article { background: var(--dyscalculia-panel); }
+.dyscalculia-study-grid .study-year { color: var(--dyscalculia-indigo); }
+.dyscalculia-study-grid summary { color: var(--dyscalculia-teal); }
+
+.dyscalculia-unknown-grid, .dyscalculia-why-grid, .learning-summary-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+
+.dyscalculia-timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 1rem; width: min(54rem, calc(100vw - 2rem)); margin-left: 50%; transform: translateX(-50%); position: relative; }
+.dyscalculia-timeline::before { content: ""; position: absolute; left: 1.2rem; right: 1.2rem; top: 1.25rem; height: 1px; background: color-mix(in srgb, var(--dyscalculia-indigo) 42%, var(--color-border)); }
+.dyscalculia-timeline article { position: relative; padding: 2.4rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyscalculia-panel); }
+.dyscalculia-timeline article::before { content: ""; position: absolute; top: .95rem; left: 1rem; width: .62rem; height: .62rem; border-radius: 50%; background: var(--dyscalculia-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.dyscalculia-timeline time { display: block; font: 700 .78rem/1 var(--font-interface); color: var(--dyscalculia-indigo); }
+.dyscalculia-timeline h3 { margin: .55rem 0 .5rem; font-size: 1rem; }
+.dyscalculia-timeline p { margin: 0; font-size: .9rem; line-height: 1.5; }
+
+.dyscalculia-perspective { border-left-color: var(--dyscalculia-teal); }
+.dyscalculia-reference-list .reference-type { color: var(--color-text-muted); font-style: italic; }
+.dyscalculia-brazil-note { margin-top: 1.5rem; }
+.dyscalculia-editorial-warning { margin-top: 2rem; }
+
+.back-to-top { position: fixed; right: 1rem; bottom: 1rem; z-index: 20; display: inline-flex; align-items: center; gap: .35rem; padding: .65rem .8rem; border: 1px solid var(--color-border); border-radius: 999px; background: color-mix(in srgb, var(--color-background) 92%, transparent); color: var(--color-text); text-decoration: none; font: 600 .76rem var(--font-interface); backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transform: translateY(.5rem); transition: opacity .18s ease, transform .18s ease; }
+.back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+@media (max-width: 72rem) {
+  .dyscalculia-timeline { width: 100%; margin-left: 0; transform: none; grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .dyscalculia-timeline::before { display: none; }
+  .dyscalculia-intervention-principles { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 62rem) {
+  .dyscalculia-hero__inner { grid-template-columns: 1fr; }
+  .dyscalculia-hero__visual { width: min(24rem, 80%); margin-inline: auto; }
+  .dyscalculia-summary-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 48rem) {
+  .dyscalculia-hero__indicators, .dyscalculia-domain-grid, .brain-network-grid, .dyscalculia-associated-map, .dyscalculia-assessment-flow, .intervention-vs-support, .dyscalculia-study-grid, .dyscalculia-unknown-grid, .dyscalculia-why-grid, .learning-summary-grid { grid-template-columns: 1fr; }
+  .dyscalculia-associated-map__center { grid-column: auto; }
+  .dyscalculia-life-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .dyscalculia-life-timeline::before { left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .dyscalculia-life-timeline article { padding: 1rem; }
+  .dyscalculia-life-timeline article::before { top: 1.15rem; left: -1.62rem; }
+  .dyscalculia-life-timeline span { position: static; display: block; margin-bottom: .3rem; }
+  .dyscalculia-causal-map { grid-template-columns: 1fr; }
+  .dyscalculia-causal-map__connector { transform: rotate(90deg); }
+  .dyscalculia-intervention-principles { grid-template-columns: 1fr; }
+  .dyscalculia-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .dyscalculia-timeline::before { display: block; left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .dyscalculia-timeline article { padding: 1rem; }
+  .dyscalculia-timeline article::before { top: 1.15rem; left: -1.62rem; }
+}
+@media (max-width: 34rem) {
+  .dyscalculia-summary-grid { grid-template-columns: 1fr; }
+  .dyscalculia-hero h1 { font-size: clamp(3rem, 18vw, 4.4rem); }
+  .back-to-top span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
+}

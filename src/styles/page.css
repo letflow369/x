@@ -151,3 +151,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.collection-group { margin-top: clamp(2rem, 5vw, 4rem); }
+.collection-group > h3 {
+  margin: 0 0 1.15rem;
+  padding-bottom: .7rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--color-text);
+  border-bottom: .0625rem solid rgb(200 145 79 / 28%);
+}
+.collection-group + .collection-group { padding-top: .25rem; }

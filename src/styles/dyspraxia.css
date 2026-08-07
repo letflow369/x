@@ -1,0 +1,324 @@
+:root {
+  --dyspraxia-indigo: #858fc7;
+  --dyspraxia-teal: #6f9fa5;
+  --dyspraxia-green: #86a486;
+  --dyspraxia-amber: #c39a63;
+  --dyspraxia-muted: #9c9a9b;
+  --dyspraxia-panel: color-mix(in srgb, var(--color-surface) 82%, #151f25 18%);
+}
+
+.dyspraxia-article { overflow: clip; }
+.dyspraxia-hero { padding: clamp(2.7rem, 6vw, 5.6rem) 1rem clamp(3.2rem, 7vw, 6rem); border-bottom: 1px solid var(--color-border); background: radial-gradient(circle at 86% 16%, color-mix(in srgb, var(--dyspraxia-indigo) 15%, transparent), transparent 34%), radial-gradient(circle at 12% 62%, color-mix(in srgb, var(--dyspraxia-teal) 11%, transparent), transparent 31%); }
+.dyspraxia-hero__inner { width: min(100%, var(--content-width)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.dyspraxia-hero h1 { margin: .2rem 0 .7rem; font-family: var(--font-title); font-size: clamp(3.2rem, 9vw, 6.5rem); letter-spacing: -.035em; color: var(--color-text); }
+.dyspraxia-hero__subtitle { max-width: 43rem; margin: 0 0 1rem; font-family: var(--font-subtitle); font-size: clamp(1.35rem, 2.5vw, 2rem); line-height: 1.28; color: var(--dyspraxia-indigo); }
+.dyspraxia-hero__intro { max-width: 47rem; font-size: 1.12rem; }
+.dyspraxia-hero__indicators { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; margin: 1.6rem 0; }
+.dyspraxia-hero__indicators div { min-height: 6.3rem; padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: color-mix(in srgb, var(--color-surface) 86%, transparent); }
+.dyspraxia-hero__indicators span { display: block; margin-bottom: .35rem; font: 600 .7rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .11em; color: var(--color-text-muted); }
+.dyspraxia-hero__indicators strong { display: block; font: 600 .92rem/1.35 var(--font-interface); color: var(--color-text); }
+.dyspraxia-hero__visual { margin: 0; }
+.dyspraxia-hero__visual img { width: 100%; height: auto; filter: drop-shadow(0 1.2rem 2.6rem rgba(0,0,0,.25)); }
+.dyspraxia-hero__visual figcaption { margin-top: .8rem; font-size: .82rem; line-height: 1.45; color: var(--color-text-muted); }
+
+.dyspraxia-summary { padding: clamp(2.5rem, 5vw, 4.2rem) 1rem; background: color-mix(in srgb, var(--color-surface) 74%, transparent); border-bottom: 1px solid var(--color-border); }
+.dyspraxia-summary__inner { width: min(100%, var(--content-width)); margin: 0 auto; }
+.dyspraxia-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .9rem; }
+.dyspraxia-summary-grid article, .dyspraxia-domain-grid article, .brain-network-grid article, .dyspraxia-associated-map article, .dyspraxia-unknown-grid article, .dyspraxia-why-grid article, .learning-summary-grid article { padding: 1.15rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.dyspraxia-summary-grid > article > span:first-child { font: 600 .72rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .09em; color: var(--dyspraxia-teal); }
+.dyspraxia-summary-grid h3 { margin: .45rem 0 .55rem; font-size: 1.08rem; }
+.dyspraxia-summary-grid p { margin: 0 0 .7rem; font-size: .96rem; }
+
+.evidence-badge { display: inline-flex; align-items: center; width: fit-content; padding: .32rem .55rem; border-radius: 999px; border: 1px solid currentColor; font: 700 .72rem/1 var(--font-interface); white-space: nowrap; }
+.evidence-badge--strong { color: var(--dyspraxia-green); }
+.evidence-badge--moderate, .evidence-badge--support { color: var(--dyspraxia-teal); }
+.evidence-badge--limited { color: #aaa0bc; }
+.evidence-badge--experimental { color: var(--dyspraxia-amber); }
+.evidence-badge--unsupported { color: #aaa5aa; }
+
+.dyspraxia-key-notice { border-left-color: var(--dyspraxia-indigo); }
+.dyspraxia-domain-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.domain-symbol { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 55%, var(--color-border)); color: var(--dyspraxia-indigo); font: 700 1.15rem var(--font-interface); }
+.dyspraxia-domain-grid h3, .brain-network-grid h3, .dyspraxia-associated-map h3, .dyspraxia-unknown-grid h3, .dyspraxia-why-grid h3, .learning-summary-grid h3 { margin-top: .7rem; }
+
+.dyspraxia-life-timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; position: relative; margin: 1.7rem 0; }
+.dyspraxia-life-timeline::before { content: ""; position: absolute; left: 8%; right: 8%; top: 1.15rem; height: 1px; background: color-mix(in srgb, var(--dyspraxia-indigo) 48%, var(--color-border)); }
+.dyspraxia-life-timeline article { position: relative; padding: 2.8rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.dyspraxia-life-timeline article::before { content: ""; position: absolute; top: .86rem; left: 1rem; width: .65rem; height: .65rem; border-radius: 50%; background: var(--dyspraxia-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.dyspraxia-life-timeline span { position: absolute; top: .84rem; right: 1rem; font: 700 .72rem var(--font-interface); color: var(--color-text-muted); }
+.dyspraxia-life-timeline h3 { margin: 0 0 .5rem; }
+.dyspraxia-pullquote, .dyspraxia-perspective { margin: 1.5rem 0; padding: 1.2rem 1.4rem; border-left: 3px solid var(--dyspraxia-indigo); background: color-mix(in srgb, var(--dyspraxia-indigo) 8%, var(--dyspraxia-panel)); }
+.dyspraxia-pullquote p, .dyspraxia-perspective p { margin: 0; }
+
+.brain-network-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
+.brain-network-grid article { position: relative; padding-top: 1.4rem; }
+.brain-network-grid article::before { content: ""; position: absolute; left: 1.15rem; top: .8rem; width: 2.2rem; height: 2px; background: linear-gradient(90deg, var(--dyspraxia-indigo), var(--dyspraxia-teal)); }
+
+.dyspraxia-causal-map { margin: 1.7rem 0; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); gap: .7rem; align-items: center; }
+.dyspraxia-causal-map__column { min-height: 7.4rem; padding: 1rem; display: grid; align-content: center; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.dyspraxia-causal-map__column span { font: 700 .72rem var(--font-interface); text-transform: uppercase; letter-spacing: .08em; color: var(--dyspraxia-indigo); }
+.dyspraxia-causal-map__column strong { margin-top: .45rem; font: 600 .93rem/1.35 var(--font-interface); }
+.dyspraxia-causal-map__connector { color: var(--dyspraxia-teal); font: 700 1.25rem var(--font-interface); text-align: center; }
+
+.intelligence-panel { padding: clamp(1.2rem, 3vw, 1.8rem); border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 50%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--dyspraxia-indigo) 10%, var(--dyspraxia-panel)), var(--dyspraxia-panel)); }
+.intelligence-panel > strong { display: block; margin: 1rem 0; font-family: var(--font-subtitle); font-size: 1.35rem; color: var(--dyspraxia-indigo); }
+
+.dyspraxia-associated-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin: 1.2rem 0; }
+.dyspraxia-associated-map__center { grid-column: 1 / -1; justify-self: center; width: min(18rem, 100%); padding: .9rem 1rem; border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 60%, var(--color-border)); border-radius: 999px; background: color-mix(in srgb, var(--dyspraxia-indigo) 12%, var(--dyspraxia-panel)); text-align: center; font: 700 .82rem var(--font-interface); letter-spacing: .14em; color: var(--dyspraxia-indigo); }
+
+.dyspraxia-assessment-flow { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.dyspraxia-assessment-flow li::before { color: var(--dyspraxia-indigo); }
+
+.dyspraxia-featured-intervention { border-color: color-mix(in srgb, var(--dyspraxia-green) 58%, var(--color-border)); background: linear-gradient(145deg, color-mix(in srgb, var(--dyspraxia-green) 10%, var(--dyspraxia-panel)), var(--dyspraxia-panel)); }
+.dyspraxia-intervention-principles { grid-template-columns: repeat(5, minmax(0,1fr)); }
+.dyspraxia-intervention-principles strong { color: var(--dyspraxia-teal); }
+.intervention-vs-support { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.intervention-vs-support article { padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-large); background: var(--dyspraxia-panel); }
+.intervention-vs-support article:first-child { border-top: 3px solid var(--dyspraxia-green); }
+.intervention-vs-support article:last-child { border-top: 3px solid var(--dyspraxia-teal); }
+.intervention-vs-support span { font: 700 .72rem var(--font-interface); text-transform: uppercase; letter-spacing: .1em; color: var(--color-text-muted); }
+
+.table-scroll { overflow-x: auto; border-radius: var(--radius-medium); outline: none; }
+.table-scroll:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--dyspraxia-indigo) 60%, transparent); }
+.dyspraxia-table { min-width: 47rem; width: 100%; border-collapse: collapse; background: var(--dyspraxia-panel); }
+.dyspraxia-table th, .dyspraxia-table td { padding: .9rem 1rem; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.dyspraxia-table th { font-family: var(--font-interface); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--color-text-muted); }
+
+.dyspraxia-study-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.dyspraxia-study-grid article { background: var(--dyspraxia-panel); }
+.dyspraxia-study-grid .study-year { color: var(--dyspraxia-indigo); }
+.dyspraxia-study-grid summary { color: var(--dyspraxia-teal); }
+
+.dyspraxia-unknown-grid, .dyspraxia-why-grid, .learning-summary-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+
+.dyspraxia-timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 1rem; width: min(54rem, calc(100vw - 2rem)); margin-left: 50%; transform: translateX(-50%); position: relative; }
+.dyspraxia-timeline::before { content: ""; position: absolute; left: 1.2rem; right: 1.2rem; top: 1.25rem; height: 1px; background: color-mix(in srgb, var(--dyspraxia-indigo) 42%, var(--color-border)); }
+.dyspraxia-timeline article { position: relative; padding: 2.4rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.dyspraxia-timeline article::before { content: ""; position: absolute; top: .95rem; left: 1rem; width: .62rem; height: .62rem; border-radius: 50%; background: var(--dyspraxia-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.dyspraxia-timeline time { display: block; font: 700 .78rem/1 var(--font-interface); color: var(--dyspraxia-indigo); }
+.dyspraxia-timeline h3 { margin: .55rem 0 .5rem; font-size: 1rem; }
+.dyspraxia-timeline p { margin: 0; font-size: .9rem; line-height: 1.5; }
+
+.dyspraxia-perspective { border-left-color: var(--dyspraxia-teal); }
+.dyspraxia-reference-list .reference-type { color: var(--color-text-muted); font-style: italic; }
+.dyspraxia-brazil-note { margin-top: 1.5rem; }
+.dyspraxia-editorial-warning { margin-top: 2rem; }
+
+.back-to-top { position: fixed; right: 1rem; bottom: 1rem; z-index: 20; display: inline-flex; align-items: center; gap: .35rem; padding: .65rem .8rem; border: 1px solid var(--color-border); border-radius: 999px; background: color-mix(in srgb, var(--color-background) 92%, transparent); color: var(--color-text); text-decoration: none; font: 600 .76rem var(--font-interface); backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transform: translateY(.5rem); transition: opacity .18s ease, transform .18s ease; }
+.back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+@media (max-width: 72rem) {
+  .dyspraxia-timeline { width: 100%; margin-left: 0; transform: none; grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .dyspraxia-timeline::before { display: none; }
+  .dyspraxia-intervention-principles { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 62rem) {
+  .dyspraxia-hero__inner { grid-template-columns: 1fr; }
+  .dyspraxia-hero__visual { width: min(24rem, 80%); margin-inline: auto; }
+  .dyspraxia-summary-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 48rem) {
+  .dyspraxia-hero__indicators, .dyspraxia-domain-grid, .brain-network-grid, .dyspraxia-associated-map, .dyspraxia-assessment-flow, .intervention-vs-support, .dyspraxia-study-grid, .dyspraxia-unknown-grid, .dyspraxia-why-grid, .learning-summary-grid { grid-template-columns: 1fr; }
+  .dyspraxia-associated-map__center { grid-column: auto; }
+  .dyspraxia-life-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .dyspraxia-life-timeline::before { left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .dyspraxia-life-timeline article { padding: 1rem; }
+  .dyspraxia-life-timeline article::before { top: 1.15rem; left: -1.62rem; }
+  .dyspraxia-life-timeline span { position: static; display: block; margin-bottom: .3rem; }
+  .dyspraxia-causal-map { grid-template-columns: 1fr; }
+  .dyspraxia-causal-map__connector { transform: rotate(90deg); }
+  .dyspraxia-intervention-principles { grid-template-columns: 1fr; }
+  .dyspraxia-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .dyspraxia-timeline::before { display: block; left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .dyspraxia-timeline article { padding: 1rem; }
+  .dyspraxia-timeline article::before { top: 1.15rem; left: -1.62rem; }
+}
+@media (max-width: 34rem) {
+  .dyspraxia-summary-grid { grid-template-columns: 1fr; }
+  .dyspraxia-hero h1 { font-size: clamp(3rem, 18vw, 4.4rem); }
+  .back-to-top span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
+}
+
+/* Componentes específicos — Dispraxia / TDC */
+.term-grid,
+.motor-situations-grid,
+.brain-network-grid,
+.support-grid,
+.takeaway-grid,
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.term-grid article,
+.motor-situations-grid article,
+.brain-network-grid article,
+.support-grid article,
+.takeaway-grid article,
+.related-grid a {
+  padding: 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--dyspraxia-panel);
+}
+.term-grid h3,
+.motor-situations-grid h3,
+.brain-network-grid h3,
+.support-grid h3,
+.takeaway-grid h3 { margin-top: 0; }
+.term-grid article:first-child { border-top: 3px solid var(--dyspraxia-indigo); }
+.term-grid article:nth-child(2) { border-top: 3px solid var(--dyspraxia-teal); }
+.term-grid article:nth-child(3), .term-grid article:nth-child(4) { border-top: 3px solid var(--dyspraxia-amber); }
+
+.motor-cycle {
+  list-style: none;
+  margin: 1.7rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: .7rem;
+  width: min(54rem, calc(100vw - 2rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.motor-cycle li {
+  position: relative;
+  min-height: 9rem;
+  padding: 1rem .8rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--dyspraxia-panel);
+}
+.motor-cycle li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -.62rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: var(--dyspraxia-teal);
+  font: 700 1.1rem var(--font-interface);
+}
+.motor-cycle span { display: block; font: 700 .7rem var(--font-interface); color: var(--dyspraxia-indigo); }
+.motor-cycle strong { display: block; margin: .5rem 0 .4rem; font: 600 .92rem/1.25 var(--font-interface); }
+.motor-cycle small { color: var(--color-text-muted); line-height: 1.38; }
+
+.intelligence-panel {
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 56%, var(--color-border));
+  border-radius: var(--radius-large);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--dyspraxia-indigo) 13%, var(--dyspraxia-panel)), var(--dyspraxia-panel));
+}
+.intelligence-panel__contrast { display: grid; grid-template-columns: 1fr auto 1fr; gap: .8rem; align-items: center; margin-top: 1rem; }
+.intelligence-panel__contrast div { padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: color-mix(in srgb, var(--color-surface) 88%, transparent); }
+.intelligence-panel__contrast span { color: var(--dyspraxia-teal); font: 700 1.2rem var(--font-interface); }
+
+.cause-map { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .8rem; margin: 1.4rem 0; }
+.cause-map article { padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.cause-map article h3 { margin-top: 0; }
+
+.coexist-network { display: grid; grid-template-columns: 12rem 1fr; gap: 1rem; align-items: stretch; margin: 1.6rem 0; }
+.coexist-network__center { display: grid; place-items: center; text-align: center; padding: 1.2rem; border: 1px solid color-mix(in srgb, var(--dyspraxia-indigo) 56%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--dyspraxia-indigo) 16%, var(--color-surface)), var(--dyspraxia-panel)); font: 700 1rem var(--font-interface); color: var(--dyspraxia-indigo); }
+.coexist-network__items { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; }
+.coexist-network__items article { padding: .9rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.coexist-network__items h3 { margin: 0 0 .35rem; font-size: 1rem; }
+.coexist-network__items p { margin: 0; font-size: .9rem; }
+
+.goal-callout { padding: 1.25rem; border-left: .25rem solid var(--dyspraxia-green); border-radius: 0 var(--radius-medium) var(--radius-medium) 0; background: color-mix(in srgb, var(--dyspraxia-green) 9%, var(--dyspraxia-panel)); }
+.goal-callout p:last-child { margin-bottom: 0; }
+
+.intervention-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 1rem; }
+.intervention-card-grid article { padding: 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.intervention-card-grid h3 { margin: .65rem 0 .45rem; }
+
+.adaptation-columns { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+.adaptation-columns article { padding: 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.adaptation-columns h3 { margin-top: 0; color: var(--dyspraxia-teal); }
+
+.research-timeline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+.research-timeline article { padding: 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); }
+.research-timeline .study-year { display: inline-flex; margin-bottom: .5rem; }
+.research-timeline h3 { margin: .4rem 0 .5rem; }
+
+.perspective-chain { list-style: none; padding: 0; margin: 1.4rem 0; display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: .7rem; }
+.perspective-chain li { position: relative; padding: .9rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyspraxia-panel); text-align: center; font: 600 .84rem/1.3 var(--font-interface); }
+.perspective-chain li:not(:last-child)::after { content: "→"; position: absolute; right: -.62rem; top: 50%; transform: translateY(-50%); color: var(--dyspraxia-teal); }
+
+.related-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.related-grid a { display: block; text-decoration: none; font: 600 .9rem/1.3 var(--font-interface); }
+.related-grid a:hover { border-color: var(--dyspraxia-indigo); color: var(--dyspraxia-indigo); }
+
+@media (max-width: 72rem) {
+  .motor-cycle { width: 100%; margin-left: 0; transform: none; grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .motor-cycle li:nth-child(3)::after { display: none; }
+  .perspective-chain { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .perspective-chain li:nth-child(3)::after { display: none; }
+}
+@media (max-width: 48rem) {
+  .term-grid, .motor-situations-grid, .brain-network-grid, .support-grid, .takeaway-grid, .intervention-card-grid, .research-timeline, .cause-map, .adaptation-columns { grid-template-columns: 1fr; }
+  .coexist-network { grid-template-columns: 1fr; }
+  .coexist-network__items { grid-template-columns: 1fr; }
+  .intelligence-panel__contrast { grid-template-columns: 1fr; }
+  .intelligence-panel__contrast > span { justify-self: center; transform: rotate(90deg); }
+  .motor-cycle, .perspective-chain { grid-template-columns: 1fr; }
+  .motor-cycle li, .perspective-chain li { min-height: auto; }
+  .motor-cycle li:not(:last-child)::after, .perspective-chain li:not(:last-child)::after { display: block; content: "↓"; right: auto; left: 50%; top: auto; bottom: -.95rem; transform: translateX(-50%); }
+  .related-grid { grid-template-columns: 1fr; }
+}
+
+/* Correções de anatomia dos componentes compartilhados usados nesta página */
+.dyspraxia-life-timeline { grid-template-columns: repeat(4, minmax(0,1fr)); }
+.dyspraxia-assessment-flow {
+  list-style: none;
+  margin: 1.6rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .7rem;
+  counter-reset: assess;
+}
+.dyspraxia-assessment-flow li {
+  counter-increment: assess;
+  position: relative;
+  min-height: 5.7rem;
+  padding: .9rem .9rem .9rem 3.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--dyspraxia-panel);
+}
+.dyspraxia-assessment-flow li::before {
+  content: counter(assess, decimal-leading-zero);
+  position: absolute;
+  left: .9rem;
+  top: .95rem;
+  font: 700 .75rem var(--font-interface);
+  color: var(--dyspraxia-indigo);
+}
+.dyspraxia-assessment-flow strong,
+.dyspraxia-assessment-flow span { display: block; }
+.dyspraxia-assessment-flow span { margin-top: .3rem; color: var(--color-text-muted); font-size: .88rem; }
+
+.dyspraxia-featured-intervention {
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 1px solid color-mix(in srgb, var(--dyspraxia-green) 58%, var(--color-border));
+  border-radius: var(--radius-large);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--dyspraxia-green) 10%, var(--dyspraxia-panel)), var(--dyspraxia-panel));
+}
+.dyspraxia-featured-intervention h3 { margin: .8rem 0 .55rem; font-size: 1.45rem; }
+.featured-intervention__skills { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.featured-intervention__skills span { padding: .38rem .6rem; border: 1px solid var(--color-border); border-radius: 999px; font: 600 .76rem var(--font-interface); color: var(--color-text-muted); }
+
+.evidence-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.evidence-map__card { padding: 1.15rem; border-radius: var(--radius-medium); border: 1px solid var(--color-border); background: var(--dyspraxia-panel); }
+.evidence-map__card--strong { border-top: 3px solid var(--dyspraxia-green); }
+.evidence-map__card--support { border-top: 3px solid var(--dyspraxia-teal); }
+.evidence-map__card--experimental { border-top: 3px solid var(--dyspraxia-amber); }
+.evidence-map__card--unsupported { border-top: 3px solid #8c888c; }
+.evidence-map__card h3 { margin: .75rem 0 .55rem; }
+
+@media (max-width: 48rem) {
+  .dyspraxia-assessment-flow, .evidence-map { grid-template-columns: 1fr; }
+}

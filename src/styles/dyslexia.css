@@ -1,0 +1,164 @@
+
+:root {
+  --dyslexia-indigo: #8790c8;
+  --dyslexia-teal: #78a8a8;
+  --dyslexia-green: #8eaa8d;
+  --dyslexia-amber: #c59b66;
+  --dyslexia-muted: #9a9896;
+  --dyslexia-panel: color-mix(in srgb, var(--color-surface) 82%, #172026 18%);
+}
+
+.dyslexia-article { overflow: clip; }
+.dyslexia-hero { padding: clamp(2.7rem, 6vw, 5.6rem) 1rem clamp(3.2rem, 7vw, 6rem); border-bottom: 1px solid var(--color-border); background: radial-gradient(circle at 85% 18%, color-mix(in srgb, var(--dyslexia-indigo) 14%, transparent), transparent 34%), radial-gradient(circle at 12% 60%, color-mix(in srgb, var(--dyslexia-teal) 10%, transparent), transparent 30%); }
+.dyslexia-hero__inner { width: min(100%, var(--content-width)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.dyslexia-hero h1 { margin: .2rem 0 .7rem; font-family: var(--font-title); font-size: clamp(3.2rem, 9vw, 6.8rem); letter-spacing: -.035em; color: var(--color-text); }
+.dyslexia-hero__subtitle { max-width: 42rem; margin: 0 0 1rem; font-family: var(--font-subtitle); font-size: clamp(1.35rem, 2.5vw, 2rem); line-height: 1.28; color: var(--dyslexia-indigo); }
+.dyslexia-hero__intro { max-width: 46rem; font-size: 1.12rem; }
+.dyslexia-hero__indicators { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; margin: 1.6rem 0; }
+.dyslexia-hero__indicators div { min-height: 6.3rem; padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: color-mix(in srgb, var(--color-surface) 86%, transparent); }
+.dyslexia-hero__indicators span { display: block; margin-bottom: .35rem; font: 600 .7rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .11em; color: var(--color-text-muted); }
+.dyslexia-hero__indicators strong { display: block; font: 600 .92rem/1.35 var(--font-interface); color: var(--color-text); }
+.dyslexia-hero__visual { margin: 0; }
+.dyslexia-hero__visual img { width: 100%; height: auto; filter: drop-shadow(0 1.2rem 2.6rem rgba(0,0,0,.25)); }
+.dyslexia-hero__visual figcaption { margin-top: .8rem; font-size: .82rem; line-height: 1.45; color: var(--color-text-muted); }
+
+.dyslexia-summary { padding: clamp(2.5rem, 5vw, 4.2rem) 1rem; background: color-mix(in srgb, var(--color-surface) 74%, transparent); border-bottom: 1px solid var(--color-border); }
+.dyslexia-summary__inner { width: min(100%, var(--content-width)); margin: 0 auto; }
+.dyslexia-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .9rem; }
+.dyslexia-summary-grid article, .dyslexia-domain-grid article, .associated-grid article, .unknown-grid article, .why-grid article { padding: 1.15rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.dyslexia-summary-grid span { font: 600 .72rem/1.2 var(--font-interface); text-transform: uppercase; letter-spacing: .09em; color: var(--dyslexia-teal); }
+.dyslexia-summary-grid h3 { margin: .45rem 0 .55rem; font-size: 1.08rem; }
+.dyslexia-summary-grid p { margin: 0; font-size: .96rem; }
+
+.dyslexia-domain-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.dyslexia-domain-grid h3, .associated-grid h3, .unknown-grid h3, .why-grid h3 { margin-top: 0; }
+.dyslexia-domain-grid ul { margin-bottom: 0; }
+
+.reading-process { list-style: none; margin: 1.7rem 0; width: min(52rem, calc(100vw - 2rem)); margin-left: 50%; transform: translateX(-50%); padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .75rem; position: relative; }
+.reading-process li { position: relative; padding: 1rem .85rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); min-height: 9.5rem; }
+.reading-process li:not(:last-child)::after { content: "→"; position: absolute; right: -.68rem; top: 50%; transform: translateY(-50%); z-index: 2; color: var(--dyslexia-teal); font: 700 1.15rem var(--font-interface); }
+.reading-process span { display: block; font: 700 .7rem var(--font-interface); color: var(--dyslexia-indigo); }
+.reading-process strong { display: block; margin: .55rem 0 .45rem; font: 600 .94rem/1.25 var(--font-interface); }
+.reading-process small { color: var(--color-text-muted); line-height: 1.4; }
+
+.table-scroll { overflow-x: auto; border-radius: var(--radius-medium); outline: none; }
+.table-scroll:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--dyslexia-indigo) 60%, transparent); }
+.dyslexia-table { min-width: 44rem; width: 100%; border-collapse: collapse; background: var(--dyslexia-panel); }
+.dyslexia-table th, .dyslexia-table td { padding: .9rem 1rem; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.dyslexia-table th { font-family: var(--font-interface); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--color-text-muted); }
+
+.evidence-badge { display: inline-flex; align-items: center; width: fit-content; padding: .32rem .55rem; border-radius: 999px; border: 1px solid currentColor; font: 700 .72rem/1 var(--font-interface); white-space: nowrap; }
+.evidence-badge--strong { color: var(--dyslexia-green); }
+.evidence-badge--support { color: var(--dyslexia-teal); }
+.evidence-badge--experimental { color: var(--dyslexia-amber); }
+.evidence-badge--unsupported { color: #aaa5aa; }
+
+.dyslexia-timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 1rem; width: min(52rem, calc(100vw - 2rem)); margin-left: 50%; transform: translateX(-50%); position: relative; }
+.dyslexia-timeline::before { content: ""; position: absolute; left: 1.2rem; right: 1.2rem; top: 1.25rem; height: 1px; background: color-mix(in srgb, var(--dyslexia-indigo) 42%, var(--color-border)); }
+.dyslexia-timeline article { position: relative; padding: 2.4rem 1rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.dyslexia-timeline article::before { content: ""; position: absolute; top: .95rem; left: 1rem; width: .62rem; height: .62rem; border-radius: 50%; background: var(--dyslexia-indigo); box-shadow: 0 0 0 .3rem var(--color-background); }
+.dyslexia-timeline time { display: block; font: 700 .78rem/1 var(--font-interface); color: var(--dyslexia-indigo); }
+.dyslexia-timeline h3 { margin: .55rem 0 .5rem; font-size: 1rem; }
+.dyslexia-timeline p { margin: 0; font-size: .9rem; line-height: 1.5; }
+
+.multifactor-map { margin: 1.8rem 0; display: grid; grid-template-columns: 13rem 1fr; gap: 1rem; align-items: stretch; }
+.multifactor-map__center { padding: 1.4rem; border-radius: var(--radius-large); border: 1px solid color-mix(in srgb, var(--dyslexia-indigo) 55%, var(--color-border)); background: linear-gradient(145deg, color-mix(in srgb, var(--dyslexia-indigo) 15%, var(--color-surface)), var(--dyslexia-panel)); display: grid; place-content: center; text-align: center; }
+.multifactor-map__center strong { font: 700 1.1rem var(--font-interface); letter-spacing: .12em; color: var(--dyslexia-indigo); }
+.multifactor-map__center span { margin-top: .45rem; color: var(--color-text-muted); font-size: .82rem; }
+.multifactor-map__items { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .7rem; }
+.multifactor-map__items span { min-height: 4.4rem; display: grid; place-items: center; padding: .75rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); text-align: center; font: 600 .84rem/1.25 var(--font-interface); }
+
+.dyslexia-tabs__list { display: flex; flex-wrap: wrap; gap: .55rem; margin-bottom: 1rem; }
+.dyslexia-tabs__list button { appearance: none; padding: .68rem .9rem; border: 1px solid var(--color-border); border-radius: 999px; background: var(--dyslexia-panel); color: var(--color-text); font: 600 .82rem/1.2 var(--font-interface); cursor: pointer; }
+.dyslexia-tabs__list button[aria-selected="true"] { border-color: var(--dyslexia-indigo); background: color-mix(in srgb, var(--dyslexia-indigo) 15%, var(--dyslexia-panel)); color: #d7daf2; }
+.dyslexia-tabs__panel { padding: 1.2rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.dyslexia-tabs__panel h3 { margin-top: 0; }
+
+.dyslexia-associated-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0,1fr)); }
+.assessment-flow { list-style: none; margin: 1.6rem 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .7rem; counter-reset: assess; }
+.assessment-flow li { counter-increment: assess; position: relative; min-height: 5.7rem; padding: .9rem .9rem .9rem 3.2rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.assessment-flow li::before { content: counter(assess, decimal-leading-zero); position: absolute; left: .9rem; top: .95rem; font: 700 .75rem var(--font-interface); color: var(--dyslexia-indigo); }
+.assessment-flow strong, .assessment-flow span { display: block; }
+.assessment-flow span { margin-top: .3rem; color: var(--color-text-muted); font-size: .88rem; }
+
+.featured-intervention { padding: clamp(1.2rem, 3vw, 1.8rem); border: 1px solid color-mix(in srgb, var(--dyslexia-green) 58%, var(--color-border)); border-radius: var(--radius-large); background: linear-gradient(145deg, color-mix(in srgb, var(--dyslexia-green) 10%, var(--dyslexia-panel)), var(--dyslexia-panel)); }
+.featured-intervention h3 { margin: .8rem 0 .55rem; font-size: 1.45rem; }
+.featured-intervention__skills { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.featured-intervention__skills span { padding: .38rem .6rem; border: 1px solid var(--color-border); border-radius: 999px; font: 600 .76rem var(--font-interface); color: var(--color-text-muted); }
+.intervention-principles { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: .7rem; margin: 1rem 0 1.5rem; }
+.intervention-principles article { padding: .9rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.intervention-principles strong { color: var(--dyslexia-teal); font-family: var(--font-interface); }
+.intervention-principles p { margin-bottom: 0; font-size: .88rem; }
+
+.evidence-map { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.evidence-map__card { padding: 1.15rem; border-radius: var(--radius-medium); border: 1px solid var(--color-border); background: var(--dyslexia-panel); }
+.evidence-map__card--strong { border-top: 3px solid var(--dyslexia-green); }
+.evidence-map__card--support { border-top: 3px solid var(--dyslexia-teal); }
+.evidence-map__card--experimental { border-top: 3px solid var(--dyslexia-amber); }
+.evidence-map__card--unsupported { border-top: 3px solid #8c888c; }
+.evidence-map__card h3 { margin: .75rem 0 .55rem; }
+
+.study-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.study-grid article { padding: 1.15rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.study-year, .study-type { display: inline-flex; margin-right: .35rem; font: 700 .7rem var(--font-interface); text-transform: uppercase; letter-spacing: .08em; }
+.study-year { color: var(--dyslexia-indigo); }
+.study-type { color: var(--color-text-muted); }
+.study-grid h3 { margin: .75rem 0 .55rem; }
+.study-grid details { margin-top: .8rem; }
+.study-grid summary { cursor: pointer; color: var(--dyslexia-teal); font: 600 .82rem var(--font-interface); }
+
+.unknown-grid, .why-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.brazil-law-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .8rem; margin: 1rem 0 1.4rem; }
+.brazil-law-grid article { padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.brazil-law-grid span { font: 700 .72rem var(--font-interface); color: var(--dyslexia-indigo); }
+.brazil-law-grid h3 { margin: .45rem 0 .45rem; }
+
+.dyslexia-accordion { display: grid; gap: .7rem; }
+.dyslexia-accordion details { border: 1px solid var(--color-border); border-radius: var(--radius-medium); background: var(--dyslexia-panel); }
+.dyslexia-accordion summary { cursor: pointer; padding: 1rem 1.1rem; font: 600 .95rem/1.35 var(--font-interface); }
+.dyslexia-accordion details > div { padding: 0 1.1rem 1rem; }
+.dyslexia-accordion details > div p:last-child { margin-bottom: 0; }
+.dyslexia-reference-list .reference-type { color: var(--color-text-muted); font-style: italic; }
+.dyslexia-editorial-warning { margin-top: 2rem; }
+
+.back-to-top { position: fixed; right: 1rem; bottom: 1rem; z-index: 20; display: inline-flex; align-items: center; gap: .35rem; padding: .65rem .8rem; border: 1px solid var(--color-border); border-radius: 999px; background: color-mix(in srgb, var(--color-background) 92%, transparent); color: var(--color-text); text-decoration: none; font: 600 .76rem var(--font-interface); backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transform: translateY(.5rem); transition: opacity .18s ease, transform .18s ease; }
+.back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+@media (max-width: 72rem) {
+  .reading-process, .dyslexia-timeline { width: 100%; margin-left: 0; transform: none; }
+  .reading-process { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .reading-process li:nth-child(4)::after { display: none; }
+  .dyslexia-timeline { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .dyslexia-timeline::before { display: none; }
+  .dyslexia-timeline article::before { top: .95rem; }
+  .intervention-principles { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 62rem) {
+  .dyslexia-hero__inner { grid-template-columns: 1fr; }
+  .dyslexia-hero__visual { width: min(24rem, 80%); margin-inline: auto; }
+  .dyslexia-summary-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 48rem) {
+  .dyslexia-hero__indicators, .dyslexia-domain-grid, .dyslexia-associated-grid, .assessment-flow, .evidence-map, .study-grid, .unknown-grid, .why-grid, .brazil-law-grid { grid-template-columns: 1fr; }
+  .reading-process { grid-template-columns: 1fr; }
+  .reading-process li { min-height: auto; padding-left: 3.4rem; }
+  .reading-process li:not(:last-child)::after { display: block; content: "↓"; right: auto; left: 1.15rem; top: auto; bottom: -.95rem; transform: none; }
+  .reading-process span { position: absolute; left: 1rem; top: 1rem; }
+  .dyslexia-timeline { grid-template-columns: 1fr; padding-left: 1.7rem; }
+  .dyslexia-timeline::before { display: block; left: .38rem; right: auto; top: .8rem; bottom: .8rem; width: 1px; height: auto; }
+  .dyslexia-timeline article { padding: 1rem; }
+  .dyslexia-timeline article::before { top: 1.15rem; left: -1.62rem; }
+  .multifactor-map { grid-template-columns: 1fr; }
+  .multifactor-map__items { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .intervention-principles { grid-template-columns: 1fr; }
+}
+@media (max-width: 34rem) {
+  .dyslexia-summary-grid, .multifactor-map__items { grid-template-columns: 1fr; }
+  .dyslexia-hero h1 { font-size: clamp(3rem, 18vw, 4.4rem); }
+  .dyslexia-tabs__list { display: grid; grid-template-columns: 1fr; }
+  .dyslexia-tabs__list button { width: 100%; text-align: left; border-radius: var(--radius-medium); }
+  .back-to-top span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
+}

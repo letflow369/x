@@ -135,14 +135,6 @@
   color: #c9c4bb;
 }
 
-.reader-controls {
-  align-items: center;
-  gap: var(--space-3);
-  margin-top: var(--space-3);
-}
-
-.reader-controls:not([hidden]) { display: flex; }
-.reader-status { margin: 0; color: var(--isla-turquoise-light); }
 .button--small { min-height: 2.5rem; padding: 0.55rem 0.9rem; }
 
 .isla-terminology {
@@ -567,7 +559,6 @@
   .literature-columns,
   .responsible-checklist,
   .isla-glossary { grid-template-columns: 1fr; }
-  .reader-controls:not([hidden]) { align-items: flex-start; flex-direction: column; }
   .reading-levels article { grid-template-columns: 2.5rem minmax(0, 1fr); }
   .isla-tabs__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .isla-tabs__list button { width: 100%; }
