@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+<title id="title">Ciclo cognitivo-comportamental</title><desc id="desc">Composição abstrata com cinco nós representando situação, interpretação, emoção e corpo, comportamento e consequência, ligados em ciclo.</desc>
+<defs><radialGradient id="bg"><stop offset="0" stop-color="#1d3434"/><stop offset="1" stop-color="#0d1014"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".28"/></filter></defs>
+<rect width="760" height="900" rx="52" fill="url(#bg)"/>
+<g opacity=".17" fill="none" stroke="#c3a876"><circle cx="380" cy="440" r="255"/><circle cx="380" cy="440" r="205"/><path d="M130 650 C230 735 520 755 635 610"/></g>
+<g filter="url(#shadow)" font-family="Arial, sans-serif" text-anchor="middle">
+<g transform="translate(380 145)"><circle r="74" fill="#152226" stroke="#8eb7b1" stroke-width="3"/><text y="-4" fill="#8eb7b1" font-size="18" font-weight="700">SITUAÇÃO</text><text y="24" fill="#e8e2d7" font-size="14">o que acontece</text></g>
+<g transform="translate(605 315)"><circle r="82" fill="#1b1c25" stroke="#aa9bc1" stroke-width="3"/><text y="-5" fill="#aa9bc1" font-size="17" font-weight="700">INTERPRETAÇÃO</text><text y="23" fill="#e8e2d7" font-size="14">significados</text></g>
+<g transform="translate(515 620)"><circle r="87" fill="#17221a" stroke="#96b89d" stroke-width="3"/><text y="-12" fill="#96b89d" font-size="16" font-weight="700">EMOÇÕES</text><text y="10" fill="#96b89d" font-size="16" font-weight="700">E CORPO</text><text y="38" fill="#e8e2d7" font-size="14">respostas</text></g>
+<g transform="translate(245 620)"><circle r="82" fill="#241d19" stroke="#c08c72" stroke-width="3"/><text y="-5" fill="#c08c72" font-size="16" font-weight="700">COMPORTAMENTO</text><text y="23" fill="#e8e2d7" font-size="14">ações e esquivas</text></g>
+<g transform="translate(155 315)"><circle r="80" fill="#25221a" stroke="#c3a876" stroke-width="3"/><text y="-5" fill="#c3a876" font-size="16" font-weight="700">CONSEQUÊNCIA</text><text y="23" fill="#e8e2d7" font-size="14">aprendizagem</text></g>
+</g>
+<g fill="none" stroke="#d6d0c7" stroke-width="3" stroke-linecap="round" opacity=".72"><path d="M432 191 C500 216 553 248 576 270"/><path d="M590 397 C580 485 553 533 538 551"/><path d="M432 654 C365 687 316 685 292 665"/><path d="M198 561 C160 500 140 425 145 392"/><path d="M197 249 C250 203 305 175 327 165"/></g>
+<g fill="#d6d0c7"><path d="M570 263l18 9-11 16z"/><path d="M542 546l9 18-19-3z"/><path d="M301 660l-10 18-9-18z"/><path d="M143 400l-10-17 20 1z"/><path d="M320 169l16-11-2 20z"/></g>
+<g transform="translate(380 430)" text-anchor="middle" font-family="Arial, sans-serif"><circle r="106" fill="#11171a" stroke="#8eb7b1" stroke-width="2"/><text y="-24" fill="#e8e2d7" font-size="23" font-weight="700">HIPÓTESES</text><text y="7" fill="#e8e2d7" font-size="23" font-weight="700">QUE PODEM</text><text y="38" fill="#c3a876" font-size="23" font-weight="700">SER TESTADAS</text></g>
+</svg>
