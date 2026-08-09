@@ -1,0 +1,489 @@
+.ayahuasca-article {
+  --integrative-accent: #7da98b;
+  --integrative-accent-soft: rgb(78 119 91 / 18%);
+  --ayahuasca-forest: #294a37;
+  --ayahuasca-moss: #7da98b;
+  --ayahuasca-copper: #b67d57;
+  --ayahuasca-earth: #8d654b;
+  --ayahuasca-cream: #e7ddca;
+  --ayahuasca-panel: rgb(18 23 20 / 88%);
+}
+
+.ayahuasca-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-bottom: var(--space-6);
+  border-block: 0.0625rem solid rgb(125 169 139 / 18%);
+  background:
+    radial-gradient(circle at 78% 20%, rgb(125 169 139 / 16%), transparent 28rem),
+    linear-gradient(135deg, rgb(13 17 15 / 98%), rgb(20 27 23 / 96%) 48%, rgb(42 35 29 / 94%));
+}
+
+.ayahuasca-hero::after {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 9rem;
+  content: "";
+  background: linear-gradient(to top, rgb(16 18 17 / 88%), transparent);
+}
+
+.ayahuasca-hero__forest {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.ayahuasca-leaf {
+  position: absolute;
+  display: block;
+  width: clamp(9rem, 20vw, 17rem);
+  aspect-ratio: 0.58;
+  border: 0.08rem solid rgb(125 169 139 / 32%);
+  border-radius: 100% 0 100% 0;
+  background: linear-gradient(145deg, rgb(86 129 97 / 20%), transparent 66%);
+  transform-origin: 50% 100%;
+}
+
+.ayahuasca-leaf::after {
+  position: absolute;
+  inset: 9% 49% 9% auto;
+  width: 0.06rem;
+  content: "";
+  background: rgb(201 194 162 / 18%);
+  transform: rotate(-24deg);
+  transform-origin: bottom;
+}
+
+.ayahuasca-leaf--one { top: -5rem; right: 8%; transform: rotate(35deg); }
+.ayahuasca-leaf--two { right: -4rem; bottom: -7rem; transform: rotate(-42deg) scale(1.15); }
+.ayahuasca-leaf--three { bottom: -9rem; left: 5%; transform: rotate(58deg) scale(0.9); }
+
+.ayahuasca-vine {
+  position: absolute;
+  top: -8rem;
+  right: 12%;
+  width: min(38rem, 55vw);
+  aspect-ratio: 1;
+  border: 0.15rem solid rgb(182 125 87 / 16%);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  transform: rotate(31deg);
+}
+
+.ayahuasca-vine::before,
+.ayahuasca-vine::after {
+  position: absolute;
+  content: "";
+  border: 0.08rem solid rgb(182 125 87 / 12%);
+  border-radius: 50%;
+}
+
+.ayahuasca-vine::before { inset: 12%; }
+.ayahuasca-vine::after { inset: 27%; }
+
+.ayahuasca-hero__inner,
+.ayahuasca-section__inner {
+  width: min(100% - 2rem, 78rem);
+  margin-inline: auto;
+}
+
+.ayahuasca-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  min-height: min(49rem, 82vh);
+  padding-block: clamp(4.5rem, 10vw, 8rem);
+}
+
+.ayahuasca-hero__content { position: relative; z-index: 1; }
+
+.ayahuasca-hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3.25rem, 10vw, 7.75rem);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  color: var(--ayahuasca-cream);
+  text-wrap: balance;
+}
+
+.ayahuasca-hero__subtitle {
+  max-width: 46rem;
+  margin: var(--space-4) 0 0;
+  font-family: var(--font-reading);
+  font-size: clamp(1.35rem, 2.8vw, 2.05rem);
+  line-height: 1.25;
+  color: #c9c2a8;
+}
+
+.ayahuasca-hero__intro {
+  max-width: 47rem;
+  margin: var(--space-5) 0 0;
+  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+  color: var(--color-text-muted);
+}
+
+.ayahuasca-status {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.ayahuasca-status > div {
+  min-width: 0;
+  padding: var(--space-3);
+  background: rgb(16 21 18 / 76%);
+  border: 0.0625rem solid rgb(125 169 139 / 22%);
+  border-radius: var(--radius-small);
+}
+
+.ayahuasca-status dt {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.ayahuasca-status dd { margin: 0; }
+.ayahuasca-status .integrative-level { font-size: 0.64rem; }
+
+.ayahuasca-hero__notice {
+  max-width: 47rem;
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  border-left: 0.2rem solid var(--integrative-risk);
+  background: rgb(61 31 29 / 22%);
+}
+
+.ayahuasca-hero__notice strong {
+  font-family: var(--font-interface);
+  color: #e3aea5;
+}
+
+.ayahuasca-hero__notice p { margin: var(--space-1) 0 0; }
+
+.ayahuasca-hero__visual {
+  position: relative;
+  width: min(100%, 26rem);
+  aspect-ratio: 1;
+  justify-self: end;
+  border: 0.0625rem solid rgb(125 169 139 / 26%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(125 169 139 / 12%), rgb(14 18 16 / 66%) 58%, transparent 60%);
+}
+
+.ayahuasca-hero__visual::before,
+.ayahuasca-hero__visual::after {
+  position: absolute;
+  inset: 13%;
+  content: "";
+  border: 0.0625rem solid rgb(182 125 87 / 24%);
+  border-radius: 50%;
+}
+
+.ayahuasca-hero__visual::after { inset: 30%; border-color: rgb(125 169 139 / 28%); }
+
+.ayahuasca-lens {
+  position: absolute;
+  display: grid;
+  gap: 0.15rem;
+  width: 9.5rem;
+  padding: 0.75rem 0.9rem;
+  background: rgb(13 18 15 / 90%);
+  border: 0.0625rem solid currentColor;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.7rem 2rem rgb(0 0 0 / 22%);
+}
+
+.ayahuasca-lens span,
+.ayahuasca-lens__center span { font-family: var(--font-interface); font-weight: 700; }
+.ayahuasca-lens small,
+.ayahuasca-lens__center small { color: var(--color-text-muted); }
+.ayahuasca-lens--tradition { top: 4%; left: -7%; color: #c3a2d7; }
+.ayahuasca-lens--science { top: 29%; right: -7%; color: #8fc8a0; }
+.ayahuasca-lens--claims { bottom: 3%; left: 4%; color: #aaa7a2; }
+
+.ayahuasca-lens__center {
+  position: absolute;
+  inset: 39%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: rgb(37 67 49 / 74%);
+  border: 0.0625rem solid rgb(125 169 139 / 45%);
+}
+
+.ayahuasca-quick,
+.ayahuasca-boundaries {
+  padding-block: var(--space-7);
+}
+
+.ayahuasca-quick { background: rgb(22 25 23 / 46%); }
+.ayahuasca-quick .integrative-quick-card { border-color: rgb(125 169 139 / 28%); }
+
+.ayahuasca-boundaries {
+  border-block: 0.0625rem solid rgb(125 169 139 / 12%);
+  background: linear-gradient(135deg, rgb(33 48 39 / 22%), rgb(58 39 29 / 10%));
+}
+
+.ayahuasca-boundaries__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.ayahuasca-boundaries__grid article {
+  min-width: 0;
+  padding: clamp(1.15rem, 3vw, 1.75rem);
+  background: var(--ayahuasca-panel);
+  border: 0.0625rem solid rgb(125 169 139 / 18%);
+  border-radius: var(--radius-medium);
+}
+
+.ayahuasca-boundaries__grid h3 { margin: var(--space-4) 0 var(--space-2); }
+.ayahuasca-boundaries__grid p { margin-bottom: 0; }
+
+.ayahuasca-layout { margin-top: var(--space-7); }
+.ayahuasca-content section { scroll-margin-top: 5.5rem; }
+.ayahuasca-content section + section { margin-top: clamp(4.5rem, 10vw, 8rem); }
+.ayahuasca-toc { border-color: rgb(125 169 139 / 20%); }
+
+.ayahuasca-known-unknown,
+.ayahuasca-experience,
+.ayahuasca-legal-distinction,
+.ayahuasca-botany {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+}
+
+.ayahuasca-known-unknown article,
+.ayahuasca-experience article,
+.ayahuasca-legal-distinction article,
+.ayahuasca-botany article {
+  min-width: 0;
+  padding: clamp(1.15rem, 3vw, 1.75rem);
+  background: var(--ayahuasca-panel);
+  border: 0.0625rem solid rgb(125 169 139 / 22%);
+  border-radius: var(--radius-medium);
+}
+
+.ayahuasca-known-unknown article:first-child { border-top: 0.18rem solid var(--integrative-strong); }
+.ayahuasca-known-unknown article:last-child { border-top: 0.18rem solid var(--integrative-uncertain); }
+
+.ayahuasca-context-card { background: linear-gradient(145deg, rgb(46 66 53 / 46%), rgb(22 21 23 / 82%)); }
+
+.ayahuasca-botany article { position: relative; overflow: hidden; }
+.ayahuasca-botany article::after {
+  position: absolute;
+  right: -2rem;
+  bottom: -4rem;
+  width: 10rem;
+  aspect-ratio: 0.58;
+  content: "";
+  border: 0.0625rem solid rgb(125 169 139 / 16%);
+  border-radius: 100% 0 100% 0;
+  transform: rotate(30deg);
+}
+
+.ayahuasca-botany__label {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ayahuasca-copper);
+}
+
+.ayahuasca-botany dl { margin: var(--space-4) 0 0; }
+.ayahuasca-botany dl > div + div { margin-top: var(--space-3); }
+.ayahuasca-botany dt { font-family: var(--font-interface); font-size: 0.76rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; }
+.ayahuasca-botany dd { margin: 0.25rem 0 0; }
+
+.ayahuasca-experience article:first-child { border-left: 0.2rem solid var(--integrative-limited); }
+.ayahuasca-experience article:last-child { border-left: 0.2rem solid var(--integrative-risk); }
+
+.ayahuasca-trial {
+  overflow: hidden;
+  margin-top: var(--space-5);
+  background: linear-gradient(145deg, rgb(27 42 33 / 92%), rgb(25 22 20 / 94%));
+  border: 0.0625rem solid rgb(125 169 139 / 30%);
+  border-radius: var(--radius-large);
+}
+
+.ayahuasca-trial__header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: center;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border-bottom: 0.0625rem solid rgb(125 169 139 / 18%);
+}
+
+.ayahuasca-trial__header > div { display: grid; text-align: center; }
+.ayahuasca-trial__header p { margin: 0; }
+.ayahuasca-trial__number { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5rem); line-height: 0.85; color: var(--ayahuasca-cream); }
+.ayahuasca-trial__header span:last-child { font-family: var(--font-interface); font-size: 0.72rem; text-transform: uppercase; color: var(--color-text-muted); }
+.ayahuasca-trial__result { padding: clamp(1.2rem, 3vw, 2rem); }
+.ayahuasca-trial__result > p { margin-top: 0; font-family: var(--font-interface); font-weight: 700; text-align: center; }
+
+.ayahuasca-response {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.ayahuasca-response div {
+  display: grid;
+  gap: 0.25rem;
+  padding: var(--space-4);
+  text-align: center;
+  border-radius: var(--radius-small);
+  background: rgb(12 17 14 / 58%);
+  border: 0.0625rem solid rgb(125 169 139 / 20%);
+}
+
+.ayahuasca-response strong { font-family: var(--font-display); font-size: clamp(2.5rem, 7vw, 4.4rem); line-height: 1; color: var(--ayahuasca-cream); }
+.ayahuasca-response span { font-family: var(--font-interface); color: var(--color-text-muted); }
+.ayahuasca-trial__note { margin: 0; padding: 0 clamp(1.2rem, 3vw, 2rem) clamp(1.2rem, 3vw, 2rem); color: var(--color-text-muted); }
+
+.ayahuasca-causality {
+  display: grid;
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: var(--ayahuasca-panel);
+  border: 0.0625rem solid rgb(125 169 139 / 22%);
+  border-radius: var(--radius-medium);
+}
+
+.ayahuasca-causality__observation { display: grid; gap: var(--space-2); text-align: center; }
+.ayahuasca-causality__observation span { font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--ayahuasca-copper); }
+.ayahuasca-causality__observation strong { font-family: var(--font-reading); font-size: clamp(1.2rem, 2.7vw, 1.65rem); }
+.ayahuasca-causality__factors { display: flex; flex-wrap: wrap; gap: var(--space-2); justify-content: center; }
+.ayahuasca-causality__factors span { padding: 0.42rem 0.7rem; font-family: var(--font-interface); font-size: 0.76rem; background: rgb(125 169 139 / 10%); border: 0.0625rem solid rgb(125 169 139 / 22%); border-radius: 999px; }
+.ayahuasca-causality__conclusion { padding-top: var(--space-4); border-top: 0.0625rem solid rgb(125 169 139 / 18%); }
+
+.ayahuasca-legal-distinction { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: stretch; }
+.ayahuasca-not-equal { align-self: center; font-family: var(--font-display); font-size: 2.25rem; color: var(--ayahuasca-copper); }
+.ayahuasca-legal-distinction h3 { margin-top: var(--space-4); }
+
+.ayahuasca-disciplines {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.ayahuasca-disciplines article {
+  min-width: 0;
+  padding: var(--space-4);
+  background: rgb(22 21 23 / 72%);
+  border-top: 0.14rem solid var(--ayahuasca-forest);
+  border-radius: var(--radius-small);
+}
+
+.ayahuasca-disciplines h3 { margin-top: 0; }
+.ayahuasca-disciplines p { margin-bottom: 0; }
+
+.ayahuasca-synthesis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.ayahuasca-synthesis article {
+  min-width: 0;
+  padding: clamp(1.1rem, 2.5vw, 1.6rem);
+  background: var(--ayahuasca-panel);
+  border: 0.0625rem solid rgb(125 169 139 / 20%);
+  border-radius: var(--radius-medium);
+}
+
+.ayahuasca-synthesis h3 { margin: var(--space-4) 0 var(--space-3); }
+.ayahuasca-synthesis ul { margin-bottom: 0; padding-left: 1.1rem; }
+.ayahuasca-synthesis li + li { margin-top: 0.45rem; }
+
+.ayahuasca-conclusion {
+  margin-top: var(--space-5);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-left: 0.25rem solid var(--ayahuasca-copper);
+  background: linear-gradient(135deg, rgb(54 44 34 / 38%), rgb(28 42 34 / 38%));
+  border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+}
+
+.ayahuasca-conclusion p:last-child { margin-bottom: 0; }
+
+.ayahuasca-ref-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: var(--space-3);
+}
+
+.ayahuasca-ref-tags span {
+  padding: 0.22rem 0.5rem;
+  font-family: var(--font-interface);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #c9c2a8;
+  border: 0.0625rem solid rgb(201 194 168 / 28%);
+  border-radius: 999px;
+}
+
+.ayahuasca-article .integrative-reference-grid article { border-color: rgb(125 169 139 / 18%); }
+.ayahuasca-article .integrative-reference-grid a { overflow-wrap: anywhere; }
+
+@media (max-width: 72rem) {
+  .ayahuasca-hero__inner { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+  .ayahuasca-hero__visual { width: min(88vw, 27rem); justify-self: center; margin-top: var(--space-4); }
+  .ayahuasca-status { max-width: 48rem; }
+}
+
+@media (max-width: 56rem) {
+  .ayahuasca-boundaries__grid,
+  .ayahuasca-disciplines,
+  .ayahuasca-synthesis { grid-template-columns: 1fr; }
+  .ayahuasca-legal-distinction { grid-template-columns: 1fr; }
+  .ayahuasca-not-equal { justify-self: center; transform: rotate(90deg); }
+}
+
+@media (max-width: 44rem) {
+  .ayahuasca-hero__inner,
+  .ayahuasca-section__inner { width: min(100% - 1.25rem, 78rem); }
+  .ayahuasca-hero__inner { padding-block: 3.5rem 4.5rem; }
+  .ayahuasca-status,
+  .ayahuasca-known-unknown,
+  .ayahuasca-experience,
+  .ayahuasca-botany,
+  .ayahuasca-response { grid-template-columns: 1fr; }
+  .ayahuasca-hero__visual { width: min(78vw, 22rem); }
+  .ayahuasca-lens { width: 8.4rem; padding: 0.65rem 0.7rem; }
+  .ayahuasca-lens--tradition { left: -5%; }
+  .ayahuasca-lens--science { right: -5%; }
+  .ayahuasca-lens small { font-size: 0.7rem; }
+  .ayahuasca-trial__header { grid-template-columns: 1fr; text-align: center; }
+  .ayahuasca-article .integrative-table { min-width: 34rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ayahuasca-article *,
+  .ayahuasca-article *::before,
+  .ayahuasca-article *::after { scroll-behavior: auto; transition-duration: 0.001ms; animation-duration: 0.001ms; animation-iteration-count: 1; }
+}

@@ -1,0 +1,742 @@
+:root {
+  --cbd-ink: #111614;
+  --cbd-surface: #171d1a;
+  --cbd-surface-soft: #1b231f;
+  --cbd-forest: #39664c;
+  --cbd-moss: #91aa86;
+  --cbd-sage: #b8c6af;
+  --cbd-copper: #c29a6d;
+  --cbd-cream: #ece6d8;
+  --cbd-line: rgb(173 197 167 / 18%);
+}
+
+.cbd-article {
+  background: var(--cbd-ink);
+  color: var(--color-text);
+}
+
+.cbd-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3.5rem, 8vw, 7rem) clamp(1.15rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at 76% 22%, rgb(64 106 76 / 20%), transparent 31rem),
+    linear-gradient(135deg, #111612 0%, #171d18 56%, #121713 100%);
+  border-bottom: 0.0625rem solid var(--cbd-line);
+}
+
+.cbd-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background-image: linear-gradient(rgb(255 255 255 / 2%) 0.0625rem, transparent 0.0625rem), linear-gradient(90deg, rgb(255 255 255 / 1.5%) 0.0625rem, transparent 0.0625rem);
+  background-size: 3rem 3rem;
+  mask-image: linear-gradient(to bottom, rgb(0 0 0 / 72%), transparent 78%);
+}
+
+.cbd-hero__inner,
+.cbd-section__inner {
+  width: min(100%, 75rem);
+  margin-inline: auto;
+}
+
+.cbd-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.cbd-hero h1 {
+  max-width: 13ch;
+  margin: var(--space-2) 0 var(--space-3);
+  font-family: var(--font-display, "Marcellus", serif);
+  font-size: clamp(3.1rem, 7.4vw, 6.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.cbd-hero h1 em {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+}
+
+.cbd-hero__subtitle {
+  max-width: 46rem;
+  margin-bottom: var(--space-4);
+  font-family: "Spectral", serif;
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  line-height: 1.35;
+  color: var(--cbd-sage);
+}
+
+.cbd-hero__intro {
+  max-width: 49rem;
+  font-size: clamp(1.03rem, 1.6vw, 1.2rem);
+  line-height: 1.78;
+  color: var(--color-text-muted);
+}
+
+.cbd-domain-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-block: var(--space-4);
+}
+
+.cbd-domain-list span {
+  padding: 0.42rem 0.72rem;
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--cbd-sage);
+  background: rgb(64 106 76 / 13%);
+  border: 0.0625rem solid rgb(140 167 129 / 23%);
+  border-radius: 999px;
+}
+
+.cbd-hero__notice {
+  max-width: 48rem;
+  margin-top: var(--space-4);
+  padding: 1rem 1.15rem;
+  background: rgb(18 23 19 / 78%);
+  border-left: 0.2rem solid var(--cbd-copper);
+  border-radius: 0 var(--radius-small) var(--radius-small) 0;
+}
+
+.cbd-hero__notice strong {
+  font-family: var(--font-interface);
+  color: var(--cbd-copper);
+}
+
+.cbd-hero__notice p { margin: 0.35rem 0 0; }
+
+.cbd-hero__plate {
+  align-self: stretch;
+  display: grid;
+  min-height: 30rem;
+  grid-template-rows: 1fr auto;
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  background: #dcd8ca;
+  border: 0.0625rem solid rgb(255 255 255 / 22%);
+  border-radius: 1.25rem;
+  box-shadow: 0 1.4rem 4rem rgb(0 0 0 / 28%);
+  transform: rotate(0.8deg);
+}
+
+.cbd-hero__plate svg {
+  width: 100%;
+  max-height: 31rem;
+  color: #263f2e;
+}
+
+.plate-lines path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.plate-leaves ellipse {
+  fill: rgb(64 106 76 / 14%);
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.plate-labels text {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  fill: #4a5148;
+}
+
+.plate-nodes circle { fill: var(--cbd-copper); }
+
+.cbd-plate__caption {
+  display: grid;
+  gap: 0.2rem;
+  padding-top: 0.9rem;
+  border-top: 0.0625rem solid rgb(38 63 46 / 22%);
+  color: #2b342d;
+}
+
+.cbd-plate__caption strong { font-family: "Marcellus", serif; }
+.cbd-plate__caption span { font-family: "Inter", sans-serif; font-size: 0.76rem; }
+
+.cbd-quick,
+.cbd-boundaries {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.15rem, 4vw, 3rem);
+}
+
+.cbd-quick { background: #151a16; }
+.cbd-boundaries { background: linear-gradient(180deg, #181d19, #131814); border-block: 0.0625rem solid var(--cbd-line); }
+
+.cbd-summary-grid,
+.cbd-layer-grid,
+.cbd-chemistry-grid,
+.cbd-chemotype-grid,
+.cbd-risk-grid,
+.cbd-importance-grid,
+.cbd-evidence-matrix {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cbd-summary-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: var(--space-5);
+}
+
+.cbd-summary-grid article,
+.cbd-layer-grid article,
+.cbd-chemistry-card,
+.cbd-chemotype-grid article,
+.cbd-risk-grid article,
+.cbd-importance-grid article,
+.cbd-evidence-matrix article {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-summary-grid article > span:first-child,
+.cbd-chemistry-card > span:first-child {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-interface);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--cbd-copper);
+}
+
+.cbd-summary-grid strong { display: block; margin-bottom: 0.45rem; font-family: "Marcellus", serif; font-size: 1.08rem; }
+.cbd-summary-grid p { margin: 0; color: var(--color-text-muted); }
+
+.cbd-layer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block: var(--space-5); }
+.cbd-layer-grid h3 { margin-top: 0.75rem; }
+
+.cbd-shell { background: var(--cbd-ink); }
+.cbd-layout { width: min(100% - 2.3rem, 82rem); margin-inline: auto; }
+.cbd-content { min-width: 0; }
+
+.cbd-section {
+  padding-block: clamp(3.2rem, 6vw, 5.5rem);
+  border-bottom: 0.0625rem solid var(--cbd-line);
+}
+
+.cbd-section .section-heading { margin-bottom: var(--space-5); }
+.cbd-section p { line-height: 1.75; }
+
+.cbd-table-wrap {
+  overflow-x: auto;
+  margin-block: var(--space-5);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-table-wrap table { width: 100%; min-width: 40rem; border-collapse: collapse; }
+.cbd-table-wrap th,
+.cbd-table-wrap td { padding: 0.95rem 1rem; text-align: left; vertical-align: top; border-bottom: 0.0625rem solid var(--cbd-line); }
+.cbd-table-wrap th { font-family: var(--font-interface); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cbd-sage); background: rgb(64 106 76 / 10%); }
+.cbd-table-wrap tbody tr:last-child td { border-bottom: 0; }
+
+.cbd-better-labels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.cbd-better-labels article {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem;
+  border-left: 0.18rem solid var(--cbd-forest);
+  background: rgb(64 106 76 / 9%);
+}
+
+.cbd-better-labels strong { font-family: var(--font-interface); color: var(--cbd-sage); }
+.cbd-better-labels span { font-size: 0.88rem; color: var(--color-text-muted); }
+
+.cbd-chemistry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: var(--space-4); }
+.cbd-chemistry-card--major { background: linear-gradient(145deg, rgb(64 106 76 / 18%), var(--cbd-surface-soft)); }
+.cbd-chemistry-card h3 { margin-top: 0; font-size: clamp(1.35rem, 2vw, 1.75rem); }
+
+.cbd-chemotype-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block: var(--space-5); }
+.cbd-chemotype-tag { display: inline-flex; margin-bottom: 0.8rem; padding: 0.35rem 0.55rem; font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; color: var(--cbd-cream); background: var(--cbd-forest); border-radius: 999px; }
+.cbd-bars { display: grid; gap: 0.7rem; margin-top: 1rem; }
+.cbd-bars > div { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.6rem; align-items: center; }
+.cbd-bars span { font-family: var(--font-interface); font-size: 0.72rem; font-weight: 700; }
+.cbd-bars i { display: block; width: var(--bar); height: 0.55rem; background: linear-gradient(90deg, var(--cbd-forest), var(--cbd-moss)); border-radius: 999px; }
+.cbd-caption { margin-top: calc(var(--space-3) * -1); font-family: var(--font-interface); font-size: 0.76rem; color: var(--color-text-muted); }
+
+.cbd-evidence-matrix { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: var(--space-5); }
+.cbd-evidence-matrix h3 { margin-top: 0.8rem; }
+
+.cbd-risk-grid,
+.cbd-importance-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block: var(--space-5); }
+.cbd-risk-grid article { border-top: 0.18rem solid rgb(213 138 130 / 58%); }
+.cbd-importance-grid article { border-top: 0.18rem solid rgb(140 167 129 / 48%); }
+
+.cbd-concept blockquote {
+  margin: var(--space-5) 0;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  background: linear-gradient(135deg, rgb(64 106 76 / 18%), rgb(188 138 100 / 8%));
+  border-left: 0.25rem solid var(--cbd-copper);
+  border-radius: 0 var(--radius-small) var(--radius-small) 0;
+}
+
+.cbd-concept blockquote p {
+  margin: 0;
+  font-family: "Spectral", serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  line-height: 1.55;
+}
+
+.cbd-references .integrative-reference-grid article { background: var(--cbd-surface-soft); }
+.cbd-review-date { margin-top: var(--space-4); font-family: var(--font-interface); font-size: 0.84rem; color: var(--color-text-muted); }
+
+.cbd-article-footer {
+  width: min(100% - 2.3rem, 75rem);
+  margin-inline: auto;
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.cbd-article-footer > p:first-child {
+  max-width: 64rem;
+  font-family: "Spectral", serif;
+  font-size: clamp(1.08rem, 1.6vw, 1.25rem);
+  line-height: 1.75;
+}
+
+.cbd-editorial-note {
+  max-width: 64rem;
+  padding: 1rem 1.15rem;
+  background: rgb(188 138 100 / 8%);
+  border-left: 0.2rem solid var(--cbd-copper);
+}
+
+@media (max-width: 62rem) {
+  .cbd-hero__inner { grid-template-columns: 1fr; }
+  .cbd-hero__plate { min-height: auto; max-width: 34rem; }
+  .cbd-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cbd-risk-grid,
+  .cbd-importance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 44rem) {
+  .cbd-summary-grid,
+  .cbd-layer-grid,
+  .cbd-chemistry-grid,
+  .cbd-chemotype-grid,
+  .cbd-evidence-matrix,
+  .cbd-risk-grid,
+  .cbd-importance-grid,
+  .cbd-better-labels { grid-template-columns: 1fr; }
+
+  .cbd-hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
+  .cbd-hero__plate { transform: none; }
+  .cbd-table-wrap table { min-width: 34rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cbd-hero__plate { transform: none; }
+}
+
+/* Componentes específicos da página Cannabis cbd. */
+.cbd-summary-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.cbd-summary-table > div {
+  min-width: 0;
+  padding: 1rem 1.15rem;
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-summary-table dt {
+  margin-bottom: 0.35rem;
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cbd-copper);
+}
+
+.cbd-summary-table dd { margin: 0; line-height: 1.65; color: var(--color-text-muted); }
+
+.cbd-concept-grid,
+.cbd-dual-grid,
+.cbd-evidence-grid,
+.cbd-small-grid,
+.cbd-importance-grid,
+.cbd-regulatory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.cbd-concept-grid article,
+.cbd-dual-card,
+.cbd-evidence-grid article,
+.cbd-small-grid article,
+.cbd-importance-grid article,
+.cbd-regulatory-grid article {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.4rem);
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-concept-grid article > span,
+.cbd-dual-card > span,
+.cbd-model-compare article > span {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-interface);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cbd-copper);
+}
+
+.cbd-concept-grid h3,
+.cbd-small-grid h3,
+.cbd-importance-grid h3,
+.cbd-regulatory-grid h3 { margin-top: 0; }
+
+.cbd-system-map {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.cbd-system-map__source,
+.cbd-system-map__core {
+  width: min(100%, 38rem);
+  padding: 1.1rem 1.3rem;
+  text-align: center;
+  background: rgb(57 102 76 / 14%);
+  border: 0.0625rem solid rgb(145 170 134 / 28%);
+  border-radius: var(--radius-small);
+}
+
+.cbd-system-map__source strong,
+.cbd-system-map__core strong { display: block; font-family: "Marcellus", serif; font-size: 1.2rem; }
+.cbd-system-map__source span,
+.cbd-system-map__core span { color: var(--color-text-muted); }
+.cbd-system-map__arrow { font-size: 1.4rem; color: var(--cbd-moss); }
+
+.cbd-system-map__branches {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.cbd-system-map__branches article {
+  padding: 1.15rem;
+  background: linear-gradient(145deg, rgb(57 102 76 / 13%), var(--cbd-surface-soft));
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-system-map__branches strong { display: block; font-size: 1.3rem; color: var(--cbd-sage); }
+.cbd-system-map__branches span { font-family: var(--font-interface); font-size: 0.78rem; color: var(--cbd-copper); }
+.cbd-system-map__branches p { margin-bottom: 0; }
+
+.cbd-dual-card h3 { margin: 0 0 0.6rem; font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.cbd-dual-card ul { margin-bottom: 0; }
+.cbd-dual-card--thc { border-top: 0.2rem solid var(--cbd-copper); }
+.cbd-dual-card--cbd { border-top: 0.2rem solid var(--cbd-moss); }
+
+.cbd-evidence-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-block: var(--space-4);
+}
+
+.cbd-evidence-legend span {
+  padding: 0.5rem 0.7rem;
+  font-family: var(--font-interface);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: rgb(255 255 255 / 2.5%);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: 999px;
+}
+
+.cbd-evidence-legend b { color: var(--cbd-moss); letter-spacing: 0.08em; }
+.cbd-evidence-grid h3 { margin-top: 0.8rem; }
+.cbd-what-not { padding-top: 0.8rem; border-top: 0.0625rem solid var(--cbd-line); color: var(--color-text-muted); }
+
+.cbd-balance {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.cbd-balance > div {
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  background: var(--cbd-surface-soft);
+  border-radius: var(--radius-small);
+}
+
+.cbd-balance > div:first-child { border-top: 0.2rem solid var(--integrative-strong); }
+.cbd-balance > div:last-child { border-top: 0.2rem solid var(--integrative-risk); }
+.cbd-balance h3 { margin-top: 0; }
+.cbd-balance ul { margin-bottom: 0; }
+
+.cbd-risk-factors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.cbd-risk-factors article {
+  padding: 1rem;
+  background: rgb(213 138 130 / 7%);
+  border-left: 0.18rem solid rgb(213 138 130 / 65%);
+}
+
+.cbd-risk-factors strong { display: block; margin-bottom: 0.35rem; font-family: var(--font-interface); color: #e1aaa4; }
+.cbd-risk-factors span { color: var(--color-text-muted); }
+
+.cbd-model-compare {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.cbd-model-compare article {
+  padding: clamp(1.1rem, 2.5vw, 1.6rem);
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-model-compare h3 { margin: 0; font-family: "Spectral", serif; font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.55; }
+.cbd-formula { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+.cbd-formula b { padding: 0.38rem 0.55rem; font-family: var(--font-interface); font-size: 0.75rem; background: rgb(57 102 76 / 14%); border: 0.0625rem solid rgb(145 170 134 / 25%); border-radius: 999px; }
+.cbd-formula i { color: var(--cbd-copper); font-style: normal; }
+.cbd-formula strong { flex-basis: 100%; margin-top: 0.6rem; color: var(--cbd-sage); }
+
+.cbd-question-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-block: var(--space-5);
+}
+
+.cbd-question-grid span {
+  position: relative;
+  padding: 0.75rem 0.9rem 0.75rem 2rem;
+  color: var(--color-text-muted);
+  background: rgb(255 255 255 / 2.2%);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-question-grid span::before {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.78rem;
+  content: "?";
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--cbd-copper);
+}
+
+.cbd-checklist {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: study-question;
+}
+
+.cbd-checklist li {
+  counter-increment: study-question;
+  display: grid;
+  grid-template-columns: auto minmax(0, 0.65fr) minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: start;
+  padding: 1rem;
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+
+.cbd-checklist li::before {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  aspect-ratio: 1;
+  content: counter(study-question);
+  font-family: var(--font-interface);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--cbd-cream);
+  background: var(--cbd-forest);
+  border-radius: 50%;
+}
+
+.cbd-checklist span { color: var(--color-text-muted); }
+
+.cbd-editorial-quote {
+  margin: var(--space-5) 0 0;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  background: linear-gradient(135deg, rgb(57 102 76 / 17%), rgb(194 154 109 / 7%));
+  border-left: 0.24rem solid var(--cbd-copper);
+  border-radius: 0 var(--radius-small) var(--radius-small) 0;
+}
+
+.cbd-editorial-quote p { margin: 0; font-family: "Spectral", serif; font-size: clamp(1.08rem, 1.8vw, 1.3rem); }
+
+@media (max-width: 62rem) {
+  .cbd-risk-factors { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cbd-checklist li { grid-template-columns: auto minmax(0, 1fr); }
+  .cbd-checklist span { grid-column: 2; }
+}
+
+@media (max-width: 44rem) {
+  .cbd-summary-table,
+  .cbd-concept-grid,
+  .cbd-dual-grid,
+  .cbd-evidence-grid,
+  .cbd-small-grid,
+  .cbd-importance-grid,
+  .cbd-regulatory-grid,
+  .cbd-system-map__branches,
+  .cbd-balance,
+  .cbd-risk-factors,
+  .cbd-model-compare,
+  .cbd-question-grid { grid-template-columns: 1fr; }
+
+  .cbd-formula { align-items: stretch; }
+  .cbd-formula b { flex: 1 1 45%; text-align: center; }
+  .cbd-formula i { display: none; }
+}
+
+/* Componentes específicos da página CBD — Canabidiol. */
+.cbd-hero h1 { max-width: 11ch; }
+.cbd-hero__subtitle { color: #c1d2c7; }
+.cbd-hero__plate { background: #e2ded2; }
+.cbd-molecule { display: grid; place-items: center; min-height: 24rem; }
+.cbd-molecule svg { width: min(100%, 28rem); height: auto; overflow: visible; }
+.cbd-molecule .bond { stroke: #355b49; stroke-width: 3; stroke-linecap: round; }
+.cbd-molecule .bond--soft { stroke: #7c907f; stroke-width: 1.5; }
+.cbd-molecule .atom { fill: #355b49; }
+.cbd-molecule .atom--oxygen { fill: #a26758; }
+.cbd-molecule text { font-family: "Inter", sans-serif; font-weight: 700; fill: #334239; }
+.cbd-molecule .formula { font-size: 18px; letter-spacing: 1px; }
+.cbd-molecule .label { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+.cbd-core-tension {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+.cbd-core-tension article {
+  padding: clamp(1.1rem, 2.4vw, 1.55rem);
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+.cbd-core-tension article:first-child { border-top: 0.2rem solid var(--integrative-risk); }
+.cbd-core-tension article:last-child { border-top: 0.2rem solid var(--integrative-strong); }
+.cbd-core-tension h3 { margin-top: 0; }
+.cbd-evidence-table td:first-child { font-weight: 700; }
+.cbd-pathway {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+  margin-block: var(--space-5);
+}
+.cbd-pathway span {
+  padding: 0.75rem 0.85rem;
+  text-align: center;
+  font-family: var(--font-interface);
+  font-size: 0.78rem;
+  background: rgb(57 102 76 / 13%);
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+.cbd-pathway i { font-style: normal; color: var(--cbd-moss); }
+.cbd-claim-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+.cbd-claim-grid article {
+  padding: 1.1rem 1.2rem;
+  border-radius: var(--radius-small);
+  background: var(--cbd-surface-soft);
+  border: 0.0625rem solid var(--cbd-line);
+}
+.cbd-claim-grid article:nth-child(odd) { border-left: 0.2rem solid var(--integrative-strong); }
+.cbd-claim-grid article:nth-child(even) { border-left: 0.2rem solid var(--integrative-risk); }
+.cbd-claim-grid strong { display: block; margin-bottom: 0.4rem; font-family: var(--font-interface); }
+.cbd-pyramid {
+  display: grid;
+  gap: 0.45rem;
+  width: min(100%, 42rem);
+  margin: var(--space-5) auto;
+}
+.cbd-pyramid div {
+  width: var(--w);
+  margin-inline: auto;
+  padding: 0.65rem 0.8rem;
+  text-align: center;
+  font-family: var(--font-interface);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: linear-gradient(90deg, rgb(57 102 76 / 20%), rgb(145 170 134 / 8%));
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+.cbd-product-table td:nth-child(2), .cbd-product-table td:nth-child(3) { color: var(--color-text-muted); }
+.cbd-final-summary {
+  margin-top: var(--space-5);
+  padding: clamp(1.4rem, 3vw, 2rem);
+  background: linear-gradient(135deg, rgb(57 102 76 / 17%), rgb(194 154 109 / 7%));
+  border: 0.0625rem solid var(--cbd-line);
+  border-radius: var(--radius-small);
+}
+.cbd-final-summary strong { color: var(--cbd-sage); }
+@media (max-width: 44rem) {
+  .cbd-core-tension,
+  .cbd-claim-grid { grid-template-columns: 1fr; }
+  .cbd-pathway { grid-template-columns: 1fr; justify-items: stretch; }
+  .cbd-pathway i { transform: rotate(90deg); text-align: center; }
+  .cbd-pyramid div { width: 100%; }
+}

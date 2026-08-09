@@ -1,0 +1,502 @@
+.psilocybin-article {
+  --integrative-accent: #8fb7a8;
+  --integrative-accent-soft: rgb(143 183 168 / 13%);
+  --integrative-strong: #9fc89f;
+  --integrative-moderate: #d4b47f;
+  --integrative-limited: #c1a4cc;
+  --integrative-uncertain: #aaa9a4;
+  --integrative-risk: #d28c82;
+  --psilo-forest: #6f9e8d;
+  --psilo-sage: #a6c6b3;
+  --psilo-copper: #c69a70;
+  --psilo-violet: #a796bc;
+  --psilo-ink: #111616;
+  color: var(--color-text);
+}
+
+.psilocybin-hero,
+.psilocybin-section,
+.psilocybin-article-footer,
+.psilocybin-quick,
+.psilocybin-boundaries {
+  position: relative;
+}
+
+.psilocybin-hero {
+  overflow: hidden;
+  margin-inline: auto;
+  padding: clamp(3.4rem, 7vw, 6.8rem) clamp(1.15rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at 78% 20%, rgb(143 183 168 / 12%), transparent 27rem),
+    radial-gradient(circle at 18% 82%, rgb(198 154 112 / 8%), transparent 24rem),
+    linear-gradient(145deg, #101615 0%, #121917 48%, #151718 100%);
+  border-block: 0.0625rem solid rgb(143 183 168 / 16%);
+}
+
+.psilocybin-hero__inner,
+.psilocybin-section__inner,
+.psilocybin-boundaries .psilocybin-section__inner,
+.psilocybin-quick .psilocybin-section__inner {
+  width: min(100%, 75rem);
+  margin-inline: auto;
+}
+
+.psilocybin-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.psilocybin-hero h1 {
+  max-width: 13ch;
+  margin: var(--space-2) 0 var(--space-3);
+  font-family: var(--font-display, "Marcellus", serif);
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+}
+
+.psilocybin-hero__subtitle {
+  max-width: 48rem;
+  margin-bottom: var(--space-4);
+  font-family: "Spectral", serif;
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
+  line-height: 1.35;
+  color: var(--psilo-sage);
+}
+
+.psilocybin-hero__intro {
+  max-width: 47rem;
+  font-size: clamp(1.04rem, 1.6vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}
+
+.psilocybin-status {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.psilocybin-status > div {
+  min-width: 0;
+  padding: 0.85rem 1rem;
+  background: rgb(18 24 23 / 72%);
+  border: 0.0625rem solid rgb(143 183 168 / 22%);
+  border-radius: var(--radius-small);
+}
+
+.psilocybin-status dt {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.psilocybin-status dd { margin: 0; }
+
+.psilocybin-hero__notice {
+  max-width: 48rem;
+  margin-top: var(--space-4);
+  padding: 1rem 1.15rem;
+  background: rgb(20 26 24 / 76%);
+  border-left: 0.2rem solid var(--psilo-copper);
+  border-radius: 0 var(--radius-small) var(--radius-small) 0;
+}
+
+.psilocybin-hero__notice strong {
+  font-family: var(--font-interface);
+  color: var(--psilo-copper);
+}
+
+.psilocybin-hero__notice p { margin: 0.35rem 0 0; }
+
+.psilocybin-hero__visual {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: center;
+  min-height: 25rem;
+  padding: clamp(1.1rem, 2.8vw, 2rem);
+  background: rgb(16 21 20 / 66%);
+  border: 0.0625rem solid rgb(143 183 168 / 22%);
+  border-radius: 1.6rem;
+  box-shadow: inset 0 0 0 0.0625rem rgb(255 255 255 / 2%);
+}
+
+.psilocybin-hero__visual > p {
+  margin: 0;
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.psilocybin-orbit {
+  position: relative;
+  width: min(100%, 22rem);
+  aspect-ratio: 1;
+  border: 0.0625rem solid rgb(143 183 168 / 24%);
+  border-radius: 50%;
+}
+
+.psilocybin-orbit::before,
+.psilocybin-orbit::after {
+  position: absolute;
+  inset: 18%;
+  content: "";
+  border: 0.0625rem dashed rgb(198 154 112 / 25%);
+  border-radius: 50%;
+}
+
+.psilocybin-orbit::after {
+  inset: 38%;
+  background: radial-gradient(circle, rgb(143 183 168 / 18%), transparent 66%);
+  border-style: solid;
+}
+
+.psilocybin-node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  width: 7.2rem;
+  min-height: 4.4rem;
+  place-items: center;
+  padding: 0.65rem;
+  font-family: var(--font-interface);
+  font-weight: 700;
+  text-align: center;
+  background: #161c1b;
+  border: 0.0625rem solid currentColor;
+  border-radius: 999px;
+  box-shadow: 0 0.8rem 2.8rem rgb(0 0 0 / 20%);
+}
+
+.psilocybin-node small {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.66rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.psilocybin-node--source { top: -0.8rem; left: 50%; color: var(--psilo-sage); transform: translateX(-50%); }
+.psilocybin-node--metabolite { top: 50%; right: -1rem; color: var(--psilo-copper); transform: translateY(-50%); }
+.psilocybin-node--receptor { bottom: -0.8rem; left: 50%; color: var(--psilo-violet); transform: translateX(-50%); }
+.psilocybin-node--networks { top: 50%; left: -1rem; color: #8ab7c2; transform: translateY(-50%); }
+
+.psilocybin-hero__ambient { position: absolute; inset: 0; pointer-events: none; opacity: 0.8; }
+.psilocybin-spore { position: absolute; width: 0.45rem; aspect-ratio: 1; background: var(--psilo-sage); border-radius: 50%; box-shadow: 0 0 1rem rgb(143 183 168 / 40%); }
+.psilocybin-spore--one { top: 17%; left: 6%; }
+.psilocybin-spore--two { top: 62%; left: 42%; width: 0.3rem; }
+.psilocybin-spore--three { right: 7%; bottom: 14%; width: 0.6rem; background: var(--psilo-copper); }
+.psilocybin-network { position: absolute; right: -8rem; bottom: -10rem; width: 28rem; aspect-ratio: 1; background: repeating-radial-gradient(circle at 50% 50%, transparent 0 2.4rem, rgb(143 183 168 / 4%) 2.5rem 2.6rem); border-radius: 50%; }
+
+.psilocybin-quick,
+.psilocybin-boundaries {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.15rem, 4vw, 3rem);
+}
+
+.psilocybin-quick { background: #131817; }
+.psilocybin-boundaries { background: linear-gradient(180deg, #151817, #121616); border-block: 0.0625rem solid rgb(143 183 168 / 12%); }
+
+.psilocybin-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.psilocybin-summary-grid article,
+.psilocybin-layer-grid article,
+.psilocybin-effects-grid article,
+.psilocybin-method-grid article,
+.psilocybin-fields-grid article,
+.psilocybin-risk-grid article,
+.psilocybin-knowledge-grid article {
+  min-width: 0;
+  padding: clamp(1rem, 2.2vw, 1.45rem);
+  background: rgb(22 28 27 / 78%);
+  border: 0.0625rem solid rgb(143 183 168 / 19%);
+  border-radius: var(--radius-medium);
+}
+
+.psilocybin-summary-grid article > span {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-interface);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--psilo-sage);
+}
+
+.psilocybin-summary-grid strong { display: block; margin-bottom: 0.45rem; font-size: 1.08rem; }
+.psilocybin-summary-grid p { margin: 0; font-size: 0.93rem; color: var(--color-text-muted); }
+
+.psilocybin-layer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.psilocybin-layer-grid h3 { margin: 0.85rem 0 0.35rem; }
+.psilocybin-layer-grid p { margin: 0; color: var(--color-text-muted); }
+
+.psilocybin-layout { width: min(100% - 2rem, 78rem); margin: 0 auto; padding-block: clamp(3rem, 6vw, 6rem); }
+.psilocybin-content { min-width: 0; }
+.psilocybin-section { scroll-margin-top: 5.5rem; padding: clamp(2.5rem, 5vw, 4.8rem) 0; border-bottom: 0.0625rem solid rgb(143 183 168 / 12%); }
+.psilocybin-section:first-child { padding-top: 0; }
+.psilocybin-section p { max-width: 48rem; }
+.psilocybin-section li + li { margin-top: 0.35rem; }
+.psilocybin-section h3 { margin-top: var(--space-5); }
+
+.psilocybin-effects-grid,
+.psilocybin-method-grid,
+.psilocybin-fields-grid,
+.psilocybin-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.psilocybin-effects-grid h3,
+.psilocybin-method-grid h3,
+.psilocybin-fields-grid h3,
+.psilocybin-risk-grid h3,
+.psilocybin-knowledge-grid h3 { margin-top: 0; }
+
+.psilocybin-effects-grid p,
+.psilocybin-method-grid p,
+.psilocybin-fields-grid p,
+.psilocybin-risk-grid p { margin-bottom: 0; color: var(--color-text-muted); }
+
+.psilocybin-set-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+}
+
+.psilocybin-set-grid article {
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: linear-gradient(145deg, rgb(143 183 168 / 10%), rgb(22 28 27 / 74%));
+  border: 0.0625rem solid rgb(143 183 168 / 24%);
+  border-radius: var(--radius-medium);
+}
+
+.psilocybin-set-grid article > span {
+  display: inline-flex;
+  padding: 0.25rem 0.55rem;
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--psilo-sage);
+  border: 0.0625rem solid currentColor;
+  border-radius: 999px;
+}
+
+.psilocybin-set-grid h3 { margin: 0.9rem 0 0.6rem; }
+
+.psilocybin-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+}
+
+.psilocybin-evidence-grid article {
+  min-width: 0;
+  padding: clamp(1.2rem, 2.8vw, 1.7rem);
+  background: rgb(20 27 25 / 80%);
+  border: 0.0625rem solid rgb(143 183 168 / 20%);
+  border-radius: var(--radius-medium);
+}
+
+.psilocybin-evidence-grid h3 { margin: 0.85rem 0 0.45rem; }
+.psilocybin-evidence-grid p { margin-bottom: 0.4rem; }
+.psilocybin-evidence-note { font-size: 0.92rem; color: var(--color-text-muted); }
+
+.psilocybin-study-highlight {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(13rem, 0.6fr);
+  gap: var(--space-5);
+  align-items: center;
+  margin-block: var(--space-6);
+  padding: clamp(1.4rem, 3.4vw, 2.4rem);
+  background: linear-gradient(135deg, rgb(198 154 112 / 9%), rgb(143 183 168 / 8%));
+  border: 0.0625rem solid rgb(198 154 112 / 28%);
+  border-radius: var(--radius-large, 1rem);
+}
+
+.psilocybin-study-highlight h3 { margin: 0.9rem 0 0.6rem; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.psilocybin-study-highlight p { margin-bottom: 0; }
+.psilocybin-study-highlight dl { display: grid; gap: var(--space-3); margin: 0; }
+.psilocybin-study-highlight dl > div { padding: 0.85rem 1rem; background: rgb(15 20 19 / 60%); border: 0.0625rem solid rgb(255 255 255 / 7%); border-radius: var(--radius-small); }
+.psilocybin-study-highlight dt { font-family: var(--font-interface); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--color-text-muted); }
+.psilocybin-study-highlight dd { margin: 0.25rem 0 0; font-weight: 700; color: var(--psilo-sage); }
+
+.psilocybin-method-notes { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
+.psilocybin-method-notes article { padding-bottom: var(--space-4); border-bottom: 0.0625rem solid rgb(143 183 168 / 13%); }
+.psilocybin-method-notes article:last-child { padding-bottom: 0; border-bottom: 0; }
+.psilocybin-method-notes h3 { margin-top: 0; }
+
+.psilocybin-equation,
+.psilocybin-distinction {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  margin-block: var(--space-5);
+}
+
+.psilocybin-equation span,
+.psilocybin-equation strong,
+.psilocybin-distinction span {
+  padding: 0.55rem 0.8rem;
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  background: rgb(143 183 168 / 9%);
+  border: 0.0625rem solid rgb(143 183 168 / 22%);
+  border-radius: 999px;
+}
+
+.psilocybin-equation b,
+.psilocybin-distinction b { color: var(--psilo-copper); }
+
+.psilocybin-microdose,
+.psilocybin-potential {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: center;
+  margin-block: var(--space-5);
+}
+
+.psilocybin-microdose > div,
+.psilocybin-potential article {
+  padding: 1.25rem;
+  background: rgb(22 28 27 / 78%);
+  border: 0.0625rem solid rgb(143 183 168 / 20%);
+  border-radius: var(--radius-medium);
+}
+
+.psilocybin-microdose > span,
+.psilocybin-potential > strong { font-size: 1.6rem; color: var(--psilo-copper); }
+.psilocybin-microdose p,
+.psilocybin-potential p { margin: 0.35rem 0 0; color: var(--color-text-muted); }
+.psilocybin-potential article > span { font-family: var(--font-interface); font-weight: 700; color: var(--psilo-sage); }
+
+.psilocybin-safety { background: linear-gradient(90deg, rgb(92 42 39 / 5%), transparent 30%); }
+.psilocybin-risk-grid article { border-color: rgb(210 140 130 / 22%); }
+
+.psilocybin-legal-card {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.55fr) minmax(0, 1.2fr);
+  gap: var(--space-5);
+  align-items: center;
+  margin-block: var(--space-5);
+  padding: clamp(1.3rem, 3vw, 2rem);
+  background: rgb(75 35 33 / 13%);
+  border: 0.0625rem solid rgb(210 140 130 / 28%);
+  border-radius: var(--radius-medium);
+}
+
+.psilocybin-legal-card > div { display: grid; gap: 0.25rem; }
+.psilocybin-legal-card > div span { font-family: var(--font-interface); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--integrative-risk); }
+.psilocybin-legal-card strong { font-size: 1.15rem; }
+.psilocybin-legal-card small { color: var(--color-text-muted); }
+.psilocybin-legal-card p { margin: 0; }
+
+.psilocybin-knowledge-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); margin-block: var(--space-5); }
+.psilocybin-knowledge-grid article:nth-child(1) { border-top: 0.18rem solid var(--integrative-strong); }
+.psilocybin-knowledge-grid article:nth-child(2) { border-top: 0.18rem solid var(--integrative-moderate); }
+.psilocybin-knowledge-grid article:nth-child(3) { border-top: 0.18rem solid var(--integrative-uncertain); }
+.psilocybin-table-title { margin-top: var(--space-7); }
+
+.psilocybin-fields-grid article { min-height: 10rem; }
+.psilocybin-learning {
+  margin: var(--space-6) 0;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: linear-gradient(90deg, rgb(143 183 168 / 9%), transparent);
+  border-left: 0.2rem solid var(--psilo-sage);
+}
+.psilocybin-learning p { margin: 0; font-family: "Spectral", serif; font-size: clamp(1.05rem, 2vw, 1.3rem); line-height: 1.65; color: var(--psilo-sage); }
+.psilocybin-open-question { font-size: 1.05rem; }
+
+.psilocybin-references .integrative-reference-grid { margin-top: var(--space-4); }
+.psilocybin-references .integrative-reference-grid article { border-color: rgb(143 183 168 / 18%); }
+.psilocybin-references .integrative-reference-grid h3 { margin-top: 0.8rem; }
+.psilocybin-review-date { margin-top: var(--space-5); font-family: var(--font-interface); font-size: 0.86rem; color: var(--color-text-muted); }
+
+.psilocybin-article-footer {
+  width: min(100% - 2rem, 70rem);
+  margin: 0 auto clamp(4rem, 8vw, 7rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: linear-gradient(135deg, rgb(143 183 168 / 9%), rgb(198 154 112 / 5%));
+  border: 0.0625rem solid rgb(143 183 168 / 20%);
+  border-radius: var(--radius-medium);
+}
+.psilocybin-article-footer p { max-width: 58rem; }
+
+@media (max-width: 64rem) {
+  .psilocybin-hero__inner { grid-template-columns: 1fr; }
+  .psilocybin-hero__visual { width: min(100%, 34rem); min-height: 22rem; }
+  .psilocybin-summary-grid,
+  .psilocybin-layer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .psilocybin-study-highlight { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 48rem) {
+  .psilocybin-hero { padding-inline: 1rem; }
+  .psilocybin-status,
+  .psilocybin-summary-grid,
+  .psilocybin-layer-grid,
+  .psilocybin-effects-grid,
+  .psilocybin-method-grid,
+  .psilocybin-fields-grid,
+  .psilocybin-risk-grid,
+  .psilocybin-set-grid,
+  .psilocybin-evidence-grid,
+  .psilocybin-knowledge-grid,
+  .psilocybin-legal-card { grid-template-columns: 1fr; }
+  .psilocybin-microdose,
+  .psilocybin-potential { grid-template-columns: 1fr; justify-items: stretch; }
+  .psilocybin-microdose > span,
+  .psilocybin-potential > strong { justify-self: center; transform: rotate(90deg); }
+  .psilocybin-hero__visual { min-height: 19rem; }
+  .psilocybin-orbit { width: min(100%, 18rem); }
+  .psilocybin-node { width: 6rem; min-height: 3.8rem; font-size: 0.82rem; }
+  .psilocybin-node small { font-size: 0.58rem; }
+  .psilocybin-node--metabolite { right: -0.45rem; }
+  .psilocybin-node--networks { left: -0.45rem; }
+  .psilocybin-equation,
+  .psilocybin-distinction { align-items: stretch; flex-direction: column; }
+  .psilocybin-equation b,
+  .psilocybin-distinction b { align-self: center; }
+}
+
+@media (max-width: 30rem) {
+  .psilocybin-hero h1 { font-size: clamp(2.75rem, 15vw, 4.3rem); }
+  .psilocybin-hero__visual { padding: 0.9rem; }
+  .psilocybin-orbit { width: 15rem; }
+  .psilocybin-node { width: 5.3rem; min-height: 3.4rem; padding: 0.45rem; font-size: 0.73rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .psilocybin-article *,
+  .psilocybin-article *::before,
+  .psilocybin-article *::after { scroll-behavior: auto; transition-duration: 0.001ms; animation-duration: 0.001ms; }
+}
