@@ -1,0 +1,197 @@
+.homeopathy-page {
+  --integrative-accent: #75a8ad;
+  --integrative-accent-soft: rgb(117 168 173 / 13%);
+}
+
+.homeopathy-hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 52%);
+  background:
+    radial-gradient(circle at 78% 22%, rgb(35 64 74 / 28%), transparent 28rem),
+    linear-gradient(145deg, #0b0c10 0%, #101416 58%, #151210 100%);
+}
+
+.homeopathy-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 0.65fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.homeopathy-hero h1 {
+  margin-bottom: var(--space-3);
+  font-size: clamp(2.8rem, 7vw, 6.2rem);
+}
+
+.homeopathy-hero__subtitle {
+  max-width: 34ch;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.4rem, 3vw, 2.25rem);
+  line-height: 1.25;
+}
+
+.homeopathy-hero__intro {
+  max-width: 44rem;
+  color: var(--color-text-muted);
+}
+
+.homeopathy-hero__stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.homeopathy-hero__stat {
+  padding: var(--space-4);
+  background: rgb(22 21 23 / 72%);
+  border: 0.0625rem solid rgb(117 168 173 / 30%);
+  border-radius: var(--radius-small);
+}
+
+.homeopathy-hero__stat span {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--integrative-accent);
+}
+
+.homeopathy-hero__stat strong {
+  font-family: var(--font-subtitle);
+  font-size: 1.05rem;
+}
+
+.homeopathy-quick {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 38%);
+}
+
+.homeopathy-section__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+}
+
+.homeopathy-content > section + section {
+  margin-top: clamp(4rem, 9vw, 7rem);
+}
+
+.homeopathy-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.homeopathy-pillar {
+  padding: var(--space-5);
+  background: linear-gradient(155deg, rgb(35 64 74 / 18%), rgb(22 21 23 / 90%));
+  border: 0.0625rem solid rgb(117 168 173 / 28%);
+  border-radius: var(--radius-medium);
+}
+
+.homeopathy-pillar__number {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem;
+  aspect-ratio: 1;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: #0d1415;
+  background: var(--integrative-accent);
+  border-radius: 50%;
+}
+
+.homeopathy-evidence-summary {
+  padding: clamp(1.4rem, 3vw, 2rem);
+  background: linear-gradient(145deg, rgb(35 64 74 / 24%), rgb(22 21 23 / 90%));
+  border: 0.0625rem solid rgb(117 168 173 / 35%);
+  border-radius: var(--radius-medium);
+}
+
+.homeopathy-evidence-summary strong {
+  color: var(--color-text);
+}
+
+.homeopathy-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.homeopathy-conditions span {
+  padding: 0.45rem 0.7rem;
+  font-family: var(--font-interface);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  background: rgb(22 21 23 / 76%);
+  border: 0.0625rem solid rgb(93 64 43 / 48%);
+  border-radius: 999px;
+}
+
+.homeopathy-placebo-grid,
+.homeopathy-brazil-grid,
+.homeopathy-controversy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.homeopathy-placebo-grid article,
+.homeopathy-brazil-grid article,
+.homeopathy-controversy-grid article {
+  padding: var(--space-5);
+  background: rgb(22 21 23 / 78%);
+  border: 0.0625rem solid rgb(93 64 43 / 44%);
+  border-radius: var(--radius-medium);
+}
+
+.homeopathy-risk-focus {
+  padding: clamp(1.4rem, 3vw, 2rem);
+  background: rgb(91 42 40 / 18%);
+  border: 0.0625rem solid rgb(213 138 130 / 48%);
+  border-left-width: 0.25rem;
+  border-radius: var(--radius-medium);
+}
+
+.homeopathy-risk-focus h3 {
+  color: #e0a49d;
+}
+
+.homeopathy-faq details + details {
+  margin-top: var(--space-3);
+}
+
+.homeopathy-conclusion {
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background: linear-gradient(145deg, rgb(35 64 74 / 26%), rgb(22 21 23 / 92%));
+  border: 0.0625rem solid rgb(117 168 173 / 40%);
+  border-radius: var(--radius-medium);
+}
+
+@media (max-width: 62rem) {
+  .homeopathy-hero__inner,
+  .homeopathy-pillars,
+  .homeopathy-placebo-grid,
+  .homeopathy-brazil-grid,
+  .homeopathy-controversy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homeopathy-hero__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 34rem) {
+  .homeopathy-hero__stats {
+    grid-template-columns: 1fr;
+  }
+}
