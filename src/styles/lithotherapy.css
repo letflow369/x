@@ -1,0 +1,356 @@
+.lithotherapy-page {
+  --integrative-accent: #a78ad0;
+  --integrative-accent-soft: rgb(167 138 208 / 13%);
+}
+
+.lithotherapy-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.2rem, 8vw, 6.4rem);
+  border-bottom: 0.0625rem solid rgb(120 99 147 / 35%);
+  background:
+    radial-gradient(circle at 88% 20%, rgb(167 138 208 / 13%), transparent 26rem),
+    radial-gradient(circle at 70% 82%, rgb(98 132 151 / 10%), transparent 22rem),
+    linear-gradient(145deg, #111317, #18161d 58%, #121417);
+}
+
+.lithotherapy-hero::after {
+  position: absolute;
+  top: 12%;
+  right: 7%;
+  width: clamp(9rem, 20vw, 16rem);
+  aspect-ratio: 1;
+  content: "";
+  opacity: 0.28;
+  background: linear-gradient(145deg, rgb(224 215 236 / 35%), rgb(117 86 156 / 16%));
+  clip-path: polygon(50% 0, 89% 26%, 100% 68%, 58% 100%, 10% 78%, 0 33%);
+  transform: rotate(12deg);
+}
+
+.lithotherapy-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 0.8fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+}
+
+.lithotherapy-hero h1 {
+  margin-block: 0.25rem 0.75rem;
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 8vw, 6.6rem);
+  line-height: 0.96;
+}
+
+.lithotherapy-hero__subtitle {
+  max-width: 44rem;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.3;
+}
+
+.lithotherapy-hero__intro {
+  max-width: 46rem;
+  color: var(--color-text-muted);
+}
+
+.lithotherapy-hero__stats {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.lithotherapy-hero__stat {
+  padding: var(--space-4);
+  background: rgb(19 20 24 / 76%);
+  border: 0.0625rem solid rgb(167 138 208 / 34%);
+  border-radius: var(--radius-small);
+  backdrop-filter: blur(0.35rem);
+}
+
+.lithotherapy-hero__stat span {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--integrative-accent);
+}
+
+.lithotherapy-hero__stat strong {
+  font-family: var(--font-subtitle);
+  font-size: 1.08rem;
+}
+
+.lithotherapy-quick {
+  padding-block: clamp(2.8rem, 6vw, 4.8rem);
+  border-bottom: 0.0625rem solid rgb(93 64 43 / 38%);
+}
+
+.lithotherapy-section__inner {
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+}
+
+.lithotherapy-content > section + section {
+  margin-top: clamp(4rem, 9vw, 7rem);
+}
+
+.lithotherapy-stones {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.lithotherapy-stones article {
+  min-width: 0;
+  padding: var(--space-4);
+  background: rgb(21 22 26 / 78%);
+  border: 0.0625rem solid rgb(112 93 137 / 44%);
+  border-radius: var(--radius-medium);
+}
+
+.lithotherapy-stone {
+  display: block;
+  width: 2.6rem;
+  aspect-ratio: 0.82;
+  margin-bottom: var(--space-3);
+  clip-path: polygon(48% 0, 90% 22%, 100% 65%, 55% 100%, 9% 79%, 0 31%);
+  box-shadow: inset 0 0 0 0.0625rem rgb(255 255 255 / 16%);
+}
+
+.lithotherapy-stone--amethyst { background: linear-gradient(150deg, #d6c3ee, #76529f 62%, #372845); }
+.lithotherapy-stone--rose { background: linear-gradient(150deg, #f2d8df, #bd8195 62%, #674754); }
+.lithotherapy-stone--quartz { background: linear-gradient(150deg, #eef3f5, #aebbc3 62%, #64717a); }
+.lithotherapy-stone--tourmaline { background: linear-gradient(150deg, #56646a, #1d2528 62%, #080b0c); }
+.lithotherapy-stone--citrine { background: linear-gradient(150deg, #f1d79d, #c79137 62%, #6d4b18); }
+
+.lithotherapy-physics-grid,
+.lithotherapy-brazil-grid,
+.lithotherapy-safety-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-block: var(--space-5);
+}
+
+.lithotherapy-physics-grid article,
+.lithotherapy-brazil-grid article,
+.lithotherapy-safety-card {
+  padding: var(--space-5);
+  background: rgb(21 22 26 / 76%);
+  border: 0.0625rem solid rgb(112 93 137 / 42%);
+  border-radius: var(--radius-medium);
+}
+
+.lithotherapy-brazil-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lithotherapy-bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: center;
+  margin-block: var(--space-5);
+}
+
+.lithotherapy-bridge > div {
+  padding: var(--space-5);
+  text-align: center;
+  background: var(--integrative-accent-soft);
+  border: 0.0625rem solid rgb(167 138 208 / 34%);
+  border-radius: var(--radius-medium);
+}
+
+.lithotherapy-bridge > span {
+  font-family: var(--font-interface);
+  font-size: 2rem;
+  color: var(--integrative-accent);
+}
+
+.lithotherapy-bridge strong,
+.lithotherapy-bridge span span {
+  display: block;
+}
+
+.lithotherapy-bridge div span {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+}
+
+.lithotherapy-note {
+  padding-left: var(--space-4);
+  border-left: 0.2rem solid var(--integrative-accent);
+}
+
+.lithotherapy-study-feature {
+  padding: clamp(1.4rem, 3vw, 2rem);
+  background: linear-gradient(145deg, rgb(77 60 99 / 24%), rgb(20 21 25 / 90%));
+  border: 0.0625rem solid rgb(167 138 208 / 40%);
+  border-radius: var(--radius-medium);
+}
+
+.lithotherapy-study-feature__header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.lithotherapy-study-feature__header > div > span {
+  font-family: var(--font-interface);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--integrative-accent);
+}
+
+.lithotherapy-study-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+}
+
+.lithotherapy-study-facts div {
+  padding: var(--space-3);
+  background: rgb(15 16 19 / 48%);
+  border-radius: var(--radius-small);
+}
+
+.lithotherapy-study-facts dt {
+  margin-bottom: 0.25rem;
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.lithotherapy-study-facts dd {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.lithotherapy-study-result {
+  padding: var(--space-4);
+  background: rgb(45 68 64 / 18%);
+  border-left: 0.2rem solid var(--integrative-strong);
+  border-radius: 0 var(--radius-small) var(--radius-small) 0;
+}
+
+.lithotherapy-evidence-status {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: rgb(22 21 23 / 72%);
+  border: 0.0625rem solid rgb(112 93 137 / 40%);
+  border-radius: var(--radius-small);
+}
+
+.lithotherapy-evidence-status p {
+  margin: var(--space-2) 0 0;
+}
+
+.lithotherapy-evidence-ladder {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.lithotherapy-evidence-ladder article {
+  padding: var(--space-5);
+  background: rgb(21 22 26 / 76%);
+  border: 0.0625rem solid rgb(112 93 137 / 42%);
+  border-radius: var(--radius-medium);
+}
+
+.lithotherapy-evidence-ladder article > span {
+  display: inline-flex;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-interface);
+  font-weight: 700;
+  color: var(--integrative-accent);
+}
+
+.lithotherapy-use-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block: var(--space-5);
+}
+
+.lithotherapy-use-tags span {
+  padding: 0.45rem 0.75rem;
+  font-family: var(--font-interface);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  border: 0.0625rem solid rgb(112 93 137 / 48%);
+  border-radius: 999px;
+}
+
+.lithotherapy-safety-card--low {
+  border-left: 0.22rem solid var(--integrative-strong);
+}
+
+.lithotherapy-safety-card--risk {
+  border-left: 0.22rem solid var(--integrative-risk);
+}
+
+.lithotherapy-conclusion {
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background: linear-gradient(145deg, rgb(77 60 99 / 26%), rgb(21 22 26 / 94%));
+  border: 0.0625rem solid rgb(167 138 208 / 40%);
+  border-radius: var(--radius-medium);
+}
+
+@media (max-width: 72rem) {
+  .lithotherapy-stones {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 62rem) {
+  .lithotherapy-hero__inner,
+  .lithotherapy-brazil-grid,
+  .lithotherapy-evidence-ladder {
+    grid-template-columns: 1fr;
+  }
+
+  .lithotherapy-hero::after {
+    opacity: 0.14;
+  }
+
+  .lithotherapy-study-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .lithotherapy-stones,
+  .lithotherapy-physics-grid,
+  .lithotherapy-safety-grid,
+  .lithotherapy-bridge {
+    grid-template-columns: 1fr;
+  }
+
+  .lithotherapy-bridge > span {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 34rem) {
+  .lithotherapy-study-feature__header,
+  .lithotherapy-study-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .lithotherapy-study-feature__header {
+    display: grid;
+  }
+}
