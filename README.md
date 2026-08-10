@@ -4,32 +4,18 @@ Site estático publicado com GitHub Pages.
 
 ## Conteúdo atual
 
+O site organiza os artigos em seis categorias principais. Cada artigo possui uma categoria-base única; relações transversais podem aparecer dentro do conteúdo sem duplicar a página entre coleções.
+
 ```text
-Psicologia
-├── Carl Gustav Jung
-└── Sigmund Freud
-
-Religião e espiritualidade
-├── Cristianismo
-├── Islã
-├── Espiritismo
-├── Hinduísmo
-├── Budismo
-├── Wicca
-├── Umbanda
-├── Candomblé
-├── Nação e Batuque
-└── Kimbanda e Quimbanda
-
-Filosofias e esoterismo
-├── Estoicismo
-├── Hermetismo
-├── Gnosticismo
-└── Thelema
-
-Neurodiversidade
-└── coleção geral
+Desenvolvimento, aprendizagem e neurodiversidade ... 8 páginas
+Psicologia e saúde mental .......................... 14 páginas
+Saúde, terapias e reabilitação ..................... 12 páginas
+Substâncias, farmacologia e consciência ............ 5 páginas
+Filosofias, esoterismo e sistemas simbólicos ....... 10 páginas
+Religiões e espiritualidade ........................ 11 páginas
 ```
+
+A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica e CBD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
 
 ## Estrutura
 
