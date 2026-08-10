@@ -1,0 +1,1508 @@
+{
+  "version": "2026-08-10",
+  "items": [
+    {
+      "slug": "acupuntura",
+      "title": "Acupuntura",
+      "url": "artigos/acupuntura.html",
+      "summary": "Acupuntura entre tradição chinesa, mecanismos, dor, cefaleias, saúde mental, placebo, segurança, evidências recentes e presença no SUS.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "acupuntura",
+        "medicina tradicional chinesa",
+        "dor"
+      ],
+      "relations": [
+        "moxaterapia",
+        "ayurveda",
+        "yoga"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "ansiedade",
+      "title": "Ansiedade",
+      "url": "artigos/ansiedade.html",
+      "summary": "Versão inicial de uma referência baseada em evidências sobre ansiedade: definição, sinais de alerta, prevalência, tratamentos e quando procurar ajuda.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "ansiedade",
+        "estresse",
+        "regulação emocional"
+      ],
+      "relations": [
+        "fobia-social",
+        "toc",
+        "depressao"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "aromaterapia",
+      "title": "Aromaterapia",
+      "url": "artigos/aromaterapia.html",
+      "summary": "Aromaterapia baseada em evidências: óleos essenciais, ansiedade, sono, dor, náuseas, segurança, limitações científicas e presença no SUS.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "aromaterapia",
+        "óleos essenciais",
+        "segurança"
+      ],
+      "relations": [
+        "fitoterapia",
+        "homeopatia",
+        "litoterapia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "astrologia",
+      "title": "Astrologia",
+      "url": "artigos/astrologia.html",
+      "summary": "Introdução histórica, cultural e crítica à astrologia: origens, conceitos, tradições, importância, testes controlados, vieses cognitivos, riscos e fontes.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "astrologia",
+        "zodíaco",
+        "história cultural"
+      ],
+      "relations": [
+        "feng-shui",
+        "chakras",
+        "numerologia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "autismo",
+      "title": "Autismo",
+      "url": "artigos/autismo.html",
+      "summary": "Referência introdutória baseada em evidências sobre autismo: definição, história, diagnóstico, desenvolvimento, condições coexistentes, intervenções, segurança e pesquisas.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "autismo",
+        "espectro",
+        "desenvolvimento"
+      ],
+      "relations": [
+        "tdah",
+        "tourette",
+        "dislexia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "ayahuasca",
+      "title": "Ayahuasca",
+      "url": "artigos/ayahuasca.html",
+      "summary": "Ayahuasca entre tradição amazônica, religiões brasileiras, farmacologia, pesquisa em saúde mental, riscos, regulamentação e ética.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "ayahuasca",
+        "DMT",
+        "psicodélicos",
+        "tradição amazônica"
+      ],
+      "relations": [
+        "quimbanda",
+        "psilocibina",
+        "depressao",
+        "psicose"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "ayurveda",
+      "title": "Ayurveda",
+      "url": "artigos/ayurveda.html",
+      "summary": "Ayurveda entre história, conceitos tradicionais, diagnóstico, estilo de vida, evidências clínicas, riscos, segurança e presença no SUS.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "Ayurveda",
+        "sistema médico tradicional",
+        "Índia"
+      ],
+      "relations": [
+        "acupuntura",
+        "moxaterapia",
+        "yoga"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "batuque-nacao",
+      "title": "Nação e Batuque",
+      "url": "artigos/batuque-nacao.html",
+      "summary": "Introdução histórica, religiosa e sociocultural ao Batuque ou Nação do Rio Grande do Sul: formação, lados, orixás, casas de religião, ancestralidade, oralidade, alimentação, resistência e fontes verificáveis.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "Batuque",
+        "religião afro-brasileira",
+        "Rio Grande do Sul"
+      ],
+      "relations": [
+        "umbanda",
+        "candomble",
+        "quimbanda"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "borderline",
+      "title": "Transtorno de Personalidade Borderline",
+      "url": "artigos/borderline.html",
+      "summary": "Guia educativo baseado em evidências sobre transtorno de personalidade borderline: sintomas, desenvolvimento, prognóstico, comorbidades, segurança, psicoterapias e evidências recentes.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "borderline",
+        "personalidade",
+        "regulação emocional"
+      ],
+      "relations": [
+        "ansiedade",
+        "fobia-social",
+        "toc"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "budismo",
+      "title": "Budismo",
+      "url": "artigos/budismo.html",
+      "summary": "Guia histórico, doutrinário e crítico sobre o Budismo: Siddhartha Gautama, Quatro Nobres Verdades, Caminho Óctuplo, tradições, textos, práticas, história e adaptações modernas.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "budismo",
+        "Buda",
+        "meditação"
+      ],
+      "relations": [
+        "hinduismo",
+        "yoga",
+        "estoicismo"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "burnout",
+      "title": "Burnout",
+      "url": "artigos/burnout.html",
+      "summary": "Guia educativo baseado em evidências sobre burnout: definição da OMS, história do conceito, sintomas, diferenças para estresse e depressão, fatores ocupacionais, avaliação, intervenções, prevenção organizacional e pesquisas recentes.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "burnout",
+        "trabalho",
+        "estresse"
+      ],
+      "relations": [
+        "ansiedade",
+        "fobia-social",
+        "toc"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "candomble",
+      "title": "Candomblé",
+      "url": "artigos/candomble.html",
+      "summary": "Introdução histórica, religiosa e sociocultural ao Candomblé: formação na diáspora, nações, terreiros, axé, ancestralidade, racismo religioso, oralidade, literatura e fontes verificáveis.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "Candomblé",
+        "religião afro-brasileira",
+        "orixás"
+      ],
+      "relations": [
+        "umbanda",
+        "batuque-nacao",
+        "quimbanda"
+      ],
+      "scientificReview": "6 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "cannabis-indica",
+      "title": "Cannabis indica",
+      "url": "artigos/cannabis-indica.html",
+      "summary": "Cannabis indica: história taxonômica, genética, química, canabinoides, sistema endocanabinoide, evidências medicinais, riscos e contexto regulatório.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "Cannabis",
+        "indica e sativa",
+        "quimiotipos"
+      ],
+      "relations": [
+        "cannabis-sativa",
+        "cbd"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "cannabis-sativa",
+      "title": "Cannabis sativa",
+      "url": "artigos/cannabis-sativa.html",
+      "summary": "Cannabis sativa: botânica, domesticação, sistema endocanabinoide, THC, CBD, evidências clínicas, riscos, saúde mental e regulamentação brasileira.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "Cannabis",
+        "THC",
+        "CBD",
+        "sistema endocanabinoide"
+      ],
+      "relations": [
+        "cannabis-indica",
+        "cbd"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "carl-gustav-jung",
+      "title": "Carl Gustav Jung",
+      "url": "artigos/carl-gustav-jung.html",
+      "summary": "Uma introdução crítica a Carl Gustav Jung: biografia, linha do tempo, conceitos, contribuições, controvérsias, limites científicos e trilha de leitura.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "Jung",
+        "psicologia analítica",
+        "arquétipos"
+      ],
+      "relations": [
+        "gnosticismo",
+        "sigmund-freud",
+        "terapia-cognitivo-comportamental"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "cbd",
+      "title": "CBD — Canabidiol",
+      "url": "artigos/cbd.html",
+      "summary": "CBD (canabidiol): história, farmacologia, epilepsias, evidências para ansiedade, sono, dor e saúde mental, segurança, interações, regulamentação brasileira e limites científicos.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "CBD",
+        "Cannabis",
+        "epilepsia",
+        "canabinoides"
+      ],
+      "relations": [
+        "cannabis-sativa",
+        "cannabis-indica"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "chakras",
+      "title": "Chakras",
+      "url": "artigos/chakras.html",
+      "summary": "Guia histórico, religioso e crítico sobre chakras: corpo sutil, Tantra, sistemas históricos, modelo moderno de sete centros, ciência, benefícios do estudo e fontes.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "chakras",
+        "tradição indiana",
+        "energia"
+      ],
+      "relations": [
+        "feng-shui",
+        "numerologia",
+        "astrologia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "cristianismo",
+      "title": "Cristianismo",
+      "url": "artigos/cristianismo.html",
+      "summary": "Introdução histórica, religiosa e cultural ao cristianismo: Jesus, primeiras comunidades, Bíblia, crenças, diversidade católica, ortodoxa, protestante e pentecostal, Brasil, contribuições, contradições e fontes verificáveis.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "cristianismo",
+        "Jesus",
+        "religião abraâmica"
+      ],
+      "relations": [
+        "judaismo",
+        "isla"
+      ],
+      "scientificReview": "6 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "deficiencia-intelectual",
+      "title": "Deficiência Intelectual",
+      "url": "artigos/deficiencia-intelectual.html",
+      "summary": "Deficiência Intelectual em leitura progressiva: funcionamento intelectual e adaptativo, avaliação, desenvolvimento, causas, genética, apoios, medicamentos, evidências recentes e limites científicos.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "deficiência intelectual",
+        "cognição",
+        "autonomia"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "tourette"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "depressao",
+      "title": "Depressão",
+      "url": "artigos/depressao.html",
+      "summary": "Guia educativo baseado em evidências sobre depressão: sintomas, história do diagnóstico, fatores de risco, curso, comorbidades, diagnóstico, psicoterapias, antidepressivos, exercício, ECT, EMT, escetamina, pesquisas recentes e quando procurar ajuda.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "depressão",
+        "humor",
+        "tratamento"
+      ],
+      "relations": [
+        "terapia-cognitivo-comportamental",
+        "ansiedade",
+        "fobia-social",
+        "toc"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "discalculia",
+      "title": "Discalculia",
+      "url": "artigos/discalculia.html",
+      "summary": "Discalculia em leitura progressiva: definição, manifestações, desenvolvimento, neurociência, avaliação, condições associadas, intervenções, evidências recentes e história.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "matemática",
+        "discalculia"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "tourette"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "dislexia",
+      "title": "Dislexia",
+      "url": "artigos/dislexia.html",
+      "summary": "Dislexia em leitura progressiva: definição, mitos, desenvolvimento da leitura, história, avaliação, condições associadas, intervenções, evidências recentes e legislação brasileira.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "leitura",
+        "linguagem",
+        "dislexia"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "tourette"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "dispraxia",
+      "title": "Dispraxia",
+      "url": "artigos/dispraxia.html",
+      "summary": "Dispraxia e Transtorno do Desenvolvimento da Coordenação em leitura progressiva: definição, manifestações, desenvolvimento, neurociência, avaliação, condições associadas, intervenções, evidências recentes e história.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "coordenação motora",
+        "dispraxia",
+        "desenvolvimento"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "tourette"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "espiritismo",
+      "title": "Espiritismo",
+      "url": "artigos/espiritismo.html",
+      "summary": "Introdução histórica, doutrinária e crítica ao Espiritismo: Allan Kardec, obras fundamentais, princípios, desenvolvimento no Brasil, Chico Xavier, cultura, ciência e controvérsias.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "Espiritismo",
+        "Allan Kardec",
+        "mediunidade"
+      ],
+      "relations": [
+        "umbanda",
+        "candomble",
+        "batuque-nacao"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "esquizofrenia",
+      "title": "Esquizofrenia",
+      "url": "artigos/esquizofrenia.html",
+      "summary": "Entenda o que é esquizofrenia, sintomas, desenvolvimento, diagnóstico, evolução, tratamentos e evidências científicas em leitura progressiva.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "esquizofrenia",
+        "psicose",
+        "psiquiatria"
+      ],
+      "relations": [
+        "psicose",
+        "transtorno-bipolar",
+        "psicopatia"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "estoicismo",
+      "title": "Estoicismo",
+      "url": "artigos/estoicismo.html",
+      "summary": "Uma introdução histórica, filosófica e crítica ao Estoicismo: origem, conceitos, virtudes, emoções, limitações, exercício reflexivo e guia de leitura.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "estoicismo",
+        "ética",
+        "filosofia antiga"
+      ],
+      "relations": [
+        "hermetismo",
+        "gnosticismo",
+        "thelema"
+      ],
+      "scientificReview": "4 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "feng-shui",
+      "title": "Feng Shui",
+      "url": "artigos/feng-shui.html",
+      "summary": "Guia histórico e crítico sobre Feng Shui: origem, Guo Pu, qi, yin-yang, cinco fases, Escola da Forma, Escola da Bússola, patrimônio, evidências e leituras.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "feng shui",
+        "tradição chinesa",
+        "espaço"
+      ],
+      "relations": [
+        "chakras",
+        "numerologia",
+        "astrologia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "fitoterapia",
+      "title": "Fitoterapia",
+      "url": "artigos/fitoterapia.html",
+      "summary": "Fitoterapia baseada em evidências: plantas medicinais, medicamentos fitoterápicos, eficácia, segurança, interações, SUS, Anvisa e pesquisas recentes.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "fitoterapia",
+        "plantas medicinais",
+        "farmacologia"
+      ],
+      "relations": [
+        "aromaterapia",
+        "homeopatia",
+        "litoterapia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "fobia-social",
+      "title": "Fobia social",
+      "url": "artigos/fobia-social.html",
+      "summary": "Guia educativo baseado em evidências sobre fobia social ou Transtorno de Ansiedade Social: sintomas, ciclo de manutenção, desenvolvimento, diagnóstico, TCC, exposição, medicamentos, tecnologias digitais e pesquisas recentes.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "fobia social",
+        "ansiedade social",
+        "TCC"
+      ],
+      "relations": [
+        "ansiedade",
+        "toc",
+        "depressao"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "gnosticismo",
+      "title": "Gnosticismo",
+      "url": "artigos/gnosticismo.html",
+      "summary": "Introdução histórica e crítica ao gnosticismo: gnose, cosmologias, Setianismo, Valentinianismo, Nag Hammadi, textos antigos, controvérsias e leituras acadêmicas.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "gnosticismo",
+        "cristianismo antigo",
+        "cosmologia"
+      ],
+      "relations": [
+        "estoicismo",
+        "hermetismo",
+        "thelema"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "hermetismo",
+      "title": "Hermetismo",
+      "url": "artigos/hermetismo.html",
+      "summary": "Introdução histórica, filosófica e crítica ao Hermetismo: origem, Hermes Trismegisto, textos, ideias, influência, O Caibalion, glossário e fontes acadêmicas.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "hermetismo",
+        "esoterismo",
+        "Renascimento"
+      ],
+      "relations": [
+        "estoicismo",
+        "gnosticismo",
+        "thelema"
+      ],
+      "scientificReview": "4 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "hidroterapia",
+      "title": "Hidroterapia",
+      "url": "artigos/hidroterapia.html",
+      "summary": "Hidroterapia e fisioterapia aquática: princípios físicos da água, aplicações clínicas, evidências, comparação com exercício em solo, segurança, métodos e estudos recentes.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "hidroterapia",
+        "reabilitação",
+        "fisioterapia"
+      ],
+      "relations": [
+        "massagem-pedras-quentes",
+        "quiropraxia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "hinduismo",
+      "title": "Hinduísmo",
+      "url": "artigos/hinduismo.html",
+      "summary": "Guia histórico e crítico sobre o Hinduísmo: formação, tradições védicas, conceitos, caminhos espirituais, textos, divindades, castas, gênero, Hindutva e leituras acadêmicas.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "hinduísmo",
+        "Índia",
+        "dharma"
+      ],
+      "relations": [
+        "budismo",
+        "yoga",
+        "ayurveda"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "homeopatia",
+      "title": "Homeopatia",
+      "url": "artigos/homeopatia.html",
+      "summary": "Homeopatia analisada por história, princípios, ensaios clínicos, revisões sistemáticas, segurança, regulamentação e contexto brasileiro.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "homeopatia",
+        "diluição",
+        "evidência clínica"
+      ],
+      "relations": [
+        "aromaterapia",
+        "fitoterapia",
+        "litoterapia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "isla",
+      "title": "Islã",
+      "url": "artigos/isla.html",
+      "summary": "Introdução histórica, religiosa e cultural ao Islã: origem, Maomé, Alcorão, crenças, Cinco Pilares, diversidade sunita, xiita e sufismo, filosofia, artes, Brasil, equívocos e fontes verificáveis.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "islã",
+        "Alcorão",
+        "religião abraâmica"
+      ],
+      "relations": [
+        "judaismo",
+        "cristianismo"
+      ],
+      "scientificReview": "6 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "judaismo",
+      "title": "Judaísmo",
+      "url": "artigos/judaismo.html",
+      "summary": "Introdução histórica, religiosa e cultural ao Judaísmo: formação israelita e judaíta, Torá, Tanakh, Mishná, Talmude, valores, correntes contemporâneas, diversidade, antissemitismo e fontes verificáveis.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "judaísmo",
+        "Torá",
+        "religião abraâmica"
+      ],
+      "relations": [
+        "cristianismo",
+        "isla"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "litoterapia",
+      "title": "Litoterapia",
+      "url": "artigos/litoterapia.html",
+      "summary": "Litoterapia analisada por história, simbolismo, propriedades físicas dos minerais, estudo placebo-controlado, segurança, contexto brasileiro e evidência científica.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "litoterapia",
+        "cristais",
+        "alegações energéticas"
+      ],
+      "relations": [
+        "aromaterapia",
+        "fitoterapia",
+        "homeopatia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "massagem-pedras-quentes",
+      "title": "Massagem com Pedras Quentes",
+      "url": "artigos/massagem-pedras-quentes.html",
+      "summary": "Massagem com pedras quentes: como funciona, evidências para dor, sono e ansiedade, segurança térmica, alegações não comprovadas, história e limites científicos.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "massagem",
+        "termoterapia",
+        "dor"
+      ],
+      "relations": [
+        "hidroterapia",
+        "quiropraxia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "moxaterapia",
+      "title": "Moxaterapia",
+      "url": "artigos/moxaterapia.html",
+      "summary": "Moxaterapia ou moxabustão: tradição chinesa, calor, mecanismos plausíveis, evidências para apresentação pélvica e dor, segurança, PNPIC e limitações científicas.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "moxaterapia",
+        "medicina tradicional chinesa",
+        "termoterapia"
+      ],
+      "relations": [
+        "massagem-pedras-quentes",
+        "acupuntura",
+        "ayurveda",
+        "yoga"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "numerologia",
+      "title": "Numerologia",
+      "url": "artigos/numerologia.html",
+      "summary": "Introdução histórica, cultural e crítica à numerologia: origens, pitagorismo, gematria, métodos modernos, simbolismo, ciência, vieses cognitivos, riscos e leituras.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "numerologia",
+        "números",
+        "simbolismo"
+      ],
+      "relations": [
+        "feng-shui",
+        "chakras",
+        "astrologia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "psicopatia",
+      "title": "Psicopatia",
+      "url": "artigos/psicopatia.html",
+      "summary": "Psicopatia em leitura progressiva: traços, desenvolvimento, avaliação, relação com TPAS, violência, intervenções, evidências recentes, história, mitos e limites científicos.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "psicopatia",
+        "personalidade",
+        "comportamento antissocial"
+      ],
+      "relations": [
+        "psicose",
+        "esquizofrenia",
+        "transtorno-bipolar"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "psicose",
+      "title": "Psicose",
+      "url": "artigos/psicose.html",
+      "summary": "Entenda o que é psicose, como pode se manifestar, causas possíveis, primeiro episódio, diagnóstico, tratamentos, evidências recentes e caminhos de cuidado no Brasil.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "psicose",
+        "percepção",
+        "psiquiatria"
+      ],
+      "relations": [
+        "cannabis-sativa",
+        "esquizofrenia",
+        "transtorno-bipolar",
+        "psicopatia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "psilocibina",
+      "title": "Psilocibina",
+      "url": "artigos/psilocibina.html",
+      "summary": "Psilocibina entre tradição, história, neurociência, pesquisa clínica, riscos, microdosagem, situação legal no Brasil e ética.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "psilocibina",
+        "psicodélicos",
+        "serotonina",
+        "depressão"
+      ],
+      "relations": [
+        "ayahuasca",
+        "depressao",
+        "psicose"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "quimbanda",
+      "title": "Kimbanda e Quimbanda",
+      "url": "artigos/quimbanda.html",
+      "summary": "Introdução longa e plural a Kimbanda e Quimbanda: terminologia, história centro-africana, diáspora, formação brasileira, Exus, Pombagiras, valores, mitos e fontes.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "Quimbanda",
+        "Exus",
+        "religião afro-brasileira"
+      ],
+      "relations": [
+        "umbanda",
+        "candomble",
+        "batuque-nacao"
+      ],
+      "scientificReview": "6 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "quiropraxia",
+      "title": "Quiropraxia",
+      "url": "artigos/quiropraxia.html",
+      "summary": "Quiropraxia e manipulação espinal: evidências para lombalgia e dor cervical, mecanismos, magnitude dos benefícios, segurança, crianças, alegações não sustentadas e estudos recentes.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "quiropraxia",
+        "dor musculoesquelética",
+        "terapia manual"
+      ],
+      "relations": [
+        "hidroterapia",
+        "massagem-pedras-quentes"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "reiki",
+      "title": "Reiki",
+      "url": "artigos/reiki.html",
+      "summary": "Guia editorial e baseado em evidências sobre Reiki: origem japonesa, tradição energética, experiência subjetiva, pesquisas sobre ansiedade, qualidade de vida, dor e cuidados paliativos, segurança, limites e uso no SUS.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "Reiki",
+        "prática energética",
+        "evidência clínica"
+      ],
+      "relations": [
+        "litoterapia",
+        "aromaterapia",
+        "fitoterapia",
+        "homeopatia"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "sigmund-freud",
+      "title": "Sigmund Freud",
+      "url": "artigos/sigmund-freud.html",
+      "summary": "Uma introdução crítica a Sigmund Freud: biografia, linha do tempo, conceitos, contribuições, controvérsias, limites científicos e trilha de leitura.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "Freud",
+        "psicanálise",
+        "história da psicologia"
+      ],
+      "relations": [
+        "carl-gustav-jung",
+        "terapia-cognitivo-comportamental"
+      ],
+      "scientificReview": "4 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "sindrome-de-down",
+      "title": "Síndrome de Down",
+      "url": "artigos/sindrome-de-down.html",
+      "summary": "Síndrome de Down em leitura progressiva: genética, desenvolvimento, diagnóstico, saúde, autonomia, Alzheimer, intervenções, pesquisas recentes, bioética e cuidados ao longo da vida.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "síndrome de Down",
+        "genética",
+        "trissomia 21"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "tourette"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "tdah",
+      "title": "TDAH",
+      "url": "artigos/tdah.html",
+      "summary": "Referência introdutória baseada em evidências sobre TDAH: sintomas, desenvolvimento, diagnóstico, condições associadas, tratamentos, estratégias práticas, pesquisas recentes e mitos.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "TDAH",
+        "funções executivas",
+        "atenção"
+      ],
+      "relations": [
+        "autismo",
+        "tourette",
+        "dislexia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "teosofia",
+      "title": "Teosofia",
+      "url": "artigos/teosofia.html",
+      "summary": "Introdução longa e crítica à Teosofia: fundação, representantes, objetivos, doutrinas, relações com a Índia, influência cultural, controvérsias e evidências.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "teosofia",
+        "esoterismo moderno",
+        "Helena Blavatsky"
+      ],
+      "relations": [
+        "estoicismo",
+        "hermetismo",
+        "gnosticismo"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "terapia-cognitivo-comportamental",
+      "title": "Terapia Cognitivo-Comportamental",
+      "url": "artigos/terapia-cognitivo-comportamental.html",
+      "summary": "Guia educativo baseado em evidências sobre Terapia Cognitivo-Comportamental: história, modelo cognitivo-comportamental, técnicas, aplicações clínicas, comorbidades, evidências de 2025, modalidades digitais e limitações.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "TCC",
+        "psicoterapia",
+        "evidência clínica"
+      ],
+      "relations": [
+        "ansiedade",
+        "fobia-social",
+        "toc",
+        "sigmund-freud",
+        "carl-gustav-jung"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "thelema",
+      "title": "Thelema",
+      "url": "artigos/thelema.html",
+      "summary": "Introdução histórica e crítica a Thelema: origem, Livro da Lei, Verdadeira Vontade, Magick, organizações, importância, controvérsias e referências acadêmicas.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "Thelema",
+        "Aleister Crowley",
+        "ocultismo"
+      ],
+      "relations": [
+        "estoicismo",
+        "hermetismo",
+        "gnosticismo"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "toc",
+      "title": "Transtorno Obsessivo-Compulsivo — TOC",
+      "url": "artigos/toc.html",
+      "summary": "Referência introdutória baseada em evidências sobre transtorno obsessivo-compulsivo: obsessões, compulsões, diagnóstico, desenvolvimento, ERP, medicamentos, neuromodulação e pesquisas.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "TOC",
+        "obsessões",
+        "compulsões"
+      ],
+      "relations": [
+        "ansiedade",
+        "fobia-social",
+        "depressao"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "tourette",
+      "title": "Síndrome de Tourette",
+      "url": "artigos/tourette.html",
+      "summary": "Síndrome de Tourette em leitura progressiva: tiques, desenvolvimento, cérebro e genética, comorbidades, diagnóstico, CBIT, medicamentos, escola, pesquisas recentes e história.",
+      "category": "desenvolvimento-aprendizagem-neurodiversidade",
+      "categoryName": "Desenvolvimento, aprendizagem e neurodiversidade",
+      "categoryUrl": "assuntos/neurodiversidade.html",
+      "contentType": "neurodesenvolvimento",
+      "tags": [
+        "neurodesenvolvimento",
+        "aprendizagem",
+        "acessibilidade",
+        "tiques",
+        "síndrome de Tourette",
+        "neurologia"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "dislexia"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "transtorno-bipolar",
+      "title": "Transtorno Bipolar",
+      "url": "artigos/transtorno-bipolar.html",
+      "summary": "Transtorno Bipolar em leitura progressiva: mania, hipomania, depressão, tipos, desenvolvimento, diagnóstico, tratamentos, recorrência, genética, cognição e evidências recentes.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "transtorno bipolar",
+        "mania",
+        "depressão"
+      ],
+      "relations": [
+        "ansiedade",
+        "fobia-social",
+        "toc",
+        "psicose",
+        "esquizofrenia",
+        "psicopatia"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "transtorno-opositivo-desafiador",
+      "title": "Transtorno Opositivo Desafiador",
+      "url": "artigos/transtorno-opositivo-desafiador.html",
+      "summary": "Entenda o Transtorno Opositivo Desafiador (TOD): manifestações, desenvolvimento, avaliação, tratamento, evidências recentes, história e limites científicos.",
+      "category": "psicologia-saude-mental",
+      "categoryName": "Psicologia e saúde mental",
+      "categoryUrl": "assuntos/psicologia.html",
+      "contentType": "condição/conceito",
+      "tags": [
+        "psicologia",
+        "saúde mental",
+        "comportamento",
+        "TOD",
+        "desenvolvimento"
+      ],
+      "relations": [
+        "tdah",
+        "autismo",
+        "terapia-cognitivo-comportamental"
+      ],
+      "scientificReview": "7 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "umbanda",
+      "title": "Umbanda",
+      "url": "artigos/umbanda.html",
+      "summary": "Introdução longa e plural à Umbanda: origens, história, matrizes culturais, crenças, entidades, valores, importância, racismo religioso, literatura e fontes.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "Umbanda",
+        "religião afro-brasileira",
+        "Brasil"
+      ],
+      "relations": [
+        "candomble",
+        "batuque-nacao",
+        "quimbanda"
+      ],
+      "scientificReview": "6 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "vibracoes-estados-vibracionais",
+      "title": "Vibrações e estados vibracionais",
+      "url": "artigos/vibracoes-estados-vibracionais.html",
+      "summary": "Guia crítico sobre vibrações e estados vibracionais: oscilações físicas, ritmos biológicos, experiências emocionais, interpretações espirituais, evidências, riscos e história cultural.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filosofia/sistema simbólico",
+      "tags": [
+        "história das ideias",
+        "sistemas simbólicos",
+        "cultura",
+        "vibrações",
+        "espiritualidade",
+        "alegações energéticas"
+      ],
+      "relations": [
+        "feng-shui",
+        "chakras",
+        "numerologia"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "wicca",
+      "title": "Wicca",
+      "url": "artigos/wicca.html",
+      "summary": "Guia histórico, doutrinário e crítico sobre a Wicca: Gerald Gardner, Doreen Valiente, crenças, Roda do Ano, tradições, práticas, controvérsias e literatura.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religião",
+        "espiritualidade",
+        "história cultural",
+        "Wicca",
+        "neopaganismo",
+        "religião contemporânea"
+      ],
+      "relations": [
+        "umbanda",
+        "candomble",
+        "batuque-nacao"
+      ],
+      "scientificReview": "5 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "yoga",
+      "title": "Yoga",
+      "url": "artigos/yoga.html",
+      "summary": "Yoga entre história, filosofia, práticas corporais, respiração e evidência científica: origens, modalidades, segurança, benefícios estudados, limites e leitura crítica da pesquisa.",
+      "category": "saude-terapias-reabilitacao",
+      "categoryName": "Saúde, terapias e reabilitação",
+      "categoryUrl": "assuntos/saude-reabilitacao.html",
+      "contentType": "terapia",
+      "tags": [
+        "saúde",
+        "terapias complementares",
+        "evidências",
+        "Yoga",
+        "movimento",
+        "meditação"
+      ],
+      "relations": [
+        "budismo",
+        "hinduismo",
+        "acupuntura",
+        "moxaterapia"
+      ],
+      "scientificReview": "9 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    }
+  ]
+}

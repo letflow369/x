@@ -1,0 +1,121 @@
+{
+  "version": "2026-08-10",
+  "items": [
+    {
+      "term": "Associação",
+      "definition": "Relação observada entre duas variáveis. Sozinha, não demonstra que uma cause a outra.",
+      "related": [
+        "ayahuasca",
+        "psilocibina",
+        "cannabis-sativa"
+      ]
+    },
+    {
+      "term": "Causalidade",
+      "definition": "Relação em que uma mudança contribui para produzir outra. Exige evidências mais fortes do que simples correlação.",
+      "related": [
+        "metodologia"
+      ]
+    },
+    {
+      "term": "Cegamento",
+      "definition": "Procedimento que reduz a influência das expectativas ao impedir que participantes, pesquisadores ou ambos saibam qual intervenção foi recebida.",
+      "related": [
+        "psilocibina",
+        "ayahuasca"
+      ]
+    },
+    {
+      "term": "Ensaio clínico randomizado",
+      "definition": "Estudo em humanos no qual participantes são distribuídos aleatoriamente entre intervenções para reduzir diferenças sistemáticas entre os grupos.",
+      "related": [
+        "cbd",
+        "psilocibina",
+        "moxaterapia"
+      ]
+    },
+    {
+      "term": "Evidência observacional",
+      "definition": "Evidência obtida sem distribuição aleatória de uma intervenção. É útil para associações e segurança, mas tem maior vulnerabilidade a fatores de confusão.",
+      "related": [
+        "cannabis-sativa"
+      ]
+    },
+    {
+      "term": "Mecanismo plausível",
+      "definition": "Explicação biologicamente possível para um efeito. Plausibilidade mecanística não demonstra, sozinha, benefício clínico.",
+      "related": [
+        "moxaterapia",
+        "massagem-pedras-quentes",
+        "cbd"
+      ]
+    },
+    {
+      "term": "Meta-análise",
+      "definition": "Método estatístico que combina resultados de estudos comparáveis para estimar um efeito conjunto.",
+      "related": [
+        "metodologia"
+      ]
+    },
+    {
+      "term": "Placebo",
+      "definition": "Intervenção de comparação sem o componente específico testado, usada para estimar a influência de expectativas e outros efeitos contextuais.",
+      "related": [
+        "homeopatia",
+        "psilocibina"
+      ]
+    },
+    {
+      "term": "Revisão sistemática",
+      "definition": "Síntese estruturada da literatura com pergunta definida, busca explícita, critérios de inclusão e avaliação crítica dos estudos.",
+      "related": [
+        "metodologia"
+      ]
+    },
+    {
+      "term": "Significância clínica",
+      "definition": "Magnitude de benefício suficientemente relevante para pacientes ou funcionamento, diferente de mera significância estatística.",
+      "related": [
+        "metodologia"
+      ]
+    },
+    {
+      "term": "Significância estatística",
+      "definition": "Medida de compatibilidade dos dados com uma hipótese estatística. Não informa, por si só, se o efeito é grande ou importante.",
+      "related": [
+        "metodologia"
+      ]
+    },
+    {
+      "term": "Viés",
+      "definition": "Erro sistemático que pode distorcer a estimativa de um efeito por desenho, seleção, medição, análise ou publicação.",
+      "related": [
+        "metodologia"
+      ]
+    },
+    {
+      "term": "Quimiotipo",
+      "definition": "Classificação baseada no perfil químico mensurável de um organismo ou produto, como proporções de THC e CBD em Cannabis.",
+      "related": [
+        "cannabis-indica",
+        "cannabis-sativa"
+      ]
+    },
+    {
+      "term": "Fitocanabinoide",
+      "definition": "Canabinoide produzido pela planta Cannabis, como THC e CBD.",
+      "related": [
+        "cbd",
+        "cannabis-sativa"
+      ]
+    },
+    {
+      "term": "Sistema endocanabinoide",
+      "definition": "Sistema de sinalização biológica formado por endocanabinoides, receptores e enzimas que participa de diversos processos fisiológicos.",
+      "related": [
+        "cannabis-sativa",
+        "cbd"
+      ]
+    }
+  ]
+}

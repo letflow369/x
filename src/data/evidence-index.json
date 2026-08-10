@@ -1,0 +1,185 @@
+{
+  "version": "2026-08-10",
+  "items": [
+    {
+      "title": "CBD farmacêutico em síndromes epilépticas específicas",
+      "article": "cbd",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "consistente",
+      "levelLabel": "Evidência consistente",
+      "summary": "Ensaios clínicos e avaliação regulatória sustentam CBD farmacêutico padronizado para crises associadas a Dravet, Lennox–Gastaut e complexo de esclerose tuberosa."
+    },
+    {
+      "title": "Psilocibina para depressão maior",
+      "article": "psilocibina",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "promissora",
+      "levelLabel": "Promissora / inconclusiva",
+      "summary": "Há ensaios positivos de curto prazo, mas persistem limitações de cegamento, amostras selecionadas, duração e replicação."
+    },
+    {
+      "title": "Ayahuasca para sintomas depressivos",
+      "article": "ayahuasca",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "preliminar",
+      "levelLabel": "Evidência preliminar",
+      "summary": "Pequenos ensaios sugerem sinal antidepressivo, insuficiente para estabelecer tratamento clínico."
+    },
+    {
+      "title": "Moxaterapia para apresentação fetal pélvica",
+      "article": "moxaterapia",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "moderada",
+      "levelLabel": "Evidência moderada",
+      "summary": "Revisões indicam redução da apresentação não cefálica ao nascimento em contextos específicos, sem demonstração clara de redução de cesarianas."
+    },
+    {
+      "title": "Moxaterapia para osteoartrite de joelho",
+      "article": "moxaterapia",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "limitada",
+      "levelLabel": "Evidência limitada",
+      "summary": "Resultados sugerem possível melhora de dor e função, porém com heterogeneidade e limitações metodológicas."
+    },
+    {
+      "title": "Massagem com pedras quentes para dor lombar",
+      "article": "massagem-pedras-quentes",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "preliminar",
+      "levelLabel": "Evidência preliminar",
+      "summary": "Existe sinal clínico direto em protocolo específico, ainda sem base suficiente para generalizar superioridade da técnica."
+    },
+    {
+      "title": "Homeopatia para tratar doenças",
+      "article": "homeopatia",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "insuficiente",
+      "levelLabel": "Sem evidência suficiente",
+      "summary": "A literatura clínica não sustenta eficácia específica de preparados homeopáticos além de efeitos contextuais/placebo para doenças em geral."
+    },
+    {
+      "title": "Litoterapia para tratar doenças",
+      "article": "litoterapia",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "insuficiente",
+      "levelLabel": "Sem evidência suficiente",
+      "summary": "Não há evidência clínica robusta de efeitos terapêuticos específicos atribuíveis a cristais ou pedras."
+    },
+    {
+      "title": "Reiki para desfechos clínicos específicos",
+      "article": "reiki",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "limitada",
+      "levelLabel": "Evidência limitada",
+      "summary": "Há estudos de baixa certeza para alguns desfechos subjetivos; mecanismos energéticos específicos não foram demonstrados."
+    },
+    {
+      "title": "Acupuntura para algumas condições dolorosas",
+      "article": "acupuntura",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "moderada",
+      "levelLabel": "Evidência moderada em indicações específicas",
+      "summary": "O benefício varia por condição e comparador; não é correto generalizar eficácia para qualquer doença."
+    },
+    {
+      "title": "Fitoterapia em indicações específicas",
+      "article": "fitoterapia",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "variavel",
+      "levelLabel": "Evidência variável",
+      "summary": "A evidência depende da planta, extrato, dose, padronização e indicação. Fitoterapia não constitui uma única intervenção."
+    },
+    {
+      "title": "Aromaterapia para ansiedade e conforto",
+      "article": "aromaterapia",
+      "category": "saude-terapias-reabilitacao",
+      "type": "terapia",
+      "level": "limitada",
+      "levelLabel": "Evidência limitada",
+      "summary": "Alguns estudos sugerem melhora de desfechos subjetivos, mas heterogeneidade e risco de viés limitam conclusões fortes."
+    },
+    {
+      "title": "Cannabinoides para dor crônica",
+      "article": "cannabis-sativa",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "moderada",
+      "levelLabel": "Benefício pequeno em formulações específicas",
+      "summary": "Algumas formulações THC/CBD podem reduzir discretamente a dor, com aumento de eventos adversos; CBD isolado não demonstra benefício consistente."
+    },
+    {
+      "title": "Rótulo comercial indica/sativa para prever efeitos",
+      "article": "cannabis-indica",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não estabelecido",
+      "summary": "Genética e química mostram que o rótulo comercial isolado não prediz de forma confiável composição ou efeitos."
+    },
+    {
+      "title": "CBD para ansiedade",
+      "article": "cbd",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "preliminar",
+      "levelLabel": "Promissora / inconclusiva",
+      "summary": "Há resultados experimentais e clínicos iniciais, mas ainda não sustentam recomendação ampla."
+    },
+    {
+      "title": "CBD isolado para dor crônica",
+      "article": "cbd",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "insuficiente",
+      "levelLabel": "Evidência insuficiente",
+      "summary": "A evidência disponível não sustenta generalização de eficácia analgésica do CBD isolado."
+    },
+    {
+      "title": "TCC para transtornos de ansiedade e depressão",
+      "article": "terapia-cognitivo-comportamental",
+      "category": "psicologia-saude-mental",
+      "type": "psicoterapia",
+      "level": "consistente",
+      "levelLabel": "Evidência consistente em indicações específicas",
+      "summary": "A TCC possui ampla base de ensaios e revisões para diferentes transtornos, com eficácia variando conforme condição e protocolo."
+    },
+    {
+      "title": "Astrologia para prever traços ou eventos",
+      "article": "astrologia",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não demonstrado",
+      "summary": "Testes controlados não sustentam capacidade preditiva geral dos mapas astrológicos para traços ou eventos."
+    },
+    {
+      "title": "Numerologia para prever personalidade ou futuro",
+      "article": "numerologia",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não demonstrado",
+      "summary": "Não há evidência científica robusta de poder preditivo específico de sistemas numerológicos."
+    },
+    {
+      "title": "Vibrações energéticas como mecanismo biomédico",
+      "article": "vibracoes-estados-vibracionais",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não demonstrado cientificamente",
+      "summary": "Termos físicos como frequência e vibração não validam, por si, modelos espirituais de energia como mecanismos biomédicos."
+    }
+  ]
+}

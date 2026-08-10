@@ -663,3 +663,36 @@ A página apresenta Tourette como condição do neurodesenvolvimento em leitura 
 ## Síndrome de Down
 
 Página `artigos/sindrome-de-down.html` adicionada em agosto de 2026, com leitura progressiva, genética, diagnóstico, desenvolvimento, condições associadas, acompanhamento ao longo da vida, Alzheimer, intervenções, pesquisa 2024–2026, bioética e referências verificáveis.
+
+
+## Rede de conhecimento (2026-08-10)
+
+A navegação editorial possui duas camadas:
+
+1. cada artigo tem exatamente uma categoria principal;
+2. tags, relações e trilhas conectam conteúdos transversalmente sem duplicar categorias.
+
+Fonte central de metadados:
+
+```text
+src/data/content-index.json
+```
+
+Ferramentas derivadas desses dados:
+
+```text
+busca.html       pesquisa por texto, categoria e tipo
+tags.html        navegação transversal por tags
+trilhas.html     percursos editoriais ordenados
+evidencias.html  explorador de alegações por nível de evidência
+glossario.html   conceitos recorrentes de leitura científica
+```
+
+Dados complementares:
+
+```text
+src/data/evidence-index.json
+src/data/glossary.json
+```
+
+Os componentes opcionais de rede nos artigos são carregados por `src/scripts/content-network.js`. O conteúdo principal e a navegação por categorias permanecem funcionais sem JavaScript.
