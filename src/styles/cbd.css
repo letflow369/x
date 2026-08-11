@@ -133,7 +133,7 @@
 
 .plate-labels text {
   font-family: "Inter", sans-serif;
-  font-size: 11px;
+  font-size: var(--font-size-micro);
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -431,7 +431,7 @@
 .cbd-molecule .atom--oxygen { fill: #a26758; }
 .cbd-molecule text { font-family: var(--font-interface); font-weight: 700; fill: #334239; }
 .cbd-molecule .formula { font-size: 18px; letter-spacing: 1px; }
-.cbd-molecule .label { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+.cbd-molecule .label { font-size: var(--font-size-micro); letter-spacing: 1px; text-transform: uppercase; }
 
 .cbd-article-footer { --substance-content-gutter: 2.3rem; }
 

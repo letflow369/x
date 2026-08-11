@@ -265,6 +265,6 @@
   .lsd-context__not { text-align: center; }
   .lsd-hero__visual { min-height: 17rem; }
   .lsd-network { width: 18rem; }
-  .lsd-network__node { width: 4.2rem; min-height: 4.2rem; font-size: 0.64rem; }
+  .lsd-network__node { width: 4.2rem; min-height: 4.2rem; font-size: var(--font-size-micro); }
   .lsd-timeline article { padding-left: 3.9rem; }
 }

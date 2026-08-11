@@ -147,7 +147,7 @@
 
 .topic-card__pending small {
   padding: 0.16rem 0.4rem;
-  font-size: 0.66rem;
+  font-size: var(--font-size-micro);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;

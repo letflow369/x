@@ -97,6 +97,23 @@ npm run sync:structured
 npm run audit:structured-content
 ```
 
+## QA de interface e compartilhamento
+
+O build agora pré-renderiza **Busca, Evidências, Tags e Glossário** antes de executar JavaScript. Isso mantém conteúdo navegável mesmo se os scripts falharem e transforma o JavaScript em progressive enhancement.
+
+O mesmo build normaliza Open Graph e Twitter/X para todas as páginas indexáveis, com fallback institucional de imagem social.
+
+Comandos:
+
+```bash
+npm run build
+npm run audit:header
+npm run audit:ui
+npm run audit:social
+```
+
+`audit:ui` também impede saltos de headings, `<nav>` sem nome acessível, retorno do scroll horizontal oculto no menu mobile e microtipografia abaixo do piso definido pelo projeto.
+
 ## Publicação
 
 ```bash

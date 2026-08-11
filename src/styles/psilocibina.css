@@ -188,7 +188,7 @@
 .psilocybin-node small {
   display: block;
   margin-top: 0.2rem;
-  font-size: 0.66rem;
+  font-size: var(--font-size-micro);
   font-weight: 500;
   color: var(--color-text-muted);
 }
@@ -238,7 +238,7 @@
   display: block;
   margin-bottom: 0.55rem;
   font-family: var(--font-interface);
-  font-size: 0.68rem;
+  font-size: var(--font-size-micro);
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -350,7 +350,7 @@
 .psilocybin-study-highlight p { margin-bottom: 0; }
 .psilocybin-study-highlight dl { display: grid; gap: var(--space-3); margin: 0; }
 .psilocybin-study-highlight dl > div { padding: 0.85rem 1rem; background: rgb(15 20 19 / 60%); border: 0.0625rem solid rgb(255 255 255 / 7%); border-radius: var(--radius-small); }
-.psilocybin-study-highlight dt { font-family: var(--font-interface); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--color-text-muted); }
+.psilocybin-study-highlight dt { font-family: var(--font-interface); font-size: var(--font-size-micro); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--color-text-muted); }
 .psilocybin-study-highlight dd { margin: 0.25rem 0 0; font-weight: 700; color: var(--psilo-sage); }
 
 .psilocybin-method-notes { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
@@ -420,7 +420,7 @@
 }
 
 .psilocybin-legal-card > div { display: grid; gap: 0.25rem; }
-.psilocybin-legal-card > div span { font-family: var(--font-interface); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--integrative-risk); }
+.psilocybin-legal-card > div span { font-family: var(--font-interface); font-size: var(--font-size-micro); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--integrative-risk); }
 .psilocybin-legal-card strong { font-size: 1.15rem; }
 .psilocybin-legal-card small { color: var(--color-text-muted); }
 .psilocybin-legal-card p { margin: 0; }
@@ -484,7 +484,7 @@
   .psilocybin-hero__visual { min-height: 19rem; }
   .psilocybin-orbit { width: min(100%, 18rem); }
   .psilocybin-node { width: 6rem; min-height: 3.8rem; font-size: 0.82rem; }
-  .psilocybin-node small { font-size: 0.58rem; }
+  .psilocybin-node small { font-size: var(--font-size-micro); }
   .psilocybin-node--metabolite { right: -0.45rem; }
   .psilocybin-node--networks { left: -0.45rem; }
   .psilocybin-equation,

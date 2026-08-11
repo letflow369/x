@@ -292,7 +292,7 @@
 .odd-associated-grid { display: grid; gap: .75rem; }
 .odd-associated-grid details { border: 1px solid rgba(255,255,255,.09); border-radius: var(--radius-medium); background: rgba(255,255,255,.02); }
 .odd-associated-grid summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; padding: .9rem 1rem; font-family: var(--font-subtitle); font-size: 1.05rem; }
-.odd-associated-grid summary span { color: var(--odd-green); font-family: var(--font-interface); font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; }
+.odd-associated-grid summary span { color: var(--odd-green); font-family: var(--font-interface); font-size: var(--font-size-micro); text-transform: uppercase; letter-spacing: .06em; }
 .odd-associated-grid details p { padding: 0 1rem 1rem; margin: 0; }
 
 .odd-no-test { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75rem; margin-bottom: 1.5rem; }

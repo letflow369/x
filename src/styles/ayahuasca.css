@@ -166,7 +166,7 @@
 }
 
 .ayahuasca-status dd { margin: 0; }
-.ayahuasca-status .integrative-level { font-size: 0.64rem; }
+.ayahuasca-status .integrative-level { font-size: var(--font-size-micro); }
 
 .ayahuasca-hero__notice {
   max-width: 47rem;
@@ -450,7 +450,7 @@
 .ayahuasca-ref-tags span {
   padding: 0.22rem 0.5rem;
   font-family: var(--font-interface);
-  font-size: 0.62rem;
+  font-size: var(--font-size-micro);
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #c9c2a8;

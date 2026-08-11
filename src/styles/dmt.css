@@ -256,7 +256,7 @@
 
   .dmt-hero__visual { min-height: 17rem; }
   .dmt-molecule { width: 18rem; }
-  .dmt-molecule__node { width: 4.1rem; min-height: 4.1rem; font-size: 0.65rem; }
+  .dmt-molecule__node { width: 4.1rem; min-height: 4.1rem; font-size: var(--font-size-micro); }
 }
 
 @media (prefers-reduced-motion: reduce) {

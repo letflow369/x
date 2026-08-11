@@ -62,7 +62,7 @@
 
 .botanical-hero-plate .plate-labels text {
   font-family: "Inter", sans-serif;
-  font-size: 11px;
+  font-size: var(--font-size-micro);
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
