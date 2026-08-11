@@ -1,4 +1,29 @@
 .psilocybin-article {
+  --substance-bg: var(--psilo-ink);
+  --substance-surface: #151c1a;
+  --substance-line: rgb(143 183 168 / 16%);
+  --substance-accent: var(--psilo-forest);
+  --substance-accent-secondary: var(--psilo-violet);
+  --substance-highlight: var(--psilo-copper);
+  --substance-positive: var(--integrative-strong);
+  --substance-risk: var(--integrative-risk);
+  --substance-muted: var(--color-text-muted);
+  --substance-content-width: 75rem;
+  --substance-content-gutter: 0;
+  --substance-hero-gutter: 0;
+  --substance-hero-columns: minmax(0,1.25fr) minmax(18rem,.75fr);
+  --substance-hero-gap: clamp(2rem,6vw,5rem);
+  --substance-hero-padding-block: 0;
+  --substance-title-size: clamp(3.2rem,8vw,6.8rem);
+  --substance-title-font: var(--font-display);
+  --substance-title-max: 13ch;
+  --substance-title-line-height: .94;
+  --substance-title-letter-spacing: -.04em;
+  --substance-subtitle-color: var(--psilo-sage);
+  --substance-subtitle-max: 48rem;
+  --substance-subtitle-line-height: 1.35;
+  --substance-section-border-top: 0;
+
   --integrative-accent: #8fb7a8;
   --integrative-accent-soft: rgb(143 183 168 / 13%);
   --integrative-strong: #9fc89f;
@@ -33,13 +58,7 @@
   border-block: 0.0625rem solid rgb(143 183 168 / 16%);
 }
 
-.psilocybin-hero__inner,
-.psilocybin-section__inner,
-.psilocybin-boundaries .psilocybin-section__inner,
-.psilocybin-quick .psilocybin-section__inner {
-  width: min(100%, 75rem);
-  margin-inline: auto;
-}
+
 
 .psilocybin-hero__inner {
   position: relative;
@@ -50,23 +69,9 @@
   align-items: center;
 }
 
-.psilocybin-hero h1 {
-  max-width: 13ch;
-  margin: var(--space-2) 0 var(--space-3);
-  font-family: var(--font-display, "Marcellus", serif);
-  font-size: clamp(3.2rem, 8vw, 6.8rem);
-  line-height: 0.94;
-  letter-spacing: -0.04em;
-}
 
-.psilocybin-hero__subtitle {
-  max-width: 48rem;
-  margin-bottom: var(--space-4);
-  font-family: "Spectral", serif;
-  font-size: clamp(1.3rem, 2.6vw, 2rem);
-  line-height: 1.35;
-  color: var(--psilo-sage);
-}
+
+
 
 .psilocybin-hero__intro {
   max-width: 47rem;
@@ -489,7 +494,7 @@
 }
 
 @media (max-width: 30rem) {
-  .psilocybin-hero h1 { font-size: clamp(2.75rem, 15vw, 4.3rem); }
+  
   .psilocybin-hero__visual { padding: 0.9rem; }
   .psilocybin-orbit { width: 15rem; }
   .psilocybin-node { width: 5.3rem; min-height: 3.4rem; padding: 0.45rem; font-size: 0.73rem; }
@@ -499,4 +504,9 @@
   .psilocybin-article *,
   .psilocybin-article *::before,
   .psilocybin-article *::after { scroll-behavior: auto; transition-duration: 0.001ms; animation-duration: 0.001ms; }
+}
+
+/* Ajuste tipográfico móvel preservado após migração para o Design System. */
+@media (max-width: 30rem) {
+  .psilocybin-hero h1 { font-size: clamp(2.75rem, 15vw, 4.3rem); }
 }

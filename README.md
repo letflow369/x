@@ -10,12 +10,13 @@ O site organiza os artigos em seis categorias principais. Cada artigo possui uma
 Desenvolvimento, aprendizagem e neurodiversidade ... 8 páginas
 Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
-Substâncias, farmacologia e consciência ............ 5 páginas
+Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 10 páginas
 Religiões e espiritualidade ........................ 11 páginas
+Total ............................................... 63 artigos
 ```
 
-A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica e CBD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
+A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
 
 ## Estrutura
 
@@ -52,6 +53,30 @@ Os scripts são modulares e específicos de cada página. Eles controlam recurso
 como linhas do tempo, acordeões, cópia de referências e navegação contextual.
 Nenhum dado é enviado para servidor. O projeto não implementa controles
 específicos de acessibilidade de leitura.
+
+## Design System v1
+
+A família de dossiês de substâncias usa componentes editoriais compartilhados em **DMT, LSD, CBD, Changa, Ayahuasca, Psilocibina, Cannabis sativa e Cannabis indica**.
+
+Arquivos centrais:
+
+```text
+src/styles/components/substance-dossier.css
+src/styles/components/cannabis-botanical.css
+src/styles/tokens.css
+docs/design-system-v1.md
+scripts/audit-design-system.mjs
+```
+
+O componente compartilhado concentra shell, hero, seções, grids, cards, estados epistemológicos, fluxo e footer. Os CSS temáticos ficam responsáveis principalmente por paleta, arte e componentes exclusivos do assunto.
+
+Auditoria específica:
+
+```bash
+npm run audit:design
+```
+
+O CMS ainda não foi introduzido. A prioridade desta etapa é separar apresentação compartilhada do conteúdo antes de migrar artigos para Markdown/JSON estruturado.
 
 ## Publicação
 
@@ -700,45 +725,3 @@ Os componentes opcionais de rede nos artigos são carregados por `src/scripts/co
 ## Padrão editorial para substâncias e psicodélicos (2026-08-10)
 
 O modelo oficial para DMT, LSD, psilocibina, ayahuasca, CBD, Cannabis, Changa e temas relacionados está documentado em `docs/modelo-substancias-psicodelicos.md`. A estrutura-base é: definição → história → funcionamento → evidências → riscos → controvérsias → importância → fontes, com separação explícita entre evidência direta, evidência indireta, hipótese, relato subjetivo e alegação sem comprovação.
-
-## Arquitetura de build e QA — 2026-08-11
-
-O projeto continua entregando HTML/CSS/JavaScript nativos, mas agora possui uma etapa de build em Node.js para centralizar componentes e reduzir regressões.
-
-### Fonte de verdade compartilhada
-
-```text
-src/templates/header.html
-src/templates/footer.html
-src/data/site-config.json
-src/data/content-index.json
-src/data/evidence-index.json
-```
-
-O comando `npm run build` gera `dist/`, padroniza header/footer, cria `BreadcrumbList` em JSON-LD, adiciona `WebSite`/`Organization` na home e regenera o sitemap preservando datas verificáveis.
-
-### QA
-
-```bash
-npm run sync:data
-npm run build
-npm run audit
-npm run audit:dist
-npm run audit:editorial
-npm run audit:structured
-npm run test:e2e
-npm run lighthouse
-```
-
-O workflow `.github/workflows/pages.yml` executa QA antes do deploy no GitHub Pages.
-
-Versões verificadas em 2026-08-11 e adotadas no projeto:
-
-- Node.js 24 LTS para CI;
-- Playwright 1.62.1;
-- @axe-core/playwright 4.12.1;
-- Lighthouse CI 0.15.1.
-
-### Analytics
-
-A infraestrutura está preparada, porém desativada até ser fornecido um ID real do Google Analytics. Veja `docs/analytics-search-console.md`.

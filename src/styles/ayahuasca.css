@@ -1,4 +1,26 @@
 .ayahuasca-article {
+  --substance-bg: var(--color-background);
+  --substance-surface: var(--ayahuasca-panel);
+  --substance-line: rgb(125 169 139 / 18%);
+  --substance-accent: var(--ayahuasca-moss);
+  --substance-accent-secondary: var(--ayahuasca-copper);
+  --substance-highlight: var(--ayahuasca-copper);
+  --substance-positive: var(--ayahuasca-moss);
+  --substance-risk: #d08a7e;
+  --substance-muted: var(--color-text-muted);
+  --substance-content-width: 78rem;
+  --substance-hero-columns: minmax(0,1.25fr) minmax(18rem,.75fr);
+  --substance-hero-gap: clamp(2rem,6vw,5rem);
+  --substance-hero-padding-block: clamp(4.5rem,10vw,8rem);
+  --substance-hero-min-height: min(49rem,82vh);
+  --substance-title-size: clamp(3.25rem,10vw,7.75rem);
+  --substance-title-max: none;
+  --substance-title-line-height: .92;
+  --substance-title-letter-spacing: -.035em;
+  --substance-title-margin: 0;
+  --substance-subtitle-color: var(--ayahuasca-cream);
+  --substance-section-border-top: 0;
+
   --integrative-accent: #7da98b;
   --integrative-accent-soft: rgb(78 119 91 / 18%);
   --ayahuasca-forest: #294a37;
@@ -86,20 +108,9 @@
 .ayahuasca-vine::before { inset: 12%; }
 .ayahuasca-vine::after { inset: 27%; }
 
-.ayahuasca-hero__inner,
-.ayahuasca-section__inner {
-  width: min(100% - 2rem, 78rem);
-  margin-inline: auto;
-}
 
-.ayahuasca-hero__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: center;
-  min-height: min(49rem, 82vh);
-  padding-block: clamp(4.5rem, 10vw, 8rem);
-}
+
+
 
 .ayahuasca-hero__content { position: relative; z-index: 1; }
 
@@ -451,7 +462,7 @@
 .ayahuasca-article .integrative-reference-grid a { overflow-wrap: anywhere; }
 
 @media (max-width: 72rem) {
-  .ayahuasca-hero__inner { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+  
   .ayahuasca-hero__visual { width: min(88vw, 27rem); justify-self: center; margin-top: var(--space-4); }
   .ayahuasca-status { max-width: 48rem; }
 }
@@ -465,9 +476,8 @@
 }
 
 @media (max-width: 44rem) {
-  .ayahuasca-hero__inner,
-  .ayahuasca-section__inner { width: min(100% - 1.25rem, 78rem); }
-  .ayahuasca-hero__inner { padding-block: 3.5rem 4.5rem; }
+  
+  
   .ayahuasca-status,
   .ayahuasca-known-unknown,
   .ayahuasca-experience,
@@ -486,4 +496,15 @@
   .ayahuasca-article *,
   .ayahuasca-article *::before,
   .ayahuasca-article *::after { scroll-behavior: auto; transition-duration: 0.001ms; animation-duration: 0.001ms; animation-iteration-count: 1; }
+}
+
+/* Ajustes responsivos preservados após migração para o Design System. */
+@media (max-width: 72rem) {
+  .ayahuasca-hero__inner { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+}
+
+@media (max-width: 44rem) {
+  .ayahuasca-hero__inner,
+  .ayahuasca-section__inner { width: min(100% - 1.25rem, 78rem); }
+  .ayahuasca-hero__inner { padding-block: 3.5rem 4.5rem; }
 }

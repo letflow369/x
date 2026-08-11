@@ -1,3 +1,4 @@
+/* Tema DMT — usa os componentes compartilhados de substance-dossier.css. */
 :root {
   --dmt-ink: #0d1117;
   --dmt-surface: #121a22;
@@ -12,6 +13,30 @@
 }
 
 .dmt-article {
+  --substance-bg: var(--dmt-ink);
+  --substance-surface: var(--dmt-surface);
+  --substance-surface-soft: var(--dmt-surface-soft);
+  --substance-line: var(--dmt-line);
+  --substance-accent: var(--dmt-cyan);
+  --substance-accent-secondary: var(--dmt-blue);
+  --substance-highlight: var(--dmt-amber);
+  --substance-positive: var(--dmt-green);
+  --substance-risk: var(--dmt-red);
+  --substance-muted: var(--dmt-muted);
+  --substance-hero-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  --substance-hero-padding-block: clamp(4rem, 9vw, 7rem);
+  --substance-hero-min-height: 38rem;
+  --substance-title-max: 14ch;
+  --substance-title-size: clamp(2.55rem, 7vw, 5.4rem);
+  --substance-title-margin: 0.45rem 0 1rem;
+  --substance-subtitle-max: 36ch;
+  --substance-subtitle-line-height: 1.22;
+  --substance-subtitle-color: #dbe3e6;
+  --substance-soft-background: linear-gradient(180deg, rgb(18 26 34 / 70%), rgb(10 14 19 / 45%));
+  --substance-risk-background: linear-gradient(135deg, rgb(75 31 31 / 13%), rgb(18 22 27 / 70%));
+  --substance-card-background: rgb(255 255 255 / 2.8%);
+  --substance-card-radius: 1rem;
+
   background:
     radial-gradient(circle at 12% 8%, rgb(72 118 130 / 12%), transparent 32rem),
     radial-gradient(circle at 88% 16%, rgb(87 92 153 / 11%), transparent 30rem),
@@ -19,105 +44,42 @@
 }
 
 .dmt-hero {
-  position: relative;
-  overflow: hidden;
-  border-bottom: 1px solid var(--dmt-line);
   background: linear-gradient(145deg, rgb(10 15 20 / 98%), rgb(17 25 32 / 96%));
 }
 
 .dmt-hero::before,
 .dmt-hero::after {
   position: absolute;
-  content: "";
   width: 24rem;
   height: 24rem;
+  content: "";
+  pointer-events: none;
   border: 1px solid rgb(137 198 209 / 12%);
   border-radius: 50%;
-  pointer-events: none;
 }
 
 .dmt-hero::before { top: -12rem; right: -5rem; }
 .dmt-hero::after { bottom: -16rem; left: -7rem; }
 
-.dmt-hero__inner,
-.dmt-section__inner {
-  width: min(100% - 2rem, var(--content-width));
-  margin-inline: auto;
-}
-
-.dmt-hero__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
-  min-height: 38rem;
-  padding-block: clamp(4rem, 9vw, 7rem);
-}
-
-.dmt-hero h1 {
-  max-width: 14ch;
-  margin-block: .45rem 1rem;
-  font-size: clamp(2.55rem, 7vw, 5.4rem);
-  line-height: .96;
-}
-
-.dmt-hero__subtitle {
-  max-width: 36ch;
-  margin: 0 0 1.25rem;
-  font-family: var(--font-reading);
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
-  line-height: 1.22;
-  color: #dbe3e6;
-}
-
-.dmt-hero__intro {
-  max-width: 68ch;
-  color: var(--dmt-muted);
-}
-
-.dmt-status {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .7rem;
-  margin: 1.5rem 0;
-}
-
-.dmt-status > div {
-  padding: .9rem 1rem;
-  border: 1px solid var(--dmt-line);
-  border-radius: .85rem;
-  background: rgb(255 255 255 / 3%);
-}
-
-.dmt-status dt {
-  margin-bottom: .45rem;
-  font-family: var(--font-interface);
-  font-size: .76rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--dmt-muted);
-}
-
-.dmt-status dd { margin: 0; }
+.dmt-status { gap: 0.7rem; margin-bottom: 1.5rem; }
 
 .dmt-hero__notice {
   max-width: 62rem;
   margin-top: 1rem;
-  padding: .9rem 1rem;
-  border-left: .2rem solid var(--dmt-amber);
-  background: rgb(214 170 105 / 7%);
-  color: var(--dmt-muted);
+  padding: 0.9rem 1rem;
 }
 
-.dmt-hero__notice p { margin: .25rem 0 0; }
+.dmt-hero__notice p { margin: 0.25rem 0 0; }
 
 .dmt-hero__visual {
   position: relative;
   min-height: 28rem;
-  display: grid;
-  place-items: center;
 }
+
+.dmt-section .section-heading { max-width: 52rem; }
+.dmt-flow__node { min-width: 8rem; font-size: 0.86rem; }
+.dmt-flow__arrow { color: var(--dmt-cyan); }
+.dmt-epistemic-key p { font-size: 0.9rem; }
 
 .dmt-molecule {
   position: relative;
@@ -164,9 +126,9 @@
 
 .dmt-molecule__core span {
   display: block;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   font-family: var(--font-interface);
-  font-size: .78rem;
+  font-size: 0.78rem;
   color: var(--dmt-cyan);
 }
 
@@ -177,13 +139,13 @@
   min-height: 4.75rem;
   display: grid;
   place-content: center;
-  padding: .4rem;
+  padding: 0.4rem;
   text-align: center;
   border: 1px solid var(--dmt-line);
   border-radius: 50%;
   background: var(--dmt-surface);
   font-family: var(--font-interface);
-  font-size: .72rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: #dce6e8;
 }
@@ -194,123 +156,10 @@
 .dmt-molecule__node--d { bottom: 15%; left: 5%; }
 .dmt-molecule__node--e { top: 23%; left: 2%; }
 
-.dmt-quick,
-.dmt-section {
-  padding-block: clamp(3.5rem, 7vw, 6rem);
-}
-
-.dmt-section { border-top: 1px solid var(--dmt-line); }
-
-.dmt-section--soft {
-  background: linear-gradient(180deg, rgb(18 26 34 / 70%), rgb(10 14 19 / 45%));
-}
-
-.dmt-section--risk {
-  background: linear-gradient(135deg, rgb(75 31 31 / 13%), rgb(18 22 27 / 70%));
-}
-
-.dmt-section .section-heading { max-width: 52rem; }
-
-.dmt-summary-grid,
-.dmt-card-grid,
-.dmt-brain-grid,
-.dmt-importance-grid,
-.dmt-knowledge-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.dmt-summary-grid article,
-.dmt-card,
-.dmt-brain-grid article,
-.dmt-importance-grid article,
-.dmt-knowledge-grid article {
-  padding: 1.15rem;
-  border: 1px solid var(--dmt-line);
-  border-radius: 1rem;
-  background: rgb(255 255 255 / 2.8%);
-}
-
-.dmt-summary-grid span,
-.dmt-card__label {
-  display: block;
-  margin-bottom: .4rem;
-  font-family: var(--font-interface);
-  font-size: .74rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--dmt-cyan);
-}
-
-.dmt-summary-grid strong,
-.dmt-card h3,
-.dmt-brain-grid h3,
-.dmt-importance-grid h3,
-.dmt-knowledge-grid h3 { color: #e4ecee; }
-
-.dmt-summary-grid p,
-.dmt-card p,
-.dmt-brain-grid p,
-.dmt-importance-grid p,
-.dmt-knowledge-grid p { color: var(--dmt-muted); }
-
-.dmt-epistemic-key {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: .7rem;
-  margin: 1.75rem 0 0;
-}
-
-.dmt-epistemic-key > div {
-  padding: .85rem;
-  border-radius: .75rem;
-  border: 1px solid var(--dmt-line);
-  background: rgb(255 255 255 / 2%);
-}
-
-.dmt-epistemic-key strong { display: block; margin-bottom: .2rem; }
-.dmt-epistemic-key p { margin: 0; font-size: .9rem; color: var(--dmt-muted); }
-
-.dmt-mark--established strong { color: var(--dmt-green); }
-.dmt-mark--preliminary strong { color: var(--dmt-amber); }
-.dmt-mark--hypothesis strong { color: var(--dmt-blue); }
-.dmt-mark--unsupported strong { color: var(--dmt-red); }
-
-.dmt-flow {
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-  gap: .65rem;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem 0;
-  padding: 1.25rem;
-  overflow-x: auto;
-  border: 1px solid var(--dmt-line);
-  border-radius: 1rem;
-  background: rgb(255 255 255 / 2.4%);
-}
-
-.dmt-flow__node {
-  min-width: 8rem;
-  padding: .8rem 1rem;
-  border: 1px solid rgb(137 198 209 / 26%);
-  border-radius: .8rem;
-  background: var(--dmt-surface);
-  text-align: center;
-  font-family: var(--font-interface);
-  font-size: .86rem;
-  font-weight: 700;
-}
-
-.dmt-flow__arrow { color: var(--dmt-cyan); }
-
 .dmt-subjective-spectrum {
   display: grid;
   grid-template-columns: repeat(6, minmax(8rem, 1fr));
-  gap: .45rem;
+  gap: 0.45rem;
   margin: 1.5rem 0;
   overflow-x: auto;
 }
@@ -319,36 +168,21 @@
   min-height: 6rem;
   display: grid;
   place-items: center;
-  padding: .7rem;
+  padding: 0.7rem;
   text-align: center;
   border: 1px solid var(--dmt-line);
   background: linear-gradient(180deg, rgb(138 169 214 / 8%), rgb(137 198 209 / 3%));
   font-family: var(--font-interface);
-  font-size: .84rem;
+  font-size: 0.84rem;
   font-weight: 600;
 }
 
-.dmt-two-column {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.dmt-two-column > article {
-  padding: 1.25rem;
-  border: 1px solid var(--dmt-line);
-  border-radius: 1rem;
-  background: rgb(255 255 255 / 2.4%);
-}
-
 .dmt-two-column h3 { margin-top: 0; }
-
 .dmt-myth-table td:last-child { min-width: 12rem; }
 
 .dmt-study-highlight {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, .8fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
   gap: 1.5rem;
   margin: 1.5rem 0;
   padding: clamp(1.2rem, 3vw, 2rem);
@@ -360,13 +194,13 @@
 .dmt-study-stats {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .7rem;
+  gap: 0.7rem;
 }
 
 .dmt-study-stats div {
   padding: 1rem;
   border: 1px solid var(--dmt-line);
-  border-radius: .85rem;
+  border-radius: 0.85rem;
   background: rgb(13 17 23 / 70%);
 }
 
@@ -377,45 +211,39 @@
   color: #edf3f4;
 }
 
-.dmt-study-stats span { color: var(--dmt-muted); font-size: .85rem; }
+.dmt-study-stats span {
+  font-size: 0.85rem;
+  color: var(--dmt-muted);
+}
 
-.dmt-compare-wrap { overflow-x: auto; margin-top: 1.5rem; }
 .dmt-compare-wrap table { min-width: 48rem; }
 
 .dmt-evidence-card__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: .45rem;
-  margin-bottom: .7rem;
+  gap: 0.45rem;
+  margin-bottom: 0.7rem;
 }
 
 .dmt-evidence-card p:last-of-type { margin-bottom: 0; }
 
-.dmt-review-date {
-  margin-top: 1.25rem;
-  color: var(--dmt-muted);
-  font-size: .92rem;
-}
-
 .dmt-article-footer {
-  width: min(100% - 2rem, var(--reading-width));
-  margin-inline: auto;
-  padding-block: 3rem 5rem;
+  --substance-content-width: var(--reading-width);
 }
 
 @media (max-width: 68rem) {
-  .dmt-hero__inner { grid-template-columns: 1fr; min-height: auto; }
+  .dmt-article { --substance-hero-min-height: auto; }
+  .dmt-hero__inner { grid-template-columns: 1fr; }
   .dmt-hero__visual { min-height: 20rem; }
   .dmt-summary-grid,
   .dmt-card-grid,
   .dmt-brain-grid,
   .dmt-importance-grid,
-  .dmt-knowledge-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dmt-knowledge-grid,
   .dmt-epistemic-key { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 48rem) {
-  .dmt-status,
   .dmt-summary-grid,
   .dmt-card-grid,
   .dmt-brain-grid,
@@ -428,8 +256,7 @@
 
   .dmt-hero__visual { min-height: 17rem; }
   .dmt-molecule { width: 18rem; }
-  .dmt-molecule__node { width: 4.1rem; min-height: 4.1rem; font-size: .65rem; }
-  .dmt-flow { justify-content: start; }
+  .dmt-molecule__node { width: 4.1rem; min-height: 4.1rem; font-size: 0.65rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

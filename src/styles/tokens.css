@@ -20,6 +20,8 @@
   --font-subtitle: "Marcellus", Georgia, serif;
   --font-body: "Spectral", Georgia, serif;
   --font-interface: "Inter", Arial, sans-serif;
+  --font-display: var(--font-subtitle);
+  --font-reading: var(--font-body);
 
   --content-width: 72rem;
   --reading-width: 46rem;

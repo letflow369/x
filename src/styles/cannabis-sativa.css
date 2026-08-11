@@ -11,6 +11,32 @@
 }
 
 .sativa-article {
+  --substance-bg: var(--sativa-ink);
+  --substance-surface: var(--sativa-surface);
+  --substance-surface-soft: var(--sativa-surface-soft);
+  --substance-line: var(--sativa-line);
+  --substance-accent: var(--sativa-forest);
+  --substance-accent-secondary: var(--sativa-moss);
+  --substance-highlight: var(--sativa-copper);
+  --substance-positive: var(--sativa-sage);
+  --substance-risk: #d28c82;
+  --substance-muted: var(--color-text-muted);
+  --substance-content-width: 75rem;
+  --substance-content-gutter: 0;
+  --substance-hero-gutter: 0;
+  --substance-hero-columns: minmax(0,1.2fr) minmax(18rem,.8fr);
+  --substance-hero-gap: clamp(2rem,6vw,5rem);
+  --substance-hero-padding-block: 0;
+  --substance-title-size: clamp(3.1rem,7.4vw,6.5rem);
+  --substance-title-font: var(--font-display);
+  --substance-title-max: 13ch;
+  --substance-title-line-height: .96;
+  --substance-title-letter-spacing: -.045em;
+  --substance-subtitle-color: var(--sativa-sage);
+  --substance-subtitle-max: 46rem;
+  --substance-subtitle-line-height: 1.35;
+  --substance-section-border-top: 0;
+
   background: var(--sativa-ink);
   color: var(--color-text);
 }
@@ -35,43 +61,18 @@
   mask-image: linear-gradient(to bottom, rgb(0 0 0 / 72%), transparent 78%);
 }
 
-.sativa-hero__inner,
-.sativa-section__inner {
-  width: min(100%, 75rem);
-  margin-inline: auto;
-}
 
-.sativa-hero__inner {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: center;
-}
 
-.sativa-hero h1 {
-  max-width: 13ch;
-  margin: var(--space-2) 0 var(--space-3);
-  font-family: var(--font-display, "Marcellus", serif);
-  font-size: clamp(3.1rem, 7.4vw, 6.5rem);
-  line-height: 0.96;
-  letter-spacing: -0.045em;
-}
+
+
+
 
 .sativa-hero h1 em {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
 }
 
-.sativa-hero__subtitle {
-  max-width: 46rem;
-  margin-bottom: var(--space-4);
-  font-family: "Spectral", serif;
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
-  line-height: 1.35;
-  color: var(--sativa-sage);
-}
+
 
 .sativa-hero__intro {
   max-width: 49rem;
@@ -80,24 +81,9 @@
   color: var(--color-text-muted);
 }
 
-.sativa-domain-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-block: var(--space-4);
-}
 
-.sativa-domain-list span {
-  padding: 0.42rem 0.72rem;
-  font-family: var(--font-interface);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--sativa-sage);
-  background: rgb(64 106 76 / 13%);
-  border: 0.0625rem solid rgb(140 167 129 / 23%);
-  border-radius: 999px;
-}
+
+
 
 .sativa-hero__notice {
   max-width: 48rem;
@@ -115,59 +101,22 @@
 
 .sativa-hero__notice p { margin: 0.35rem 0 0; }
 
-.sativa-hero__plate {
-  align-self: stretch;
-  display: grid;
-  min-height: 30rem;
-  grid-template-rows: 1fr auto;
-  padding: clamp(1rem, 2.5vw, 1.6rem);
-  background: #dcd8ca;
-  border: 0.0625rem solid rgb(255 255 255 / 22%);
-  border-radius: 1.25rem;
-  box-shadow: 0 1.4rem 4rem rgb(0 0 0 / 28%);
-  transform: rotate(0.8deg);
-}
 
-.sativa-hero__plate svg {
-  width: 100%;
-  max-height: 31rem;
-  color: #263f2e;
-}
 
-.plate-lines path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.2;
-  stroke-linecap: round;
-}
 
-.plate-leaves ellipse {
-  fill: rgb(64 106 76 / 14%);
-  stroke: currentColor;
-  stroke-width: 1.5;
-}
 
-.plate-labels text {
-  font-family: "Inter", sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  fill: #4a5148;
-}
 
-.plate-nodes circle { fill: var(--sativa-copper); }
 
-.sativa-plate__caption {
-  display: grid;
-  gap: 0.2rem;
-  padding-top: 0.9rem;
-  border-top: 0.0625rem solid rgb(38 63 46 / 22%);
-  color: #2b342d;
-}
 
-.sativa-plate__caption strong { font-family: "Marcellus", serif; }
-.sativa-plate__caption span { font-family: "Inter", sans-serif; font-size: 0.76rem; }
+
+
+
+
+
+
+
+
+
 
 .sativa-quick,
 .sativa-boundaries {
@@ -327,8 +276,8 @@
 }
 
 @media (max-width: 62rem) {
-  .sativa-hero__inner { grid-template-columns: 1fr; }
-  .sativa-hero__plate { min-height: auto; max-width: 34rem; }
+  
+  
   .sativa-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sativa-risk-grid,
   .sativa-importance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -344,13 +293,13 @@
   .sativa-importance-grid,
   .sativa-better-labels { grid-template-columns: 1fr; }
 
-  .sativa-hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
-  .sativa-hero__plate { transform: none; }
+  
+  
   .sativa-table-wrap table { min-width: 34rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sativa-hero__plate { transform: none; }
+  
 }
 
 /* Componentes específicos da página Cannabis sativa. */
@@ -641,4 +590,12 @@
   .sativa-formula { align-items: stretch; }
   .sativa-formula b { flex: 1 1 45%; text-align: center; }
   .sativa-formula i { display: none; }
+}
+
+/* Ajustes responsivos preservados após extração do componente botânico. */
+@media (max-width: 62rem) {
+  .sativa-hero__inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 44rem) {
+  .sativa-hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
 }

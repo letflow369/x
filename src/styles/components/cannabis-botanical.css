@@ -1,0 +1,110 @@
+/* Let Flow 369 — Design System v1
+ * Shared botanical presentation for Cannabis sativa / Cannabis indica dossiers.
+ */
+
+.cannabis-botanical {
+  --botanical-sage: var(--substance-positive);
+  --botanical-copper: var(--substance-highlight);
+  --botanical-plate-background: #dcd8ca;
+  --botanical-plate-ink: #263f2e;
+}
+
+.botanical-domain-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-block: var(--space-4);
+}
+
+.botanical-domain-list span {
+  padding: 0.42rem 0.72rem;
+  border: 0.0625rem solid color-mix(in srgb, var(--botanical-sage) 23%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--substance-accent) 13%, transparent);
+  font-family: var(--font-interface);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--botanical-sage);
+}
+
+.botanical-hero-plate {
+  align-self: stretch;
+  display: grid;
+  min-height: 30rem;
+  grid-template-rows: 1fr auto;
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  border: 0.0625rem solid rgb(255 255 255 / 22%);
+  border-radius: 1.25rem;
+  background: var(--botanical-plate-background);
+  box-shadow: 0 1.4rem 4rem rgb(0 0 0 / 28%);
+  transform: rotate(0.8deg);
+}
+
+.botanical-hero-plate svg {
+  width: 100%;
+  max-height: 31rem;
+  color: var(--botanical-plate-ink);
+}
+
+.botanical-hero-plate .plate-lines path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.botanical-hero-plate .plate-leaves ellipse {
+  fill: color-mix(in srgb, var(--substance-accent) 14%, transparent);
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.botanical-hero-plate .plate-labels text {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  fill: #4a5148;
+}
+
+.botanical-hero-plate .plate-nodes circle {
+  fill: var(--botanical-copper);
+}
+
+.botanical-plate-caption {
+  display: grid;
+  gap: 0.2rem;
+  padding-top: 0.9rem;
+  border-top: 0.0625rem solid rgb(38 63 46 / 22%);
+  color: #2b342d;
+}
+
+.botanical-plate-caption strong {
+  font-family: "Marcellus", serif;
+}
+
+.botanical-plate-caption span {
+  font-family: "Inter", sans-serif;
+  font-size: 0.76rem;
+}
+
+@media (max-width: 62rem) {
+  .botanical-hero-plate {
+    min-height: auto;
+    max-width: 34rem;
+  }
+}
+
+@media (max-width: 44rem) {
+  .botanical-hero-plate {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .botanical-hero-plate {
+    transform: none;
+  }
+}
