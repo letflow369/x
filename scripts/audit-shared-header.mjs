@@ -6,7 +6,7 @@ import { extractHeader, normalizeHeaderMarkup, renderHeader } from './lib/shared
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const template = fs.readFileSync(path.join(root, 'src/templates/header.html'), 'utf8').trim();
-const expectedCssVersion = 'v=20260811-4';
+const expectedCssVersion = 'v=20260811-5';
 const files = walk(root).filter((file) => file.endsWith('.html') && !isGeneratedOrTemplate(file));
 const errors = [];
 

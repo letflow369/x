@@ -4,6 +4,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { replaceHeader } from './lib/shared-header.mjs';
 import { listStructuredArticles, loadStructuredArticle, renderStructuredArticle } from './lib/structured-article.mjs';
+import { prerenderDirectories } from './lib/directory-prerender.mjs';
+import { normalizeSocialMetadata } from './lib/social-metadata.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -32,6 +34,9 @@ for (const slug of listStructuredArticles(root)) {
   fs.writeFileSync(path.join(dist, relative), renderStructuredArticle({ root, data, relative }));
 }
 
+const directoryPrerender = prerenderDirectories({ root, outputRoot: dist });
+for (const item of directoryPrerender) console.log(`Pré-render: ${item.file} (${item.count} item(ns))`);
+
 const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 for (const file of htmlFiles) {
   const relative = slash(path.relative(dist, file));
@@ -39,6 +44,7 @@ for (const file of htmlFiles) {
   const base = relative.includes('/') ? '../' : './';
   html = replaceSharedShell(html, relative, base);
   html = injectReferrerPolicy(html);
+  html = normalizeSocialMetadata(html, { relative, config });
   html = injectStructuredData(html, relative);
   html = injectAnalytics(html, base);
   fs.writeFileSync(file, html);

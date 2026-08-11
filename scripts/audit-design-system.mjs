@@ -64,7 +64,7 @@ for (const dossier of dossiers) {
   }
 
   if (dossier.botanical) {
-    if (!/cannabis-botanical\.css\?v=20260811-1/.test(html)) {
+    if (!/cannabis-botanical\.css\?v=20260811-2/.test(html)) {
       errors.push(`${dossier.file}: componente botânico compartilhado ausente.`);
     }
     for (const className of ['cannabis-botanical', 'botanical-domain-list', 'botanical-hero-plate', 'botanical-plate-caption']) {

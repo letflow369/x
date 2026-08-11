@@ -37,15 +37,15 @@
     "manifest": "../site.webmanifest?v=20260806-21",
     "styles": [
       "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Cinzel+Decorative:wght@700&family=Inter:wght@500;600;700&family=Marcellus&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap",
-      "../src/styles/tokens.css?v=20260811-1",
+      "../src/styles/tokens.css?v=20260811-2",
       "../src/styles/base.css?v=20260807-30",
-      "../src/styles/components/header.css?v=20260811-4",
-      "../src/styles/home.css?v=20260807-30",
+      "../src/styles/components/header.css?v=20260811-5",
+      "../src/styles/home.css?v=20260811-1",
       "../src/styles/article.css?v=20260807-30",
       "../src/styles/components/evidence-tags.css?v=20260807-30",
       "../src/styles/integrative-practice.css?v=20260809-01",
       "../src/styles/components/substance-dossier.css?v=20260811-1",
-      "../src/styles/cbd.css?v=20260811-2"
+      "../src/styles/cbd.css?v=20260811-3"
     ],
     "headScripts": [
       {
@@ -85,7 +85,7 @@
       ]
     },
     "headTailStyles": [
-      "../src/styles/content-network.css?v=20260810-1"
+      "../src/styles/content-network.css?v=20260811-2"
     ]
   },
   "page": {
@@ -215,7 +215,7 @@
             "href": "#referencias"
           }
         ],
-        "innerHtml": "<details open=\"\"><summary>Nesta página</summary><nav data-integrative-toc=\"\"><ol><li><a href=\"#diferencas\">CBD × THC × Cannabis</a></li><li><a href=\"#historia\">História</a></li><li><a href=\"#farmacologia\">Como age</a></li><li><a href=\"#evidencias\">Evidências clínicas</a></li><li><a href=\"#epilepsia\">Caso: epilepsias</a></li><li><a href=\"#expectativa\">Evidência × expectativa</a></li><li><a href=\"#seguranca\">Segurança</a></li><li><a href=\"#produtos\">Farmacêutico × comercial</a></li><li><a href=\"#mitos\">Mitos e fatos</a></li><li><a href=\"#brasil\">CBD no Brasil</a></li><li><a href=\"#sociedade\">Ciência e sociedade</a></li><li><a href=\"#como-ler\">Como ler estudos</a></li><li><a href=\"#importancia\">Por que estudar</a></li><li><a href=\"#lacunas\">O que não sabemos</a></li><li><a href=\"#referencias\">Referências</a></li></ol></nav></details>",
+        "innerHtml": "<details open=\"\"><summary>Nesta página</summary><nav aria-label=\"Sumário do artigo\" data-integrative-toc=\"\"><ol><li><a href=\"#diferencas\">CBD × THC × Cannabis</a></li><li><a href=\"#historia\">História</a></li><li><a href=\"#farmacologia\">Como age</a></li><li><a href=\"#evidencias\">Evidências clínicas</a></li><li><a href=\"#epilepsia\">Caso: epilepsias</a></li><li><a href=\"#expectativa\">Evidência × expectativa</a></li><li><a href=\"#seguranca\">Segurança</a></li><li><a href=\"#produtos\">Farmacêutico × comercial</a></li><li><a href=\"#mitos\">Mitos e fatos</a></li><li><a href=\"#brasil\">CBD no Brasil</a></li><li><a href=\"#sociedade\">Ciência e sociedade</a></li><li><a href=\"#como-ler\">Como ler estudos</a></li><li><a href=\"#importancia\">Por que estudar</a></li><li><a href=\"#lacunas\">O que não sabemos</a></li><li><a href=\"#referencias\">Referências</a></li></ol></nav></details>",
         "ariaLabel": "Índice da página"
       },
       "sections": [

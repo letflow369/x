@@ -52,6 +52,47 @@ Detalhes: `docs/conteudo-estruturado.md`.
 
 Isso elimina a necessidade de editar dezenas de HTML para mudar o menu global.
 
+
+## Progressive enhancement dos diretórios
+
+O build pré-renderiza o estado inicial de `busca.html`, `evidencias.html`, `tags.html` e `glossario.html` a partir dos JSON editoriais. Assim, o conteúdo principal já existe no HTML publicado; `src/scripts/directories.js` passa a atuar como aprimoramento para filtrar, pesquisar e atualizar a interface.
+
+```text
+src/data/*.json
+      ↓
+scripts/lib/directory-prerender.mjs
+      ↓
+HTML inicial completo
+      ↓
+JavaScript filtra/refina
+```
+
+A auditoria `npm run audit:ui` verifica contagens, landmarks, hierarquia de headings, piso de microtipografia e o contrato responsivo do header.
+
+## Metadados sociais
+
+`scripts/lib/social-metadata.mjs` normaliza Open Graph e Twitter/X durante o build. As 77 páginas indexáveis devem publicar exatamente um conjunto completo de:
+
+```text
+og:type
+og:locale
+og:site_name
+og:title
+og:description
+og:url
+og:image
+og:image:width
+og:image:height
+og:image:alt
+twitter:card
+twitter:title
+twitter:description
+twitter:image
+twitter:image:alt
+```
+
+Quando uma página não possui imagem social própria, o build usa `src/assets/images/og-let-flow-369.jpg`. A auditoria `npm run audit:social` valida cobertura, URLs HTTPS, dimensões declaradas e existência dos assets locais.
+
 ## Metadados
 
 - `src/data/content-index.json`: categoria, tags, relações e datas editoriais extraídas dos schemas dos artigos.
@@ -73,6 +114,8 @@ npm run audit
 npm run audit:dist
 npm run audit:editorial
 npm run audit:structured
+npm run audit:social
+npm run audit:ui
 npm run test:e2e
 npm run lighthouse
 ```
