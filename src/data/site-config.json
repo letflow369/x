@@ -1,0 +1,16 @@
+{
+  "siteName": "Let Flow 369",
+  "origin": "https://letflow369.github.io",
+  "basePath": "/x/",
+  "tagline": "Por dentro da mente de um adulto com TDAH.",
+  "defaultLocale": "pt-BR",
+  "editorial": {
+    "reviewWarningDays": 180,
+    "regulatoryReviewWarningDays": 90
+  },
+  "analytics": {
+    "enabled": false,
+    "measurementId": "",
+    "consentRequired": true
+  }
+}

@@ -700,3 +700,45 @@ Os componentes opcionais de rede nos artigos são carregados por `src/scripts/co
 ## Padrão editorial para substâncias e psicodélicos (2026-08-10)
 
 O modelo oficial para DMT, LSD, psilocibina, ayahuasca, CBD, Cannabis, Changa e temas relacionados está documentado em `docs/modelo-substancias-psicodelicos.md`. A estrutura-base é: definição → história → funcionamento → evidências → riscos → controvérsias → importância → fontes, com separação explícita entre evidência direta, evidência indireta, hipótese, relato subjetivo e alegação sem comprovação.
+
+## Arquitetura de build e QA — 2026-08-11
+
+O projeto continua entregando HTML/CSS/JavaScript nativos, mas agora possui uma etapa de build em Node.js para centralizar componentes e reduzir regressões.
+
+### Fonte de verdade compartilhada
+
+```text
+src/templates/header.html
+src/templates/footer.html
+src/data/site-config.json
+src/data/content-index.json
+src/data/evidence-index.json
+```
+
+O comando `npm run build` gera `dist/`, padroniza header/footer, cria `BreadcrumbList` em JSON-LD, adiciona `WebSite`/`Organization` na home e regenera o sitemap preservando datas verificáveis.
+
+### QA
+
+```bash
+npm run sync:data
+npm run build
+npm run audit
+npm run audit:dist
+npm run audit:editorial
+npm run audit:structured
+npm run test:e2e
+npm run lighthouse
+```
+
+O workflow `.github/workflows/pages.yml` executa QA antes do deploy no GitHub Pages.
+
+Versões verificadas em 2026-08-11 e adotadas no projeto:
+
+- Node.js 24 LTS para CI;
+- Playwright 1.62.1;
+- @axe-core/playwright 4.12.1;
+- Lighthouse CI 0.15.1.
+
+### Analytics
+
+A infraestrutura está preparada, porém desativada até ser fornecido um ID real do Google Analytics. Veja `docs/analytics-search-console.md`.

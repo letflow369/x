@@ -1,0 +1,29 @@
+{
+  "name": "let-flow-369",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22 <27"
+  },
+  "scripts": {
+    "sync:metadata": "node scripts/sync-content-metadata.mjs",
+    "build": "node scripts/build-site.mjs",
+    "preview": "node scripts/serve-dist.mjs --port 4173",
+    "audit": "node scripts/audit-project.mjs --strict",
+    "audit:dist": "node scripts/audit-project.mjs --root dist --strict",
+    "audit:editorial": "node scripts/audit-editorial.mjs",
+    "test:e2e": "playwright test",
+    "lighthouse": "lhci autorun",
+    "ci": "node scripts/build-site.mjs && node scripts/audit-project.mjs --strict && node scripts/audit-project.mjs --root dist --strict && node scripts/audit-editorial.mjs && node scripts/audit-structured-data.mjs && node scripts/smoke-http.mjs && playwright test && lhci autorun",
+    "sync:evidence": "node scripts/sync-evidence-ledger.mjs",
+    "sync:data": "node scripts/sync-content-metadata.mjs && node scripts/sync-evidence-ledger.mjs",
+    "audit:structured": "node scripts/audit-structured-data.mjs",
+    "test:http": "node scripts/smoke-http.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.62.1"
+  }
+}

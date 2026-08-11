@@ -1,0 +1,67 @@
+# Arquitetura de build — Let Flow 369
+
+**Verificação técnica:** 2026-08-11.
+
+O navegador continua recebendo apenas HTML, CSS e JavaScript nativos. O Node.js é utilizado exclusivamente durante desenvolvimento, QA e publicação.
+
+## Fonte e artefato
+
+```text
+HTML editorial + dados + componentes compartilhados
+                    ↓
+          scripts/build-site.mjs
+                    ↓
+                  dist/
+                    ↓
+              GitHub Pages
+```
+
+`dist/` é descartável e não deve ser versionado.
+
+## Componentes compartilhados
+
+- `src/templates/header.html`: única fonte de verdade para marca e navegação principal.
+- `src/templates/footer.html`: links institucionais e rodapé.
+- `scripts/build-site.mjs`: substitui os componentes em todas as páginas geradas, injeta dados estruturados e gera o sitemap.
+
+Isso elimina a necessidade de editar dezenas de HTML para mudar o menu global.
+
+## Metadados
+
+- `src/data/content-index.json`: categoria, tags, relações e datas editoriais extraídas dos schemas dos artigos.
+- `src/data/evidence-index.json`: ledger de alegações com nível, base da evidência, artigo de contexto e data de verificação.
+- `src/data/site-config.json`: configuração central do site, ciclo de revisão e analytics.
+
+Antes de commit relevante em artigos:
+
+```bash
+npm run sync:data
+npm run audit:editorial
+```
+
+## Comandos
+
+```bash
+npm run build
+npm run audit
+npm run audit:dist
+npm run audit:editorial
+npm run audit:structured
+npm run test:e2e
+npm run lighthouse
+```
+
+Para pré-visualização local:
+
+```bash
+npm run build
+npm run preview
+```
+
+Abra `http://127.0.0.1:4173/x/`.
+
+## GitHub Pages
+
+O workflow `.github/workflows/pages.yml` valida a fonte, gera `dist/`, roda testes de navegador/acessibilidade e Lighthouse e publica o artefato do Pages somente após o QA.
+
+No GitHub, a fonte do Pages deve ser configurada uma única vez para **GitHub Actions** em `Settings → Pages → Build and deployment → Source`.

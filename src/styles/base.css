@@ -192,3 +192,49 @@ nav a {
 .breadcrumbs [aria-current="page"] { color: var(--color-text); }
 .article-title--long { font-family: var(--font-subtitle) !important; font-weight: 400 !important; letter-spacing: .01em !important; text-wrap: balance; }
 @media (max-width: 40rem) { .breadcrumbs { width: min(100% - 1.35rem, var(--content-width)); font-size: .74rem; } }
+
+
+/* Shared site footer */
+.site-footer {
+  border-top: 0.0625rem solid rgb(93 64 43 / 60%);
+  background: var(--color-surface);
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: min(100% - 2rem, var(--content-width));
+  margin-inline: auto;
+  padding-block: var(--space-5);
+  font-family: var(--font-interface);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer__inner nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.site-footer__inner nav a {
+  color: inherit;
+}
+
+.site-footer__inner nav a:hover,
+.site-footer__inner nav a:focus-visible {
+  color: var(--color-primary-hover);
+}
+
+@media (max-width: 40rem) {
+  .site-footer__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

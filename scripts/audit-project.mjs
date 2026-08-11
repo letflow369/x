@@ -45,6 +45,7 @@ const CONFIG = Object.freeze({
     '.cache',
     '.idea',
     '.vscode',
+    'templates',
   ]),
   publicHtmlExcludedFromSitemap: new Set(['404.html']),
   ignoredAuditFiles: new Set(['scripts/audit-project.mjs']),

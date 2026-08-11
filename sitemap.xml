@@ -1,145 +1,299 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://letflow369.github.io/x/</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/metodologia.html</loc>
+    <loc>https://letflow369.github.io/x/artigos/acupuntura.html</loc>
+    <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/assuntos/neurodiversidade.html</loc>
+    <loc>https://letflow369.github.io/x/artigos/ansiedade.html</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/assuntos/religioes-espiritualidade.html</loc>
+    <loc>https://letflow369.github.io/x/artigos/aromaterapia.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/astrologia.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/autismo.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/ayahuasca.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/ayurveda.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/batuque-nacao.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/borderline.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/budismo.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/burnout.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/candomble.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/cannabis-indica.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/cannabis-sativa.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/carl-gustav-jung.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/cbd.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/chakras.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/changa.html</loc>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/cristianismo.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/deficiencia-intelectual.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/depressao.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/discalculia.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/dislexia.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/dispraxia.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/dmt.html</loc>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/espiritismo.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/esquizofrenia.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/estoicismo.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/feng-shui.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/fitoterapia.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/fobia-social.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/gnosticismo.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/hermetismo.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/hidroterapia.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/hinduismo.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/homeopatia.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/isla.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/judaismo.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/litoterapia.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/lsd.html</loc>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/massagem-pedras-quentes.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/moxaterapia.html</loc>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/numerologia.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/psicopatia.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/psicose.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/psilocibina.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/quimbanda.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/quiropraxia.html</loc>
+    <lastmod>2026-08-09</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/reiki.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/sigmund-freud.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/sindrome-de-down.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/tdah.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/teosofia.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/terapia-cognitivo-comportamental.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/thelema.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/toc.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/tourette.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/transtorno-bipolar.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/transtorno-opositivo-desafiador.html</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/umbanda.html</loc>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/vibracoes-estados-vibracionais.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/wicca.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://letflow369.github.io/x/artigos/yoga.html</loc>
+    <lastmod>2026-08-09</lastmod>
   </url>
   <url>
     <loc>https://letflow369.github.io/x/assuntos/filosofias-esoterismo.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/assuntos/substancias-farmacologia-consciencia.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/carl-gustav-jung.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/sigmund-freud.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/estoicismo.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/hermetismo.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/gnosticismo.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/thelema.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/espiritismo.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/hinduismo.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/budismo.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/wicca.html</loc>
+    <loc>https://letflow369.github.io/x/assuntos/neurodiversidade.html</loc>
   </url>
   <url>
     <loc>https://letflow369.github.io/x/assuntos/psicologia.html</loc>
   </url>
   <url>
+    <loc>https://letflow369.github.io/x/assuntos/religioes-espiritualidade.html</loc>
+  </url>
+  <url>
     <loc>https://letflow369.github.io/x/assuntos/saude-reabilitacao.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/vibracoes-estados-vibracionais.html</loc>
+    <loc>https://letflow369.github.io/x/assuntos/substancias-farmacologia-consciencia.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/feng-shui.html</loc>
+    <loc>https://letflow369.github.io/x/busca.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/chakras.html</loc>
+    <loc>https://letflow369.github.io/x/evidencias.html</loc>
+    <lastmod>2026-08-11</lastmod>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/tdah.html</loc>
+    <loc>https://letflow369.github.io/x/glossario.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/autismo.html</loc>
+    <loc>https://letflow369.github.io/x/metodologia.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/numerologia.html</loc>
+    <loc>https://letflow369.github.io/x/privacidade.html</loc>
+    <lastmod>2026-08-11</lastmod>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/toc.html</loc>
+    <loc>https://letflow369.github.io/x/tags.html</loc>
   </url>
   <url>
-    <loc>https://letflow369.github.io/x/artigos/astrologia.html</loc>
+    <loc>https://letflow369.github.io/x/trilhas.html</loc>
   </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/ansiedade.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/teosofia.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/umbanda.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/candomble.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/batuque-nacao.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/quimbanda.html</loc>
-  </url>
-  <url>
-    <loc>https://letflow369.github.io/x/artigos/isla.html</loc>
-  </url>
-  <url><loc>https://letflow369.github.io/x/artigos/cristianismo.html</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/depressao.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/burnout.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/fobia-social.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/borderline.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/terapia-cognitivo-comportamental.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/judaismo.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/reiki.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/dislexia.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/discalculia.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/dispraxia.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/tourette.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/sindrome-de-down.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/deficiencia-intelectual.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/transtorno-bipolar.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/psicopatia.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/esquizofrenia.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/transtorno-opositivo-desafiador.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/psicose.html</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/yoga.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/ayurveda.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/acupuntura.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/aromaterapia.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/fitoterapia.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/homeopatia.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/hidroterapia.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/quiropraxia.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/litoterapia.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/ayahuasca.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/psilocibina.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/cannabis-sativa.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/cannabis-indica.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/cbd.html</loc><lastmod>2026-08-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/massagem-pedras-quentes.html</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://letflow369.github.io/x/artigos/moxaterapia.html</loc><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://letflow369.github.io/x/artigos/dmt.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-<url><loc>https://letflow369.github.io/x/busca.html</loc></url>
-<url><loc>https://letflow369.github.io/x/tags.html</loc></url>
-<url><loc>https://letflow369.github.io/x/trilhas.html</loc></url>
-<url><loc>https://letflow369.github.io/x/evidencias.html</loc></url>
-<url><loc>https://letflow369.github.io/x/glossario.html</loc></url>
-  <url><loc>https://letflow369.github.io/x/artigos/lsd.html</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://letflow369.github.io/x/artigos/changa.html</loc><lastmod>2026-08-10</lastmod></url>
 </urlset>
