@@ -145,10 +145,10 @@
         "tradição amazônica"
       ],
       "relations": [
-        "quimbanda",
+        "dmt",
+        "changa",
         "psilocibina",
-        "depressao",
-        "psicose"
+        "depressao"
       ],
       "scientificReview": null,
       "metadataUpdated": "2026-08-10"
@@ -428,6 +428,34 @@
       "metadataUpdated": "2026-08-10"
     },
     {
+      "slug": "changa",
+      "title": "Changa",
+      "url": "artigos/changa.html",
+      "summary": "Changa entre origem contemporânea, DMT, alcaloides harmala, cultura psicodélica, evidência direta limitada, riscos e situação legal no Brasil.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "Changa",
+        "DMT",
+        "psicodélicos",
+        "harmalas",
+        "cultura psicodélica"
+      ],
+      "relations": [
+        "dmt",
+        "lsd",
+        "ayahuasca",
+        "psilocibina"
+      ],
+      "scientificReview": "10 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
       "slug": "cristianismo",
       "title": "Cristianismo",
       "url": "artigos/cristianismo.html",
@@ -574,6 +602,34 @@
         "tourette"
       ],
       "scientificReview": null,
+      "metadataUpdated": "2026-08-10"
+    },
+    {
+      "slug": "dmt",
+      "title": "DMT — N,N-Dimetiltriptamina",
+      "url": "artigos/dmt.html",
+      "summary": "DMT entre história, farmacologia 5-HT2A, neuroimagem, consciência, DMT endógeno, depressão, segurança e situação legal no Brasil.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "DMT",
+        "psicodélicos",
+        "serotonina",
+        "depressão",
+        "neurociência"
+      ],
+      "relations": [
+        "lsd",
+        "changa",
+        "ayahuasca",
+        "psilocibina"
+      ],
+      "scientificReview": "10 de agosto de 2026",
       "metadataUpdated": "2026-08-10"
     },
     {
@@ -924,6 +980,34 @@
       "metadataUpdated": "2026-08-10"
     },
     {
+      "slug": "lsd",
+      "title": "LSD — Dietilamida do Ácido Lisérgico",
+      "url": "artigos/lsd.html",
+      "summary": "LSD entre história, farmacologia 5-HT2A, consciência, pesquisa clínica em ansiedade, riscos, HPPD, contracultura e situação legal no Brasil.",
+      "category": "substancias-farmacologia-consciencia",
+      "categoryName": "Substâncias, farmacologia e consciência",
+      "categoryUrl": "assuntos/substancias-farmacologia-consciencia.html",
+      "contentType": "substância",
+      "tags": [
+        "farmacologia",
+        "consciência",
+        "evidências",
+        "LSD",
+        "psicodélicos",
+        "serotonina",
+        "ansiedade",
+        "neurociência"
+      ],
+      "relations": [
+        "dmt",
+        "psilocibina",
+        "changa",
+        "ansiedade"
+      ],
+      "scientificReview": "10 de agosto de 2026",
+      "metadataUpdated": "2026-08-10"
+    },
+    {
       "slug": "massagem-pedras-quentes",
       "title": "Massagem com Pedras Quentes",
       "url": "artigos/massagem-pedras-quentes.html",
@@ -1068,9 +1152,10 @@
         "depressão"
       ],
       "relations": [
+        "lsd",
+        "dmt",
         "ayahuasca",
-        "depressao",
-        "psicose"
+        "depressao"
       ],
       "scientificReview": "9 de agosto de 2026",
       "metadataUpdated": "2026-08-10"

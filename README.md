@@ -696,3 +696,7 @@ src/data/glossary.json
 ```
 
 Os componentes opcionais de rede nos artigos são carregados por `src/scripts/content-network.js`. O conteúdo principal e a navegação por categorias permanecem funcionais sem JavaScript.
+
+## Padrão editorial para substâncias e psicodélicos (2026-08-10)
+
+O modelo oficial para DMT, LSD, psilocibina, ayahuasca, CBD, Cannabis, Changa e temas relacionados está documentado em `docs/modelo-substancias-psicodelicos.md`. A estrutura-base é: definição → história → funcionamento → evidências → riscos → controvérsias → importância → fontes, com separação explícita entre evidência direta, evidência indireta, hipótese, relato subjetivo e alegação sem comprovação.

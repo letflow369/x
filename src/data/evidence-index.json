@@ -29,6 +29,60 @@
       "summary": "Pequenos ensaios sugerem sinal antidepressivo, insuficiente para estabelecer tratamento clínico."
     },
     {
+      "title": "DMT para sintomas de depressão maior",
+      "article": "dmt",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "preliminar",
+      "levelLabel": "Promissora / preliminar",
+      "summary": "Um pequeno ensaio randomizado de fase IIa de 2026 encontrou redução de sintomas superior ao placebo, mas a base clínica ainda requer replicação e estudos maiores."
+    },
+    {
+      "title": "DMT altera conectividade e dinâmica cerebral",
+      "article": "dmt",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "mecanismo",
+      "level": "consistente",
+      "levelLabel": "Bem documentado experimentalmente",
+      "summary": "Estudos humanos placebo-controlados com EEG e fMRI documentam alterações amplas de conectividade, segregação de redes e dinâmica neural durante o estado agudo."
+    },
+    {
+      "title": "Grande liberação pineal de DMT em sonhos ou na morte",
+      "article": "dmt",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não demonstrado em humanos",
+      "summary": "Não há evidência humana de uma grande liberação de DMT pela pineal durante sonhos ou morte; dados animais tampouco estabelecem a pineal como fonte cerebral necessária."
+    },
+    {
+      "title": "Changa como tratamento médico estabelecido",
+      "article": "changa",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não demonstrado",
+      "summary": "Não há ensaios clínicos robustos que estabeleçam eficácia terapêutica específica da Changa para depressão, ansiedade, dor ou outras condições."
+    },
+    {
+      "title": "Analgesia após Changa",
+      "article": "changa",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "preliminar",
+      "levelLabel": "Relato de caso / hipótese",
+      "summary": "Um relato de caso de 2019 descreveu analgesia prolongada após Changa; esse desenho não demonstra causalidade nem eficácia clínica."
+    },
+    {
+      "title": "Farmacologia DMT + harmalas aplicada à Changa",
+      "article": "changa",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "mecanismo",
+      "level": "limitada",
+      "levelLabel": "Evidência indireta",
+      "summary": "DMT e alcaloides harmala têm farmacologia documentada, mas a composição variável e a via de uso impedem transferir automaticamente resultados de ayahuasca ou combinações padronizadas para Changa."
+    },
+    {
       "title": "Moxaterapia para apresentação fetal pélvica",
       "article": "moxaterapia",
       "category": "saude-terapias-reabilitacao",
@@ -180,6 +234,33 @@
       "level": "insuficiente",
       "levelLabel": "Não demonstrado cientificamente",
       "summary": "Termos físicos como frequência e vibração não validam, por si, modelos espirituais de energia como mecanismos biomédicos."
+    },
+    {
+      "title": "LSD para transtorno de ansiedade generalizada",
+      "article": "lsd",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "substância",
+      "level": "preliminar",
+      "levelLabel": "Promissora / fase clínica avançando",
+      "summary": "Um ensaio fase IIb com 198 adultos encontrou relação dose-resposta significativa para redução de ansiedade; estudos de fase III estão registrados, mas o tratamento ainda não é estabelecido."
+    },
+    {
+      "title": "Receptor 5-HT2A nos efeitos agudos do LSD",
+      "article": "lsd",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "mecanismo",
+      "level": "consistente",
+      "levelLabel": "Evidência experimental consistente",
+      "summary": "Estudos placebo-controlados com antagonismo 5-HT2A reduzem de forma acentuada a resposta subjetiva e alterações de conectividade induzidas por LSD."
+    },
+    {
+      "title": "LSD como tratamento estabelecido para depressão",
+      "article": "lsd",
+      "category": "substancias-farmacologia-consciencia",
+      "type": "alegação",
+      "level": "insuficiente",
+      "levelLabel": "Não estabelecido",
+      "summary": "Existem sinais clínicos e pesquisa psicodélica relacionada, mas a evidência específica de LSD para depressão ainda não sustenta tratamento estabelecido."
     }
   ]
 }
