@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Localização simbólica de Ajna</title>
+  <desc id="desc">Ilustração editorial abstrata de uma cabeça humana vista de frente, com um pequeno lótus de duas pétalas entre as sobrancelhas.</desc>
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="32%" r="45%">
+      <stop offset="0" stop-color="#7776b6" stop-opacity=".34"/>
+      <stop offset=".52" stop-color="#5b587e" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#10131c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d4b07d"/>
+      <stop offset="1" stop-color="#8f82bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="900" fill="#0b0d14" rx="32"/>
+  <circle cx="360" cy="300" r="286" fill="url(#halo)"/>
+  <path d="M360 120c-118 0-203 92-203 216 0 83 27 145 63 196 22 31 34 62 36 103l5 92c2 38 34 68 72 68h54c38 0 70-30 72-68l5-92c2-41 14-72 36-103 36-51 63-113 63-196 0-124-85-216-203-216Z" fill="#151925" stroke="#6f6e9d" stroke-width="3"/>
+  <path d="M235 345c33-26 71-31 106-8M485 345c-33-26-71-31-106-8" fill="none" stroke="#9aa0b6" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+  <path d="M286 378c20 14 42 14 62 0M434 378c-20 14-42 14-62 0" fill="none" stroke="#788198" stroke-width="3" stroke-linecap="round" opacity=".62"/>
+  <path d="M360 350c-15 66-18 116 5 140-9 8-20 11-32 8" fill="none" stroke="#788198" stroke-width="3" stroke-linecap="round" opacity=".62"/>
+  <path d="M315 544c32 18 63 18 95 0" fill="none" stroke="#788198" stroke-width="3" stroke-linecap="round" opacity=".62"/>
+  <circle cx="360" cy="328" r="46" fill="#7776b6" fill-opacity=".08" stroke="#a69bc9" stroke-width="2" stroke-dasharray="5 7"/>
+  <path d="M357 326c-37-49-82-45-99-14 27 32 64 39 99 14Z" fill="#7776b6" fill-opacity=".22" stroke="url(#line)" stroke-width="3"/>
+  <path d="M363 326c37-49 82-45 99-14-27 32-64 39-99 14Z" fill="#8c6cb0" fill-opacity=".22" stroke="url(#line)" stroke-width="3"/>
+  <circle cx="360" cy="326" r="10" fill="#c4965d"/>
+  <path d="M360 286v-30M360 366v30M320 326h-30M400 326h30" stroke="#c4965d" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="360" y="838" fill="#d8d9e0" font-size="23" font-weight="600">Ājñā — localização simbólica</text>
+    <text x="360" y="870" fill="#9298aa" font-size="16">corpo sutil • não representa anatomia física</text>
+  </g>
+</svg>
