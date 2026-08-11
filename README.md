@@ -76,7 +76,7 @@ Auditoria específica:
 npm run audit:design
 ```
 
-O CMS ainda não foi introduzido. A separação entre apresentação e conteúdo começou pelo piloto **DMT**, cuja fonte de verdade agora é `content/artigos/dmt.json`. O build gera o HTML a partir desse conteúdo estruturado e do Design System.
+O CMS ainda não foi introduzido. A separação entre apresentação e conteúdo já possui três pilotos ativos: **DMT, LSD e CBD**. Suas fontes de verdade são `content/artigos/dmt.json`, `content/artigos/lsd.json` e `content/artigos/cbd.json`; o build gera os HTML a partir desses conteúdos estruturados e do Design System.
 
 Arquivos do piloto:
 

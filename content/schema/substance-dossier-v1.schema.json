@@ -3,46 +3,204 @@
   "$id": "https://letflow369.github.io/x/content/schema/substance-dossier-v1.schema.json",
   "title": "Let Flow 369 — Substance Dossier v1",
   "type": "object",
-  "required": ["schemaVersion", "template", "slug", "document", "page"],
+  "required": [
+    "schemaVersion",
+    "template",
+    "slug",
+    "document",
+    "page"
+  ],
   "properties": {
-    "schemaVersion": { "const": 1 },
-    "template": { "const": "substance-dossier-v1" },
-    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "schemaVersion": {
+      "const": 1
+    },
+    "template": {
+      "const": "substance-dossier-v1"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
     "document": {
       "type": "object",
-      "required": ["lang", "title", "description", "canonical", "styles", "structuredData"],
+      "required": [
+        "lang",
+        "title",
+        "description",
+        "canonical",
+        "styles",
+        "structuredData"
+      ],
       "properties": {
-        "lang": { "type": "string" },
-        "bodyId": { "type": "string" },
-        "title": { "type": "string" },
-        "description": { "type": "string" },
-        "themeColor": { "type": "string" },
-        "canonical": { "type": "string", "format": "uri" },
-        "styles": { "type": "array", "items": { "type": "string" } },
-        "headScripts": { "type": "array" },
-        "structuredData": { "type": "object" }
+        "lang": {
+          "type": "string"
+        },
+        "bodyId": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "themeColor": {
+          "type": "string"
+        },
+        "canonical": {
+          "type": "string",
+          "format": "uri"
+        },
+        "styles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "headScripts": {
+          "type": "array"
+        },
+        "structuredData": {
+          "type": "object"
+        },
+        "headTailStyles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "page": {
       "type": "object",
-      "required": ["skipLink", "breadcrumbs", "article", "backToTop", "postScripts"],
+      "required": [
+        "skipLink",
+        "breadcrumbs",
+        "article",
+        "backToTop",
+        "postScripts"
+      ],
       "properties": {
-        "breadcrumbs": { "type": "array", "minItems": 2 },
+        "breadcrumbs": {
+          "type": "array",
+          "minItems": 2
+        },
         "article": {
           "type": "object",
-          "required": ["classes", "hero", "toc", "sections", "footer"],
+          "required": [
+            "classes",
+            "hero",
+            "toc",
+            "sections",
+            "footer"
+          ],
           "properties": {
             "sections": {
               "type": "array",
               "minItems": 1,
               "items": {
                 "type": "object",
-                "required": ["id", "classes", "innerHtml"],
+                "required": [
+                  "id",
+                  "classes",
+                  "innerHtml"
+                ],
                 "properties": {
-                  "id": { "type": "string" },
-                  "classes": { "type": "array", "items": { "type": "string" } },
-                  "ariaLabelledBy": { "type": ["string", "null"] },
-                  "innerHtml": { "type": "string" }
+                  "id": {
+                    "type": "string"
+                  },
+                  "classes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ariaLabelledBy": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "innerHtml": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "preLayoutSections": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "classes",
+                  "innerHtml"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "classes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ariaLabelledBy": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "innerHtml": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "layout": {
+              "type": "object",
+              "properties": {
+                "outerClasses": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "classes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contentClasses": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "toc": {
+              "type": "object",
+              "properties": {
+                "classes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "title": {
+                  "type": "string"
+                },
+                "items": {
+                  "type": "array"
+                },
+                "innerHtml": {
+                  "type": "string"
+                },
+                "ariaLabel": {
+                  "type": "string"
                 }
               }
             }

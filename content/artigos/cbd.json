@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "template": "substance-dossier-v1",
+  "slug": "cbd",
+  "document": {
+    "lang": "pt-BR",
+    "bodyId": "topo",
+    "title": "CBD — Canabidiol: ciência, evidências, segurança e legislação | Let Flow 369",
+    "description": "CBD (canabidiol): história, farmacologia, epilepsias, evidências para ansiedade, sono, dor e saúde mental, segurança, interações, regulamentação brasileira e limites científicos.",
+    "themeColor": "#111614",
+    "canonical": "https://letflow369.github.io/x/artigos/cbd.html",
+    "openGraph": {
+      "type": "article",
+      "locale": "pt_BR",
+      "siteName": "Let Flow 369",
+      "title": "CBD — Canabidiol: ciência, evidências, segurança e legislação | Let Flow 369",
+      "description": "Da descoberta química às aplicações médicas: o que a ciência realmente sabe — e ainda não sabe — sobre o canabidiol.",
+      "url": "https://letflow369.github.io/x/artigos/cbd.html",
+      "image": "https://letflow369.github.io/x/src/assets/images/og-let-flow-369.jpg",
+      "imageWidth": "1200",
+      "imageHeight": "630",
+      "imageAlt": "Identidade visual do Let Flow 369"
+    },
+    "articleMeta": {
+      "publishedTime": "2026-08-09",
+      "modifiedTime": "2026-08-09",
+      "section": "Farmacologia, neurologia e medicina baseada em evidências"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "CBD — Canabidiol | Let Flow 369",
+      "description": "Evidências estabelecidas, áreas em investigação, segurança e regulamentação do canabidiol.",
+      "image": "https://letflow369.github.io/x/src/assets/images/og-let-flow-369.jpg"
+    },
+    "favicon": "../src/assets/images/favicon-32.png?v=20260806-21",
+    "appleTouchIcon": "../src/assets/images/apple-touch-icon.png?v=20260806-21",
+    "manifest": "../site.webmanifest?v=20260806-21",
+    "styles": [
+      "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Cinzel+Decorative:wght@700&family=Inter:wght@500;600;700&family=Marcellus&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap",
+      "../src/styles/tokens.css?v=20260811-1",
+      "../src/styles/base.css?v=20260807-30",
+      "../src/styles/components/header.css?v=20260811-4",
+      "../src/styles/home.css?v=20260807-30",
+      "../src/styles/article.css?v=20260807-30",
+      "../src/styles/components/evidence-tags.css?v=20260807-30",
+      "../src/styles/integrative-practice.css?v=20260809-01",
+      "../src/styles/components/substance-dossier.css?v=20260811-1",
+      "../src/styles/cbd.css?v=20260811-2"
+    ],
+    "headScripts": [
+      {
+        "src": "../src/scripts/integrative-practice.js?v=20260809-01",
+        "defer": true,
+        "type": null
+      }
+    ],
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "CBD — Canabidiol",
+      "alternativeHeadline": "Da descoberta química às aplicações médicas: o que a ciência realmente sabe sobre o canabidiol",
+      "datePublished": "2026-08-09",
+      "dateModified": "2026-08-09",
+      "inLanguage": "pt-BR",
+      "author": {
+        "@type": "Organization",
+        "name": "Let Flow 369"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Let Flow 369"
+      },
+      "image": "https://letflow369.github.io/x/src/assets/images/og-let-flow-369.jpg",
+      "mainEntityOfPage": "https://letflow369.github.io/x/artigos/cbd.html",
+      "about": [
+        "Canabidiol",
+        "CBD",
+        "Cannabis sativa",
+        "Epilepsia",
+        "Dravet",
+        "Lennox-Gastaut",
+        "Esclerose tuberosa",
+        "Farmacologia",
+        "Anvisa"
+      ]
+    },
+    "headTailStyles": [
+      "../src/styles/content-network.css?v=20260810-1"
+    ]
+  },
+  "page": {
+    "skipLink": {
+      "href": "#conteudo-principal",
+      "label": "Ir para o conteúdo principal"
+    },
+    "readingProgress": true,
+    "breadcrumbs": [
+      {
+        "label": "Início",
+        "href": "../index.html"
+      },
+      {
+        "label": "Substâncias, farmacologia e consciência",
+        "href": "../assuntos/substancias-farmacologia-consciencia.html"
+      },
+      {
+        "label": "CBD — Canabidiol",
+        "current": true
+      }
+    ],
+    "article": {
+      "classes": [
+        "cbd-article",
+        "integrative-page",
+        "substance-dossier"
+      ],
+      "dataIntegrativePage": true,
+      "hero": {
+        "id": "visao-geral",
+        "classes": [
+          "cbd-hero",
+          "substance-hero"
+        ],
+        "innerHtml": "<div class=\"cbd-hero__inner substance-hero__inner\"><div class=\"cbd-hero__content\"><p class=\"section-kicker\">Farmacologia · neurologia · evidência clínica · segurança · regulação</p><h1>CBD — Canabidiol</h1><p class=\"cbd-hero__subtitle substance-hero__subtitle\">Da descoberta química às aplicações médicas: o que a ciência realmente sabe sobre o canabidiol.</p><p class=\"cbd-hero__intro substance-hero__intro\">O canabidiol é um dos principais fitocanabinoides encontrados em <em>Cannabis sativa</em>. Nas últimas décadas, tornou-se objeto de intensa pesquisa científica: há <strong>aplicações farmacêuticas estabelecidas em condições específicas</strong> e, ao mesmo tempo, uma grande quantidade de usos ainda experimentais ou insuficientemente demonstrados.<sup class=\"reference\"><a aria-label=\"Referência 3\" href=\"#ref-3\">3</a></sup></p><div aria-label=\"Características principais\" class=\"cbd-domain-list\"><span>Fitocanabinoide</span><span>Não intoxicante como o THC</span><span>Uso médico específico</span><span>Pesquisa em expansão</span></div><div class=\"hero-actions\"><a class=\"button button--primary\" href=\"#essencial\">Entenda o essencial</a><a class=\"button button--secondary\" href=\"#evidencias\">Ver evidências científicas</a></div><aside aria-label=\"Aviso editorial\" class=\"cbd-hero__notice substance-hero__notice\"><strong>Conteúdo educacional baseado em evidências</strong><p>Não substitui avaliação, diagnóstico ou prescrição médica. A página separa resultado clínico, hipótese experimental, produto farmacêutico e alegação comercial.</p></aside></div>\n<div class=\"cbd-hero__plate substance-hero__visual\"><div aria-label=\"Representação esquemática e não estrutural da molécula de canabidiol\" class=\"cbd-molecule\" role=\"img\"><svg aria-hidden=\"true\" viewbox=\"0 0 420 360\"><g><line class=\"bond\" x1=\"92\" x2=\"142\" y1=\"175\" y2=\"132\"></line><line class=\"bond\" x1=\"142\" x2=\"199\" y1=\"132\" y2=\"157\"></line><line class=\"bond\" x1=\"199\" x2=\"205\" y1=\"157\" y2=\"218\"></line><line class=\"bond\" x1=\"205\" x2=\"151\" y1=\"218\" y2=\"249\"></line><line class=\"bond\" x1=\"151\" x2=\"96\" y1=\"249\" y2=\"221\"></line><line class=\"bond\" x1=\"96\" x2=\"92\" y1=\"221\" y2=\"175\"></line><line class=\"bond\" x1=\"199\" x2=\"258\" y1=\"157\" y2=\"126\"></line><line class=\"bond\" x1=\"258\" x2=\"309\" y1=\"126\" y2=\"158\"></line><line class=\"bond\" x1=\"309\" x2=\"302\" y1=\"158\" y2=\"220\"></line><line class=\"bond\" x1=\"302\" x2=\"248\" y1=\"220\" y2=\"247\"></line><line class=\"bond\" x1=\"248\" x2=\"205\" y1=\"247\" y2=\"218\"></line><line class=\"bond--soft\" x1=\"108\" x2=\"146\" y1=\"184\" y2=\"151\"></line><line class=\"bond--soft\" x1=\"257\" x2=\"294\" y1=\"145\" y2=\"167\"></line><circle class=\"atom--oxygen\" cx=\"75\" cy=\"154\" r=\"9\"></circle><circle class=\"atom--oxygen\" cx=\"319\" cy=\"101\" r=\"9\"></circle><line class=\"bond\" x1=\"83\" x2=\"92\" y1=\"159\" y2=\"175\"></line><line class=\"bond\" x1=\"312\" x2=\"258\" y1=\"107\" y2=\"126\"></line><circle class=\"atom\" cx=\"151\" cy=\"249\" r=\"5\"></circle><circle class=\"atom\" cx=\"248\" cy=\"247\" r=\"5\"></circle><text class=\"formula\" x=\"122\" y=\"313\">C₂₁H₃₀O₂</text><text class=\"label\" x=\"111\" y=\"336\">canabidiol · esquema editorial</text></g></svg></div><div class=\"cbd-plate__caption\"><strong>Uma molécula, níveis de evidência muito diferentes</strong><span>Formulação · dose · indicação · segurança · qualidade</span></div></div></div>"
+      },
+      "preLayoutSections": [
+        {
+          "id": "essencial",
+          "classes": [
+            "cbd-quick",
+            "substance-quick"
+          ],
+          "ariaLabelledBy": "essencial-titulo",
+          "innerHtml": "<div class=\"cbd-section__inner substance-section__inner\"><div class=\"section-heading\"><span class=\"integrative-level integrative-level--institutional\">30 segundos</span><h2 id=\"essencial-titulo\">O essencial</h2><p>O suficiente para evitar os dois extremos mais comuns.</p></div><div class=\"cbd-summary-grid substance-summary-grid\"><article><span>O que é?</span><strong>Fitocanabinoide</strong><p>Composto presente na Cannabis, com farmacologia diferente da do THC.</p></article><article><span>Intoxicação</span><strong>Não é “igual ao THC”</strong><p>O CBD não produz o padrão típico de intoxicação do Δ9-THC.<sup class=\"reference\"><a aria-label=\"Referência 8\" href=\"#ref-8\">8</a></sup></p></article><article><span>Aplicação comprovada</span><strong>Epilepsias específicas</strong><p>CBD farmacêutico purificado tem evidência e aprovação para crises associadas a Dravet, Lennox–Gastaut e complexo de esclerose tuberosa.<sup class=\"reference\"><a aria-label=\"Referências 3 a 6\" href=\"#ref-3\">3–6</a></sup></p></article><article><span>Segurança</span><strong>Não é isento de riscos</strong><p>Pode causar sonolência, sintomas gastrointestinais, alterações hepáticas e interações medicamentosas.<sup class=\"reference\"><a aria-label=\"Referência 7\" href=\"#ref-7\">7</a></sup></p></article></div><div class=\"cbd-core-tension\"><article><h3>“CBD cura tudo.”</h3><p><strong>Não sustentado.</strong> Popularidade, relatos pessoais e resultados pré-clínicos não demonstram eficácia clínica universal.</p></article><article><h3>“CBD não tem utilidade médica.”</h3><p><strong>Também é falso.</strong> Existem ensaios controlados e aplicações farmacêuticas estabelecidas para indicações específicas.</p></article></div></div>"
+        }
+      ],
+      "layout": {
+        "outerClasses": [
+          "article-shell",
+          "cbd-shell"
+        ],
+        "classes": [
+          "article-layout",
+          "cbd-layout"
+        ],
+        "contentClasses": [
+          "article-content",
+          "cbd-content"
+        ]
+      },
+      "toc": {
+        "classes": [
+          "article-toc"
+        ],
+        "title": "Nesta página",
+        "items": [
+          {
+            "label": "CBD × THC × Cannabis",
+            "href": "#diferencas"
+          },
+          {
+            "label": "História",
+            "href": "#historia"
+          },
+          {
+            "label": "Como age",
+            "href": "#farmacologia"
+          },
+          {
+            "label": "Evidências clínicas",
+            "href": "#evidencias"
+          },
+          {
+            "label": "Caso: epilepsias",
+            "href": "#epilepsia"
+          },
+          {
+            "label": "Evidência × expectativa",
+            "href": "#expectativa"
+          },
+          {
+            "label": "Segurança",
+            "href": "#seguranca"
+          },
+          {
+            "label": "Farmacêutico × comercial",
+            "href": "#produtos"
+          },
+          {
+            "label": "Mitos e fatos",
+            "href": "#mitos"
+          },
+          {
+            "label": "CBD no Brasil",
+            "href": "#brasil"
+          },
+          {
+            "label": "Ciência e sociedade",
+            "href": "#sociedade"
+          },
+          {
+            "label": "Como ler estudos",
+            "href": "#como-ler"
+          },
+          {
+            "label": "Por que estudar",
+            "href": "#importancia"
+          },
+          {
+            "label": "O que não sabemos",
+            "href": "#lacunas"
+          },
+          {
+            "label": "Referências",
+            "href": "#referencias"
+          }
+        ],
+        "innerHtml": "<details open=\"\"><summary>Nesta página</summary><nav data-integrative-toc=\"\"><ol><li><a href=\"#diferencas\">CBD × THC × Cannabis</a></li><li><a href=\"#historia\">História</a></li><li><a href=\"#farmacologia\">Como age</a></li><li><a href=\"#evidencias\">Evidências clínicas</a></li><li><a href=\"#epilepsia\">Caso: epilepsias</a></li><li><a href=\"#expectativa\">Evidência × expectativa</a></li><li><a href=\"#seguranca\">Segurança</a></li><li><a href=\"#produtos\">Farmacêutico × comercial</a></li><li><a href=\"#mitos\">Mitos e fatos</a></li><li><a href=\"#brasil\">CBD no Brasil</a></li><li><a href=\"#sociedade\">Ciência e sociedade</a></li><li><a href=\"#como-ler\">Como ler estudos</a></li><li><a href=\"#importancia\">Por que estudar</a></li><li><a href=\"#lacunas\">O que não sabemos</a></li><li><a href=\"#referencias\">Referências</a></li></ol></nav></details>",
+        "ariaLabel": "Índice da página"
+      },
+      "sections": [
+        {
+          "id": "diferencas",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--clinical\">Conceitos</span><h2>CBD ≠ THC ≠ Cannabis medicinal</h2><p>Usar os termos como sinônimos apaga diferenças que são decisivas para interpretar estudos.</p></div><div class=\"cbd-layer-grid\"><article><span class=\"integrative-level integrative-level--clinical\">Molécula</span><h3>CBD</h3><p>Canabidiol. Fitocanabinoide sem a intoxicação típica do THC, mas com atividade farmacológica e efeitos adversos possíveis.</p></article><article><span class=\"integrative-level integrative-level--risk\">Molécula</span><h3>THC</h3><p>Δ9-tetrahidrocanabinol. Principal fitocanabinoide responsável pelos efeitos intoxicantes clássicos da Cannabis.</p></article><article><span class=\"integrative-level integrative-level--institutional\">Categoria ampla</span><h3>Cannabis medicinal</h3><p>Pode envolver CBD, THC, combinações, extratos ou outros derivados em diferentes proporções, vias e regimes.</p></article></div><div class=\"integrative-callout integrative-callout--evidence\"><strong>Regra de transferência de evidência</strong><p><strong>Resultados de CBD farmacêutico purificado não devem ser atribuídos automaticamente a qualquer óleo, extrato ou produto comercial.</strong> Formulação, pureza, concentração, dose e controle de qualidade fazem parte da intervenção estudada.<sup class=\"reference\"><a aria-label=\"Referência 3\" href=\"#ref-3\">3</a></sup></p></div>"
+        },
+        {
+          "id": "historia",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--history\">História da química</span><h2>Da planta ao medicamento</h2><p>O CBD não surgiu com o mercado contemporâneo de Cannabis medicinal.</p></div><div class=\"integrative-timeline\"><article><span>1940</span><h3>Isolamento e investigação química</h3><p>Roger Adams e colaboradores publicam trabalhos descrevendo isolamento de cannabidiol de material de <em>Cannabis</em>.<sup class=\"reference\"><a aria-label=\"Referência 1\" href=\"#ref-1\">1</a></sup></p></article><article><span>1963</span><h3>Estrutura química</h3><p>Raphael Mechoulam e Yehiel Shvo publicam a estrutura do cannabidiol, etapa central para a farmacologia moderna.<sup class=\"reference\"><a aria-label=\"Referência 2\" href=\"#ref-2\">2</a></sup></p></article><article><span>Décadas seguintes</span><h3>Farmacologia e neurociência</h3><p>Pesquisas passam a investigar alvos moleculares, metabolismo, segurança e possíveis aplicações clínicas.</p></article><article><span>Anos 2010</span><h3>Ensaios randomizados</h3><p>Estudos controlados em epilepsias graves fornecem evidência clínica reprodutível para uma formulação purificada.</p></article><article><span>2018</span><h3>FDA aprova Epidiolex</h3><p>O marco regulatório reconhece CBD purificado para crises associadas a Lennox–Gastaut e Dravet; posteriormente a indicação é ampliada para complexo de esclerose tuberosa.<sup class=\"reference\"><a aria-label=\"Referência 3\" href=\"#ref-3\">3</a></sup></p></article><article><span>Atualidade</span><h3>Pesquisa se expande — evidência não igualmente</h3><p>Ansiedade, sono, dor, psicose, dependência e outras áreas seguem em investigação, com resultados, doses e desenhos muito heterogêneos.</p></article></div>"
+        },
+        {
+          "id": "farmacologia",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--clinical\">Conteúdo intermediário</span><h2>Como o CBD age?</h2><p>Uma farmacologia complexa — e ainda incompletamente esclarecida.</p></div><p>O CBD não pode ser resumido como “ativador dos receptores de Cannabis”. Ele apresenta baixa afinidade ortostérica pelos receptores canabinoides clássicos e interage, direta ou indiretamente, com múltiplos sistemas. Até mesmo o <strong>mecanismo anticonvulsivante clínico exato permanece incompletamente definido</strong> nas informações regulatórias do produto farmacêutico.</p><div class=\"cbd-system-map\"><div class=\"cbd-system-map__source\"><strong>CBD</strong><span>uma molécula, múltiplos alvos e vias</span></div><div aria-hidden=\"true\" class=\"cbd-system-map__arrow\">↓</div><div class=\"cbd-system-map__branches\"><article><strong>Sinalização endocanabinoide</strong><span>modulação indireta</span><p>Interações com a sinalização de endocanabinoides não equivalem a simplesmente “ligar CB1 ou CB2”.</p></article><article><strong>Canais TRP</strong><span>excitabilidade e sinalização</span><p>Alguns canais iônicos aparecem entre os alvos estudados em modelos experimentais.</p></article><article><strong>Sistemas serotoninérgicos</strong><span>hipóteses neuropsiquiátricas</span><p>Participam de modelos mecanísticos, mas mecanismo plausível não substitui demonstração clínica.</p></article><article><strong>Metabolismo hepático</strong><span>farmacocinética</span><p>CBD é metabolizado por enzimas hepáticas e pode participar de interações relevantes com outros medicamentos.<sup class=\"reference\"><a aria-label=\"Referência 7\" href=\"#ref-7\">7</a></sup></p></article></div></div><div class=\"integrative-callout\"><strong>Não confundir mecanismo com eficácia</strong><p>Uma molécula interagir com um receptor, canal ou enzima não demonstra que tratará uma doença em seres humanos.</p></div>"
+        },
+        {
+          "id": "evidencias",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--clinical\">Seção central</span><h2>O que realmente possui evidência?</h2><p>O nível muda muito conforme indicação e formulação.</p></div><div aria-label=\"Legenda dos níveis de evidência\" class=\"cbd-evidence-legend\"><span><b>●●●●</b> Evidência forte / estabelecida para formulação definida</span><span><b>●●●○</b> Limitada ou promissora</span><span><b>●●○○</b> Experimental</span><span><b>●○○○</b> Insuficiente</span></div><div class=\"cbd-table-wrap\"><table class=\"cbd-evidence-table\"><thead><tr><th>Condição</th><th>Nível atual</th><th>Leitura correta</th></tr></thead><tbody><tr><td>Síndrome de Dravet</td><td><span class=\"integrative-level integrative-level--clinical\">Evidência estabelecida</span></td><td>CBD farmacêutico purificado como tratamento adjuvante reduziu crises convulsivas em ensaio randomizado e possui indicação regulatória.<sup class=\"reference\"><a aria-label=\"Referências 3 e 4\" href=\"#ref-3\">3,4</a></sup></td></tr><tr><td>Lennox–Gastaut</td><td><span class=\"integrative-level integrative-level--clinical\">Evidência estabelecida</span></td><td>Ensaios fase 3 mostraram redução de drop seizures com CBD adjuvante padronizado.<sup class=\"reference\"><a aria-label=\"Referências 3 e 5\" href=\"#ref-3\">3,5</a></sup></td></tr><tr><td>Complexo de esclerose tuberosa</td><td><span class=\"integrative-level integrative-level--clinical\">Evidência estabelecida</span></td><td>Ensaio randomizado demonstrou redução de crises associadas ao TSC; indicação incorporada ao produto aprovado.<sup class=\"reference\"><a aria-label=\"Referências 3 e 6\" href=\"#ref-3\">3,6</a></sup></td></tr><tr><td>Ansiedade</td><td><span class=\"integrative-level integrative-level--limited\">Promissora / inconclusiva</span></td><td>Existem sinais e metanálises favoráveis, mas estudos pequenos, doses distintas e resultados negativos em alguns modelos impedem recomendação ampla.<sup class=\"reference\"><a aria-label=\"Referências 9 e 10\" href=\"#ref-9\">9,10</a></sup></td></tr><tr><td>Sono / insônia</td><td><span class=\"integrative-level integrative-level--limited\">Evidência limitada</span></td><td>Ensaios pequenos não sustentam ainda eficácia clínica generalizável de CBD isolado para insônia.<sup class=\"reference\"><a aria-label=\"Referência 11\" href=\"#ref-11\">11</a></sup></td></tr><tr><td>Dor crônica</td><td><span class=\"integrative-level integrative-level--uncertain\">Insuficiente para CBD isolado</span></td><td>Revisões encontram resultados heterogêneos; evidência de produtos THC/CBD não pode ser transferida para CBD isolado.<sup class=\"reference\"><a aria-label=\"Referência 12\" href=\"#ref-12\">12</a></sup></td></tr><tr><td>Depressão</td><td><span class=\"integrative-level integrative-level--uncertain\">Sem evidência suficiente</span></td><td>Não há corpo clínico robusto que estabeleça CBD como tratamento antidepressivo.</td></tr><tr><td>TEPT</td><td><span class=\"integrative-level integrative-level--uncertain\">Sem evidência suficiente</span></td><td>Dados verificáveis insuficientes para concluir eficácia clínica.</td></tr><tr><td>Psicose / esquizofrenia</td><td><span class=\"integrative-level integrative-level--hypothesis\">Experimental</span></td><td>Há ensaios clínicos exploratórios, mas não uma indicação estabelecida.<sup class=\"reference\"><a aria-label=\"Referência 13\" href=\"#ref-13\">13</a></sup></td></tr><tr><td>Transtornos por uso de substâncias</td><td><span class=\"integrative-level integrative-level--hypothesis\">Em investigação</span></td><td>Um ensaio adaptativo em transtorno por uso de Cannabis mostrou sinal para 400 e 800 mg, mas isso ainda não constitui tratamento estabelecido.<sup class=\"reference\"><a aria-label=\"Referência 14\" href=\"#ref-14\">14</a></sup></td></tr><tr><td>Inflamação</td><td><span class=\"integrative-level integrative-level--hypothesis\">Interesse experimental</span></td><td>Mecanismos pré-clínicos são numerosos; aplicabilidade clínica depende da doença e ainda requer demonstração em humanos.</td></tr></tbody></table></div><div class=\"integrative-callout integrative-callout--evidence\"><strong>“Em investigação” não significa “tratamento recomendado”.</strong><p>Um tema pode ter estudos ativos e plausibilidade biológica sem possuir eficácia clínica suficiente para uso rotineiro.</p></div>"
+        },
+        {
+          "id": "epilepsia",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--clinical\">Caso de estudo</span><h2>Quando evidência experimental virou tratamento</h2><p>As epilepsias mostram como uma hipótese atravessa etapas antes de se tornar uma intervenção regulada.</p></div><div aria-label=\"Caminho simplificado da hipótese ao medicamento\" class=\"cbd-pathway\"><span>Hipótese</span><i aria-hidden=\"true\">→</i><span>Estudos em humanos</span><i aria-hidden=\"true\">→</i><span>Ensaios randomizados</span><i aria-hidden=\"true\">→</i><span>Reprodução + avaliação regulatória</span></div><p>Nos ensaios de Dravet, Lennox–Gastaut e complexo de esclerose tuberosa, a intervenção foi uma <strong>solução oral de CBD farmacêutico padronizado, adicionada ao tratamento antiepiléptico existente</strong>. Os resultados sustentaram indicações específicas — não a afirmação de que qualquer produto com CBD trate qualquer tipo de epilepsia.<sup class=\"reference\"><a aria-label=\"Referências 4 a 6\" href=\"#ref-4\">4–6</a></sup></p><div class=\"integrative-callout\"><strong>O que a medicina baseada em evidências acrescenta?</strong><p>Além de perguntar “houve melhora?”, pergunta <strong>em quem, com qual produto, em que dose, comparado a quê, por quanto tempo e com quais eventos adversos</strong>.</p></div>"
+        },
+        {
+          "id": "expectativa",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--limited\">Linguagem científica</span><h2>Evidência × expectativa</h2><p>A precisão da frase muda o que o leitor entende.</p></div><div class=\"cbd-claim-grid\"><article><strong>Formulação adequada</strong><p>“CBD está sendo investigado para ansiedade.”</p></article><article><strong>Formulação inadequada</strong><p>“CBD trata ansiedade.”</p></article><article><strong>Formulação adequada</strong><p>“CBD farmacêutico purificado possui evidência para crises associadas a algumas epilepsias.”</p></article><article><strong>Formulação inadequada</strong><p>“Qualquer óleo de CBD trata epilepsia.”</p></article></div><p>O primeiro conjunto descreve o que o estudo realmente permite concluir. O segundo transforma uma hipótese ou resultado específico em promessa geral.</p>"
+        },
+        {
+          "id": "seguranca",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--risk\">Segurança</span><h2>CBD também possui riscos</h2><p>“Não intoxicante como o THC” não significa “farmacologicamente inerte”.</p></div><div class=\"cbd-risk-grid\"><article><h3>Sonolência</h3><p>Pode ocorrer e ser influenciada por dose e medicamentos concomitantes.</p></article><article><h3>Gastrointestinais</h3><p>Diarreia, redução de apetite e outros sintomas aparecem em estudos clínicos.</p></article><article><h3>Fígado</h3><p>Elevações de transaminases são risco conhecido em doses farmacêuticas. Em 2025, um ensaio da FDA em adultos saudáveis também encontrou sinal de elevação de enzimas hepáticas em doses representativas de alguns usos de consumo.<sup class=\"reference\"><a aria-label=\"Referência 7\" href=\"#ref-7\">7</a></sup></p></article><article><h3>Interações</h3><p>CBD pode alterar concentrações de medicamentos metabolizados por determinadas enzimas; clobazam e valproato são exemplos clinicamente relevantes no contexto de epilepsia.</p></article><article><h3>Dose</h3><p>Não se deve equiparar uma dose pequena de produto comercial às doses farmacêuticas utilizadas em ensaios.</p></article><article><h3>Populações especiais</h3><p>Idade, função hepática, gestação, doenças concomitantes e polifarmácia podem mudar a avaliação de risco.</p></article></div><div class=\"integrative-callout integrative-callout--risk\"><strong>Natural ≠ automaticamente seguro</strong><p>Uma substância capaz de produzir efeito terapêutico também pode produzir eventos adversos e interações.</p></div>"
+        },
+        {
+          "id": "produtos",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--institutional\">Qualidade do produto</span><h2>CBD farmacêutico × produtos comerciais</h2><p>O nome “CBD” não garante equivalência entre formulações.</p></div><div class=\"cbd-table-wrap\"><table class=\"cbd-product-table\"><thead><tr><th>Dimensão</th><th>CBD farmacêutico estudado</th><th>Produto comercial genérico</th></tr></thead><tbody><tr><td>Concentração</td><td>Padronizada e verificada</td><td>Pode variar conforme origem e controle</td></tr><tr><td>Pureza</td><td>Especificação farmacêutica</td><td>Depende da categoria regulatória e fabricante</td></tr><tr><td>Ensaios clínicos</td><td>Realizados com aquela formulação</td><td>Nem sempre existem para o produto específico</td></tr><tr><td>Dose</td><td>Definida no protocolo</td><td>Pode ser muito diferente da dose estudada</td></tr><tr><td>Controle de qualidade</td><td>Farmacêutico</td><td>Variável entre mercados e regimes regulatórios</td></tr><tr><td>Transferência da evidência</td><td>Para aquela formulação e indicação</td><td>Não automática</td></tr></tbody></table></div><p>A FDA chama atenção para produtos de CBD não aprovados que fazem alegações terapêuticas sem terem passado por avaliação de eficácia, dose, interações e segurança equivalente à de um medicamento aprovado.<sup class=\"reference\"><a aria-label=\"Referência 3\" href=\"#ref-3\">3</a></sup></p>"
+        },
+        {
+          "id": "mitos",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--uncertain\">Mitos × fatos</span><h2>Perguntas que parecem simples — mas exigem contexto</h2></div><div class=\"integrative-myth-list\"><details><summary>“CBD deixa a pessoa chapada?”</summary><p><strong>Não da mesma maneira que o THC.</strong> O CBD não produz o padrão típico de intoxicação do Δ9-THC. Isso não significa ausência de sonolência ou de outros efeitos farmacológicos.<sup class=\"reference\"><a aria-label=\"Referência 8\" href=\"#ref-8\">8</a></sup></p></details><details><summary>“Por ser natural, não possui riscos?”</summary><p><strong>Falso.</strong> Há eventos adversos, alterações hepáticas e interações medicamentosas documentadas.</p></details><details><summary>“CBD cura câncer?”</summary><p><strong>Não há evidência clínica suficiente para afirmar isso.</strong> Achados em células ou animais não demonstram automaticamente tratamento eficaz em seres humanos.</p></details><details><summary>“CBD trata ansiedade?”</summary><p>Existem sinais interessantes e estudos clínicos, mas a literatura ainda é heterogênea. A formulação cientificamente adequada é <strong>“CBD está sendo investigado para ansiedade”</strong>, não “trata ansiedade” de forma geral.<sup class=\"reference\"><a aria-label=\"Referências 9 e 10\" href=\"#ref-9\">9,10</a></sup></p></details><details><summary>“Quanto mais CBD, melhor?”</summary><p><strong>Não.</strong> Dose, indicação, formulação, metabolismo, interações e tolerabilidade determinam a relação risco-benefício.</p></details></div>"
+        },
+        {
+          "id": "brasil",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--institutional\">Brasil · atualizado em 09/08/2026</span><h2>CBD no Brasil</h2><p>A regulamentação é dinâmica e precisa ser separada da evidência clínica.</p></div><div class=\"cbd-regulatory-grid\"><article><h3>Produtos de Cannabis autorizados</h3><p>A RDC nº 1.015/2026 atualizou o marco de Autorização Sanitária para fabricação e importação de produtos de Cannabis para uso medicinal humano e entrou em vigor em 4 de maio de 2026.<sup class=\"reference\"><a aria-label=\"Referência 16\" href=\"#ref-16\">16</a></sup></p></article><article><h3>Prescrição e dispensação</h3><p>Dependem da categoria e composição do produto e das regras sanitárias aplicáveis. Autorização sanitária não equivale a afirmar eficácia para toda condição na qual o produto venha a ser prescrito.</p></article><article><h3>Importação excepcional</h3><p>A RDC nº 660/2022 mantém procedimento para pessoa física, com prescrição. A própria Anvisa informa que esses produtos importados não possuem registro na Agência e não tiveram eficácia, qualidade ou segurança avaliadas por ela.<sup class=\"reference\"><a aria-label=\"Referência 17\" href=\"#ref-17\">17</a></sup></p></article><article><h3>Produto ≠ medicamento registrado</h3><p>O sistema brasileiro distingue categorias regulatórias. Antes de interpretar um rótulo, é necessário identificar se se trata de medicamento registrado, Produto de Cannabis autorizado ou produto importado excepcionalmente.</p></article></div><div class=\"integrative-callout\"><strong>Regulação ≠ eficácia</strong><p>Permissão de fabricação, comercialização, prescrição ou importação define condições legais e sanitárias. Ela não transforma automaticamente todas as alegações de uso em eficácia clínica comprovada.</p></div>"
+        },
+        {
+          "id": "sociedade",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--history\">Ciência + sociedade</span><h2>Por que o CBD tornou-se tão relevante?</h2><p>O canabidiol fica no encontro entre áreas que usam critérios diferentes para dizer o que é “evidência”.</p></div><div class=\"cbd-importance-grid\"><article><h3>Medicina</h3><p>Casos reais de desenvolvimento farmacêutico coexistem com muitas indicações ainda não estabelecidas.</p></article><article><h3>Neurociência</h3><p>Estimula pesquisa sobre excitabilidade neuronal, sinalização endocanabinoide e outros sistemas.</p></article><article><h3>Políticas públicas</h3><p>Acesso, controle sanitário, prescrição, importação e pesquisa mudam com decisões regulatórias.</p></article><article><h3>Movimentos de pacientes</h3><p>Demandas de acesso influenciaram o debate público e regulatório, especialmente em condições graves.</p></article><article><h3>Indústria</h3><p>O interesse comercial amplia oferta e publicidade — e torna ainda mais importante separar produto de evidência.</p></article><article><h3>Desinformação</h3><p>Relatos verdadeiros de benefício em algumas condições podem ser generalizados indevidamente para dezenas de outras.</p></article></div>"
+        },
+        {
+          "id": "como-ler",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--clinical\">Alfabetização científica</span><h2>Como interpretar estudos sobre CBD</h2><p>Nem todo estudo responde à mesma pergunta.</p></div><div aria-label=\"Hierarquia simplificada de desenhos de estudo\" class=\"cbd-pyramid\"><div style=\"--w:48%\">META-ANÁLISES</div><div style=\"--w:58%\">REVISÕES SISTEMÁTICAS</div><div style=\"--w:68%\">ENSAIOS RANDOMIZADOS</div><div style=\"--w:78%\">ESTUDOS OBSERVACIONAIS</div><div style=\"--w:88%\">ESTUDOS DE CASO</div><div style=\"--w:100%\">PESQUISA PRÉ-CLÍNICA / LABORATÓRIO</div></div><div class=\"integrative-callout integrative-callout--evidence\"><strong>Um estudo em células não é um tratamento</strong><p>Mostrar que CBD altera um processo biológico em laboratório pode justificar pesquisa clínica. Não demonstra, por si só, benefício terapêutico em pessoas.</p></div><div class=\"cbd-better-labels\"><article><strong>Qual CBD?</strong><span>Purificado, extrato rico em CBD ou combinação com THC?</span></article><article><strong>Qual dose?</strong><span>Miligrama absoluto, mg/kg e frequência mudam a exposição.</span></article><article><strong>Qual população?</strong><span>Adultos saudáveis, pacientes selecionados ou população geral?</span></article><article><strong>Qual comparador?</strong><span>Placebo, tratamento padrão ou ausência de intervenção?</span></article><article><strong>Quanto tempo?</strong><span>Efeito agudo não responde segurança ou benefício de longo prazo.</span></article><article><strong>Eventos adversos?</strong><span>Benefício sem avaliação de risco é leitura incompleta.</span></article></div>"
+        },
+        {
+          "id": "importancia",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--institutional\">Por que estudar?</span><h2>Mais do que estudar uma substância</h2></div><div class=\"cbd-importance-grid\"><article><h3>Farmacologia</h3><p>Mostra como uma mesma molécula pode interagir com múltiplos sistemas e ter efeitos dependentes de dose e contexto.</p></article><article><h3>Neurociência</h3><p>Permite estudar epilepsia, excitabilidade e sinalização cerebral por novas perspectivas.</p></article><article><h3>Medicina baseada em evidências</h3><p>É um caso didático de como uma aplicação pode atingir evidência robusta enquanto outras permanecem especulativas.</p></article><article><h3>Regulação</h3><p>Mostra como qualidade, padronização e categorias sanitárias influenciam o que pode ser concluído.</p></article><article><h3>Saúde pública</h3><p>Exige equilibrar acesso, qualidade, segurança, publicidade e expectativas de pacientes.</p></article><article><h3>Pensamento crítico</h3><p>Ajuda a distinguir mecanismo, relato pessoal, marketing, ensaio clínico e aprovação regulatória.</p></article></div>"
+        },
+        {
+          "id": "lacunas",
+          "classes": [
+            "cbd-section",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--uncertain\">Lacunas científicas</span><h2>O que ainda não sabemos?</h2><p>Ausência de resposta definitiva também é informação científica.</p></div><div class=\"cbd-small-grid\"><article><h3>Novas indicações</h3><p>Quais aplicações adicionais produzirão benefícios clinicamente relevantes?</p></article><article><h3>Doses</h3><p>Quais doses e regimes fazem sentido em condições diferentes?</p></article><article><h3>Respondedores</h3><p>Quais características individuais predizem benefício ou risco?</p></article><article><h3>Longo prazo</h3><p>Quais efeitos aparecem com meses ou anos de exposição?</p></article><article><h3>Formulações</h3><p>Quanto resultados de uma preparação podem ser transferidos para outra?</p></article><article><h3>Interações</h3><p>Qual a relevância clínica de diferentes interações em populações polimedicadas?</p></article></div>"
+        },
+        {
+          "id": "referencias",
+          "classes": [
+            "cbd-section",
+            "cbd-references",
+            "substance-section"
+          ],
+          "ariaLabelledBy": null,
+          "innerHtml": "<div class=\"section-heading\"><span class=\"integrative-level integrative-level--institutional\">Fontes e método</span><h2>Referências científicas</h2><p>Organizadas por função: história, ensaios clínicos, áreas experimentais, segurança e regulamentação.</p></div>\n<details class=\"integrative-details\" open=\"\"><summary>História e química</summary><div class=\"integrative-reference-grid\"><article id=\"ref-1\"><span class=\"integrative-level integrative-level--history\">Original · 1940</span><h3>Isolation of Cannabinol, Cannabidiol and Quebrachitol from Red Oil of Minnesota Wild Hemp</h3><p>Adams R, Pease DC, Clark JH. <em>J Am Chem Soc.</em> 1940;62:2194–2196.</p><a class=\"text-link\" href=\"https://pubs.acs.org/doi/10.1021/ja01865a080\" rel=\"noopener noreferrer\" target=\"_blank\">ACS <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-2\"><span class=\"integrative-level integrative-level--history\">Original · 1963</span><h3>Hashish—I: The structure of Cannabidiol</h3><p>Mechoulam R, Shvo Y. <em>Tetrahedron.</em> 1963;19:2073–2078.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/5879214/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article></div></details>\n<details class=\"integrative-details\" open=\"\"><summary>Epilepsias — evidência estabelecida</summary><div class=\"integrative-reference-grid\"><article id=\"ref-3\"><span class=\"integrative-level integrative-level--institutional\">FDA</span><h3>FDA Regulation of Cannabis and Cannabis-Derived Products, Including CBD</h3><p>A FDA informa que Epidiolex contém CBD purificado e é aprovado para crises associadas a Lennox–Gastaut, Dravet e complexo de esclerose tuberosa.</p><a class=\"text-link\" href=\"https://www.fda.gov/news-events/public-health-focus/fda-regulation-cannabis-and-cannabis-derived-products-including-cannabidiol-cbd\" rel=\"noopener noreferrer\" target=\"_blank\">FDA <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-4\"><span class=\"integrative-level integrative-level--clinical\">Ensaio randomizado</span><h3>Trial of Cannabidiol for Drug-Resistant Seizures in the Dravet Syndrome</h3><p>Devinsky O et al. <em>N Engl J Med.</em> 2017;376:2011–2020.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/28538134/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-5\"><span class=\"integrative-level integrative-level--clinical\">Ensaio fase 3</span><h3>Effect of Cannabidiol on Drop Seizures in the Lennox-Gastaut Syndrome</h3><p>Devinsky O et al. <em>N Engl J Med.</em> 2018;378:1888–1897.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/29768152/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-6\"><span class=\"integrative-level integrative-level--clinical\">Ensaio randomizado</span><h3>Add-on Cannabidiol Treatment for Drug-Resistant Seizures in Tuberous Sclerosis Complex</h3><p>Thiele EA et al. <em>JAMA Neurol.</em> 2021;78:285–292.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/33346789/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article></div></details>\n<details class=\"integrative-details\"><summary>Segurança e farmacologia clínica</summary><div class=\"integrative-reference-grid\"><article id=\"ref-7\"><span class=\"integrative-level integrative-level--risk\">FDA · 2025</span><h3>CDER Investigators Address the Safety of CBD in a Randomized Trial</h3><p>Resumo oficial de ensaio randomizado em adultos saudáveis e contexto de elevações de enzimas hepáticas e dose.</p><a class=\"text-link\" href=\"https://www.fda.gov/drugs/regulatory-science-action/cder-investigators-address-safety-cbd-randomized-trial\" rel=\"noopener noreferrer\" target=\"_blank\">FDA <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-8\"><span class=\"integrative-level integrative-level--institutional\">NIH / NIDA</span><h3>Cannabis (Marijuana)</h3><p>O NIDA diferencia CBD de THC e resume efeitos adversos conhecidos do CBD.</p><a class=\"text-link\" href=\"https://nida.nih.gov/research-topics/cannabis-marijuana\" rel=\"noopener noreferrer\" target=\"_blank\">NIDA <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-15\"><span class=\"integrative-level integrative-level--institutional\">OMS</span><h3>WHO review of cannabis and cannabis-related substances</h3><p>Revisão internacional sobre CBD, potencial de abuso/dependência e contexto regulatório.</p><a class=\"text-link\" href=\"https://www.who.int/teams/health-product-and-policy-standards/controlled-substances/who-review-of-cannabis-and-cannabis-related-substances\" rel=\"noopener noreferrer\" target=\"_blank\">OMS <span aria-hidden=\"true\">↗</span></a></article></div></details>\n<details class=\"integrative-details\"><summary>Ansiedade, sono, dor e neuropsiquiatria</summary><div class=\"integrative-reference-grid\"><article id=\"ref-9\"><span class=\"integrative-level integrative-level--limited\">Meta-análise · 2024</span><h3>Therapeutic potential of cannabidiol in anxiety disorders</h3><p>Han K et al. Meta-análise de estudos clínicos; sinal favorável com heterogeneidade e amostra total limitada.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/38924898/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-10\"><span class=\"integrative-level integrative-level--clinical\">Ensaio randomizado</span><h3>Effects of Cannabidiol on Experiences of Test Anxiety Among College Students</h3><p>Stanley TB et al. Ensaio com 32 participantes; não encontrou efeito das doses testadas sobre ansiedade de prova.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/35861792/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-11\"><span class=\"integrative-level integrative-level--limited\">Piloto randomizado · 2024</span><h3>Cannabidiol for moderate-severe insomnia: 150 mg nightly</h3><p>Narayan AJ et al. Pequeno ensaio placebo-controlado que ilustra a incerteza sobre eficácia de CBD isolado para insônia.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/38174873/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-12\"><span class=\"integrative-level integrative-level--limited\">Revisão sistemática · 2024</span><h3>Effectiveness of Cannabidiol to Manage Chronic Pain</h3><p>Mohammed SYM et al. Síntese de evidência clínica de CBD para dor crônica; resultados heterogêneos e limitações importantes.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/37953193/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-13\"><span class=\"integrative-level integrative-level--hypothesis\">Ensaio clínico</span><h3>Cannabidiol as an Adjunctive Therapy in Schizophrenia</h3><p>McGuire P et al. <em>Am J Psychiatry.</em> 2018. Estudo exploratório de CBD adjuvante em esquizofrenia.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/29241357/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-14\"><span class=\"integrative-level integrative-level--hypothesis\">Ensaio adaptativo</span><h3>Cannabidiol for the treatment of cannabis use disorder</h3><p>Freeman TP et al. <em>Lancet Psychiatry.</em> 2020;7:865–874.</p><a class=\"text-link\" href=\"https://pubmed.ncbi.nlm.nih.gov/32735782/\" rel=\"noopener noreferrer\" target=\"_blank\">PubMed <span aria-hidden=\"true\">↗</span></a></article></div></details>\n<details class=\"integrative-details\"><summary>Brasil — regulação atual</summary><div class=\"integrative-reference-grid\"><article id=\"ref-16\"><span class=\"integrative-level integrative-level--institutional\">Anvisa · 2026</span><h3>Autorização Sanitária de produtos de Cannabis</h3><p>A RDC nº 1.015/2026 atualizou o marco e entrou em vigor em 4 de maio de 2026.</p><a class=\"text-link\" href=\"https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-publica-perguntas-e-respostas-sobre-a-autorizacao-sanitaria-de-produtos-de-cannabis\" rel=\"noopener noreferrer\" target=\"_blank\">Anvisa <span aria-hidden=\"true\">↗</span></a></article><article id=\"ref-17\"><span class=\"integrative-level integrative-level--institutional\">Anvisa · RDC 660/2022</span><h3>Importação de produtos derivados de Cannabis</h3><p>Procedimento excepcional para pessoa física com prescrição; a Anvisa explicita que tais produtos importados não têm registro e não tiveram eficácia, qualidade ou segurança avaliadas pela Agência.</p><a class=\"text-link\" href=\"https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/cannabis\" rel=\"noopener noreferrer\" target=\"_blank\">Anvisa <span aria-hidden=\"true\">↗</span></a></article></div></details>\n<div class=\"integrative-callout\"><strong>Critério editorial</strong><p>Um ensaio com CBD purificado testa aquela formulação. Um estudo com extrato rico em CBD testa outro produto. Uma norma define acesso e controle. Nenhuma dessas fontes deve ser usada como substituta automática da outra.</p></div><p class=\"cbd-review-date substance-review-date\"><strong>Última verificação científica e regulatória:</strong> 9 de agosto de 2026.</p>\n<div class=\"cbd-final-summary\"><h2>Em resumo</h2><p><strong>O CBD possui aplicações médicas reais, mas não universais.</strong> A literatura sustenta usos farmacêuticos específicos em epilepsias graves, enquanto muitas aplicações populares continuam experimentais ou insuficientemente demonstradas.</p><p>Compreender canabidiol exige separar <strong>potencial biológico</strong> de <strong>evidência clínica</strong> — e ambos de <strong>marketing e relatos pessoais</strong>.</p></div>"
+        }
+      ],
+      "footer": {
+        "classes": [
+          "cbd-article-footer",
+          "substance-article-footer"
+        ],
+        "innerHtml": "<p><strong>Conclusão:</strong> o canabidiol é um exemplo particularmente útil de como uma substância pode ser simultaneamente <strong>medicamento comprovado em indicações específicas</strong> e <strong>objeto de alegações muito além do que a evidência atual sustenta</strong>. A pergunta científica correta não é “CBD funciona?”, mas <strong>qual CBD, em qual dose, para qual condição, em qual população, com qual benefício e qual risco?</strong></p><p class=\"cbd-editorial-note\"><strong>Conteúdo educacional.</strong> Não constitui recomendação de uso, diagnóstico ou tratamento. Prescrição, dose, formulação e monitoramento exigem avaliação profissional individual.</p><a class=\"text-link\" href=\"../metodologia.html\">Como o Let Flow 369 avalia evidências <span aria-hidden=\"true\">→</span></a>"
+      }
+    },
+    "backToTop": {
+      "ariaLabel": "Voltar ao topo",
+      "classes": [
+        "integrative-back-to-top"
+      ],
+      "dataAttribute": "data-integrative-back-to-top",
+      "innerHtml": "↑ <span>Topo</span>"
+    },
+    "postScripts": [
+      {
+        "src": "../src/scripts/content-network.js?v=20260810-1",
+        "defer": true,
+        "type": null
+      }
+    ]
+  }
+}

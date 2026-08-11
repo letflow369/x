@@ -36,8 +36,8 @@ export function renderStructuredArticle({ root, data, relative = `artigos/${data
     ARTICLE_CLASSES: escapeAttr(data.page.article.classes.join(' ')),
     ARTICLE_DATA: data.page.article.dataIntegrativePage ? ' data-integrative-page' : '',
     HERO: renderHero(data.page.article.hero),
-    TOC: renderToc(data.page.article.toc),
-    SECTIONS: data.page.article.sections.map(renderSection).join('\n'),
+    PRE_LAYOUT_SECTIONS: (data.page.article.preLayoutSections || []).map(renderSection).join('\n'),
+    LAYOUT: renderArticleLayout(data.page.article),
     ARTICLE_FOOTER: renderArticleFooter(data.page.article.footer),
     BACK_TO_TOP: renderBackToTop(data.page.backToTop),
     SITE_FOOTER: render(footerTemplate, { BASE: base }),
@@ -95,6 +95,7 @@ function renderHead(doc) {
   }
   lines.push(...renderScripts(doc.headScripts, false).split('\n').filter(Boolean));
   if (doc.structuredData) lines.push(`<script type="application/ld+json">${safeJson(doc.structuredData)}</script>`);
+  for (const href of doc.headTailStyles || []) lines.push(`<link href="${escapeAttr(href)}" rel="stylesheet"/>`);
   return lines.join('\n');
 }
 
@@ -110,8 +111,23 @@ function renderHero(hero) {
 }
 
 function renderToc(toc) {
+  if (toc.innerHtml) {
+    const aria = toc.ariaLabel ? ` aria-label="${escapeAttr(toc.ariaLabel)}"` : '';
+    return `<aside class="${escapeAttr(toc.classes.join(' '))}"${aria}>${toc.innerHtml}</aside>`;
+  }
   const items = toc.items.map((item) => `<li><a href="${escapeAttr(item.href)}">${escapeHtml(item.label)}</a></li>`).join('');
   return `<aside class="${escapeAttr(toc.classes.join(' '))}"><div class="article-toc__inner"><p>${escapeHtml(toc.title)}</p><nav aria-label="Índice desta página"><ol>${items}</ol></nav></div></aside>`;
+}
+
+function renderArticleLayout(article) {
+  const layout = article.layout || {};
+  const layoutClasses = layout.classes?.length ? layout.classes : ['article-layout'];
+  const contentClasses = layout.contentClasses?.length ? layout.contentClasses : ['article-content'];
+  const toc = renderToc(article.toc);
+  const sections = article.sections.map(renderSection).join('\n');
+  let html = `<div class="${escapeAttr(layoutClasses.join(' '))}">${toc}\n<div class="${escapeAttr(contentClasses.join(' '))}">\n${sections}\n</div></div>`;
+  if (layout.outerClasses?.length) html = `<div class="${escapeAttr(layout.outerClasses.join(' '))}">${html}</div>`;
+  return html;
 }
 
 function renderSection(section) {

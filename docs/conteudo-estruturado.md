@@ -1,17 +1,19 @@
-# Conteúdo estruturado — piloto DMT
+# Conteúdo estruturado — pilotos DMT, LSD e CBD
 
-**Estado:** piloto ativo desde 2026-08-11.
+**Estado:** três pilotos ativos desde 2026-08-11.
 
-O artigo `DMT` é o primeiro conteúdo do Let Flow 369 cuja fonte editorial deixa de ser o HTML final. A fonte de verdade passa a ser:
+Os artigos `DMT`, `LSD` e `CBD` são os primeiros conteúdos do Let Flow 369 cuja fonte editorial deixa de ser o HTML final. As fontes de verdade passam a ser:
 
 ```text
 content/artigos/dmt.json
+content/artigos/lsd.json
+content/artigos/cbd.json
 ```
 
 O fluxo é:
 
 ```text
-content/artigos/dmt.json
+content/artigos/*.json
         ↓
 scripts/lib/structured-article.mjs
         +
@@ -19,11 +21,11 @@ src/templates/substance-article.html
         +
 Design System v1
         ↓
-artigos/dmt.html (artefato sincronizado)
+artigos/*.html (artefatos sincronizados)
         ↓
 scripts/build-site.mjs
         ↓
-dist/artigos/dmt.html
+dist/artigos/*.html
 ```
 
 ## Objetivo
@@ -48,10 +50,13 @@ O arquivo JSON organiza:
 - hero;
 - índice interno;
 - seções na ordem editorial;
+- variações de layout necessárias para dossiês já existentes;
 - footer do artigo;
 - scripts específicos.
 
-Nesta primeira migração, o conteúdo interno de cada seção ainda é preservado em `innerHtml`. Essa escolha mantém fidelidade visual e editorial durante a transição. A etapa seguinte transformará os padrões recorrentes em blocos tipados como `timeline`, `evidence-grid`, `risk`, `faq` e `references` antes da integração do CMS.
+DMT e LSD usam o layout editorial padrão. CBD testa uma variação mais complexa, com resumo antes do shell principal e índice em `<details>`. O renderer suporta ambos sem hardcode por slug.
+
+Nesta fase, o conteúdo interno de cada seção ainda é preservado em `innerHtml`. Essa escolha mantém fidelidade visual e editorial durante a transição. A próxima etapa transformará padrões recorrentes em blocos tipados como `text`, `timeline`, `evidence-grid`, `comparison`, `risk`, `faq` e `references` antes da integração do CMS.
 
 O contrato documental está em:
 
@@ -61,13 +66,19 @@ content/schema/substance-dossier-v1.schema.json
 
 ## Comandos
 
-Sincronizar os HTML derivados:
+Sincronizar todos os HTML derivados:
 
 ```bash
 npm run sync:structured
 ```
 
-Auditar se o HTML derivado corresponde ao JSON:
+Sincronizar apenas um ou mais artigos:
+
+```bash
+node scripts/sync-structured-content.mjs dmt lsd cbd
+```
+
+Auditar se os HTML derivados correspondem às fontes estruturadas:
 
 ```bash
 npm run audit:structured-content
@@ -79,7 +90,11 @@ Gerar o site publicado:
 npm run build
 ```
 
-O build descobre automaticamente todos os arquivos `content/artigos/*.json`. Portanto, LSD e CBD podem ser adicionados ao mesmo fluxo sem alteração manual da lista de artigos no build.
+O build descobre automaticamente todos os arquivos `content/artigos/*.json`. Novos artigos estruturados podem entrar no fluxo sem alteração manual da lista no build.
+
+## Validação da migração
+
+Na migração dos três pilotos, o DOM final publicado foi comparado com a versão anterior. DMT, LSD e CBD permaneceram semanticamente idênticos: mesmos textos, headings, IDs, links, referências, classes e estrutura publicada.
 
 ## Regra editorial
 

@@ -204,6 +204,6 @@ A auditoria confirma que os oito dossiês usam o stylesheet compartilhado, as cl
 
 ## 10. Próxima etapa
 
-A família de substâncias está consolidada. O próximo passo é transformar **DMT, LSD e CBD** em conteúdo estruturado piloto (Markdown/JSON + front matter), mantendo os mesmos componentes e HTML final. Essa separação conteúdo/apresentação será a base segura para integrar o CMS.
+A família de substâncias está consolidada e os pilotos **DMT, LSD e CBD** já foram migrados para conteúdo estruturado JSON, mantendo o DOM publicado. O próximo passo é substituir progressivamente `innerHtml` por **blocos editoriais tipados** (`text`, `timeline`, `evidence-grid`, `comparison`, `risk`, `faq`, `references`). Essa camada será o contrato direto para o futuro CMS.
 
 Esta etapa ainda não introduz TinaCMS nem dependência de serviço externo.
