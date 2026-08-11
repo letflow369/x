@@ -136,7 +136,183 @@ function renderSection(section) {
     section.id ? `id="${escapeAttr(section.id)}"` : '',
     section.ariaLabelledBy ? `aria-labelledby="${escapeAttr(section.ariaLabelledBy)}"` : '',
   ].filter(Boolean).join(' ');
-  return `<section ${attrs}>${section.innerHtml}</section>`;
+  let content;
+  if (Array.isArray(section.blocks)) {
+    content = renderBlocks(section.blocks);
+    if (section.innerClasses?.length) content = `<div class="${escapeAttr(section.innerClasses.join(' '))}">${content}</div>`;
+  } else {
+    content = section.innerHtml || '';
+  }
+  return `<section ${attrs}>${content}</section>`;
+}
+
+function renderBlocks(blocks = []) {
+  return blocks.map(renderBlock).join('');
+}
+
+function renderBlock(block) {
+  switch (block.type) {
+    case 'section-heading': return renderSectionHeadingBlock(block);
+    case 'summary-grid': return renderSummaryGridBlock(block);
+    case 'evidence-key': return renderEvidenceKeyBlock(block);
+    case 'card-grid': return renderCardGridBlock(block);
+    case 'timeline': return renderTimelineBlock(block);
+    case 'flow': return renderFlowBlock(block);
+    case 'callout': return renderCalloutBlock(block);
+    case 'table': return renderTableBlock(block);
+    case 'clinical-study': return renderClinicalStudyBlock(block);
+    case 'details-list': return renderDetailsListBlock(block);
+    case 'filter-bar': return renderFilterBarBlock(block);
+    case 'study-grid': return renderStudyGridBlock(block);
+    case 'review-date': return renderReviewDateBlock(block);
+    case 'paragraph': return renderParagraphBlock(block);
+    default: throw new Error(`Bloco editorial não suportado: ${block.type}`);
+  }
+}
+
+function renderSectionHeadingBlock(block) {
+  const badge = block.badge
+    ? `<span class="${escapeAttr(block.badge.classes.join(' '))}">${rich(block.badge)}</span>`
+    : '';
+  const level = Number(block.heading?.level || 2);
+  const headingId = block.heading?.id ? ` id="${escapeAttr(block.heading.id)}"` : '';
+  const heading = `<h${level}${headingId}>${rich(block.heading)}</h${level}>`;
+  const paragraphs = (block.paragraphs || []).map((item) => `<p${classAttr(item.classes)}>${rich(item)}</p>`).join('');
+  return `<div class="${escapeAttr((block.classes || ['section-heading']).join(' '))}">${badge}${heading}${paragraphs}</div>`;
+}
+
+function renderSummaryGridBlock(block) {
+  const items = (block.items || []).map((item) => {
+    const paragraphs = (item.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('');
+    return `<article${classAttr(item.classes)}><span>${rich(item.label)}</span><strong>${rich(item.title)}</strong>${paragraphs}</article>`;
+  }).join('');
+  return `<div class="${escapeAttr(block.classes.join(' '))}">${items}</div>`;
+}
+
+function renderEvidenceKeyBlock(block) {
+  const items = (block.items || []).map((item) => `<div class="${escapeAttr(item.classes.join(' '))}"><strong>${rich(item.title)}</strong>${(item.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('')}</div>`).join('');
+  const aria = block.ariaLabel ? ` aria-label="${escapeAttr(block.ariaLabel)}"` : '';
+  return `<div${aria} class="${escapeAttr(block.classes.join(' '))}">${items}</div>`;
+}
+
+function renderCardGridBlock(block) {
+  const cards = (block.cards || []).map((card) => {
+    const label = card.label ? `<span class="${escapeAttr(card.label.classes.join(' '))}">${rich(card.label)}</span>` : '';
+    const level = Number(card.heading?.level || 3);
+    const heading = card.heading ? `<h${level}>${rich(card.heading)}</h${level}>` : '';
+    const paragraphs = (card.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('');
+    const link = card.link ? renderTextLink(card.link) : '';
+    return `<article class="${escapeAttr(card.classes.join(' '))}">${label}${heading}${paragraphs}${link}</article>`;
+  }).join('');
+  return `<div class="${escapeAttr(block.classes.join(' '))}">${cards}</div>`;
+}
+
+function renderTimelineBlock(block) {
+  const items = (block.items || []).map((item) => `<li><span>${rich(item.label)}</span><strong>${rich(item.title)}</strong>${(item.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('')}</li>`).join('');
+  return `<ol class="${escapeAttr(block.classes.join(' '))}">${items}</ol>`;
+}
+
+function renderFlowBlock(block) {
+  const aria = block.ariaLabel ? ` aria-label="${escapeAttr(block.ariaLabel)}"` : '';
+  const parts = [];
+  (block.steps || []).forEach((step, index) => {
+    if (index > 0) parts.push(`<span aria-hidden="true" class="${escapeAttr(block.arrowClasses.join(' '))}">${escapeHtml(block.arrow || '→')}</span>`);
+    parts.push(`<span class="${escapeAttr(block.nodeClasses.join(' '))}">${rich(step)}</span>`);
+  });
+  return `<div${aria} class="${escapeAttr(block.classes.join(' '))}">${parts.join('')}</div>`;
+}
+
+function renderCalloutBlock(block) {
+  const title = block.title ? `<strong>${rich(block.title)}</strong>` : '';
+  const paragraphs = (block.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('');
+  return `<div class="${escapeAttr(block.classes.join(' '))}">${title}${paragraphs}</div>`;
+}
+
+function renderTableBlock(block) {
+  const tableAttrs = renderAttributes(block.tableAttributes || {});
+  const head = block.headRows?.length ? `<thead>${block.headRows.map(renderTableRow).join('')}</thead>` : '';
+  const body = block.bodyRows?.length ? `<tbody>${block.bodyRows.map(renderTableRow).join('')}</tbody>` : '';
+  const table = `<table class="${escapeAttr(block.tableClasses.join(' '))}"${tableAttrs}>${head}${body}</table>`;
+  return block.wrapperClasses?.length ? `<div class="${escapeAttr(block.wrapperClasses.join(' '))}">${table}</div>` : table;
+}
+
+function renderTableRow(row) {
+  return `<tr>${(row.cells || []).map((cell) => {
+    const tag = cell.tag === 'th' ? 'th' : 'td';
+    return `<${tag}${renderAttributes(cell.attributes || {})}>${rich(cell)}</${tag}>`;
+  }).join('')}</tr>`;
+}
+
+function renderClinicalStudyBlock(block) {
+  const lead = block.lead || {};
+  const badge = lead.badge ? `<span class="${escapeAttr(lead.badge.classes.join(' '))}">${rich(lead.badge)}</span>` : '';
+  const heading = lead.heading ? `<h${Number(lead.heading.level || 3)}>${rich(lead.heading)}</h${Number(lead.heading.level || 3)}>` : '';
+  const paragraphs = (lead.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('');
+  const stats = (block.stats?.items || []).map((item) => `<div><strong>${rich(item.value)}</strong><span>${rich(item.label)}</span></div>`).join('');
+  const statsAria = block.stats?.ariaLabel ? ` aria-label="${escapeAttr(block.stats.ariaLabel)}"` : '';
+  const statsHtml = block.stats ? `<div${statsAria} class="${escapeAttr(block.stats.classes.join(' '))}">${stats}</div>` : '';
+  return `<article class="${escapeAttr(block.classes.join(' '))}"><div>${badge}${heading}${paragraphs}</div>${statsHtml}</article>`;
+}
+
+function renderDetailsListBlock(block) {
+  return (block.items || []).map((item) => `<details class="${escapeAttr(item.classes.join(' '))}"><summary>${rich(item.summary)}</summary>${(item.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('')}</details>`).join('');
+}
+
+function renderFilterBarBlock(block) {
+  const attrs = renderAttributes(block.attributes || {});
+  const buttons = (block.buttons || []).map((button) => `<button${renderAttributes(button.attributes || {})}>${rich(button)}</button>`).join('');
+  return `<div class="${escapeAttr(block.classes.join(' '))}"${attrs}>${buttons}</div>`;
+}
+
+function renderStudyGridBlock(block) {
+  const cards = (block.cards || []).map((card) => {
+    const attrs = renderAttributes(card.attributes || {});
+    const meta = card.badge ? `<div class="${escapeAttr(card.metaClasses.join(' '))}"><span class="${escapeAttr(card.badge.classes.join(' '))}">${rich(card.badge)}</span></div>` : '';
+    const heading = `<h${Number(card.heading.level || 3)}>${rich(card.heading)}</h${Number(card.heading.level || 3)}>`;
+    const paragraphs = (card.paragraphs || []).map((paragraph) => `<p>${rich(paragraph)}</p>`).join('');
+    const link = card.link ? renderTextLink(card.link) : '';
+    return `<article class="${escapeAttr(card.classes.join(' '))}"${attrs}>${meta}${heading}${paragraphs}${link}</article>`;
+  }).join('');
+  return `<div class="${escapeAttr(block.classes.join(' '))}">${cards}</div>`;
+}
+
+function renderReviewDateBlock(block) {
+  return `<p class="${escapeAttr(block.classes.join(' '))}"><strong>${rich(block.label)}</strong>${rich(block.value)}</p>`;
+}
+
+function renderParagraphBlock(block) {
+  return `<p${classAttr(block.classes)}>${rich(block)}</p>`;
+}
+
+function renderTextLink(link) {
+  const attrs = {
+    href: link.href,
+    rel: link.rel,
+    target: link.target,
+    class: (link.classes || ['text-link']).join(' '),
+    ...link.attributes,
+  };
+  const arrow = link.arrow ? ` <span aria-hidden="true">${escapeHtml(link.arrow)}</span>` : '';
+  return `<a${renderAttributes(attrs)}>${rich(link)}${arrow}</a>`;
+}
+
+function rich(value) {
+  if (value == null) return '';
+  if (typeof value === 'string') return escapeHtml(value);
+  if (Object.hasOwn(value, 'html')) return String(value.html);
+  return escapeHtml(value.text || '');
+}
+
+function classAttr(classes) {
+  return classes?.length ? ` class="${escapeAttr(classes.join(' '))}"` : '';
+}
+
+function renderAttributes(attributes = {}) {
+  const entries = Object.entries(attributes).filter(([, value]) => value !== null && value !== undefined && value !== false);
+  if (!entries.length) return '';
+  return entries.map(([name, value]) => value === true || value === ''
+    ? ` ${escapeAttr(name)}=""`
+    : ` ${escapeAttr(name)}="${escapeAttr(value)}"`).join('');
 }
 
 function renderArticleFooter(footer) {

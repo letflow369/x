@@ -1,6 +1,6 @@
 # Conteúdo estruturado — pilotos DMT, LSD e CBD
 
-**Estado:** três pilotos ativos desde 2026-08-11.
+**Estado:** três pilotos ativos desde 2026-08-11; DMT é o primeiro piloto com blocos editoriais tipados.
 
 Os artigos `DMT`, `LSD` e `CBD` são os primeiros conteúdos do Let Flow 369 cuja fonte editorial deixa de ser o HTML final. As fontes de verdade passam a ser:
 
@@ -56,7 +56,29 @@ O arquivo JSON organiza:
 
 DMT e LSD usam o layout editorial padrão. CBD testa uma variação mais complexa, com resumo antes do shell principal e índice em `<details>`. O renderer suporta ambos sem hardcode por slug.
 
-Nesta fase, o conteúdo interno de cada seção ainda é preservado em `innerHtml`. Essa escolha mantém fidelidade visual e editorial durante a transição. A próxima etapa transformará padrões recorrentes em blocos tipados como `text`, `timeline`, `evidence-grid`, `comparison`, `risk`, `faq` e `references` antes da integração do CMS.
+A migração agora possui dois níveis. LSD e CBD continuam preservando o conteúdo interno das seções em `innerHtml` para garantir fidelidade durante a transição. DMT avançou para o primeiro piloto de **blocos editoriais tipados**: 10 de suas 15 seções já não armazenam um grande fragmento HTML e são compostas pelo renderer a partir de dados estruturados.
+
+Os tipos atualmente exercitados pelo DMT são:
+
+```text
+section-heading
+summary-grid
+evidence-key
+card-grid
+timeline
+flow
+callout
+table
+clinical-study
+details-list
+filter-bar
+study-grid
+review-date
+```
+
+O HTML inline ainda é aceito apenas dentro de campos ricos pequenos — por exemplo, uma referência `<sup>` dentro de um parágrafo ou um `<em>` dentro de uma citação bibliográfica. O objetivo é remover progressivamente também esse HTML quando o modelo de rich text do CMS for definido.
+
+Essa etapa prioriza **editabilidade e contrato de componentes**, não redução do tamanho do JSON. Dados tipados são naturalmente mais verbosos que um fragmento HTML compacto, mas permitem validação, formulários de CMS, reuso e evolução segura do Design System.
 
 O contrato documental está em:
 
@@ -84,6 +106,12 @@ Auditar se os HTML derivados correspondem às fontes estruturadas:
 npm run audit:structured-content
 ```
 
+Auditar especificamente os blocos editoriais tipados:
+
+```bash
+npm run audit:typed-blocks
+```
+
 Gerar o site publicado:
 
 ```bash
@@ -94,7 +122,7 @@ O build descobre automaticamente todos os arquivos `content/artigos/*.json`. Nov
 
 ## Validação da migração
 
-Na migração dos três pilotos, o DOM final publicado foi comparado com a versão anterior. DMT, LSD e CBD permaneceram semanticamente idênticos: mesmos textos, headings, IDs, links, referências, classes e estrutura publicada.
+Na migração dos três pilotos, o DOM final publicado foi comparado com a versão anterior. DMT, LSD e CBD permaneceram semanticamente idênticos: mesmos textos, headings, IDs, links, referências, classes e estrutura publicada. A conversão das 10 seções tipadas do DMT foi novamente comparada com o HTML anterior e também manteve DOM equivalente.
 
 ## Regra editorial
 
