@@ -15,11 +15,13 @@
     "audit:editorial": "node scripts/audit-editorial.mjs",
     "test:e2e": "playwright test",
     "lighthouse": "lhci autorun",
-    "ci": "node scripts/build-site.mjs && node scripts/audit-project.mjs --strict && node scripts/audit-project.mjs --root dist --strict && node scripts/audit-editorial.mjs && node scripts/audit-structured-data.mjs && node scripts/smoke-http.mjs && playwright test && lhci autorun",
+    "ci": "node scripts/audit-shared-header.mjs && node scripts/build-site.mjs && node scripts/audit-project.mjs --strict && node scripts/audit-project.mjs --root dist --strict && node scripts/audit-editorial.mjs && node scripts/audit-structured-data.mjs && node scripts/smoke-http.mjs && playwright test && lhci autorun",
     "sync:evidence": "node scripts/sync-evidence-ledger.mjs",
     "sync:data": "node scripts/sync-content-metadata.mjs && node scripts/sync-evidence-ledger.mjs",
     "audit:structured": "node scripts/audit-structured-data.mjs",
-    "test:http": "node scripts/smoke-http.mjs"
+    "test:http": "node scripts/smoke-http.mjs",
+    "sync:header": "node scripts/sync-shared-header.mjs",
+    "audit:header": "node scripts/audit-shared-header.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",

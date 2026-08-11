@@ -1,4 +1,5 @@
 .site-header {
+  --header-content-width: 72rem;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -13,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  width: min(100% - 2rem, var(--content-width));
+  width: min(100% - 2rem, var(--header-content-width));
   min-height: 4.75rem;
   margin-inline: auto;
 }
@@ -67,8 +68,13 @@
 }
 
 .site-nav {
+  min-width: 0;
   overflow-x: auto;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .site-nav__list {
@@ -151,6 +157,7 @@
 
 @media (max-width: 23rem) {
   .site-header {
+  --header-content-width: 72rem;
     position: static;
   }
 

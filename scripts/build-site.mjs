@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { replaceHeader } from './lib/shared-header.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -57,34 +58,12 @@ function copyDirectory(relative) {
 }
 
 function replaceSharedShell(html, relative, base) {
-  const current = navState(relative);
-  const header = render(headerTemplate, {
-    BASE: base,
-    CURRENT_HOME: current === 'home' ? ' aria-current="page"' : '',
-    CURRENT_TOPICS: current === 'topics' ? ' aria-current="location"' : '',
-    CURRENT_TRAILS: current === 'trails' ? ' aria-current="page"' : '',
-    CURRENT_EVIDENCE: current === 'evidence' ? ' aria-current="page"' : '',
-    CURRENT_SEARCH: current === 'search' ? ' aria-current="page"' : '',
-  });
+  html = replaceHeader(html, headerTemplate, relative);
   const footer = render(footerTemplate, { BASE: base });
-  if (!/<header class=["']site-header["']>[\s\S]*?<\/header>/i.test(html)) {
-    throw new Error(`Header compartilhado ausente em ${relative}`);
-  }
   if (!/<footer class=["']site-footer["']>[\s\S]*?<\/footer>/i.test(html)) {
     throw new Error(`Footer compartilhado ausente em ${relative}`);
   }
-  return html
-    .replace(/<header class=["']site-header["']>[\s\S]*?<\/header>/i, header)
-    .replace(/<footer class=["']site-footer["']>[\s\S]*?<\/footer>/i, footer);
-}
-
-function navState(relative) {
-  if (relative === 'index.html') return 'home';
-  if (relative.startsWith('artigos/') || relative.startsWith('assuntos/')) return 'topics';
-  if (relative === 'trilhas.html') return 'trails';
-  if (relative === 'evidencias.html') return 'evidence';
-  if (relative === 'busca.html') return 'search';
-  return null;
+  return html.replace(/<footer class=["']site-footer["']>[\s\S]*?<\/footer>/i, footer);
 }
 
 function injectReferrerPolicy(html) {
