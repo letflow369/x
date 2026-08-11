@@ -76,7 +76,26 @@ Auditoria específica:
 npm run audit:design
 ```
 
-O CMS ainda não foi introduzido. A prioridade desta etapa é separar apresentação compartilhada do conteúdo antes de migrar artigos para Markdown/JSON estruturado.
+O CMS ainda não foi introduzido. A separação entre apresentação e conteúdo começou pelo piloto **DMT**, cuja fonte de verdade agora é `content/artigos/dmt.json`. O build gera o HTML a partir desse conteúdo estruturado e do Design System.
+
+Arquivos do piloto:
+
+```text
+content/artigos/dmt.json
+content/schema/substance-dossier-v1.schema.json
+src/templates/substance-article.html
+scripts/lib/structured-article.mjs
+scripts/sync-structured-content.mjs
+scripts/audit-structured-content.mjs
+docs/conteudo-estruturado.md
+```
+
+Comandos:
+
+```bash
+npm run sync:structured
+npm run audit:structured-content
+```
 
 ## Publicação
 

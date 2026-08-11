@@ -7,7 +7,7 @@ O navegador continua recebendo apenas HTML, CSS e JavaScript nativos. O Node.js 
 ## Fonte e artefato
 
 ```text
-HTML editorial + dados + componentes compartilhados
+conteúdo estruturado + HTML legado + dados + componentes
                     ↓
           scripts/build-site.mjs
                     ↓
@@ -17,6 +17,32 @@ HTML editorial + dados + componentes compartilhados
 ```
 
 `dist/` é descartável e não deve ser versionado.
+
+
+## Conteúdo estruturado
+
+O piloto começou por `DMT`:
+
+```text
+content/artigos/dmt.json
+        ↓
+src/templates/substance-article.html
+        ↓
+scripts/lib/structured-article.mjs
+        ↓
+HTML estático
+```
+
+O build descobre automaticamente `content/artigos/*.json` e usa esses arquivos como fonte de verdade para os artigos migrados. O HTML em `artigos/` continua existindo como artefato sincronizado para compatibilidade da árvore-fonte e auditorias locais.
+
+Comandos:
+
+```bash
+npm run sync:structured
+npm run audit:structured-content
+```
+
+Detalhes: `docs/conteudo-estruturado.md`.
 
 ## Componentes compartilhados
 

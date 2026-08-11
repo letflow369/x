@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { replaceHeader } from './lib/shared-header.mjs';
+import { listStructuredArticles, loadStructuredArticle, renderStructuredArticle } from './lib/structured-article.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -23,6 +24,13 @@ copyDirectory('src/assets');
 copyDirectory('src/styles');
 copyDirectory('src/scripts');
 copyDirectory('src/data');
+
+// Artigos estruturados sobrescrevem o HTML derivado copiado da árvore-fonte.
+for (const slug of listStructuredArticles(root)) {
+  const data = loadStructuredArticle(root, slug);
+  const relative = `artigos/${slug}.html`;
+  fs.writeFileSync(path.join(dist, relative), renderStructuredArticle({ root, data, relative }));
+}
 
 const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
 for (const file of htmlFiles) {
