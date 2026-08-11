@@ -403,3 +403,28 @@
 
 - `src/assets/images/sindrome-down-trissomia-desenvolvimento.svg` — ilustração conceitual original do Let Flow 369; não representa cariótipo diagnóstico nem prognóstico individual.
 - `src/assets/images/og-sindrome-down.jpg` — composição social original derivada da identidade visual da página.
+
+## Vodou
+### Cerimônia Vodou em Jacmel, Haiti
+
+- Conteúdo: registro documental de uma cerimônia Vodou em Jacmel, Haiti.
+- Fotógrafo: Doron (Wikimedia Commons).
+- Data: dezembro de 2002.
+- Fonte: Wikimedia Commons.
+- Licença: Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0); o arquivo original também é disponibilizado sob GFDL.
+- Alterações: redimensionamento, compressão, conversão para WebP e composição editorial da imagem social.
+- Arquivos: `vodou-jacmel-cerimonia.jpg`, `vodou-jacmel-cerimonia.webp` e `og-vodou.jpg`.
+- Observação: `og-vodou.jpg` incorpora a fotografia e permanece sujeito aos termos de compartilhamento pela mesma licença compatível.
+- Página: https://commons.wikimedia.org/wiki/File:JacmelVodou.jpg
+
+### Mapa histórico de Hispaniola, 1723
+
+- Conteúdo: mapa da ilha de Hispaniola / Saint-Domingue, correspondente aos atuais Haiti e República Dominicana.
+- Autor: Nicolas de Fer.
+- Data: 1723.
+- Acervo: John Carter Brown Library.
+- Fonte: Wikimedia Commons.
+- Licença: domínio público.
+- Alterações: redimensionamento, compressão e conversão para WebP.
+- Arquivos: `vodou-hispaniola-1723.jpg` e `vodou-hispaniola-1723.webp`.
+- Página: https://commons.wikimedia.org/wiki/File:Map_of_Hispaniola.JPG

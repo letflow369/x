@@ -1,0 +1,1088 @@
+.vodou-article {
+  --vodou-charcoal: #171513;
+  --vodou-charcoal-soft: #24201d;
+  --vodou-paper: #eee6d7;
+  --vodou-paper-soft: #f7f2e9;
+  --vodou-terracotta: #94513e;
+  --vodou-wine: #5b3036;
+  --vodou-gold: #9f7c46;
+  --vodou-ink: #26211d;
+  --vodou-muted: #696057;
+  --vodou-line: color-mix(in srgb, var(--vodou-ink) 18%, transparent);
+  --vodou-radius: 1rem;
+  color: inherit;
+}
+
+.vodou-article .article-section {
+  scroll-margin-top: 7rem;
+}
+
+.vodou-hero {
+  position: relative;
+  overflow: clip;
+  margin: 0 0 2rem;
+  border: 1px solid color-mix(in srgb, var(--vodou-gold) 25%, transparent);
+  border-radius: 1.35rem;
+  background: linear-gradient(135deg, var(--vodou-charcoal), var(--vodou-charcoal-soft));
+  color: var(--vodou-paper-soft);
+}
+
+.vodou-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, .85fr);
+  align-items: stretch;
+  min-height: 31rem;
+}
+
+.vodou-hero__content {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  padding: clamp(2rem, 5vw, 4.75rem);
+}
+
+.vodou-hero__eyebrow {
+  margin: 0;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #d9c29b;
+}
+
+.vodou-hero h1 {
+  margin: 0;
+  max-width: 10ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  line-height: .92;
+  letter-spacing: -.035em;
+  color: #fffaf1;
+}
+
+.vodou-hero__subtitle {
+  margin: 0;
+  max-width: 31ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.8vw, 2.25rem);
+  line-height: 1.15;
+  color: #efe3d0;
+}
+
+.vodou-hero__intro {
+  max-width: 66ch;
+  margin: .25rem 0 0;
+  line-height: 1.72;
+  color: #e7dfd4;
+}
+
+.vodou-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .35rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vodou-hero__tags li {
+  padding: .42rem .72rem;
+  border: 1px solid color-mix(in srgb, #fff 24%, transparent);
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #f6ede0;
+  background: color-mix(in srgb, #fff 6%, transparent);
+}
+
+.vodou-hero__perspective {
+  margin: .4rem 0 0;
+  padding: .9rem 1rem;
+  border-left: .25rem solid var(--vodou-terracotta);
+  background: color-mix(in srgb, #fff 7%, transparent);
+  color: #f0e7db;
+  line-height: 1.55;
+}
+
+.vodou-hero__media {
+  position: relative;
+  min-height: 24rem;
+  margin: 0;
+  background: #100f0e;
+}
+
+.vodou-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(23,21,19,.7), rgba(23,21,19,.05) 45%, rgba(23,21,19,.16));
+  pointer-events: none;
+}
+
+.vodou-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vodou-hero__media figcaption {
+  position: absolute;
+  z-index: 1;
+  right: .9rem;
+  bottom: .8rem;
+  left: .9rem;
+  padding: .55rem .7rem;
+  border-radius: .55rem;
+  font-size: .73rem;
+  line-height: 1.4;
+  color: #f7efe5;
+  background: rgba(14, 13, 12, .72);
+  backdrop-filter: blur(3px);
+}
+
+.vodou-summary,
+.vodou-wide,
+.vodou-origin,
+.vodou-service,
+.vodou-postindependence,
+.vodou-final-note,
+.vodou-conclusion {
+  max-width: 76rem;
+  margin-inline: auto;
+}
+
+.vodou-summary {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--vodou-line);
+  border-radius: var(--vodou-radius);
+  background: var(--vodou-paper-soft);
+  color: var(--vodou-ink);
+}
+
+.vodou-summary h2,
+.vodou-history-paper h2,
+.vodou-stigma h2,
+.vodou-conclusion h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.vodou-facts,
+.vodou-myths {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.2rem;
+}
+
+.vodou-facts caption,
+.vodou-myths caption {
+  text-align: left;
+  font-weight: 800;
+  margin-bottom: .7rem;
+}
+
+.vodou-facts th,
+.vodou-facts td,
+.vodou-myths th,
+.vodou-myths td {
+  padding: .78rem .85rem;
+  border-bottom: 1px solid var(--vodou-line);
+  vertical-align: top;
+  text-align: left;
+}
+
+.vodou-facts th {
+  width: 14rem;
+}
+
+.vodou-terms {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.4rem;
+}
+
+.vodou-term-card,
+.vodou-world-card,
+.vodou-practice-card,
+.vodou-role,
+.vodou-value,
+.vodou-stigma-card,
+.vodou-domain-card,
+.vodou-life-card,
+.vodou-diaspora-card,
+.vodou-book,
+.vodou-study-card,
+.vodou-evidence-layer {
+  border: 1px solid var(--vodou-line);
+  border-radius: .9rem;
+  background: color-mix(in srgb, var(--vodou-paper-soft) 82%, white);
+  color: var(--vodou-ink);
+}
+
+.vodou-term-card,
+.vodou-world-card,
+.vodou-practice-card,
+.vodou-role,
+.vodou-value,
+.vodou-stigma-card,
+.vodou-domain-card,
+.vodou-life-card,
+.vodou-diaspora-card,
+.vodou-book,
+.vodou-study-card {
+  padding: 1.1rem;
+}
+
+.term-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  margin-bottom: .65rem;
+  border-radius: 50%;
+  font-weight: 900;
+  color: #fff;
+  background: var(--vodou-wine);
+}
+
+.vodou-term-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  margin: 1rem 0;
+  color: var(--vodou-muted);
+  font-weight: 800;
+}
+
+.term-arrow {
+  color: var(--vodou-terracotta);
+}
+
+.vodou-method-note,
+.vodou-caveat,
+.vodou-evidence-box {
+  margin: 1.25rem 0 0;
+  padding: 1rem 1.1rem;
+  border-left: .28rem solid var(--vodou-gold);
+  border-radius: .25rem .8rem .8rem .25rem;
+  background: color-mix(in srgb, var(--vodou-paper) 75%, white);
+  color: var(--vodou-ink);
+}
+
+.vodou-origin__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .95fr);
+  gap: clamp(1.4rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.vodou-lead {
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.vodou-diaspora-flow,
+.vodou-resistance-flow,
+.vodou-stigma-flow {
+  display: grid;
+  gap: .65rem;
+}
+
+.vodou-diaspora-flow span,
+.vodou-resistance-flow span,
+.vodou-stigma-flow span {
+  display: block;
+  padding: .75rem .9rem;
+  border-radius: .7rem;
+  background: var(--vodou-charcoal);
+  color: #f6ede0;
+  font-weight: 750;
+  text-align: center;
+}
+
+.vodou-diaspora-flow b,
+.vodou-resistance-flow b,
+.vodou-stigma-flow b {
+  color: var(--vodou-terracotta);
+  text-align: center;
+}
+
+.vodou-document-section {
+  padding: clamp(1.35rem, 4vw, 2.6rem);
+  border-radius: 1rem;
+  background: var(--vodou-paper);
+  color: var(--vodou-ink);
+}
+
+.vodou-documentary-figure {
+  margin: 1.5rem 0 0;
+}
+
+.vodou-documentary-figure img {
+  width: 100%;
+  max-height: 34rem;
+  object-fit: cover;
+  border: 1px solid color-mix(in srgb, var(--vodou-ink) 24%, transparent);
+  border-radius: .65rem;
+}
+
+.vodou-documentary-figure figcaption,
+.vodou-map-alt {
+  color: var(--vodou-muted);
+  font-size: .84rem;
+  line-height: 1.55;
+}
+
+.vodou-map-alt {
+  margin-top: .65rem;
+}
+
+.vodou-timeline {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding-left: 1.45rem;
+}
+
+.vodou-timeline::before {
+  content: "";
+  position: absolute;
+  top: .4rem;
+  bottom: .4rem;
+  left: .35rem;
+  width: 2px;
+  background: color-mix(in srgb, var(--vodou-terracotta) 55%, transparent);
+}
+
+.vodou-timeline article {
+  position: relative;
+  padding: .2rem 0 .2rem 1rem;
+}
+
+.vodou-timeline article::before {
+  content: "";
+  position: absolute;
+  top: .52rem;
+  left: -1.54rem;
+  width: .66rem;
+  height: .66rem;
+  border: 3px solid var(--vodou-paper-soft);
+  border-radius: 50%;
+  background: var(--vodou-wine);
+}
+
+.vodou-timeline time {
+  display: block;
+  margin-bottom: .25rem;
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--vodou-wine);
+}
+
+.vodou-world-grid,
+.vodou-practice-grid,
+.vodou-values-grid,
+.vodou-stigma-grid,
+.vodou-domain-grid,
+.vodou-life-grid,
+.vodou-diaspora-cards,
+.vodou-books,
+.vodou-study-grid,
+.vodou-evidence-layers {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.vodou-world-grid,
+.vodou-practice-grid,
+.vodou-values-grid,
+.vodou-stigma-grid,
+.vodou-domain-grid,
+.vodou-life-grid,
+.vodou-study-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vodou-diaspora-cards,
+.vodou-books,
+.vodou-evidence-layers {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.vodou-pullquote {
+  margin: 1.35rem auto;
+  max-width: 38ch;
+  padding: .6rem 0 .6rem 1rem;
+  border-left: .25rem solid var(--vodou-terracotta);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.3rem, 2.7vw, 2rem);
+  line-height: 1.28;
+  color: var(--vodou-wine);
+}
+
+.vodou-cycle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .55rem;
+  margin: 1.2rem 0;
+}
+
+.vodou-cycle span {
+  padding: .55rem .8rem;
+  border-radius: 999px;
+  background: var(--vodou-paper);
+  color: var(--vodou-ink);
+  font-weight: 750;
+}
+
+.vodou-cycle b {
+  color: var(--vodou-terracotta);
+}
+
+.vodou-clergy-grid,
+.vodou-three-layers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.vodou-three-layers {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vodou-history-paper {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid color-mix(in srgb, var(--vodou-ink) 22%, transparent);
+  border-radius: 1rem;
+  background:
+    linear-gradient(rgba(255,255,255,.13), rgba(255,255,255,.13)),
+    var(--vodou-paper);
+  color: var(--vodou-ink);
+}
+
+.vodou-subtitle {
+  margin-top: .1rem;
+  color: var(--vodou-wine);
+}
+
+.vodou-stigma {
+  margin-inline: calc(50% - 50vw);
+  padding: clamp(2rem, 6vw, 5rem) max(1rem, calc((100vw - 76rem) / 2));
+  background: var(--vodou-charcoal);
+  color: #f4ede3;
+}
+
+.vodou-stigma .vodou-stigma-card {
+  border-color: color-mix(in srgb, #fff 18%, transparent);
+  background: color-mix(in srgb, #fff 7%, transparent);
+  color: #eee6db;
+}
+
+.vodou-stigma h2,
+.vodou-stigma h3 {
+  color: #fff7ec;
+}
+
+.vodou-stigma-flow span {
+  background: color-mix(in srgb, #fff 9%, transparent);
+}
+
+.vodou-art-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.vodou-art-grid figure {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--vodou-line);
+  border-radius: .9rem;
+  background: var(--vodou-paper-soft);
+  color: var(--vodou-ink);
+}
+
+.vodou-art-grid figcaption {
+  margin-top: .65rem;
+  color: var(--vodou-muted);
+  line-height: 1.5;
+}
+
+.vodou-veve-list {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1.2rem;
+}
+
+.vodou-veve-list details {
+  border: 1px solid var(--vodou-line);
+  border-radius: .85rem;
+  background: var(--vodou-paper-soft);
+  color: var(--vodou-ink);
+}
+
+.vodou-veve-list summary {
+  cursor: pointer;
+  padding: 1rem 1.1rem;
+  font-weight: 850;
+  color: var(--vodou-wine);
+}
+
+.vodou-veve-list summary:focus-visible {
+  outline: .2rem solid var(--vodou-terracotta);
+  outline-offset: .18rem;
+}
+
+.vodou-veve-list details > div {
+  padding: 0 1.1rem 1.1rem;
+}
+
+.vodou-veve-source {
+  color: var(--vodou-muted);
+  font-size: .84rem;
+}
+
+.vodou-evidence-layer {
+  position: relative;
+  padding: 1.1rem 1.1rem 1.1rem 1.25rem;
+  overflow: hidden;
+}
+
+.vodou-evidence-layer::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: .28rem;
+  background: var(--layer-color, var(--vodou-muted));
+}
+
+.vodou-evidence-layer.is-documented { --layer-color: #56705b; }
+.vodou-evidence-layer.is-tradition { --layer-color: var(--vodou-gold); }
+.vodou-evidence-layer.is-debate { --layer-color: var(--vodou-terracotta); }
+.vodou-evidence-layer.is-undemonstrated { --layer-color: var(--vodou-wine); }
+
+.vodou-reference-list {
+  display: grid;
+  gap: .7rem;
+  padding-left: 1.35rem;
+}
+
+.vodou-reference-list li {
+  scroll-margin-top: 8rem;
+  line-height: 1.58;
+}
+
+.vodou-reference-list li:target {
+  padding: .55rem .65rem;
+  border-radius: .55rem;
+  background: color-mix(in srgb, var(--vodou-gold) 18%, transparent);
+}
+
+.vodou-final-note {
+  padding: 1.2rem 1.3rem;
+  border: 1px solid color-mix(in srgb, var(--vodou-gold) 45%, transparent);
+  border-radius: 1rem;
+  background: #fff9ee;
+  color: var(--vodou-ink);
+}
+
+.vodou-conclusion {
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border-radius: 1rem;
+  background: var(--vodou-charcoal);
+  color: #f4ede3;
+}
+
+.vodou-conclusion h2 {
+  color: #fff8ee;
+}
+
+.vodou-conclusion blockquote {
+  margin: 1.3rem 0 0;
+  padding-left: 1rem;
+  border-left: .25rem solid var(--vodou-terracotta);
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: #efe5d6;
+}
+
+.vodou-article a:focus-visible,
+.vodou-article button:focus-visible,
+.vodou-article summary:focus-visible {
+  outline: .2rem solid var(--vodou-terracotta);
+  outline-offset: .2rem;
+}
+
+@media (max-width: 72rem) {
+  .vodou-hero__grid,
+  .vodou-origin__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vodou-hero__media {
+    min-height: 22rem;
+  }
+
+  .vodou-world-grid,
+  .vodou-practice-grid,
+  .vodou-values-grid,
+  .vodou-stigma-grid,
+  .vodou-domain-grid,
+  .vodou-life-grid,
+  .vodou-study-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .vodou-hero {
+    border-radius: .9rem;
+  }
+
+  .vodou-hero__content {
+    padding: 1.5rem;
+  }
+
+  .vodou-hero h1 {
+    font-size: clamp(3.1rem, 18vw, 5rem);
+  }
+
+  .vodou-hero__media {
+    min-height: 17rem;
+  }
+
+  .vodou-terms,
+  .vodou-world-grid,
+  .vodou-practice-grid,
+  .vodou-clergy-grid,
+  .vodou-values-grid,
+  .vodou-three-layers,
+  .vodou-stigma-grid,
+  .vodou-domain-grid,
+  .vodou-art-grid,
+  .vodou-life-grid,
+  .vodou-diaspora-cards,
+  .vodou-books,
+  .vodou-study-grid,
+  .vodou-evidence-layers {
+    grid-template-columns: 1fr;
+  }
+
+  .vodou-term-flow {
+    justify-content: flex-start;
+  }
+
+  .vodou-cycle {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .vodou-facts,
+  .vodou-myths,
+  .vodou-facts tbody,
+  .vodou-myths tbody,
+  .vodou-facts tr,
+  .vodou-myths tr,
+  .vodou-facts th,
+  .vodou-myths th,
+  .vodou-facts td,
+  .vodou-myths td {
+    display: block;
+    width: 100%;
+  }
+
+  .vodou-facts thead,
+  .vodou-myths thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .vodou-facts tr,
+  .vodou-myths tr {
+    margin-bottom: .8rem;
+    padding: .8rem;
+    border: 1px solid var(--vodou-line);
+    border-radius: .75rem;
+    background: color-mix(in srgb, var(--vodou-paper-soft) 82%, white);
+  }
+
+  .vodou-facts th,
+  .vodou-myths th,
+  .vodou-facts td,
+  .vodou-myths td {
+    padding: .3rem 0;
+    border: 0;
+  }
+
+  .vodou-facts th,
+  .vodou-myths th {
+    color: var(--vodou-wine);
+  }
+
+  .vodou-stigma {
+    padding-inline: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vodou-article *,
+  .vodou-article *::before,
+  .vodou-article *::after {
+    scroll-behavior: auto;
+    transition-duration: .001ms;
+    animation-duration: .001ms;
+    animation-iteration-count: 1;
+  }
+}
+
+/* Ajustes estruturais para o markup editorial da página */
+.vodou-hero {
+  min-height: clamp(38rem, 72vh, 52rem);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+}
+
+.vodou-hero > picture,
+.vodou-hero__image,
+.vodou-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vodou-hero > picture {
+  z-index: -3;
+}
+
+.vodou-hero__image {
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.vodou-hero__overlay {
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(17,15,13,.94) 0%, rgba(17,15,13,.78) 45%, rgba(17,15,13,.35) 72%, rgba(17,15,13,.22) 100%),
+    linear-gradient(0deg, rgba(17,15,13,.92) 0%, rgba(17,15,13,.08) 60%);
+}
+
+.vodou-hero__inner {
+  width: min(76rem, calc(100% - 2rem));
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 5rem) 0 clamp(1.6rem, 4vw, 3.2rem);
+}
+
+.vodou-hero .section-kicker {
+  color: #d9c29b;
+}
+
+.vodou-perspective {
+  display: grid;
+  gap: .2rem;
+  max-width: 61rem;
+  margin: 1rem 0;
+  padding: .9rem 1rem;
+  border-left: .25rem solid var(--vodou-terracotta);
+  border-radius: .2rem .7rem .7rem .2rem;
+  background: rgba(255,255,255,.08);
+}
+
+.vodou-perspective span {
+  color: #ece3d7;
+}
+
+.vodou-hero__credit {
+  max-width: 70ch;
+  margin: 1rem 0 0;
+  font-size: .74rem;
+  line-height: 1.5;
+  color: #ded4c7;
+}
+
+.vodou-hero__credit a {
+  color: #f1d9ae;
+}
+
+.vodou-summary__inner {
+  max-width: 76rem;
+  margin-inline: auto;
+}
+
+.vodou-summary__note {
+  margin: 1rem 0 0;
+  color: var(--vodou-muted);
+}
+
+.vodou-terms {
+  display: block;
+}
+
+.vodou-terms .vodou-term-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+}
+
+.vodou-terms .vodou-term-flow article,
+.vodou-world-grid > article,
+.vodou-practice-grid > article,
+.vodou-clergy-grid > article,
+.vodou-values-grid > article,
+.vodou-stigma-grid > article,
+.vodou-domain-grid > article,
+.vodou-art-grid > article,
+.vodou-diaspora-cards > article,
+.vodou-books > article,
+.vodou-study-grid > article,
+.vodou-evidence-layers > article {
+  padding: 1.1rem;
+  border: 1px solid var(--vodou-line);
+  border-radius: .9rem;
+  background: color-mix(in srgb, var(--vodou-paper-soft) 82%, white);
+  color: var(--vodou-ink);
+}
+
+.vodou-world-grid > article,
+.vodou-practice-grid > article,
+.vodou-clergy-grid > article,
+.vodou-values-grid > article,
+.vodou-domain-grid > article,
+.vodou-art-grid > article,
+.vodou-diaspora-cards > article,
+.vodou-books > article,
+.vodou-study-grid > article {
+  height: 100%;
+}
+
+.vodou-clergy-grid > article {
+  position: relative;
+}
+
+.vodou-role {
+  display: inline-block;
+  margin: 0 0 .55rem;
+  padding: .28rem .55rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vodou-gold) 18%, transparent);
+  color: var(--vodou-wine);
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.vodou-values-grid > article,
+.vodou-life-grid > span {
+  display: grid;
+  align-content: start;
+}
+
+.vodou-life-grid > span {
+  min-height: 5rem;
+  place-items: center;
+  padding: .9rem;
+  border: 1px solid var(--vodou-line);
+  border-radius: .8rem;
+  background: var(--vodou-paper-soft);
+  color: var(--vodou-ink);
+  font-weight: 800;
+  text-align: center;
+}
+
+.vodou-postindependence {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: .65rem;
+  margin-top: 1.2rem;
+}
+
+.vodou-postindependence > div {
+  display: grid;
+  gap: .35rem;
+  min-height: 7.5rem;
+  align-content: center;
+  padding: .8rem;
+  border: 1px solid var(--vodou-line);
+  border-radius: .75rem;
+  background: var(--vodou-paper-soft);
+  color: var(--vodou-ink);
+  text-align: center;
+}
+
+.vodou-postindependence strong {
+  color: var(--vodou-wine);
+  font-size: 1.2rem;
+}
+
+.vodou-stigma .vodou-stigma-grid > article {
+  border-color: color-mix(in srgb, #fff 18%, transparent);
+  background: color-mix(in srgb, #fff 7%, transparent);
+  color: #eee6db;
+}
+
+.vodou-stigma .vodou-stigma-grid > article h3 {
+  color: #fff8ee;
+}
+
+.vodou-stigma-flow {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 1.2rem;
+}
+
+.vodou-art-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vodou-evidence-layers > article {
+  position: relative;
+  overflow: hidden;
+  padding-left: 1.3rem;
+}
+
+.vodou-evidence-layers > article::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: .3rem;
+  background: var(--layer-color, var(--vodou-muted));
+}
+
+.vodou-evidence-layers > article > span {
+  display: block;
+  margin-bottom: .55rem;
+  color: var(--vodou-wine);
+  font-weight: 900;
+}
+
+.vodou-evidence-layers .is-documented { --layer-color: #56705b; }
+.vodou-evidence-layers .is-tradition { --layer-color: var(--vodou-gold); }
+.vodou-evidence-layers .is-debate { --layer-color: var(--vodou-terracotta); }
+.vodou-evidence-layers .is-notdemonstrated { --layer-color: var(--vodou-wine); }
+
+@media (max-width: 72rem) {
+  .vodou-postindependence {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .vodou-stigma-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .vodou-art-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .vodou-hero {
+    min-height: 42rem;
+  }
+
+  .vodou-hero__overlay {
+    background: linear-gradient(0deg, rgba(17,15,13,.96) 0%, rgba(17,15,13,.76) 58%, rgba(17,15,13,.36) 100%);
+  }
+
+  .vodou-hero__inner {
+    width: min(100% - 1.25rem, 76rem);
+  }
+
+  .vodou-terms .vodou-term-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .vodou-terms .term-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+  }
+
+  .vodou-postindependence,
+  .vodou-art-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vodou-toc {
+  max-width: 76rem;
+  margin: 1.25rem auto 2rem;
+}
+
+.vodou-toc details {
+  border: 1px solid var(--vodou-line);
+  border-radius: .9rem;
+  background: color-mix(in srgb, var(--vodou-paper-soft) 90%, white);
+  color: var(--vodou-ink);
+}
+
+.vodou-toc summary {
+  cursor: pointer;
+  padding: 1rem 1.1rem;
+  font-weight: 850;
+  color: var(--vodou-wine);
+}
+
+.vodou-toc nav {
+  padding: 0 1.1rem 1.1rem;
+}
+
+.vodou-toc ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .45rem 1.2rem;
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.vodou-toc a {
+  display: inline-block;
+  padding-block: .18rem;
+}
+
+@media (max-width: 72rem) {
+  .vodou-toc ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 48rem) {
+  .vodou-toc { margin-inline: .625rem; }
+  .vodou-toc ol { grid-template-columns: 1fr; }
+}
+
+.vodou-wide,
+.vodou-summary,
+.vodou-origin,
+.vodou-service,
+.vodou-postindependence,
+.vodou-final-note,
+.vodou-conclusion {
+  width: min(76rem, calc(100% - 2rem));
+}
+
+.vodou-facts table,
+.vodou-myths table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vodou-hero .button--secondary {
+  border-color: rgba(255,255,255,.42);
+  color: #fff8ef;
+  background: rgba(23,21,19,.48);
+}
+
+.vodou-hero .button--secondary:hover,
+.vodou-hero .button--secondary:focus-visible {
+  background: rgba(255,255,255,.12);
+}

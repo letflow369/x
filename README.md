@@ -11,9 +11,9 @@ Desenvolvimento, aprendizagem e neurodiversidade ... 8 páginas
 Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
-Filosofias, esoterismo e sistemas simbólicos ....... 10 páginas
-Religiões e espiritualidade ........................ 11 páginas
-Total ............................................... 63 artigos
+Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
+Religiões e espiritualidade ........................ 12 páginas
+Total ............................................... 65 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -761,3 +761,29 @@ Os componentes opcionais de rede nos artigos são carregados por `src/scripts/co
 ## Padrão editorial para substâncias e psicodélicos (2026-08-10)
 
 O modelo oficial para DMT, LSD, psilocibina, ayahuasca, CBD, Cannabis, Changa e temas relacionados está documentado em `docs/modelo-substancias-psicodelicos.md`. A estrutura-base é: definição → história → funcionamento → evidências → riscos → controvérsias → importância → fontes, com separação explícita entre evidência direta, evidência indireta, hipótese, relato subjetivo e alegação sem comprovação.
+
+
+## Página de Vodou
+
+Arquivos adicionados:
+
+```text
+artigos/vodou.html
+src/styles/vodou.css
+src/assets/images/vodou-jacmel-cerimonia.jpg
+src/assets/images/vodou-jacmel-cerimonia.webp
+src/assets/images/vodou-hispaniola-1723.jpg
+src/assets/images/vodou-hispaniola-1723.webp
+src/assets/images/og-vodou.jpg
+```
+
+Arquivos integrados ou atualizados:
+
+```text
+assuntos/religioes-espiritualidade.html
+sitemap.xml
+IMAGE-CREDITS.md
+README.md
+```
+
+A página integra a coleção Religiões e espiritualidade em um agrupamento afro-diaspórico do Caribe. O conteúdo diferencia documentação histórica, tradição religiosa, interpretação antropológica, debate acadêmico e afirmações sobrenaturais. O sumário e os blocos sobre vèvè usam `<details>` nativo; a página não adiciona JavaScript nem controles próprios de leitura ou text-to-speech.
