@@ -12,9 +12,9 @@ Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 21 páginas
+Religiões e espiritualidade ........................ 22 páginas
 Ciência, tecnologia e sociedade .................... 1 página
-Total ............................................... 75 artigos
+Total ............................................... 76 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -994,3 +994,23 @@ src/assets/images/og-santa-muerte.jpg
 ```
 
 A página integra `Religiões e espiritualidade > Religiosidade popular e santidades vernaculares`. O conteúdo diferencia evidência histórica, interpretação acadêmica e crença devocional, trata criminalidade como associação contextual — não como definição da devoção — e mantém todo o conteúdo essencial acessível sem JavaScript. Não há recurso próprio de leitura, narração ou text-to-speech.
+
+
+### Página de Paganismo Celta e Druidismo
+
+Arquivos adicionados:
+
+```text
+artigos/paganismo-celta-druidismo.html
+src/styles/paganismo-celta-druidismo.css
+src/scripts/paganismo-celta-druidismo.js
+src/assets/images/druidismo-torques-idade-ferro.jpg
+src/assets/images/druidismo-torques-idade-ferro.webp
+src/assets/images/druidismo-anglesey.jpg
+src/assets/images/druidismo-anglesey.webp
+src/assets/images/druidismo-book-of-leinster.jpg
+src/assets/images/druidismo-iolo-morganwg.png
+src/assets/images/og-paganismo-celta-druidismo.jpg
+```
+
+A página integra `Religiões e espiritualidade > Movimentos e tradições modernas`, mas diferencia explicitamente cinco camadas: religiões célticas antigas, druidas históricos, literatura medieval, revivalismo druídico e Druidismo contemporâneo. Fontes arqueológicas, autores greco-romanos, manuscritos medievais e fontes religiosas modernas são identificados pelo tipo e pelo limite de inferência. O JavaScript é apenas aprimoramento progressivo para navegação e filtros de referências; não há recurso próprio de leitura, narração ou text-to-speech.

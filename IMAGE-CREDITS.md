@@ -712,3 +712,47 @@
 - **Transformações locais:** redimensionamento, compressão e conversão para WebP.
 - **Arquivos:** `santa-muerte-iconografia.jpg`, `santa-muerte-iconografia.webp`.
 - **Página de origem:** https://commons.wikimedia.org/wiki/File:Santa-muerte-nlaredo2.jpg
+
+
+## Paganismo Celta e Druidismo — agosto de 2026
+
+### Torques da Idade do Ferro
+
+- **Conteúdo:** conjunto de torques da Idade do Ferro registrado pelo Portable Antiquities Scheme / Birmingham Museums Trust.
+- **Fotografia:** Teresa Gilmore / Birmingham Museums Trust.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY 2.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e recorte/ajuste tonal para Open Graph.
+- **Arquivos:** `druidismo-torques-idade-ferro.jpg`, `druidismo-torques-idade-ferro.webp`, `og-paganismo-celta-druidismo.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Iron_Age,_Hoard_of_torcs_(FindID_820219).jpg
+
+### Costa de Anglesey / Ynys Môn
+
+- **Conteúdo:** paisagem costeira de Anglesey, ilha associada nas fontes romanas ao episódio de Mona.
+- **Fotografia:** Nigel Mykura.
+- **Data:** 2009.
+- **Fonte:** Wikimedia Commons / Geograph.
+- **Licença:** CC BY-SA 2.0.
+- **Transformações locais:** compressão e conversão para WebP.
+- **Arquivos:** `druidismo-anglesey.jpg`, `druidismo-anglesey.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Anglesey_Coast_-_geograph.org.uk_-_1367265.jpg
+
+### Book of Leinster, fólio 53
+
+- **Conteúdo:** fólio do Livro de Leinster, manuscrito irlandês medieval do século XII.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** compressão para uso editorial.
+- **Arquivo:** `druidismo-book-of-leinster.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Book_of_Leinster,_folio_53.jpg
+
+### Iolo Morganwg
+
+- **Conteúdo:** retrato de Iolo Morganwg (Edward Williams, 1747–1826).
+- **Artista:** Ap Caledfryn, 1896.
+- **Acervo:** National Library of Wales.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** otimização do PNG para uso editorial.
+- **Arquivo:** `druidismo-iolo-morganwg.png`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Iolo_Morganwg.png
