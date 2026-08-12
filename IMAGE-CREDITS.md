@@ -597,36 +597,82 @@
 - **Página de origem:** https://commons.wikimedia.org/wiki/File:BlankMap_World_simple.svg
 
 
-## Mitologias Tupi-Guarani — agosto de 2026
+## Mitologia Yanomami — agosto de 2026
 
-### Guarani Mbya em Porto Alegre
+### Vista aérea de shabono Yanomami
 
-- **Conteúdo:** famílias Guarani Mbya comercializando artesanato na Feira do Bom Fim, Porto Alegre, usado na seção sobre presença contemporânea e continuidade cultural.
-- **Autor:** Ricardo André Frantz / Tetraktys.
-- **Data:** 2012.
+- **Conteúdo:** vista aérea de uma casa coletiva Yanomami no norte do Brasil.
+- **Autor:** Cmacauley.
+- **Contexto do registro:** norte do Brasil, fevereiro de 2001.
 - **Fonte:** Wikimedia Commons.
-- **Licença:** Creative Commons Attribution 3.0 Unported (CC BY 3.0).
-- **Transformações locais:** conversão para WebP e uso parcial em composição editorial da imagem Open Graph.
-- **Arquivos:** `tupi-guarani-mbya-porto-alegre.jpg`, `tupi-guarani-mbya-porto-alegre.webp`, `og-mitologias-tupi-guarani.jpg`.
-- **Página de origem:** https://commons.wikimedia.org/wiki/File:Indios_guarani_em_porto_alegre.jpg
+- **Licença:** CC BY-SA 4.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e uso em composição Open Graph.
+- **Arquivos:** `yanomami-shabono-aereo.jpg`, `yanomami-shabono-aereo.webp`, `og-mitologia-yanomami.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Postoyano_Feb_2001_1_(2).jpg
 
-### Guarani Kaiowá em Mato Grosso do Sul
+### Davi Kopenawa na FLIP 2014
 
-- **Conteúdo:** acampamento Guarani Kaiowá às margens da rodovia MS-386, usado para contextualizar território e condições contemporâneas.
-- **Autor:** Wilson Dias / Agência Brasil.
-- **Data:** 5 de dezembro de 2011.
+- **Conteúdo:** Davi Kopenawa durante a Festa Literária Internacional de Paraty de 2014.
+- **Fotografia:** Fernando Frazão / Agência Brasil.
 - **Fonte:** Wikimedia Commons / Agência Brasil.
-- **Licença:** Creative Commons Attribution 3.0 Brazil (CC BY 3.0 BR).
-- **Transformações locais:** conversão para WebP.
-- **Arquivos:** `tupi-guarani-kaiowa-2011.jpg` e `tupi-guarani-kaiowa-2011.webp`.
-- **Página de origem:** https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_Guarani_Kaiow%C3%A1_vivem_em_acampamentos_prec%C3%A1rios_e_improvisados.JPG
+- **Licença:** CC BY 3.0 BR.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e uso em composição Open Graph.
+- **Arquivos:** `yanomami-davi-kopenawa.jpg`, `yanomami-davi-kopenawa.webp`, `og-mitologia-yanomami.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Davikopenawa.jpg
 
-### Gravura europeia sobre os Tupinambá
+### Mapa das línguas Yanomami
 
-- **Conteúdo:** gravura de Theodor de Bry publicada em 1631, baseada em relatos anteriores de Hans Staden, usada como documento histórico sobre a mediação europeia das imagens dos Tupinambá.
-- **Autor da gravura:** Theodor de Bry; compilação/publicação posterior associada a Johann Ludwig Gottfried e Matthäus Merian.
+- **Conteúdo:** localização aproximada de línguas da família Yanomami na região Brasil–Venezuela.
+- **Autor:** SyntaxTerror.
 - **Fonte:** Wikimedia Commons.
-- **Licença:** domínio público.
-- **Transformações locais:** conversão para WebP, tratamento tonal por CSS e uso parcial em composição editorial da imagem Open Graph.
-- **Arquivos:** `tupi-guarani-tupinamba-debry-1631.jpg`, `tupi-guarani-tupinamba-debry-1631.webp`, `og-mitologias-tupi-guarani.jpg`.
-- **Página de origem:** https://commons.wikimedia.org/wiki/File:Theodore_de_Bry_-_Tupinamba_Indians_observed_by_Hans_Staden_during_his_voyage_to_Brazil_1552_from_Newe_Welt_und_Americanische_Historien_by_Johann_Ludwig_Gottfried_published_by_Mattaeus_Merian_Frankfurt_1631.jpg
+- **Licença:** domínio público por dedicação do autor.
+- **Transformações locais:** renderização do SVG para imagem raster WebP, sem alteração dos dados cartográficos.
+- **Arquivo:** `yanomami-linguas-mapa.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Yanomaman.svg
+
+
+## Santería — Regla de Ocha — agosto de 2026
+
+### Celebração de Santería em Havana
+
+- **Conteúdo:** registro de uma celebração de Santería em Havana, Cuba, com flores, alimentos, objetos rituais e uma participante acendendo uma vela.
+- **Autor:** Jorge Royan.
+- **Data:** 2 de janeiro de 2011.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 3.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e recorte/ajuste tonal para a imagem Open Graph.
+- **Arquivos:** `santeria-havana-2011.jpg`, `santeria-havana-2011.webp`, `og-santeria.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Havana_-_Cuba_-_2939.jpg
+
+### Conjunto de três tambores batá
+
+- **Conteúdo:** tambores Okónkolo, Iyá e Itótele.
+- **Fotografia:** Kenneth Ritchards; tambores construídos nos EUA por Harold Muñiz.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público conforme a página do arquivo.
+- **Transformações locais:** compressão e conversão para WebP.
+- **Arquivos:** `santeria-bata-trio.jpg`, `santeria-bata-trio.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Bata_drums.jpg
+
+## Espiritualidade Andina
+
+- `src/assets/images/espiritualidade-andina-ausangate.jpg` / `.webp` / `og-espiritualidade-andina.jpg`
+  - Obra: **Ausangate-hillside-MT.jpg**
+  - Autor: Marturius
+  - Data: 2008
+  - Fonte: Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Ausangate-hillside-MT.jpg
+  - Licença utilizada: **CC BY-SA 3.0**
+  - Alterações locais: conversão WebP, compressão e recorte/derivação para Open Graph.
+
+- `src/assets/images/espiritualidade-andina-qoylluriti.jpg` / `.webp`
+  - Obra: **Peregrinos de Quyllorit'i.jpg**
+  - Autor: Elianturlione3
+  - Data: 18 de junho de 2019
+  - Fonte: Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Peregrinos_de_Quyllorit%27i.jpg
+  - Licença: **CC BY-SA 4.0**
+  - Alterações locais: conversão WebP, redimensionamento e compressão.
+
+- `src/assets/images/espiritualidade-andina-mapa.svg`
+  - Autoria: Let Flow 369 / OpenAI, agosto de 2026.
+  - Tipo: mapa esquemático editorial produzido para a página; não representa fronteiras culturais fixas.
+

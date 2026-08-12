@@ -1,0 +1,304 @@
+:root {
+  --yanomami-ink: #17231f;
+  --yanomami-forest: #173b31;
+  --yanomami-forest-2: #285849;
+  --yanomami-moss: #58725d;
+  --yanomami-leaf: #7d9678;
+  --yanomami-earth: #8d5f3f;
+  --yanomami-sand: #e8dcc8;
+  --yanomami-cream: #f7f2e7;
+  --yanomami-paper: #efe7d7;
+  --yanomami-night: #102530;
+  --yanomami-sky: #243f50;
+  --yanomami-river: #527f85;
+  --yanomami-gold: #b88b4b;
+  --yanomami-red: #8f4637;
+  --yanomami-muted: #5e665f;
+  --yanomami-line: rgba(23, 59, 49, 0.18);
+  --yanomami-shadow: 0 22px 60px rgba(20, 37, 31, 0.14);
+}
+
+.yanomami-article {
+  background: var(--yanomami-cream);
+  color: var(--yanomami-ink);
+  overflow: clip;
+}
+
+.yanomami-article a { text-underline-offset: 0.18em; }
+
+.yanomami-hero {
+  position: relative;
+  min-height: clamp(43rem, 82vh, 58rem);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+  color: #fffaf1;
+  background:
+    linear-gradient(180deg, rgba(10, 28, 35, 0.08), rgba(13, 36, 31, 0.93) 76%),
+    radial-gradient(circle at 78% 10%, rgba(227, 215, 178, 0.18), transparent 24%),
+    var(--yanomami-night);
+}
+
+.yanomami-hero__landscape { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.yanomami-hero__sky {
+  position: absolute; inset: 0 0 40% 0;
+  background:
+    radial-gradient(circle at 8% 22%, rgba(255,255,255,.65) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 19% 11%, rgba(255,255,255,.55) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 36% 18%, rgba(255,255,255,.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 55% 9%, rgba(255,255,255,.5) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 73% 20%, rgba(255,255,255,.68) 0 1px, transparent 1.6px),
+    linear-gradient(180deg, #132b37 0%, #294b58 100%);
+}
+.yanomami-hero__ridge { position: absolute; left: -5%; width: 110%; bottom: 0; }
+.yanomami-hero__ridge--far {
+  height: 52%; background: #2c5649; opacity: .82;
+  clip-path: polygon(0 75%, 8% 63%, 16% 68%, 24% 46%, 33% 58%, 42% 37%, 52% 55%, 61% 32%, 72% 49%, 82% 29%, 91% 46%, 100% 34%, 100% 100%, 0 100%);
+}
+.yanomami-hero__ridge--near {
+  height: 39%; background: #15352c;
+  clip-path: polygon(0 62%, 7% 45%, 14% 56%, 20% 34%, 27% 51%, 34% 29%, 42% 47%, 50% 25%, 58% 48%, 65% 31%, 72% 50%, 80% 23%, 88% 43%, 94% 27%, 100% 38%, 100% 100%, 0 100%);
+}
+.yanomami-hero__river {
+  position: absolute; right: -8%; bottom: -10%; width: 60%; height: 38%;
+  border-radius: 55% 0 0 0;
+  background: linear-gradient(145deg, rgba(110, 159, 165, .8), rgba(50, 90, 96, .36));
+  transform: rotate(-7deg);
+}
+
+.yanomami-hero__content,
+.yanomami-intro,
+.yanomami-layout,
+.yanomami-closing {
+  width: min(100% - 2rem, 78rem);
+  margin-inline: auto;
+}
+
+.yanomami-hero__content { padding: clamp(6rem, 12vw, 10rem) 0 clamp(3rem, 7vw, 5.5rem); }
+.yanomami-kicker,
+.yanomami-layer {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.yanomami-kicker { margin: 0 0 1rem; color: #dcc89c; font-size: .78rem; }
+.yanomami-hero h1 {
+  max-width: 11ch; margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.8rem, 9vw, 7.7rem);
+  line-height: .88; letter-spacing: -.035em;
+}
+.yanomami-hero__subtitle {
+  max-width: 36ch; margin: 1rem 0 0;
+  font: 600 clamp(1.45rem, 3.1vw, 2.35rem)/1.08 "Cormorant Garamond", serif;
+  color: #f2e6cf;
+}
+.yanomami-hero__intro { max-width: 70ch; margin: 1.4rem 0 0; font-size: 1.08rem; line-height: 1.75; color: rgba(255,250,241,.9); }
+.yanomami-hero__chips,
+.yanomami-hero__actions,
+.yanomami-ref-filters { display: flex; flex-wrap: wrap; gap: .65rem; }
+.yanomami-hero__chips { margin-top: 1.4rem; }
+.yanomami-hero__chips span {
+  padding: .45rem .72rem; border: 1px solid rgba(255,255,255,.22); border-radius: 999px;
+  background: rgba(255,255,255,.07); font: 600 .8rem/1 Inter, sans-serif;
+}
+.yanomami-hero__notice {
+  max-width: 66rem; display: grid; grid-template-columns: minmax(7.5rem,.25fr) 1fr; gap: 1rem;
+  margin-top: 1.5rem; padding: 1rem 1.15rem; border-left: 3px solid #c99d5f;
+  background: rgba(10,29,24,.58); backdrop-filter: blur(4px);
+}
+.yanomami-hero__notice strong { color: #f0d6a6; font-family: Inter, sans-serif; }
+.yanomami-hero__notice span { color: rgba(255,255,255,.88); line-height: 1.55; }
+.yanomami-hero__actions { margin-top: 1.5rem; }
+.yanomami-hero .button--secondary { border-color: rgba(255,255,255,.35); color: #fff; background: rgba(255,255,255,.06); }
+
+.yanomami-intro { padding: clamp(3rem, 6vw, 5rem) 0; }
+.yanomami-intro__grid { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(18rem,.95fr); gap: clamp(1.5rem,4vw,3rem); align-items: start; }
+.yanomami-intro__text > p { max-width: 66ch; line-height: 1.75; }
+.yanomami-meta-cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .8rem; margin-top: 1.5rem; }
+.yanomami-meta-cards article { padding: 1rem; border: 1px solid var(--yanomami-line); background: rgba(255,255,255,.48); border-radius: 1rem; }
+.yanomami-meta-cards strong, .yanomami-meta-cards span { display: block; }
+.yanomami-meta-cards strong { font: 700 .8rem/1.2 Inter,sans-serif; color: var(--yanomami-forest); text-transform: uppercase; letter-spacing: .06em; }
+.yanomami-meta-cards span { margin-top: .35rem; line-height: 1.45; }
+.yanomami-map-card { margin: 0; padding: .8rem; border-radius: 1.25rem; background: #fff; box-shadow: var(--yanomami-shadow); }
+.yanomami-map-card img { width: 100%; height: auto; border-radius: .8rem; }
+.yanomami-map-card figcaption { padding: .75rem .35rem .25rem; color: var(--yanomami-muted); font-size: .86rem; line-height: 1.5; }
+
+.yanomami-shabono-feature { width: min(100% - 2rem, 78rem); margin: 0 auto clamp(3rem,6vw,5rem); display: grid; grid-template-columns: minmax(0,1.35fr) minmax(16rem,.65fr); align-items: end; gap: 1rem; }
+.yanomami-shabono-feature picture { display: block; overflow: hidden; border-radius: 1.25rem; box-shadow: var(--yanomami-shadow); background: #173b31; }
+.yanomami-shabono-feature img { display: block; width: 100%; max-height: 33rem; object-fit: cover; }
+.yanomami-shabono-feature figcaption { padding: 1rem 0; color: var(--yanomami-muted); line-height: 1.6; }
+.yanomami-shabono-feature figcaption strong { display: block; margin-bottom: .4rem; color: var(--yanomami-forest); font-family: Inter,sans-serif; }
+
+.section-heading > p { max-width: 72ch; }
+.yanomami-layer { display: inline-flex; align-items: center; gap: .45rem; margin-bottom: .65rem; font-size: .72rem; color: var(--yanomami-earth); }
+.yanomami-layer::before { content: ""; width: 1.35rem; height: 2px; background: currentColor; }
+.yanomami-section h2,
+.yanomami-intro h2,
+.yanomami-closing h2 { margin-top: 0; font-family: "Cormorant Garamond",serif; font-size: clamp(2.15rem,4.2vw,3.45rem); line-height: 1; color: var(--yanomami-forest); }
+.yanomami-section h3 { color: var(--yanomami-forest); }
+
+.yanomami-layout { display: grid; grid-template-columns: 13rem minmax(0,1fr); gap: clamp(2rem,4vw,4rem); align-items: start; padding-bottom: 3rem; }
+.yanomami-sidenav { position: sticky; top: 6rem; padding: 1rem; border: 1px solid var(--yanomami-line); border-radius: 1rem; background: rgba(255,255,255,.48); }
+.yanomami-sidenav p { margin: 0 0 .65rem; font: 700 .74rem/1 Inter,sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--yanomami-earth); }
+.yanomami-sidenav nav { display: grid; gap: .2rem; }
+.yanomami-sidenav a { padding: .55rem .6rem; border-radius: .5rem; color: var(--yanomami-muted); font-size: .88rem; text-decoration: none; }
+.yanomami-sidenav a:hover, .yanomami-sidenav a:focus-visible, .yanomami-sidenav a[aria-current="location"] { background: #e1e9df; color: #173b31; }
+.yanomami-content { min-width: 0; }
+.yanomami-section { padding: clamp(3.2rem,7vw,5.7rem) 0; border-top: 1px solid var(--yanomami-line); }
+.yanomami-section:first-child { border-top: 0; }
+
+.yanomami-cosmos { position: relative; min-height: 34rem; margin: 2.5rem auto 1rem; max-width: 48rem; }
+.yanomami-cosmos::before { content: ""; position: absolute; inset: 50% auto auto 50%; width: 20rem; height: 20rem; border: 1px solid rgba(23,59,49,.23); border-radius: 50%; transform: translate(-50%,-50%); }
+.yanomami-cosmos__core { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 10rem; aspect-ratio: 1; display: grid; place-content: center; text-align: center; border-radius: 50%; background: var(--yanomami-forest); color: white; box-shadow: var(--yanomami-shadow); }
+.yanomami-cosmos__core strong { font: 700 1.2rem/1 Inter,sans-serif; letter-spacing: .08em; }
+.yanomami-cosmos__core span { margin-top: .35rem; font-size: .8rem; color: #d8e5dc; }
+.yanomami-cosmos__node { position: absolute; width: 11rem; padding: .9rem; border: 1px solid var(--yanomami-line); border-radius: .9rem; background: #fffdf8; box-shadow: 0 12px 35px rgba(20,37,31,.08); text-align: center; }
+.yanomami-cosmos__node strong, .yanomami-cosmos__node span { display: block; }
+.yanomami-cosmos__node strong { font-family: Inter,sans-serif; color: var(--yanomami-forest); }
+.yanomami-cosmos__node span { margin-top: .25rem; font-size: .82rem; color: var(--yanomami-muted); }
+.yanomami-cosmos__node--1 { left: 50%; top: 0; transform: translateX(-50%); }
+.yanomami-cosmos__node--2 { right: 0; top: 19%; }
+.yanomami-cosmos__node--3 { right: 0; bottom: 16%; }
+.yanomami-cosmos__node--4 { left: 50%; bottom: 0; transform: translateX(-50%); }
+.yanomami-cosmos__node--5 { left: 0; bottom: 16%; }
+.yanomami-cosmos__node--6 { left: 0; top: 19%; }
+.yanomami-caption { max-width: 62ch; margin-inline: auto; text-align: center; color: var(--yanomami-muted); font-size: .9rem; }
+
+.yanomami-concept-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-top: 2rem; }
+.yanomami-concept-grid article { padding: 1.3rem; border: 1px solid var(--yanomami-line); border-radius: 1rem; background: rgba(255,255,255,.55); }
+.yanomami-concept-grid h3 { margin: .3rem 0 .7rem; font: 700 1.5rem/1.05 "Cormorant Garamond",serif; }
+.yanomami-concept-grid p { line-height: 1.65; }
+.yanomami-concept-grid footer { margin-top: 1rem; padding-top: .75rem; border-top: 1px solid var(--yanomami-line); color: var(--yanomami-muted); font-size: .82rem; }
+.yanomami-tag { margin: 0; color: var(--yanomami-earth); font: 700 .7rem/1.2 Inter,sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+
+.yanomami-section--sky { position: relative; display: grid; grid-template-columns: minmax(18rem,.8fr) minmax(0,1.2fr); gap: clamp(1.5rem,4vw,3.5rem); align-items: stretch; padding-inline: clamp(1rem,3vw,2.5rem); margin-inline: -1rem; background: #142c35; color: #f7f1e5; border-radius: 1.5rem; overflow: hidden; }
+.yanomami-section--sky h2 { color: #fff8e8; }
+.yanomami-section--sky p { line-height: 1.72; color: rgba(255,255,255,.88); }
+.yanomami-sky-art { position: relative; min-height: 31rem; overflow: hidden; border-radius: 1rem; background: linear-gradient(#1d3c4e 0 58%, #365948 58%); }
+.yanomami-sky-art__cloud { position: absolute; width: 115%; height: 55%; left: -5%; top: 8%; border-radius: 50%; background: radial-gradient(ellipse at 50% 100%, rgba(223,220,202,.32), transparent 68%); transform: rotate(-4deg); }
+.yanomami-sky-art__ridge { position: absolute; inset: auto 0 21% 0; height: 28%; background: #2c4d42; clip-path: polygon(0 72%,12% 42%,22% 58%,36% 25%,48% 60%,62% 31%,73% 54%,87% 24%,100% 49%,100% 100%,0 100%); }
+.yanomami-sky-art__forest { position: absolute; inset: auto 0 0; height: 30%; background: #102c24; clip-path: polygon(0 60%,5% 40%,10% 63%,16% 32%,22% 58%,28% 35%,34% 62%,41% 28%,48% 58%,55% 34%,62% 61%,68% 30%,74% 56%,81% 24%,89% 58%,95% 35%,100% 53%,100% 100%,0 100%); }
+.yanomami-sky-copy { align-self: center; padding-block: 1rem; }
+.yanomami-impact-flow { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: 1.4rem 0; }
+.yanomami-impact-flow span { padding: .55rem .7rem; border: 1px solid rgba(255,255,255,.19); border-radius: 999px; background: rgba(255,255,255,.07); font-size: .82rem; }
+.yanomami-impact-flow b { color: #d8b16d; }
+.yanomami-section--sky aside { padding: 1rem; border-left: 3px solid #c69854; background: rgba(255,255,255,.06); }
+.yanomami-section--sky aside strong, .yanomami-section--sky aside span { display: block; }
+.yanomami-section--sky aside span { margin-top: .3rem; color: rgba(255,255,255,.84); }
+
+.yanomami-section--history { background: linear-gradient(180deg, rgba(232,220,200,.32), transparent); }
+.yanomami-timeline { position: relative; display: grid; gap: 1rem; margin-top: 2rem; padding-left: 2rem; }
+.yanomami-timeline::before { content: ""; position: absolute; left: .55rem; top: .5rem; bottom: .5rem; width: 2px; background: #b89a6a; }
+.yanomami-timeline article { position: relative; padding: 1rem 1.1rem; border: 1px solid rgba(141,95,63,.2); border-radius: .9rem; background: rgba(255,255,255,.56); }
+.yanomami-timeline article::before { content: ""; position: absolute; left: -1.78rem; top: 1.25rem; width: .8rem; aspect-ratio: 1; border: 3px solid var(--yanomami-cream); border-radius: 50%; background: var(--yanomami-earth); box-shadow: 0 0 0 1px #a67d5f; }
+.yanomami-timeline time { font: 700 .76rem/1 Inter,sans-serif; text-transform: uppercase; letter-spacing: .06em; color: var(--yanomami-earth); }
+.yanomami-timeline h3 { margin: .4rem 0 .45rem; font-size: 1.05rem; }
+.yanomami-timeline p { margin: 0; line-height: 1.62; }
+
+.yanomami-table-wrap { overflow-x: auto; margin-top: 2rem; border: 1px solid var(--yanomami-line); border-radius: 1rem; background: #fffdf8; }
+.yanomami-table-wrap table { width: 100%; min-width: 42rem; border-collapse: collapse; }
+.yanomami-table-wrap caption { padding: 1rem; text-align: left; font-weight: 700; color: var(--yanomami-forest); background: #e9ede5; }
+.yanomami-table-wrap th, .yanomami-table-wrap td { padding: 1rem; border-top: 1px solid var(--yanomami-line); vertical-align: top; text-align: left; line-height: 1.55; }
+.yanomami-table-wrap thead th { background: #f0eadf; }
+.yanomami-table-wrap tbody td:first-child { color: #5a554d; }
+.yanomami-table-wrap tbody td:last-child { font-weight: 600; color: var(--yanomami-forest); }
+
+.yanomami-value-grid,
+.yanomami-study-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-top: 1.7rem; }
+.yanomami-value-grid article, .yanomami-study-grid article { padding: 1.25rem; border-radius: 1rem; border: 1px solid var(--yanomami-line); background: rgba(255,255,255,.5); }
+.yanomami-value-grid span { font: 700 1.8rem/1 "Cormorant Garamond",serif; color: var(--yanomami-gold); }
+.yanomami-value-grid h3, .yanomami-study-grid h3 { margin: .45rem 0 .45rem; }
+.yanomami-value-grid p, .yanomami-study-grid p { margin-bottom: 0; line-height: 1.6; }
+
+.yanomami-section--portrait { display: grid; grid-template-columns: minmax(18rem,.8fr) minmax(0,1.2fr); gap: clamp(1.5rem,4vw,3.5rem); align-items: center; }
+.yanomami-section--portrait figure { margin: 0; }
+.yanomami-section--portrait img { width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: 35% 42%; border-radius: 1.2rem; box-shadow: var(--yanomami-shadow); }
+.yanomami-section--portrait figcaption { margin-top: .65rem; color: var(--yanomami-muted); font-size: .82rem; line-height: 1.5; }
+.yanomami-section--portrait p { line-height: 1.72; }
+.yanomami-section--portrait aside { margin-top: 1rem; padding: 1rem; border-left: 3px solid var(--yanomami-gold); background: #efe7d6; }
+.yanomami-section--portrait aside strong, .yanomami-section--portrait aside span { display: block; }
+.yanomami-section--portrait aside span { margin-top: .3rem; }
+
+.yanomami-book-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin-top: 1.8rem; }
+.yanomami-book-grid article { display: flex; flex-direction: column; padding: 1.3rem; border: 1px solid var(--yanomami-line); border-radius: 1rem; background: #fffdf8; }
+.yanomami-book-grid h3 { margin: .4rem 0; font: 700 1.55rem/1.05 "Cormorant Garamond",serif; }
+.yanomami-book-grid p { line-height: 1.58; }
+.yanomami-book-grid footer { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--yanomami-line); color: var(--yanomami-muted); font-size: .82rem; }
+.yanomami-book-grid__level { margin: 0; font: 700 .72rem/1 Inter,sans-serif; text-transform: uppercase; letter-spacing: .07em; color: var(--yanomami-earth); }
+
+.yanomami-section--evidence { padding-inline: clamp(1rem,3vw,2rem); margin-inline: -1rem; border-radius: 1.25rem; background: #e8eee7; }
+.yanomami-evidence-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin-top: 1.7rem; }
+.yanomami-evidence-grid article { padding: 1.2rem; border-radius: 1rem; background: rgba(255,255,255,.72); border: 1px solid rgba(23,59,49,.15); }
+.yanomami-evidence-grid h3 { margin-top: 0; }
+.yanomami-evidence-grid ul { padding-left: 1.2rem; }
+.yanomami-evidence-grid li, .yanomami-evidence-grid p { line-height: 1.6; }
+
+.yanomami-section--archive { background: linear-gradient(180deg, rgba(232,220,200,.26), transparent); }
+.yanomami-ref-filters { margin: 1.5rem 0 1rem; }
+.yanomami-ref-filters button { border: 1px solid var(--yanomami-line); border-radius: 999px; background: #fffdf8; color: var(--yanomami-forest); padding: .55rem .75rem; font: 600 .82rem/1 Inter,sans-serif; cursor: pointer; }
+.yanomami-ref-filters button[aria-pressed="true"] { background: var(--yanomami-forest); color: white; }
+.yanomami-reference-list { display: grid; gap: .65rem; }
+.yanomami-reference-list details { border: 1px solid var(--yanomami-line); border-radius: .8rem; background: rgba(255,255,255,.62); }
+.yanomami-reference-list summary { display: flex; gap: .75rem; align-items: flex-start; padding: .9rem 1rem; cursor: pointer; font-weight: 700; color: var(--yanomami-forest); }
+.yanomami-reference-list summary span { min-width: 2rem; color: var(--yanomami-earth); font-family: Inter,sans-serif; }
+.yanomami-reference-list details > div { padding: 0 1rem 1rem 3.75rem; }
+.yanomami-reference-list p { line-height: 1.55; }
+.yanomami-reference-list a { font-weight: 700; }
+
+.yanomami-closing { padding: clamp(3rem,7vw,5.5rem) 0 clamp(4rem,8vw,7rem); }
+.yanomami-closing p { max-width: 72ch; font: 400 clamp(1.15rem,2.3vw,1.45rem)/1.65 Spectral,serif; }
+
+.reference a { font-weight: 700; color: var(--yanomami-red); text-decoration: none; }
+.reference a:hover, .reference a:focus-visible { text-decoration: underline; }
+
+@media (max-width: 980px) {
+  .yanomami-layout { grid-template-columns: 1fr; }
+  .yanomami-sidenav { position: static; overflow-x: auto; }
+  .yanomami-sidenav nav { display: flex; gap: .35rem; width: max-content; }
+  .yanomami-sidenav a { white-space: nowrap; border: 1px solid var(--yanomami-line); background: rgba(255,255,255,.58); }
+  .yanomami-book-grid { grid-template-columns: 1fr 1fr; }
+  .yanomami-evidence-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .yanomami-shabono-feature { grid-template-columns: 1fr; width: min(100% - 1.25rem, 78rem); }
+  .yanomami-hero { min-height: 46rem; }
+  .yanomami-hero__notice { grid-template-columns: 1fr; }
+  .yanomami-intro__grid,
+  .yanomami-section--sky,
+  .yanomami-section--portrait { grid-template-columns: 1fr; }
+  .yanomami-meta-cards,
+  .yanomami-concept-grid,
+  .yanomami-value-grid,
+  .yanomami-study-grid,
+  .yanomami-book-grid { grid-template-columns: 1fr; }
+  .yanomami-sky-art { min-height: 18rem; }
+  .yanomami-cosmos { min-height: auto; display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+  .yanomami-cosmos::before { display: none; }
+  .yanomami-cosmos__core,
+  .yanomami-cosmos__node { position: static; transform: none; width: auto; aspect-ratio: auto; }
+  .yanomami-cosmos__core { grid-column: 1 / -1; min-height: 7rem; border-radius: 1rem; }
+  .yanomami-impact-flow b { display: none; }
+  .yanomami-reference-list details > div { padding-left: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .yanomami-hero__content,
+  .yanomami-intro,
+  .yanomami-layout,
+  .yanomami-closing { width: min(100% - 1.25rem, 78rem); }
+  .yanomami-hero h1 { font-size: clamp(3.3rem,17vw,5rem); }
+  .yanomami-cosmos { grid-template-columns: 1fr; }
+  .yanomami-cosmos__core { grid-column: auto; }
+  .yanomami-section--sky,
+  .yanomami-section--evidence { margin-inline: 0; padding-inline: .8rem; border-radius: .9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yanomami-hero__river,
+  .yanomami-hero__ridge,
+  .yanomami-sky-art * { animation: none; transition: none; }
+  html:focus-within { scroll-behavior: auto; }
+}

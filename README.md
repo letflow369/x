@@ -12,9 +12,9 @@ Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 18 páginas
+Religiões e espiritualidade ........................ 20 páginas
 Ciência, tecnologia e sociedade .................... 1 página
-Total ............................................... 72 artigos
+Total ............................................... 74 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -884,21 +884,93 @@ src/scripts/xamanismo.js
 A página apresenta “xamanismo” como categoria antropológica comparativa, não como religião universal. O conteúdo separa tradição cultural, descrição histórica/antropológica, investigação científica e afirmações metafísicas; inclui mapa cultural progressivo, seção específica sobre pajé/pajelança no Brasil, cura e evidências, colonialismo, neoxamanismo, Mircea Eliade, mitos e referências expansíveis. Nenhum recurso próprio de leitura ou text-to-speech é implementado.
 
 
-## Página Mitologias Tupi-Guarani
+## Página Mitologia Yanomami — agosto de 2026
 
 Arquivos adicionados:
 
 ```text
-artigos/mitologias-tupi-guarani.html
-src/styles/mitologias-tupi-guarani.css
-src/scripts/mitologias-tupi-guarani.js
-src/assets/images/tupi-guarani-mbya-porto-alegre.jpg
-src/assets/images/tupi-guarani-mbya-porto-alegre.webp
-src/assets/images/tupi-guarani-kaiowa-2011.jpg
-src/assets/images/tupi-guarani-kaiowa-2011.webp
-src/assets/images/tupi-guarani-tupinamba-debry-1631.jpg
-src/assets/images/tupi-guarani-tupinamba-debry-1631.webp
-src/assets/images/og-mitologias-tupi-guarani.jpg
+artigos/mitologia-yanomami.html
+src/styles/mitologia-yanomami.css
+src/scripts/mitologia-yanomami.js
+src/assets/images/yanomami-shabono-aereo.jpg
+src/assets/images/yanomami-shabono-aereo.webp
+src/assets/images/yanomami-davi-kopenawa.jpg
+src/assets/images/yanomami-davi-kopenawa.webp
+src/assets/images/yanomami-linguas-mapa.webp
+src/assets/images/og-mitologia-yanomami.jpg
 ```
 
-A página integra `Religiões e espiritualidade`, no agrupamento `Tradições indígenas e categorias comparativas`. O conteúdo identifica explicitamente o povo e o tipo de fonte de narrativas e conceitos, evitando apresentar “Tupi-Guarani” como religião ou mitologia única. O JavaScript é apenas progressive enhancement para navegação lateral e referências. Não há recurso próprio de leitura ou TTS.
+A página integra `Religiões e espiritualidade > Tradições indígenas e categorias comparativas`. O conteúdo diferencia voz Yanomami, documentação histórica, antropologia e afirmação metafísica; não implementa controles próprios de leitura ou TTS.
+
+
+## Padrão editorial — religiões e tradições afro-diaspóricas
+
+Páginas afro-diaspóricas adotam, por padrão, a sequência editorial:
+
+```text
+contexto histórico
+→ crenças e cosmologia
+→ práticas e transmissão
+→ contribuições culturais
+→ perseguições e racismo religioso
+→ controvérsias
+→ evidência × crença
+→ literatura e fontes
+```
+
+O padrão não é uma metodologia “369”. Ele serve apenas para manter consistência editorial e epistemológica. Cada página deve preservar a identidade visual do Let Flow 369, respeitar a diversidade interna da tradição e evitar estética de terror, exotização ou ocultismo genérico.
+
+### Página de Santería / Regla de Ocha
+
+Arquivos adicionados:
+
+```text
+artigos/santeria.html
+src/styles/santeria.css
+src/scripts/santeria.js
+src/assets/images/santeria-havana-2011.jpg
+src/assets/images/santeria-havana-2011.webp
+src/assets/images/santeria-bata-trio.jpg
+src/assets/images/santeria-bata-trio.webp
+src/assets/images/og-santeria.jpg
+```
+
+A página integra `Religiões e espiritualidade > Tradições afro-diaspóricas do Caribe`, mantém todo o conteúdo essencial acessível sem JavaScript e não adiciona qualquer recurso próprio de leitura ou text-to-speech.
+
+## Padrão editorial — tradições religiosas e culturais
+
+Páginas longas sobre tradições religiosas e culturais adotam, quando a natureza do tema justificar, a sequência comparável:
+
+```text
+resumo e escopo
+→ história
+→ conceitos e cosmologia
+→ sociedade e práticas
+→ controvérsias e aspectos difíceis
+→ perseguição, colonização ou transformação histórica
+→ continuidade e atualidade
+→ mitos × fatos
+→ literatura
+→ evidências e fontes
+```
+
+O padrão é uma estrutura editorial de comparação, não uma metodologia “369”. Cada página deve manter a diversidade interna da tradição, identificar limites de generalização e separar tradição/relato, documentação histórica, interpretação acadêmica e evidência científica.
+
+### Página de Espiritualidade Andina
+
+Arquivos adicionados:
+
+```text
+artigos/espiritualidade-andina.html
+src/styles/espiritualidade-andina.css
+src/scripts/espiritualidade-andina.js
+src/assets/images/espiritualidade-andina-ausangate.jpg
+src/assets/images/espiritualidade-andina-ausangate.webp
+src/assets/images/espiritualidade-andina-qoylluriti.jpg
+src/assets/images/espiritualidade-andina-qoylluriti.webp
+src/assets/images/espiritualidade-andina-mapa.svg
+src/assets/images/og-espiritualidade-andina.jpg
+```
+
+A página integra `Religiões e espiritualidade > Tradições indígenas e categorias comparativas`. O conteúdo diferencia tradições pré-incas, religião no Tawantinsuyu, cosmologias quéchuas/aimarás, fontes coloniais, continuidade comunitária e releituras contemporâneas. O JavaScript é apenas aprimoramento progressivo para navegação lateral e filtros de referências; não há controles próprios de leitura, narração ou TTS.
+

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa esquemático dos Andes centrais</title>
+  <desc id="desc">Representação didática destacando Equador, Peru, Bolívia, norte do Chile e noroeste da Argentina, além da extensão aproximada do Tawantinsuyu.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ead6"/><stop offset="1" stop-color="#e7d4b4"/></linearGradient>
+    <linearGradient id="andes" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7a6d4b"/><stop offset=".55" stop-color="#5f6946"/><stop offset="1" stop-color="#8a5d3f"/></linearGradient>
+    <pattern id="grain" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="5" r="1.2" fill="#5e4837" opacity=".08"/><circle cx="16" cy="14" r="1" fill="#5e4837" opacity=".07"/></pattern>
+  </defs>
+  <rect width="760" height="900" rx="32" fill="url(#bg)"/>
+  <rect width="760" height="900" rx="32" fill="url(#grain)"/>
+  <path d="M390 70 C335 135 348 205 318 260 C289 315 307 360 278 422 C252 481 268 535 248 596 C226 662 250 724 236 812" fill="none" stroke="#cab998" stroke-width="126" stroke-linecap="round" opacity=".75"/>
+  <path d="M390 70 C335 135 348 205 318 260 C289 315 307 360 278 422 C252 481 268 535 248 596 C226 662 250 724 236 812" fill="none" stroke="url(#andes)" stroke-width="58" stroke-linecap="round"/>
+  <path d="M401 86 C356 146 365 210 336 268 C307 322 326 370 295 431 C267 490 285 548 264 608 C246 665 263 722 250 796" fill="none" stroke="#f3ead9" stroke-width="3" stroke-dasharray="8 12" opacity=".9"/>
+  <g font-family="Inter,Arial,sans-serif" fill="#2c241d">
+    <text x="478" y="126" font-size="26" font-weight="700">Equador</text>
+    <text x="470" y="278" font-size="30" font-weight="700">Peru</text>
+    <text x="447" y="470" font-size="30" font-weight="700">Bolívia</text>
+    <text x="431" y="642" font-size="26" font-weight="700">Norte do Chile</text>
+    <text x="410" y="756" font-size="26" font-weight="700">Noroeste da Argentina</text>
+    <text x="58" y="365" font-size="22" font-weight="700" fill="#6e3d2e">Tawantinsuyu</text>
+    <text x="58" y="393" font-size="17" fill="#6b5d50">extensão aproximada</text>
+  </g>
+  <path d="M155 415 C204 353 261 296 328 222 M150 430 C205 492 220 584 236 705" fill="none" stroke="#9a5437" stroke-width="4" stroke-dasharray="10 8" opacity=".75"/>
+  <g fill="#9a5437" stroke="#fff7e9" stroke-width="3">
+    <circle cx="332" cy="235" r="9"/><circle cx="289" cy="372" r="9"/><circle cx="258" cy="520" r="9"/><circle cx="240" cy="675" r="9"/>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="16" fill="#4c4035">
+    <text x="350" y="241">Cusco / Andes centrais</text>
+    <text x="308" y="378">Altiplano</text>
+    <text x="278" y="526">Andes meridionais</text>
+    <text x="260" y="681">Corredor andino</text>
+  </g>
+  <rect x="48" y="808" width="664" height="54" rx="14" fill="#fff8eb" opacity=".9"/>
+  <text x="70" y="839" font-family="Inter,Arial,sans-serif" font-size="15" fill="#55483e">Mapa didático: não representa fronteiras culturais fixas nem uma única tradição religiosa andina.</text>
+</svg>
