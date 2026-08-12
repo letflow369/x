@@ -12,9 +12,9 @@ Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 20 páginas
+Religiões e espiritualidade ........................ 21 páginas
 Ciência, tecnologia e sociedade .................... 1 página
-Total ............................................... 74 artigos
+Total ............................................... 75 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -974,3 +974,23 @@ src/assets/images/og-espiritualidade-andina.jpg
 
 A página integra `Religiões e espiritualidade > Tradições indígenas e categorias comparativas`. O conteúdo diferencia tradições pré-incas, religião no Tawantinsuyu, cosmologias quéchuas/aimarás, fontes coloniais, continuidade comunitária e releituras contemporâneas. O JavaScript é apenas aprimoramento progressivo para navegação lateral e filtros de referências; não há controles próprios de leitura, narração ou TTS.
 
+
+
+### Página de Santa Muerte
+
+Arquivos adicionados:
+
+```text
+artigos/santa-muerte.html
+src/styles/santa-muerte.css
+src/scripts/santa-muerte.js
+src/assets/images/santa-muerte-tepito.jpg
+src/assets/images/santa-muerte-tepito.webp
+src/assets/images/santa-muerte-devotos.jpg
+src/assets/images/santa-muerte-devotos.webp
+src/assets/images/santa-muerte-iconografia.jpg
+src/assets/images/santa-muerte-iconografia.webp
+src/assets/images/og-santa-muerte.jpg
+```
+
+A página integra `Religiões e espiritualidade > Religiosidade popular e santidades vernaculares`. O conteúdo diferencia evidência histórica, interpretação acadêmica e crença devocional, trata criminalidade como associação contextual — não como definição da devoção — e mantém todo o conteúdo essencial acessível sem JavaScript. Não há recurso próprio de leitura, narração ou text-to-speech.

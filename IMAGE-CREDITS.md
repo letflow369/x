@@ -676,3 +676,39 @@
   - Autoria: Let Flow 369 / OpenAI, agosto de 2026.
   - Tipo: mapa esquemático editorial produzido para a página; não representa fronteiras culturais fixas.
 
+
+
+## Santa Muerte — agosto de 2026
+
+### Celebração pública em Tepito
+
+- **Conteúdo:** celebração dedicada à Santa Muerte no altar de Doña Queta, em Tepito, Cidade do México.
+- **Autora:** Karen Melo.
+- **Data:** 31 de outubro de 2018.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 4.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP, tratamento tonal por CSS e recorte/derivação para Open Graph.
+- **Arquivos:** `santa-muerte-tepito.jpg`, `santa-muerte-tepito.webp`, `og-santa-muerte.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:SantamuerteTepito.jpg
+
+### Devotos em oração em Tepito
+
+- **Conteúdo:** pessoas em oração durante uma celebração dedicada à Santa Muerte na Rua Alfarería, Tepito, Cidade do México.
+- **Autora:** Thelmadatter.
+- **Data:** 1 de dezembro de 2009.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 3.0 (também disponibilizada sob GFDL na fonte).
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `santa-muerte-devotos.jpg`, `santa-muerte-devotos.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Dec1Romero15.JPG
+
+### Imagem devocional próxima a Nuevo Laredo
+
+- **Conteúdo:** representação devocional de Santa Muerte ao sul de Nuevo Laredo, México.
+- **Autor:** Not home.
+- **Data:** 23 de agosto de 2007.
+- **Fonte:** Wikimedia Commons / English Wikipedia.
+- **Licença:** domínio público por dedicação do autor.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `santa-muerte-iconografia.jpg`, `santa-muerte-iconografia.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Santa-muerte-nlaredo2.jpg
