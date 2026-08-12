@@ -526,3 +526,107 @@
 - **Transformações locais:** redimensionamento, compressão e conversão para WebP.
 - **Arquivos:** `paganismo-pedra-runica-hedeby.jpg`, `paganismo-pedra-runica-hedeby.webp`.
 - **Página de origem:** https://commons.wikimedia.org/wiki/File:Hedeby_Museum,_rune_stone.jpg
+
+
+## Nikola Tesla
+
+### Retrato de Nikola Tesla, c. 1890
+
+- **Conteúdo:** retrato de Nikola Tesla usado no hero da página.
+- **Fotografia:** Napoleon Sarony.
+- **Data aproximada:** c. 1890.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** conversão para WebP e composição editorial da imagem Open Graph 1200×630.
+- **Arquivos:** `nikola-tesla-1890.jpg`, `nikola-tesla-1890.webp`, `og-nikola-tesla.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg
+
+### Torre de Wardenclyffe, 1904
+
+- **Conteúdo:** fotografia histórica da torre de Wardenclyffe usada na seção sobre o projeto mundial sem fio.
+- **Autor:** não identificado no registro consultado.
+- **Data:** 1904; publicação histórica anterior a 1931.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público nos Estados Unidos.
+- **Transformações locais:** conversão para WebP e tratamento tonal por CSS.
+- **Arquivos:** `nikola-tesla-wardenclyffe-1904.jpg`, `nikola-tesla-wardenclyffe-1904.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Tesla_Broadcast_Tower_1904.jpeg
+
+### Embarcação de controle remoto de Tesla, 1898
+
+- **Conteúdo:** registro histórico do sistema de controle remoto apresentado por Tesla em 1898.
+- **Autor atribuído no registro:** Nikola Tesla.
+- **Data:** 1898.
+- **Fonte:** Wikimedia Commons / Nikola Tesla Museum.
+- **Licença:** domínio público.
+- **Transformações locais:** conversão para WebP e tratamento tonal por CSS.
+- **Arquivos:** `nikola-tesla-boat-1898.jpg`, `nikola-tesla-boat-1898.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Tesla_boat1.jpg
+
+
+## Xamanismo — agosto de 2026
+
+### Especialista ritual do Altai com tambor
+
+- **Conteúdo:** cartão-postal/registro etnográfico do início do século XX, baseado em fotografia de S. I. Borisov; a identificação étnica exata é descrita na fonte como Altai-Kizhi ou Khakas, sem certeza conclusiva.
+- **Data do registro-base:** 1908; cartão-postal entre 1911 e 1914.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** conversão para WebP e tratamento tonal por CSS.
+- **Arquivos:** `xamanismo-altai-1908.jpg`, `xamanismo-altai-1908.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:SB_-_Altay_shaman_with_drum.jpg
+
+### Pajé Xakriabá durante o toré
+
+- **Conteúdo:** pajé do povo Xakriabá cantando e dançando durante ritual do toré.
+- **Autor:** Edgar Kanaykõ Xakriabá.
+- **Data:** 18 de abril de 2015.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 4.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e tratamento tonal por CSS; o arquivo OG deriva de composição com este registro e a fotografia histórica do Altai.
+- **Arquivos:** `xamanismo-paje-xakriaba.jpg`, `xamanismo-paje-xakriaba.webp`, `og-xamanismo.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Canto_e_danca_de_um_paj%C3%A9_Xakriab%C3%A1.jpg
+
+### Mapa-múndi simplificado
+
+- **Conteúdo:** mapa-múndi simplificado sem fronteiras, usado somente como base espacial do componente de estudos de caso.
+- **Fonte:** Wikimedia Commons, `BlankMap World simple.svg`.
+- **Licença:** domínio público.
+- **Transformações locais:** nenhuma alteração estrutural; apenas tratamento visual por CSS.
+- **Arquivo:** `xamanismo-mapa-mundo.svg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:BlankMap_World_simple.svg
+
+
+## Mitologias Tupi-Guarani — agosto de 2026
+
+### Guarani Mbya em Porto Alegre
+
+- **Conteúdo:** famílias Guarani Mbya comercializando artesanato na Feira do Bom Fim, Porto Alegre, usado na seção sobre presença contemporânea e continuidade cultural.
+- **Autor:** Ricardo André Frantz / Tetraktys.
+- **Data:** 2012.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** Creative Commons Attribution 3.0 Unported (CC BY 3.0).
+- **Transformações locais:** conversão para WebP e uso parcial em composição editorial da imagem Open Graph.
+- **Arquivos:** `tupi-guarani-mbya-porto-alegre.jpg`, `tupi-guarani-mbya-porto-alegre.webp`, `og-mitologias-tupi-guarani.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Indios_guarani_em_porto_alegre.jpg
+
+### Guarani Kaiowá em Mato Grosso do Sul
+
+- **Conteúdo:** acampamento Guarani Kaiowá às margens da rodovia MS-386, usado para contextualizar território e condições contemporâneas.
+- **Autor:** Wilson Dias / Agência Brasil.
+- **Data:** 5 de dezembro de 2011.
+- **Fonte:** Wikimedia Commons / Agência Brasil.
+- **Licença:** Creative Commons Attribution 3.0 Brazil (CC BY 3.0 BR).
+- **Transformações locais:** conversão para WebP.
+- **Arquivos:** `tupi-guarani-kaiowa-2011.jpg` e `tupi-guarani-kaiowa-2011.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Ind%C3%ADgenas_Guarani_Kaiow%C3%A1_vivem_em_acampamentos_prec%C3%A1rios_e_improvisados.JPG
+
+### Gravura europeia sobre os Tupinambá
+
+- **Conteúdo:** gravura de Theodor de Bry publicada em 1631, baseada em relatos anteriores de Hans Staden, usada como documento histórico sobre a mediação europeia das imagens dos Tupinambá.
+- **Autor da gravura:** Theodor de Bry; compilação/publicação posterior associada a Johann Ludwig Gottfried e Matthäus Merian.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** conversão para WebP, tratamento tonal por CSS e uso parcial em composição editorial da imagem Open Graph.
+- **Arquivos:** `tupi-guarani-tupinamba-debry-1631.jpg`, `tupi-guarani-tupinamba-debry-1631.webp`, `og-mitologias-tupi-guarani.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Theodore_de_Bry_-_Tupinamba_Indians_observed_by_Hans_Staden_during_his_voyage_to_Brazil_1552_from_Newe_Welt_und_Americanische_Historien_by_Johann_Ludwig_Gottfried_published_by_Mattaeus_Merian_Frankfurt_1631.jpg

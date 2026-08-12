@@ -4,7 +4,7 @@ Site estático publicado com GitHub Pages.
 
 ## Conteúdo atual
 
-O site organiza os artigos em seis categorias principais. Cada artigo possui uma categoria-base única; relações transversais podem aparecer dentro do conteúdo sem duplicar a página entre coleções.
+O site organiza os artigos em sete categorias principais. Cada artigo possui uma categoria-base única; relações transversais podem aparecer dentro do conteúdo sem duplicar a página entre coleções.
 
 ```text
 Desenvolvimento, aprendizagem e neurodiversidade ... 8 páginas
@@ -12,8 +12,9 @@ Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 16 páginas
-Total ............................................... 69 artigos
+Religiões e espiritualidade ........................ 18 páginas
+Ciência, tecnologia e sociedade .................... 1 página
+Total ............................................... 72 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -847,3 +848,57 @@ Atualização editorial adicionada em agosto de 2026.
 - `sitemap.xml` — inclusão da URL canônica da página.
 - `IMAGE-CREDITS.md` — créditos e licenças dos materiais documentais.
 - Não há `speechSynthesis`, TTS, narração automática ou recurso próprio de leitura.
+
+
+## Página de Nikola Tesla
+
+Arquivos adicionados:
+
+```text
+artigos/nikola-tesla.html
+assuntos/ciencia-tecnologia-sociedade.html
+src/styles/nikola-tesla.css
+src/scripts/nikola-tesla.js
+src/assets/images/nikola-tesla-1890.jpg
+src/assets/images/nikola-tesla-1890.webp
+src/assets/images/nikola-tesla-wardenclyffe-1904.jpg
+src/assets/images/nikola-tesla-wardenclyffe-1904.webp
+src/assets/images/nikola-tesla-boat-1898.jpg
+src/assets/images/nikola-tesla-boat-1898.webp
+src/assets/images/og-nikola-tesla.jpg
+```
+
+A página inaugura a coleção **Ciência, tecnologia e sociedade** e usa biografia investigativa, história da engenharia, fontes primárias, documentação institucional e componentes de Mito × Evidência. O JavaScript é progressive enhancement para sumário e filtros de referências; o conteúdo essencial permanece disponível sem scripts.
+
+
+## Página Xamanismo — agosto de 2026
+
+Arquivos principais:
+
+```text
+artigos/xamanismo.html
+src/styles/xamanismo.css
+src/scripts/xamanismo.js
+```
+
+A página apresenta “xamanismo” como categoria antropológica comparativa, não como religião universal. O conteúdo separa tradição cultural, descrição histórica/antropológica, investigação científica e afirmações metafísicas; inclui mapa cultural progressivo, seção específica sobre pajé/pajelança no Brasil, cura e evidências, colonialismo, neoxamanismo, Mircea Eliade, mitos e referências expansíveis. Nenhum recurso próprio de leitura ou text-to-speech é implementado.
+
+
+## Página Mitologias Tupi-Guarani
+
+Arquivos adicionados:
+
+```text
+artigos/mitologias-tupi-guarani.html
+src/styles/mitologias-tupi-guarani.css
+src/scripts/mitologias-tupi-guarani.js
+src/assets/images/tupi-guarani-mbya-porto-alegre.jpg
+src/assets/images/tupi-guarani-mbya-porto-alegre.webp
+src/assets/images/tupi-guarani-kaiowa-2011.jpg
+src/assets/images/tupi-guarani-kaiowa-2011.webp
+src/assets/images/tupi-guarani-tupinamba-debry-1631.jpg
+src/assets/images/tupi-guarani-tupinamba-debry-1631.webp
+src/assets/images/og-mitologias-tupi-guarani.jpg
+```
+
+A página integra `Religiões e espiritualidade`, no agrupamento `Tradições indígenas e categorias comparativas`. O conteúdo identifica explicitamente o povo e o tipo de fonte de narrativas e conceitos, evitando apresentar “Tupi-Guarani” como religião ou mitologia única. O JavaScript é apenas progressive enhancement para navegação lateral e referências. Não há recurso próprio de leitura ou TTS.
