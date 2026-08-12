@@ -428,3 +428,101 @@
 - Alterações: redimensionamento, compressão e conversão para WebP.
 - Arquivos: `vodou-hispaniola-1723.jpg` e `vodou-hispaniola-1723.webp`.
 - Página: https://commons.wikimedia.org/wiki/File:Map_of_Hispaniola.JPG
+
+## Hoodoo
+
+### Frascos arqueológicos de Arlington House
+
+- Conteúdo: quatro frascos históricos encontrados sob o piso das antigas moradias de pessoas escravizadas em Arlington House; o National Park Service interpreta o contexto como possível depósito ritual, spirit bundle ou conjunto relacionado a conjure/rootwork.
+- Fonte: U.S. National Park Service — Arlington House, The Robert E. Lee Memorial.
+- Data da descoberta/documentação: investigação arqueológica divulgada em 2022.
+- Crédito da imagem: National Park Service (NPS).
+- Alterações: redimensionamento, conversão para WebP e composição editorial da imagem social.
+- Arquivos: `hoodoo-conjure-bottles.jpg`, `hoodoo-conjure-bottles.webp` e `og-hoodoo.jpg`.
+- Observação: a página apresenta a interpretação arqueológica como hipótese contextual, não como certeza sobre a intenção original dos objetos.
+- Página: https://www.nps.gov/arho/learn/management/archeological-discovery-in-the-slave-quarters.htm
+
+### William Wells Brown
+
+- Conteúdo: retrato ilustrado de William Wells Brown, escritor, abolicionista e ex-escravizado cujas narrativas registram práticas de conjure e divinação.
+- Fonte da reprodução: U.S. National Park Service, artigo “Hoodoo in St. Louis: An African American Religious Tradition”; imagem creditada pelo NPS ao Wikimedia Commons.
+- Alterações: redimensionamento, conversão para WebP e tratamento tonal discreto via CSS.
+- Arquivos: `hoodoo-william-wells-brown.jpg` e `hoodoo-william-wells-brown.webp`.
+- Página: https://www.nps.gov/articles/000/hoodoo-in-st-louis-an-african-american-religious-tradition.htm
+
+
+## Povos Ciganos
+
+### Mulheres e crianças Sinti e Roma na região de Zagreb, 1941
+
+- Conteúdo: fotografia histórica de mulheres e crianças Sinti e Roma na região de Zagreb (Agram), então no contexto da Segunda Guerra Mundial.
+- Autor: fotógrafo não identificado no registro do Bundesarchiv.
+- Data: 1941.
+- Acervo: German Federal Archives (Bundesarchiv), Bild 183-2004-0203-502.
+- Fonte de distribuição: Wikimedia Commons.
+- Licença: Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE).
+- Alterações: preservação do JPG de origem, conversão para WebP e tratamento tonal discreto por CSS na página.
+- Arquivos: `povos-ciganos-sinti-roma-1941.jpg` e `povos-ciganos-sinti-roma-1941.webp`.
+- Observação editorial: a legenda histórica original do arquivo não é reutilizada como descrição interpretativa; a página usa apenas contexto documental verificável e evita reproduzir linguagem estigmatizante de arquivos de época.
+- Página: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-2004-0203-502,_Bei_Agram,_kroatische_Sinti_und_Roma-Frauen_und_Kinder.jpg
+
+
+## Religião Tradicional Iorubá
+
+### Bosque Sagrado de Osun-Osogbo
+
+- Conteúdo: registro fotográfico do Bosque Sagrado de Osun-Osogbo, Nigéria, espaço religioso vivo associado a Ọ̀ṣun e reconhecido pela UNESCO como Patrimônio Mundial.
+- Fotógrafo: ExploreWithTunde.
+- Data: 26 de junho de 2024.
+- Fonte: Wikimedia Commons.
+- Licença: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+- Alterações: redimensionamento, compressão, conversão para WebP e composição editorial da imagem social.
+- Arquivos: `religiao-tradicional-ioruba-osun-osogbo.jpg`, `religiao-tradicional-ioruba-osun-osogbo.webp` e `og-religiao-tradicional-ioruba.jpg`.
+- Observação: `og-religiao-tradicional-ioruba.jpg` incorpora a fotografia e permanece sujeito aos termos de compartilhamento compatíveis da licença.
+- Página: https://commons.wikimedia.org/wiki/File:The_Osun_Osogbo_sacred_grove_03.jpg
+
+### Porta iorubá de Ikare
+
+- Conteúdo: porta entalhada iorubá (`Ilekun`), produzida no fim do século XIX em Ikare, atual Ondo State, Nigéria; o Brooklyn Museum considera provável a associação original da peça a um babaláwo.
+- Acervo e crédito: Brooklyn Museum.
+- Fonte de distribuição: Wikimedia Commons / Brooklyn Museum.
+- Licença: Creative Commons Attribution 3.0 Unported (CC BY 3.0).
+- Alterações: redimensionamento, compressão e conversão para WebP.
+- Arquivos: `religiao-tradicional-ioruba-ifa-porta.jpg` e `religiao-tradicional-ioruba-ifa-porta.webp`.
+- Página: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_22.1526_Door_Ilekun.jpg
+
+
+## Paganismo
+
+### Templo de Garni
+
+- **Conteúdo:** Templo de Garni, Armênia, usado como imagem documental de abertura.
+- **Fotografia:** Carole Raddato.
+- **Data da fotografia:** 8 de outubro de 2018.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 2.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e recorte 1200×630 para a imagem Open Graph.
+- **Arquivos:** `paganismo-templo-garni.jpg`, `paganismo-templo-garni.webp`, `og-paganismo.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:The_Ionic_Temple_of_Garni,_built_c._AD_77_during_the_reign_of_Tiridates_I_of_Armenia_(ruled_c._AD_63_-_c._88),_Armenia_(30627457797).jpg
+
+### Altar votivo romano dedicado a Marte
+
+- **Conteúdo:** altar romano com inscrição votiva dedicada a Marte, usado na seção sobre fontes materiais e culto antigo.
+- **Fotografia:** Mark Landon.
+- **Data:** 7 de junho de 2016.
+- **Fonte:** Wikimedia Commons / Lugdunum – Musée et théâtres romains.
+- **Licença:** CC BY 4.0.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `paganismo-altar-romano-marte.jpg`, `paganismo-altar-romano-marte.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Altar_with_votive_inscription_to_Mars_(Lyon,_Mus_Gall-Rom_AD197).jpg
+
+### Pedra rúnica de Hedeby
+
+- **Conteúdo:** pedra rúnica no Museu Viking de Hedeby, usada como documentação material relacionada à Escandinávia pré-cristã.
+- **Fotografia:** Szilas.
+- **Data:** 26 de julho de 2015.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC0 1.0.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `paganismo-pedra-runica-hedeby.jpg`, `paganismo-pedra-runica-hedeby.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Hedeby_Museum,_rune_stone.jpg

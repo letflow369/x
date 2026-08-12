@@ -12,8 +12,8 @@ Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 12 páginas
-Total ............................................... 65 artigos
+Religiões e espiritualidade ........................ 16 páginas
+Total ............................................... 69 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -787,3 +787,63 @@ README.md
 ```
 
 A página integra a coleção Religiões e espiritualidade em um agrupamento afro-diaspórico do Caribe. O conteúdo diferencia documentação histórica, tradição religiosa, interpretação antropológica, debate acadêmico e afirmações sobrenaturais. O sumário e os blocos sobre vèvè usam `<details>` nativo; a página não adiciona JavaScript nem controles próprios de leitura ou text-to-speech.
+
+## Página de Hoodoo
+
+Arquivos adicionados:
+
+```text
+artigos/hoodoo.html
+src/styles/hoodoo.css
+src/assets/images/hoodoo-conjure-bottles.jpg
+src/assets/images/hoodoo-conjure-bottles.webp
+src/assets/images/hoodoo-william-wells-brown.jpg
+src/assets/images/hoodoo-william-wells-brown.webp
+src/assets/images/og-hoodoo.jpg
+```
+
+A página integra a coleção Religiões e espiritualidade em “Tradições afro-diaspóricas dos Estados Unidos”. O artigo separa registro histórico, interpretação acadêmica, tradição espiritual e alegações sobrenaturais; usa apenas HTML/CSS e não cria controles de leitura ou TTS.
+
+## Página de Povos Ciganos
+
+Arquivos adicionados:
+
+```text
+artigos/povos-ciganos.html
+src/styles/povos-ciganos.css
+src/scripts/povos-ciganos.js
+src/assets/images/povos-ciganos-sinti-roma-1941.jpg
+src/assets/images/povos-ciganos-sinti-roma-1941.webp
+```
+
+A página é uma reportagem histórico-cultural baseada em evidências sobre origem, diáspora, diversidade Roma/Sinti/Calon, anticiganismo, genocídio, Brasil, oralidade e literatura. Por limitação da taxonomia principal atual, está indexada em `Religiões e espiritualidade` dentro do agrupamento “Povos e identidades culturais”, com nota explícita de que identidade Roma não é tratada como religião. A navegação lateral recebe aprimoramento progressivo por JavaScript para indicar a seção visível; referências expansíveis e todo o conteúdo principal funcionam sem JavaScript. Nenhum controle de leitura, narração ou TTS é criado.
+
+
+## Página de Religião Tradicional Iorubá
+
+Arquivos adicionados:
+
+```text
+artigos/religiao-tradicional-ioruba.html
+src/styles/religiao-tradicional-ioruba.css
+src/assets/images/religiao-tradicional-ioruba-osun-osogbo.jpg
+src/assets/images/religiao-tradicional-ioruba-osun-osogbo.webp
+src/assets/images/religiao-tradicional-ioruba-ifa-porta.jpg
+src/assets/images/religiao-tradicional-ioruba-ifa-porta.webp
+src/assets/images/og-religiao-tradicional-ioruba.jpg
+```
+
+A página integra a coleção Religiões e espiritualidade em “Tradições religiosas africanas”. O conteúdo diferencia história documentada, tradição religiosa, cosmologia, filosofia e interpretação; apresenta Yorubaland, Òrìṣà, Ifá, ética, transformação histórica, diáspora e Brasil. A interação editorial usa apenas HTML nativo (`<details>`) e CSS; não adiciona JavaScript específico nem controles próprios de leitura, narração ou TTS.
+
+
+## Página de Paganismo
+
+Atualização editorial adicionada em agosto de 2026.
+
+- `artigos/paganismo.html` — página longa que separa religiões antigas, história da categoria “paganismo” e movimentos pagãos modernos.
+- `src/styles/paganismo.css` — identidade visual documental em pedra, musgo, cobre e papel envelhecido, responsiva e compatível com `prefers-reduced-motion`.
+- `src/scripts/paganismo.js` — aprimoramento progressivo da navegação lateral e dos filtros de referências; o conteúdo permanece acessível sem JavaScript.
+- `assuntos/religioes-espiritualidade.html` — integração na coleção em “Movimentos e tradições modernas”.
+- `sitemap.xml` — inclusão da URL canônica da página.
+- `IMAGE-CREDITS.md` — créditos e licenças dos materiais documentais.
+- Não há `speechSynthesis`, TTS, narração automática ou recurso próprio de leitura.
