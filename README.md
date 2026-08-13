@@ -12,9 +12,9 @@ Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
 Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 22 páginas
+Religiões e espiritualidade ........................ 26 páginas
 Ciência, tecnologia e sociedade .................... 1 página
-Total ............................................... 76 artigos
+Total ............................................... 80 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -1014,3 +1014,81 @@ src/assets/images/og-paganismo-celta-druidismo.jpg
 ```
 
 A página integra `Religiões e espiritualidade > Movimentos e tradições modernas`, mas diferencia explicitamente cinco camadas: religiões célticas antigas, druidas históricos, literatura medieval, revivalismo druídico e Druidismo contemporâneo. Fontes arqueológicas, autores greco-romanos, manuscritos medievais e fontes religiosas modernas são identificados pelo tipo e pelo limite de inferência. O JavaScript é apenas aprimoramento progressivo para navegação e filtros de referências; não há recurso próprio de leitura, narração ou text-to-speech.
+
+
+### Página de Religião Greco-Romana
+
+Arquivos adicionados:
+
+```text
+artigos/religiao-greco-romana.html
+src/styles/religiao-greco-romana.css
+src/scripts/religiao-greco-romana.js
+src/assets/images/greco-romana-templo-hefesto.jpg
+src/assets/images/greco-romana-templo-hefesto.webp
+src/assets/images/greco-romana-sacrificio.jpg
+src/assets/images/greco-romana-sacrificio.webp
+src/assets/images/greco-romana-larario.jpg
+src/assets/images/greco-romana-larario.webp
+src/assets/images/og-religiao-greco-romana.jpg
+```
+
+A página integra `Religiões e espiritualidade > Religiões da Antiguidade Mediterrânica`. A arquitetura diferencia mitologia, religião vivida, evidência material, fontes literárias e interpretação historiográfica; também apresenta cristianização como processo regional e gradual, sem narrativa linear simplista. O JavaScript é apenas aprimoramento progressivo para navegação lateral e filtros de referências. Não há controles próprios de leitura, narração ou text-to-speech.
+
+
+### Página de Paganismo Germânico
+
+Arquivos adicionados:
+
+```text
+artigos/paganismo-germanico.html
+src/styles/paganismo-germanico.css
+src/scripts/paganismo-germanico.js
+src/assets/images/paganismo-germanico-mjolnir.jpg
+src/assets/images/paganismo-germanico-mjolnir.webp
+src/assets/images/paganismo-germanico-runestone-sm10.jpg
+src/assets/images/paganismo-germanico-runestone-sm10.webp
+src/assets/images/paganismo-germanico-codex-regius.jpg
+src/assets/images/paganismo-germanico-codex-regius.webp
+src/assets/images/og-paganismo-germanico.jpg
+```
+
+A página integra `Religiões e espiritualidade > Movimentos e tradições modernas`, ao lado de Paganismo Celta e Druidismo, mas começa pela religião histórica: tradições continentais, anglo-saxônicas e nórdicas, práticas, cristianização e fontes. Heathenry/Ásatrú contemporâneo é apresentado somente depois da reconstrução histórica. O sistema editorial segue `evidência → interpretação → curiosidades`, diferencia arqueologia, inscrições, autores externos, literatura medieval e fontes religiosas modernas e contextualiza apropriações extremistas sem atribuir racismo aos símbolos ou praticantes em geral. O JavaScript é apenas aprimoramento progressivo para navegação lateral e filtros de referências; não há recurso próprio de leitura, narração ou text-to-speech.
+
+
+### Página de Paganismo Nórdico
+
+Arquivos adicionados:
+
+```text
+artigos/paganismo-nordico.html
+src/styles/paganismo-nordico.css
+src/scripts/paganismo-nordico.js
+src/assets/images/paganismo-nordico-jelling.jpg
+src/assets/images/paganismo-nordico-jelling.webp
+src/assets/images/paganismo-nordico-mjolnir.jpg
+src/assets/images/paganismo-nordico-mjolnir.webp
+src/assets/images/paganismo-nordico-codex-regius.jpg
+src/assets/images/paganismo-nordico-codex-regius.webp
+src/assets/images/og-paganismo-nordico.jpg
+```
+
+A página integra `Religiões e espiritualidade > Movimentos e tradições modernas` ao lado de Paganismo Germânico, mas o conteúdo principal é histórico e diferencia religião vivida, mitologia preservada, arqueologia, runas e literatura medieval. Ásatrú/Heathenry contemporâneo aparece somente após a cristianização e a transmissão textual. O padrão estrutural reutiliza seis blocos editoriais — Hero, Resumo, Timeline, EvidenceCard, MythVsEvidence e References — implementados com HTML semântico e CSS, sem framework. O JavaScript é apenas aprimoramento progressivo para navegação lateral e filtros de referências. Não há recurso próprio de leitura, narração ou text-to-speech.
+
+
+### Página de Paganismo Eslavo
+
+Arquivos adicionados:
+
+```text
+artigos/paganismo-eslavo.html
+src/styles/paganismo-eslavo.css
+src/scripts/paganismo-eslavo.js
+src/assets/images/paganismo-eslavo-arkona.jpg
+src/assets/images/paganismo-eslavo-arkona.webp
+src/assets/images/paganismo-eslavo-zbruch.jpg
+src/assets/images/paganismo-eslavo-zbruch.webp
+src/assets/images/og-paganismo-eslavo.jpg
+```
+
+A página integra `Religiões e espiritualidade > Movimentos e tradições modernas` ao lado das páginas de Paganismo Germânico e Nórdico, mas começa pela reconstrução histórica. Ela diferencia documentação da Rus, fontes eslavas ocidentais, arqueologia, linguística, folclore e Rodnovery contemporâneo; o panteão de Vladimir é tratado como programa político localizado, Arkona como caso regional e o Livro de Veles como fonte moderna não confiável para a religião medieval. O JavaScript é apenas aprimoramento progressivo para navegação, mapa didático e filtros de referências. Não há recurso próprio de leitura, narração ou text-to-speech.

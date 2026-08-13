@@ -756,3 +756,131 @@
 - **Transformações locais:** otimização do PNG para uso editorial.
 - **Arquivo:** `druidismo-iolo-morganwg.png`.
 - **Página de origem:** https://commons.wikimedia.org/wiki/File:Iolo_Morganwg.png
+
+
+## Religião Greco-Romana — agosto de 2026
+
+### Templo de Hefesto, Atenas
+
+- **Conteúdo:** Templo de Hefesto na Ágora Antiga de Atenas.
+- **Fotografia:** Sailko.
+- **Data:** 10 de junho de 2008.
+- **Fonte:** Wikimedia Commons.
+- **Licença utilizada:** CC BY 2.5 (a fonte também oferece CC BY-SA 3.0/GFDL).
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP e recorte para Open Graph.
+- **Arquivos:** `greco-romana-templo-hefesto.jpg`, `greco-romana-templo-hefesto.webp`, `og-religiao-greco-romana.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Temple_of_Hephaestus_in_Athens_02.JPG
+
+### Cena de sacrifício em cerâmica ática
+
+- **Conteúdo:** cena de sacrifício em oinochoe ática de figuras vermelhas, c. 430–425 a.C., Louvre G 402.
+- **Fotografia:** Jastrow / Marie-Lan Nguyen.
+- **Fonte:** Wikimedia Commons / Musée du Louvre.
+- **Licença:** domínio público por dedicação do fotógrafo.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `greco-romana-sacrificio.jpg`, `greco-romana-sacrificio.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Sacrifice_scene_Louvre_G402.jpg
+
+### Larário da Casa dos Vettii, Pompeia
+
+- **Conteúdo:** larário romano do século I na Casa dos Vettii, com Lares e Genius.
+- **Fotografia:** Patricio Lorente; versão retificada/cortada por Waterborough.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 2.5.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `greco-romana-larario.jpg`, `greco-romana-larario.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Casa_dei_Vettii_-_Larario.jpg
+
+
+## Paganismo Germânico — agosto de 2026
+
+### Pingente em forma do martelo de Thor
+
+- **Conteúdo:** pingente de ouro da Era Viking em forma de Mjölnir, achado em Lincolnshire e datado aproximadamente de 850–950.
+- **Fotografia:** Lincolnshire County Council / Adam Daubney.
+- **Crédito exigido:** The Portable Antiquities Scheme / The Trustees of the British Museum.
+- **Fonte:** Wikimedia Commons / Portable Antiquities Scheme.
+- **Licença:** CC BY-SA 4.0.
+- **Transformações locais:** recorte de uma vista frontal, remoção do fundo branco para composição editorial, redimensionamento, compressão, conversão para WebP e recorte para Open Graph.
+- **Arquivos:** `paganismo-germanico-mjolnir.jpg`, `paganismo-germanico-mjolnir.webp`, `og-paganismo-germanico.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Viking_gold_Thor%27s_hammer_pendant_(FindID_553540).jpg
+
+### Pedra rúnica Sm 10, Växjö
+
+- **Conteúdo:** pedra rúnica com inscrição memorial e oração cristã, útil para documentar continuidade da escrita rúnica durante a cristianização.
+- **Fotografia:** Pieter Kuiper.
+- **Data:** 1 de julho de 2008.
+- **Fonte:** Wikimedia Commons.
+- **Licença utilizada:** CC BY-SA 3.0.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `paganismo-germanico-runestone-sm10.jpg`, `paganismo-germanico-runestone-sm10.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Runestone_Sm10.JPG
+
+### Codex Regius da Edda Poética
+
+- **Conteúdo:** reprodução do Codex Regius de poemas eddicos, manuscrito medieval do século XIII.
+- **Autor do manuscrito:** desconhecido.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `paganismo-germanico-codex-regius.jpg`, `paganismo-germanico-codex-regius.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Codex_Regius_of_Eddaic_Poems.jpg
+
+
+## Paganismo Nórdico — agosto de 2026
+
+### Grande pedra de Jelling
+
+- **Conteúdo:** grande pedra rúnica erguida por Harald Bluetooth em Jelling, Dinamarca; usada na página para contextualizar a cristianização do século X.
+- **Fotografia:** Ljunie.
+- **Data:** 8 de agosto de 2018.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC BY-SA 4.0.
+- **Transformações locais:** redimensionamento, compressão, conversão para WebP, ajuste cromático e recorte para Open Graph.
+- **Arquivos:** `paganismo-nordico-jelling.jpg`, `paganismo-nordico-jelling.webp`, `og-paganismo-nordico.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Jelling_stone.jpg
+
+### Pingente em forma do martelo de Thor
+
+- **Conteúdo:** pingente de ouro da Era Viking em forma de Mjölnir, achado em Lincolnshire e datado aproximadamente de 850–950.
+- **Fotografia:** Lincolnshire County Council / Adam Daubney.
+- **Crédito exigido:** The Portable Antiquities Scheme / The Trustees of the British Museum.
+- **Fonte:** Wikimedia Commons / Portable Antiquities Scheme.
+- **Licença:** CC BY-SA 4.0.
+- **Transformações locais:** cópia das derivadas já utilizadas na página Paganismo Germânico, mantendo o mesmo tratamento editorial, redimensionamento e conversão para WebP.
+- **Arquivos:** `paganismo-nordico-mjolnir.jpg`, `paganismo-nordico-mjolnir.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Viking_gold_Thor%27s_hammer_pendant_(FindID_553540).jpg
+
+### Codex Regius da Edda Poética
+
+- **Conteúdo:** reprodução do Codex Regius de poemas eddicos, manuscrito medieval do século XIII.
+- **Autor do manuscrito:** desconhecido.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** domínio público.
+- **Transformações locais:** cópia das derivadas já utilizadas na página Paganismo Germânico, com redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `paganismo-nordico-codex-regius.jpg`, `paganismo-nordico-codex-regius.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Codex_Regius_of_Eddaic_Poems.jpg
+
+
+## Paganismo Eslavo — agosto de 2026
+
+### Cabo Arkona, ilha de Rügen
+
+- **Conteúdo:** falésias e costa de Cabo Arkona, região da ilha de Rügen associada historicamente ao centro religioso eslavo de Arkona.
+- **Fotografia:** Andreas Steinhoff.
+- **Data:** 9 de agosto de 2004.
+- **Fonte:** Wikimedia Commons.
+- **Licença/permissionamento:** reutilização permitida com atribuição ao fotógrafo; a página do arquivo também registra CC BY-SA 2.0 DE / GFDL no histórico.
+- **Transformações locais:** recorte, redimensionamento, compressão, conversão para WebP e recorte para Open Graph.
+- **Arquivos:** `paganismo-eslavo-arkona.jpg`, `paganismo-eslavo-arkona.webp`, `og-paganismo-eslavo.jpg`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Kap_Arkona2.jpg
+
+### Ídolo de Zbruch (MAK/63)
+
+- **Conteúdo:** escultura de pedra preservada no Museu Arqueológico de Cracóvia, tradicionalmente interpretada como objeto religioso eslavo medieval; datação e interpretação devem ser tratadas com cautela.
+- **Autor da fotografia/digitalização:** Museu Arqueológico de Cracóvia / Małopolska's Virtual Museums.
+- **Fonte:** Wikimedia Commons / Archaeological Museum in Kraków.
+- **Licença:** domínio público, liberado pela instituição detentora da imagem.
+- **Transformações locais:** redimensionamento, compressão e conversão para WebP.
+- **Arquivos:** `paganismo-eslavo-zbruch.jpg`, `paganismo-eslavo-zbruch.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Svetovid_%E2%80%93_Zbruch_Idol_(MAK-63).jpg
