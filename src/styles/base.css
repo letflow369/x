@@ -217,6 +217,10 @@ nav a {
   margin: 0;
 }
 
+.site-footer__inner > p:not([data-footer-complete])::after {
+  content: " Todos os direitos reservados.";
+}
+
 .site-footer__inner nav {
   display: flex;
   flex-wrap: wrap;
