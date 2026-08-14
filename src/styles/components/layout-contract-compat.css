@@ -11,74 +11,58 @@
   width: min(100%, var(--content-width));
   max-width: var(--content-width);
 }
-
 .shaman-article .shaman-summary,
 .shaman-article .shaman-layout {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   max-width: none;
   margin-inline: auto;
 }
-
 .shaman-article .shaman-layout {
   grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
   padding-inline: 0;
 }
-
 .shaman-article.shaman-article .shaman-section {
   margin-inline: 0;
   max-width: 100%;
 }
-
 .shaman-article .shaman-layout > *,
 .shaman-article .shaman-sidenav,
 .shaman-article .shaman-content,
-.shaman-article .shaman-section {
-  min-width: 0;
-}
+.shaman-article .shaman-section { min-width: 0; }
 
 /* Espiritualidade Maia */
-.maia-article.maia-article {
-  overflow: visible;
-}
-
+.maia-article.maia-article { overflow: visible; }
 .maia-article.maia-article .maia-hero__content,
 .maia-article.maia-article .maia-shell {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   margin-inline: auto;
 }
-
 .maia-article.maia-article .maia-shell {
   grid-template-columns: minmax(12rem, var(--article-sidebar-width)) minmax(0, 1fr);
 }
-
-.maia-article.maia-article .maia-section {
-  max-width: 100%;
-}
-
+.maia-article.maia-article .maia-section { max-width: 100%; }
 .maia-article.maia-article .maia-section--stone,
 .maia-article.maia-article .maia-section--book,
 .maia-article.maia-article .maia-section--calendar,
 .maia-article.maia-article .maia-section--rupture,
 .maia-article.maia-article .maia-section--violence,
-.maia-article.maia-article .maia-section--myths {
-  margin-inline: 0;
+.maia-article.maia-article .maia-section--myths { margin-inline: 0; }
+.maia-article .maia-myth-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 /* Santa Muerte */
-.sm-article.sm-article {
-  overflow: visible;
-}
-
+.sm-article.sm-article { overflow: visible; }
 .sm-article.sm-article .sm-hero__content,
 .sm-article.sm-article .sm-shell {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   margin-inline: auto;
 }
-
 .sm-article.sm-article .sm-shell {
   grid-template-columns: minmax(12rem, var(--article-sidebar-width)) minmax(0, 1fr);
 }
-
 .sm-article.sm-article .sm-section--stone,
 .sm-article.sm-article .sm-section--book,
 .sm-article.sm-article .sm-section--calendar,
@@ -86,29 +70,20 @@
 .sm-article.sm-article .sm-section--violence,
 .sm-article.sm-article .sm-section--myths,
 .sm-article.sm-article .sm-section--light,
-.sm-article.sm-article .sm-section--investigation {
-  margin-inline: 0;
-}
+.sm-article.sm-article .sm-section--investigation { margin-inline: 0; }
 
 /* Nikola Tesla */
-.tesla-article.tesla-article {
-  overflow: visible;
-}
-
+.tesla-article.tesla-article { overflow: visible; }
 .tesla-article .tesla-hero__grid,
 .tesla-article .tesla-summary,
 .tesla-article .tesla-layout {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   margin-inline: auto;
 }
-
 .tesla-article .tesla-layout {
   grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
 }
-
-.tesla-article .tesla-wardenclyffe {
-  margin-inline: 0;
-}
+.tesla-article .tesla-wardenclyffe { margin-inline: 0; }
 
 /* Paganismo Eslavo */
 .pe-article.pe-article .pe-hero__content,
@@ -118,16 +93,13 @@
   max-width: var(--content-width);
   margin-inline: auto;
 }
-
 .pe-article.pe-article .pe-shell {
   grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
 }
-
 .pe-article.pe-article .pe-section {
   margin-inline: 0;
   max-width: 100%;
 }
-
 .pe-article.pe-article .pe-section--stone,
 .pe-article.pe-article .pe-section--forest,
 .pe-article.pe-article .pe-section--caution,
@@ -137,21 +109,17 @@
   padding-inline: clamp(1rem, 3vw, 2rem);
   border-radius: var(--pe-radius);
 }
-
 .pe-article.pe-article .pe-related {
   padding-inline: max(1rem, calc((100% - var(--content-width)) / 2));
 }
 
-/* Paganismos Germânico e Nórdico + dossiê greco-romano: breakouts internos
-   permanecem autorais, mas não podem usar a largura inteira do viewport a
-   partir de dentro da coluna editorial. */
+/* Paganismos Germânico e Nórdico + dossiê greco-romano */
 .pg-article.pg-article .pg-section,
 .pn-article.pn-article .pn-section,
 .gr-article.gr-article .gr-section {
   margin-inline: 0;
   max-width: 100%;
 }
-
 .pg-article.pg-article .pg-shell,
 .pn-article.pn-article .pn-shell,
 .gr-article.gr-article .gr-shell {
@@ -159,9 +127,11 @@
   margin-inline: auto;
   grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
 }
+.gr-article.gr-article .gr-document {
+  margin-inline: 0;
+  max-width: 100%;
+}
 
-/* Artigos clínicos com coluna de leitura cujo max-width estava virando
-   largura efetiva em telas estreitas. */
 @media (max-width: 62rem) {
   .borderline-content,
   .social-anxiety-content,
@@ -173,15 +143,11 @@
   }
 }
 
-/* Práticas integrativas: em 1024 px os diagramas orbitais ainda eram
-   posicionados como segunda coluna. A transição passa a ocorrer antes. */
+/* Práticas integrativas: antecipar a quebra da segunda coluna. */
 @media (max-width: 68rem) {
   .yoga-hero__inner,
   .ayurveda-hero__inner,
-  .aromatherapy-hero__inner {
-    grid-template-columns: 1fr;
-  }
-
+  .aromatherapy-hero__inner { grid-template-columns: 1fr; }
   .yoga-hero__visual,
   .ayurveda-hero__visual,
   .aromatherapy-hero__visual {
@@ -189,12 +155,8 @@
     max-width: 100%;
     margin-inline: auto;
   }
-}
-
-/* Diagramas orbitais clínicos: contenção pelo próprio painel em notebook. */
-@media (max-width: 68rem) {
   .di-orbit {
-    max-width: min(100%, 20rem);
+    max-width: min(100%, 18rem);
     margin-inline: auto;
   }
 }
@@ -207,9 +169,7 @@
   .pe-article.pe-article .pe-shell,
   .pg-article.pg-article .pg-shell,
   .pn-article.pn-article .pn-shell,
-  .gr-article.gr-article .gr-shell {
-    grid-template-columns: 1fr;
-  }
+  .gr-article.gr-article .gr-shell { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 56rem) {
@@ -253,7 +213,6 @@
     max-width: 100%;
     min-width: 0;
   }
-
   .shaman-article .shaman-sidenav nav {
     width: 100%;
     max-width: 100%;
@@ -267,15 +226,19 @@
     max-width: 100%;
     min-width: 0;
   }
-
   .maia-article .maia-sidenav ol {
     display: grid;
     grid-template-columns: 1fr;
   }
-
   .maia-article .maia-sidenav a {
     white-space: normal;
     overflow-wrap: anywhere;
+  }
+  .maia-article .maia-myth-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
   }
 
   .pe-article.pe-article .pe-section--stone,
@@ -283,34 +246,68 @@
   .pe-article.pe-article .pe-section--caution,
   .pe-article.pe-article .pe-section--evidence,
   .pe-article.pe-article .pe-section--manuscript,
-  .pe-article.pe-article .pe-section--modern {
-    padding-inline: 1rem;
-  }
+  .pe-article.pe-article .pe-section--modern { padding-inline: 1rem; }
 
-  /* Menus internos longos deixam de projetar links para fora do documento. */
+  /* Santería: todas as comparações/card-grids passam a uma coluna no mobile. */
   .santeria-article .santeria-sidenav,
-  .santeria-article .santeria-sidenav nav,
-  .andina-article .andina-sidenav,
-  .andina-article .andina-sidenav nav {
+  .santeria-article .santeria-sidenav nav {
     width: 100%;
     max-width: 100%;
     min-width: 0;
   }
-
   .santeria-article .santeria-sidenav nav,
-  .andina-article .andina-sidenav nav {
-    display: grid;
+  .santeria-article .santeria-three,
+  .santeria-article .santeria-four,
+  .santeria-article .santeria-orishas,
+  .santeria-article .santeria-debates,
+  .santeria-article .santeria-books,
+  .santeria-article .santeria-case__grid,
+  .santeria-article .santeria-evidence-grid,
+  .santeria-article .santeria-compare,
+  .santeria-article .santeria-cosmos__row {
     grid-template-columns: 1fr;
   }
-
-  .santeria-article .santeria-sidenav a,
-  .andina-article .andina-sidenav a {
+  .santeria-article .santeria-sidenav nav { display: grid; }
+  .santeria-article .santeria-sidenav a {
     white-space: normal;
     overflow-wrap: anywhere;
   }
 
-  .sz-hero__content {
-    width: min(calc(100% - var(--content-gutter-compact)), var(--content-width));
+  /* Andina: o nó central deixa de usar uma largura mínima maior que a coluna. */
+  .andina-article .andina-sidenav,
+  .andina-article .andina-sidenav nav,
+  .andina-article .andina-network,
+  .andina-article .andina-network__center {
+    width: 100%;
     max-width: 100%;
+    min-width: 0;
   }
+  .andina-article .andina-sidenav nav { display: grid; grid-template-columns: 1fr; }
+  .andina-article .andina-sidenav a,
+  .andina-article .andina-network__center {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Esquizofrenia: o painel visual respeita o gutter compacto. */
+  .sz-hero__content,
+  .sz-hero__visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: 0;
+  }
+
+  /* TOD: o grid do hero e seu diagrama não mantêm a coluna visual mínima. */
+  .odd-hero__inner { grid-template-columns: 1fr; }
+  .odd-hero__visual,
+  .odd-context-orbit {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .odd-hero__visual { padding-inline: .75rem; }
+  .odd-context-orbit span,
+  .odd-context-orbit i { min-width: 0; width: 100%; }
+  .odd-context-orbit i { width: min(7rem, 45%); }
 }
