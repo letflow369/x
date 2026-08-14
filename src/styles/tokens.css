@@ -25,8 +25,12 @@
   --font-size-micro: 0.72rem;
   --font-size-small: 0.8rem;
 
+  /* Contrato geométrico global — Let Flow 369 */
   --content-width: 72rem;
   --reading-width: 46rem;
+  --content-gutter: 2rem;
+  --content-gutter-compact: 1.35rem;
+  --article-sidebar-width: 15rem;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
