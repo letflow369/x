@@ -8,6 +8,21 @@
   const progressBar = document.querySelector('[data-reading-progress]');
   const tocLinks = [...document.querySelectorAll('[data-integrative-toc] a[href^="#"]')];
   const backToTop = document.querySelector('[data-integrative-back-to-top]');
+  const horizontalRegions = [...page.querySelectorAll('.substance-flow, .substance-table-wrap, .integrative-table-wrap')];
+
+  const updateHorizontalRegionFocus = () => {
+    horizontalRegions.forEach((region) => {
+      const isScrollable = region.scrollWidth > region.clientWidth + 1;
+      if (isScrollable) {
+        region.tabIndex = 0;
+        if (!region.hasAttribute('aria-label')) {
+          region.setAttribute('aria-label', 'Conteúdo horizontal rolável');
+        }
+      } else if (region.getAttribute('tabindex') === '0') {
+        region.removeAttribute('tabindex');
+      }
+    });
+  };
 
   const updateProgress = () => {
     if (!progressBar) return;
@@ -29,9 +44,15 @@
     });
   };
 
+  const onResize = () => {
+    onScroll();
+    updateHorizontalRegionFocus();
+  };
+
   window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll);
+  window.addEventListener('resize', onResize);
   updateProgress();
+  updateHorizontalRegionFocus();
 
   if (backToTop) {
     backToTop.hidden = window.scrollY < 700;
