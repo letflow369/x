@@ -132,6 +132,18 @@
   max-width: 100%;
 }
 
+/* Breakouts temáticos antigos não podem deslocar uma seção inteira a partir
+   da coluna editorial. A camada preserva a superfície temática, mas mantém o
+   bloco dentro do mesmo eixo geométrico do conteúdo. */
+.andina-article .andina-content > .andina-inca,
+.andina-article .andina-content > .andina-colonial,
+.andina-article .andina-content > .andina-sources,
+.santeria-article .santeria-content > .santeria-resistance,
+.santeria-article .santeria-content > .santeria-sources {
+  margin-inline: 0;
+  max-width: 100%;
+}
+
 @media (max-width: 68rem) {
   .yoga-hero__inner,
   .ayurveda-hero__inner,
@@ -149,6 +161,17 @@
   }
   .sz-article .sz-final-flow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .santeria-article .santeria-orishas,
+  .santeria-article .santeria-study__flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .santeria-article .santeria-orishas > *,
+  .santeria-article .santeria-study__flow > * {
+    min-width: 0;
+  }
+  .santeria-article .santeria-study__flow span {
+    overflow-wrap: anywhere;
   }
 }
 
