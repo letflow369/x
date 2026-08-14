@@ -1,3 +1,5 @@
+@import url("./components/layout-contract-compat.css");
+
 .content-network{width:min(100% - 2rem,var(--content-width));margin:clamp(2rem,6vw,5rem) auto;padding:clamp(1.25rem,3vw,2rem);background:linear-gradient(145deg,rgb(35 64 74 / 18%),rgb(22 21 23 / 96%));border:.0625rem solid rgb(185 169 148 / 28%);border-radius:var(--radius-medium)}
 .content-network__eyebrow,.directory-eyebrow{margin:0 0 .5rem;font-family:var(--font-interface);font-size:var(--font-size-micro);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary-hover)}
 .content-network h2{margin:0 0 .8rem;font-size:clamp(1.5rem,3vw,2.1rem)}
