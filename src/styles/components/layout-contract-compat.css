@@ -1,0 +1,185 @@
+/*
+ * Compatibilidade geométrica — páginas anteriores ao Layout Contract.
+ *
+ * Esta camada é temporária: corrige somente largura, gutters, contenção e
+ * breakouts dos maiores outliers sem alterar direção artística ou conteúdo.
+ * Regras temáticas devem migrar gradualmente para o contrato e sair daqui.
+ */
+
+/* Xamanismo */
+.shaman-article .shaman-hero__grid {
+  width: min(100%, var(--content-width));
+  max-width: var(--content-width);
+}
+
+.shaman-article .shaman-summary,
+.shaman-article .shaman-layout {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  max-width: none;
+  margin-inline: auto;
+}
+
+.shaman-article .shaman-layout {
+  grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
+  padding-inline: 0;
+}
+
+.shaman-article .shaman-section--forest,
+.shaman-article .shaman-section--night,
+.shaman-article .shaman-section--brazil,
+.shaman-article .shaman-section--paper,
+.shaman-article .shaman-section--document,
+.shaman-article .shaman-section--debate {
+  margin-inline: 0;
+}
+
+/* Espiritualidade Maia */
+.maia-article.maia-article {
+  overflow: visible;
+}
+
+.maia-article .maia-hero__content,
+.maia-article .maia-shell {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+}
+
+.maia-article .maia-shell {
+  grid-template-columns: minmax(12rem, var(--article-sidebar-width)) minmax(0, 1fr);
+}
+
+.maia-article .maia-section--stone,
+.maia-article .maia-section--book,
+.maia-article .maia-section--calendar,
+.maia-article .maia-section--rupture,
+.maia-article .maia-section--violence,
+.maia-article .maia-section--myths {
+  margin-inline: 0;
+}
+
+/* Santa Muerte */
+.sm-article.sm-article {
+  overflow: visible;
+}
+
+.sm-article .sm-hero__content,
+.sm-article .sm-shell {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+}
+
+.sm-article .sm-shell {
+  grid-template-columns: minmax(12rem, var(--article-sidebar-width)) minmax(0, 1fr);
+}
+
+.sm-article .sm-section--stone,
+.sm-article .sm-section--book,
+.sm-article .sm-section--calendar,
+.sm-article .sm-section--rupture,
+.sm-article .sm-section--violence,
+.sm-article .sm-section--myths,
+.sm-article .sm-section--light,
+.sm-article .sm-section--investigation {
+  margin-inline: 0;
+}
+
+/* Nikola Tesla */
+.tesla-article.tesla-article {
+  overflow: visible;
+}
+
+.tesla-article .tesla-hero__grid,
+.tesla-article .tesla-summary,
+.tesla-article .tesla-layout {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+}
+
+.tesla-article .tesla-layout {
+  grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
+}
+
+.tesla-article .tesla-wardenclyffe {
+  margin-inline: 0;
+}
+
+/* Paganismo Eslavo */
+.pe-article .pe-hero__content,
+.pe-article .pe-alert,
+.pe-article .pe-shell {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+.pe-article .pe-shell {
+  grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
+}
+
+.pe-article .pe-section--stone,
+.pe-article .pe-section--forest,
+.pe-article .pe-section--caution,
+.pe-article .pe-section--evidence,
+.pe-article .pe-section--manuscript,
+.pe-article .pe-section--modern {
+  margin-inline: 0;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+  border-radius: var(--pe-radius);
+}
+
+.pe-article .pe-related {
+  padding-inline: max(1rem, calc((100% - var(--content-width)) / 2));
+}
+
+@media (max-width: 60rem) {
+  .shaman-article .shaman-layout,
+  .maia-article .maia-shell,
+  .sm-article .sm-shell,
+  .tesla-article .tesla-layout,
+  .pe-article .pe-shell {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 56rem) {
+  .shaman-article .shaman-summary,
+  .shaman-article .shaman-layout,
+  .maia-article .maia-hero__content,
+  .maia-article .maia-shell,
+  .sm-article .sm-hero__content,
+  .sm-article .sm-shell,
+  .tesla-article .tesla-hero__grid,
+  .tesla-article .tesla-summary,
+  .tesla-article .tesla-layout,
+  .pe-article .pe-hero__content,
+  .pe-article .pe-alert,
+  .pe-article .pe-shell {
+    width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  }
+}
+
+@media (max-width: 40rem) {
+  .shaman-article .shaman-summary,
+  .shaman-article .shaman-layout,
+  .maia-article .maia-hero__content,
+  .maia-article .maia-shell,
+  .sm-article .sm-hero__content,
+  .sm-article .sm-shell,
+  .tesla-article .tesla-hero__grid,
+  .tesla-article .tesla-summary,
+  .tesla-article .tesla-layout,
+  .pe-article .pe-hero__content,
+  .pe-article .pe-alert,
+  .pe-article .pe-shell {
+    width: min(calc(100% - var(--content-gutter-compact)), var(--content-width));
+  }
+
+  .pe-article .pe-section--stone,
+  .pe-article .pe-section--forest,
+  .pe-article .pe-section--caution,
+  .pe-article .pe-section--evidence,
+  .pe-article .pe-section--manuscript,
+  .pe-article .pe-section--modern {
+    padding-inline: 1rem;
+  }
+}
