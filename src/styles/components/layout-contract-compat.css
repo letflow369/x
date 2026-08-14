@@ -132,18 +132,6 @@
   max-width: 100%;
 }
 
-@media (max-width: 62rem) {
-  .borderline-content,
-  .social-anxiety-content,
-  .burnout-content {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    margin-inline: 0;
-  }
-}
-
-/* Práticas integrativas: antecipar a quebra da segunda coluna. */
 @media (max-width: 68rem) {
   .yoga-hero__inner,
   .ayurveda-hero__inner,
@@ -158,6 +146,23 @@
   .di-orbit {
     max-width: min(100%, 18rem);
     margin-inline: auto;
+  }
+  .sz-article .sz-final-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 62rem) {
+  .borderline-content,
+  .social-anxiety-content,
+  .burnout-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: 0;
+  }
+  .sz-article .sz-final-flow {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -186,6 +191,22 @@
   .pe-article.pe-article .pe-alert,
   .pe-article.pe-article .pe-shell {
     width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  }
+}
+
+@media (max-width: 48rem) {
+  .andina-article .andina-network .andina-network__center {
+    grid-column: 1 / -1;
+  }
+  .santeria-article .santeria-sidenav {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .santeria-article .santeria-study__flow {
+    grid-template-columns: 1fr;
+  }
+  .santeria-article .santeria-study__flow span {
+    overflow-wrap: anywhere;
   }
 }
 
@@ -240,6 +261,11 @@
     min-width: 0;
     overflow-x: auto;
   }
+  .maia-article .maia-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.35rem, 13vw, 3rem);
+    overflow-wrap: anywhere;
+  }
 
   .pe-article.pe-article .pe-section--stone,
   .pe-article.pe-article .pe-section--forest,
@@ -248,7 +274,6 @@
   .pe-article.pe-article .pe-section--manuscript,
   .pe-article.pe-article .pe-section--modern { padding-inline: 1rem; }
 
-  /* Santería: todas as comparações/card-grids passam a uma coluna no mobile. */
   .santeria-article .santeria-sidenav,
   .santeria-article .santeria-sidenav nav {
     width: 100%;
@@ -273,7 +298,6 @@
     overflow-wrap: anywhere;
   }
 
-  /* Andina: o nó central deixa de usar uma largura mínima maior que a coluna. */
   .andina-article .andina-sidenav,
   .andina-article .andina-sidenav nav,
   .andina-article .andina-network,
@@ -289,7 +313,6 @@
     overflow-wrap: anywhere;
   }
 
-  /* Esquizofrenia: o painel visual respeita o gutter compacto. */
   .sz-hero__content,
   .sz-hero__visual {
     width: 100%;
@@ -298,7 +321,6 @@
     margin-inline: 0;
   }
 
-  /* TOD: o grid do hero e seu diagrama não mantêm a coluna visual mínima. */
   .odd-hero__inner { grid-template-columns: 1fr; }
   .odd-hero__visual,
   .odd-context-orbit {
@@ -310,4 +332,7 @@
   .odd-context-orbit span,
   .odd-context-orbit i { min-width: 0; width: 100%; }
   .odd-context-orbit i { width: min(7rem, 45%); }
+  .odd-article .references-list li {
+    overflow-wrap: anywhere;
+  }
 }
