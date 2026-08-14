@@ -160,6 +160,39 @@ nav a {
   text-decoration-thickness: 0.08em;
 }
 
+/*
+ * Contrato geométrico global.
+ * O conteúdo editorial pode ter direção artística própria, mas os eixos de
+ * alinhamento, gutters e largura máxima devem derivar destes utilitários.
+ */
+.layout-boundary {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+}
+
+.reading-boundary {
+  width: min(calc(100% - var(--content-gutter)), var(--reading-width));
+  margin-inline: auto;
+}
+
+.editorial-layout {
+  display: grid;
+  grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+}
+
+.editorial-layout > * {
+  min-width: 0;
+}
+
+@media (max-width: 56rem) {
+  .editorial-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -177,7 +210,7 @@ nav a {
 
 /* Revisão editorial global — 2026-08-07 */
 .breadcrumbs {
-  width: min(var(--content-width), calc(100% - 2rem));
+  width: min(var(--content-width), calc(100% - var(--content-gutter)));
   margin: 0 auto;
   padding: 1rem 0 0;
   font-family: var(--font-interface);
@@ -191,7 +224,7 @@ nav a {
 .breadcrumbs a:hover { color: var(--color-primary); }
 .breadcrumbs [aria-current="page"] { color: var(--color-text); }
 .article-title--long { font-family: var(--font-subtitle) !important; font-weight: 400 !important; letter-spacing: .01em !important; text-wrap: balance; }
-@media (max-width: 40rem) { .breadcrumbs { width: min(100% - 1.35rem, var(--content-width)); font-size: .74rem; } }
+@media (max-width: 40rem) { .breadcrumbs { width: min(100% - var(--content-gutter-compact), var(--content-width)); font-size: .74rem; } }
 
 
 /* Shared site footer */
@@ -205,7 +238,7 @@ nav a {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  width: min(100% - 2rem, var(--content-width));
+  width: min(100% - var(--content-gutter), var(--content-width));
   margin-inline: auto;
   padding-block: var(--space-5);
   font-family: var(--font-interface);
