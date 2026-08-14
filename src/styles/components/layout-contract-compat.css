@@ -24,13 +24,16 @@
   padding-inline: 0;
 }
 
-.shaman-article .shaman-section--forest,
-.shaman-article .shaman-section--night,
-.shaman-article .shaman-section--brazil,
-.shaman-article .shaman-section--paper,
-.shaman-article .shaman-section--document,
-.shaman-article .shaman-section--debate {
+.shaman-article.shaman-article .shaman-section {
   margin-inline: 0;
+  max-width: 100%;
+}
+
+.shaman-article .shaman-layout > *,
+.shaman-article .shaman-sidenav,
+.shaman-article .shaman-content,
+.shaman-article .shaman-section {
+  min-width: 0;
 }
 
 /* Espiritualidade Maia */
@@ -38,22 +41,26 @@
   overflow: visible;
 }
 
-.maia-article .maia-hero__content,
-.maia-article .maia-shell {
+.maia-article.maia-article .maia-hero__content,
+.maia-article.maia-article .maia-shell {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   margin-inline: auto;
 }
 
-.maia-article .maia-shell {
+.maia-article.maia-article .maia-shell {
   grid-template-columns: minmax(12rem, var(--article-sidebar-width)) minmax(0, 1fr);
 }
 
-.maia-article .maia-section--stone,
-.maia-article .maia-section--book,
-.maia-article .maia-section--calendar,
-.maia-article .maia-section--rupture,
-.maia-article .maia-section--violence,
-.maia-article .maia-section--myths {
+.maia-article.maia-article .maia-section {
+  max-width: 100%;
+}
+
+.maia-article.maia-article .maia-section--stone,
+.maia-article.maia-article .maia-section--book,
+.maia-article.maia-article .maia-section--calendar,
+.maia-article.maia-article .maia-section--rupture,
+.maia-article.maia-article .maia-section--violence,
+.maia-article.maia-article .maia-section--myths {
   margin-inline: 0;
 }
 
@@ -62,24 +69,24 @@
   overflow: visible;
 }
 
-.sm-article .sm-hero__content,
-.sm-article .sm-shell {
+.sm-article.sm-article .sm-hero__content,
+.sm-article.sm-article .sm-shell {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   margin-inline: auto;
 }
 
-.sm-article .sm-shell {
+.sm-article.sm-article .sm-shell {
   grid-template-columns: minmax(12rem, var(--article-sidebar-width)) minmax(0, 1fr);
 }
 
-.sm-article .sm-section--stone,
-.sm-article .sm-section--book,
-.sm-article .sm-section--calendar,
-.sm-article .sm-section--rupture,
-.sm-article .sm-section--violence,
-.sm-article .sm-section--myths,
-.sm-article .sm-section--light,
-.sm-article .sm-section--investigation {
+.sm-article.sm-article .sm-section--stone,
+.sm-article.sm-article .sm-section--book,
+.sm-article.sm-article .sm-section--calendar,
+.sm-article.sm-article .sm-section--rupture,
+.sm-article.sm-article .sm-section--violence,
+.sm-article.sm-article .sm-section--myths,
+.sm-article.sm-article .sm-section--light,
+.sm-article.sm-article .sm-section--investigation {
   margin-inline: 0;
 }
 
@@ -104,39 +111,103 @@
 }
 
 /* Paganismo Eslavo */
-.pe-article .pe-hero__content,
-.pe-article .pe-alert,
-.pe-article .pe-shell {
+.pe-article.pe-article .pe-hero__content,
+.pe-article.pe-article .pe-alert,
+.pe-article.pe-article .pe-shell {
   width: min(calc(100% - var(--content-gutter)), var(--content-width));
   max-width: var(--content-width);
   margin-inline: auto;
 }
 
-.pe-article .pe-shell {
+.pe-article.pe-article .pe-shell {
   grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
 }
 
-.pe-article .pe-section--stone,
-.pe-article .pe-section--forest,
-.pe-article .pe-section--caution,
-.pe-article .pe-section--evidence,
-.pe-article .pe-section--manuscript,
-.pe-article .pe-section--modern {
+.pe-article.pe-article .pe-section {
   margin-inline: 0;
+  max-width: 100%;
+}
+
+.pe-article.pe-article .pe-section--stone,
+.pe-article.pe-article .pe-section--forest,
+.pe-article.pe-article .pe-section--caution,
+.pe-article.pe-article .pe-section--evidence,
+.pe-article.pe-article .pe-section--manuscript,
+.pe-article.pe-article .pe-section--modern {
   padding-inline: clamp(1rem, 3vw, 2rem);
   border-radius: var(--pe-radius);
 }
 
-.pe-article .pe-related {
+.pe-article.pe-article .pe-related {
   padding-inline: max(1rem, calc((100% - var(--content-width)) / 2));
+}
+
+/* Paganismos Germânico e Nórdico + dossiê greco-romano: breakouts internos
+   permanecem autorais, mas não podem usar a largura inteira do viewport a
+   partir de dentro da coluna editorial. */
+.pg-article.pg-article .pg-section,
+.pn-article.pn-article .pn-section,
+.gr-article.gr-article .gr-section {
+  margin-inline: 0;
+  max-width: 100%;
+}
+
+.pg-article.pg-article .pg-shell,
+.pn-article.pn-article .pn-shell,
+.gr-article.gr-article .gr-shell {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+  grid-template-columns: var(--article-sidebar-width) minmax(0, 1fr);
+}
+
+/* Artigos clínicos com coluna de leitura cujo max-width estava virando
+   largura efetiva em telas estreitas. */
+@media (max-width: 62rem) {
+  .borderline-content,
+  .social-anxiety-content,
+  .burnout-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: 0;
+  }
+}
+
+/* Práticas integrativas: em 1024 px os diagramas orbitais ainda eram
+   posicionados como segunda coluna. A transição passa a ocorrer antes. */
+@media (max-width: 68rem) {
+  .yoga-hero__inner,
+  .ayurveda-hero__inner,
+  .aromatherapy-hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-hero__visual,
+  .ayurveda-hero__visual,
+  .aromatherapy-hero__visual {
+    width: min(28rem, 86vw);
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+
+/* Diagramas orbitais clínicos: contenção pelo próprio painel em notebook. */
+@media (max-width: 68rem) {
+  .di-orbit {
+    max-width: min(100%, 20rem);
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 60rem) {
   .shaman-article .shaman-layout,
-  .maia-article .maia-shell,
-  .sm-article .sm-shell,
+  .maia-article.maia-article .maia-shell,
+  .sm-article.sm-article .sm-shell,
   .tesla-article .tesla-layout,
-  .pe-article .pe-shell {
+  .pe-article.pe-article .pe-shell,
+  .pg-article.pg-article .pg-shell,
+  .pn-article.pn-article .pn-shell,
+  .gr-article.gr-article .gr-shell {
     grid-template-columns: 1fr;
   }
 }
@@ -144,16 +215,16 @@
 @media (max-width: 56rem) {
   .shaman-article .shaman-summary,
   .shaman-article .shaman-layout,
-  .maia-article .maia-hero__content,
-  .maia-article .maia-shell,
-  .sm-article .sm-hero__content,
-  .sm-article .sm-shell,
+  .maia-article.maia-article .maia-hero__content,
+  .maia-article.maia-article .maia-shell,
+  .sm-article.sm-article .sm-hero__content,
+  .sm-article.sm-article .sm-shell,
   .tesla-article .tesla-hero__grid,
   .tesla-article .tesla-summary,
   .tesla-article .tesla-layout,
-  .pe-article .pe-hero__content,
-  .pe-article .pe-alert,
-  .pe-article .pe-shell {
+  .pe-article.pe-article .pe-hero__content,
+  .pe-article.pe-article .pe-alert,
+  .pe-article.pe-article .pe-shell {
     width: min(calc(100% - var(--content-gutter)), var(--content-width));
   }
 }
@@ -161,25 +232,85 @@
 @media (max-width: 40rem) {
   .shaman-article .shaman-summary,
   .shaman-article .shaman-layout,
-  .maia-article .maia-hero__content,
-  .maia-article .maia-shell,
-  .sm-article .sm-hero__content,
-  .sm-article .sm-shell,
+  .maia-article.maia-article .maia-hero__content,
+  .maia-article.maia-article .maia-shell,
+  .sm-article.sm-article .sm-hero__content,
+  .sm-article.sm-article .sm-shell,
   .tesla-article .tesla-hero__grid,
   .tesla-article .tesla-summary,
   .tesla-article .tesla-layout,
-  .pe-article .pe-hero__content,
-  .pe-article .pe-alert,
-  .pe-article .pe-shell {
+  .pe-article.pe-article .pe-hero__content,
+  .pe-article.pe-article .pe-alert,
+  .pe-article.pe-article .pe-shell {
     width: min(calc(100% - var(--content-gutter-compact)), var(--content-width));
   }
 
-  .pe-article .pe-section--stone,
-  .pe-article .pe-section--forest,
-  .pe-article .pe-section--caution,
-  .pe-article .pe-section--evidence,
-  .pe-article .pe-section--manuscript,
-  .pe-article .pe-section--modern {
+  .shaman-article .shaman-layout > *,
+  .shaman-article .shaman-sidenav,
+  .shaman-article .shaman-content,
+  .shaman-article .shaman-section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .shaman-article .shaman-sidenav nav {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .maia-article .maia-sidenav,
+  .maia-article .maia-sidenav nav,
+  .maia-article .maia-sidenav ol {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .maia-article .maia-sidenav ol {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .maia-article .maia-sidenav a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .pe-article.pe-article .pe-section--stone,
+  .pe-article.pe-article .pe-section--forest,
+  .pe-article.pe-article .pe-section--caution,
+  .pe-article.pe-article .pe-section--evidence,
+  .pe-article.pe-article .pe-section--manuscript,
+  .pe-article.pe-article .pe-section--modern {
     padding-inline: 1rem;
+  }
+
+  /* Menus internos longos deixam de projetar links para fora do documento. */
+  .santeria-article .santeria-sidenav,
+  .santeria-article .santeria-sidenav nav,
+  .andina-article .andina-sidenav,
+  .andina-article .andina-sidenav nav {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .santeria-article .santeria-sidenav nav,
+  .andina-article .andina-sidenav nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .santeria-article .santeria-sidenav a,
+  .andina-article .andina-sidenav a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .sz-hero__content {
+    width: min(calc(100% - var(--content-gutter-compact)), var(--content-width));
+    max-width: 100%;
   }
 }
