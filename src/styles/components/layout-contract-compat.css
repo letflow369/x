@@ -218,8 +218,15 @@
 }
 
 @media (max-width: 48rem) {
+  .andina-article .andina-network {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .andina-article .andina-network .andina-network__center {
     grid-column: 1 / -1;
+  }
+  .andina-article .andina-network > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
   .santeria-article .santeria-sidenav {
     min-width: 0;
