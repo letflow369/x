@@ -264,7 +264,7 @@ function auditHtmlFile(file) {
   }
 
   auditHtmlIds(html, relative);
-  auditHtmlMetadata(html, relative);
+  auditHtmlMetadata(masked, relative);
   auditBrand(html, relative);
   auditHtmlAttributesAndReferences(file, html, masked);
   auditHtmlPlaceholders(html, relative);
@@ -748,7 +748,9 @@ function splitIdRefs(value) {
 
 function extractIds(html) {
   const output = [];
-  const regex = /\bid\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi;
+  // Exige espaço em branco antes de "id=" para não confundir com "?id=" ou
+  // "&id=" dentro de query strings de URLs em atributos href/src.
+  const regex = /(?<=\s)id\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi;
   for (const match of html.matchAll(regex)) {
     const id = match[1] ?? match[2] ?? match[3] ?? '';
     if (id) output.push({ id: decodeHtmlEntities(id), index: match.index });
@@ -900,7 +902,7 @@ function auditCssDirectChildSelectors(css, relative) {
 function maskRawText(html) {
   return html
     .replace(/<!--[\s\S]*?-->/g, (value) => ' '.repeat(value.length))
-    .replace(/<(script|style|template)\b[^>]*>[\s\S]*?<\/\1>/gi, (value) => ' '.repeat(value.length));
+    .replace(/<(script|style|template|svg)\b[^>]*>[\s\S]*?<\/\1>/gi, (value) => ' '.repeat(value.length));
 }
 
 function scanCssBalance(css) {
