@@ -1,3 +1,5 @@
+@import url("./components/layout-contract-compat.css");
+
 .page-hero {
   background:
     linear-gradient(145deg, rgb(35 64 74 / 32%), rgb(11 12 16 / 96%)),

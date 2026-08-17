@@ -380,7 +380,7 @@
   .shaman-history-split, .shaman-priority-grid, .shaman-why-grid, .shaman-reading-grid, .shaman-method-grid, .shaman-final-note > div { grid-template-columns:1fr; }
   .shaman-colonial-flow i { transform:rotate(90deg); }
   .shaman-map { min-height:23rem; }
-  .shaman-map__pin span { font-size:.62rem; }
+  .shaman-map__pin span { font-size:.7rem; }
 }
 
 @media (max-width: 520px) {

@@ -1,0 +1,69 @@
+/* Massagem com Pedras Quentes — Let Flow 369 */
+:root{--hotstone:#b38a6c;--hotstone-strong:#e0c1a1;--hotstone-soft:rgb(179 138 108 / 12%);--hotstone-green:#8fc19a;--hotstone-amber:#d6a95f;--hotstone-red:#d68a7c;--hotstone-gray:#a89c90}
+.hotstone-page,.hotstone-article{background:radial-gradient(circle at 84% 10%,rgb(84 61 44 / 22%),transparent 26rem),linear-gradient(180deg,#171411,#100e0c 38%,#110f0d);color:var(--color-text)}
+.hotstone-hero{padding:clamp(3rem,7vw,6.5rem) var(--space-4);border-bottom:1px solid rgb(179 138 108 / 18%)}
+.hotstone-hero__inner,.hotstone-section__inner{width:min(100%,var(--content-width));margin-inline:auto}
+.hotstone-hero__inner{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(18rem,.8fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.hotstone-hero h1{margin:.35rem 0 .65rem;font-family:var(--font-display);font-size:clamp(3rem,8vw,6.5rem);line-height:.92;letter-spacing:-.02em}
+.hotstone-hero__subtitle{max-width:46rem;margin:0 0 1rem;font:600 clamp(1.3rem,3vw,2rem)/1.25 var(--font-reading);color:var(--hotstone-strong)}
+.hotstone-hero__intro{max-width:48rem;font-size:1.05rem;color:var(--color-text-muted)}
+.hotstone-domain-list{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.hotstone-domain-list span{display:inline-flex;align-items:center;padding:.3rem .75rem;border:1px solid rgb(179 138 108 / 32%);border-radius:999px;font:600 .78rem/1 var(--font-interface);color:var(--hotstone-strong);background:var(--hotstone-soft)}
+.hotstone-hero__notice{margin-top:1rem;padding:1rem 1.15rem;background:rgb(19 15 13 / 82%);border:1px solid rgb(179 138 108 / 24%);border-left:.24rem solid var(--hotstone);border-radius:var(--radius-medium)}
+.hotstone-hero__notice strong{display:block;margin-bottom:.3rem;color:var(--hotstone-strong)}
+.hotstone-hero__notice p{margin:0;color:var(--color-text-muted)}
+.hotstone-hero__plate{display:grid;justify-items:center;gap:.75rem}
+.hotstone-hero__plate svg{width:min(100%,22rem);height:auto}
+.hotstone-hero__plate .heat-waves{fill:none;stroke:var(--hotstone-amber);stroke-width:6;stroke-linecap:round;opacity:.55}
+.hotstone-hero__plate .plate-marks{fill:rgb(241 231 213 / 35%)}
+.hotstone-plate__caption{max-width:20rem;text-align:center}
+.hotstone-plate__caption strong{display:block;margin-bottom:.3rem;color:var(--hotstone-strong)}
+.hotstone-plate__caption span{color:var(--color-text-muted);font-size:.9rem}
+.hotstone-quick{padding:clamp(2.7rem,6vw,5rem) var(--space-4);background:rgb(19 15 13 / 78%);border-bottom:1px solid rgb(179 138 108 / 14%)}
+.hotstone-summary{margin-top:var(--space-5)}
+.hotstone-summary dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-4)}
+.hotstone-summary div{padding:1rem;background:rgb(24 19 16 / 78%);border:1px solid rgb(179 138 108 / 18%);border-radius:var(--radius-medium)}
+.hotstone-summary dt{font:700 .72rem/1.2 var(--font-interface);letter-spacing:.05em;text-transform:uppercase;color:var(--hotstone)}
+.hotstone-summary dd{margin:.3rem 0 0;color:var(--color-text)}
+.hotstone-shell{padding-block:clamp(1rem,3vw,2rem)}
+.hotstone-layout{width:min(100%,var(--content-width));margin-inline:auto}
+.hotstone-content>section{scroll-margin-top:5rem;padding-block:clamp(2.6rem,5vw,4.2rem);border-bottom:1px solid rgb(179 138 108 / 12%)}
+.hotstone-content .section-heading>p{max-width:45rem;color:var(--color-text-muted)}
+.hotstone-mechanism-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4);margin-block:var(--space-5)}
+.hotstone-mechanism-grid article{padding:clamp(1rem,2.2vw,1.45rem);background:rgb(24 19 16 / 80%);border:1px solid rgb(179 138 108 / 18%);border-radius:var(--radius-medium)}
+.hotstone-session{display:grid;gap:.75rem;margin-block:var(--space-5);padding:0;list-style:none}
+.hotstone-session li{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:1rem;align-items:start;padding:1rem 1.1rem;background:rgb(24 19 16 / 72%);border:1px solid rgb(179 138 108 / 16%);border-radius:var(--radius-small)}
+.hotstone-session li>span{display:grid;place-items:center;width:2.6rem;aspect-ratio:1;border:1px solid var(--hotstone);border-radius:50%;font:700 .72rem/1 var(--font-interface);color:var(--hotstone)}
+.hotstone-session h3{margin:.1rem 0 .2rem}
+.hotstone-session p{margin:0;color:var(--color-text-muted)}
+.hotstone-safety .hotstone-risk-grid{margin-top:var(--space-5)}
+.hotstone-risk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)}
+.hotstone-risk-grid article{padding:1.2rem;background:rgb(66 33 30 / 22%);border:1px solid rgb(214 138 124 / 24%);border-radius:var(--radius-medium)}
+.hotstone-risk-grid h3{margin-top:0;color:var(--hotstone-red)}
+.hotstone-temperature-rule{margin-top:var(--space-5);padding:1rem 1.15rem;background:rgb(214 138 124 / 10%);border:1px solid rgb(214 138 124 / 26%);border-left:.24rem solid var(--hotstone-red);border-radius:var(--radius-medium)}
+.hotstone-temperature-rule strong{display:block;margin-bottom:.3rem;color:var(--hotstone-red)}
+.hotstone-temperature-rule p{margin:0;color:var(--color-text-muted)}
+.hotstone-faq{display:grid;gap:.7rem;margin-block:var(--space-5)}
+.hotstone-question-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4);margin-block:var(--space-5)}
+.hotstone-question-grid article{padding:1.1rem;background:rgb(24 19 16 / 76%);border:1px solid rgb(179 138 108 / 18%);border-radius:var(--radius-medium)}
+.hotstone-question-grid span{display:block;margin-bottom:.4rem;font:700 .78rem/1 var(--font-interface);color:var(--hotstone)}
+.hotstone-question-grid p{margin:0;color:var(--color-text-muted)}
+.hotstone-subjective{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:1.25rem;align-items:center;margin-block:var(--space-6)}
+.hotstone-subjective article{padding:1.2rem;background:rgb(24 19 16 / 76%);border:1px solid rgb(179 138 108 / 18%);border-radius:var(--radius-medium)}
+.hotstone-subjective span{display:block;margin-bottom:.4rem;font:700 .72rem/1 var(--font-interface);letter-spacing:.05em;text-transform:uppercase;color:var(--hotstone)}
+.hotstone-subjective blockquote{margin:0 0 .5rem;font-family:var(--font-reading);font-style:italic;color:var(--hotstone-strong)}
+.hotstone-subjective p{margin:0;color:var(--color-text-muted)}
+.hotstone-subjective>div{font-size:1.5rem;color:var(--hotstone);text-align:center}
+.hotstone-study-path{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;align-items:center;margin-block:var(--space-6);text-align:center}
+.hotstone-study-path span{padding:.4rem .8rem;background:var(--hotstone-soft);border:1px solid rgb(179 138 108 / 26%);border-radius:999px;font:600 .82rem/1 var(--font-interface);color:var(--hotstone-strong)}
+.hotstone-study-path b{color:var(--hotstone)}
+.hotstone-conclusion{padding:clamp(1.5rem,4vw,2.6rem);background:linear-gradient(145deg,rgb(84 61 44 / 28%),rgb(24 19 16 / 82%));border:1px solid rgb(179 138 108 / 34%);border-radius:var(--radius-large)}
+.hotstone-conclusion h2{font-size:clamp(2rem,5vw,3.4rem)}
+.hotstone-methodology{margin-top:var(--space-6);padding:1.2rem;background:rgb(179 138 108 / 8%);border:1px solid rgb(179 138 108 / 20%);border-radius:var(--radius-medium)}
+.hotstone-back-to-top{position:fixed;right:1rem;bottom:1rem;z-index:50;width:3rem;aspect-ratio:1;border:1px solid rgb(179 138 108 / 40%);border-radius:50%;background:rgb(17 14 12 / 94%);color:var(--hotstone-strong);font:700 1rem var(--font-interface);cursor:pointer;box-shadow:0 .4rem 1rem rgb(0 0 0 / 25%)}
+.hotstone-back-to-top[hidden]{display:none}
+.hotstone-back-to-top:focus-visible{outline:3px solid var(--hotstone);outline-offset:3px}
+@media(max-width:72rem){.hotstone-hero__inner{grid-template-columns:1fr}.hotstone-mechanism-grid,.hotstone-question-grid{grid-template-columns:1fr}.hotstone-summary dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:62rem){.hotstone-risk-grid{grid-template-columns:1fr}.hotstone-subjective{grid-template-columns:1fr}.hotstone-subjective>div{transform:rotate(90deg)}}
+@media(max-width:48rem){.hotstone-summary dl{grid-template-columns:1fr}.hotstone-session li{grid-template-columns:2.6rem minmax(0,1fr)}.hotstone-back-to-top{right:.75rem;bottom:.75rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.hotstone-back-to-top{transition:none}}
