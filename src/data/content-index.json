@@ -30,6 +30,33 @@
       "scientificReviewIso": null
     },
     {
+      "slug": "ajna",
+      "title": "Ajna",
+      "url": "artigos/ajna.html",
+      "summary": "Ajna, o chamado terceiro olho: origem no Yoga e Tantra, corpo sutil, simbolismo, sexto sentido, glândula pineal, meditação, interocepção e limites das evidências científicas.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "conceito/sistema simbólico",
+      "tags": [
+        "esoterismo",
+        "yoga",
+        "chakras",
+        "ajna",
+        "corpo sutil"
+      ],
+      "relations": [
+        "chakras",
+        "theosophy",
+        "hermetism"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-11",
+      "dateModified": "2026-08-11",
+      "scientificReviewIso": null
+    },
+    {
       "slug": "ansiedade",
       "title": "Ansiedade",
       "url": "artigos/ansiedade.html",
@@ -736,6 +763,60 @@
       "scientificReviewIso": "2026-08-05"
     },
     {
+      "slug": "espiritualidade-andina",
+      "title": "Espiritualidade Andina",
+      "url": "artigos/espiritualidade-andina.html",
+      "summary": "Espiritualidade Andina em contexto: diversidade, história pré-inca e inca, pacha, Pachamama, wak'a, apus, ayllu, reciprocidade, colonização, continuidade, turismo espiritual e evidências.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "andes",
+        "povos indígenas",
+        "colonização"
+      ],
+      "relations": [
+        "espiritualidade-maia",
+        "xamanismo",
+        "mitologia-yanomami"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "espiritualidade-maia",
+      "title": "Espiritualidade Maia",
+      "url": "artigos/espiritualidade-maia.html",
+      "summary": "Espiritualidade Maia apresentada por história, cosmologia, literatura, calendários, conquista, continuidade contemporânea, mitos e níveis de evidência.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "maia",
+        "mesoamérica",
+        "colonização"
+      ],
+      "relations": [
+        "espiritualidade-andina",
+        "santa-muerte",
+        "xamanismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
       "slug": "esquizofrenia",
       "title": "Esquizofrenia",
       "url": "artigos/esquizofrenia.html",
@@ -1015,6 +1096,34 @@
       "scientificReviewIso": null
     },
     {
+      "slug": "hoodoo",
+      "title": "Hoodoo",
+      "url": "artigos/hoodoo.html",
+      "summary": "Hoodoo: história afro-americana, diáspora africana, conjure, rootwork, botânica, cristianismo, resistência, Zora Neale Hurston, Frederick Douglass, estereótipos e evidências.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "diáspora africana",
+        "hoodoo",
+        "afro-americano",
+        "história"
+      ],
+      "relations": [
+        "vodou",
+        "candomble",
+        "umbanda"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-11",
+      "dateModified": "2026-08-11",
+      "scientificReviewIso": null
+    },
+    {
       "slug": "isla",
       "title": "Islã",
       "url": "artigos/isla.html",
@@ -1155,6 +1264,60 @@
       "scientificReviewIso": null
     },
     {
+      "slug": "mitologia-yanomami",
+      "title": "Mitologia Yanomami",
+      "url": "artigos/mitologia-yanomami.html",
+      "summary": "Mitologia Yanomami em contexto: povos e línguas, urihi, xapiri, Omama, Yoasi, sonhos, xamanismo, Queda do Céu, história do contato, garimpo, Davi Kopenawa, literatura e fontes.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "mitologia",
+      "tags": [
+        "mitologia",
+        "povos indígenas",
+        "yanomami",
+        "amazônia",
+        "xamanismo"
+      ],
+      "relations": [
+        "xamanismo",
+        "mitologias-tupi-guarani",
+        "espiritualidade-andina"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "mitologias-tupi-guarani",
+      "title": "Mitologias Tupi-Guarani",
+      "url": "artigos/mitologias-tupi-guarani.html",
+      "summary": "Mitologias Tupi-Guarani em perspectiva histórica e cultural: povos Guarani e Tupinambá, cosmologias, oralidade, Terra Sem Mal, colonização, interpretações missionárias, resistência, literatura e fontes.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "mitologia",
+      "tags": [
+        "mitologia",
+        "povos indígenas",
+        "tupi-guarani",
+        "brasil",
+        "colonização"
+      ],
+      "relations": [
+        "mitologia-yanomami",
+        "xamanismo",
+        "espiritualidade-andina"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
       "slug": "moxaterapia",
       "title": "Moxaterapia",
       "url": "artigos/moxaterapia.html",
@@ -1184,6 +1347,34 @@
       "scientificReviewIso": null
     },
     {
+      "slug": "nikola-tesla",
+      "title": "Nikola Tesla",
+      "url": "artigos/nikola-tesla.html",
+      "summary": "Nikola Tesla em uma biografia investigativa: sistemas polifásicos, motor de indução, bobina, controle remoto, rádio, Wardenclyffe, Edison, Marconi, fracassos, controvérsias e mitos examinados por evidências.",
+      "category": "ciencia-tecnologia-sociedade",
+      "categoryName": "Ciência, tecnologia e sociedade",
+      "categoryUrl": "assuntos/ciencia-tecnologia-sociedade.html",
+      "contentType": "biografia",
+      "tags": [
+        "ciência",
+        "tecnologia",
+        "história",
+        "nikola tesla",
+        "eletricidade",
+        "biografia"
+      ],
+      "relations": [
+        "ajna",
+        "hermetism",
+        "theosophy"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
       "slug": "numerologia",
       "title": "Numerologia",
       "url": "artigos/numerologia.html",
@@ -1210,6 +1401,169 @@
       "datePublished": "2026-08-05",
       "dateModified": "2026-08-05",
       "scientificReviewIso": "2026-08-05"
+    },
+    {
+      "slug": "paganismo",
+      "title": "Paganismo",
+      "url": "artigos/paganismo.html",
+      "summary": "Paganismo: religiões antigas, formação histórica do termo, paganismos modernos, Wicca, Heathenry, Druidismo, reconstruções, fontes e controvérsias com separação entre história e crença.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "paganismo",
+        "neopaganismo",
+        "história"
+      ],
+      "relations": [
+        "wicca",
+        "paganismo-celta-druidismo",
+        "paganismo-nordico"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "paganismo-celta-druidismo",
+      "title": "Paganismo Celta e Druidismo",
+      "url": "artigos/paganismo-celta-druidismo.html",
+      "summary": "Paganismo Celta e Druidismo apresentados com separação entre religiões célticas antigas, druidas históricos, literatura medieval, revivalismo e Druidismo contemporâneo.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "celtas",
+        "druidismo",
+        "história"
+      ],
+      "relations": [
+        "paganismo",
+        "paganismo-nordico",
+        "paganismo-germanico"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "paganismo-eslavo",
+      "title": "Paganismo Eslavo",
+      "url": "artigos/paganismo-eslavo.html",
+      "summary": "Tradições religiosas eslavas pré-cristãs reconstruídas criticamente por fontes medievais, arqueologia, linguística e folclore, com distinção de Rodnovery moderno.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "eslavos",
+        "europa oriental",
+        "história"
+      ],
+      "relations": [
+        "paganismo-nordico",
+        "paganismo-germanico",
+        "paganismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "paganismo-germanico",
+      "title": "Paganismo Germânico",
+      "url": "artigos/paganismo-germanico.html",
+      "summary": "Tradições, práticas e fontes dos povos germânicos pré-cristãos, cristianização e reconstruções modernas, com níveis de evidência.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "germânicos",
+        "europa",
+        "história"
+      ],
+      "relations": [
+        "paganismo-nordico",
+        "paganismo-eslavo",
+        "paganismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "paganismo-nordico",
+      "title": "Paganismo Nórdico",
+      "url": "artigos/paganismo-nordico.html",
+      "summary": "Religião da Escandinávia pré-cristã reconstruída por arqueologia, runas, poesia e literatura medieval, com níveis de evidência e distinção de Ásatrú moderno.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "escandinávia",
+        "vikings",
+        "história"
+      ],
+      "relations": [
+        "paganismo-germanico",
+        "paganismo-eslavo",
+        "paganismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "povos-ciganos",
+      "title": "Povos Ciganos",
+      "url": "artigos/povos-ciganos.html",
+      "summary": "Povos Ciganos: origem, diáspora, diversidade Roma, Sinti, Calon e Kale, perseguições, Holocausto Roma, literatura, Brasil, direitos humanos, mitos e evidências.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "povo/cultura",
+      "tags": [
+        "cultura",
+        "história",
+        "povos ciganos",
+        "roma",
+        "diáspora",
+        "direitos humanos"
+      ],
+      "relations": [
+        "hoodoo",
+        "vodou",
+        "xamanismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
     },
     {
       "slug": "psicopatia",
@@ -1381,6 +1735,117 @@
       "datePublished": "2026-08-07",
       "dateModified": "2026-08-07",
       "scientificReviewIso": "2026-08-07"
+    },
+    {
+      "slug": "religiao-greco-romana",
+      "title": "Religião Greco-Romana",
+      "url": "artigos/religiao-greco-romana.html",
+      "summary": "Religião greco-romana apresentada historicamente: práticas, sociedade, divindades, culto doméstico, mistérios, transformações, fontes e níveis de evidência.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "grécia antiga",
+        "roma antiga",
+        "mitologia",
+        "história"
+      ],
+      "relations": [
+        "paganismo",
+        "paganismo-nordico",
+        "paganismo-germanico"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "religiao-tradicional-ioruba",
+      "title": "Religião Tradicional Iorubá",
+      "url": "artigos/religiao-tradicional-ioruba.html",
+      "summary": "Religião Tradicional Iorubá: história, Yorubaland, cosmologia, Òrìṣà, Ifá, Orí, Ìwà, diáspora, Brasil, patrimônio e fontes com separação entre tradição e evidência histórica.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "ioruba",
+        "orixás",
+        "áfrica",
+        "diáspora"
+      ],
+      "relations": [
+        "candomble",
+        "umbanda",
+        "santeria"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "santa-muerte",
+      "title": "Santa Muerte",
+      "url": "artigos/santa-muerte.html",
+      "summary": "Santa Muerte apresentada por história, religiosidade popular, devoção, proteção, vulnerabilidade, controvérsias, mitos e níveis de evidência.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "santa muerte",
+        "méxico",
+        "religiosidade popular"
+      ],
+      "relations": [
+        "espiritualidade-maia",
+        "religiao-greco-romana",
+        "hoodoo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "santeria",
+      "title": "Santería — Regla de Ocha",
+      "url": "artigos/santeria.html",
+      "summary": "Santería (Regla de Ocha) em contexto: história afro-cubana, orishas, oralidade, linhagens, música, escravidão, preconceito, caso Hialeah, controvérsias, evidência e literatura.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "santería",
+        "cuba",
+        "diáspora africana",
+        "orixás"
+      ],
+      "relations": [
+        "candomble",
+        "umbanda",
+        "religiao-tradicional-ioruba"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
     },
     {
       "slug": "sigmund-freud",
@@ -1722,6 +2187,34 @@
       "scientificReviewIso": "2026-08-05"
     },
     {
+      "slug": "vodou",
+      "title": "Vodou",
+      "url": "artigos/vodou.html",
+      "summary": "Vodou haitiano: formação na diáspora africana, Saint-Domingue, Revolução Haitiana, Bondye, lwa, ancestrais, cerimônias, vèvè, música, arte, estereótipos e evidências.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "diáspora africana",
+        "vodou",
+        "haiti",
+        "história"
+      ],
+      "relations": [
+        "hoodoo",
+        "candomble",
+        "umbanda"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-11",
+      "dateModified": "2026-08-11",
+      "scientificReviewIso": null
+    },
+    {
       "slug": "wicca",
       "title": "Wicca",
       "url": "artigos/wicca.html",
@@ -1748,6 +2241,34 @@
       "datePublished": "2026-08-05",
       "dateModified": "2026-08-05",
       "scientificReviewIso": "2026-08-05"
+    },
+    {
+      "slug": "xamanismo",
+      "title": "Xamanismo",
+      "url": "artigos/xamanismo.html",
+      "summary": "Xamanismo em perspectiva antropológica: origem do termo, pluralidade cultural, transe, cura, cosmologias, pajelança no Brasil, colonialismo, neoxamanismo, ciência, mitos e fontes.",
+      "category": "religioes-espiritualidade",
+      "categoryName": "Religiões e espiritualidade",
+      "categoryUrl": "assuntos/religioes-espiritualidade.html",
+      "contentType": "religião/tradição",
+      "tags": [
+        "religiões",
+        "espiritualidade",
+        "xamanismo",
+        "antropologia",
+        "transe",
+        "brasil"
+      ],
+      "relations": [
+        "mitologia-yanomami",
+        "espiritualidade-andina",
+        "ayahuasca"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-17",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12",
+      "scientificReviewIso": null
     },
     {
       "slug": "yoga",
