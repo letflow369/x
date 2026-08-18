@@ -55,6 +55,7 @@ jobs:
           .socrates-questions,
           .socrates-myth-section,
           .socrates-library,
+          .socrates-evidence,
           .socrates-references {
             color: var(--color-text);
             background: var(--color-surface);
@@ -100,7 +101,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Socrates palette already remapped.'
           else
-            git commit -m 'fix: remap Socrates to home palette [skip ci]'
+            git commit -m 'fix: complete Socrates home palette mapping [skip ci]'
             git push origin HEAD:feature/socrates-investigation
           fi
 
