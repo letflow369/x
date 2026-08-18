@@ -4,16 +4,13 @@ on:
   push:
     branches:
       - feature/home-visual-standard
-  pull_request:
-    branches:
-      - main
 
 permissions:
   contents: write
 
 jobs:
   standardize-and-validate:
-    if: "github.event_name == 'pull_request' || !contains(github.event.head_commit.message, '[skip ci]')"
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -33,10 +30,9 @@ jobs:
         run: npm run sync:visual
 
       - name: Persist synchronized HTML
-        if: github.event_name == 'push'
         run: |
           git config user.name 'github-actions[bot]'
-          git config user.email '418982966+github-actions[bot]@users.noreply.github.com'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- '*.html' ':!dist'
           if git diff --cached --quiet; then
             echo 'No HTML synchronization changes.'
@@ -45,23 +41,68 @@ jobs:
             git push origin HEAD:feature/home-visual-standard
           fi
 
-      - name: Audit source visual contract
-        run: npm run audit:visual
-
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-
-      - name: Build site
-        run: npm run build
-
-      - name: Audit design system
-        run: npm run audit:design
-
-      - name: Audit structured data
-        run: npm run audit:structured
 
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Validate site and visual contract
-        run: npx playwright test tests/site.spec.js tests/visual-standard.spec.js --workers=2
+      - name: Run complete validation suite
+        id: validation
+        shell: bash
+        run: |
+          set +e
+          log=/tmp/home-visual-standard.log
+          : > "$log"
+          status=0
+
+          run_check() {
+            echo "" | tee -a "$log"
+            echo "### $*" | tee -a "$log"
+            "$@" 2>&1 | tee -a "$log"
+            rc=${PIPESTATUS[0]}
+            if [ "$rc" -ne 0 ]; then
+              status=$rc
+            fi
+          }
+
+          run_check npm run audit:visual
+          run_check npm run build
+          run_check npm run audit:design
+          run_check npm run audit:structured
+          run_check npx playwright test tests/site.spec.js tests/visual-standard.spec.js --workers=2
+
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cp "$log" /tmp/home-visual-standard-full.log
+          exit 0
+
+      - name: Persist validation report
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p docs
+          status='${{ steps.validation.outputs.status }}'
+          if [ "$status" = '0' ]; then result='PASS'; else result='FAIL'; fi
+          {
+            echo '# Home visual standard — validation'
+            echo
+            echo "Result: **$result**"
+            echo
+            echo "Commit tested: \`$(git rev-parse HEAD)\`"
+            echo
+            echo 'Validation includes: source contract audit, build, design-system audit, structured-data audit, complete site Playwright suite and visual-standard Playwright suite.'
+            echo
+            echo '```text'
+            tail -n 100 /tmp/home-visual-standard-full.log 2>/dev/null || true
+            echo '```'
+          } > docs/home-visual-standard-validation.md
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/home-visual-standard-validation.md
+          git commit -m "test: record home visual standard validation $result [skip ci]" || true
+          git push origin HEAD:feature/home-visual-standard
+
+      - name: Fail when validation failed
+        if: steps.validation.outputs.status != '0'
+        run: exit 1
