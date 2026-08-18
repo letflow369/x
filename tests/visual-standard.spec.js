@@ -2,8 +2,15 @@ import fs from 'node:fs';
 import { test, expect } from '@playwright/test';
 
 const sitemap = fs.readFileSync(new URL('../dist/sitemap.xml', import.meta.url), 'utf8');
-const routes = [...sitemap.matchAll(/<loc>https:\/\/letflow369\.github\.io\/x\/([^<]*)<\/loc>/g)]
+const allRoutes = [...sitemap.matchAll(/<loc>https:\/\/letflow369\.github\.io\/x\/([^<]*)<\/loc>/g)]
   .map((match) => match[1] || 'index.html');
+const requestedRoutes = String(process.env.VISUAL_ROUTES || '')
+  .split(',')
+  .map((route) => route.trim())
+  .filter(Boolean);
+const routes = requestedRoutes.length
+  ? allRoutes.filter((route) => requestedRoutes.includes(route))
+  : allRoutes;
 const viewports = [390, 1440];
 
 async function blockExternalRequests(page) {
@@ -39,12 +46,14 @@ async function inspectVisualContract(page) {
         const image = figure.querySelector('img');
         const imageRect = image?.getBoundingClientRect();
         const className = String(figure.className || '');
+        const ancestor = figure.closest('[class$="-hero"], [class*="-hero "]');
         const heroLike = /(^|\s)[^\s]*(?:hero|portrait|profile)(?:\s|$)/.test(className)
-          || Boolean(figure.closest('[class$="-hero"], [class*="-hero "]'));
+          || Boolean(ancestor);
         return {
           className,
-          width: rect.width,
-          imageHeight: imageRect?.height ?? 0,
+          ancestorClassName: ancestor ? String(ancestor.className || '') : '',
+          width: Math.round(rect.width * 10) / 10,
+          imageHeight: Math.round((imageRect?.height ?? 0) * 10) / 10,
           heroLike,
         };
       });
@@ -66,14 +75,15 @@ async function inspectVisualContract(page) {
       .map((element) => {
         const style = getComputedStyle(element);
         return {
-          selector: `${element.tagName.toLowerCase()}.${[...element.classList].slice(0, 2).join('.')}`,
+          selector: `${element.tagName.toLowerCase()}.${[...element.classList].slice(0, 3).join('.')}`,
           radius: Number.parseFloat(style.borderTopLeftRadius),
           borderStyle: style.borderTopStyle,
           borderWidth: Number.parseFloat(style.borderTopWidth),
+          background: style.backgroundImage === 'none' ? style.backgroundColor : style.backgroundImage,
         };
       })
       .filter((item) => item.radius < 13 || item.borderStyle === 'none' || item.borderWidth < 0.9)
-      .slice(0, 10);
+      .slice(0, 20);
 
     return {
       bodyBackground: getComputedStyle(document.body).backgroundColor,
@@ -93,6 +103,48 @@ async function inspectVisualContract(page) {
   });
 }
 
+function collectViolations(contract) {
+  const violations = [];
+
+  if (!contract.lastStylesheet.includes('site-standard.css')) {
+    violations.push({ type: 'stylesheet-order', actual: contract.lastStylesheet });
+  }
+  if (contract.bodyBackground !== 'rgb(11, 12, 16)') {
+    violations.push({ type: 'body-background', actual: contract.bodyBackground });
+  }
+  if (!contract.bodyFont.includes('Spectral')) {
+    violations.push({ type: 'body-font', actual: contract.bodyFont });
+  }
+  if (!contract.h1Font?.includes('Cinzel Decorative')) {
+    violations.push({ type: 'h1-font', actual: contract.h1Font });
+  }
+  if (contract.h2Font && !contract.h2Font.includes('Marcellus')) {
+    violations.push({ type: 'h2-font', actual: contract.h2Font });
+  }
+  if (contract.h3Font && !contract.h3Font.includes('Marcellus')) {
+    violations.push({ type: 'h3-font', actual: contract.h3Font });
+  }
+  if (contract.h1Color !== 'rgb(241, 231, 213)') {
+    violations.push({ type: 'h1-color', actual: contract.h1Color });
+  }
+
+  for (const block of contract.blockViolations) {
+    violations.push({ type: 'block', ...block });
+  }
+
+  for (const figure of contract.figures) {
+    const maximumWidth = figure.heroLike ? contract.heroImageWidth : contract.readingWidth;
+    if (figure.width > maximumWidth + 1) {
+      violations.push({ type: 'figure-width', maximumWidth, ...figure });
+    }
+    if (figure.imageHeight > contract.imageMaxHeight + 1) {
+      violations.push({ type: 'image-height', maximumHeight: contract.imageMaxHeight, ...figure });
+    }
+  }
+
+  return violations;
+}
+
 test.describe('padrão visual da página inicial — todas as rotas', () => {
   for (const route of routes) {
     test(`${route} usa tipografia, paleta, blocos e imagens do contrato global`, async ({ page }) => {
@@ -105,22 +157,11 @@ test.describe('padrão visual da página inicial — todas as rotas', () => {
         expect(response?.status(), `${route} @ ${width}px`).toBe(200);
 
         const contract = await inspectVisualContract(page);
-        expect(contract.lastStylesheet, `${route}: contrato deve ser a última folha`).toContain('site-standard.css');
-        expect(contract.bodyBackground, `${route}: fundo`).toBe('rgb(11, 12, 16)');
-        expect(contract.bodyFont, `${route}: corpo`).toContain('Spectral');
-        expect(contract.h1Font, `${route}: h1`).toContain('Cinzel Decorative');
-        if (contract.h2Font) expect(contract.h2Font, `${route}: h2`).toContain('Marcellus');
-        if (contract.h3Font) expect(contract.h3Font, `${route}: h3`).toContain('Marcellus');
-        expect(contract.h1Color, `${route}: cor do h1`).toBe('rgb(241, 231, 213)');
-        expect(contract.blockViolations, `${route}: blocos fora do padrão`).toEqual([]);
-
-        for (const figure of contract.figures) {
-          const maximumWidth = figure.heroLike ? contract.heroImageWidth : contract.readingWidth;
-          expect(figure.width, `${route}: figure ${figure.className}`).toBeLessThanOrEqual(maximumWidth + 1);
-          if (figure.imageHeight > 0) {
-            expect(figure.imageHeight, `${route}: imagem ${figure.className}`).toBeLessThanOrEqual(contract.imageMaxHeight + 1);
-          }
-        }
+        const violations = collectViolations(contract);
+        expect(
+          violations,
+          `${route} @ ${width}px\n${JSON.stringify({ violations, contract }, null, 2)}`,
+        ).toEqual([]);
       }
     });
   }
