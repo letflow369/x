@@ -629,8 +629,54 @@
 }
 
 /* Socrates global visual contract compatibility */
+.socrates-article {
+  --socrates-ink: var(--color-text);
+  --socrates-ink-soft: var(--color-surface);
+  --socrates-stone: var(--color-surface);
+  --socrates-stone-soft: var(--color-background);
+  --socrates-stone-deep: var(--color-surface);
+  --socrates-bronze: var(--color-primary);
+  --socrates-bronze-dark: var(--color-primary);
+  --socrates-line: var(--site-block-border);
+  --socrates-light: var(--color-text);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.socrates-questions,
+.socrates-myth-section,
+.socrates-library,
 .socrates-references {
   color: var(--color-text);
   background: var(--color-surface);
-  border-top: 0.0625rem solid var(--color-border);
+  border-color: var(--site-block-border);
 }
+
+.socrates-timeline li > div,
+.socrates-life-path > div,
+.socrates-evidence__rule {
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: 0.0625rem solid var(--site-block-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.socrates-myth,
+.socrates-myth > div {
+  border-color: var(--site-block-border);
+}
+
+.socrates-evidence-key span {
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border-color: var(--site-block-border);
+}
+
+.socrates-timeline time,
+.socrates-source-type,
+.socrates-life-path small,
+.book-note {
+  color: var(--color-text-muted) !important;
+}
+
