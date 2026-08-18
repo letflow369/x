@@ -29,7 +29,8 @@ body main article {
   font-family: var(--font-body) !important;
 }
 
-body main h1 {
+body main h1,
+body main h1[class] {
   font-family: var(--font-title) !important;
   color: var(--color-text) !important;
 }
