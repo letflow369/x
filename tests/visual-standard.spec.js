@@ -21,6 +21,14 @@ async function blockExternalRequests(page) {
   });
 }
 
+async function waitForVisualContract(page) {
+  await page.waitForFunction(() => {
+    const style = getComputedStyle(document.documentElement);
+    return style.getPropertyValue('--site-block-padding').trim() !== ''
+      && style.getPropertyValue('--site-image-max-height').trim() !== '';
+  });
+}
+
 async function inspectVisualContract(page) {
   return page.evaluate(() => {
     const root = getComputedStyle(document.documentElement);
@@ -155,6 +163,7 @@ test.describe('padrão visual da página inicial — todas as rotas', () => {
         await page.setViewportSize({ width, height: 1000 });
         const response = await page.goto(route, { waitUntil: 'domcontentloaded' });
         expect(response?.status(), `${route} @ ${width}px`).toBe(200);
+        await waitForVisualContract(page);
 
         const contract = await inspectVisualContract(page);
         const violations = collectViolations(contract);
