@@ -27,44 +27,67 @@ jobs:
         with:
           node-version: 22
 
-      - name: Synchronize home visual contract
-        run: npm run sync:visual
-
-      - name: Persist synchronized Socrates HTML
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add artigos/socrates.html
-          if git diff --cached --quiet; then
-            echo 'Socrates HTML already synchronized.'
-          else
-            git commit -m 'style: align Socrates with home visual standard [skip ci]'
-            git push origin HEAD:feature/socrates-investigation
-          fi
-
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-
-      - name: Audit source visual contract
-        run: npm run audit:visual
-
-      - name: Build site
-        run: npm run build
-
-      - name: Audit design system
-        run: npm run audit:design
-
-      - name: Audit structured data
-        run: npm run audit:structured
 
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Validate Socrates visual contract
-        run: npx playwright test tests/visual-standard.spec.js --workers=1 --retries=0
+      - name: Run Socrates validation matrix
+        id: validation
+        shell: bash
+        run: |
+          set +e
+          log=/tmp/socrates-visual-validation.log
+          : > "$log"
+          status=0
 
-      - name: Validate Socrates geometry
-        run: npx playwright test tests/site.spec.js --grep 'artigos/socrates.html' --workers=1 --retries=0
+          run_check() {
+            echo "" | tee -a "$log"
+            echo "### $*" | tee -a "$log"
+            "$@" 2>&1 | tee -a "$log"
+            rc=${PIPESTATUS[0]}
+            if [ "$rc" -ne 0 ]; then status=$rc; fi
+          }
 
-      - name: Run Socrates dedicated tests
-        run: npx playwright test tests/socrates.spec.js --workers=1 --retries=0
+          run_check npm run audit:visual
+          run_check npm run build
+          run_check npm run audit:design
+          run_check npm run audit:structured
+          run_check npx playwright test tests/visual-standard.spec.js --workers=1 --retries=0
+          run_check npx playwright test tests/site.spec.js --grep artigos/socrates.html --workers=1 --retries=0
+          run_check npx playwright test tests/socrates.spec.js --workers=1 --retries=0
+
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Persist validation report
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p docs
+          status='${{ steps.validation.outputs.status }}'
+          if [ "$status" = '0' ]; then result='PASS'; else result='FAIL'; fi
+          {
+            echo '# Sócrates — validação do padrão visual global'
+            echo
+            echo "Resultado: **$result**"
+            echo
+            echo "Commit testado: \`$(git rev-parse HEAD)\`"
+            echo
+            echo 'Matriz: contrato visual, build, design system, dados estruturados, padrão visual renderizado, geometria e testes dedicados de Sócrates.'
+            echo
+            echo '```text'
+            tail -n 220 /tmp/socrates-visual-validation.log 2>/dev/null || true
+            echo '```'
+          } > docs/socrates-visual-validation.md
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/socrates-visual-validation.md
+          git commit -m "test: record Socrates visual validation $result [skip ci]" || true
+          git push origin HEAD:feature/socrates-investigation
+
+      - name: Fail when validation failed
+        if: steps.validation.outputs.status != '0'
+        run: exit 1
