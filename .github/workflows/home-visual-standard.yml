@@ -4,13 +4,16 @@ on:
   push:
     branches:
       - feature/home-visual-standard
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
   standardize-and-validate:
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    if: "github.event_name == 'pull_request' || !contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -30,9 +33,10 @@ jobs:
         run: npm run sync:visual
 
       - name: Persist synchronized HTML
+        if: github.event_name == 'push'
         run: |
           git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.email '418982966+github-actions[bot]@users.noreply.github.com'
           git add -- '*.html' ':!dist'
           if git diff --cached --quiet; then
             echo 'No HTML synchronization changes.'
