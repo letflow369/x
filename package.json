@@ -15,7 +15,7 @@
     "audit:editorial": "node scripts/audit-editorial.mjs",
     "test:e2e": "playwright test",
     "lighthouse": "lhci autorun",
-    "ci": "node scripts/sync-structured-content.mjs && node scripts/audit-shared-header.mjs && node scripts/audit-design-system.mjs && node scripts/audit-structured-content.mjs && node scripts/audit-typed-blocks.mjs && node scripts/build-site.mjs && node scripts/audit-project.mjs --strict && node scripts/audit-project.mjs --root dist --strict && node scripts/audit-editorial.mjs && node scripts/audit-structured-data.mjs && node scripts/audit-social-metadata.mjs --root dist && node scripts/audit-ui-contract.mjs --root dist && node scripts/smoke-http.mjs && playwright test && lhci autorun",
+    "ci": "node scripts/sync-structured-content.mjs && node scripts/audit-shared-header.mjs && node scripts/audit-design-system.mjs && node scripts/audit-structured-content.mjs && node scripts/audit-typed-blocks.mjs && node scripts/audit-home-visual-standard.mjs && node scripts/build-site.mjs && node scripts/audit-project.mjs --strict && node scripts/audit-project.mjs --root dist --strict && node scripts/audit-editorial.mjs && node scripts/audit-structured-data.mjs && node scripts/audit-social-metadata.mjs --root dist && node scripts/audit-ui-contract.mjs --root dist && node scripts/smoke-http.mjs && playwright test && lhci autorun",
     "sync:evidence": "node scripts/sync-evidence-ledger.mjs",
     "sync:data": "node scripts/sync-content-metadata.mjs && node scripts/sync-evidence-ledger.mjs",
     "audit:structured": "node scripts/audit-structured-data.mjs",
@@ -27,7 +27,9 @@
     "audit:structured-content": "node scripts/audit-structured-content.mjs",
     "audit:typed-blocks": "node scripts/audit-typed-blocks.mjs",
     "audit:social": "node scripts/audit-social-metadata.mjs --root dist",
-    "audit:ui": "node scripts/audit-ui-contract.mjs --root dist"
+    "audit:ui": "node scripts/audit-ui-contract.mjs --root dist",
+    "sync:visual": "node scripts/sync-home-visual-standard.mjs",
+    "audit:visual": "node scripts/audit-home-visual-standard.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",
