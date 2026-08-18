@@ -646,6 +646,7 @@
 .socrates-questions,
 .socrates-myth-section,
 .socrates-library,
+.socrates-evidence,
 .socrates-references {
   color: var(--color-text);
   background: var(--color-surface);
