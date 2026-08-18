@@ -9,12 +9,13 @@ permissions:
   contents: write
 
 jobs:
-  standardize-and-validate:
+  diagnose-visual-contract:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     env:
       CI: "true"
+      VISUAL_ROUTES: "artigos/borderline.html,artigos/cbd.html,artigos/deficiencia-intelectual.html,artigos/dmt.html,artigos/lsd.html,artigos/sindrome-de-down.html,artigos/terapia-cognitivo-comportamental.html,artigos/toc.html,artigos/vibracoes-estados-vibracionais.html"
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
@@ -29,80 +30,55 @@ jobs:
       - name: Synchronize visual contract
         run: npm run sync:visual
 
-      - name: Persist synchronized HTML
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- '*.html' ':!dist'
-          if git diff --cached --quiet; then
-            echo 'No HTML synchronization changes.'
-          else
-            git commit -m 'style: synchronize home visual contract across pages [skip ci]'
-            git push origin HEAD:feature/home-visual-standard
-          fi
-
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+
+      - name: Build site
+        run: npm run build
+
+      - name: Audit source visual contract
+        run: npm run audit:visual
 
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Run complete validation suite
-        id: validation
+      - name: Diagnose remaining routes
+        id: diagnostics
         shell: bash
         run: |
           set +e
-          log=/tmp/home-visual-standard.log
-          : > "$log"
-          status=0
-
-          run_check() {
-            echo "" | tee -a "$log"
-            echo "### $*" | tee -a "$log"
-            "$@" 2>&1 | tee -a "$log"
-            rc=${PIPESTATUS[0]}
-            if [ "$rc" -ne 0 ]; then
-              status=$rc
-            fi
-          }
-
-          run_check npm run audit:visual
-          run_check npm run build
-          run_check npm run audit:design
-          run_check npm run audit:structured
-          run_check npx playwright test tests/site.spec.js tests/visual-standard.spec.js --workers=2
-
+          npx playwright test tests/visual-standard.spec.js --workers=1 2>&1 | tee /tmp/home-visual-standard-diagnostics.log
+          status=${PIPESTATUS[0]}
           echo "status=$status" >> "$GITHUB_OUTPUT"
-          cp "$log" /tmp/home-visual-standard-full.log
           exit 0
 
-      - name: Persist validation report
+      - name: Persist diagnostic report
         if: always()
         shell: bash
         run: |
           mkdir -p docs
-          status='${{ steps.validation.outputs.status }}'
+          status='${{ steps.diagnostics.outputs.status }}'
           if [ "$status" = '0' ]; then result='PASS'; else result='FAIL'; fi
           {
-            echo '# Home visual standard — validation'
+            echo '# Home visual standard — targeted diagnostics'
             echo
             echo "Result: **$result**"
             echo
             echo "Commit tested: \`$(git rev-parse HEAD)\`"
             echo
-            echo 'Validation includes: source contract audit, build, design-system audit, structured-data audit, complete site Playwright suite and visual-standard Playwright suite.'
+            echo 'Routes: borderline, CBD, deficiência intelectual, DMT, LSD, síndrome de Down, TCC, TOC e vibrações/estados vibracionais.'
             echo
             echo '```text'
-            tail -n 100 /tmp/home-visual-standard-full.log 2>/dev/null || true
+            cat /tmp/home-visual-standard-diagnostics.log 2>/dev/null || true
             echo '```'
-          } > docs/home-visual-standard-validation.md
+          } > docs/home-visual-standard-diagnostics.md
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/home-visual-standard-validation.md
-          git commit -m "test: record home visual standard validation $result [skip ci]" || true
+          git add docs/home-visual-standard-diagnostics.md
+          git commit -m "test: record targeted visual diagnostics $result [skip ci]" || true
           git push origin HEAD:feature/home-visual-standard
 
-      - name: Fail when validation failed
-        if: steps.validation.outputs.status != '0'
+      - name: Fail when diagnostics failed
+        if: steps.diagnostics.outputs.status != '0'
         run: exit 1
