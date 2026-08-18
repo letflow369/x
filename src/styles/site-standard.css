@@ -1,0 +1,200 @@
+/*
+ * Contrato visual global — Let Flow 369
+ *
+ * Esta folha deve ser carregada por último em todas as páginas públicas.
+ * A página inicial é a fonte de verdade para tipografia, paleta, blocos e
+ * dimensões editoriais de imagem. Layouts temáticos podem variar na composição,
+ * mas não devem redefinir esses quatro fundamentos.
+ */
+
+:root {
+  --site-block-background: linear-gradient(145deg, rgb(35 64 74 / 22%), rgb(22 21 23 / 98%));
+  --site-block-border: rgb(93 64 43 / 60%);
+  --site-block-padding: var(--space-5);
+  --site-image-content-width: var(--reading-width);
+  --site-image-hero-width: 21rem;
+  --site-image-max-height: 31rem;
+  --site-image-card-height: 18rem;
+}
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+body,
+body main,
+body main article {
+  font-family: var(--font-body) !important;
+}
+
+body main h1 {
+  font-family: var(--font-title) !important;
+  color: var(--color-text) !important;
+}
+
+body main :is(h2, h3, h4, h5, h6),
+body main summary strong {
+  font-family: var(--font-subtitle) !important;
+  color: var(--color-text) !important;
+}
+
+body main :is(p, li, dd, blockquote) {
+  font-family: var(--font-body) !important;
+  color: var(--color-text) !important;
+}
+
+body main :is(nav, button, input, select, textarea, label, legend, summary),
+body main :is(.tag, .badge, .button, [class$="-tag"], [class*="-tag "], [class$="__tag"], [class*="__tag "]) {
+  font-family: var(--font-interface) !important;
+}
+
+body main a:not(.button) {
+  color: var(--color-primary) !important;
+}
+
+body main a:not(.button):hover,
+body main a:not(.button):focus-visible {
+  color: var(--color-primary-hover) !important;
+}
+
+body main :is(
+  [class$="-kicker"], [class*="-kicker "], [class$="__kicker"], [class*="__kicker "],
+  [class$="-eyebrow"], [class*="-eyebrow "], [class$="__eyebrow"], [class*="__eyebrow "],
+  .section-kicker,
+  .topic-card__label,
+  .article-card__type
+) {
+  font-family: var(--font-interface) !important;
+  color: var(--color-primary) !important;
+}
+
+body main :is(
+  figcaption,
+  [class$="-meta"], [class*="-meta "], [class$="__meta"], [class*="__meta "],
+  [class$="-caption"], [class*="-caption "], [class$="__caption"], [class*="__caption "],
+  [class$="-help"], [class*="-help "], [class$="__help"], [class*="__help "]
+) {
+  font-family: var(--font-interface) !important;
+  color: var(--color-text-muted) !important;
+}
+
+/* Heróis seguem a atmosfera da capa inicial, sem impedir composições próprias. */
+body main :is(
+  [class$="-hero"], [class*="-hero "],
+  [class$="__hero"], [class*="__hero "]
+) {
+  color: var(--color-text) !important;
+  background:
+    radial-gradient(circle at 16% 28%, rgb(200 145 79 / 13%), transparent 24rem),
+    radial-gradient(circle at 80% 20%, rgb(35 64 74 / 32%), transparent 28rem),
+    linear-gradient(135deg, #0b0c10 0%, #12151a 50%, #181310 100%) !important;
+  border-color: var(--site-block-border) !important;
+}
+
+/*
+ * Blocos editoriais reutilizam o mesmo material visual da home.
+ * Os seletores atuam apenas no elemento-bloco; subelementos como __title
+ * não são capturados.
+ */
+body main :is(
+  [class$="-card"], [class*="-card "], [class$="__card"], [class*="__card "],
+  [class$="-panel"], [class*="-panel "], [class$="__panel"], [class*="__panel "],
+  [class$="-notice"], [class*="-notice "], [class$="__notice"], [class*="__notice "],
+  [class$="-callout"], [class*="-callout "], [class$="__callout"], [class*="__callout "],
+  [class$="-box"], [class*="-box "], [class$="__box"], [class*="__box "],
+  [class$="-summary"], [class*="-summary "], [class$="__summary"], [class*="__summary "]
+) {
+  padding: var(--site-block-padding) !important;
+  color: var(--color-text) !important;
+  background: var(--site-block-background) !important;
+  border: 0.0625rem solid var(--site-block-border) !important;
+  border-radius: var(--radius-medium) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+body main :is(
+  [class$="-grid"], [class*="-grid "], [class$="__grid"], [class*="__grid "]
+) > article {
+  padding: var(--site-block-padding) !important;
+  color: var(--color-text) !important;
+  background: var(--site-block-background) !important;
+  border: 0.0625rem solid var(--site-block-border) !important;
+  border-radius: var(--radius-medium) !important;
+}
+
+body main details {
+  color: var(--color-text) !important;
+  background: var(--color-surface) !important;
+  border-color: var(--site-block-border) !important;
+  border-radius: var(--radius-medium) !important;
+}
+
+body main :is(.button--primary, button[type="submit"]) {
+  color: var(--color-on-primary) !important;
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+body main :is(.button--secondary, button[type="button"]:not([class*="primary"])) {
+  color: var(--color-text) !important;
+  background: var(--color-secondary) !important;
+  border-color: var(--color-secondary-light) !important;
+}
+
+/*
+ * Imagens editoriais usam um limite comum. Nenhuma imagem é esticada além
+ * da proporção original; object-fit evita corte de diagramas e documentos.
+ */
+body main figure {
+  width: min(100%, var(--site-image-content-width)) !important;
+  max-width: var(--site-image-content-width) !important;
+  margin-inline: auto !important;
+}
+
+body main figure img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-height: var(--site-image-max-height) !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+body main :is(
+  [class$="-hero"], [class*="-hero "],
+  [class$="__hero"], [class*="__hero "]
+) figure,
+body main figure:is(
+  [class$="-portrait"], [class*="-portrait "], [class$="__portrait"], [class*="__portrait "],
+  [class$="-profile"], [class*="-profile "], [class$="__profile"], [class*="__profile "]
+) {
+  width: min(100%, var(--site-image-hero-width)) !important;
+  max-width: var(--site-image-hero-width) !important;
+}
+
+body main :is(
+  [class$="-card"], [class*="-card "], [class$="__card"], [class*="__card "]
+) img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: var(--site-image-card-height) !important;
+  object-fit: cover !important;
+}
+
+/* Cores semânticas permitidas porque já fazem parte da gramática da home. */
+body main :is(.evidence-card--science, .evidence-label--fact) { border-top-color: #6f9aaa !important; }
+body main :is(.evidence-card--history, .evidence-label--interpretation) { border-top-color: #c8914f !important; }
+body main .evidence-card--tradition { border-top-color: #80658d !important; }
+body main .evidence-card--interpretation { border-top-color: #8d7b58 !important; }
+body main .evidence-card--experience { border-top-color: #657f6c !important; }
+body main :is(.evidence-card--unknown, .evidence-label--controversy) { border-top-color: #a7635d !important; }
+
+@media (max-width: 40rem) {
+  :root {
+    --site-block-padding: var(--space-4);
+    --site-image-max-height: 26rem;
+    --site-image-hero-width: 18rem;
+  }
+}
