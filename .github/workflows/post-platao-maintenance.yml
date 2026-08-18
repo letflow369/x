@@ -1,0 +1,111 @@
+name: Post Plato maintenance
+
+on:
+  push:
+    branches:
+      - feature/platao-index-404
+
+permissions:
+  contents: write
+
+jobs:
+  update-and-validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Apply approved changes
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+
+          const indexPath = 'src/data/content-index.json';
+          const data = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+          if (!data.items.some((item) => item.slug === 'platao')) {
+            const plato = {
+              slug: 'platao',
+              title: 'Platão',
+              url: 'artigos/platao.html',
+              summary: 'Platão em uma experiência narrativa sobre Atenas, Sócrates, conhecimento, justiça, realidade, política, amor, Alegoria da Caverna, obras, críticas e incertezas históricas.',
+              category: 'filosofias-esoterismo-sistemas-simbolicos',
+              categoryName: 'Filosofias, esoterismo e sistemas simbólicos',
+              categoryUrl: 'assuntos/filosofias-esoterismo.html',
+              contentType: 'filósofo/história da filosofia',
+              tags: [
+                'filosofia',
+                'história das ideias',
+                'Platão',
+                'Sócrates',
+                'justiça',
+                'epistemologia'
+              ],
+              relations: [
+                'estoicismo',
+                'hermetismo',
+                'gnosticismo'
+              ],
+              scientificReview: null,
+              metadataUpdated: '2026-08-18',
+              datePublished: '2026-08-17',
+              dateModified: '2026-08-17',
+              scientificReviewIso: null
+            };
+            const insertAt = data.items.findIndex((item) => item.slug === 'povos-ciganos');
+            data.items.splice(insertAt >= 0 ? insertAt : data.items.length, 0, plato);
+          }
+          data.version = '2026-08-18';
+          fs.writeFileSync(indexPath, `${JSON.stringify(data, null, 2)}\n`);
+
+          const notFoundPath = '404.html';
+          let html = fs.readFileSync(notFoundPath, 'utf8');
+          if (!/<base\s+href=["']\/x\/["']/i.test(html)) {
+            html = html.replace(/(<title>[\s\S]*?<\/title>)/i, '$1\n<base href="/x/"/>');
+          }
+          fs.writeFileSync(notFoundPath, html);
+          NODE
+
+      - name: Verify targeted changes
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const data = JSON.parse(fs.readFileSync('src/data/content-index.json', 'utf8'));
+          const matches = data.items.filter((item) => item.slug === 'platao');
+          if (matches.length !== 1) throw new Error(`Esperado 1 registro de Platão; encontrado(s): ${matches.length}`);
+          if (!matches[0].tags.includes('Platão')) throw new Error('Tag Platão ausente.');
+          const html = fs.readFileSync('404.html', 'utf8');
+          if (!/<base\s+href="\/x\/"/i.test(html)) throw new Error('Base /x/ ausente no 404.');
+          console.log('Platão indexado e 404 com base /x/.');
+          NODE
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build site
+        run: npm run build
+
+      - name: Run site tests
+        run: npx playwright test tests/site.spec.js --project=chromium --workers=2
+
+      - name: Commit validated files to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/content-index.json 404.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: index Plato and fix nested 404 paths [skip ci]"
+          git push origin HEAD:feature/platao-index-404
