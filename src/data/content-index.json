@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-11",
+  "version": "2026-08-18",
   "items": [
     {
       "slug": "acupuntura",
@@ -1535,6 +1535,34 @@
       "metadataUpdated": "2026-08-17",
       "datePublished": "2026-08-13",
       "dateModified": "2026-08-13",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "platao",
+      "title": "Platão",
+      "url": "artigos/platao.html",
+      "summary": "Platão em uma experiência narrativa sobre Atenas, Sócrates, conhecimento, justiça, realidade, política, amor, Alegoria da Caverna, obras, críticas e incertezas históricas.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filósofo/história da filosofia",
+      "tags": [
+        "filosofia",
+        "história das ideias",
+        "Platão",
+        "Sócrates",
+        "justiça",
+        "epistemologia"
+      ],
+      "relations": [
+        "estoicismo",
+        "hermetismo",
+        "gnosticismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-08-18",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
       "scientificReviewIso": null
     },
     {
