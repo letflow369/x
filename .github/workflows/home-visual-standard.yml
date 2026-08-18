@@ -1,0 +1,63 @@
+name: Home visual standard
+
+on:
+  push:
+    branches:
+      - feature/home-visual-standard
+
+permissions:
+  contents: write
+
+jobs:
+  standardize-and-validate:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CI: "true"
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/home-visual-standard
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Synchronize visual contract
+        run: npm run sync:visual
+
+      - name: Persist synchronized HTML
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '*.html' ':!dist'
+          if git diff --cached --quiet; then
+            echo 'No HTML synchronization changes.'
+          else
+            git commit -m 'style: synchronize home visual contract across pages [skip ci]'
+            git push origin HEAD:feature/home-visual-standard
+          fi
+
+      - name: Audit source visual contract
+        run: npm run audit:visual
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build site
+        run: npm run build
+
+      - name: Audit design system
+        run: npm run audit:design
+
+      - name: Audit structured data
+        run: npm run audit:structured
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Validate site and visual contract
+        run: npx playwright test tests/site.spec.js tests/visual-standard.spec.js --workers=2
