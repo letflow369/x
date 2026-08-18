@@ -35,27 +35,22 @@ function isPublicHtml(file, html) {
 }
 
 function normalizeFonts(html) {
-  const googleFontPattern = /<link\b[^>]*href=["']https:\/\/fonts\.googleapis\.com\/css2[^"']*["'][^>]*\/?>/gi;
-  const matches = [...html.matchAll(googleFontPattern)];
-
-  if (matches.length) {
-    const firstIndex = matches[0].index;
-    html = html.replace(googleFontPattern, '');
-    html = `${html.slice(0, firstIndex)}${fontLink}\n${html.slice(firstIndex)}`;
-    return html;
-  }
+  const googleFontLinePattern = /[\t ]*<link\b[^>]*href=["']https:\/\/fonts\.googleapis\.com\/css2[^"']*["'][^>]*\/?>[\t ]*(?:\r?\n)?/gi;
+  html = html.replace(googleFontLinePattern, '');
 
   const firstStylesheet = html.search(/<link\b[^>]*rel=["']stylesheet["'][^>]*>/i);
   if (firstStylesheet >= 0) {
-    return `${html.slice(0, firstStylesheet)}${fontLink}\n${html.slice(firstStylesheet)}`;
+    html = `${html.slice(0, firstStylesheet)}${fontLink}\n${html.slice(firstStylesheet)}`;
+  } else {
+    html = html.replace(/<\/head>/i, `${fontLink}\n</head>`);
   }
 
-  return html.replace(/<\/head>/i, `${fontLink}\n</head>`);
+  return html.replace(/(<link\b[^>]*fonts\.googleapis\.com\/css2[^>]*>)(?:\r?\n){2,}/i, '$1\n');
 }
 
 function normalizeContractLink(html, file) {
-  const contractPattern = /\s*<link\b[^>]*href=["'][^"']*src\/styles\/site-standard\.css(?:\?[^"']*)?["'][^>]*\/?>\s*/gi;
-  html = html.replace(contractPattern, '\n');
+  const contractPattern = /[\t ]*<link\b[^>]*href=["'][^"']*src\/styles\/site-standard\.css(?:\?[^"']*)?["'][^>]*\/?>[\t ]*(?:\r?\n)?/gi;
+  html = html.replace(contractPattern, '');
   const href = toHref(file);
   const contractLink = `<link data-site-standard="home" href="${href}" rel="stylesheet"/>`;
   return html.replace(/<\/head>/i, `${contractLink}\n</head>`);
