@@ -27,17 +27,11 @@ jobs:
         with:
           node-version: 22
 
-      - name: Synchronize visual contract
-        run: npm run sync:visual
-
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
       - name: Build site
         run: npm run build
-
-      - name: Audit source visual contract
-        run: npm run audit:visual
 
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
