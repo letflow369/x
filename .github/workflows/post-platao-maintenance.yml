@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - feature/platao-index-404
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -99,6 +102,7 @@ jobs:
         run: npx playwright test tests/site.spec.js --project=chromium --workers=2
 
       - name: Commit validated files to branch
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
