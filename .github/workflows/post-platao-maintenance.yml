@@ -99,7 +99,7 @@ jobs:
         run: npm run build
 
       - name: Run site tests
-        run: npx playwright test tests/site.spec.js --project=chromium --workers=2
+        run: npx playwright test tests/site.spec.js --workers=2
 
       - name: Commit validated files to branch
         if: github.event_name == 'push'
