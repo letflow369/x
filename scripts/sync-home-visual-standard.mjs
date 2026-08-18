@@ -10,6 +10,7 @@ const excludedDirectories = new Set([
   'node_modules',
   'playwright-report',
   'test-results',
+  'templates',
 ]);
 
 const fontHref = 'https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@500;600;700&family=Marcellus&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap';
@@ -49,7 +50,7 @@ function normalizeFonts(html) {
 }
 
 function normalizeContractLink(html, file) {
-  const contractPattern = /[\t ]*<link\b[^>]*href=["'][^"']*src\/styles\/site-standard\.css(?:\?[^"']*)?["'][^>]*\/?>[\t ]*(?:\r?\n)?/gi;
+  const contractPattern = /[\t ]*<link\b[^>]*href=["'][^"']*site-standard\.css(?:\?[^"']*)?["'][^>]*\/?>[\t ]*(?:\r?\n)?/gi;
   html = html.replace(contractPattern, '');
   const href = toHref(file);
   const contractLink = `<link data-site-standard="home" href="${href}" rel="stylesheet"/>`;
