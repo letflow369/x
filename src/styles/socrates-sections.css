@@ -627,3 +627,10 @@
   .socrates-question-grid article,
   .belief-lab__status [role="progressbar"] span { transition: none; }
 }
+
+/* Socrates global visual contract compatibility */
+.socrates-references {
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-top: 0.0625rem solid var(--color-border);
+}
