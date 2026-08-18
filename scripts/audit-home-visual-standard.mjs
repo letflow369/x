@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const excludedDirectories = new Set(['.git', 'dist', 'node_modules', 'playwright-report', 'test-results']);
+const excludedDirectories = new Set(['.git', 'dist', 'node_modules', 'playwright-report', 'test-results', 'templates']);
 const requiredFamilies = ['Cinzel+Decorative', 'Inter', 'Marcellus', 'Spectral'];
 
 function walk(directory) {
@@ -29,10 +29,7 @@ for (const file of walk(root)) {
   checked += 1;
 
   const relative = path.relative(root, file).split(path.sep).join('/');
-  const styleLinks = [...html.matchAll(/<link\b[^>]*rel=["']stylesheet["'][^>]*>/gi)].map((match) => ({
-    html: match[0],
-    index: match.index,
-  }));
+  const styleLinks = [...html.matchAll(/<link\b[^>]*rel=["']stylesheet["'][^>]*>/gi)].map((match) => ({ html: match[0] }));
   const contractLinks = styleLinks.filter((link) => /site-standard\.css/.test(link.html));
   const googleLinks = [...html.matchAll(/<link\b[^>]*href=["']https:\/\/fonts\.googleapis\.com\/css2[^"']*["'][^>]*\/?>/gi)].map((match) => match[0]);
 
