@@ -27,24 +27,80 @@ jobs:
         with:
           node-version: 22
 
-      - name: Align references with home surface
+      - name: Remap Socrates theme to home palette
         shell: bash
         run: |
-          marker='Socrates global visual contract compatibility'
-          if ! grep -q "$marker" src/styles/socrates-sections.css; then
-            cat >> src/styles/socrates-sections.css <<'CSS'
+          python - <<'PY'
+          from pathlib import Path
 
-          /* Socrates global visual contract compatibility */
+          path = Path('src/styles/socrates-sections.css')
+          text = path.read_text()
+          marker = '/* Socrates global visual contract compatibility */'
+          base = text.split(marker, 1)[0].rstrip()
+          block = r'''/* Socrates global visual contract compatibility */
+          .socrates-article {
+            --socrates-ink: var(--color-text);
+            --socrates-ink-soft: var(--color-surface);
+            --socrates-stone: var(--color-surface);
+            --socrates-stone-soft: var(--color-background);
+            --socrates-stone-deep: var(--color-surface);
+            --socrates-bronze: var(--color-primary);
+            --socrates-bronze-dark: var(--color-primary);
+            --socrates-line: var(--site-block-border);
+            --socrates-light: var(--color-text);
+            color: var(--color-text);
+            background: var(--color-background);
+          }
+
+          .socrates-questions,
+          .socrates-myth-section,
+          .socrates-library,
           .socrates-references {
             color: var(--color-text);
             background: var(--color-surface);
-            border-top: 0.0625rem solid var(--color-border);
+            border-color: var(--site-block-border);
           }
-          CSS
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add src/styles/socrates-sections.css
-            git commit -m 'fix: align Socrates references with home palette [skip ci]'
+
+          .socrates-timeline li > div,
+          .socrates-life-path > div,
+          .socrates-evidence__rule {
+            color: var(--color-text);
+            background: var(--site-block-background);
+            border: 0.0625rem solid var(--site-block-border);
+            border-radius: var(--radius-medium);
+            box-shadow: var(--shadow-soft);
+          }
+
+          .socrates-myth,
+          .socrates-myth > div {
+            border-color: var(--site-block-border);
+          }
+
+          .socrates-evidence-key span {
+            color: var(--color-text-muted);
+            background: var(--color-surface);
+            border-color: var(--site-block-border);
+          }
+
+          .socrates-timeline time,
+          .socrates-source-type,
+          .socrates-life-path small,
+          .book-note {
+            color: var(--color-text-muted) !important;
+          }
+          '''
+          updated = f'{base}\n\n{block}\n'
+          if updated != text:
+              path.write_text(updated)
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/styles/socrates-sections.css
+          if git diff --cached --quiet; then
+            echo 'Socrates palette already remapped.'
+          else
+            git commit -m 'fix: remap Socrates to home palette [skip ci]'
             git push origin HEAD:feature/socrates-investigation
           fi
 
