@@ -27,6 +27,27 @@ jobs:
         with:
           node-version: 22
 
+      - name: Align references with home surface
+        shell: bash
+        run: |
+          marker='Socrates global visual contract compatibility'
+          if ! grep -q "$marker" src/styles/socrates-sections.css; then
+            cat >> src/styles/socrates-sections.css <<'CSS'
+
+          /* Socrates global visual contract compatibility */
+          .socrates-references {
+            color: var(--color-text);
+            background: var(--color-surface);
+            border-top: 0.0625rem solid var(--color-border);
+          }
+          CSS
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add src/styles/socrates-sections.css
+            git commit -m 'fix: align Socrates references with home palette [skip ci]'
+            git push origin HEAD:feature/socrates-investigation
+          fi
+
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
