@@ -83,14 +83,17 @@
   font-size: .78rem;
   font-weight: 700;
   text-align: right;
-  color: #776858;
+  color: var(--color-text-muted);
 }
 
 .socrates-timeline li > div {
   min-width: 0;
   padding: 1.1rem 1.25rem;
-  border: .0625rem solid var(--socrates-line);
-  background: rgb(255 255 255 / 48%);
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
 }
 
 .socrates-timeline h3 {
@@ -100,13 +103,10 @@
 
 .socrates-timeline p {
   margin: 0;
-  color: #50473e;
 }
 
 .socrates-questions {
-  background:
-    linear-gradient(90deg, transparent, rgb(169 120 67 / 5%) 50%, transparent),
-    #efe7db;
+  background: var(--color-surface);
 }
 
 .socrates-question-grid {
@@ -146,7 +146,6 @@
 }
 
 .socrates-question-grid p {
-  color: #51483e;
 }
 
 .socrates-question-grid a {
@@ -178,8 +177,11 @@
   min-width: 10.4rem;
   min-height: 9.5rem;
   padding: 1rem;
-  border: .0625rem solid var(--socrates-line);
-  background: #f9f4ec;
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
 }
 
 .socrates-life-path span,
@@ -202,7 +204,7 @@
 
 .socrates-life-path small {
   font-size: .72rem;
-  color: #766a5d;
+  color: var(--color-text-muted);
 }
 
 .socrates-life-path > i {
@@ -321,8 +323,8 @@
 }
 
 .socrates-myth-section {
-  color: var(--socrates-ink);
-  background: #e8dfd1;
+  color: var(--color-text);
+  background: var(--color-surface);
 }
 
 .socrates-myth-section h2 {
@@ -335,13 +337,13 @@
 .socrates-myth {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border: .0625rem solid rgb(23 20 16 / 18%);
+  border: .0625rem solid var(--site-block-border);
 }
 
 .socrates-myth > div {
   min-width: 0;
   padding: clamp(1.25rem, 3vw, 2rem);
-  border: .03125rem solid rgb(23 20 16 / 12%);
+  border: .03125rem solid var(--site-block-border);
 }
 
 .socrates-myth span {
@@ -361,7 +363,7 @@
   line-height: 1.15;
 }
 
-.socrates-myth p { margin: 0; color: #4b433a; }
+.socrates-myth p { margin: 0; }
 
 .socrates-today-grid,
 .socrates-book-grid,
@@ -380,7 +382,7 @@
 }
 
 .socrates-today-grid h3 { margin-bottom: .6rem; font-size: 1.35rem; }
-.socrates-today-grid p { margin: 0; color: #51483e; }
+.socrates-today-grid p { margin: 0; }
 
 .socrates-today__closing {
   max-width: 44rem;
@@ -391,7 +393,7 @@
   text-align: center;
 }
 
-.socrates-library { background: #f5eee3; }
+.socrates-library { background: var(--color-surface); }
 .socrates-book-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .socrates-book-grid article {
@@ -413,7 +415,7 @@
 }
 
 .socrates-book-grid h3 { margin: 1.4rem 0 .7rem; font-size: 1.55rem; }
-.socrates-book-grid p { color: #51483e; }
+
 .socrates-book-grid a,
 .book-note {
   margin-top: auto;
@@ -421,7 +423,7 @@
   font-size: .76rem;
   font-weight: 700;
 }
-.book-note { margin-bottom: 0; color: #766a5d !important; }
+.book-note { margin-bottom: 0; color: var(--color-text-muted) !important; }
 
 .socrates-open-lab {
   color: var(--socrates-light);
@@ -542,7 +544,7 @@
   border-top: .0625rem solid rgb(255 255 255 / 8%);
 }
 
-.socrates-evidence { background: #eae1d5; }
+.socrates-evidence { background: var(--color-surface); }
 .socrates-evidence-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
 .socrates-evidence-grid article {
@@ -559,14 +561,18 @@
 }
 
 .socrates-evidence-grid h3 { margin: 1.2rem 0 .6rem; font-size: 1.35rem; }
-.socrates-evidence-grid p { margin: 0; color: #51483e; }
+.socrates-evidence-grid p { margin: 0; }
 
 .socrates-evidence__rule {
   max-width: 52rem;
   margin: 2rem 0 0;
   padding: 1.2rem 1.35rem;
-  border-left: .25rem solid var(--socrates-bronze-dark);
-  background: #f7f1e7;
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-left: .25rem solid var(--color-primary);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
 }
 
 @media (max-width: 68rem) {
@@ -607,17 +613,6 @@
 }
 
 @media (max-width: 40rem) {
-  .socrates-history .socrates-section-boundary,
-  .socrates-questions .socrates-section-boundary,
-  .socrates-life .socrates-section-boundary,
-  .socrates-trial .socrates-section-boundary,
-  .socrates-today .socrates-section-boundary,
-  .socrates-library .socrates-section-boundary,
-  .socrates-open-lab .socrates-section-boundary,
-  .socrates-evidence .socrates-section-boundary {
-    width: min(calc(100% - var(--content-gutter-compact)), var(--content-width));
-  }
-
   .socrates-life-note { grid-template-columns: 1fr; }
   .belief-lab form > section,
   .belief-result { padding-inline: 1rem; }
@@ -627,57 +622,3 @@
   .socrates-question-grid article,
   .belief-lab__status [role="progressbar"] span { transition: none; }
 }
-
-/* Socrates global visual contract compatibility */
-.socrates-article {
-  --socrates-ink: var(--color-text);
-  --socrates-ink-soft: var(--color-surface);
-  --socrates-stone: var(--color-surface);
-  --socrates-stone-soft: var(--color-background);
-  --socrates-stone-deep: var(--color-surface);
-  --socrates-bronze: var(--color-primary);
-  --socrates-bronze-dark: var(--color-primary);
-  --socrates-line: var(--site-block-border);
-  --socrates-light: var(--color-text);
-  color: var(--color-text);
-  background: var(--color-background);
-}
-
-.socrates-questions,
-.socrates-myth-section,
-.socrates-library,
-.socrates-evidence,
-.socrates-references {
-  color: var(--color-text);
-  background: var(--color-surface);
-  border-color: var(--site-block-border);
-}
-
-.socrates-timeline li > div,
-.socrates-life-path > div,
-.socrates-evidence__rule {
-  color: var(--color-text);
-  background: var(--site-block-background);
-  border: 0.0625rem solid var(--site-block-border);
-  border-radius: var(--radius-medium);
-  box-shadow: var(--shadow-soft);
-}
-
-.socrates-myth,
-.socrates-myth > div {
-  border-color: var(--site-block-border);
-}
-
-.socrates-evidence-key span {
-  color: var(--color-text-muted);
-  background: var(--color-surface);
-  border-color: var(--site-block-border);
-}
-
-.socrates-timeline time,
-.socrates-source-type,
-.socrates-life-path small,
-.book-note {
-  color: var(--color-text-muted) !important;
-}
-

@@ -1,15 +1,15 @@
 .socrates-article {
-  --socrates-ink: #171410;
-  --socrates-ink-soft: #2b2620;
-  --socrates-stone: #e9e1d2;
-  --socrates-stone-soft: #f4efe6;
-  --socrates-stone-deep: #cfc2ae;
-  --socrates-bronze: #a97843;
-  --socrates-bronze-dark: #76502d;
-  --socrates-line: rgb(23 20 16 / 18%);
-  --socrates-light: #f7f1e6;
-  color: var(--socrates-ink);
-  background: var(--socrates-stone-soft);
+  --socrates-ink: var(--color-text);
+  --socrates-ink-soft: var(--color-surface);
+  --socrates-stone: var(--color-surface);
+  --socrates-stone-soft: var(--color-background);
+  --socrates-stone-deep: var(--color-surface);
+  --socrates-bronze: var(--color-primary);
+  --socrates-bronze-dark: var(--color-primary);
+  --socrates-line: var(--site-block-border);
+  --socrates-light: var(--color-text);
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 .socrates-article h1,
@@ -242,7 +242,6 @@
 }
 
 .socrates-section-heading h2,
-.socrates-next h2,
 .socrates-references h2 {
   margin-bottom: 1.1rem;
   font-family: var(--font-subtitle);
@@ -257,7 +256,6 @@
 
 .socrates-section-heading > p:last-child {
   font-size: 1.15rem;
-  color: #4d443a;
 }
 
 .socrates-evidence-key {
@@ -271,10 +269,10 @@
 
 .socrates-evidence-key span {
   padding: .42rem .62rem;
-  color: #4d443a;
-  border: .0625rem solid var(--socrates-line);
+  color: var(--color-text-muted);
+  border: .0625rem solid var(--site-block-border);
   border-radius: .3rem;
-  background: rgb(255 255 255 / 42%);
+  background: var(--color-surface);
 }
 
 .socrates-evidence-key b {
@@ -289,11 +287,6 @@
 
 .socrates-source-card {
   min-width: 0;
-  padding: clamp(1.3rem, 3vw, 2rem);
-  border: .0625rem solid var(--socrates-line);
-  border-radius: .25rem;
-  background: rgb(255 255 255 / 54%);
-  box-shadow: 0 .8rem 2rem rgb(55 42 28 / 5%);
 }
 
 .socrates-source-card__top {
@@ -567,27 +560,18 @@
   cursor: pointer;
 }
 
-.socratic-lab .button--primary {
-  color: #17120e;
-  background: #c8914f;
-}
-
-.socratic-lab .button--secondary {
-  color: #ede5da;
-  background: transparent;
-  border-color: rgb(255 255 255 / 22%);
-}
-
 .socratic-counterexample {
   margin-bottom: 2rem;
   padding: clamp(1.2rem, 3vw, 2rem);
-  color: #241e18;
-  background: #ddd0bd;
-  border-left: .3rem solid #9b6938;
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-left: .3rem solid var(--color-primary);
+  border-radius: var(--radius-medium);
 }
 
 .socratic-counterexample .socratic-prompt {
-  color: #76502d;
+  color: var(--color-primary);
 }
 
 .socratic-counterexample p:last-child {
@@ -651,21 +635,6 @@
   background: #15120f;
 }
 
-.socrates-next {
-  padding-block: clamp(4rem, 8vw, 7rem);
-  color: var(--socrates-ink);
-  background: var(--socrates-stone);
-  border-bottom: .0625rem solid var(--socrates-line);
-}
-
-.socrates-next .reading-boundary,
-.socrates-references .reading-boundary {
-  margin-inline: auto;
-}
-
-.socrates-next p:last-child {
-  color: #554b40;
-}
 
 .socrates-references {
   padding-block: clamp(4rem, 8vw, 6rem);
@@ -687,10 +656,6 @@
   color: #6f4b2a;
 }
 
-.socrates-article + .site-footer,
-body:has(.socrates-article) .site-footer {
-  border-top-color: rgb(118 80 45 / 45%);
-}
 
 @media (max-width: 62rem) {
   .socrates-hero__inner {

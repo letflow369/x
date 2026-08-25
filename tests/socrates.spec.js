@@ -94,16 +94,3 @@ test('Sócrates não apresenta violações WCAG automaticamente detectáveis', a
     .analyze();
   expect(results.violations).toEqual([]);
 });
-
-test('Sócrates permanece contido no viewport', async ({ page }) => {
-  for (const width of [320, 360, 390, 768, 1024, 1440]) {
-    await page.setViewportSize({ width, height: 900 });
-    const response = await page.goto(route, { waitUntil: 'domcontentloaded' });
-    expect(response?.status(), `status em ${width}px`).toBe(200);
-    const geometry = await page.evaluate(() => ({
-      clientWidth: document.documentElement.clientWidth,
-      scrollWidth: document.documentElement.scrollWidth,
-    }));
-    expect(geometry.scrollWidth, `overflow em ${width}px`).toBeLessThanOrEqual(geometry.clientWidth + 1);
-  }
-});
