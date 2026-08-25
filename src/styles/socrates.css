@@ -638,8 +638,9 @@
 
 .socrates-references {
   padding-block: clamp(4rem, 8vw, 6rem);
-  color: var(--socrates-ink);
-  background: #f6f1e8;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-top: .0625rem solid var(--site-block-border);
 }
 
 .socrates-references ol {
