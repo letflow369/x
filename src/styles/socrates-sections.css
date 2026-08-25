@@ -1,0 +1,624 @@
+.socrates-history,
+.socrates-questions,
+.socrates-life,
+.socrates-today,
+.socrates-library,
+.socrates-evidence {
+  color: var(--socrates-ink);
+  background: var(--socrates-stone-soft);
+}
+
+.socrates-history,
+.socrates-questions,
+.socrates-life,
+.socrates-today,
+.socrates-library,
+.socrates-evidence,
+.socrates-myth-section,
+.socrates-open-lab,
+.socrates-trial {
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+}
+
+.evidence-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  min-height: 1.65rem;
+  padding-inline: .4rem;
+  font-family: var(--font-interface);
+  font-size: .68rem;
+  font-weight: 800;
+  color: var(--socrates-bronze-dark);
+  border: .0625rem solid rgb(118 80 45 / 32%);
+  border-radius: .25rem;
+  background: rgb(169 120 67 / 9%);
+}
+
+.socrates-timeline {
+  position: relative;
+  display: grid;
+  gap: 0;
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.socrates-timeline::before {
+  position: absolute;
+  top: .7rem;
+  bottom: .7rem;
+  left: 9.4rem;
+  width: .0625rem;
+  content: "";
+  background: linear-gradient(var(--socrates-bronze), rgb(169 120 67 / 12%));
+}
+
+.socrates-timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 2.8rem;
+  padding-block: 1.3rem;
+}
+
+.socrates-timeline li::before {
+  position: absolute;
+  top: 1.9rem;
+  left: 9.02rem;
+  width: .75rem;
+  height: .75rem;
+  content: "";
+  border: .16rem solid var(--socrates-stone-soft);
+  border-radius: 50%;
+  background: var(--socrates-bronze);
+  box-shadow: 0 0 0 .08rem var(--socrates-bronze-dark);
+}
+
+.socrates-timeline time {
+  padding-top: .28rem;
+  font-family: var(--font-interface);
+  font-size: .78rem;
+  font-weight: 700;
+  text-align: right;
+  color: var(--color-text-muted);
+}
+
+.socrates-timeline li > div {
+  min-width: 0;
+  padding: 1.1rem 1.25rem;
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.socrates-timeline h3 {
+  margin: .65rem 0 .45rem;
+  font-size: 1.35rem;
+}
+
+.socrates-timeline p {
+  margin: 0;
+}
+
+.socrates-questions {
+  background: var(--color-surface);
+}
+
+.socrates-question-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.socrates-question-grid article {
+  display: flex;
+  min-width: 0;
+  min-height: 18rem;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: .0625rem solid var(--socrates-line);
+  background: rgb(255 255 255 / 52%);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.socrates-question-grid article:hover,
+.socrates-question-grid article:focus-within {
+  transform: translateY(-.2rem);
+  border-color: rgb(118 80 45 / 42%);
+  box-shadow: 0 1.1rem 2.5rem rgb(55 42 28 / 8%);
+}
+
+.socrates-question-grid span {
+  font-family: var(--font-interface);
+  font-size: .72rem;
+  font-weight: 800;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-question-grid h3 {
+  margin: 2rem 0 .8rem;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+}
+
+.socrates-question-grid p {
+}
+
+.socrates-question-grid a {
+  margin-top: auto;
+  font-family: var(--font-interface);
+  font-size: .78rem;
+  font-weight: 700;
+  text-underline-offset: .24em;
+}
+
+.socrates-life {
+  border-block: .0625rem solid var(--socrates-line);
+}
+
+.socrates-life-path {
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  align-items: center;
+  gap: .55rem;
+  overflow-x: auto;
+  padding: .8rem .1rem 1.4rem;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.socrates-life-path > div {
+  display: grid;
+  align-content: center;
+  min-width: 10.4rem;
+  min-height: 9.5rem;
+  padding: 1rem;
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+.socrates-life-path span,
+.socrates-life-path small {
+  font-family: var(--font-interface);
+}
+
+.socrates-life-path span {
+  font-size: .67rem;
+  font-weight: 800;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-life-path strong {
+  margin-block: .65rem .35rem;
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.socrates-life-path small {
+  font-size: .72rem;
+  color: var(--color-text-muted);
+}
+
+.socrates-life-path > i {
+  font-style: normal;
+  color: var(--socrates-bronze);
+}
+
+.socrates-life-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  max-width: 54rem;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-left: .22rem solid var(--socrates-bronze);
+  background: rgb(169 120 67 / 8%);
+}
+
+.socrates-life-note span {
+  font-family: var(--font-interface);
+  font-size: .72rem;
+  font-weight: 800;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-life-note p { margin: 0; }
+
+.socrates-trial {
+  position: relative;
+  overflow: clip;
+  color: var(--socrates-light);
+  background:
+    radial-gradient(circle at 85% 10%, rgb(169 120 67 / 14%), transparent 31rem),
+    #11100e;
+}
+
+.socrates-trial::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 49.9%, rgb(255 255 255 / 2%) 50%, transparent 50.1%);
+  background-size: 10rem 100%;
+}
+
+.socrates-trial .socrates-section-boundary { position: relative; z-index: 1; }
+
+.socrates-trial__header {
+  max-width: var(--reading-width);
+  margin-bottom: 2.5rem;
+}
+
+.socrates-trial .socrates-eyebrow { color: #d5b386; }
+
+.socrates-trial__header h2 {
+  margin-bottom: 1.15rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.socrates-trial__header p:last-child { color: #d4c9bb; }
+
+.socrates-trial__sequence {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .85rem;
+  margin-bottom: 2rem;
+}
+
+.socrates-trial__sequence article {
+  min-width: 0;
+  padding: 1.25rem;
+  border-top: .16rem solid #9e7447;
+  background: rgb(255 255 255 / 4%);
+}
+
+.socrates-trial__sequence span {
+  font-family: var(--font-interface);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: #d5b386;
+  text-transform: uppercase;
+}
+
+.socrates-trial__sequence h3 {
+  margin: 1.2rem 0 .75rem;
+  font-size: 1.35rem;
+}
+
+.socrates-trial__sequence p { margin: 0; color: #c9bdaf; }
+
+.socrates-death-art {
+  overflow: hidden;
+  margin: 3rem 0 0;
+  border: .0625rem solid rgb(255 255 255 / 12%);
+  background: #0a0908;
+}
+
+.socrates-death-art img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.socrates-death-art figcaption {
+  max-width: 64rem;
+  margin: 0;
+  padding: 1rem 1.25rem 1.3rem;
+  font-family: var(--font-interface);
+  font-size: .75rem;
+  line-height: 1.6;
+  color: #b9ab9a;
+}
+
+.socrates-myth-section {
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.socrates-myth-section h2 {
+  margin-bottom: 2rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 400;
+}
+
+.socrates-myth {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: .0625rem solid var(--site-block-border);
+}
+
+.socrates-myth > div {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: .03125rem solid var(--site-block-border);
+}
+
+.socrates-myth span {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: var(--font-interface);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-myth blockquote {
+  margin: 0;
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.socrates-myth p { margin: 0; }
+
+.socrates-today-grid,
+.socrates-book-grid,
+.socrates-evidence-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.socrates-today-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.socrates-today-grid article {
+  min-width: 0;
+  padding: 1.4rem;
+  border-left: .22rem solid var(--socrates-bronze);
+  background: #f9f4ec;
+}
+
+.socrates-today-grid h3 { margin-bottom: .6rem; font-size: 1.35rem; }
+.socrates-today-grid p { margin: 0; }
+
+.socrates-today__closing {
+  max-width: 44rem;
+  margin: 3rem auto 0;
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.7rem, 3.5vw, 2.55rem);
+  line-height: 1.25;
+  text-align: center;
+}
+
+.socrates-library { background: var(--color-surface); }
+.socrates-book-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.socrates-book-grid article {
+  display: flex;
+  min-width: 0;
+  min-height: 17rem;
+  flex-direction: column;
+  padding: 1.4rem;
+  border: .0625rem solid var(--socrates-line);
+  background: rgb(255 255 255 / 56%);
+}
+
+.socrates-book-grid article > span {
+  font-family: var(--font-interface);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-book-grid h3 { margin: 1.4rem 0 .7rem; font-size: 1.55rem; }
+
+.socrates-book-grid a,
+.book-note {
+  margin-top: auto;
+  font-family: var(--font-interface);
+  font-size: .76rem;
+  font-weight: 700;
+}
+.book-note { margin-bottom: 0; color: var(--color-text-muted) !important; }
+
+.socrates-open-lab {
+  color: var(--socrates-light);
+  background:
+    radial-gradient(circle at 20% 30%, rgb(169 120 67 / 12%), transparent 28rem),
+    #181511;
+}
+
+.socrates-open-lab .socrates-eyebrow { color: #d5b386; }
+.socrates-open-lab .socrates-section-heading > p:last-child { color: #cfc4b5; }
+
+.belief-lab {
+  overflow: hidden;
+  max-width: 58rem;
+  margin-inline: auto;
+  border: .0625rem solid rgb(213 179 134 / 26%);
+  background: #211c17;
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / 25%);
+}
+
+.belief-lab__status {
+  display: grid;
+  grid-template-columns: auto minmax(12rem, 20rem);
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: .0625rem solid rgb(255 255 255 / 9%);
+  background: #12100e;
+}
+
+.belief-lab__status p {
+  margin: 0;
+  font-family: var(--font-interface);
+  font-size: .74rem;
+  color: #c8b9a7;
+}
+
+.belief-lab__status [role="progressbar"] {
+  height: .42rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 9%);
+}
+
+.belief-lab__status [role="progressbar"] span {
+  display: block;
+  width: 20%;
+  height: 100%;
+  border-radius: inherit;
+  background: #bd8c55;
+  transition: width .2s ease;
+}
+
+.belief-lab form > section,
+.belief-result {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.belief-lab form > section[hidden],
+.belief-result[hidden] { display: none; }
+
+.belief-lab label { display: block; }
+
+.belief-lab label > span {
+  display: block;
+  margin-bottom: .7rem;
+  font-family: var(--font-interface);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  color: #d5b386;
+}
+
+.belief-lab label > strong,
+.belief-result h3 {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.belief-lab textarea {
+  width: 100%;
+  min-height: 9rem;
+  resize: vertical;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  color: #f4eadc;
+  border: .0625rem solid rgb(255 255 255 / 16%);
+  border-radius: .25rem;
+  background: #15120f;
+}
+
+.belief-lab textarea::placeholder { color: #938575; }
+
+.belief-lab__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.belief-result dl { display: grid; gap: .75rem; margin: 0 0 1.5rem; }
+.belief-result dl > div { padding: 1rem; border: .0625rem solid rgb(255 255 255 / 11%); background: rgb(255 255 255 / 3%); }
+.belief-result dt { margin-bottom: .45rem; font-family: var(--font-interface); font-size: .68rem; font-weight: 800; letter-spacing: .08em; color: #d5b386; text-transform: uppercase; }
+.belief-result dd { margin: 0; overflow-wrap: anywhere; color: #e7ddd0; }
+.belief-result > p { color: #c9bdaf; }
+
+.belief-lab__privacy {
+  margin: 0;
+  padding: .9rem 1.25rem;
+  font-family: var(--font-interface);
+  font-size: .68rem;
+  color: #9f9181;
+  border-top: .0625rem solid rgb(255 255 255 / 8%);
+}
+
+.socrates-evidence { background: var(--color-surface); }
+.socrates-evidence-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.socrates-evidence-grid article {
+  min-width: 0;
+  padding: 1.25rem;
+  border-top: .2rem solid var(--socrates-bronze);
+  background: rgb(255 255 255 / 48%);
+}
+
+.socrates-evidence-grid b {
+  font-family: var(--font-interface);
+  font-size: .78rem;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-evidence-grid h3 { margin: 1.2rem 0 .6rem; font-size: 1.35rem; }
+.socrates-evidence-grid p { margin: 0; }
+
+.socrates-evidence__rule {
+  max-width: 52rem;
+  margin: 2rem 0 0;
+  padding: 1.2rem 1.35rem;
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-left: .25rem solid var(--color-primary);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 68rem) {
+  .socrates-question-grid,
+  .socrates-book-grid,
+  .socrates-today-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .socrates-trial__sequence { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .socrates-evidence-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 48rem) {
+  .socrates-history,
+  .socrates-questions,
+  .socrates-life,
+  .socrates-today,
+  .socrates-library,
+  .socrates-evidence,
+  .socrates-myth-section,
+  .socrates-open-lab,
+  .socrates-trial { padding-block: 4rem; }
+
+  .socrates-timeline::before { left: .42rem; }
+  .socrates-timeline li { grid-template-columns: 1fr; gap: .35rem; padding-left: 1.65rem; }
+  .socrates-timeline li::before { top: 1.7rem; left: .06rem; }
+  .socrates-timeline time { text-align: left; }
+
+  .socrates-question-grid,
+  .socrates-book-grid,
+  .socrates-today-grid,
+  .socrates-trial__sequence,
+  .socrates-evidence-grid,
+  .socrates-myth { grid-template-columns: 1fr; }
+
+  .socrates-question-grid article,
+  .socrates-book-grid article { min-height: auto; }
+
+  .belief-lab__status { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 40rem) {
+  .socrates-life-note { grid-template-columns: 1fr; }
+  .belief-lab form > section,
+  .belief-result { padding-inline: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socrates-question-grid article,
+  .belief-lab__status [role="progressbar"] span { transition: none; }
+}

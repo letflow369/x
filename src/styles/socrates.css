@@ -1,0 +1,754 @@
+.socrates-article {
+  --socrates-ink: var(--color-text);
+  --socrates-ink-soft: var(--color-surface);
+  --socrates-stone: var(--color-surface);
+  --socrates-stone-soft: var(--color-background);
+  --socrates-stone-deep: var(--color-surface);
+  --socrates-bronze: var(--color-primary);
+  --socrates-bronze-dark: var(--color-primary);
+  --socrates-line: var(--site-block-border);
+  --socrates-light: var(--color-text);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.socrates-article h1,
+.socrates-article h2,
+.socrates-article h3 {
+  text-wrap: balance;
+}
+
+.socrates-article p {
+  text-wrap: pretty;
+}
+
+.socrates-article a {
+  color: currentColor;
+}
+
+.socrates-article .reference a {
+  color: var(--socrates-bronze-dark);
+  font-family: var(--font-interface);
+  font-size: .72em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.socrates-kicker,
+.socrates-eyebrow,
+.socratic-lab__eyebrow,
+.socratic-prompt {
+  margin-bottom: .75rem;
+  font-family: var(--font-interface);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.socrates-hero {
+  position: relative;
+  overflow: clip;
+  color: var(--socrates-light);
+  background:
+    radial-gradient(circle at 72% 30%, rgb(169 120 67 / 20%), transparent 31rem),
+    linear-gradient(135deg, #11100e 0%, #1c1813 48%, #0c0b0a 100%);
+  border-bottom: .0625rem solid rgb(169 120 67 / 42%);
+}
+
+.socrates-hero::before,
+.socrates-hero::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.socrates-hero::before {
+  inset: 0;
+  opacity: .22;
+  background-image:
+    linear-gradient(90deg, transparent 49.8%, rgb(255 255 255 / 7%) 50%, transparent 50.2%),
+    linear-gradient(rgb(255 255 255 / 4%) .0625rem, transparent .0625rem);
+  background-size: 18rem 100%, 100% 7rem;
+}
+
+.socrates-hero::after {
+  right: -8rem;
+  bottom: -11rem;
+  width: 31rem;
+  height: 31rem;
+  border: .0625rem solid rgb(169 120 67 / 22%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4rem rgb(169 120 67 / 3%), 0 0 0 8rem rgb(169 120 67 / 2%);
+}
+
+.socrates-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .75fr);
+  align-items: end;
+  gap: clamp(2rem, 6vw, 5.5rem);
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  min-height: min(48rem, calc(100svh - 5rem));
+  margin-inline: auto;
+  padding-block: clamp(4rem, 9vw, 7.5rem) 0;
+}
+
+.socrates-hero__content {
+  max-width: 42rem;
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+}
+
+.socrates-kicker {
+  color: #d5b386;
+}
+
+.socrates-hero h1 {
+  margin: 0;
+  font-family: var(--font-subtitle);
+  font-size: clamp(4rem, 10vw, 8.8rem);
+  font-weight: 400;
+  line-height: .86;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+
+.socrates-hero__dates {
+  margin: 1rem 0 2.4rem;
+  font-family: var(--font-interface);
+  font-size: .82rem;
+  letter-spacing: .1em;
+  color: #cdbda9;
+}
+
+.socrates-hero__question {
+  max-width: 36rem;
+  margin-bottom: 1.35rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.65rem, 3.2vw, 2.65rem);
+  line-height: 1.22;
+}
+
+.socrates-hero__intro {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+  color: #d8d0c4;
+}
+
+.socrates-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 0 0 2.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.socrates-hero__meta li {
+  padding: .42rem .72rem;
+  font-family: var(--font-interface);
+  font-size: .72rem;
+  letter-spacing: .06em;
+  color: #e7ddcf;
+  border: .0625rem solid rgb(231 221 207 / 24%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 3%);
+}
+
+.socrates-start {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  font-family: var(--font-interface);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.socrates-start span {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: .0625rem solid rgb(255 255 255 / 28%);
+  border-radius: 50%;
+}
+
+.socrates-portrait {
+  position: relative;
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: end;
+  min-width: 0;
+  margin: 0;
+}
+
+.socrates-portrait__halo {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  width: min(30rem, 78vw);
+  aspect-ratio: 1;
+  border: .0625rem solid rgb(169 120 67 / 45%);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 8rem rgb(169 120 67 / 8%);
+}
+
+.socrates-portrait img {
+  position: relative;
+  z-index: 1;
+  align-self: end;
+  justify-self: center;
+  width: min(100%, 28rem);
+  max-height: 42rem;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: grayscale(.82) sepia(.12) contrast(1.08) brightness(.86);
+  drop-shadow: 0 1.5rem 2.5rem rgb(0 0 0 / 38%);
+}
+
+.socrates-portrait figcaption {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: .8rem 1rem 1.25rem;
+  font-family: var(--font-interface);
+  font-size: .68rem;
+  line-height: 1.5;
+  color: #a99b8a;
+  border-top: .0625rem solid rgb(255 255 255 / 10%);
+}
+
+.socrates-section-boundary {
+  width: min(calc(100% - var(--content-gutter)), var(--content-width));
+  margin-inline: auto;
+}
+
+.socrates-source-section {
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+  background:
+    linear-gradient(90deg, transparent, rgb(169 120 67 / 6%) 50%, transparent),
+    var(--socrates-stone-soft);
+}
+
+.socrates-section-heading {
+  max-width: var(--reading-width);
+  margin-bottom: 2.5rem;
+}
+
+.socrates-section-heading h2,
+.socrates-references h2 {
+  margin-bottom: 1.1rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.socrates-eyebrow {
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-section-heading > p:last-child {
+  font-size: 1.15rem;
+}
+
+.socrates-evidence-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-interface);
+  font-size: .72rem;
+}
+
+.socrates-evidence-key span {
+  padding: .42rem .62rem;
+  color: var(--color-text-muted);
+  border: .0625rem solid var(--site-block-border);
+  border-radius: .3rem;
+  background: var(--color-surface);
+}
+
+.socrates-evidence-key b {
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.socrates-source-card {
+  min-width: 0;
+}
+
+.socrates-source-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.4rem;
+  font-family: var(--font-interface);
+  font-size: .68rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.socrates-source-mark {
+  font-weight: 800;
+  color: var(--socrates-bronze-dark);
+}
+
+.socrates-source-type {
+  text-align: right;
+  color: #766b5f;
+}
+
+.socrates-source-card h3 {
+  margin-bottom: .3rem;
+  font-size: 2rem;
+}
+
+.socrates-source-card__lead {
+  margin-bottom: 1.2rem;
+  font-family: var(--font-interface);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--socrates-bronze-dark);
+  text-transform: uppercase;
+}
+
+.socrates-source-card > p:not(.socrates-source-card__lead):not(.socrates-source-card__question) {
+  color: #4d443a;
+}
+
+.socrates-source-card__question {
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  font-family: var(--font-subtitle);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  border-top: .0625rem solid var(--socrates-line);
+}
+
+.socrates-problem {
+  display: grid;
+  grid-template-columns: minmax(13rem, .7fr) minmax(0, 1.3fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  margin-top: 1rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  color: var(--socrates-light);
+  background: var(--socrates-ink-soft);
+  border-left: .3rem solid var(--socrates-bronze);
+}
+
+.socrates-problem__mark {
+  display: block;
+  margin-bottom: .7rem;
+  font-family: var(--font-interface);
+  font-size: .7rem;
+  font-weight: 800;
+  color: #d5b386;
+}
+
+.socrates-problem h3 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+}
+
+.socrates-problem p {
+  margin: 0;
+  color: #ddd2c4;
+}
+
+.socrates-lab-section {
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+  color: var(--socrates-light);
+  background:
+    linear-gradient(rgb(255 255 255 / 2%) .0625rem, transparent .0625rem),
+    linear-gradient(90deg, rgb(255 255 255 / 2%) .0625rem, transparent .0625rem),
+    #171410;
+  background-size: 5rem 5rem;
+}
+
+.socrates-section-heading--light .socrates-eyebrow {
+  color: #d5b386;
+}
+
+.socrates-section-heading--light > p:last-child {
+  color: #cfc4b5;
+}
+
+.socratic-lab {
+  overflow: hidden;
+  border: .0625rem solid rgb(213 179 134 / 28%);
+  border-radius: .4rem;
+  background: #201c17;
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / 25%);
+}
+
+.socratic-lab__header {
+  display: grid;
+  grid-template-columns: 1fr minmax(10rem, 18rem);
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.1rem clamp(1.1rem, 3vw, 2rem);
+  border-bottom: .0625rem solid rgb(255 255 255 / 9%);
+  background: #13110e;
+}
+
+.socratic-lab__eyebrow {
+  margin: 0 0 .15rem;
+  color: #d5b386;
+}
+
+.socratic-lab__stage {
+  margin: 0;
+  font-family: var(--font-interface);
+  font-size: .76rem;
+  color: #a99b8a;
+}
+
+.socratic-lab__progress {
+  height: .42rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 9%);
+}
+
+.socratic-lab__progress span {
+  display: block;
+  width: 16.666%;
+  height: 100%;
+  border-radius: inherit;
+  background: #bd8c55;
+  transition: width .25s ease;
+}
+
+.socratic-step {
+  max-width: 54rem;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.socratic-step[hidden],
+.socratic-result[hidden] {
+  display: none;
+}
+
+.socratic-step fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.socratic-step legend,
+.socratic-step label > strong,
+.socratic-counterexample h3 {
+  display: block;
+  max-width: 46rem;
+  margin-bottom: 1.4rem;
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.55rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.socratic-prompt {
+  display: block;
+  color: #d5b386;
+}
+
+.socratic-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+}
+
+.socratic-choice {
+  position: relative;
+  display: block;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.socratic-choice input {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #bd8c55;
+}
+
+.socratic-choice span {
+  display: block;
+  min-height: 8rem;
+  padding: 1.05rem 1rem 1.05rem 3rem;
+  border: .0625rem solid rgb(255 255 255 / 16%);
+  border-radius: .3rem;
+  background: rgb(255 255 255 / 3%);
+}
+
+.socratic-choice input:checked + span {
+  border-color: #bd8c55;
+  background: rgb(189 140 85 / 12%);
+  box-shadow: inset 0 0 0 .0625rem #bd8c55;
+}
+
+.socratic-choice input:focus-visible + span {
+  outline: .15rem solid #d5b386;
+  outline-offset: .2rem;
+}
+
+.socratic-choice strong,
+.socratic-choice small {
+  display: block;
+}
+
+.socratic-choice strong {
+  margin-bottom: .35rem;
+  font-family: var(--font-interface);
+  font-size: .95rem;
+}
+
+.socratic-choice small {
+  color: #b9ad9f;
+  line-height: 1.5;
+}
+
+.socratic-step textarea {
+  display: block;
+  width: 100%;
+  min-height: 10rem;
+  resize: vertical;
+  padding: 1rem;
+  color: #f6efe5;
+  border: .0625rem solid rgb(255 255 255 / 18%);
+  border-radius: .3rem;
+  background: #15120f;
+}
+
+.socratic-step textarea::placeholder {
+  color: #817668;
+}
+
+.socratic-help {
+  margin: .75rem 0 0;
+  font-family: var(--font-interface);
+  font-size: .78rem;
+  color: #a99b8a;
+}
+
+.socratic-step__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .7rem;
+  margin-top: 2rem;
+}
+
+.socratic-lab .button {
+  cursor: pointer;
+}
+
+.socratic-counterexample {
+  margin-bottom: 2rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  color: var(--color-text);
+  background: var(--site-block-background);
+  border: .0625rem solid var(--site-block-border);
+  border-left: .3rem solid var(--color-primary);
+  border-radius: var(--radius-medium);
+}
+
+.socratic-counterexample .socratic-prompt {
+  color: var(--color-primary);
+}
+
+.socratic-counterexample p:last-child {
+  margin-bottom: 0;
+}
+
+.socratic-result {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.socratic-result h3 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.8rem, 4vw, 3.1rem);
+}
+
+.socratic-result__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.socratic-result__grid > div {
+  min-width: 0;
+  padding: 1.25rem;
+  border: .0625rem solid rgb(255 255 255 / 14%);
+  background: rgb(255 255 255 / 3%);
+}
+
+.socratic-result__grid span {
+  display: block;
+  margin-bottom: .7rem;
+  font-family: var(--font-interface);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: #d5b386;
+  text-transform: uppercase;
+}
+
+.socratic-result__grid p {
+  margin: 0;
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  color: #f4ecdf;
+}
+
+.socratic-result__closing {
+  color: #cfc4b5;
+}
+
+.socratic-lab__privacy {
+  margin: 0;
+  padding: .8rem clamp(1.1rem, 3vw, 2rem);
+  font-family: var(--font-interface);
+  font-size: .7rem;
+  color: #968a7c;
+  border-top: .0625rem solid rgb(255 255 255 / 8%);
+  background: #15120f;
+}
+
+
+.socrates-references {
+  padding-block: clamp(4rem, 8vw, 6rem);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-top: .0625rem solid var(--site-block-border);
+}
+
+.socrates-references ol {
+  margin: 1.5rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.socrates-references li {
+  margin-bottom: 1rem;
+  color: #4e453b;
+}
+
+.socrates-references a {
+  color: #6f4b2a;
+}
+
+
+@media (max-width: 62rem) {
+  .socrates-hero__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, .6fr);
+    gap: 1.5rem;
+  }
+
+  .socrates-source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .socrates-source-card__top {
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .socrates-hero__inner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding-top: 4rem;
+  }
+
+  .socrates-hero__content {
+    padding-bottom: 0;
+  }
+
+  .socrates-portrait {
+    min-height: 30rem;
+  }
+
+  .socrates-portrait img {
+    width: min(82vw, 24rem);
+  }
+
+  .socrates-portrait figcaption {
+    max-width: 32rem;
+    margin-inline: auto;
+  }
+
+  .socrates-problem,
+  .socratic-lab__header,
+  .socratic-choice-grid,
+  .socratic-result__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .socratic-lab__header {
+    gap: .8rem;
+  }
+
+  .socratic-choice span {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 40rem) {
+  .socrates-hero__inner,
+  .socrates-section-boundary {
+    width: min(calc(100% - var(--content-gutter-compact)), var(--content-width));
+  }
+
+  .socrates-hero h1 {
+    font-size: clamp(3.4rem, 21vw, 5.4rem);
+  }
+
+  .socrates-hero__question {
+    font-size: 1.55rem;
+  }
+
+  .socrates-portrait {
+    min-height: 26rem;
+  }
+
+  .socratic-step,
+  .socratic-result {
+    padding-inline: 1rem;
+  }
+
+  .socratic-step__actions {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .socratic-step__actions .button,
+  .socratic-result .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socratic-lab__progress span {
+    transition: none;
+  }
+}
