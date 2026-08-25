@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  cleanup-and-validate:
+  validate:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
     timeout-minutes: 25
@@ -27,316 +27,26 @@ jobs:
         with:
           node-version: 22
 
-      - name: Apply redundancy cleanup
+      - name: Fold final reference surface into source rule
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re
 
-          def replace_once(path, old, new):
-              file = Path(path)
-              text = file.read_text()
-              if old not in text:
-                  raise SystemExit(f"Pattern not found in {path}: {old[:80]!r}")
-              file.write_text(text.replace(old, new, 1))
-
-          # 1) One shared JS engine for both Socratic laboratories.
-          Path('src/scripts/socrates-investigation.js').write_text(r'''(() => {
-            'use strict';
-
-            function syncScrollableFocus(selector) {
-              document.querySelectorAll(selector).forEach((region) => {
-                const isScrollable = region.scrollWidth > region.clientWidth + 1;
-                if (isScrollable) {
-                  region.setAttribute('tabindex', '0');
-                  region.dataset.autoScrollableTabindex = 'true';
-                  return;
-                }
-                if (region.dataset.autoScrollableTabindex === 'true') {
-                  region.removeAttribute('tabindex');
-                  delete region.dataset.autoScrollableTabindex;
-                }
-              });
-            }
-
-            function validateStep(step) {
-              const controls = [...step.querySelectorAll('input, textarea, select')];
-              const invalid = controls.find((control) => !control.checkValidity());
-              if (!invalid) return true;
-              invalid.reportValidity();
-              invalid.focus();
-              return false;
-            }
-
-            function focusStep(step) {
-              const target = step.querySelector('legend, label > strong, h3, input, textarea, button');
-              if (!target) return;
-              if (!target.matches('input, textarea, select, button, a[href]')) {
-                target.setAttribute('tabindex', '-1');
-              }
-              target.focus({ preventScroll: true });
-              target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-
-            function createStepper(config) {
-              const lab = document.querySelector(config.root);
-              if (!lab) return;
-
-              const form = lab.querySelector(config.form);
-              const steps = [...lab.querySelectorAll(config.step)];
-              const result = lab.querySelector(config.result);
-              const stage = lab.querySelector(config.stage);
-              const progress = lab.querySelector('[role="progressbar"]');
-              const progressBar = lab.querySelector(config.progressBar);
-              const resultHeading = lab.querySelector(config.resultHeading);
-              const resetButton = lab.querySelector(config.reset);
-              const resultBindings = config.resultBindings.map(({ field, target }) => ({
-                field,
-                target: lab.querySelector(target),
-              }));
-
-              if (!form || !steps.length || !result || !stage || !progress || !progressBar) return;
-
-              let currentStep = 0;
-
-              function showStep(index, shouldFocus = true) {
-                currentStep = Math.max(0, Math.min(index, steps.length - 1));
-                steps.forEach((step, position) => {
-                  step.hidden = position !== currentStep;
-                });
-                form.hidden = false;
-                result.hidden = true;
-
-                const humanStep = currentStep + 1;
-                stage.textContent = `Etapa ${humanStep} de ${steps.length}`;
-                progress.setAttribute('aria-valuenow', String(humanStep));
-                progressBar.style.width = `${(humanStep / steps.length) * 100}%`;
-
-                if (shouldFocus) focusStep(steps[currentStep]);
-              }
-
-              lab.addEventListener('click', (event) => {
-                const target = event.target instanceof Element ? event.target : null;
-                if (!target) return;
-
-                const next = target.closest(config.next);
-                if (next) {
-                  if (!validateStep(steps[currentStep])) return;
-                  showStep(currentStep + 1);
-                  return;
-                }
-
-                const back = target.closest(config.back);
-                if (back) showStep(currentStep - 1);
-              });
-
-              form.addEventListener('submit', (event) => {
-                event.preventDefault();
-                if (!validateStep(steps[currentStep])) return;
-
-                const data = new FormData(form);
-                resultBindings.forEach(({ field, target }) => {
-                  if (target) target.textContent = String(data.get(field) || '').trim();
-                });
-
-                form.hidden = true;
-                result.hidden = false;
-                stage.textContent = config.completedLabel;
-                progress.setAttribute('aria-valuenow', String(steps.length));
-                progressBar.style.width = '100%';
-
-                if (resultHeading) {
-                  resultHeading.focus({ preventScroll: true });
-                  resultHeading.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-              });
-
-              resetButton?.addEventListener('click', () => {
-                form.reset();
-                resultBindings.forEach(({ target }) => {
-                  if (target) target.textContent = '';
-                });
-                showStep(0);
-              });
-
-              showStep(0, false);
-            }
-
-            syncScrollableFocus('.socrates-life-path');
-            window.addEventListener('resize', () => syncScrollableFocus('.socrates-life-path'), { passive: true });
-
-            createStepper({
-              root: '[data-socratic-lab]',
-              form: '[data-lab-form]',
-              step: '[data-step]',
-              result: '[data-result]',
-              stage: '[data-stage-label]',
-              progressBar: '[data-progress]',
-              resultHeading: '[data-result-heading]',
-              next: '[data-next]',
-              back: '[data-back]',
-              reset: '[data-reset]',
-              completedLabel: 'Investigação concluída',
-              resultBindings: [
-                { field: 'definition', target: '[data-original-definition]' },
-                { field: 'revision', target: '[data-revised-definition]' },
-              ],
-            });
-
-            createStepper({
-              root: '[data-belief-lab]',
-              form: '[data-belief-form]',
-              step: '[data-belief-step]',
-              result: '[data-belief-result]',
-              stage: '[data-belief-stage]',
-              progressBar: '[data-belief-progress]',
-              resultHeading: '[data-belief-result-heading]',
-              next: '[data-belief-next]',
-              back: '[data-belief-back]',
-              reset: '[data-belief-reset]',
-              completedLabel: 'Exame concluído',
-              resultBindings: [
-                { field: 'claim', target: '[data-belief-original]' },
-                { field: 'counter', target: '[data-belief-counter-result]' },
-                { field: 'revision', target: '[data-belief-revised]' },
-              ],
-            });
-          })();
-          ''')
-
-          Path('src/scripts/socrates-belief-lab.js').unlink()
-
-          # 2) HTML loads one controller instead of two near-identical scripts.
-          replace_once(
-              'artigos/socrates.html',
-              '<script defer src="../src/scripts/socrates-investigation.js?v=20260818-1"></script>\n<script defer src="../src/scripts/socrates-belief-lab.js?v=20260818-1"></script>',
-              '<script defer src="../src/scripts/socrates-investigation.js?v=20260825-1"></script>',
-          )
-
-          # 3) Fold the visual compatibility layer into the original Socrates rules.
-          replace_once(
-              'src/styles/socrates.css',
-              '''.socrates-article {\n  --socrates-ink: #171410;\n  --socrates-ink-soft: #2b2620;\n  --socrates-stone: #e9e1d2;\n  --socrates-stone-soft: #f4efe6;\n  --socrates-stone-deep: #cfc2ae;\n  --socrates-bronze: #a97843;\n  --socrates-bronze-dark: #76502d;\n  --socrates-line: rgb(23 20 16 / 18%);\n  --socrates-light: #f7f1e6;\n  color: var(--socrates-ink);\n  background: var(--socrates-stone-soft);\n}''',
-              '''.socrates-article {\n  --socrates-ink: var(--color-text);\n  --socrates-ink-soft: var(--color-surface);\n  --socrates-stone: var(--color-surface);\n  --socrates-stone-soft: var(--color-background);\n  --socrates-stone-deep: var(--color-surface);\n  --socrates-bronze: var(--color-primary);\n  --socrates-bronze-dark: var(--color-primary);\n  --socrates-line: var(--site-block-border);\n  --socrates-light: var(--color-text);\n  color: var(--color-text);\n  background: var(--color-background);\n}''',
-          )
-
-          replace_once(
-              'src/styles/socrates.css',
-              '.socrates-section-heading h2,\n.socrates-next h2,\n.socrates-references h2 {',
-              '.socrates-section-heading h2,\n.socrates-references h2 {',
-          )
-
-          replace_once(
-              'src/styles/socrates.css',
-              '''.socrates-section-heading > p:last-child {\n  font-size: 1.15rem;\n  color: #4d443a;\n}''',
-              '''.socrates-section-heading > p:last-child {\n  font-size: 1.15rem;\n}''',
-          )
-
-          replace_once(
-              'src/styles/socrates.css',
-              '''.socrates-evidence-key span {\n  padding: .42rem .62rem;\n  color: #4d443a;\n  border: .0625rem solid var(--socrates-line);\n  border-radius: .3rem;\n  background: rgb(255 255 255 / 42%);\n}''',
-              '''.socrates-evidence-key span {\n  padding: .42rem .62rem;\n  color: var(--color-text-muted);\n  border: .0625rem solid var(--site-block-border);\n  border-radius: .3rem;\n  background: var(--color-surface);\n}''',
-          )
-
-          replace_once(
-              'src/styles/socrates.css',
-              '''.socrates-source-card {\n  min-width: 0;\n  padding: clamp(1.3rem, 3vw, 2rem);\n  border: .0625rem solid var(--socrates-line);\n  border-radius: .25rem;\n  background: rgb(255 255 255 / 54%);\n  box-shadow: 0 .8rem 2rem rgb(55 42 28 / 5%);\n}''',
-              '''.socrates-source-card {\n  min-width: 0;\n}''',
-          )
-
-          replace_once(
-              'src/styles/socrates.css',
-              '''.socratic-lab .button--primary {\n  color: #17120e;\n  background: #c8914f;\n}\n\n.socratic-lab .button--secondary {\n  color: #ede5da;\n  background: transparent;\n  border-color: rgb(255 255 255 / 22%);\n}\n\n''',
-              '',
-          )
-
-          replace_once(
-              'src/styles/socrates.css',
-              '''.socratic-counterexample {\n  margin-bottom: 2rem;\n  padding: clamp(1.2rem, 3vw, 2rem);\n  color: #241e18;\n  background: #ddd0bd;\n  border-left: .3rem solid #9b6938;\n}\n\n.socratic-counterexample .socratic-prompt {\n  color: #76502d;\n}''',
-              '''.socratic-counterexample {\n  margin-bottom: 2rem;\n  padding: clamp(1.2rem, 3vw, 2rem);\n  color: var(--color-text);\n  background: var(--site-block-background);\n  border: .0625rem solid var(--site-block-border);\n  border-left: .3rem solid var(--color-primary);\n  border-radius: var(--radius-medium);\n}\n\n.socratic-counterexample .socratic-prompt {\n  color: var(--color-primary);\n}''',
-          )
-
-          # Remove unused socrates-next rules and theme-specific footer override.
-          css = Path('src/styles/socrates.css').read_text()
-          css = re.sub(
-              r'\n\.socrates-next \{.*?\n\.socrates-next p:last-child \{.*?\n\}\n',
-              '\n',
-              css,
-              count=1,
-              flags=re.S,
-          )
-          css = re.sub(
-              r'\n\.socrates-article \+ \.site-footer,\nbody:has\(\.socrates-article\) \.site-footer \{.*?\n\}\n',
-              '\n',
-              css,
-              count=1,
-              flags=re.S,
-          )
-          Path('src/styles/socrates.css').write_text(css)
-
-          # Sections: replace old light surfaces by the global material directly.
-          replacements = {
-              '''.socrates-timeline time {\n  padding-top: .28rem;\n  font-family: var(--font-interface);\n  font-size: .78rem;\n  font-weight: 700;\n  text-align: right;\n  color: #776858;\n}''': '''.socrates-timeline time {\n  padding-top: .28rem;\n  font-family: var(--font-interface);\n  font-size: .78rem;\n  font-weight: 700;\n  text-align: right;\n  color: var(--color-text-muted);\n}''',
-              '''.socrates-timeline li > div {\n  min-width: 0;\n  padding: 1.1rem 1.25rem;\n  border: .0625rem solid var(--socrates-line);\n  background: rgb(255 255 255 / 48%);\n}''': '''.socrates-timeline li > div {\n  min-width: 0;\n  padding: 1.1rem 1.25rem;\n  color: var(--color-text);\n  background: var(--site-block-background);\n  border: .0625rem solid var(--site-block-border);\n  border-radius: var(--radius-medium);\n  box-shadow: var(--shadow-soft);\n}''',
-              '''.socrates-questions {\n  background:\n    linear-gradient(90deg, transparent, rgb(169 120 67 / 5%) 50%, transparent),\n    #efe7db;\n}''': '''.socrates-questions {\n  background: var(--color-surface);\n}''',
-              '''.socrates-life-path > div {\n  display: grid;\n  align-content: center;\n  min-width: 10.4rem;\n  min-height: 9.5rem;\n  padding: 1rem;\n  border: .0625rem solid var(--socrates-line);\n  background: #f9f4ec;\n}''': '''.socrates-life-path > div {\n  display: grid;\n  align-content: center;\n  min-width: 10.4rem;\n  min-height: 9.5rem;\n  padding: 1rem;\n  color: var(--color-text);\n  background: var(--site-block-background);\n  border: .0625rem solid var(--site-block-border);\n  border-radius: var(--radius-medium);\n  box-shadow: var(--shadow-soft);\n}''',
-              '''.socrates-life-path small {\n  font-size: .72rem;\n  color: #766a5d;\n}''': '''.socrates-life-path small {\n  font-size: .72rem;\n  color: var(--color-text-muted);\n}''',
-              '''.socrates-myth-section {\n  color: var(--socrates-ink);\n  background: #e8dfd1;\n}''': '''.socrates-myth-section {\n  color: var(--color-text);\n  background: var(--color-surface);\n}''',
-              '''.socrates-myth {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  border: .0625rem solid rgb(23 20 16 / 18%);\n}''': '''.socrates-myth {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  border: .0625rem solid var(--site-block-border);\n}''',
-              '''.socrates-myth > div {\n  min-width: 0;\n  padding: clamp(1.25rem, 3vw, 2rem);\n  border: .03125rem solid rgb(23 20 16 / 12%);\n}''': '''.socrates-myth > div {\n  min-width: 0;\n  padding: clamp(1.25rem, 3vw, 2rem);\n  border: .03125rem solid var(--site-block-border);\n}''',
-              '.socrates-library { background: #f5eee3; }': '.socrates-library { background: var(--color-surface); }',
-              '.socrates-evidence { background: #eae1d5; }': '.socrates-evidence { background: var(--color-surface); }',
-              '''.socrates-evidence__rule {\n  max-width: 52rem;\n  margin: 2rem 0 0;\n  padding: 1.2rem 1.35rem;\n  border-left: .25rem solid var(--socrates-bronze-dark);\n  background: #f7f1e7;\n}''': '''.socrates-evidence__rule {\n  max-width: 52rem;\n  margin: 2rem 0 0;\n  padding: 1.2rem 1.35rem;\n  color: var(--color-text);\n  background: var(--site-block-background);\n  border: .0625rem solid var(--site-block-border);\n  border-left: .25rem solid var(--color-primary);\n  border-radius: var(--radius-medium);\n  box-shadow: var(--shadow-soft);\n}''',
-          }
-          for old, new in replacements.items():
-              replace_once('src/styles/socrates-sections.css', old, new)
-
-          sections = Path('src/styles/socrates-sections.css').read_text()
-          # Remove dark text declarations that are permanently superseded by site-standard.css.
-          sections = sections.replace('  color: #50473e;\n', '')
-          sections = sections.replace('  color: #51483e;\n', '')
-          sections = sections.replace('.socrates-myth p { margin: 0; color: #4b433a; }', '.socrates-myth p { margin: 0; }')
-          sections = sections.replace('.socrates-today-grid p { margin: 0; color: #51483e; }', '.socrates-today-grid p { margin: 0; }')
-          sections = sections.replace('.socrates-book-grid p { color: #51483e; }', '')
-          sections = sections.replace('.socrates-evidence-grid p { margin: 0; color: #51483e; }', '.socrates-evidence-grid p { margin: 0; }')
-          sections = sections.replace('.socrates-source-type {\n  text-align: right;\n  color: #766b5f;\n}', '.socrates-source-type {\n  text-align: right;\n  color: var(--color-text-muted);\n}')
-          sections = sections.replace('.book-note { margin-bottom: 0; color: #766a5d !important; }', '.book-note { margin-bottom: 0; color: var(--color-text-muted) !important; }')
-
-          # The compact boundary is already defined once in socrates.css for every .socrates-section-boundary.
-          sections = re.sub(
-              r'\n@media \(max-width: 40rem\) \{\n  \.socrates-history \.socrates-section-boundary,.*?\n  \}\n\n  \.socrates-life-note',
-              '\n@media (max-width: 40rem) {\n  .socrates-life-note',
-              sections,
-              count=1,
-              flags=re.S,
-          )
-
-          # The compatibility appendix is no longer needed because its rules now live at their source.
-          marker = '\n/* Socrates global visual contract compatibility */\n'
-          if marker not in sections:
-              raise SystemExit('Compatibility marker not found')
-          sections = sections.split(marker, 1)[0].rstrip() + '\n'
-          Path('src/styles/socrates-sections.css').write_text(sections)
-
-          # 4) Geometry is already guaranteed for every route by tests/site.spec.js.
-          tests = Path('tests/socrates.spec.js').read_text()
-          tests, count = re.subn(
-              r"\n\ntest\('Sócrates permanece contido no viewport'.*?\n\}\);\n?$",
-              '\n',
-              tests,
-              count=1,
-              flags=re.S,
-          )
-          if count != 1:
-              raise SystemExit('Dedicated geometry test block not found')
-          Path('tests/socrates.spec.js').write_text(tests)
+          path = Path('src/styles/socrates.css')
+          text = path.read_text()
+          old = '''.socrates-references {\n  padding-block: clamp(4rem, 8vw, 6rem);\n  color: var(--socrates-ink);\n  background: #f6f1e8;\n}'''
+          new = '''.socrates-references {\n  padding-block: clamp(4rem, 8vw, 6rem);\n  color: var(--color-text);\n  background: var(--color-surface);\n  border-top: .0625rem solid var(--site-block-border);\n}'''
+          if old in text:
+              path.write_text(text.replace(old, new, 1))
+          elif new not in text:
+              raise SystemExit('Reference surface rule not found')
           PY
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add artigos/socrates.html src/scripts src/styles/socrates.css src/styles/socrates-sections.css tests/socrates.spec.js
-          git commit -m 'refactor: remove Socrates implementation redundancies [skip ci]'
+          git add src/styles/socrates.css
+          git commit -m 'fix: integrate Socrates reference surface tokens [skip ci]' || true
           git push origin HEAD:feature/socrates-investigation
 
       - name: Verify redundancy invariants
@@ -348,6 +58,7 @@ jobs:
           ! grep -q 'Socrates global visual contract compatibility' src/styles/socrates-sections.css
           ! grep -q '\.socrates-next' src/styles/socrates.css
           ! grep -q 'Sócrates permanece contido no viewport' tests/socrates.spec.js
+          ! grep -q 'background: #f6f1e8' src/styles/socrates.css
           echo 'Redundancy invariants: OK'
           wc -l src/scripts/socrates-investigation.js src/styles/socrates.css src/styles/socrates-sections.css tests/socrates.spec.js
 
@@ -389,7 +100,6 @@ jobs:
         if: always()
         shell: bash
         run: |
-          mkdir -p docs
           status='${{ steps.validation.outputs.status }}'
           if [ "$status" = '0' ]; then result='PASS'; else result='FAIL'; fi
           {
