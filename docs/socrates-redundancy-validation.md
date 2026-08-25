@@ -1,260 +1,91 @@
 # Sócrates — limpeza de redundâncias
 
-Resultado: **FAIL**
+Resultado: **PASS**
 
-Commit testado: `ca8c2f7ce335f5b864a257d00ea6e4649a9334a2`
+Commit testado: `80b34f280bf931561ec5432d3a5490c60468295a`
 
 ## Métricas
 
 ```text
   161 src/scripts/socrates-investigation.js
-  753 src/styles/socrates.css
+  754 src/styles/socrates.css
   624 src/styles/socrates-sections.css
    96 tests/socrates.spec.js
- 1634 total
+ 1635 total
 ```
 
 ## Validação
 
 ```text
-    +             },
-    +             "id": "color-contrast",
-    +             "impact": "serious",
-    +             "message": "Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +             "relatedNodes": Array [
-    +               Object {
-    +                 "html": "<section class=\"socrates-references\" id=\"referencias\" aria-labelledby=\"referencias-titulo\">",
-    +                 "target": Array [
-    +                   "#referencias",
-    +                 ],
-    +               },
-    +             ],
-    +           },
-    +         ],
-    +         "failureSummary": "Fix any of the following:
-    +   Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +         "html": "<li id=\"ref-6\"><strong>[imagem]</strong> S. Perquin. <a href=\"https://commons.wikimedia.org/wiki/File:Socrates_(transparent).png\" rel=\"noopener noreferrer\" target=\"_blank\">Socrates (transparent).png</a>. Wikimedia Commons, CC0 1.0. Cópia otimizada localmente para esta página.</li>",
-    +         "impact": "serious",
-    +         "none": Array [],
-    +         "target": Array [
-    +           "#ref-6",
-    +         ],
-    +       },
-    +       Object {
-    +         "all": Array [],
-    +         "any": Array [
-    +           Object {
-    +             "data": Object {
-    +               "bgColor": "#f6f1e8",
-    +               "contrastRatio": 1.08,
-    +               "expectedContrastRatio": "4.5:1",
-    +               "fgColor": "#f1e7d5",
-    +               "fontSize": "13.5pt (18px)",
-    +               "fontWeight": "bold",
-    +               "messageKey": null,
-    +             },
-    +             "id": "color-contrast",
-    +             "impact": "serious",
-    +             "message": "Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1",
-    +             "relatedNodes": Array [
-    +               Object {
-    +                 "html": "<section class=\"socrates-references\" id=\"referencias\" aria-labelledby=\"referencias-titulo\">",
-    +                 "target": Array [
-    +                   "#referencias",
-    +                 ],
-    +               },
-    +             ],
-    +           },
-    +         ],
-    +         "failureSummary": "Fix any of the following:
-    +   Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1",
-    +         "html": "<strong>[imagem]</strong>",
-    +         "impact": "serious",
-    +         "none": Array [],
-    +         "target": Array [
-    +           "#ref-6 > strong",
-    +         ],
-    +       },
-    +       Object {
-    +         "all": Array [],
-    +         "any": Array [
-    +           Object {
-    +             "data": Object {
-    +               "bgColor": "#f6f1e8",
-    +               "contrastRatio": 2.44,
-    +               "expectedContrastRatio": "4.5:1",
-    +               "fgColor": "#c8914f",
-    +               "fontSize": "13.5pt (18px)",
-    +               "fontWeight": "normal",
-    +               "messageKey": null,
-    +             },
-    +             "id": "color-contrast",
-    +             "impact": "serious",
-    +             "message": "Element has insufficient color contrast of 2.44 (foreground color: #c8914f, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +             "relatedNodes": Array [
-    +               Object {
-    +                 "html": "<section class=\"socrates-references\" id=\"referencias\" aria-labelledby=\"referencias-titulo\">",
-    +                 "target": Array [
-    +                   "#referencias",
-    +                 ],
-    +               },
-    +             ],
-    +           },
-    +         ],
-    +         "failureSummary": "Fix any of the following:
-    +   Element has insufficient color contrast of 2.44 (foreground color: #c8914f, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +         "html": "<a href=\"https://commons.wikimedia.org/wiki/File:Socrates_(transparent).png\" rel=\"noopener noreferrer\" target=\"_blank\">Socrates (transparent).png</a>",
-    +         "impact": "serious",
-    +         "none": Array [],
-    +         "target": Array [
-    +           "#ref-6 > a[rel=\"noopener noreferrer\"][target=\"_blank\"]",
-    +         ],
-    +       },
-    +       Object {
-    +         "all": Array [],
-    +         "any": Array [
-    +           Object {
-    +             "data": Object {
-    +               "bgColor": "#f6f1e8",
-    +               "contrastRatio": 1.08,
-    +               "expectedContrastRatio": "4.5:1",
-    +               "fgColor": "#f1e7d5",
-    +               "fontSize": "13.5pt (18px)",
-    +               "fontWeight": "normal",
-    +               "messageKey": null,
-    +             },
-    +             "id": "color-contrast",
-    +             "impact": "serious",
-    +             "message": "Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +             "relatedNodes": Array [
-    +               Object {
-    +                 "html": "<section class=\"socrates-references\" id=\"referencias\" aria-labelledby=\"referencias-titulo\">",
-    +                 "target": Array [
-    +                   "#referencias",
-    +                 ],
-    +               },
-    +             ],
-    +           },
-    +         ],
-    +         "failureSummary": "Fix any of the following:
-    +   Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +         "html": "<li id=\"ref-7\">",
-    +         "impact": "serious",
-    +         "none": Array [],
-    +         "target": Array [
-    +           "#ref-7",
-    +         ],
-    +       },
-    +       Object {
-    +         "all": Array [],
-    +         "any": Array [
-    +           Object {
-    +             "data": Object {
-    +               "bgColor": "#f6f1e8",
-    +               "contrastRatio": 1.08,
-    +               "expectedContrastRatio": "4.5:1",
-    +               "fgColor": "#f1e7d5",
-    +               "fontSize": "13.5pt (18px)",
-    +               "fontWeight": "bold",
-    +               "messageKey": null,
-    +             },
-    +             "id": "color-contrast",
-    +             "impact": "serious",
-    +             "message": "Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1",
-    +             "relatedNodes": Array [
-    +               Object {
-    +                 "html": "<section class=\"socrates-references\" id=\"referencias\" aria-labelledby=\"referencias-titulo\">",
-    +                 "target": Array [
-    +                   "#referencias",
-    +                 ],
-    +               },
-    +             ],
-    +           },
-    +         ],
-    +         "failureSummary": "Fix any of the following:
-    +   Element has insufficient color contrast of 1.08 (foreground color: #f1e7d5, background color: #f6f1e8, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1",
-    +         "html": "<strong>[imagem]</strong>",
-    +         "impact": "serious",
-    +         "none": Array [],
-    +         "target": Array [
-    +           "#ref-7 > strong",
-    +         ],
-    +       },
-    +       Object {
-    +         "all": Array [],
-    +         "any": Array [
-    +           Object {
-    +             "data": Object {
-    +               "bgColor": "#f6f1e8",
-    +               "contrastRatio": 2.44,
-    +               "expectedContrastRatio": "4.5:1",
-    +               "fgColor": "#c8914f",
-    +               "fontSize": "13.5pt (18px)",
-    +               "fontWeight": "normal",
-    +               "messageKey": null,
-    +             },
-    +             "id": "color-contrast",
-    +             "impact": "serious",
-    +             "message": "Element has insufficient color contrast of 2.44 (foreground color: #c8914f, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +             "relatedNodes": Array [
-    +               Object {
-    +                 "html": "<section class=\"socrates-references\" id=\"referencias\" aria-labelledby=\"referencias-titulo\">",
-    +                 "target": Array [
-    +                   "#referencias",
-    +                 ],
-    +               },
-    +             ],
-    +           },
-    +         ],
-    +         "failureSummary": "Fix any of the following:
-    +   Element has insufficient color contrast of 2.44 (foreground color: #c8914f, background color: #f6f1e8, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
-    +         "html": "<cite>The Death of Socrates</cite>",
-    +         "impact": "serious",
-    +         "none": Array [],
-    +         "target": Array [
-    +           "#ref-7 > a[rel=\"noopener noreferrer\"][target=\"_blank\"] > cite",
-    +         ],
-    +       },
-    +     ],
-    +     "tags": Array [
-    +       "cat.color",
-    +       "wcag2aa",
-    +       "wcag143",
-    +       "TTv5",
-    +       "TT13.c",
-    +       "EN-301-549",
-    +       "EN-9.1.4.3",
-    +       "ACT",
-    +       "RGAAv4",
-    +       "RGAA-3.2.1",
-    +     ],
-    +   },
-    + ]
 
-      93 |     .withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'])
-      94 |     .analyze();
-    > 95 |   expect(results.violations).toEqual([]);
-         |                              ^
-      96 | });
-      97 |
-        at /home/runner/work/x/x/tests/socrates.spec.js:95:30
+### npm run audit:visual
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/socrates-Sócrates-não-apre-03c76-automaticamente-detectáveis/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+> let-flow-369@1.0.0 audit:visual
+> node scripts/audit-home-visual-standard.mjs
 
-    Error Context: test-results/socrates-Sócrates-não-apre-03c76-automaticamente-detectáveis/error-context.md
+LET FLOW 369 — CONTRATO VISUAL DA HOME
+Páginas públicas ............ 100
+Falhas ...................... 0
+Resultado ................... APROVADO
 
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/socrates-Sócrates-não-apre-03c76-automaticamente-detectáveis/trace.zip
-    Usage:
+### npm run build
 
-        npx playwright show-trace test-results/socrates-Sócrates-não-apre-03c76-automaticamente-detectáveis/trace.zip
+> let-flow-369@1.0.0 build
+> node scripts/build-site.mjs
 
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+Pré-render: busca.html (83 item(ns))
+Pré-render: evidencias.html (29 item(ns))
+Pré-render: tags.html (83 item(ns))
+Pré-render: glossario.html (15 item(ns))
+Build concluído: 100 páginas em dist/.
 
+### npm run audit:design
 
-  1 failed
-    tests/socrates.spec.js:90:1 › Sócrates não apresenta violações WCAG automaticamente detectáveis 
-  4 passed (12.0s)
+> let-flow-369@1.0.0 audit:design
+> node scripts/audit-design-system.mjs
+
+LET FLOW 369 — AUDITORIA DO DESIGN SYSTEM
+Dossiês de substâncias ....... 8
+Componente compartilhado .... OK
+Componente botânico ......... OK
+Contrato de tema ............ OK
+Tokens tipográficos ......... OK
+Resultado ................... APROVADO
+
+### npm run audit:structured
+
+> let-flow-369@1.0.0 audit:structured
+> node scripts/audit-structured-data.mjs
+
+LET FLOW 369 — AUDITORIA DE DADOS ESTRUTURADOS
+HTML públicos ................. 100
+BreadcrumbList encontrados .... 93
+Artigos com datas estruturadas  84
+Erros .......................... 0
+
+### npx playwright test tests/visual-standard.spec.js --workers=1 --retries=0
+
+Running 1 test using 1 worker
+
+[1/1] tests/visual-standard.spec.js:158:5 › padrão visual da página inicial — todas as rotas › artigos/socrates.html usa tipografia, paleta, blocos e imagens do contrato global
+  1 passed (1.9s)
+
+### npx playwright test tests/site.spec.js --grep artigos/socrates.html --workers=1 --retries=0
+
+Running 2 tests using 1 worker
+
+[1/2] tests/site.spec.js:94:5 › páginas públicas › artigos/socrates.html carrega com estrutura principal
+[2/2] tests/site.spec.js:128:5 › contrato geométrico — todas as rotas › artigos/socrates.html respeita viewport e eixos globais
+  2 passed (3.5s)
+
+### npx playwright test tests/socrates.spec.js --workers=1 --retries=0
+
+Running 5 tests using 1 worker
+
+[1/5] tests/socrates.spec.js:21:1 › Sócrates carrega a narrativa completa e os marcadores de evidência
+[2/5] tests/socrates.spec.js:34:1 › imagens históricas são locais e carregam sem rede externa
+[3/5] tests/socrates.spec.js:46:1 › laboratório de justiça conduz afirmação até revisão sem persistência externa
+[4/5] tests/socrates.spec.js:67:1 › laboratório aberto examina uma crença e permite reiniciar
+[5/5] tests/socrates.spec.js:90:1 › Sócrates não apresenta violações WCAG automaticamente detectáveis
+  5 passed (11.3s)
 ```
