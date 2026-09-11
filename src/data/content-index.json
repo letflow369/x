@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-18",
+  "version": "2026-09-11",
   "items": [
     {
       "slug": "acupuntura",
@@ -40,15 +40,15 @@
       "contentType": "conceito/sistema simbólico",
       "tags": [
         "esoterismo",
-        "yoga",
+        "Yoga",
         "chakras",
         "ajna",
         "corpo sutil"
       ],
       "relations": [
         "chakras",
-        "theosophy",
-        "hermetism"
+        "teosofia",
+        "hermetismo"
       ],
       "scientificReview": null,
       "metadataUpdated": "2026-08-17",
@@ -429,7 +429,7 @@
       "category": "psicologia-saude-mental",
       "categoryName": "Psicologia e saúde mental",
       "categoryUrl": "assuntos/psicologia.html",
-      "contentType": "condição/conceito",
+      "contentType": "biografia",
       "tags": [
         "psicologia",
         "saúde mental",
@@ -1303,7 +1303,7 @@
         "mitologia",
         "povos indígenas",
         "tupi-guarani",
-        "brasil",
+        "Brasil",
         "colonização"
       ],
       "relations": [
@@ -1365,8 +1365,8 @@
       ],
       "relations": [
         "ajna",
-        "hermetism",
-        "theosophy"
+        "hermetismo",
+        "teosofia"
       ],
       "scientificReview": null,
       "metadataUpdated": "2026-08-17",
@@ -1883,7 +1883,7 @@
       "category": "psicologia-saude-mental",
       "categoryName": "Psicologia e saúde mental",
       "categoryUrl": "assuntos/psicologia.html",
-      "contentType": "condição/conceito",
+      "contentType": "biografia",
       "tags": [
         "psicologia",
         "saúde mental",
@@ -1994,7 +1994,7 @@
       "category": "psicologia-saude-mental",
       "categoryName": "Psicologia e saúde mental",
       "categoryUrl": "assuntos/psicologia.html",
-      "contentType": "condição/conceito",
+      "contentType": "psicoterapia",
       "tags": [
         "psicologia",
         "saúde mental",
@@ -2285,7 +2285,7 @@
         "xamanismo",
         "antropologia",
         "transe",
-        "brasil"
+        "Brasil"
       ],
       "relations": [
         "mitologia-yanomami",
