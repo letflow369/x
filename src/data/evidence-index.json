@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-11",
+  "version": "2026-09-11",
   "items": [
     {
       "title": "CBD farmacêutico em síndromes epilépticas específicas",
@@ -20,12 +20,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "substância",
       "level": "promissora",
-      "levelLabel": "Promissora / inconclusiva",
+      "levelLabel": "Evidência promissora",
       "summary": "Há ensaios positivos de curto prazo, mas persistem limitações de cegamento, amostras selecionadas, duração e replicação.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/psilocibina.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Promissora / inconclusiva"
     },
     {
       "title": "Ayahuasca para sintomas depressivos",
@@ -46,12 +47,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "substância",
       "level": "preliminar",
-      "levelLabel": "Promissora / preliminar",
+      "levelLabel": "Evidência preliminar",
       "summary": "Um pequeno ensaio randomizado de fase IIa de 2026 encontrou redução de sintomas superior ao placebo, mas a base clínica ainda requer replicação e estudos maiores.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/dmt.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Promissora / preliminar"
     },
     {
       "title": "DMT altera conectividade e dinâmica cerebral",
@@ -59,12 +61,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "mecanismo",
       "level": "consistente",
-      "levelLabel": "Bem documentado experimentalmente",
+      "levelLabel": "Evidência consistente",
       "summary": "Estudos humanos placebo-controlados com EEG e fMRI documentam alterações amplas de conectividade, segregação de redes e dinâmica neural durante o estado agudo.",
       "evidenceBasis": "mecanismo",
       "evidenceBasisLabel": "Evidência de mecanismo",
       "sourceArticleUrl": "artigos/dmt.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Bem documentado experimentalmente"
     },
     {
       "title": "Grande liberação pineal de DMT em sonhos ou na morte",
@@ -72,12 +75,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não demonstrado em humanos",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Não há evidência humana de uma grande liberação de DMT pela pineal durante sonhos ou morte; dados animais tampouco estabelecem a pineal como fonte cerebral necessária.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/dmt.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Não demonstrado em humanos"
     },
     {
       "title": "Changa como tratamento médico estabelecido",
@@ -85,12 +89,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não demonstrado",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Não há ensaios clínicos robustos que estabeleçam eficácia terapêutica específica da Changa para depressão, ansiedade, dor ou outras condições.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/changa.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Não demonstrado"
     },
     {
       "title": "Analgesia após Changa",
@@ -98,12 +103,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "substância",
       "level": "preliminar",
-      "levelLabel": "Relato de caso / hipótese",
+      "levelLabel": "Evidência preliminar",
       "summary": "Um relato de caso de 2019 descreveu analgesia prolongada após Changa; esse desenho não demonstra causalidade nem eficácia clínica.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/changa.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Relato de caso / hipótese"
     },
     {
       "title": "Farmacologia DMT + harmalas aplicada à Changa",
@@ -111,12 +117,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "mecanismo",
       "level": "limitada",
-      "levelLabel": "Evidência indireta",
+      "levelLabel": "Evidência limitada",
       "summary": "DMT e alcaloides harmala têm farmacologia documentada, mas a composição variável e a via de uso impedem transferir automaticamente resultados de ayahuasca ou combinações padronizadas para Changa.",
       "evidenceBasis": "indireta",
       "evidenceBasisLabel": "Evidência indireta",
       "sourceArticleUrl": "artigos/changa.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Evidência indireta"
     },
     {
       "title": "Moxaterapia para apresentação fetal pélvica",
@@ -163,12 +170,13 @@
       "category": "saude-terapias-reabilitacao",
       "type": "terapia",
       "level": "insuficiente",
-      "levelLabel": "Sem evidência suficiente",
+      "levelLabel": "Evidência insuficiente",
       "summary": "A literatura clínica não sustenta eficácia específica de preparados homeopáticos além de efeitos contextuais/placebo para doenças em geral.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/homeopatia.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Sem evidência suficiente"
     },
     {
       "title": "Litoterapia para tratar doenças",
@@ -176,12 +184,13 @@
       "category": "saude-terapias-reabilitacao",
       "type": "terapia",
       "level": "insuficiente",
-      "levelLabel": "Sem evidência suficiente",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Não há evidência clínica robusta de efeitos terapêuticos específicos atribuíveis a cristais ou pedras.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/litoterapia.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Sem evidência suficiente"
     },
     {
       "title": "Reiki para desfechos clínicos específicos",
@@ -202,12 +211,13 @@
       "category": "saude-terapias-reabilitacao",
       "type": "terapia",
       "level": "moderada",
-      "levelLabel": "Evidência moderada em indicações específicas",
+      "levelLabel": "Evidência moderada",
       "summary": "O benefício varia por condição e comparador; não é correto generalizar eficácia para qualquer doença.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/acupuntura.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Evidência moderada em indicações específicas"
     },
     {
       "title": "Fitoterapia em indicações específicas",
@@ -241,12 +251,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "substância",
       "level": "moderada",
-      "levelLabel": "Benefício pequeno em formulações específicas",
+      "levelLabel": "Evidência moderada",
       "summary": "Algumas formulações THC/CBD podem reduzir discretamente a dor, com aumento de eventos adversos; CBD isolado não demonstra benefício consistente.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/cannabis-sativa.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Benefício pequeno em formulações específicas"
     },
     {
       "title": "Rótulo comercial indica/sativa para prever efeitos",
@@ -254,12 +265,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não estabelecido",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Genética e química mostram que o rótulo comercial isolado não prediz de forma confiável composição ou efeitos.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/cannabis-indica.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Não estabelecido"
     },
     {
       "title": "CBD para ansiedade",
@@ -267,12 +279,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "substância",
       "level": "preliminar",
-      "levelLabel": "Promissora / inconclusiva",
+      "levelLabel": "Evidência preliminar",
       "summary": "Há resultados experimentais e clínicos iniciais, mas ainda não sustentam recomendação ampla.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/cbd.html",
-      "verifiedAt": "2026-08-09"
+      "verifiedAt": "2026-08-09",
+      "qualifier": "Promissora / inconclusiva"
     },
     {
       "title": "CBD isolado para dor crônica",
@@ -293,12 +306,13 @@
       "category": "psicologia-saude-mental",
       "type": "psicoterapia",
       "level": "consistente",
-      "levelLabel": "Evidência consistente em indicações específicas",
+      "levelLabel": "Evidência consistente",
       "summary": "A TCC possui ampla base de ensaios e revisões para diferentes transtornos, com eficácia variando conforme condição e protocolo.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/terapia-cognitivo-comportamental.html",
-      "verifiedAt": "2026-08-07"
+      "verifiedAt": "2026-08-07",
+      "qualifier": "Evidência consistente em indicações específicas"
     },
     {
       "title": "Astrologia para prever traços ou eventos",
@@ -306,12 +320,13 @@
       "category": "filosofias-esoterismo-sistemas-simbolicos",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não demonstrado",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Testes controlados não sustentam capacidade preditiva geral dos mapas astrológicos para traços ou eventos.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/astrologia.html",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-08-05",
+      "qualifier": "Não demonstrado"
     },
     {
       "title": "Numerologia para prever personalidade ou futuro",
@@ -319,12 +334,13 @@
       "category": "filosofias-esoterismo-sistemas-simbolicos",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não demonstrado",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Não há evidência científica robusta de poder preditivo específico de sistemas numerológicos.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/numerologia.html",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-08-05",
+      "qualifier": "Não demonstrado"
     },
     {
       "title": "Vibrações energéticas como mecanismo biomédico",
@@ -332,12 +348,13 @@
       "category": "filosofias-esoterismo-sistemas-simbolicos",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não demonstrado cientificamente",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Termos físicos como frequência e vibração não validam, por si, modelos espirituais de energia como mecanismos biomédicos.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/vibracoes-estados-vibracionais.html",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-08-05",
+      "qualifier": "Não demonstrado cientificamente"
     },
     {
       "title": "LSD para transtorno de ansiedade generalizada",
@@ -345,12 +362,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "substância",
       "level": "preliminar",
-      "levelLabel": "Promissora / fase clínica avançando",
+      "levelLabel": "Evidência preliminar",
       "summary": "Um ensaio fase IIb com 198 adultos encontrou relação dose-resposta significativa para redução de ansiedade; estudos de fase III estão registrados, mas o tratamento ainda não é estabelecido.",
       "evidenceBasis": "direta",
       "evidenceBasisLabel": "Evidência direta",
       "sourceArticleUrl": "artigos/lsd.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Promissora / fase clínica avançando"
     },
     {
       "title": "Receptor 5-HT2A nos efeitos agudos do LSD",
@@ -358,12 +376,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "mecanismo",
       "level": "consistente",
-      "levelLabel": "Evidência experimental consistente",
+      "levelLabel": "Evidência consistente",
       "summary": "Estudos placebo-controlados com antagonismo 5-HT2A reduzem de forma acentuada a resposta subjetiva e alterações de conectividade induzidas por LSD.",
       "evidenceBasis": "mecanismo",
       "evidenceBasisLabel": "Evidência de mecanismo",
       "sourceArticleUrl": "artigos/lsd.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Evidência experimental consistente"
     },
     {
       "title": "LSD como tratamento estabelecido para depressão",
@@ -371,12 +390,13 @@
       "category": "substancias-farmacologia-consciencia",
       "type": "alegação",
       "level": "insuficiente",
-      "levelLabel": "Não estabelecido",
+      "levelLabel": "Evidência insuficiente",
       "summary": "Existem sinais clínicos e pesquisa psicodélica relacionada, mas a evidência específica de LSD para depressão ainda não sustenta tratamento estabelecido.",
       "evidenceBasis": "alegacao-avaliada",
       "evidenceBasisLabel": "Alegação avaliada",
       "sourceArticleUrl": "artigos/lsd.html",
-      "verifiedAt": "2026-08-10"
+      "verifiedAt": "2026-08-10",
+      "qualifier": "Não estabelecido"
     }
   ]
 }
