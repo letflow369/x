@@ -884,3 +884,27 @@
 - **Transformações locais:** redimensionamento, compressão e conversão para WebP.
 - **Arquivos:** `paganismo-eslavo-zbruch.jpg`, `paganismo-eslavo-zbruch.webp`.
 - **Página de origem:** https://commons.wikimedia.org/wiki/File:Svetovid_%E2%80%93_Zbruch_Idol_(MAK-63).jpg
+
+
+## Sócrates — agosto de 2026
+
+### Busto de Sócrates
+
+- **Conteúdo:** busto escultórico de Sócrates utilizado no hero da página.
+- **Fotografia:** S. Perquin.
+- **Fonte:** Wikimedia Commons.
+- **Licença:** CC0 1.0 / domínio público.
+- **Transformações locais:** conversão e otimização para WebP para uso editorial local.
+- **Arquivo:** `src/assets/images/socrates/socrates-bust.webp`.
+- **Página de origem:** https://commons.wikimedia.org/wiki/File:Socrates_(transparent).png
+
+### A Morte de Sócrates
+
+- **Obra:** Jacques-Louis David, *The Death of Socrates*, 1787.
+- **Fonte:** The Metropolitan Museum of Art.
+- **Acesso:** 31.45.
+- **Licença:** domínio público.
+- **Uso editorial:** representação artística posterior, não registro histórico do julgamento ou da morte de Sócrates.
+- **Transformações locais:** conversão e otimização para WebP para uso editorial local.
+- **Arquivo:** `src/assets/images/socrates/death-of-socrates-david-1787.webp`.
+- **Página de origem:** https://www.metmuseum.org/art/collection/search/436105
