@@ -218,7 +218,7 @@
   margin: 0;
   padding: .8rem 1rem 1.25rem;
   font-family: var(--font-interface);
-  font-size: .68rem;
+  font-size: .7rem;
   line-height: 1.5;
   color: #a99b8a;
   border-top: .0625rem solid rgb(255 255 255 / 10%);
@@ -296,7 +296,7 @@
   gap: 1rem;
   margin-bottom: 2.4rem;
   font-family: var(--font-interface);
-  font-size: .68rem;
+  font-size: .7rem;
   letter-spacing: .07em;
   text-transform: uppercase;
 }
