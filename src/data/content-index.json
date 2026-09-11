@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-18",
+  "version": "2026-09-11",
   "items": [
     {
       "slug": "acupuntura",
@@ -40,15 +40,15 @@
       "contentType": "conceito/sistema simbólico",
       "tags": [
         "esoterismo",
-        "yoga",
+        "Yoga",
         "chakras",
         "ajna",
         "corpo sutil"
       ],
       "relations": [
         "chakras",
-        "theosophy",
-        "hermetism"
+        "teosofia",
+        "hermetismo"
       ],
       "scientificReview": null,
       "metadataUpdated": "2026-08-17",
@@ -429,7 +429,7 @@
       "category": "psicologia-saude-mental",
       "categoryName": "Psicologia e saúde mental",
       "categoryUrl": "assuntos/psicologia.html",
-      "contentType": "condição/conceito",
+      "contentType": "biografia",
       "tags": [
         "psicologia",
         "saúde mental",
@@ -1303,7 +1303,7 @@
         "mitologia",
         "povos indígenas",
         "tupi-guarani",
-        "brasil",
+        "Brasil",
         "colonização"
       ],
       "relations": [
@@ -1365,8 +1365,8 @@
       ],
       "relations": [
         "ajna",
-        "hermetism",
-        "theosophy"
+        "hermetismo",
+        "teosofia"
       ],
       "scientificReview": null,
       "metadataUpdated": "2026-08-17",
@@ -1555,6 +1555,7 @@
         "epistemologia"
       ],
       "relations": [
+        "socrates",
         "estoicismo",
         "hermetismo",
         "gnosticismo"
@@ -1883,7 +1884,7 @@
       "category": "psicologia-saude-mental",
       "categoryName": "Psicologia e saúde mental",
       "categoryUrl": "assuntos/psicologia.html",
-      "contentType": "condição/conceito",
+      "contentType": "biografia",
       "tags": [
         "psicologia",
         "saúde mental",
@@ -1928,6 +1929,33 @@
       "metadataUpdated": "2026-08-10",
       "datePublished": "2026-08-07",
       "dateModified": "2026-08-07",
+      "scientificReviewIso": null
+    },
+    {
+      "slug": "socrates",
+      "title": "Sócrates",
+      "url": "artigos/socrates.html",
+      "summary": "Sócrates como experiência de investigação: problema socrático, fontes antigas, método, grandes perguntas, julgamento, mitos, biblioteca e laboratórios interativos de pensamento crítico.",
+      "category": "filosofias-esoterismo-sistemas-simbolicos",
+      "categoryName": "Filosofias, esoterismo e sistemas simbólicos",
+      "categoryUrl": "assuntos/filosofias-esoterismo.html",
+      "contentType": "filósofo/história da filosofia",
+      "tags": [
+        "filosofia",
+        "história das ideias",
+        "Sócrates",
+        "filosofia antiga",
+        "ética",
+        "pensamento crítico"
+      ],
+      "relations": [
+        "platao",
+        "estoicismo"
+      ],
+      "scientificReview": null,
+      "metadataUpdated": "2026-09-11",
+      "datePublished": "2026-08-18",
+      "dateModified": "2026-08-18",
       "scientificReviewIso": null
     },
     {
@@ -1994,7 +2022,7 @@
       "category": "psicologia-saude-mental",
       "categoryName": "Psicologia e saúde mental",
       "categoryUrl": "assuntos/psicologia.html",
-      "contentType": "condição/conceito",
+      "contentType": "psicoterapia",
       "tags": [
         "psicologia",
         "saúde mental",
@@ -2285,7 +2313,7 @@
         "xamanismo",
         "antropologia",
         "transe",
-        "brasil"
+        "Brasil"
       ],
       "relations": [
         "mitologia-yanomami",
