@@ -8,6 +8,7 @@ const contentIndex = JSON.parse(fs.readFileSync(path.join(root, 'src/data/conten
 const config = JSON.parse(fs.readFileSync(path.join(root, 'src/data/site-config.json'), 'utf8'));
 const today = new Date();
 const warnDays = config.editorial?.reviewWarningDays ?? 180;
+const showQueue = process.argv.includes('--queue');
 const articleFiles = fs.readdirSync(path.join(root, 'artigos')).filter((name) => name.endsWith('.html')).sort();
 const items = contentIndex.items ?? [];
 const errors = [];
@@ -33,6 +34,34 @@ const reviewPriorityCategories = new Set([
   'psicologia-saude-mental',
   'desenvolvimento-aprendizagem-neurodiversidade',
   'substancias-farmacologia-consciencia',
+]);
+
+const reviewExemptContentTypes = new Set([
+  'biografia',
+]);
+
+const recognizedReferenceHosts = new Set([
+  'aap.org',
+  'apa.org',
+  'cdc.gov',
+  'cochrane.org',
+  'cochranelibrary.com',
+  'ema.europa.eu',
+  'fda.gov',
+  'gov.br',
+  'health.gov.au',
+  'icd.who.int',
+  'ies.ed.gov',
+  'nih.gov',
+  'nice.org.uk',
+  'nccih.nih.gov',
+  'nichd.nih.gov',
+  'nimh.nih.gov',
+  'ninds.nih.gov',
+  'ncbi.nlm.nih.gov',
+  'pubmed.ncbi.nlm.nih.gov',
+  'psychiatry.org',
+  'who.int',
 ]);
 
 const slugs = new Set(items.map((item) => item.slug));
@@ -85,8 +114,11 @@ for (const item of items) {
   }
 
   if (!item.scientificReviewIso) {
-    if (reviewPriorityCategories.has(item.category)) {
-      warnings.push(`${item.slug}: revisão científica ausente em categoria prioritária.`);
+    if (requiresScientificReview(item)) {
+      const stats = getReferenceStats(item);
+      warnings.push(
+        `${item.slug}: revisão científica ausente; ${stats.externalReferences} referência(s) externa(s), ${stats.recognizedHosts.length} host(s) reconhecido(s).`,
+      );
     }
     continue;
   }
@@ -106,19 +138,88 @@ auditCanonicalTags();
 
 const missingScientificReview = items.filter((item) => !item.scientificReviewIso).length;
 const priorityMissingReview = items.filter(
-  (item) => reviewPriorityCategories.has(item.category) && !item.scientificReviewIso,
+  (item) => requiresScientificReview(item) && !item.scientificReviewIso,
 ).length;
 
 console.log('LET FLOW 369 — AUDITORIA EDITORIAL');
 console.log(`Artigos indexados ............ ${items.length}`);
 console.log(`Revisão científica registrada ${items.length - missingScientificReview}`);
 console.log(`Revisão científica ausente ... ${missingScientificReview}`);
-console.log(`Ausente em áreas prioritárias  ${priorityMissingReview}`);
+console.log(`Ausente em escopo científico . ${priorityMissingReview}`);
 console.log(`Erros ........................ ${errors.length}`);
 console.log(`Avisos ....................... ${warnings.length}`);
 for (const error of errors) console.error(`ERROR ${error}`);
 for (const warning of warnings) console.warn(`WARN  ${warning}`);
+
+if (showQueue) printReviewQueue();
+
 if (errors.length) process.exit(1);
+
+function requiresScientificReview(item) {
+  return reviewPriorityCategories.has(item.category) && !reviewExemptContentTypes.has(item.contentType);
+}
+
+function getReferenceStats(item) {
+  const filePath = path.join(root, item.url);
+  if (!fs.existsSync(filePath)) return { externalReferences: 0, recognizedHosts: [] };
+
+  const html = fs.readFileSync(filePath, 'utf8');
+  const hrefs = [...html.matchAll(/href=["'](https?:\/\/[^"']+)["']/gi)].map((match) => match[1].replaceAll('&amp;', '&'));
+  const external = new Set();
+  const recognizedHosts = new Set();
+
+  for (const href of hrefs) {
+    try {
+      const url = new URL(href);
+      const host = url.hostname.toLowerCase().replace(/^www\./, '');
+      if (host === 'letflow369.github.io' || host.endsWith('.letflow369.github.io')) continue;
+      if (host === 'fonts.googleapis.com' || host === 'fonts.gstatic.com' || host === 'schema.org') continue;
+      if (host === 'open.spotify.com') continue;
+
+      external.add(url.href);
+      if (isRecognizedReferenceHost(host)) recognizedHosts.add(host);
+    } catch {
+      // URL inválida será coberta por auditorias de projeto quando aplicável.
+    }
+  }
+
+  return {
+    externalReferences: external.size,
+    recognizedHosts: [...recognizedHosts].sort(),
+  };
+}
+
+function isRecognizedReferenceHost(host) {
+  for (const recognized of recognizedReferenceHosts) {
+    if (host === recognized || host.endsWith(`.${recognized}`)) return true;
+  }
+  return false;
+}
+
+function printReviewQueue() {
+  const queue = items
+    .filter((item) => requiresScientificReview(item) && !item.scientificReviewIso)
+    .map((item) => ({ item, stats: getReferenceStats(item) }))
+    .sort((a, b) => {
+      if (a.stats.recognizedHosts.length !== b.stats.recognizedHosts.length) {
+        return b.stats.recognizedHosts.length - a.stats.recognizedHosts.length;
+      }
+      if (a.stats.externalReferences !== b.stats.externalReferences) {
+        return b.stats.externalReferences - a.stats.externalReferences;
+      }
+      return a.item.slug.localeCompare(b.item.slug, 'pt-BR');
+    });
+
+  console.log('');
+  console.log('FILA DE REVISÃO CIENTÍFICA');
+  console.log('Observação: contagem de referências não substitui avaliação humana da qualidade, atualidade ou pertinência das evidências.');
+  for (const { item, stats } of queue) {
+    const hosts = stats.recognizedHosts.length ? stats.recognizedHosts.join(', ') : 'nenhum';
+    console.log(
+      `- ${item.slug} [${item.contentType}] — externas: ${stats.externalReferences}; hosts reconhecidos: ${hosts}`,
+    );
+  }
+}
 
 function auditUnique(label, getValue) {
   const seen = new Map();

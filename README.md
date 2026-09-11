@@ -11,10 +11,10 @@ Desenvolvimento, aprendizagem e neurodiversidade ... 8 páginas
 Psicologia e saúde mental .......................... 14 páginas
 Saúde, terapias e reabilitação ..................... 12 páginas
 Substâncias, farmacologia e consciência ............ 8 páginas
-Filosofias, esoterismo e sistemas simbólicos ....... 11 páginas
-Religiões e espiritualidade ........................ 26 páginas
+Filosofias, esoterismo e sistemas simbólicos ....... 13 páginas
+Religiões e espiritualidade ........................ 28 páginas
 Ciência, tecnologia e sociedade .................... 1 página
-Total ............................................... 80 artigos
+Total ............................................... 84 artigos
 ```
 
 A coleção `assuntos/substancias-farmacologia-consciencia.html` reúne Ayahuasca, Psilocibina, Cannabis sativa, Cannabis indica, CBD, DMT, Changa e LSD. Práticas terapêuticas e integrativas ficam em `assuntos/saude-reabilitacao.html`, enquanto filosofias e sistemas simbólicos permanecem em `assuntos/filosofias-esoterismo.html`.
@@ -114,6 +114,17 @@ npm run audit:social
 ```
 
 `audit:ui` também impede saltos de headings, `<nav>` sem nome acessível, retorno do scroll horizontal oculto no menu mobile e microtipografia abaixo do piso definido pelo projeto.
+
+## Fila de revisão científica
+
+A auditoria editorial diferencia páginas que realmente exigem revisão científica de conteúdos biográficos. A fila não aprova evidências automaticamente: ela apenas mostra quantas referências externas e quantos hosts institucionais/bibliográficos reconhecidos já existem em cada artigo pendente.
+
+```bash
+npm run audit:editorial
+npm run audit:editorial:queue
+```
+
+`scientificReviewIso` só deve ser preenchido depois de revisão humana do conteúdo e das fontes. A presença de links para órgãos públicos, bases bibliográficas ou diretrizes não é tratada como prova automática de qualidade ou pertinência científica.
 
 ## Publicação
 
