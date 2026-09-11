@@ -44,11 +44,11 @@ jobs:
 
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v5
 
       - name: Upload dist as GitHub Pages artifact
         if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
@@ -67,4 +67,4 @@ jobs:
     steps:
       - name: Deploy GitHub Pages artifact
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
