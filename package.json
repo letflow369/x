@@ -29,7 +29,8 @@
     "audit:social": "node scripts/audit-social-metadata.mjs --root dist",
     "audit:ui": "node scripts/audit-ui-contract.mjs --root dist",
     "sync:visual": "node scripts/sync-home-visual-standard.mjs",
-    "audit:visual": "node scripts/audit-home-visual-standard.mjs"
+    "audit:visual": "node scripts/audit-home-visual-standard.mjs",
+    "audit:editorial:queue": "node scripts/audit-editorial.mjs --queue"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",
