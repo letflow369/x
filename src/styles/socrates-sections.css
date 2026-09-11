@@ -28,7 +28,7 @@
   min-height: 1.65rem;
   padding-inline: .4rem;
   font-family: var(--font-interface);
-  font-size: .68rem;
+  font-size: .7rem;
   font-weight: 800;
   color: var(--socrates-bronze-dark);
   border: .0625rem solid rgb(118 80 45 / 32%);
@@ -190,7 +190,7 @@
 }
 
 .socrates-life-path span {
-  font-size: .67rem;
+  font-size: .7rem;
   font-weight: 800;
   color: var(--socrates-bronze-dark);
 }
@@ -285,7 +285,7 @@
 
 .socrates-trial__sequence span {
   font-family: var(--font-interface);
-  font-size: .68rem;
+  font-size: .7rem;
   font-weight: 800;
   letter-spacing: .08em;
   color: #d5b386;
@@ -408,7 +408,7 @@
 
 .socrates-book-grid article > span {
   font-family: var(--font-interface);
-  font-size: .68rem;
+  font-size: .7rem;
   font-weight: 800;
   letter-spacing: .1em;
   color: var(--socrates-bronze-dark);
@@ -531,7 +531,7 @@
 
 .belief-result dl { display: grid; gap: .75rem; margin: 0 0 1.5rem; }
 .belief-result dl > div { padding: 1rem; border: .0625rem solid rgb(255 255 255 / 11%); background: rgb(255 255 255 / 3%); }
-.belief-result dt { margin-bottom: .45rem; font-family: var(--font-interface); font-size: .68rem; font-weight: 800; letter-spacing: .08em; color: #d5b386; text-transform: uppercase; }
+.belief-result dt { margin-bottom: .45rem; font-family: var(--font-interface); font-size: .7rem; font-weight: 800; letter-spacing: .08em; color: #d5b386; text-transform: uppercase; }
 .belief-result dd { margin: 0; overflow-wrap: anywhere; color: #e7ddd0; }
 .belief-result > p { color: #c9bdaf; }
 
@@ -539,7 +539,7 @@
   margin: 0;
   padding: .9rem 1.25rem;
   font-family: var(--font-interface);
-  font-size: .68rem;
+  font-size: .7rem;
   color: #9f9181;
   border-top: .0625rem solid rgb(255 255 255 / 8%);
 }
