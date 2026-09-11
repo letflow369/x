@@ -100,11 +100,12 @@
                 : item.level === 'insuficiente' ? 'insufficient' : 'limited';
         const verified = item.verifiedAt ? `<span class="directory-pill">Verificado ${esc(formatDate(item.verifiedAt))}</span>` : '';
         const basis = item.evidenceBasisLabel ? `<span class="directory-pill">${esc(item.evidenceBasisLabel)}</span>` : '';
+        const qualifier = item.qualifier ? `<span class="directory-pill">${esc(item.qualifier)}</span>` : '';
         return `<article class="directory-card directory-card--${cssLevel}">
           <p class="directory-eyebrow">${esc(item.levelLabel)}</p>
           <h2>${esc(item.title)}</h2>
           <p>${esc(item.summary)}</p>
-          <div class="directory-card__meta">${basis}${verified}</div>
+          <div class="directory-card__meta">${basis}${qualifier}${verified}</div>
           ${article ? `<p><a class="text-link" href="${esc(article.url)}">Ler contexto completo em ${esc(article.title)} →</a></p>` : ''}
         </article>`;
       }).join('');
