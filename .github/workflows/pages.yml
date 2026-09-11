@@ -1,7 +1,10 @@
-name: Deploy GitHub Pages
+name: Validate and deploy GitHub Pages
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
   workflow_dispatch:
@@ -10,11 +13,11 @@ permissions:
   contents: read
 
 concurrency:
-  group: github-pages
-  cancel-in-progress: false
+  group: github-pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  validate:
     name: Validate and build
     runs-on: ubuntu-latest
     permissions:
@@ -40,16 +43,19 @@ jobs:
         run: npm run ci
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v6
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
 
       - name: Upload dist as GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
   deploy:
     name: Deploy
-    needs: build
+    if: github.event_name != 'pull_request'
+    needs: validate
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -61,4 +67,4 @@ jobs:
     steps:
       - name: Deploy GitHub Pages artifact
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
